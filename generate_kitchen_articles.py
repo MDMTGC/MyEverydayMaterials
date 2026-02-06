@@ -14,7 +14,7 @@ from html import unescape
 SITE_NAME = "Everyday Materials"
 SITE_URL = "https://myeverydaymaterials.com"
 AFFILIATE_TAG = "myeverydaymat-20"
-CSS_VERSION = "4"
+CSS_VERSION = "5"
 CSS_PATH = f"../css/style.css?v={CSS_VERSION}"
 OUTPUT_DIR = Path("kitchen")
 
@@ -1164,7 +1164,7 @@ def generate_article(article, all_articles):
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="{CSS_PATH}" />
 </head>
@@ -1282,7 +1282,7 @@ def main():
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="{CSS_PATH}" />
 </head>

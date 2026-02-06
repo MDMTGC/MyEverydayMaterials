@@ -23,9 +23,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="css/style.css?v=4" />
+  <link rel="stylesheet" href="css/style.css?v=5" />
 </head>
 <body>
 
@@ -42,130 +42,101 @@
   </div>
 
   <main>
-    <!-- Kitchen & Dining -->
+    <!-- Material Safety Registry: Kitchen & Dining -->
     <div class="section-label">
       <h2>Kitchen &amp; Dining</h2>
     </div>
+    <p class="registry-meta">Last verified: February 2026 &mdash; 12 materials analyzed</p>
+
+    <div class="registry-header">
+      <span>Material</span>
+      <span style="text-align:center">Status</span>
+      <span class="col-alt">Use Instead</span>
+    </div>
 
     <ul class="material-grid">
-      <li class="material-card">
+      <li class="material-row">
         <a href="kitchen/pfas-forever-chemicals.html">
-          <div class="card-icon icon-avoid">&#9888;</div>
-          <div class="card-body">
-            <div class="card-title">PFAS &ldquo;Forever Chemicals&rdquo;</div>
-            <div class="card-desc">Non-stick coatings and food packaging that never break down in the body.</div>
-            <span class="card-verdict badge-avoid">Avoid</span>
-          </div>
+          <div class="row-name">PFAS &ldquo;Forever Chemicals&rdquo;<span class="row-sub">Non-stick coatings &amp; food packaging</span></div>
+          <div class="row-status"><span class="badge badge-avoid" data-tip="Persistence &amp; toxicity">Avoid</span></div>
+          <div class="row-alt">Cast Iron / Ceramic</div>
         </a>
       </li>
-      <li class="material-card">
+      <li class="material-row">
         <a href="kitchen/bpa-plastic-containers.html">
-          <div class="card-icon icon-caution">&#9888;</div>
-          <div class="card-body">
-            <div class="card-title">BPA in Plastic Containers</div>
-            <div class="card-desc">Why &ldquo;BPA-Free&rdquo; replacements may be just as problematic.</div>
-            <span class="card-verdict badge-caution">Caution</span>
-          </div>
+          <div class="row-name">BPA in Plastic Containers<span class="row-sub">&ldquo;BPA-Free&rdquo; may not be safer</span></div>
+          <div class="row-status"><span class="badge badge-caution" data-tip="Endocrine disruption risk">Caution</span></div>
+          <div class="row-alt">Glass / Stainless Steel</div>
         </a>
       </li>
-      <li class="material-card">
+      <li class="material-row">
         <a href="kitchen/phthalates-food-wrap.html">
-          <div class="card-icon icon-caution">&#9888;</div>
-          <div class="card-body">
-            <div class="card-title">Phthalates in Food Wrap</div>
-            <div class="card-desc">Hidden plasticizers that migrate into fatty and hot foods.</div>
-            <span class="card-verdict badge-caution">Caution</span>
-          </div>
+          <div class="row-name">Phthalates in Food Wrap<span class="row-sub">Plasticizers in cling film &amp; packaging</span></div>
+          <div class="row-status"><span class="badge badge-caution" data-tip="Migrates into fatty foods">Caution</span></div>
+          <div class="row-alt">Beeswax Wrap / Silicone Lids</div>
         </a>
       </li>
-      <li class="material-card">
+      <li class="material-row">
         <a href="kitchen/melamine-plates-safety.html">
-          <div class="card-icon icon-caution">&#9888;</div>
-          <div class="card-body">
-            <div class="card-title">Melamine Plates</div>
-            <div class="card-desc">Safe for cold serving, risky when microwaved or used with hot food.</div>
-            <span class="card-verdict badge-caution">Caution</span>
-          </div>
+          <div class="row-name">Melamine Plates<span class="row-sub">Safe cold, risky when heated</span></div>
+          <div class="row-status"><span class="badge badge-caution" data-tip="Leaches formaldehyde when hot">Caution</span></div>
+          <div class="row-alt">Ceramic / Bamboo</div>
         </a>
       </li>
-      <li class="material-card">
+      <li class="material-row">
         <a href="kitchen/aluminum-foil-cooking.html">
-          <div class="card-icon icon-safe">&#10003;</div>
-          <div class="card-body">
-            <div class="card-title">Aluminum Foil &amp; Cooking</div>
-            <div class="card-desc">Generally safe, but avoid wrapping acidic foods at high heat.</div>
-            <span class="card-verdict badge-safe">Generally Safe</span>
-          </div>
+          <div class="row-name">Aluminum Foil &amp; Cooking<span class="row-sub">Everyday kitchen staple</span></div>
+          <div class="row-status"><span class="badge badge-safe" data-tip="Inert under normal conditions">Safe</span></div>
+          <div class="row-alt">Parchment Paper (acidic foods)</div>
         </a>
       </li>
-      <li class="material-card">
+      <li class="material-row">
         <a href="kitchen/cast-iron-seasoning.html">
-          <div class="card-icon icon-safe">&#10003;</div>
-          <div class="card-body">
-            <div class="card-title">Cast Iron Seasoning</div>
-            <div class="card-desc">Polymerized oil is safe, non-toxic, and one of the best cookware choices.</div>
-            <span class="card-verdict badge-safe">Safe</span>
-          </div>
+          <div class="row-name">Cast Iron Seasoning<span class="row-sub">Polymerized oil coating</span></div>
+          <div class="row-status"><span class="badge badge-safe" data-tip="Non-toxic, naturally non-stick">Safe</span></div>
+          <div class="row-alt">N/A &mdash; already ideal</div>
         </a>
       </li>
-      <li class="material-card">
+      <li class="material-row">
         <a href="kitchen/silicone-bakeware-heat.html">
-          <div class="card-icon icon-safe">&#10003;</div>
-          <div class="card-body">
-            <div class="card-title">Silicone Bakeware</div>
-            <div class="card-desc">Stable up to 425&deg;F, but quality and filler content matter.</div>
-            <span class="card-verdict badge-safe">Generally Safe</span>
-          </div>
+          <div class="row-name">Silicone Bakeware<span class="row-sub">Heat-stable up to 425&deg;F</span></div>
+          <div class="row-status"><span class="badge badge-safe" data-tip="Inert if platinum-grade">Safe</span></div>
+          <div class="row-alt">Glass Bakeware</div>
         </a>
       </li>
-      <li class="material-card">
+      <li class="material-row">
         <a href="kitchen/unlined-copper-toxicity.html">
-          <div class="card-icon icon-avoid">&#9888;</div>
-          <div class="card-body">
-            <div class="card-title">Unlined Copper Cookware</div>
-            <div class="card-desc">Reacts with acidic foods to form toxic copper salts.</div>
-            <span class="card-verdict badge-avoid">Avoid for Cooking</span>
-          </div>
+          <div class="row-name">Unlined Copper Cookware<span class="row-sub">Reacts with acidic foods</span></div>
+          <div class="row-status"><span class="badge badge-avoid" data-tip="Copper toxicity risk">Avoid</span></div>
+          <div class="row-alt">Stainless-Lined Copper</div>
         </a>
       </li>
-      <li class="material-card">
+      <li class="material-row">
         <a href="kitchen/antimony-pet-bottles.html">
-          <div class="card-icon icon-caution">&#9888;</div>
-          <div class="card-body">
-            <div class="card-title">Antimony in PET Bottles</div>
-            <div class="card-desc">Low risk at room temperature, but heat causes significant leaching.</div>
-            <span class="card-verdict badge-caution">Caution</span>
-          </div>
+          <div class="row-name">Antimony in PET Bottles<span class="row-sub">Heat-accelerated leaching</span></div>
+          <div class="row-status"><span class="badge badge-caution" data-tip="Low risk unless heated">Caution</span></div>
+          <div class="row-alt">Stainless Steel Bottle</div>
         </a>
       </li>
-      <li class="material-card">
+      <li class="material-row">
         <a href="kitchen/teflon-ptfe-offgassing.html">
-          <div class="card-icon icon-caution">&#9888;</div>
-          <div class="card-body">
-            <div class="card-title">Teflon (PTFE) Off-Gassing</div>
-            <div class="card-desc">Safe below 450&deg;F, but releases toxic fumes when overheated.</div>
-            <span class="card-verdict badge-caution">Caution</span>
-          </div>
+          <div class="row-name">Teflon (PTFE) Off-Gassing<span class="row-sub">Toxic fumes above 450&deg;F</span></div>
+          <div class="row-status"><span class="badge badge-caution" data-tip="Safe below 450&deg;F">Caution</span></div>
+          <div class="row-alt">Cast Iron / Ceramic</div>
         </a>
       </li>
-      <li class="material-card">
+      <li class="material-row">
         <a href="kitchen/black-plastic-takeout.html">
-          <div class="card-icon icon-caution">&#9888;</div>
-          <div class="card-body">
-            <div class="card-title">Black Plastic Takeout</div>
-            <div class="card-desc">May contain flame retardants from recycled electronic waste.</div>
-            <span class="card-verdict badge-caution">Caution</span>
-          </div>
+          <div class="row-name">Black Plastic Takeout<span class="row-sub">Recycled e-waste concerns</span></div>
+          <div class="row-status"><span class="badge badge-caution" data-tip="May contain flame retardants">Caution</span></div>
+          <div class="row-alt">Clear / Glass Containers</div>
         </a>
       </li>
-      <li class="material-card">
+      <li class="material-row">
         <a href="kitchen/bamboo-fiber-plates.html">
-          <div class="card-icon icon-caution">&#9888;</div>
-          <div class="card-body">
-            <div class="card-title">Bamboo Fiber Plates</div>
-            <div class="card-desc">Often bound with melamine-formaldehyde resin despite &ldquo;eco&rdquo; marketing.</div>
-            <span class="card-verdict badge-caution">Caution</span>
-          </div>
+          <div class="row-name">Bamboo Fiber Plates<span class="row-sub">Hidden melamine-formaldehyde resin</span></div>
+          <div class="row-status"><span class="badge badge-caution" data-tip="Misleading &ldquo;eco&rdquo; marketing">Caution</span></div>
+          <div class="row-alt">Real Bamboo / Ceramic</div>
         </a>
       </li>
     </ul>
