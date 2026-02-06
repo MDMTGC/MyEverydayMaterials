@@ -14,8 +14,25 @@ from html import unescape
 SITE_NAME = "Everyday Materials"
 SITE_URL = "https://myeverydaymaterials.com"
 AFFILIATE_TAG = "myeverydaymat-20"
-CSS_PATH = "../css/style.css"
+CSS_VERSION = "2"
+CSS_PATH = f"../css/style.css?v={CSS_VERSION}"
 OUTPUT_DIR = Path("kitchen")
+
+# Related article cross-links (slug → list of related slugs)
+RELATED_MAP = {
+    "pfas-forever-chemicals": ["teflon-ptfe-offgassing", "bpa-plastic-containers", "black-plastic-takeout"],
+    "bpa-plastic-containers": ["phthalates-food-wrap", "pfas-forever-chemicals", "antimony-pet-bottles"],
+    "phthalates-food-wrap": ["bpa-plastic-containers", "black-plastic-takeout", "pfas-forever-chemicals"],
+    "melamine-plates-safety": ["bamboo-fiber-plates", "silicone-bakeware-heat", "bpa-plastic-containers"],
+    "aluminum-foil-cooking": ["cast-iron-seasoning", "silicone-bakeware-heat", "teflon-ptfe-offgassing"],
+    "cast-iron-seasoning": ["teflon-ptfe-offgassing", "aluminum-foil-cooking", "unlined-copper-toxicity"],
+    "silicone-bakeware-heat": ["teflon-ptfe-offgassing", "aluminum-foil-cooking", "melamine-plates-safety"],
+    "unlined-copper-toxicity": ["cast-iron-seasoning", "aluminum-foil-cooking", "teflon-ptfe-offgassing"],
+    "antimony-pet-bottles": ["bpa-plastic-containers", "phthalates-food-wrap", "pfas-forever-chemicals"],
+    "teflon-ptfe-offgassing": ["pfas-forever-chemicals", "cast-iron-seasoning", "silicone-bakeware-heat"],
+    "black-plastic-takeout": ["phthalates-food-wrap", "bpa-plastic-containers", "bamboo-fiber-plates"],
+    "bamboo-fiber-plates": ["melamine-plates-safety", "black-plastic-takeout", "phthalates-food-wrap"],
+}
 
 EDITORS_NOTE = (
     "<strong>Note from the Editor:</strong> At Everyday Materials, our goal is "
@@ -1058,12 +1075,35 @@ def plain_text(html_str):
     return unescape(html_str).replace('"', '&quot;')
 
 
-def generate_article(article):
+def build_related(slug, all_articles):
+    """Build related articles section."""
+    related_slugs = RELATED_MAP.get(slug, [])
+    if not related_slugs:
+        return ""
+    title_map = {a["slug"]: a["title"] for a in all_articles}
+    links = []
+    for rs in related_slugs:
+        if rs in title_map:
+            links.append(f'        <li><a href="{rs}.html">{title_map[rs]}</a></li>')
+    if not links:
+        return ""
+    return (
+        '    <nav class="related-articles">\n'
+        '      <h2>Related Articles</h2>\n'
+        '      <ul>\n'
+        + "\n".join(links) + "\n"
+        '      </ul>\n'
+        '    </nav>'
+    )
+
+
+def generate_article(article, all_articles):
     """Generate complete HTML for one article."""
     toc = build_toc(article["sections"])
     body = build_sections(article["sections"])
     alternatives = build_alternatives(article["alternatives"], AFFILIATE_TAG)
     sources = build_sources(article["sources"])
+    related = build_related(article["slug"], all_articles)
     today = date.today().isoformat()
     slug = article["slug"]
     canonical = f"{SITE_URL}/kitchen/{slug}.html"
@@ -1093,7 +1133,7 @@ def generate_article(article):
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
-  {{
+  [{{
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "{plain_title}",
@@ -1110,9 +1150,21 @@ def generate_article(article):
       "@type": "WebPage",
       "@id": "{canonical}"
     }}
-  }}
+  }},
+  {{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {{"@type": "ListItem", "position": 1, "name": "Home", "item": "{SITE_URL}/"}},
+      {{"@type": "ListItem", "position": 2, "name": "Kitchen &amp; Dining", "item": "{SITE_URL}/kitchen/"}},
+      {{"@type": "ListItem", "position": 3, "name": "{plain_title}"}}
+    ]
+  }}]
   </script>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="{CSS_PATH}" />
 </head>
@@ -1148,6 +1200,8 @@ def generate_article(article):
 {sources}
       </ol>
     </div>
+
+{related}
   </article>
 
   <footer>
@@ -1168,7 +1222,7 @@ def main():
     for article in ARTICLES:
         filename = f"{article['slug']}.html"
         filepath = OUTPUT_DIR / filename
-        html = generate_article(article)
+        html = generate_article(article, ARTICLES)
         filepath.write_text(html, encoding="utf-8")
         generated.append((article["slug"], article["title"]))
         print(f"  Generated: kitchen/{filename}")
@@ -1180,13 +1234,50 @@ def main():
         f'        <li><a href="{slug}.html">{title}</a></li>'
         for slug, title in generated
     )
+    kitchen_desc = "Science-backed safety guides for kitchen materials — PFAS, BPA, Teflon, melamine, and more. Learn what's safe and find better alternatives."
+    kitchen_url = f"{SITE_URL}/kitchen/"
+    today = date.today().isoformat()
+
     index_html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kitchen &amp; Dining Safety &mdash; {SITE_NAME}</title>
-  <meta name="description" content="Science-backed safety guides for kitchen materials — PFAS, BPA, Teflon, melamine, and more. Learn what's safe and find better alternatives." />
+  <meta name="description" content="{kitchen_desc}" />
+  <link rel="canonical" href="{kitchen_url}" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kitchen &amp; Dining Safety &mdash; {SITE_NAME}" />
+  <meta property="og:description" content="{kitchen_desc}" />
+  <meta property="og:url" content="{kitchen_url}" />
+  <meta property="og:site_name" content="{SITE_NAME}" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Kitchen &amp; Dining Safety &mdash; {SITE_NAME}" />
+  <meta name="twitter:description" content="{kitchen_desc}" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Kitchen &amp; Dining Safety",
+    "description": "{kitchen_desc}",
+    "url": "{kitchen_url}",
+    "isPartOf": {{
+      "@type": "WebSite",
+      "name": "{SITE_NAME}",
+      "url": "{SITE_URL}/"
+    }}
+  }}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="{CSS_PATH}" />
 </head>
