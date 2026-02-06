@@ -1,11 +1,68 @@
-body {
-  font-family: system-ui, sans-serif;
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 16px;
-  line-height: 1.6;
+/* 2026 Modern Minimalist Style */
+:root {
+  --primary: #2563eb;
+  --text: #1f2937;
+  --bg: #f9fafb;
+  --card-bg: #ffffff;
 }
 
-a {
-  text-decoration: none;
+body {
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+  line-height: 1.75;
+}
+
+header {
+  text-align: center;
+  padding: 4rem 0 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+header p {
+  font-size: 1.125rem;
+  color: #6b7280;
+}
+
+/* Card-style Links for Mobile */
+ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+li a {
+  display: block;
+  background: var(--card-bg);
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+  color: var(--primary);
+  font-weight: 600;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+li a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-color: var(--primary);
+}
+
+footer {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #9ca3af;
 }
