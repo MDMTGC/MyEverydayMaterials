@@ -13,7 +13,7 @@ from pathlib import Path
 
 SITE_NAME = "Everyday Materials"
 SITE_URL = "https://myeverydaymaterials.com"
-AFFILIATE_TAG = "everydaymater0a-20"
+AFFILIATE_TAG = "myeverydaymat-20"
 CSS_PATH = "../css/style.css"
 OUTPUT_DIR = Path("kitchen")
 
