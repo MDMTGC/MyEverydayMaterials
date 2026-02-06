@@ -1113,6 +1113,7 @@ def generate_article(article):
   }}
   </script>
 
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="{CSS_PATH}" />
 </head>
 <body>
@@ -1186,6 +1187,7 @@ def main():
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kitchen &amp; Dining Safety &mdash; {SITE_NAME}</title>
   <meta name="description" content="Science-backed safety guides for kitchen materials — PFAS, BPA, Teflon, melamine, and more. Learn what's safe and find better alternatives." />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="{CSS_PATH}" />
 </head>
 <body>
