@@ -14,7 +14,7 @@ from html import unescape
 SITE_NAME = "Everyday Materials"
 SITE_URL = "https://myeverydaymaterials.com"
 AFFILIATE_TAG = "myeverydaymat-20"
-CSS_VERSION = "2"
+CSS_VERSION = "3"
 CSS_PATH = f"../css/style.css?v={CSS_VERSION}"
 OUTPUT_DIR = Path("kitchen")
 
@@ -1170,7 +1170,7 @@ def generate_article(article, all_articles):
 </head>
 <body>
 
-  <nav><a href="../index.html">&larr; {SITE_NAME}</a></nav>
+  <nav class="breadcrumb"><a href="../index.html">&larr; {SITE_NAME}</a></nav>
 
   <article>
     <h1>{article['title']}</h1>
@@ -1204,9 +1204,14 @@ def generate_article(article, all_articles):
 {related}
   </article>
 
-  <footer>
-    <p>&copy; 2026 {SITE_NAME}</p>
-  </footer>
+  <div class="site-footer">
+    <nav>
+      <a href="../about.html">About</a>
+      <a href="../methodology.html">Methodology</a>
+      <a href="../privacy.html">Privacy Policy</a>
+    </nav>
+    <p class="copyright">&copy; 2026 {SITE_NAME}</p>
+  </div>
 
 </body>
 </html>
@@ -1283,7 +1288,7 @@ def main():
 </head>
 <body>
 
-  <nav><a href="../index.html">&larr; {SITE_NAME}</a></nav>
+  <nav class="breadcrumb"><a href="../index.html">&larr; {SITE_NAME}</a></nav>
 
   <div class="category-header">
     <h1>Kitchen &amp; Dining Safety</h1>
@@ -1296,9 +1301,14 @@ def main():
     </ul>
   </main>
 
-  <footer>
-    <p>&copy; 2026 {SITE_NAME}</p>
-  </footer>
+  <div class="site-footer">
+    <nav>
+      <a href="../about.html">About</a>
+      <a href="../methodology.html">Methodology</a>
+      <a href="../privacy.html">Privacy Policy</a>
+    </nav>
+    <p class="copyright">&copy; 2026 {SITE_NAME}</p>
+  </div>
 
 </body>
 </html>
@@ -1318,6 +1328,8 @@ def update_sitemap(generated_articles):
     urls = [
         (f"{SITE_URL}/", "1.0"),
         (f"{SITE_URL}/kitchen/", "0.8"),
+        (f"{SITE_URL}/about.html", "0.5"),
+        (f"{SITE_URL}/methodology.html", "0.5"),
     ]
     # Article pages
     for slug, _title in generated_articles:
