@@ -191,7 +191,12 @@ header p {
   background: var(--card-bg);
   padding: 0.875rem 1rem;
   border-bottom: 1px solid var(--gray-100);
-  transition: background-color 0.15s ease;
+  transition: background-color 0.2s ease;
+}
+
+/* Zebra striping */
+.material-row:nth-child(even) a {
+  background: var(--bg);
 }
 
 .material-row:first-child a {
@@ -204,7 +209,7 @@ header p {
 }
 
 .material-row a:hover {
-  background-color: var(--slate-50);
+  background-color: #f0f7ff;
 }
 
 .material-row .row-name {
@@ -249,16 +254,22 @@ header p {
 .badge-avoid {
   background: var(--red-50);
   color: var(--red-700);
+  border: 1px solid var(--red-600);
+  box-shadow: 0 1px 3px rgba(220, 38, 38, 0.15);
 }
 
 .badge-caution {
   background: var(--amber-50);
   color: var(--amber-700);
+  border: 1px solid var(--amber-600);
+  box-shadow: 0 1px 3px rgba(217, 119, 6, 0.15);
 }
 
 .badge-safe {
   background: var(--green-50);
   color: var(--green-700);
+  border: 1px solid var(--green-600);
+  box-shadow: 0 1px 3px rgba(22, 163, 74, 0.15);
 }
 
 /* Tooltip on hover */
