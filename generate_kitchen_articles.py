@@ -14,7 +14,7 @@ from html import unescape
 SITE_NAME = "Everyday Materials"
 SITE_URL = "https://myeverydaymaterials.com"
 AFFILIATE_TAG = "myeverydaymat-20"
-CSS_VERSION = "5"
+CSS_VERSION = "6"
 CSS_PATH = f"../css/style.css?v={CSS_VERSION}"
 OUTPUT_DIR = Path("kitchen")
 
