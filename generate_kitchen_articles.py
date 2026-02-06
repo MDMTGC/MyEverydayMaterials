@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-Generate the first 10 Kitchen & Dining articles for MyEverydayMaterials.
+Generate all 12 Kitchen & Dining articles for MyEverydayMaterials.
 Each article includes science-backed content, a 30-second verdict,
 and high-integrity Better Alternatives with Amazon affiliate links.
 """
 
-import os
 from datetime import date
 from pathlib import Path
+from html import unescape
 
 # ── Configuration ──────────────────────────────────────────────────────────
 
@@ -837,6 +837,166 @@ ARTICLES = [
             ("DuPont &mdash; Teflon Safety Data (Thermal Decomposition Thresholds)", "https://www.chemours.com/en/brands-and-products/teflon"),
         ]
     },
+
+    # ─── 11. Black Plastic Takeout Containers ─────────────────────────
+    {
+        "slug": "black-plastic-takeout",
+        "title": "Black Plastic Takeout Containers: The Hidden Recycling Problem in Your Kitchen",
+        "meta_description": "Why black plastic takeout containers may contain flame retardants from recycled electronics and what to use instead for reheating leftovers.",
+        "verdict_level": "verdict-caution",
+        "verdict_rating": "Use Caution &mdash; May contain recycled electronic waste chemicals",
+        "verdict_summary": "Black plastic takeout containers are often made from recycled electronic waste (e-waste) plastics, which can contain brominated flame retardants, heavy metals, and other hazardous chemicals not intended for food contact. A 2019 study found regulated flame retardants in 25% of black kitchen utensils tested. Never microwave food in these containers, and transfer leftovers to glass or ceramic before reheating.",
+        "sections": [
+            {
+                "id": "the-problem",
+                "heading": "Why Black Plastic Is Different",
+                "content": """<p>Most colored plastics are tinted with conventional pigments. Black plastic is different. <strong>Carbon black pigment</strong> makes the plastic invisible to the near-infrared sensors used in recycling facilities, so it cannot be sorted. This creates a glut of cheap, unsorted black plastic on the recycling market.</p>
+<p>The problem: this unsorted stream often includes black plastic from <strong>electronics housings</strong> &mdash; TV casings, computer monitors, printers &mdash; which are treated with <strong>brominated flame retardants (BFRs)</strong>. When this e-waste plastic enters the food packaging supply chain, those flame retardants come with it.</p>"""
+            },
+            {
+                "id": "health-risks",
+                "heading": "The Health Risks",
+                "content": """<ul class="key-facts">
+  <li><span class="fact-label">BFRs found</span> A 2019 University of Plymouth study found brominated flame retardants in 25% of black plastic kitchen utensils purchased at retail.</li>
+  <li><span class="fact-label">Heavy metals</span> The same study detected cadmium, lead, and chromium in some black plastic food contact items.</li>
+  <li><span class="fact-label">Not food-grade</span> Flame retardants like decaBDE are regulated under the EU&rsquo;s REACH and the Stockholm Convention. They are endocrine disruptors linked to thyroid dysfunction and neurodevelopmental effects.</li>
+  <li><span class="fact-label">Heat accelerates</span> Microwaving or heating food in contaminated black plastic increases chemical migration into food significantly.</li>
+  <li><span class="fact-label">No labeling</span> There is no requirement to label black plastic with its recycled source material, so consumers cannot tell safe from contaminated by looking at it.</li>
+</ul>
+<div class="callout callout-warning">
+  <strong>The microwave problem:</strong> Takeout containers marked &ldquo;microwave-safe&rdquo; are tested for structural integrity (they won&rsquo;t melt), not for chemical migration. A container that survives the microwave physically may still be leaching harmful compounds into your food.
+</div>"""
+            },
+            {
+                "id": "what-to-do",
+                "heading": "Simple Precautions",
+                "content": """<p><strong>Never microwave black plastic containers.</strong> Transfer food to a glass or ceramic dish before reheating. This is the single most impactful step.</p>
+<p><strong>Don&rsquo;t store hot food in them long-term.</strong> If the restaurant packs steaming food into a black plastic tray, transfer it when you get home.</p>
+<p><strong>Bring your own containers.</strong> A glass or stainless steel container eliminates the question entirely for regular takeout orders.</p>
+<p><strong>Avoid black plastic utensils for cooking.</strong> Spatulas, spoons, and turners that contact hot food directly are a greater exposure risk than storage containers.</p>"""
+            }
+        ],
+        "alternatives": [
+            {
+                "name": "Pyrex Simply Store Glass Set (10-Piece)",
+                "type": "Glass Containers",
+                "description": "Tempered glass containers ideal for storing and reheating takeout leftovers. Completely non-reactive at any temperature. Microwave and oven safe.",
+                "pros": "Zero chemical migration, microwave safe, see-through for easy ID",
+                "cons": "Heavier than plastic, breakable, lids are still plastic",
+                "asin": "B09KYGVBCN"
+            },
+            {
+                "name": "LunchBots Stainless Steel Containers",
+                "type": "Stainless Steel",
+                "description": "18/8 food-grade stainless steel with no coatings. Excellent for packing meals and storing leftovers. Completely inert.",
+                "pros": "Virtually indestructible, zero leaching, lightweight vs. glass",
+                "cons": "Not microwave-safe, opaque, can dent",
+                "asin": "B004WCXFKE"
+            },
+            {
+                "name": "Glasslock Oven-Safe Container Set",
+                "type": "Tempered Glass",
+                "description": "Snap-lock lids with silicone seals for leak-proof takeout storage. Freezer to oven safe with no thermal shock risk.",
+                "pros": "Leak-proof, freezer-to-oven transition, stackable",
+                "cons": "Bulkier than disposable containers, heavier for transport",
+                "asin": "B007STLBSY"
+            },
+            {
+                "name": "Stasher Reusable Silicone Bags",
+                "type": "Platinum Silicone",
+                "description": "FDA food-grade platinum-cured silicone bags. Great for storing portioned leftovers. Microwave and dishwasher safe.",
+                "pros": "Flexible, microwave safe, replaces zip-lock bags",
+                "cons": "Can retain odors, pricier than disposables",
+                "asin": "B07C7NHS5Q"
+            }
+        ],
+        "sources": [
+            ("University of Plymouth &mdash; BFRs in black plastic kitchen utensils (2019)", "https://www.plymouth.ac.uk/"),
+            ("Environment International &mdash; Hazardous substances in recycled plastics", "https://www.sciencedirect.com/journal/environment-international"),
+            ("Stockholm Convention &mdash; Brominated Flame Retardants", "http://chm.pops.int/"),
+            ("WRAP UK &mdash; Black Plastic Packaging Report", "https://wrap.org.uk/"),
+        ]
+    },
+
+    # ─── 12. Bamboo Fiber Plates ──────────────────────────────────────
+    {
+        "slug": "bamboo-fiber-plates",
+        "title": "Bamboo Fiber Plates: The &ldquo;Eco-Friendly&rdquo; Dinnerware with a Hidden Problem",
+        "meta_description": "Why bamboo fiber plates often contain formaldehyde-melamine resin and can leach chemicals into hot food. Safer eco-friendly alternatives inside.",
+        "verdict_level": "verdict-caution",
+        "verdict_rating": "Use Caution &mdash; Often bound with formaldehyde-melamine resin",
+        "verdict_summary": "Most bamboo fiber dinnerware is not solid bamboo \u2014 it\u2019s bamboo powder mixed with melamine-formaldehyde resin, the same binder used in melamine plates. The German Federal Institute for Risk Assessment (BfR) found that these products leach formaldehyde and melamine into hot food at levels exceeding EU safety limits. Several EU countries have banned their sale. If you want eco-friendly plates, choose solid bamboo, palm leaf, or tempered glass instead.",
+        "sections": [
+            {
+                "id": "the-deception",
+                "heading": "What &ldquo;Bamboo Fiber&rdquo; Really Means",
+                "content": """<p>When you see a plate marketed as &ldquo;bamboo fiber,&rdquo; &ldquo;bamboo composite,&rdquo; or &ldquo;eco-friendly bamboo,&rdquo; it almost never means the plate is made from solid bamboo. Instead, it&rsquo;s <strong>bamboo powder or fiber</strong> mixed with a <strong>melamine-formaldehyde resin binder</strong> that holds the particles together and gives the plate its rigid, smooth finish.</p>
+<p>This creates a cruel irony: consumers choosing bamboo plates to avoid plastic are getting a product that is <strong>majority plastic resin by weight</strong>, with the same chemical leaching concerns as melamine dinnerware \u2014 and often worse, because the bamboo fibers can degrade the resin matrix faster.</p>"""
+            },
+            {
+                "id": "health-risks",
+                "heading": "The Health Risks",
+                "content": """<ul class="key-facts">
+  <li><span class="fact-label">BfR testing</span> The German Federal Institute for Risk Assessment found formaldehyde migration 5&ndash;8x above the EU specific migration limit (SML) of 15 mg/kg in bamboo-melamine products tested with hot liquids.</li>
+  <li><span class="fact-label">Melamine</span> Migration of melamine from these products also exceeded the EU SML of 2.5 mg/kg in the same tests.</li>
+  <li><span class="fact-label">EU ban</span> Multiple EU countries (Belgium, Luxembourg, Netherlands, Austria) have banned the sale of bamboo-melamine food contact products.</li>
+  <li><span class="fact-label">Formaldehyde</span> Classified as a Group 1 carcinogen by IARC. Chronic low-level exposure causes respiratory irritation and is linked to nasopharyngeal cancer.</li>
+  <li><span class="fact-label">Degradation</span> The bamboo fibers absorb moisture and swell, cracking the resin matrix over time. Older, worn bamboo-composite plates leach more than new ones.</li>
+</ul>
+<div class="callout callout-danger">
+  <strong>The hot liquid trigger:</strong> Like melamine, the leaching from bamboo-composite plates is heavily temperature-dependent. Pouring hot coffee, tea, or soup into these products causes the highest chemical migration. Never use them for hot foods or beverages.
+</div>"""
+            },
+            {
+                "id": "what-to-do",
+                "heading": "How to Identify and Avoid Risky Products",
+                "content": """<p><strong>Read the fine print.</strong> If the product description mentions &ldquo;bamboo powder,&rdquo; &ldquo;bamboo fiber,&rdquo; or &ldquo;bamboo composite,&rdquo; it contains resin binder. Genuine bamboo products are made from solid bamboo pieces, not powder.</p>
+<p><strong>Avoid for hot food and drinks.</strong> If you already own bamboo-composite plates, use them only for cold, dry foods (crackers, fruit, sandwiches).</p>
+<p><strong>Don&rsquo;t microwave or dishwasher-wash them.</strong> Both heat sources accelerate resin breakdown and chemical migration.</p>
+<p><strong>Choose genuinely eco-friendly alternatives.</strong> Palm leaf plates, solid bamboo, or tempered glass are all better choices for the environment and your health.</p>"""
+            }
+        ],
+        "alternatives": [
+            {
+                "name": "Fallen Leaf Palm Leaf Plates (25-Pack)",
+                "type": "Palm Leaf",
+                "description": "Made from naturally fallen areca palm leaves \u2014 no binders, resins, or chemicals. Fully compostable and sturdy enough for hot food.",
+                "pros": "100% natural, compostable, handles hot food safely, no chemicals",
+                "cons": "Disposable (single-use), limited shapes, natural color variation",
+                "asin": "B0CHKP8XFG"
+            },
+            {
+                "name": "Corelle Vitrelle Glass Dinnerware Set",
+                "type": "Tempered Glass",
+                "description": "Triple-layer Vitrelle glass that\u2019s ultra-thin and break-resistant. Microwave, oven, and dishwasher safe with zero chemical leaching.",
+                "pros": "Lightweight, nearly unbreakable, completely non-reactive, lasts decades",
+                "cons": "Not compostable (but lasts so long it offsets environmental cost)",
+                "asin": "B0C1QNSVY8"
+            },
+            {
+                "name": "Bambu Veneerware Disposable Bamboo Plates",
+                "type": "Solid Bamboo Veneer",
+                "description": "Made from a single sheet of solid bamboo veneer \u2014 no powders, resins, or melamine. Certified organic and compostable.",
+                "pros": "Genuinely bamboo (no resin), compostable, attractive grain pattern",
+                "cons": "Single-use, more expensive than palm leaf, limited heat tolerance",
+                "asin": "B001BKRSW0"
+            },
+            {
+                "name": "Kangovou Stainless Steel Kids\u2019 Plate Set",
+                "type": "Stainless Steel",
+                "description": "18/8 stainless steel divided plates. Truly unbreakable, zero chemical risk, and dishwasher safe. Great for families wanting durability.",
+                "pros": "Indestructible, zero leaching, dishwasher safe, reusable for life",
+                "cons": "Not compostable, metallic appearance, not microwave safe",
+                "asin": "B00E6PUTQI"
+            }
+        ],
+        "sources": [
+            ("BfR &mdash; Release of melamine and formaldehyde from bamboo tableware (2020)", "https://www.bfr.bund.de/en/"),
+            ("European Commission RASFF &mdash; Notifications on bamboo-melamine products", "https://webgate.ec.europa.eu/rasff-window/"),
+            ("IARC &mdash; Formaldehyde Classification (Group 1)", "https://monographs.iarc.who.int/"),
+            ("Belgian Federal Agency for the Safety of the Food Chain &mdash; Bamboo ware ban", "https://www.favv-afsca.be/"),
+        ]
+    },
 ]
 
 
@@ -893,12 +1053,22 @@ def build_sources(sources):
     return "\n".join(items)
 
 
+def plain_text(html_str):
+    """Strip HTML entities for use in JSON-LD and meta tags."""
+    return unescape(html_str).replace('"', '&quot;')
+
+
 def generate_article(article):
     """Generate complete HTML for one article."""
     toc = build_toc(article["sections"])
     body = build_sections(article["sections"])
     alternatives = build_alternatives(article["alternatives"], AFFILIATE_TAG)
     sources = build_sources(article["sources"])
+    today = date.today().isoformat()
+    slug = article["slug"]
+    canonical = f"{SITE_URL}/kitchen/{slug}.html"
+    plain_title = plain_text(article["title"])
+    plain_desc = article["meta_description"]
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -906,7 +1076,43 @@ def generate_article(article):
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{article['title']} &mdash; {SITE_NAME}</title>
-  <meta name="description" content="{article['meta_description']}" />
+  <meta name="description" content="{plain_desc}" />
+  <link rel="canonical" href="{canonical}" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{plain_title}" />
+  <meta property="og:description" content="{plain_desc}" />
+  <meta property="og:url" content="{canonical}" />
+  <meta property="og:site_name" content="{SITE_NAME}" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="{plain_title}" />
+  <meta name="twitter:description" content="{plain_desc}" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{plain_title}",
+    "description": "{plain_desc}",
+    "url": "{canonical}",
+    "datePublished": "{today}",
+    "dateModified": "{today}",
+    "publisher": {{
+      "@type": "Organization",
+      "name": "{SITE_NAME}",
+      "url": "{SITE_URL}"
+    }},
+    "mainEntityOfPage": {{
+      "@type": "WebPage",
+      "@id": "{canonical}"
+    }}
+  }}
+  </script>
+
   <link rel="stylesheet" href="{CSS_PATH}" />
 </head>
 <body>
