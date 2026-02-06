@@ -6,11 +6,13 @@ and high-integrity Better Alternatives with Amazon affiliate links.
 """
 
 import os
+from datetime import date
 from pathlib import Path
 
 # ── Configuration ──────────────────────────────────────────────────────────
 
 SITE_NAME = "Everyday Materials"
+SITE_URL = "https://myeverydaymaterials.com"
 AFFILIATE_TAG = "everydaymater0a-20"
 CSS_PATH = "../css/style.css"
 OUTPUT_DIR = Path("kitchen")
@@ -1004,6 +1006,41 @@ def main():
 """
     (OUTPUT_DIR / "index.html").write_text(index_html, encoding="utf-8")
     print(f"  Generated: kitchen/index.html (category page)")
+
+    # ── Sitemap ──
+    update_sitemap(generated)
+
+
+def update_sitemap(generated_articles):
+    """Rebuild sitemap.xml with all known pages."""
+    today = date.today().isoformat()
+
+    # Static pages
+    urls = [
+        (f"{SITE_URL}/", "1.0"),
+        (f"{SITE_URL}/kitchen/", "0.8"),
+    ]
+    # Article pages
+    for slug, _title in generated_articles:
+        urls.append((f"{SITE_URL}/kitchen/{slug}.html", "0.9"))
+
+    entries = "\n".join(
+        f"  <url>\n"
+        f"    <loc>{loc}</loc>\n"
+        f"    <lastmod>{today}</lastmod>\n"
+        f"    <priority>{priority}</priority>\n"
+        f"  </url>"
+        for loc, priority in urls
+    )
+
+    sitemap = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f"{entries}\n"
+        "</urlset>\n"
+    )
+    Path("sitemap.xml").write_text(sitemap, encoding="utf-8")
+    print(f"  Updated: sitemap.xml ({len(urls)} URLs)")
 
 
 if __name__ == "__main__":
