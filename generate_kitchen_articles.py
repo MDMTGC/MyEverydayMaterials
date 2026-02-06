@@ -14,7 +14,7 @@ from html import unescape
 SITE_NAME = "Everyday Materials"
 SITE_URL = "https://myeverydaymaterials.com"
 AFFILIATE_TAG = "myeverydaymat-20"
-CSS_VERSION = "6"
+CSS_VERSION = "7"
 CSS_PATH = f"../css/style.css?v={CSS_VERSION}"
 OUTPUT_DIR = Path("kitchen")
 
@@ -1296,7 +1296,7 @@ def main():
   </div>
 
   <main>
-    <ul>
+    <ul class="category-list">
 {links}
     </ul>
   </main>
