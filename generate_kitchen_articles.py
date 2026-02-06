@@ -1040,7 +1040,7 @@ def build_alternatives(alternatives, tag):
         <p class="alt-desc">{alt['description']}</p>
         <p class="alt-pros">&plus; {alt['pros']}</p>
         <p class="alt-cons">&Delta; {alt['cons']}</p>
-        <a href="{link}" class="alt-link" rel="sponsored nofollow" target="_blank">View on Amazon</a>
+        <a href="{link}" class="alt-link" rel="sponsored nofollow" target="_blank">Check Current Price &rarr;</a>
       </div>""")
     return "\n".join(cards)
 
