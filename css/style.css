@@ -1,6 +1,7 @@
-/* 2026 Modern Minimalist Style */
+/* 2026 Modern Journal Style */
 :root {
   --primary: #2563eb;
+  --primary-dark: #1d4ed8;
   --text: #1f2937;
   --bg: #f9fafb;
   --card-bg: #ffffff;
@@ -8,8 +9,10 @@
   --amber-600: #d97706;
   --amber-700: #b45309;
   --green-50: #f0fdf4;
+  --green-600: #16a34a;
   --green-700: #15803d;
   --red-50: #fef2f2;
+  --red-600: #dc2626;
   --red-700: #b91c1c;
   --slate-50: #f8fafc;
   --slate-200: #e2e8f0;
@@ -33,6 +36,66 @@ body {
   line-height: 1.75;
 }
 
+a {
+  text-decoration: none;
+}
+
+/* ─── Homepage Hero ─── */
+
+.hero {
+  text-align: center;
+  padding: 3.5rem 1.5rem 3rem;
+  margin: -2rem -1.25rem 2.5rem;
+  background: linear-gradient(to bottom, var(--card-bg) 0%, var(--bg) 100%);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.hero .site-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: var(--primary);
+  border-radius: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero .site-mark svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--gray-900);
+  margin-bottom: 0.75rem;
+  line-height: 1.15;
+}
+
+.hero .tagline {
+  font-size: 1.125rem;
+  color: var(--gray-500);
+  max-width: 520px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+}
+
+.hero .trust-line {
+  font-size: 0.8125rem;
+  color: var(--gray-400);
+  letter-spacing: 0.02em;
+}
+
+.hero .trust-line span {
+  margin: 0 0.375rem;
+  color: var(--gray-200);
+}
+
+/* ─── Legacy header (article/category pages) ─── */
+
 header {
   text-align: center;
   padding: 4rem 0 2rem;
@@ -51,7 +114,223 @@ header p {
   color: var(--gray-500);
 }
 
-/* Card-style Links for Mobile */
+/* ─── Section Headings ─── */
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  margin-top: 2.5rem;
+}
+
+.section-label h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.section-label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--gray-200);
+}
+
+/* ─── Material Cards (Homepage) ─── */
+
+.material-grid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.material-card a {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: var(--card-bg);
+  padding: 1.25rem 1.25rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--gray-200);
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+.material-card a:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-color: var(--slate-200);
+}
+
+.material-card .card-icon {
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin-top: 0.125rem;
+}
+
+.material-card .card-icon.icon-avoid {
+  background: var(--red-50);
+}
+
+.material-card .card-icon.icon-caution {
+  background: var(--amber-50);
+}
+
+.material-card .card-icon.icon-safe {
+  background: var(--green-50);
+}
+
+.material-card .card-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.material-card .card-title {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.35;
+  margin-bottom: 0.25rem;
+}
+
+.material-card .card-desc {
+  font-size: 0.8125rem;
+  color: var(--gray-500);
+  line-height: 1.5;
+  margin-bottom: 0.375rem;
+}
+
+.material-card .card-verdict {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.125rem 0.5rem;
+  border-radius: 1rem;
+}
+
+.card-verdict.badge-avoid {
+  background: var(--red-50);
+  color: var(--red-700);
+}
+
+.card-verdict.badge-caution {
+  background: var(--amber-50);
+  color: var(--amber-700);
+}
+
+.card-verdict.badge-safe {
+  background: var(--green-50);
+  color: var(--green-700);
+}
+
+/* ─── Trust / Credibility Section ─── */
+
+.trust-section {
+  background: var(--card-bg);
+  border: 1px solid var(--gray-200);
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+  margin-top: 2.5rem;
+}
+
+.trust-section h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 1rem;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.trust-item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.trust-item .trust-icon {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  background: var(--slate-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.trust-item strong {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--gray-900);
+  margin-bottom: 0.125rem;
+}
+
+.trust-item p {
+  font-size: 0.8125rem;
+  color: var(--gray-500);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ─── Site Footer ─── */
+
+.site-footer {
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--gray-200);
+  text-align: center;
+}
+
+.site-footer nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.site-footer nav a {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--gray-500);
+}
+
+.site-footer nav a:hover {
+  color: var(--primary);
+}
+
+.site-footer .copyright {
+  font-size: 0.75rem;
+  color: var(--gray-400);
+}
+
+/* Legacy footer (keep for generated article pages) */
+footer {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--gray-400);
+}
+
+/* ─── Card-style Links (category pages, fallback) ─── */
+
 ul {
   list-style: none;
   padding: 0;
@@ -77,17 +356,7 @@ li a:hover {
   border-color: var(--primary);
 }
 
-footer {
-  margin-top: 4rem;
-  text-align: center;
-  font-size: 0.875rem;
-  color: var(--gray-400);
-}
-
-/* Navigation link */
-nav {
-  margin-bottom: 2rem;
-}
+/* ─── Navigation link ─── */
 
 nav a {
   font-size: 0.875rem;
@@ -98,6 +367,10 @@ nav a {
 
 nav a:hover {
   color: var(--primary);
+}
+
+.breadcrumb {
+  margin-bottom: 2rem;
 }
 
 /* ─── Article Page Layout ─── */
@@ -483,11 +756,82 @@ article p {
   color: var(--gray-500);
 }
 
+/* ─── Prose Pages (About, Privacy) ─── */
+
+.prose {
+  max-width: 65ch;
+}
+
+.prose h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--gray-900);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.025em;
+}
+
+.prose h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose p {
+  margin-bottom: 1rem;
+  color: var(--gray-600);
+}
+
+.prose a {
+  color: var(--primary);
+}
+
+.prose a:hover {
+  text-decoration: underline;
+}
+
+.prose ul {
+  display: block;
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose ul li {
+  padding: 0.25rem 0;
+  color: var(--gray-600);
+}
+
+.prose ul li a {
+  display: inline;
+  background: none;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  font-weight: normal;
+}
+
 /* ─── Responsive ─── */
+
+@media (min-width: 641px) {
+  .trust-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
 @media (max-width: 640px) {
   body {
     padding: 1rem;
+  }
+
+  .hero {
+    margin: -1rem -1rem 2rem;
+    padding: 2.5rem 1rem 2rem;
+  }
+
+  .hero h1 {
+    font-size: 1.75rem;
   }
 
   header {
@@ -525,5 +869,14 @@ article p {
 
   .key-facts li span.fact-label {
     min-width: auto;
+  }
+
+  .material-card a {
+    padding: 1rem;
+  }
+
+  .site-footer nav {
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 }
