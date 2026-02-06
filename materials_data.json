@@ -1,0 +1,88 @@
+Phase 1: High-Risk Kitchen & Dining (1–12)
+These topics have high "intent" as people are worried about what touches their food.
+
+PFAS (Forever Chemicals): Found in non-stick pans and microwave popcorn bags.
+
+Bisphenol A (BPA): Common in plastic storage containers and can liners.
+
+Phthalates: Used as plasticizers in food packaging and wraps.
+
+Melamine: Often used in "unbreakable" plates; concerns about leaching when heated.
+
+Aluminum Foil: Safe for most use, but trending searches for its link to acidic foods.
+
+Cast Iron (Seasoning): Is the burnt-on oil "safe" or carcinogenic?
+
+Silicone Bakeware: Questions on its stability at high heat (above 425°F).
+
+Copper (Unlined): Toxicity risks when used with acidic ingredients.
+
+Antimony: Found in some PET plastic beverage bottles.
+
+Teflon (PTFE): Specifically "off-gassing" risks when a pan is left on high heat.
+
+Plastic Takeout Containers: The safety of reheating "black plastic" specifically.
+
+Bamboo Fiber Plates: Often held together with formaldehyde-based glues.
+
+Phase 2: Household Surfaces & Fabrics (13–25)
+Focus on 2026 "Clean Home" trends and the "Microbiome-friendly" shift. 13. Formaldehyde: Found in pressed wood (MDF) furniture and some textiles. 14. Microplastics in Laundry: How synthetic fabrics shed during every wash. 15. Flame Retardants: Common in couch foam, mattresses, and children's pajamas. 16. Volatile Organic Compounds (VOCs): Emitted by new carpets and fresh paint. 17. Asbestos (Legacy): Still found in old floor tiles and ceiling textures. 18. Polyurethane Foam: The "off-gassing" smell of new memory foam mattresses. 19. Vinyl (PVC) Flooring: Concerns about phthalates in home play areas. 20. Azo Dyes: Found in fast-fashion clothing; potential to release carcinogens. 21. Mercury in Lightbulbs: Safety protocols for breaking a CFL bulb. 22. Radon Gas: The "material" naturally occurring in basements. 23. Lead in Ceramic Glazes: Risks in vintage or imported mugs and plates. 24. Fiberglass: The hidden danger when mattress covers are removed. 25. Talc: Ongoing 2026 litigation regarding asbestos contamination in powders.
+
+Phase 3: Personal Care & Chemicals (26–38)
+2026 shoppers are increasingly prioritizing "bio-based" and "non-toxic" ingredients. 26. Parabens: Preservatives in shampoos and lotions linked to hormone disruption. 27. Triclosan: Found in antibacterial soaps and even some yoga mats. 28. Fragrance/Parfum: The "mystery blend" of chemicals in air fresheners. 29. Methylene Glycol: A hidden form of formaldehyde in hair straighteners. 30. Sodium Lauryl Sulfate (SLS): The "foaming agent" that causes skin irritation. 31. Aluminum in Deodorant: The long-standing debate on its safety. 32. Phthalates in Cosmetics: How they help scents last longer on skin. 33. P-phenylenediamine (PPD): The toxic component in many hair dyes. 34. Titanium Dioxide: Concerns about its safety in "whitening" toothpaste. 35. Nail Polish (The Toxic Trio): Formaldehyde, Toluene, and Dibutyl Phthalate. 36. Aerosol Propellants: Respiratory risks from spray-on sunscreens and cleaners. 37. Dental Floss PFAS: Some brands use PFAS to make floss "glide" easier. 38. Microbeads: Now largely banned, but still found in older "exfoliating" products.
+
+Phase 4: Cleaning & Maintenance (39–50)
+New 2026 regulations are banning specific chemicals in home cleaners. 39. Chlorine Bleach: Fumes and the danger of mixing with ammonia. 40. Quaternary Ammonium (Quats): Found in disinfecting wipes; skin/lung irritants. 41. Ammonia: Common in window cleaners; dangerous for those with asthma. 42. Perchloroethylene: The solvent used in "Dry Cleaning" that lingers on clothes. 43. 2-Butoxyethanol: The "sweet smell" in many multipurpose cleaners. 44. Caustic Soda (Lye): Used in oven and drain cleaners; causes severe burns. 45. Phosphates: Now restricted in dishwasher detergents but still in some specialty cleaners. 46. Methylene Chloride: Found in paint strippers; highly toxic to the heart. 47. Trichloroethylene (TCE): Used in degreasers and spot cleaners; carcinogenic. 48. Antifreeze (Ethylene Glycol): Highly toxic to pets and children due to its sweet taste. 49. Pesticides (Home Use): Residue from bug sprays used inside the kitchen. 50. Air Fresheners: Phthalates and formaldehydes hidden in "Spring Scent" sprays.
+
+[
+  { "slug": "pfas-forever-chemicals", "material_name": "PFAS (Forever Chemicals)", "category": "kitchen", "verdict": "Persistent chemicals in non-stick coatings and packaging that do not break down in the body." },
+  { "slug": "bpa-plastic-containers", "material_name": "Bisphenol A (BPA)", "category": "kitchen", "verdict": "An industrial chemical in plastics that can leach into food, especially when heated." },
+  { "slug": "phthalates-food-wrap", "material_name": "Phthalates", "category": "kitchen", "verdict": "Plasticizers used to make wraps flexible; known endocrine disruptors." },
+  { "slug": "melamine-plates-safety", "material_name": "Melamine", "category": "kitchen", "verdict": "Safe for cold serving but leaches chemicals if microwaved or used with acidic foods." },
+  { "slug": "aluminum-foil-cooking", "material_name": "Aluminum Foil", "category": "metals", "verdict": "Effective for storage, but acidic foods can cause metal leaching during high-heat cooking." },
+  { "slug": "cast-iron-seasoning", "material_name": "Cast Iron (Seasoning)", "category": "metals", "verdict": "Polymerized oil surface that is safe and provides a natural non-stick barrier." },
+  { "slug": "silicone-bakeware-heat", "material_name": "Silicone Bakeware", "category": "kitchen", "verdict": "Inert and stable, though structural breakdown can occur above 425°F." },
+  { "slug": "unlined-copper-toxicity", "material_name": "Copper (Unlined)", "category": "metals", "verdict": "Reacts with acids to create copper salts which can cause digestive upset." },
+  { "slug": "antimony-pet-bottles", "material_name": "Antimony", "category": "plastics", "verdict": "Used in PET production; leaches into water if bottles are stored in high heat." },
+  { "slug": "teflon-ptfe-offgassing", "material_name": "Teflon (PTFE)", "category": "kitchen", "verdict": "Safe at standard temps but releases toxic fumes if overheated above 500°F." },
+  { "slug": "black-plastic-takeout", "material_name": "Black Plastic Containers", "category": "plastics", "verdict": "Often sourced from recycled electronics; may contain flame retardants." },
+  { "slug": "bamboo-fiber-plates", "material_name": "Bamboo Fiber Plates", "category": "kitchen", "verdict": "Often bound with formaldehyde-based resins that leach into hot liquids." },
+  { "slug": "formaldehyde-mdf-furniture", "material_name": "Formaldehyde (MDF)", "category": "home", "verdict": "A gas emitted from pressed wood furniture that can irritate the respiratory system." },
+  { "slug": "microplastics-synthetic-laundry", "material_name": "Microplastics (Laundry)", "category": "fabrics", "verdict": "Synthetic fibers shed millions of plastic fragments into the water supply per wash." },
+  { "slug": "flame-retardants-foam", "material_name": "Flame Retardants", "category": "home", "verdict": "Chemicals in couch and mattress foam linked to hormonal and neurological issues." },
+  { "slug": "vocs-paint-carpet", "material_name": "VOCs (Volatile Organic Compounds)", "category": "home", "verdict": "Gases emitted from new carpets and paints that impact indoor air quality." },
+  { "slug": "asbestos-legacy-materials", "material_name": "Asbestos (Legacy)", "category": "home", "verdict": "Dangerous fibers in older insulation and tiles; hazardous only if disturbed." },
+  { "slug": "polyurethane-foam-offgassing", "material_name": "Polyurethane Foam", "category": "home", "verdict": "The source of 'new mattress smell'; can cause headaches in sensitive individuals." },
+  { "slug": "pvc-vinyl-flooring", "material_name": "Vinyl (PVC) Flooring", "category": "home", "verdict": "Often contains phthalates that can off-gas into play areas over time." },
+  { "slug": "azo-dyes-clothing", "material_name": "Azo Dyes", "category": "fabrics", "verdict": "Synthetic dyes in fast fashion that can release carcinogenic amines on the skin." },
+  { "slug": "mercury-cfl-bulbs", "material_name": "Mercury (CFL Bulbs)", "category": "home", "verdict": "Contains small amounts of mercury vapor; requires specific cleanup if broken." },
+  { "slug": "radon-gas-basement", "material_name": "Radon Gas", "category": "home", "verdict": "A naturally occurring radioactive gas that can accumulate in basements." },
+  { "slug": "lead-ceramic-glaze", "material_name": "Lead in Ceramics", "category": "kitchen", "verdict": "Common in vintage or imported dishware; can leach into acidic drinks." },
+  { "slug": "fiberglass-mattress-safety", "material_name": "Fiberglass (Mattress)", "category": "home", "verdict": "Used as a fire barrier; dangerous skin and lung irritant if the cover is removed." },
+  { "slug": "talc-asbestos-risk", "material_name": "Talc", "category": "personal-care", "verdict": "Naturally occurring mineral often found near asbestos; requires strict purity testing." },
+  { "slug": "parabens-preservatives", "material_name": "Parabens", "category": "personal-care", "verdict": "Preservatives that mimic estrogen and are found in many shampoos." },
+  { "slug": "triclosan-antibacterial", "material_name": "Triclosan", "category": "personal-care", "verdict": "An antibacterial agent linked to thyroid issues and bacterial resistance." },
+  { "slug": "fragrance-parfum-chemicals", "material_name": "Fragrance (Parfum)", "category": "personal-care", "verdict": "A catch-all term for thousands of unlisted chemicals that may cause allergies." },
+  { "slug": "methylene-glycol-hair", "material_name": "Methylene Glycol", "category": "personal-care", "verdict": "A liquid form of formaldehyde used in chemical hair straightening treatments." },
+  { "slug": "sodium-lauryl-sulfate", "material_name": "Sodium Lauryl Sulfate (SLS)", "category": "personal-care", "verdict": "A foaming agent that can strip natural oils and cause skin irritation." },
+  { "slug": "aluminum-deodorant-safety", "material_name": "Aluminum (Deodorant)", "category": "personal-care", "verdict": "Used to block sweat pores; safety debates continue regarding long-term absorption." },
+  { "slug": "phthalates-cosmetics", "material_name": "Phthalates (Cosmetics)", "category": "personal-care", "verdict": "Used to make scents linger; often unlisted on ingredient labels." },
+  { "slug": "ppd-hair-dye", "material_name": "P-phenylenediamine (PPD)", "category": "personal-care", "verdict": "A common permanent hair dye ingredient that is a frequent contact allergen." },
+  { "slug": "titanium-dioxide-toothpaste", "material_name": "Titanium Dioxide", "category": "personal-care", "verdict": "A whitening pigment under scrutiny for safety when ingested in small amounts." },
+  { "slug": "nail-polish-toxic-trio", "material_name": "Nail Polish (Toxic Trio)", "category": "personal-care", "verdict": "Refers to Dibutyl Phthalate, Toluene, and Formaldehyde." },
+  { "slug": "aerosol-propellants", "material_name": "Aerosol Propellants", "category": "home", "verdict": "Fine mists that can be inhaled deep into the lungs during use." },
+  { "slug": "pfas-dental-floss", "material_name": "PFAS in Dental Floss", "category": "personal-care", "verdict": "Some gliding floss brands use PTFE (Teflon) coatings." },
+  { "slug": "microbeads-exfoliants", "material_name": "Microbeads", "category": "personal-care", "verdict": "Small plastic spheres that bypass water filters and pollute the ocean." },
+  { "slug": "chlorine-bleach-safety", "material_name": "Chlorine Bleach", "category": "cleaning", "verdict": "Strong oxidizer; dangerous if mixed with ammonia or vinegar." },
+  { "slug": "quats-disinfectants", "material_name": "Quaternary Ammonium (Quats)", "category": "cleaning", "verdict": "Potent disinfectants that can trigger asthma and skin dermatitis." },
+  { "slug": "ammonia-window-cleaner", "material_name": "Ammonia", "category": "cleaning", "verdict": "High pH cleaner that produces irritating fumes for the eyes and lungs." },
+  { "slug": "perchloroethylene-dry-cleaning", "material_name": "Perchloroethylene (PERC)", "category": "fabrics", "verdict": "The solvent used in dry cleaning; lingering vapors are toxic if inhaled." },
+  { "slug": "2-butoxyethanol-cleaners", "material_name": "2-Butoxyethanol", "category": "cleaning", "verdict": "A solvent in multipurpose cleaners that can cause sore throats when inhaled." },
+  { "slug": "caustic-soda-drain-cleaner", "material_name": "Caustic Soda (Lye)", "category": "cleaning", "verdict": "Extremely corrosive; can cause severe skin and eye burns instantly." },
+  { "slug": "phosphates-detergent", "material_name": "Phosphates", "category": "cleaning", "verdict": "Nutrient pollutants that cause algae blooms in waterways when washed away." },
+  { "slug": "methylene-chloride-stripper", "material_name": "Methylene Chloride", "category": "cleaning", "verdict": "Highly toxic chemical in paint strippers; linked to heart failure." },
+  { "slug": "trichloroethylene-degreaser", "material_name": "Trichloroethylene (TCE)", "category": "cleaning", "verdict": "Industrial solvent used in degreasers; a known human carcinogen." },
+  { "slug": "antifreeze-ethylene-glycol", "material_name": "Antifreeze", "category": "cleaning", "verdict": "Sweet-tasting but highly poisonous to humans and pets." },
+  { "slug": "pesticide-residue-home", "material_name": "Pesticides (Home Use)", "category": "cleaning", "verdict": "Residues from bug sprays that can linger on kitchen surfaces." },
+  { "slug": "air-freshener-phthalates", "material_name": "Air Fresheners", "category": "home", "verdict": "Often contain hidden phthalates and formaldehyde to maintain scent." }
+]

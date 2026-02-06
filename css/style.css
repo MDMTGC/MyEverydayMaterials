@@ -66,3 +66,25 @@ footer {
   font-size: 0.875rem;
   color: #9ca3af;
 }
+/* Navigation link */
+nav {
+  margin-bottom: 2rem;
+}
+
+nav a {
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* Article spacing */
+article h2 {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  color: #111827;
+}
+
+.subtitle {
+  font-style: italic;
+  opacity: 0.8;
+}
