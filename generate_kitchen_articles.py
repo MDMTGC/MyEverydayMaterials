@@ -5,10 +5,8 @@ Each article includes science-backed content, a 30-second verdict,
 and high-integrity Better Alternatives with Amazon affiliate links.
 """
 
-import json
 import os
 from pathlib import Path
-from textwrap import dedent
 
 # ── Configuration ──────────────────────────────────────────────────────────
 
