@@ -141,7 +141,7 @@ def build_alternatives(alternatives, tag):
 def build_sources(sources):
     """Build numbered source list."""
     items = []
-    for i, (title, url) in enumerate(sources, 1):
+    for title, url in sources:
         items.append(
             f'        <li>{title} &mdash; '
             f'<a href="{url}" target="_blank" rel="noopener">{url}</a></li>'
