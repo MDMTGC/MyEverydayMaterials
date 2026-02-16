@@ -190,6 +190,23 @@ def generate_article(article, all_articles, category_slug, related_map):
     related = build_related(article["slug"], all_articles, related_map)
     today = date.today().isoformat()
     slug = article["slug"]
+    # Map JSON 'status' to CSS classes expected by style.css
+    status_map = {
+        "AVOID": "verdict-avoid",
+        "CAUTION": "verdict-caution",
+        "SAFE": "verdict-safe"
+    }
+
+    # Normalize keys so the template always finds what it needs
+    if "verdict_level" not in article:
+        article.setdefault("verdict_level", status_map.get(article.get("status"), "verdict-neutral"))
+
+    if "verdict_summary" not in article:
+        article.setdefault("verdict_summary", article.get("verdict", ""))
+
+    if "verdict_rating" not in article:
+        # Create a default rating string if missing
+        article.setdefault("verdict_rating", f"{article.get('status', 'Unknown')} — {article.get('verdict', '')[:50]}...")
     canonical = f"{SITE_URL}/{category_slug}/{slug}.html"
     plain_title = plain_text(article["title"])
     plain_desc = article["meta_description"]
@@ -520,3 +537,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
