@@ -325,14 +325,7 @@ ARTICLES = [
                 "cons": "Not microwave-safe, hand-wash only, less durable than melamine",
                 "asin": "B07P63BFKJ"
             },
-            {
-                "name": "IKEA OFTAST Tempered Glass Plates",
-                "type": "Tempered Glass",
-                "description": "Budget-friendly tempered glass plates that handle everyday use. Microwave and dishwasher safe with no coatings or chemical treatments.",
-                "pros": "Very affordable, microwave safe, no chemicals",
-                "cons": "Heavier than melamine, can break if dropped on hard floors",
-                "asin": "B0DHDTBB23"
-            }
+           
         ],
         "sources": [
             ("FDA &mdash; Melamine in Tableware", "https://www.fda.gov/food/chemicals/melamine-tableware"),
