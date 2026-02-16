@@ -163,3 +163,191 @@ ARTICLES = [
         ],
     },
 ]
+"rubber-mulch": {
+        "title": "Tire Crumb & Heavy Metals in Rubber Mulch",
+        "verdict": "AVOID — Made from recycled tires, this material can leach lead, zinc, and PAHs into the soil and off-gas VOCs in high heat.",
+        "content": """
+<h3>The Origin of Rubber Mulch</h3>
+Rubber mulch is primarily produced from pulverized scrap tires. While marketed as an eco-friendly recycling solution, tires are complex chemical mixtures not originally intended for close human or environmental contact.
+
+<h3>The Health Risks (The Deep Dive)</h3>
+<ul>
+    <li><strong>Heavy Metal Leaching:</strong> Tires contain high concentrations of **Zinc** (used in vulcanization) and can contain trace amounts of **Lead** and **Cadmium**. These metals can leach into the soil, impacting plant health and soil-dwelling organisms.</li>
+    <li><strong>Polycyclic Aromatic Hydrocarbons (PAHs):</strong> PAHs are a group of chemicals naturally found in coal, crude oil, and gasoline—all used in tire manufacturing. Several PAHs are classified as known or probable human carcinogens.</li>
+    <li><strong>Heat and Off-gassing:</strong> On hot summer days, rubber mulch can reach temperatures 30-50°F higher than the ambient air, significantly accelerating the off-gassing of Volatile Organic Compounds (VOCs) that create a distinct "tire smell."</li>
+</ul>
+
+<h3>What You Can Do Right Now</h3>
+<ul>
+    <li><strong>Check the Application:</strong> Never use rubber mulch in vegetable gardens or near fruit trees where heavy metals could be taken up by the roots.</li>
+    <li><strong>Wear Gloves:</strong> If you must handle rubber mulch, wear thick gardening gloves to prevent the transfer of carbon black and chemical residues to your skin.</li>
+</ul>
+
+<h3>Better Alternatives</h3>
+Use **Cedar or Cypress Mulch**, which provides natural pest resistance and moisture retention without the chemical profile of industrial rubber.
+""",
+        "sources": [
+            {"title": "Chemicals in Recycled Tires", "org": "EPA", "url": "https://www.epa.gov/tire-tokens"},
+            {"title": "Rubber Mulch Safety", "org": "Healthy Building Network", "url": "https://healthybuilding.net"}
+        ]
+    },
+
+    "pvc-garden-hoses": {
+        "title": "Lead and Phthalates in PVC Garden Hoses",
+        "verdict": "CAUTION — Standard green PVC hoses often contain lead stabilizers and phthalates; never drink from a hose unless it is labeled 'Potable Water Safe'.",
+        "content": """
+<h3>Why Hoses Are Toxic</h3>
+Most garden hoses are made of Polyvinyl Chloride (PVC). To make the plastic flexible and UV-resistant, manufacturers add phthalates and often use lead as a stabilizer.
+
+<h3>The Health Risks (The Deep Dive)</h3>
+<ul>
+    <li><strong>Leaching into Water:</strong> When a hose sits in the sun, the water inside can reach high temperatures, causing chemicals to leach out of the PVC walls. Testing by the <i>Ecology Center</i> found lead levels in "hose water" that exceeded federal drinking water standards by up to 100 times.</li>
+    <li><strong>Organ Toxicity:</strong> Phthalates are known endocrine disruptors. When you water your garden with a PVC hose, these chemicals can settle on the surface of your vegetables.</li>
+</ul>
+
+<h3>What You Can Do Right Now</h3>
+<ul>
+    <li><strong>Flush the Line:</strong> Let the water run for at least 30-60 seconds before using it to water plants or fill a pet bowl. This flushes out the water that has been sitting in contact with the hose walls.</li>
+</ul>
+
+<h3>Better Alternatives</h3>
+Look for hoses made of **Polyurethane** or **Natural Rubber** that are explicitly labeled **"Drinking Water Safe"** and **"Lead-Free."**
+""",
+        "sources": [
+            {"title": "Garden Hose Study", "org": "Ecology Center / HealthyStuff.org", "url": "https://www.ecocenter.org/"},
+            {"title": "Lead in Consumer Products", "org": "CPSC", "url": "https://www.cpsc.gov"}
+        ]
+    },
+
+    "deet-repellents": {
+        "title": "DEET and Neurotoxicity in Insect Repellents",
+        "verdict": "CAUTION — Highly effective but a potent solvent that can cause skin irritation and, in rare cases, neurological symptoms if overused.",
+        "content": """
+<h3>The Gold Standard of Repellents</h3>
+DEET (N,N-Diethyl-meta-toluamide) has been used since 1946. It is a powerful solvent capable of melting certain plastics and synthetic fabrics.
+
+<h3>The Health Risks (The Deep Dive)</h3>
+<ul>
+    <li><strong>Dermal Absorption:</strong> Approximately 10-15% of topically applied DEET is absorbed through the skin into the bloodstream.</li>
+    <li><strong>Neurological Impact:</strong> While rare, high-dose exposure to DEET has been linked to seizures, tremors, and slurred speech, particularly in children. It is believed to inhibit acetylcholinesterase, an enzyme essential for proper nerve function.</li>
+</ul>
+
+<h3>What You Can Do Right Now</h3>
+<ul>
+    <li><strong>Concentration Matters:</strong> A 30% concentration of DEET is as effective as a 100% concentration, it just lasts for a shorter duration. Avoid 100% DEET products for casual use.</li>
+    <li><strong>Spray Clothes, Not Skin:</strong> Apply repellent to the outside of your clothing to reduce direct skin absorption.</li>
+</ul>
+""",
+        "sources": [
+            {"title": "DEET General Fact Sheet", "org": "NPIC", "url": "http://npic.orst.edu/factsheets/DEETgen.html"},
+            {"title": "Repellent Safety", "org": "CDC", "url": "https://www.cdc.gov"}
+        ]
+    }
+}
+"pool-disinfection-byproducts": {
+        "title": "Chloramines & Disinfection Byproducts (DBPs) in Pools",
+        "verdict": "CAUTION — Chlorine reacting with organic matter creates chloramines, which are potent respiratory irritants and possible carcinogens.",
+        "content": """
+<h3>The Chemistry of Pool Water</h3>
+Chlorine is a highly effective disinfectant, but its safety profile changes when it interacts with organic matter (sweat, skin cells, and nitrogenous waste) to form **Disinfection Byproducts (DBPs)**, specifically trihalomethanes (THMs) and chloramines.
+
+<h3>The Health Risks (The Deep Dive)</h3>
+<ul>
+    <li><strong>Respiratory Irritation:</strong> That "pool smell" is actually the scent of chloramines. Inhaling these at the water's surface is a primary trigger for "Lifeguard Lung" and can exacerbate exercise-induced asthma in children.</li>
+    <li><strong>Genotoxicity:</strong> Research indicates that long-term exposure to certain THMs through skin absorption and inhalation can lead to DNA damage and is associated with an increased risk of bladder cancer.</li>
+    <li><strong>Skin Barrier Disruption:</strong> High chlorine levels strip the skin’s natural lipids, leading to "swimmer's itch" and chronic xerosis (dry skin).</li>
+</ul>
+
+<h3>What You Can Do Right Now</h3>
+<ul>
+    <li><strong>The Pre-Swim Shower:</strong> A 60-second rinse before entering the pool removes the majority of organic precursors, significantly reducing the formation of toxic chloramines.</li>
+    <li><strong>Ventilation is Key:</strong> If using an indoor or covered pool, ensure high-capacity airflow at the water's surface to disperse gasses.</li>
+</ul>
+
+<h3>Better Alternatives</h3>
+Consider a **Saltwater Bromine** system or **UV/Ozone** sanitation, which allows for significantly lower baseline chlorine levels while maintaining superior pathogen control.
+""",
+        "sources": [
+            {"title": "Disinfection Byproducts in Swimming Pools", "org": "CDC", "url": "https://www.cdc.gov/healthywater/swimming/oceans-lakes-rivers/disinfection-byproducts.html"},
+            {"title": "Health Effects of Pool Chemicals", "org": "WHO", "url": "https://www.who.int/"}
+        ]
+    },
+
+    "small-engine-exhaust": {
+        "title": "Benzene & Particulates in Small Engine Exhaust",
+        "verdict": "CAUTION — Gas-powered lawn mowers and leaf blowers lack the catalytic converters of cars, emitting high levels of VOCs and fine particulate matter.",
+        "content": """
+<h3>Unregulated Emissions</h3>
+Small two-stroke engines (common in weed eaters and leaf blowers) are significantly dirtier than modern car engines. Operating a gas leaf blower for one hour can emit as much smog-forming pollution as driving a passenger car for 1,100 miles.
+
+<h3>The Health Risks (The Deep Dive)</h3>
+<ul>
+    <li><strong>Benzene Exposure:</strong> Small engine fuel and exhaust contain **Benzene**, a known human carcinogen. Inhalation during refueling or operation can lead to immediate dizziness and long-term hematological issues.</li>
+    <li><strong>Carbon Monoxide (CO):</strong> In partially enclosed spaces like carports or sheds, CO levels from a running mower can reach toxic levels in minutes, interfering with oxygen transport in the blood.</li>
+    <li><strong>Fine Particulate (PM2.5):</strong> The incomplete combustion in small engines creates microscopic soot that enters the bloodstream via the lungs, contributing to systemic inflammation.</li>
+</ul>
+
+<h3>What You Can Do Right Now</h3>
+<ul>
+    <li><strong>Upwind Operation:</strong> Always stand upwind of the engine exhaust while working.</li>
+    <li><strong>Ditch the Two-Stroke:</strong> If you use gas, switch to **Four-Stroke** engines which are marginally cleaner and do not require mixing oil and gas.</li>
+</ul>
+
+<h3>Better Alternatives</h3>
+Switch to **Electric/Battery-Powered** lawn tools. Modern lithium-ion tech provides comparable power with zero point-of-use emissions and 50% less noise pollution.
+""",
+        "sources": [
+            {"title": "Small Engine Emissions", "org": "EPA", "url": "https://www.epa.gov/moves/small-engine-and-nonroad-emissions"},
+            {"title": "Benzene Toxicity", "org": "ATSDR", "url": "https://www.atsdr.cdc.gov/"}
+        ]
+    },
+
+    "synthetic-fertilizer-nitrates": {
+        "title": "Nitrates & Synthetic Nutrients in Lawn Care",
+        "verdict": "CAUTION — Highly soluble synthetic fertilizers can leach into groundwater and contribute to toxic algal blooms; use slow-release organic options.",
+        "content": """
+<h3>The Nutrient Overload</h3>
+Synthetic fertilizers utilize fast-acting salts like **Ammonium Nitrate** and **Urea**. While they provide a "green spike," they are easily washed away by rain or over-irrigation.
+
+<h3>The Health Risks (The Deep Dive)</h3>
+<ul>
+    <li><strong>Groundwater Contamination:</strong> Excessive nitrate runoff enters the water table. High nitrate levels in drinking water are linked to "Blue Baby Syndrome" (methemoglobinemia) and may be associated with thyroid dysfunction.</li>
+    <li><strong>Soil Microbiome Depletion:</strong> High-salt synthetic fertilizers can kill beneficial soil microbes and earthworms, creating a "dependency loop" where the lawn requires more chemicals to stay green.</li>
+</ul>
+
+<h3>What You Can Do Right Now</h3>
+<ul>
+    <li><strong>Sweep the Hardscape:</strong> Always sweep fertilizer granules off sidewalks and driveways back onto the grass to prevent direct runoff into storm drains.</li>
+</ul>
+""",
+        "sources": [
+            {"title": "Nitrates in Drinking Water", "org": "EPA", "url": "https://www.epa.gov/ground-water-and-drinking-water"},
+            {"title": "Environmental Impact of Fertilizers", "org": "USDA", "url": "https://www.usda.gov/"}
+        ]
+    },
+
+    "charcoal-grill-pah": {
+        "title": "PAHs & Carbon Monoxide in Charcoal Grilling",
+        "verdict": "CAUTION — Fat dripping on hot coals creates Polycyclic Aromatic Hydrocarbons (PAHs) that coat food; avoid petroleum-based lighter fluids.",
+        "content": """
+<h3>Combustion Chemistry</h3>
+Charcoal grilling involves the incomplete combustion of organic matter, which releases a variety of hazardous gasses and particulates.
+
+<h3>The Health Risks (The Deep Dive)</h3>
+<ul>
+    <li><strong>PAH Formation:</strong> When meat fat drips onto glowing coals, it vaporizes into **Polycyclic Aromatic Hydrocarbons (PAHs)**. These rise with the smoke and deposit onto the surface of the food. Many PAHs are known mutagens and carcinogens.</li>
+    <li><strong>Lighter Fluid VOCs:</strong> Petroleum-based lighter fluids contain volatile hydrocarbons that can leave chemical residues on food and contribute to localized ozone formation.</li>
+</ul>
+
+<h3>What You Can Do Right Now</h3>
+<ul>
+    <li><strong>Use a Chimney Starter:</strong> Eliminate the need for lighter fluid entirely by using a charcoal chimney starter and paper.</li>
+    <li><strong>Leaner Cuts:</strong> Using leaner meats reduces the amount of fat dripping on the coals, significantly lowering PAH levels in your food.</li>
+</ul>
+""",
+        "sources": [
+            {"title": "Chemicals in Meat Cooked at High Temperatures", "org": "National Cancer Institute", "url": "https://www.cancer.gov/about-cancer/causes-prevention/risk/diet/cooked-meats-fact-sheet"},
+            {"title": "PAHs and Health", "org": "WHO", "url": "https://www.who.int/"}
+        ]
+    }
+}
