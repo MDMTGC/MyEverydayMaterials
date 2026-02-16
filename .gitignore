@@ -1,2 +1,6 @@
 # Original large image assets (optimized versions in /images/)
 Image Assets/
+
+# Python
+__pycache__/
+*.pyc
