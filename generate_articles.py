@@ -338,18 +338,21 @@ def generate_category_index(category_slug, generated_articles):
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
-  {{
+{json.dumps(
+  {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "{cat['name']}",
-    "description": "{plain_desc}",
-    "url": "{cat_url}",
-    "isPartOf": {{
+    "name": unescape(cat['name']),
+    "description": plain_desc,
+    "url": cat_url,
+    "isPartOf": {
       "@type": "WebSite",
-      "name": "{SITE_NAME}",
-      "url": "{SITE_URL}/"
-    }}
-  }}
+      "name": SITE_NAME,
+      "url": f"{SITE_URL}/"
+    }
+  },
+  indent=2
+)}
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
