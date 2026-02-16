@@ -538,3 +538,85 @@ def main():
 if __name__ == "__main__":
     main()
 
+    def generate_homepage(all_generated):
+    """Dynamically generates index.html with all categories and materials."""
+    try:
+        with open("materials_data.json", "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except FileNotFoundError:
+        print("  ERROR: materials_data.json not found. Cannot generate homepage.")
+        return
+
+    # Sort categories to keep Kitchen first, then alphabetical
+    sorted_cats = sorted(data.keys(), key=lambda x: (x != "kitchen", x))
+    
+    category_sections = []
+    for cat_slug in sorted_cats:
+        cat_info = CATEGORIES.get(cat_slug, {"name": cat_slug.title(), "tagline": ""})
+        materials = data[cat_slug]
+        
+        cards = []
+        for m in materials:
+            status_class = f"status-{m['status'].lower()}"
+            cards.append(f"""
+            <a href="{cat_slug}/{m['slug']}.html" class="material-card">
+                <div class="material-name">{m['title']}</div>
+                <div class="material-status {status_class}">{m['status']}</div>
+                <div class="material-verdict">{m['verdict']}</div>
+            </a>""")
+        
+        category_sections.append(f"""
+        <section class="category-group">
+            <h2 class="category-title">{cat_info['name']}</h2>
+            <p class="category-tagline">{cat_info['tagline']}</p>
+            <div class="materials-grid">
+                {"".join(cards)}
+            </div>
+        </section>""")
+
+    html_content = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{SITE_NAME} — Material Safety Registry</title>
+    <link rel="stylesheet" href="css/style.css?v={CSS_VERSION}">
+</head>
+<body>
+    <header class="main-header">
+        <h1>{SITE_NAME}</h1>
+        <p>The Science of Your Home, Simplified.</p>
+    </header>
+    <main class="registry-container">
+        {"".join(category_sections)}
+    </main>
+    <footer class="site-footer">
+        <nav><a href="about.html">About</a> | <a href="methodology.html">Methodology</a></nav>
+        <p>&copy; {date.today().year} {SITE_NAME}</p>
+    </footer>
+</body>
+</html>"""
+
+    Path("index.html").write_text(html_content, encoding="utf-8")
+    print("  Generated: index.html (Automated Homepage)")
+
+def main():
+    parser = argparse.ArgumentParser(description="Generate articles for MyEverydayMaterials")
+    parser.add_argument("--all", "-a", action="store_true", help="Generate all categories")
+    args = parser.parse_args()
+
+    categories = list(CATEGORIES.keys()) if args.all else []
+    all_generated = {}
+    
+    for cat_slug in categories:
+        generated = generate_category(cat_slug)
+        if generated:
+            all_generated[cat_slug] = generated
+    
+    if all_generated:
+        update_sitemap(all_generated)
+        generate_homepage(all_generated) # This is the magic line
+        print(f"\nSuccess: Site updated with {sum(len(v) for v in all_generated.values())} materials.")
+
+if __name__ == "__main__":
+    main()
+
