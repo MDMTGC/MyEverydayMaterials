@@ -1,142 +1,803 @@
-Phase 1: High-Risk Kitchen & Dining (1–12)
-These topics have high "intent" as people are worried about what touches their food.
-
-PFAS (Forever Chemicals): Found in non-stick pans and microwave popcorn bags.
-
-Bisphenol A (BPA): Common in plastic storage containers and can liners.
-
-Phthalates: Used as plasticizers in food packaging and wraps.
-
-Melamine: Often used in "unbreakable" plates; concerns about leaching when heated.
-
-Aluminum Foil: Safe for most use, but trending searches for its link to acidic foods.
-
-Cast Iron (Seasoning): Is the burnt-on oil "safe" or carcinogenic?
-
-Silicone Bakeware: Questions on its stability at high heat (above 425°F).
-
-Copper (Unlined): Toxicity risks when used with acidic ingredients.
-
-Antimony: Found in some PET plastic beverage bottles.
-
-Teflon (PTFE): Specifically "off-gassing" risks when a pan is left on high heat.
-
-Plastic Takeout Containers: The safety of reheating "black plastic" specifically.
-
-Bamboo Fiber Plates: Often held together with formaldehyde-based glues.
-
-Phase 2: Household Surfaces & Fabrics (13–25)
-Focus on 2026 "Clean Home" trends and the "Microbiome-friendly" shift. 13. Formaldehyde: Found in pressed wood (MDF) furniture and some textiles. 14. Microplastics in Laundry: How synthetic fabrics shed during every wash. 15. Flame Retardants: Common in couch foam, mattresses, and children's pajamas. 16. Volatile Organic Compounds (VOCs): Emitted by new carpets and fresh paint. 17. Asbestos (Legacy): Still found in old floor tiles and ceiling textures. 18. Polyurethane Foam: The "off-gassing" smell of new memory foam mattresses. 19. Vinyl (PVC) Flooring: Concerns about phthalates in home play areas. 20. Azo Dyes: Found in fast-fashion clothing; potential to release carcinogens. 21. Mercury in Lightbulbs: Safety protocols for breaking a CFL bulb. 22. Radon Gas: The "material" naturally occurring in basements. 23. Lead in Ceramic Glazes: Risks in vintage or imported mugs and plates. 24. Fiberglass: The hidden danger when mattress covers are removed. 25. Talc: Ongoing 2026 litigation regarding asbestos contamination in powders.
-
-Phase 3: Personal Care & Chemicals (26–38)
-2026 shoppers are increasingly prioritizing "bio-based" and "non-toxic" ingredients. 26. Parabens: Preservatives in shampoos and lotions linked to hormone disruption. 27. Triclosan: Found in antibacterial soaps and even some yoga mats. 28. Fragrance/Parfum: The "mystery blend" of chemicals in air fresheners. 29. Methylene Glycol: A hidden form of formaldehyde in hair straighteners. 30. Sodium Lauryl Sulfate (SLS): The "foaming agent" that causes skin irritation. 31. Aluminum in Deodorant: The long-standing debate on its safety. 32. Phthalates in Cosmetics: How they help scents last longer on skin. 33. P-phenylenediamine (PPD): The toxic component in many hair dyes. 34. Titanium Dioxide: Concerns about its safety in "whitening" toothpaste. 35. Nail Polish (The Toxic Trio): Formaldehyde, Toluene, and Dibutyl Phthalate. 36. Aerosol Propellants: Respiratory risks from spray-on sunscreens and cleaners. 37. Dental Floss PFAS: Some brands use PFAS to make floss "glide" easier. 38. Microbeads: Now largely banned, but still found in older "exfoliating" products.
-
-Phase 4: Cleaning & Maintenance (39–50)
-New 2026 regulations are banning specific chemicals in home cleaners. 39. Chlorine Bleach: Fumes and the danger of mixing with ammonia. 40. Quaternary Ammonium (Quats): Found in disinfecting wipes; skin/lung irritants. 41. Ammonia: Common in window cleaners; dangerous for those with asthma. 42. Perchloroethylene: The solvent used in "Dry Cleaning" that lingers on clothes. 43. 2-Butoxyethanol: The "sweet smell" in many multipurpose cleaners. 44. Caustic Soda (Lye): Used in oven and drain cleaners; causes severe burns. 45. Phosphates: Now restricted in dishwasher detergents but still in some specialty cleaners. 46. Methylene Chloride: Found in paint strippers; highly toxic to the heart. 47. Trichloroethylene (TCE): Used in degreasers and spot cleaners; carcinogenic. 48. Antifreeze (Ethylene Glycol): Highly toxic to pets and children due to its sweet taste. 49. Pesticides (Home Use): Residue from bug sprays used inside the kitchen. 50. Air Fresheners: Phthalates and formaldehydes hidden in "Spring Scent" sprays.
-
 [
-  { "slug": "pfas-forever-chemicals", "material_name": "PFAS (Forever Chemicals)", "category": "kitchen", "verdict": "Persistent chemicals in non-stick coatings and packaging that do not break down in the body." },
-  { "slug": "bpa-plastic-containers", "material_name": "Bisphenol A (BPA)", "category": "kitchen", "verdict": "An industrial chemical in plastics that can leach into food, especially when heated." },
-  { "slug": "phthalates-food-wrap", "material_name": "Phthalates", "category": "kitchen", "verdict": "Plasticizers used to make wraps flexible; known endocrine disruptors." },
-  { "slug": "melamine-plates-safety", "material_name": "Melamine", "category": "kitchen", "verdict": "Safe for cold serving but leaches chemicals if microwaved or used with acidic foods." },
-  { "slug": "aluminum-foil-cooking", "material_name": "Aluminum Foil", "category": "metals", "verdict": "Effective for storage, but acidic foods can cause metal leaching during high-heat cooking." },
-  { "slug": "cast-iron-seasoning", "material_name": "Cast Iron (Seasoning)", "category": "metals", "verdict": "Polymerized oil surface that is safe and provides a natural non-stick barrier." },
-  { "slug": "silicone-bakeware-heat", "material_name": "Silicone Bakeware", "category": "kitchen", "verdict": "Inert and stable, though structural breakdown can occur above 425°F." },
-  { "slug": "unlined-copper-toxicity", "material_name": "Copper (Unlined)", "category": "metals", "verdict": "Reacts with acids to create copper salts which can cause digestive upset." },
-  { "slug": "antimony-pet-bottles", "material_name": "Antimony", "category": "plastics", "verdict": "Used in PET production; leaches into water if bottles are stored in high heat." },
-  { "slug": "teflon-ptfe-offgassing", "material_name": "Teflon (PTFE)", "category": "kitchen", "verdict": "Safe at standard temps but releases toxic fumes if overheated above 500°F." },
-  { "slug": "black-plastic-takeout", "material_name": "Black Plastic Containers", "category": "plastics", "verdict": "Often sourced from recycled electronics; may contain flame retardants." },
-  { "slug": "bamboo-fiber-plates", "material_name": "Bamboo Fiber Plates", "category": "kitchen", "verdict": "Often bound with formaldehyde-based resins that leach into hot liquids." },
-  { "slug": "formaldehyde-mdf-furniture", "material_name": "Formaldehyde (MDF)", "category": "home", "verdict": "A gas emitted from pressed wood furniture that can irritate the respiratory system." },
-  { "slug": "microplastics-synthetic-laundry", "material_name": "Microplastics (Laundry)", "category": "fabrics", "verdict": "Synthetic fibers shed millions of plastic fragments into the water supply per wash." },
-  { "slug": "flame-retardants-foam", "material_name": "Flame Retardants", "category": "home", "verdict": "Chemicals in couch and mattress foam linked to hormonal and neurological issues." },
-  { "slug": "vocs-paint-carpet", "material_name": "VOCs (Volatile Organic Compounds)", "category": "home", "verdict": "Gases emitted from new carpets and paints that impact indoor air quality." },
-  { "slug": "asbestos-legacy-materials", "material_name": "Asbestos (Legacy)", "category": "home", "verdict": "Dangerous fibers in older insulation and tiles; hazardous only if disturbed." },
-  { "slug": "polyurethane-foam-offgassing", "material_name": "Polyurethane Foam", "category": "home", "verdict": "The source of 'new mattress smell'; can cause headaches in sensitive individuals." },
-  { "slug": "pvc-vinyl-flooring", "material_name": "Vinyl (PVC) Flooring", "category": "home", "verdict": "Often contains phthalates that can off-gas into play areas over time." },
-  { "slug": "azo-dyes-clothing", "material_name": "Azo Dyes", "category": "fabrics", "verdict": "Synthetic dyes in fast fashion that can release carcinogenic amines on the skin." },
-  { "slug": "mercury-cfl-bulbs", "material_name": "Mercury (CFL Bulbs)", "category": "home", "verdict": "Contains small amounts of mercury vapor; requires specific cleanup if broken." },
-  { "slug": "radon-gas-basement", "material_name": "Radon Gas", "category": "home", "verdict": "A naturally occurring radioactive gas that can accumulate in basements." },
-  { "slug": "lead-ceramic-glaze", "material_name": "Lead in Ceramics", "category": "kitchen", "verdict": "Common in vintage or imported dishware; can leach into acidic drinks." },
-  { "slug": "fiberglass-mattress-safety", "material_name": "Fiberglass (Mattress)", "category": "home", "verdict": "Used as a fire barrier; dangerous skin and lung irritant if the cover is removed." },
-  { "slug": "talc-asbestos-risk", "material_name": "Talc", "category": "personal-care", "verdict": "Naturally occurring mineral often found near asbestos; requires strict purity testing." },
-  { "slug": "parabens-preservatives", "material_name": "Parabens", "category": "personal-care", "verdict": "Preservatives that mimic estrogen and are found in many shampoos." },
-  { "slug": "triclosan-antibacterial", "material_name": "Triclosan", "category": "personal-care", "verdict": "An antibacterial agent linked to thyroid issues and bacterial resistance." },
-  { "slug": "fragrance-parfum-chemicals", "material_name": "Fragrance (Parfum)", "category": "personal-care", "verdict": "A catch-all term for thousands of unlisted chemicals that may cause allergies." },
-  { "slug": "methylene-glycol-hair", "material_name": "Methylene Glycol", "category": "personal-care", "verdict": "A liquid form of formaldehyde used in chemical hair straightening treatments." },
-  { "slug": "sodium-lauryl-sulfate", "material_name": "Sodium Lauryl Sulfate (SLS)", "category": "personal-care", "verdict": "A foaming agent that can strip natural oils and cause skin irritation." },
-  { "slug": "aluminum-deodorant-safety", "material_name": "Aluminum (Deodorant)", "category": "personal-care", "verdict": "Used to block sweat pores; safety debates continue regarding long-term absorption." },
-  { "slug": "phthalates-cosmetics", "material_name": "Phthalates (Cosmetics)", "category": "personal-care", "verdict": "Used to make scents linger; often unlisted on ingredient labels." },
-  { "slug": "ppd-hair-dye", "material_name": "P-phenylenediamine (PPD)", "category": "personal-care", "verdict": "A common permanent hair dye ingredient that is a frequent contact allergen." },
-  { "slug": "titanium-dioxide-toothpaste", "material_name": "Titanium Dioxide", "category": "personal-care", "verdict": "A whitening pigment under scrutiny for safety when ingested in small amounts." },
-  { "slug": "nail-polish-toxic-trio", "material_name": "Nail Polish (Toxic Trio)", "category": "personal-care", "verdict": "Refers to Dibutyl Phthalate, Toluene, and Formaldehyde." },
-  { "slug": "aerosol-propellants", "material_name": "Aerosol Propellants", "category": "home", "verdict": "Fine mists that can be inhaled deep into the lungs during use." },
-  { "slug": "pfas-dental-floss", "material_name": "PFAS in Dental Floss", "category": "personal-care", "verdict": "Some gliding floss brands use PTFE (Teflon) coatings." },
-  { "slug": "microbeads-exfoliants", "material_name": "Microbeads", "category": "personal-care", "verdict": "Small plastic spheres that bypass water filters and pollute the ocean." },
-  { "slug": "chlorine-bleach-safety", "material_name": "Chlorine Bleach", "category": "cleaning", "verdict": "Strong oxidizer; dangerous if mixed with ammonia or vinegar." },
-  { "slug": "quats-disinfectants", "material_name": "Quaternary Ammonium (Quats)", "category": "cleaning", "verdict": "Potent disinfectants that can trigger asthma and skin dermatitis." },
-  { "slug": "ammonia-window-cleaner", "material_name": "Ammonia", "category": "cleaning", "verdict": "High pH cleaner that produces irritating fumes for the eyes and lungs." },
-  { "slug": "perchloroethylene-dry-cleaning", "material_name": "Perchloroethylene (PERC)", "category": "fabrics", "verdict": "The solvent used in dry cleaning; lingering vapors are toxic if inhaled." },
-  { "slug": "2-butoxyethanol-cleaners", "material_name": "2-Butoxyethanol", "category": "cleaning", "verdict": "A solvent in multipurpose cleaners that can cause sore throats when inhaled." },
-  { "slug": "caustic-soda-drain-cleaner", "material_name": "Caustic Soda (Lye)", "category": "cleaning", "verdict": "Extremely corrosive; can cause severe skin and eye burns instantly." },
-  { "slug": "phosphates-detergent", "material_name": "Phosphates", "category": "cleaning", "verdict": "Nutrient pollutants that cause algae blooms in waterways when washed away." },
-  { "slug": "methylene-chloride-stripper", "material_name": "Methylene Chloride", "category": "cleaning", "verdict": "Highly toxic chemical in paint strippers; linked to heart failure." },
-  { "slug": "trichloroethylene-degreaser", "material_name": "Trichloroethylene (TCE)", "category": "cleaning", "verdict": "Industrial solvent used in degreasers; a known human carcinogen." },
-  { "slug": "antifreeze-ethylene-glycol", "material_name": "Antifreeze", "category": "cleaning", "verdict": "Sweet-tasting but highly poisonous to humans and pets." },
-  { "slug": "pesticide-residue-home", "material_name": "Pesticides (Home Use)", "category": "cleaning", "verdict": "Residues from bug sprays that can linger on kitchen surfaces." },
-  { "slug": "air-freshener-phthalates", "material_name": "Air Fresheners", "category": "home", "verdict": "Often contain hidden phthalates and formaldehyde to maintain scent." }
-]
+  {
+    "slug": "aluminum-foil-cooking",
+    "material_name": "Aluminum Foil",
+    "category": "kitchen",
+    "verdict": "Effective for storage, but acidic foods can cause metal leaching during high-heat cooking.",
+    "status": "SAFE",
+    "alternative": "Parchment Paper (acidic foods)"
+  },
+  {
+    "slug": "antimony-pet-bottles",
+    "material_name": "Antimony",
+    "category": "kitchen",
+    "verdict": "Used in PET production; leaches into water if bottles are stored in high heat.",
+    "status": "CAUTION",
+    "alternative": "Stainless Steel Bottle"
+  },
+  {
+    "slug": "bamboo-fiber-plates",
+    "material_name": "Bamboo Fiber Plates",
+    "category": "kitchen",
+    "verdict": "Often bound with formaldehyde-based resins that leach into hot liquids.",
+    "status": "CAUTION",
+    "alternative": "Real Bamboo / Ceramic"
+  },
+  {
+    "slug": "black-plastic-takeout",
+    "material_name": "Black Plastic Containers",
+    "category": "kitchen",
+    "verdict": "Often sourced from recycled electronics; may contain flame retardants.",
+    "status": "CAUTION",
+    "alternative": "Clear / Glass Containers"
+  },
+  {
+    "slug": "bpa-plastic-containers",
+    "material_name": "Bisphenol A (BPA)",
+    "category": "kitchen",
+    "verdict": "An industrial chemical in plastics that can leach into food, especially when heated.",
+    "status": "CAUTION",
+    "alternative": "Glass / Stainless Steel"
+  },
+  {
+    "slug": "cast-iron-seasoning",
+    "material_name": "Cast Iron (Seasoning)",
+    "category": "kitchen",
+    "verdict": "Polymerized oil surface that is safe and provides a natural non-stick barrier.",
+    "status": "SAFE",
+    "alternative": "N/A — already ideal"
+  },
+  {
+    "slug": "lead-ceramic-glaze",
+    "material_name": "Lead in Ceramics",
+    "category": "kitchen",
+    "verdict": "Common in vintage or imported dishware; can leach into acidic drinks.",
+    "status": "AVOID",
+    "alternative": "Lead-Free Certified Ceramics"
+  },
+  {
+    "slug": "melamine-plates-safety",
+    "material_name": "Melamine",
+    "category": "kitchen",
+    "verdict": "Safe for cold serving but leaches chemicals if microwaved or used with acidic foods.",
+    "status": "CAUTION",
+    "alternative": "Ceramic / Bamboo"
+  },
+  {
+    "slug": "pfas-forever-chemicals",
+    "material_name": "PFAS (Forever Chemicals)",
+    "category": "kitchen",
+    "verdict": "Persistent chemicals in non-stick coatings and packaging that do not break down in the body.",
+    "status": "AVOID",
+    "alternative": "Cast Iron / Ceramic"
+  },
+  {
+    "slug": "phthalates-food-wrap",
+    "material_name": "Phthalates",
+    "category": "kitchen",
+    "verdict": "Plasticizers used to make wraps flexible; known endocrine disruptors.",
+    "status": "CAUTION",
+    "alternative": "Beeswax Wrap / Silicone Lids"
+  },
+  {
+    "slug": "silicone-bakeware-heat",
+    "material_name": "Silicone Bakeware",
+    "category": "kitchen",
+    "verdict": "Inert and stable, though structural breakdown can occur above 425°F.",
+    "status": "SAFE",
+    "alternative": "Glass Bakeware"
+  },
+  {
+    "slug": "teflon-ptfe-offgassing",
+    "material_name": "Teflon (PTFE)",
+    "category": "kitchen",
+    "verdict": "Safe at standard temps but releases toxic fumes if overheated above 500°F.",
+    "status": "CAUTION",
+    "alternative": "Cast Iron / Ceramic"
+  },
+  {
+    "slug": "unlined-copper-toxicity",
+    "material_name": "Copper (Unlined)",
+    "category": "kitchen",
+    "verdict": "Reacts with acids to create copper salts which can cause digestive upset.",
+    "status": "AVOID",
+    "alternative": "Stainless-Lined Copper"
+  },
+  {
+    "slug": "baby-wipe-preservatives",
+    "material_name": "Baby Wipe Preservatives",
+    "category": "nursery",
+    "verdict": "May contain harsh antimicrobial agents like MI or phenoxyethanol that irritate skin.",
+    "status": "CAUTION",
+    "alternative": "99% Water Wipes"
+  },
+  {
+    "slug": "bamboo-resin-toddler-cups",
+    "material_name": "Bamboo Resin Cups",
+    "category": "nursery",
+    "verdict": "Composite material glued with melamine-formaldehyde resins that break down over time.",
+    "status": "CAUTION",
+    "alternative": "Stainless Steel"
+  },
+  {
+    "slug": "car-seat-flame-retardants",
+    "material_name": "Car Seat Flame Retardants",
+    "category": "nursery",
+    "verdict": "Chemical additives linked to developmental issues; present in many standard foams.",
+    "status": "AVOID",
+    "alternative": "Naturally Flame-Resistant Wool"
+  },
+  {
+    "slug": "fiberglass-mattress-covers",
+    "material_name": "Fiberglass Mattress Covers",
+    "category": "nursery",
+    "verdict": "Used as a cheap fire barrier; releases severe respiratory irritants if unzipped.",
+    "status": "AVOID",
+    "alternative": "Wool Flame Barriers"
+  },
+  {
+    "slug": "medical-grade-silicone-pacifiers",
+    "material_name": "Silicone Pacifiers",
+    "category": "nursery",
+    "verdict": "Highly stable and inert material that does not leach endocrine disruptors.",
+    "status": "SAFE",
+    "alternative": "N/A — already ideal"
+  },
+  {
+    "slug": "melamine-baby-plates",
+    "material_name": "Melamine Baby Plates",
+    "category": "nursery",
+    "verdict": "Often disguised as bamboo; leaches formaldehyde if microwaved.",
+    "status": "AVOID",
+    "alternative": "Food-Grade Silicone"
+  },
+  {
+    "slug": "polypropylene-baby-bottles",
+    "material_name": "Polypropylene Baby Bottles",
+    "category": "nursery",
+    "verdict": "Sheds millions of microplastics into formula when exposed to heat.",
+    "status": "AVOID",
+    "alternative": "Borosilicate Glass or Silicone"
+  },
+  {
+    "slug": "polyurethane-crib-mattress",
+    "material_name": "Polyurethane Crib Mattresses",
+    "category": "nursery",
+    "verdict": "Emits VOCs in the infant's immediate breathing zone during sleep.",
+    "status": "AVOID",
+    "alternative": "Organic Cotton/Latex"
+  },
+  {
+    "slug": "pvc-play-mats",
+    "material_name": "PVC Play Mats",
+    "category": "nursery",
+    "verdict": "Off-gasses phthalates and heavy metals directly into floor-level play areas.",
+    "status": "AVOID",
+    "alternative": "EVA Foam or Cotton"
+  },
+  {
+    "slug": "talc-baby-powder",
+    "material_name": "Talc Baby Powder",
+    "category": "nursery",
+    "verdict": "Mined near asbestos deposits; carries a persistent risk of cross-contamination.",
+    "status": "AVOID",
+    "alternative": "Cornstarch-Based Powders"
+  },
+  {
+    "slug": "chemical-flea-collars",
+    "material_name": "Chemical Flea Collars",
+    "category": "pet-care",
+    "verdict": "Continuous release of neurotoxic pesticides that transfer to human skin and pet bedding.",
+    "status": "AVOID",
+    "alternative": "Oral Preventatives"
+  },
+  {
+    "slug": "essential-oil-diffusers",
+    "material_name": "Essential Oil Diffusers",
+    "category": "pet-care",
+    "verdict": "Aerosolizes compounds (like eucalyptus and citrus) highly toxic to feline livers.",
+    "status": "AVOID",
+    "alternative": "Simmer Pots (Water and Spices)"
+  },
+  {
+    "slug": "hidden-fragrance-pet-wipes",
+    "material_name": "Scented Pet Wipes",
+    "category": "pet-care",
+    "verdict": "Contains unlisted masking chemicals that pets ingest during subsequent grooming.",
+    "status": "AVOID",
+    "alternative": "Unscented Water Wipes"
+  },
+  {
+    "slug": "melamine-pet-bowls",
+    "material_name": "Melamine Pet Bowls",
+    "category": "pet-care",
+    "verdict": "Can leach trace chemicals if used for hot foods or placed in the dishwasher.",
+    "status": "CAUTION",
+    "alternative": "Borosilicate Glass or Ceramic"
+  },
+  {
+    "slug": "plastic-water-fountains",
+    "material_name": "Plastic Pet Fountains",
+    "category": "pet-care",
+    "verdict": "Prone to micro-scratches that harbor bacteria, frequently causing feline acne.",
+    "status": "CAUTION",
+    "alternative": "Stainless Steel or Ceramic"
+  },
+  {
+    "slug": "polyurethane-pet-beds",
+    "material_name": "Polyurethane Pet Beds",
+    "category": "pet-care",
+    "verdict": "Often treated with flame retardants that accumulate in house dust and pet fur.",
+    "status": "AVOID",
+    "alternative": "Organic Cotton or Wool"
+  },
+  {
+    "slug": "pvc-vinyl-pet-toys",
+    "material_name": "PVC Pet Toys",
+    "category": "pet-care",
+    "verdict": "Leaches phthalates when chewed; plasticizers are easily ingested during play.",
+    "status": "AVOID",
+    "alternative": "Natural Rubber or Hemp"
+  },
+  {
+    "slug": "silica-clay-litter",
+    "material_name": "Silica Clay Litter",
+    "category": "pet-care",
+    "verdict": "Generates fine crystalline silica dust linked to feline respiratory issues and asthma.",
+    "status": "AVOID",
+    "alternative": "Pine or Paper Pellets"
+  },
+  {
+    "slug": "synthetic-carpet-cat-trees",
+    "material_name": "Carpeted Cat Trees",
+    "category": "pet-care",
+    "verdict": "Glues and synthetic carpet fibers emit VOCs into enclosed spaces where pets sleep.",
+    "status": "CAUTION",
+    "alternative": "Untreated Wood and Sisal"
+  },
+  {
+    "slug": "aerosol-propellants",
+    "material_name": "Aerosol Propellants",
+    "category": "household",
+    "verdict": "Fine mists that can be inhaled deep into the lungs during use.",
+    "status": "CAUTION",
+    "alternative": "Pump Spray or Roll-On"
+  },
+  {
+    "slug": "air-freshener-phthalates",
+    "material_name": "Air Fresheners",
+    "category": "household",
+    "verdict": "Often contain hidden phthalates and formaldehyde to maintain scent.",
+    "status": "AVOID",
+    "alternative": "Open Windows / Simmer Pots"
+  },
+  {
+    "slug": "asbestos-legacy-materials",
+    "material_name": "Asbestos (Legacy)",
+    "category": "household",
+    "verdict": "Dangerous fibers in older insulation and tiles; hazardous only if disturbed.",
+    "status": "AVOID",
+    "alternative": "Professional Abatement"
+  },
+  {
+    "slug": "azo-dyes-clothing",
+    "material_name": "Azo Dyes",
+    "category": "household",
+    "verdict": "Synthetic dyes in fast fashion that can release carcinogenic amines on the skin.",
+    "status": "CAUTION",
+    "alternative": "OEKO-TEX Certified Fabrics"
+  },
+  {
+    "slug": "fiberglass-mattress-safety",
+    "material_name": "Fiberglass (Mattress)",
+    "category": "household",
+    "verdict": "Used as a fire barrier; dangerous skin and lung irritant if the cover is removed.",
+    "status": "AVOID",
+    "alternative": "Wool Fire Barrier Mattress"
+  },
+  {
+    "slug": "flame-retardants-foam",
+    "material_name": "Flame Retardants",
+    "category": "household",
+    "verdict": "Chemicals in couch and mattress foam linked to hormonal and neurological issues.",
+    "status": "AVOID",
+    "alternative": "Organic Latex or Wool"
+  },
+  {
+    "slug": "formaldehyde-mdf-furniture",
+    "material_name": "Formaldehyde (MDF)",
+    "category": "household",
+    "verdict": "A gas emitted from pressed wood furniture that can irritate the respiratory system.",
+    "status": "AVOID",
+    "alternative": "Solid Wood or CARB-Certified MDF"
+  },
+  {
+    "slug": "mercury-cfl-bulbs",
+    "material_name": "Mercury (CFL Bulbs)",
+    "category": "household",
+    "verdict": "Contains small amounts of mercury vapor; requires specific cleanup if broken.",
+    "status": "CAUTION",
+    "alternative": "LED Bulbs"
+  },
+  {
+    "slug": "microplastics-synthetic-laundry",
+    "material_name": "Microplastics (Laundry)",
+    "category": "household",
+    "verdict": "Synthetic fibers shed millions of plastic fragments into the water supply per wash.",
+    "status": "CAUTION",
+    "alternative": "Guppyfriend Wash Bag"
+  },
+  {
+    "slug": "perchloroethylene-dry-cleaning",
+    "material_name": "Perchloroethylene (PERC)",
+    "category": "household",
+    "verdict": "The solvent used in dry cleaning; lingering vapors are toxic if inhaled.",
+    "status": "AVOID",
+    "alternative": "Wet Cleaning / CO2 Cleaning"
+  },
+  {
+    "slug": "polyurethane-foam-offgassing",
+    "material_name": "Polyurethane Foam",
+    "category": "household",
+    "verdict": "The source of 'new mattress smell'; can cause headaches in sensitive individuals.",
+    "status": "CAUTION",
+    "alternative": "Natural Latex Mattress"
+  },
+  {
+    "slug": "pvc-vinyl-flooring",
+    "material_name": "Vinyl (PVC) Flooring",
+    "category": "household",
+    "verdict": "Often contains phthalates that can off-gas into play areas over time.",
+    "status": "CAUTION",
+    "alternative": "Hardwood or Tile"
+  },
+  {
+    "slug": "radon-gas-basement",
+    "material_name": "Radon Gas",
+    "category": "household",
+    "verdict": "A naturally occurring radioactive gas that can accumulate in basements.",
+    "status": "AVOID",
+    "alternative": "Radon Mitigation System"
+  },
+  {
+    "slug": "vocs-paint-carpet",
+    "material_name": "VOCs (Volatile Organic Compounds)",
+    "category": "household",
+    "verdict": "Gases emitted from new carpets and paints that impact indoor air quality.",
+    "status": "CAUTION",
+    "alternative": "Low-VOC / Zero-VOC Products"
+  },
+  {
+    "slug": "aluminum-deodorant-safety",
+    "material_name": "Aluminum (Deodorant)",
+    "category": "personal-care",
+    "verdict": "Used to block sweat pores; safety debates continue regarding long-term absorption.",
+    "status": "CAUTION",
+    "alternative": "Aluminum-Free Deodorant"
+  },
+  {
+    "slug": "fragrance-parfum-chemicals",
+    "material_name": "Fragrance (Parfum)",
+    "category": "personal-care",
+    "verdict": "A catch-all term for thousands of unlisted chemicals that may cause allergies.",
+    "status": "CAUTION",
+    "alternative": "Fragrance-Free Products"
+  },
+  {
+    "slug": "methylene-glycol-hair",
+    "material_name": "Methylene Glycol",
+    "category": "personal-care",
+    "verdict": "A liquid form of formaldehyde used in chemical hair straightening treatments.",
+    "status": "AVOID",
+    "alternative": "Formaldehyde-Free Keratin"
+  },
+  {
+    "slug": "microbeads-exfoliants",
+    "material_name": "Microbeads",
+    "category": "personal-care",
+    "verdict": "Small plastic spheres that bypass water filters and pollute the ocean.",
+    "status": "AVOID",
+    "alternative": "Sugar or Salt Scrubs"
+  },
+  {
+    "slug": "nail-polish-toxic-trio",
+    "material_name": "Nail Polish (Toxic Trio)",
+    "category": "personal-care",
+    "verdict": "Refers to Dibutyl Phthalate, Toluene, and Formaldehyde.",
+    "status": "AVOID",
+    "alternative": "10-Free Nail Polish"
+  },
+  {
+    "slug": "parabens-preservatives",
+    "material_name": "Parabens",
+    "category": "personal-care",
+    "verdict": "Preservatives that mimic estrogen and are found in many shampoos.",
+    "status": "CAUTION",
+    "alternative": "Paraben-Free Formulas"
+  },
+  {
+    "slug": "pfas-dental-floss",
+    "material_name": "PFAS in Dental Floss",
+    "category": "personal-care",
+    "verdict": "Some gliding floss brands use PTFE (Teflon) coatings.",
+    "status": "CAUTION",
+    "alternative": "PTFE-Free Silk or Nylon Floss"
+  },
+  {
+    "slug": "phthalates-cosmetics",
+    "material_name": "Phthalates (Cosmetics)",
+    "category": "personal-care",
+    "verdict": "Used to make scents linger; often unlisted on ingredient labels.",
+    "status": "CAUTION",
+    "alternative": "Phthalate-Free Cosmetics"
+  },
+  {
+    "slug": "ppd-hair-dye",
+    "material_name": "P-phenylenediamine (PPD)",
+    "category": "personal-care",
+    "verdict": "A common permanent hair dye ingredient that is a frequent contact allergen.",
+    "status": "CAUTION",
+    "alternative": "PPD-Free / Henna Dyes"
+  },
+  {
+    "slug": "sodium-lauryl-sulfate",
+    "material_name": "Sodium Lauryl Sulfate (SLS)",
+    "category": "personal-care",
+    "verdict": "A foaming agent that can strip natural oils and cause skin irritation.",
+    "status": "CAUTION",
+    "alternative": "SLS-Free / Gentle Surfactants"
+  },
+  {
+    "slug": "talc-asbestos-risk",
+    "material_name": "Talc",
+    "category": "personal-care",
+    "verdict": "Naturally occurring mineral often found near asbestos; requires strict purity testing.",
+    "status": "CAUTION",
+    "alternative": "Cornstarch-Based Powder"
+  },
+  {
+    "slug": "titanium-dioxide-toothpaste",
+    "material_name": "Titanium Dioxide",
+    "category": "personal-care",
+    "verdict": "A whitening pigment under scrutiny for safety when ingested in small amounts.",
+    "status": "CAUTION",
+    "alternative": "TiO2-Free Toothpaste"
+  },
+  {
+    "slug": "triclosan-antibacterial",
+    "material_name": "Triclosan",
+    "category": "personal-care",
+    "verdict": "An antibacterial agent linked to thyroid issues and bacterial resistance.",
+    "status": "AVOID",
+    "alternative": "Plain Soap and Water"
+  },
+  {
+    "slug": "2-butoxyethanol-cleaners",
+    "material_name": "2-Butoxyethanol",
+    "category": "cleaning",
+    "verdict": "A solvent in multipurpose cleaners that can cause sore throats when inhaled.",
+    "status": "CAUTION",
+    "alternative": "Castile Soap Cleaner"
+  },
+  {
+    "slug": "ammonia-screen-cleaners",
+    "material_name": "Ammonia Screen Cleaners",
+    "category": "cleaning",
+    "verdict": "Strips anti-reflective coatings from monitors and acts as a respiratory irritant.",
+    "status": "AVOID",
+    "alternative": "Distilled Water and Microfiber"
+  },
+  {
+    "slug": "ammonia-window-cleaner",
+    "material_name": "Ammonia",
+    "category": "cleaning",
+    "verdict": "High pH cleaner that produces irritating fumes for the eyes and lungs.",
+    "status": "CAUTION",
+    "alternative": "Vinegar and Water"
+  },
+  {
+    "slug": "antifreeze-ethylene-glycol",
+    "material_name": "Antifreeze",
+    "category": "cleaning",
+    "verdict": "Sweet-tasting but highly poisonous to humans and pets.",
+    "status": "AVOID",
+    "alternative": "Propylene Glycol Antifreeze"
+  },
+  {
+    "slug": "borax-cleaning",
+    "material_name": "Borax",
+    "category": "cleaning",
+    "verdict": "Natural mineral but a known skin and eye irritant; carries reproductive toxicity warnings.",
+    "status": "CAUTION",
+    "alternative": "Washing Soda"
+  },
+  {
+    "slug": "caustic-soda-drain-cleaner",
+    "material_name": "Caustic Soda (Lye)",
+    "category": "cleaning",
+    "verdict": "Extremely corrosive; can cause severe skin and eye burns instantly.",
+    "status": "AVOID",
+    "alternative": "Enzyme Drain Cleaner"
+  },
+  {
+    "slug": "chlorine-bleach-safety",
+    "material_name": "Chlorine Bleach",
+    "category": "cleaning",
+    "verdict": "Strong oxidizer; dangerous if mixed with ammonia or vinegar.",
+    "status": "CAUTION",
+    "alternative": "Hydrogen Peroxide"
+  },
+  {
+    "slug": "copper-piping-solder",
+    "material_name": "Copper Piping Solder",
+    "category": "cleaning",
+    "verdict": "Pre-1986 plumbing often used lead-based solder to join safe copper pipes.",
+    "status": "CAUTION",
+    "alternative": "Test Water for Lead"
+  },
+  {
+    "slug": "dryer-sheet-quats",
+    "material_name": "Dryer Sheets",
+    "category": "cleaning",
+    "verdict": "Coats fabrics in quaternary ammonium compounds (quats) and synthetic fragrances.",
+    "status": "AVOID",
+    "alternative": "White Vinegar in Rinse Cycle"
+  },
+  {
+    "slug": "enzymatic-stain-removers",
+    "material_name": "Enzymatic Stain Removers",
+    "category": "cleaning",
+    "verdict": "Uses biological enzymes to break down proteins without harsh chemical off-gassing.",
+    "status": "SAFE",
+    "alternative": "N/A — already ideal"
+  },
+  {
+    "slug": "methylene-chloride-stripper",
+    "material_name": "Methylene Chloride",
+    "category": "cleaning",
+    "verdict": "Highly toxic chemical in paint strippers; linked to heart failure.",
+    "status": "AVOID",
+    "alternative": "Soy-Based Paint Stripper"
+  },
+  {
+    "slug": "oxygen-bleach",
+    "material_name": "Oxygen Bleach (Sodium Percarbonate)",
+    "category": "cleaning",
+    "verdict": "Breaks down into water and oxygen; a safe alternative to chlorine bleach.",
+    "status": "SAFE",
+    "alternative": "N/A — already ideal"
+  },
+  {
+    "slug": "pesticide-residue-home",
+    "material_name": "Pesticides (Home Use)",
+    "category": "cleaning",
+    "verdict": "Residues from bug sprays that can linger on kitchen surfaces.",
+    "status": "CAUTION",
+    "alternative": "Diatomaceous Earth / Traps"
+  },
+  {
+    "slug": "pex-piping",
+    "material_name": "PEX Piping",
+    "category": "cleaning",
+    "verdict": "Cross-linked polyethylene that can alter water taste and leach trace VOCs initially.",
+    "status": "CAUTION",
+    "alternative": "Copper Piping"
+  },
+  {
+    "slug": "phosphates-detergent",
+    "material_name": "Phosphates",
+    "category": "cleaning",
+    "verdict": "Nutrient pollutants that cause algae blooms in waterways when washed away.",
+    "status": "CAUTION",
+    "alternative": "Phosphate-Free Detergent"
+  },
+  {
+    "slug": "quats-disinfectants",
+    "material_name": "Quaternary Ammonium (Quats)",
+    "category": "cleaning",
+    "verdict": "Potent disinfectants that can trigger asthma and skin dermatitis.",
+    "status": "CAUTION",
+    "alternative": "Hydrogen Peroxide Wipes"
+  },
+  {
+    "slug": "reverse-osmosis-filters",
+    "material_name": "Reverse Osmosis Filters",
+    "category": "cleaning",
+    "verdict": "Safely removes PFAS, heavy metals, and microplastics from drinking water.",
+    "status": "SAFE",
+    "alternative": "N/A — already ideal"
+  },
+  {
+    "slug": "scented-laundry-beads",
+    "material_name": "Scented Laundry Beads",
+    "category": "cleaning",
+    "verdict": "Concentrated polyethylene glycol and phthalates designed to adhere permanently to clothes.",
+    "status": "AVOID",
+    "alternative": "Wool Dryer Balls"
+  },
+  {
+    "slug": "sodium-bicarbonate",
+    "material_name": "Baking Soda",
+    "category": "cleaning",
+    "verdict": "Safe, mild abrasive and deodorizer with no toxic off-gassing or residue.",
+    "status": "SAFE",
+    "alternative": "N/A — already ideal"
+  },
+  {
+    "slug": "trichloroethylene-degreaser",
+    "material_name": "Trichloroethylene (TCE)",
+    "category": "cleaning",
+    "verdict": "Industrial solvent used in degreasers; a known human carcinogen.",
+    "status": "AVOID",
+    "alternative": "Citrus-Based Degreaser"
+  },
+  {
+    "slug": "water-softener-sodium",
+    "material_name": "Water Softener Salts",
+    "category": "cleaning",
+    "verdict": "Adds extra sodium to drinking water, which may be an issue for hypertensive individuals.",
+    "status": "CAUTION",
+    "alternative": "Potassium Chloride Alternatives"
+  },
+  {
+    "slug": "wool-dryer-balls",
+    "material_name": "Wool Dryer Balls",
+    "category": "cleaning",
+    "verdict": "Natural mechanical fabric softeners that reduce drying time without chemical residues.",
+    "status": "SAFE",
+    "alternative": "N/A — already ideal"
+  },
+  {
+    "slug": "abs-plastic-filaments",
+    "material_name": "ABS 3D Printer Filament",
+    "category": "tech",
+    "verdict": "Emits styrene gas, a potential carcinogen, during the printing melting process.",
+    "status": "AVOID",
+    "alternative": "PLA (Polylactic Acid) Filament"
+  },
+  {
+    "slug": "air-duster-propellants",
+    "material_name": "Air Duster Propellants",
+    "category": "tech",
+    "verdict": "Contains HFCs that are potent greenhouse gases and dangerous inhalants.",
+    "status": "AVOID",
+    "alternative": "Electric Air Dusters"
+  },
+  {
+    "slug": "bfrs-electronics",
+    "material_name": "BFRs (Electronics)",
+    "category": "tech",
+    "verdict": "Brominated flame retardants in plastic casings that accumulate in indoor dust.",
+    "status": "AVOID",
+    "alternative": "Metal/Aluminum Cased Tech"
+  },
+  {
+    "slug": "heavy-metals-keyboards",
+    "material_name": "Heavy Metals (Keyboards)",
+    "category": "tech",
+    "verdict": "Cheap dyed plastics can contain trace lead or cadmium that transfers to fingers.",
+    "status": "CAUTION",
+    "alternative": "PBT Plastics or Aluminum"
+  },
+  {
+    "slug": "lithium-ion-battery-gases",
+    "material_name": "Lithium-Ion Batteries",
+    "category": "tech",
+    "verdict": "Releases highly toxic hydrogen fluoride gas if punctured or severely overheated.",
+    "status": "AVOID",
+    "alternative": "Safe Disposal Protocols"
+  },
+  {
+    "slug": "ozone-laser-printers",
+    "material_name": "Ozone (Laser Printers)",
+    "category": "tech",
+    "verdict": "Generates reactive oxygen species that irritate lungs in poorly ventilated home offices.",
+    "status": "CAUTION",
+    "alternative": "Inkjet Printers"
+  },
+  {
+    "slug": "phthalates-mousepads",
+    "material_name": "Phthalates (Mousepads)",
+    "category": "tech",
+    "verdict": "Soft plasticizers in gel wrist rests that absorb through skin during prolonged contact.",
+    "status": "CAUTION",
+    "alternative": "Cork or Leather Pads"
+  },
+  {
+    "slug": "polyurethane-office-chairs",
+    "material_name": "PU Leather Chairs",
+    "category": "tech",
+    "verdict": "Synthetic leather that flakes microplastics and off-gasses VOCs when new.",
+    "status": "CAUTION",
+    "alternative": "Mesh or Fabric Chairs"
+  },
+  {
+    "slug": "pvc-wire-coatings",
+    "material_name": "PVC Wire Coatings",
+    "category": "tech",
+    "verdict": "Cables coated in vinyl that degrade over time, releasing plasticizers into dust.",
+    "status": "CAUTION",
+    "alternative": "Braided Nylon Cables"
+  },
+  {
+    "slug": "cca-treated-wood",
+    "material_name": "CCA-Treated Wood",
+    "category": "outdoor",
+    "verdict": "Older decking lumber treated with chromated copper arsenate; leaches arsenic.",
+    "status": "AVOID",
+    "alternative": "Cedar or Composite Decking"
+  },
+  {
+    "slug": "citronella-candles-soot",
+    "material_name": "Citronella Candles",
+    "category": "outdoor",
+    "verdict": "Paraffin wax bases emit carcinogenic soot and toluene when burned.",
+    "status": "CAUTION",
+    "alternative": "Beeswax Candles or Physical Traps"
+  },
+  {
+    "slug": "deet-bug-sprays",
+    "material_name": "DEET Bug Sprays",
+    "category": "outdoor",
+    "verdict": "Effective but can cause neurological irritation in high concentrations or broken skin.",
+    "status": "CAUTION",
+    "alternative": "Picaridin or Oil of Lemon Eucalyptus"
+  },
+  {
+    "slug": "epoxy-garage-coatings",
+    "material_name": "Epoxy Garage Coatings",
+    "category": "outdoor",
+    "verdict": "Two-part chemical systems that release extreme VOCs during the curing process.",
+    "status": "CAUTION",
+    "alternative": "Interlocking Rubber Tiles"
+  },
+  {
+    "slug": "gas-mower-exhaust",
+    "material_name": "Gas Mower Exhaust",
+    "category": "outdoor",
+    "verdict": "Two-stroke engines lack catalytic converters, emitting concentrated benzene and carbon monoxide.",
+    "status": "AVOID",
+    "alternative": "Battery-Electric Mowers"
+  },
+  {
+    "slug": "glyphosate-weed-killer",
+    "material_name": "Glyphosate",
+    "category": "outdoor",
+    "verdict": "Broad-spectrum herbicide classified as a probable human carcinogen by the WHO.",
+    "status": "AVOID",
+    "alternative": "Boiling Water or Vinegar Solutions"
+  },
+  {
+    "slug": "neonicotinoid-pesticides",
+    "material_name": "Neonicotinoids",
+    "category": "outdoor",
+    "verdict": "Systemic insecticides highly toxic to bees and persistent in soil and runoff.",
+    "status": "AVOID",
+    "alternative": "Neem Oil or Diatomaceous Earth"
+  },
+  {
+    "slug": "pvc-garden-hoses",
+    "material_name": "PVC Garden Hoses",
+    "category": "outdoor",
+    "verdict": "Often stabilized with lead; leaches highly toxic metals into water when left in the sun.",
+    "status": "AVOID",
+    "alternative": "Polyurethane or Stainless Steel Hoses"
+  },
+  {
+    "slug": "rubber-mulch",
+    "material_name": "Rubber Mulch",
+    "category": "outdoor",
+    "verdict": "Made from shredded tires; leaches heavy metals and VOCs into garden soil.",
+    "status": "AVOID",
+    "alternative": "Natural Wood Chips"
+  },
+  {
+    "slug": "synthetic-turf-pfas",
+    "material_name": "Synthetic Turf",
+    "category": "outdoor",
+    "verdict": "Blades and backing often contain PFAS to improve extrusion and weather resistance.",
+    "status": "AVOID",
+    "alternative": "Native Groundcovers"
+  }
 
-
-[
-  { "slug": "silica-clay-litter", "material_name": "Silica Clay Litter", "category": "pet-care", "verdict": "Generates fine crystalline silica dust linked to feline respiratory issues and asthma.", "status": "AVOID", "alternative": "Pine or Paper Pellets" },
-  { "slug": "synthetic-carpet-cat-trees", "material_name": "Carpeted Cat Trees", "category": "pet-care", "verdict": "Glues and synthetic carpet fibers emit VOCs into enclosed spaces where pets sleep.", "status": "CAUTION", "alternative": "Untreated Wood and Sisal" },
-  { "slug": "chemical-flea-collars", "material_name": "Chemical Flea Collars", "category": "pet-care", "verdict": "Continuous release of neurotoxic pesticides that transfer to human skin and pet bedding.", "status": "AVOID", "alternative": "Oral Preventatives" },
-  { "slug": "plastic-water-fountains", "material_name": "Plastic Pet Fountains", "category": "pet-care", "verdict": "Prone to micro-scratches that harbor bacteria, frequently causing feline acne.", "status": "CAUTION", "alternative": "Stainless Steel or Ceramic" },
-  { "slug": "essential-oil-diffusers", "material_name": "Essential Oil Diffusers", "category": "home", "verdict": "Aerosolizes compounds (like eucalyptus and citrus) highly toxic to feline livers.", "status": "AVOID", "alternative": "Simmer Pots (Water and Spices)" },
-  { "slug": "polyurethane-pet-beds", "material_name": "Polyurethane Pet Beds", "category": "pet-care", "verdict": "Often treated with flame retardants that accumulate in house dust and pet fur.", "status": "AVOID", "alternative": "Organic Cotton or Wool" },
-  { "slug": "pvc-vinyl-pet-toys", "material_name": "PVC Pet Toys", "category": "pet-care", "verdict": "Leaches phthalates when chewed; plasticizers are easily ingested during play.", "status": "AVOID", "alternative": "Natural Rubber or Hemp" },
-  { "slug": "enzymatic-stain-removers", "material_name": "Enzymatic Stain Removers", "category": "cleaning", "verdict": "Uses biological enzymes to break down proteins without harsh chemical off-gassing.", "status": "SAFE", "alternative": "N/A — already ideal" },
-  { "slug": "melamine-pet-bowls", "material_name": "Melamine Pet Bowls", "category": "pet-care", "verdict": "Can leach trace chemicals if used for hot foods or placed in the dishwasher.", "status": "CAUTION", "alternative": "Borosilicate Glass or Ceramic" },
-  { "slug": "hidden-fragrance-pet-wipes", "material_name": "Scented Pet Wipes", "category": "pet-care", "verdict": "Contains unlisted masking chemicals that pets ingest during subsequent grooming.", "status": "AVOID", "alternative": "Unscented Water Wipes" },
-  { "slug": "polyurethane-crib-mattress", "material_name": "Polyurethane Crib Mattresses", "category": "nursery", "verdict": "Emits VOCs in the infant's immediate breathing zone during sleep.", "status": "AVOID", "alternative": "Organic Cotton/Latex" },
-  { "slug": "fiberglass-mattress-covers", "material_name": "Fiberglass Mattress Covers", "category": "nursery", "verdict": "Used as a cheap fire barrier; releases severe respiratory irritants if unzipped.", "status": "AVOID", "alternative": "Wool Flame Barriers" },
-  { "slug": "polypropylene-baby-bottles", "material_name": "Polypropylene Baby Bottles", "category": "nursery", "verdict": "Sheds millions of microplastics into formula when exposed to heat.", "status": "AVOID", "alternative": "Borosilicate Glass or Silicone" },
-  { "slug": "medical-grade-silicone-pacifiers", "material_name": "Silicone Pacifiers", "category": "nursery", "verdict": "Highly stable and inert material that does not leach endocrine disruptors.", "status": "SAFE", "alternative": "N/A — already ideal" },
-  { "slug": "car-seat-flame-retardants", "material_name": "Car Seat Flame Retardants", "category": "nursery", "verdict": "Chemical additives linked to developmental issues; present in many standard foams.", "status": "AVOID", "alternative": "Naturally Flame-Resistant Wool" },
-  { "slug": "pvc-play-mats", "material_name": "PVC Play Mats", "category": "nursery", "verdict": "Off-gasses phthalates and heavy metals directly into floor-level play areas.", "status": "AVOID", "alternative": "EVA Foam or Cotton" },
-  { "slug": "baby-wipe-preservatives", "material_name": "Baby Wipe Preservatives", "category": "nursery", "verdict": "May contain harsh antimicrobial agents like MI or phenoxyethanol that irritate skin.", "status": "CAUTION", "alternative": "99% Water Wipes" },
-  { "slug": "talc-baby-powder", "material_name": "Talc Baby Powder", "category": "nursery", "verdict": "Mined near asbestos deposits; carries a persistent risk of cross-contamination.", "status": "AVOID", "alternative": "Cornstarch-Based Powders" },
-  { "slug": "melamine-baby-plates", "material_name": "Melamine Baby Plates", "category": "nursery", "verdict": "Often disguised as bamboo; leaches formaldehyde if microwaved.", "status": "AVOID", "alternative": "Food-Grade Silicone" },
-  { "slug": "bamboo-resin-toddler-cups", "material_name": "Bamboo Resin Cups", "category": "nursery", "verdict": "Composite material glued with melamine-formaldehyde resins that break down over time.", "status": "CAUTION", "alternative": "Stainless Steel" },
-  { "slug": "bfrs-electronics", "material_name": "BFRs (Electronics)", "category": "tech", "verdict": "Brominated flame retardants in plastic casings that accumulate in indoor dust.", "status": "AVOID", "alternative": "Metal/Aluminum Cased Tech" },
-  { "slug": "phthalates-mousepads", "material_name": "Phthalates (Mousepads)", "category": "tech", "verdict": "Soft plasticizers in gel wrist rests that absorb through skin during prolonged contact.", "status": "CAUTION", "alternative": "Cork or Leather Pads" },
-  { "slug": "ozone-laser-printers", "material_name": "Ozone (Laser Printers)", "category": "tech", "verdict": "Generates reactive oxygen species that irritate lungs in poorly ventilated home offices.", "status": "CAUTION", "alternative": "Inkjet Printers" },
-  { "slug": "pvc-wire-coatings", "material_name": "PVC Wire Coatings", "category": "tech", "verdict": "Cables coated in vinyl that degrade over time, releasing plasticizers into dust.", "status": "CAUTION", "alternative": "Braided Nylon Cables" },
-  { "slug": "heavy-metals-keyboards", "material_name": "Heavy Metals (Keyboards)", "category": "tech", "verdict": "Cheap dyed plastics can contain trace lead or cadmium that transfers to fingers.", "status": "CAUTION", "alternative": "PBT Plastics or Aluminum" },
-  { "slug": "polyurethane-office-chairs", "material_name": "PU Leather Chairs", "category": "tech", "verdict": "Synthetic leather that flakes microplastics and off-gasses VOCs when new.", "status": "CAUTION", "alternative": "Mesh or Fabric Chairs" },
-  { "slug": "air-duster-propellants", "material_name": "Air Duster Propellants", "category": "tech", "verdict": "Contains HFCs that are potent greenhouse gases and dangerous inhalants.", "status": "AVOID", "alternative": "Electric Air Dusters" },
-  { "slug": "ammonia-screen-cleaners", "material_name": "Ammonia Screen Cleaners", "category": "cleaning", "verdict": "Strips anti-reflective coatings from monitors and acts as a respiratory irritant.", "status": "AVOID", "alternative": "Distilled Water and Microfiber" },
-  { "slug": "lithium-ion-battery-gases", "material_name": "Lithium-Ion Batteries", "category": "tech", "verdict": "Releases highly toxic hydrogen fluoride gas if punctured or severely overheated.", "status": "AVOID", "alternative": "Safe Disposal Protocols" },
-  { "slug": "abs-plastic-filaments", "material_name": "ABS 3D Printer Filament", "category": "tech", "verdict": "Emits styrene gas, a potential carcinogen, during the printing melting process.", "status": "AVOID", "alternative": "PLA (Polylactic Acid) Filament" },
-  { "slug": "glyphosate-weed-killer", "material_name": "Glyphosate", "category": "outdoor", "verdict": "Broad-spectrum herbicide classified as a probable human carcinogen by the WHO.", "status": "AVOID", "alternative": "Boiling Water or Vinegar Solutions" },
-  { "slug": "neonicotinoid-pesticides", "material_name": "Neonicotinoids", "category": "outdoor", "verdict": "Systemic insecticides highly toxic to bees and persistent in soil and runoff.", "status": "AVOID", "alternative": "Neem Oil or Diatomaceous Earth" },
-  { "slug": "cca-treated-wood", "material_name": "CCA-Treated Wood", "category": "outdoor", "verdict": "Older decking lumber treated with chromated copper arsenate; leaches arsenic.", "status": "AVOID", "alternative": "Cedar or Composite Decking" },
-  { "slug": "rubber-mulch", "material_name": "Rubber Mulch", "category": "outdoor", "verdict": "Made from shredded tires; leaches heavy metals and VOCs into garden soil.", "status": "AVOID", "alternative": "Natural Wood Chips" },
-  { "slug": "pvc-garden-hoses", "material_name": "PVC Garden Hoses", "category": "outdoor", "verdict": "Often stabilized with lead; leaches highly toxic metals into water when left in the sun.", "status": "AVOID", "alternative": "Polyurethane or Stainless Steel Hoses" },
-  { "slug": "synthetic-turf-pfas", "material_name": "Synthetic Turf", "category": "outdoor", "verdict": "Blades and backing often contain PFAS to improve extrusion and weather resistance.", "status": "AVOID", "alternative": "Native Groundcovers" },
-  { "slug": "deet-bug-sprays", "material_name": "DEET Bug Sprays", "category": "outdoor", "verdict": "Effective but can cause neurological irritation in high concentrations or broken skin.", "status": "CAUTION", "alternative": "Picaridin or Oil of Lemon Eucalyptus" },
-  { "slug": "citronella-candles-soot", "material_name": "Citronella Candles", "category": "outdoor", "verdict": "Paraffin wax bases emit carcinogenic soot and toluene when burned.", "status": "CAUTION", "alternative": "Beeswax Candles or Physical Traps" },
-  { "slug": "epoxy-garage-coatings", "material_name": "Epoxy Garage Coatings", "category": "outdoor", "verdict": "Two-part chemical systems that release extreme VOCs during the curing process.", "status": "CAUTION", "alternative": "Interlocking Rubber Tiles" },
-  { "slug": "gas-mower-exhaust", "material_name": "Gas Mower Exhaust", "category": "outdoor", "verdict": "Two-stroke engines lack catalytic converters, emitting concentrated benzene and carbon monoxide.", "status": "AVOID", "alternative": "Battery-Electric Mowers" },
-  { "slug": "reverse-osmosis-filters", "material_name": "Reverse Osmosis Filters", "category": "water", "verdict": "Safely removes PFAS, heavy metals, and microplastics from drinking water.", "status": "SAFE", "alternative": "N/A — already ideal" },
-  { "slug": "pex-piping", "material_name": "PEX Piping", "category": "water", "verdict": "Cross-linked polyethylene that can alter water taste and leach trace VOCs initially.", "status": "CAUTION", "alternative": "Copper Piping" },
-  { "slug": "copper-piping-solder", "material_name": "Copper Piping Solder", "category": "water", "verdict": "Pre-1986 plumbing often used lead-based solder to join safe copper pipes.", "status": "CAUTION", "alternative": "Test Water for Lead" },
-  { "slug": "water-softener-sodium", "material_name": "Water Softener Salts", "category": "water", "verdict": "Adds extra sodium to drinking water, which may be an issue for hypertensive individuals.", "status": "CAUTION", "alternative": "Potassium Chloride Alternatives" },
-  { "slug": "scented-laundry-beads", "material_name": "Scented Laundry Beads", "category": "laundry", "verdict": "Concentrated polyethylene glycol and phthalates designed to adhere permanently to clothes.", "status": "AVOID", "alternative": "Wool Dryer Balls" },
-  { "slug": "dryer-sheet-quats", "material_name": "Dryer Sheets", "category": "laundry", "verdict": "Coats fabrics in quaternary ammonium compounds (quats) and synthetic fragrances.", "status": "AVOID", "alternative": "White Vinegar in Rinse Cycle" },
-  { "slug": "wool-dryer-balls", "material_name": "Wool Dryer Balls", "category": "laundry", "verdict": "Natural mechanical fabric softeners that reduce drying time without chemical residues.", "status": "SAFE", "alternative": "N/A — already ideal" },
-  { "slug": "borax-cleaning", "material_name": "Borax", "category": "cleaning", "verdict": "Natural mineral but a known skin and eye irritant; carries reproductive toxicity warnings.", "status": "CAUTION", "alternative": "Washing Soda" },
-  { "slug": "sodium-bicarbonate", "material_name": "Baking Soda", "category": "cleaning", "verdict": "Safe, mild abrasive and deodorizer with no toxic off-gassing or residue.", "status": "SAFE", "alternative": "N/A — already ideal" },
-  { "slug": "oxygen-bleach", "material_name": "Oxygen Bleach (Sodium Percarbonate)", "category": "laundry", "verdict": "Breaks down into water and oxygen; a safe alternative to chlorine bleach.", "status": "SAFE", "alternative": "N/A — already ideal" }
 ]
