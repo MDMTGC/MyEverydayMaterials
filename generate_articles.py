@@ -150,8 +150,9 @@ def build_sources(sources):
 
 
 def plain_text(html_str):
-    """Strip HTML entities for use in JSON-LD and meta tags."""
-    return unescape(html_str).replace('"', '&quot;')
+    """Strip HTML entities and safely escape for use in HTML attributes."""
+    import html
+    return html.escape(unescape(html_str), quote=True)
 
 
 def build_related(slug, all_articles, related_map):
