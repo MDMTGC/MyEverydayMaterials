@@ -293,7 +293,7 @@ def generate_article(article, all_articles, category_slug, related_map):
       <a href="../methodology.html">Methodology</a>
       <a href="../privacy.html">Privacy Policy</a>
     </nav>
-    <p class="copyright">&copy; 2026 {SITE_NAME}</p>
+    <p class="copyright">&copy; {date.today().year} {SITE_NAME}</p>
   </div>
 
 </body>
