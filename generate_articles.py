@@ -9,7 +9,7 @@ Usage:
     python generate_articles.py --all
     python generate_articles.py --list
 """
-
+import html
 import argparse
 import importlib
 import json
