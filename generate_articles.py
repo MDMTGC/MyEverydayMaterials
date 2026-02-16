@@ -257,7 +257,7 @@ def generate_article(article, all_articles, category_slug, related_map):
   <nav class="breadcrumb"><a href="../index.html">&larr; {SITE_NAME}</a></nav>
 
   <article>
-    <h1>{article['title']}</h1>
+    <h1>{html.escape(article['title'])}</h1>
 
     <div class="editors-note">
       {EDITORS_NOTE}
