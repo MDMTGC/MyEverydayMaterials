@@ -109,7 +109,7 @@ def verdict_level(status):
 
 
 def amazon_search_link(query):
-    q = query.strip().replace(" ", "+")
+    q = urllib.parse.quote_plus(query.strip())
     return f"https://www.amazon.com/s?k={q}&tag={AFFILIATE_TAG}"
 
 
