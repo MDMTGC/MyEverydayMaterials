@@ -1,44 +1,165 @@
+"""Outdoor & Garden article data for MyEverydayMaterials generator."""
 
-    articles = {
-        "pressure-treated-lumber": {
-            "title": "Pressure-Treated Lumber",
-            "30-Second Verdict": "Pressure-treated lumber, especially older types using Chromated Copper Arsenate (CCA), can leach toxic chemicals like arsenic into the surrounding environment and pose risks through direct contact or inhalation of sawdust. While residential use of CCA was phased out after 2003, existing structures may still contain it. Newer treatments like Alkaline Copper Quaternary (ACQ) are less toxic but more corrosive. Sealing treated wood and taking precautions during handling are recommended.",
-            "The Deep Dive": "Pressure-treated wood is infused with chemicals to resist rot, decay, and insects. Historically, CCA was widely used, containing arsenic, a known human carcinogen (IARC Group 1). The US EPA raised concerns about arsenic exposure, particularly to children from playground equipment and decks, leading to a voluntary phase-out for most residential uses by the end of 2003. Arsenic can leach from the wood into soil and dislodge onto the surface, leading to potential ingestion (especially via hand-to-mouth contact in children) or inhalation of sawdust during cutting/sanding. Newer alternatives like ACQ and copper azole are arsenic-free but contain high levels of copper and are more corrosive to fasteners. The EPA does not require removal of existing CCA structures but recommends regular sealing to reduce leaching.",
-            "What You Can Do Right Now": "If you have an older (pre-2004) deck or play structure, consider having it tested for CCA. Regularly apply a penetrating sealant (oil or water-based stain) to all exposed surfaces of treated wood, ideally annually. When working with any treated wood, wear gloves, a dust mask, and eye protection, and work outdoors. Wash hands thoroughly after handling and wash work clothes separately. Never burn treated wood, as it releases toxic chemicals in smoke and ash. Do not use CCA-treated wood for cutting boards, countertops, or in direct contact with food or animal feed. Dispose of treated wood scraps in landfills according to local regulations, not by burning or mulching.",
-            "Better Alternatives": "Consider naturally rot-resistant woods like cedar or redwood (though sustainability and sourcing are important), composite lumber (made from recycled plastic and wood fibers), or metal for outdoor structures. Wood treated with less toxic preservatives (like borates for areas not in ground contact, or newer copper-based treatments with lower environmental impact if available and suitable) are also options. For garden beds, use untreated wood, composites, or line beds built with treated wood with heavy plastic.",
-            "Sources": [
-                {"title": "Chromated Arsenicals (CCA) | US EPA", "url": "https://www.epa.gov/ingredients-used-pesticide-products/chromated-arsenicals-cca"},
-                {"title": "Lumber Pressure Treated With Chromated Copper Arsenate - NYSDEC", "url": "https://dec.ny.gov/environmental-protection/waste-management/solid-waste-types/construction-demolition-debris/lumber-pressure-treated"},
-                {"title": "What are the risks of CCA-treated wood? - National Pesticide Information Center", "url": "https://npic.orst.edu/faq/cca.html"},
-                {"title": "Environmental Issues on the use of CCA treated wood - CT.gov", "url": "https://portal.ct.gov/CAES/Fact-Sheets/Analytical-Chemistry/Environmental-Issues-on-the-use-of-CCA-treated-wood"}
-            ]
-        },
-        "deck-sealants": {
-            "title": "Deck Sealants",
-            "30-Second Verdict": "Many conventional deck sealants and stains, particularly oil-based ones, contain Volatile Organic Compounds (VOCs) from petroleum-based solvents. VOCs can contribute to indoor and outdoor air pollution, smog formation, and cause health problems like eye, nose, and throat irritation, headaches, and organ damage. Low-VOC, water-based, or plant-based/natural oil sealants are generally safer alternatives.",
-            "The Deep Dive": "VOCs are chemicals that easily evaporate into the air at room temperature. In deck sealants and stains, they are often petroleum-based solvents used to dissolve and carry the resins and pigments, and to control drying time. As the sealant dries, VOCs are released into the atmosphere, contributing to ground-level ozone (smog) and poor air quality. Exposure to VOCs, especially indoors or in poorly ventilated areas during application, can cause short-term health effects like irritation, headaches, nausea, and dizziness, and long-term effects including damage to the liver, kidneys, and central nervous system, and some are suspected or known carcinogens (e.g., benzene). Oil-based products also often require mineral spirits for cleanup, which adds to VOC emissions, and rags soaked with these oils can spontaneously combust if not stored properly.",
-            "What You Can Do Right Now": "When choosing deck sealants or stains, look for products labeled 'low-VOC' or 'zero-VOC'. Opt for water-based formulas, which generally have lower VOC content than oil-based ones and clean up with soap and water. Plant-based or natural oil finishes (like tung oil or linseed oil, used with caution regarding spontaneous combustion of rags) can also be lower in harmful VOCs. Always ensure adequate ventilation during application, preferably working outdoors. Wear appropriate personal protective equipment if indicated on the label. Dispose of unused products and solvent-soaked rags safely according to local regulations.",
-            "Better Alternatives": "Look for water-based sealants with low or zero VOC content. Plant-based oil finishes (e.g., tung oil, refined linseed oil - handle rags carefully) or sealers made from natural waxes and resins are also available. Some products are specifically marketed as 'eco-friendly' or 'non-toxic' and have third-party certifications (like Green Seal) indicating lower VOCs and fewer hazardous ingredients.",
-            "Sources": [
-                {"title": "Volatile Organic Compounds' Impact on Indoor Air Quality | US EPA", "url": "https://www.epa.gov/indoor-air-quality-iaq/volatile-organic-compounds-impact-indoor-air-quality"},
-                {"title": "The Dangers of Oil-Based Stains - Basic Coatings", "url": "https://www.basiccoatings.com/about/blog/blog/2022/03/07/the-dangers-of-oil-based-stains"},
-                {"title": "Eco-Friendly Options for Staining and Sealing Your Deck", "url": "https://deckmedics.ca/eco-friendly-options-for-staining-and-sealing-your-deck/"},
-                {"title": "Your Guide to VOCs in Paint and Cleaning Products - Green Seal", "url": "https://greenseal.org/guide-to-vocs-in-paint-and-cleaning-products/"}
-            ]
-        },
-        "chemical-pesticides": {
-            "title": "Chemical Pesticides (Glyphosate & Neonicotinoids)",
-            "30-Second Verdict": "Glyphosate, the world's most used herbicide (e.g., Roundup), was classified as 'probably carcinogenic to humans' by IARC (WHO), though regulatory bodies differ. Neonicotinoids, widely used insecticides often applied as seed coatings, are systemic in plants and linked to the decline of bees and other pollinators, and harm to aquatic ecosystems and birds.",
-            "The Deep Dive": "Glyphosate is a broad-spectrum herbicide used extensively in agriculture (especially with 'Roundup Ready' GMO crops), landscaping, and home gardens. In 2015, the International Agency for Research on Cancer (IARC) classified it as 'probably carcinogenic to humans' (Group 2A), based on limited evidence in humans for non-Hodgkin lymphoma and sufficient evidence in animals, along with strong evidence of genotoxicity. Other regulatory agencies, like the EPA in some assessments, have concluded it is unlikely to be a human carcinogen at current exposure levels, but the debate continues. Neonicotinoids are a class of systemic insecticides chemically related to nicotine. They are often applied as seed coatings, meaning the chemical is absorbed by the growing plant, making the plant itself toxic to certain insects. However, only a small fraction is taken up by the crop, with the rest entering the soil and water, where they can persist. Neonicotinoids are highly toxic to bees and other pollinators, affecting their nervous systems, navigation, and immune function, and are strongly implicated in Colony Collapse Disorder and broader pollinator declines. They also harm aquatic insects and birds that feed on treated seeds or contaminated insects.",
-            "What You Can Do Right Now": "Reduce or eliminate the use of glyphosate-based herbicides in your garden; use manual weeding, mulching, or alternative, less toxic herbicides. For neonicotinoids, avoid purchasing plants or seeds treated with them (ask your nursery). Support agricultural practices that minimize pesticide use, such as organic farming. Be mindful that even 'home and garden' pesticides can contain these chemicals.",
-            "Better Alternatives": "Integrated Pest Management (IPM) strategies prioritize non-chemical methods like physical removal, barriers, traps, and introducing natural predators. Organic gardening practices avoid synthetic pesticides. For weed control, consider mulching, hand-weeding, corn gluten meal (as a pre-emergent), or vinegar-based or soap-based herbicides for spot treatment (with caution, as they are non-selective). For insect control, use insecticidal soaps, horticultural oils, neem oil, or encourage beneficial insects.",
-            "Sources": [
-                {"title": "IARC Monograph on Glyphosate", "url": "https://www.iarc.who.int/featured-news/media-centre-iarc-news-glyphosate/"},
-                {"title": "Glyphosate and Cancer Risk: Frequently Asked Questions - Center for Food Safety", "url": "https://www.centerforfoodsafety.org/files/glyphosate-faq_64013.pdf"},
-                {"title": "Environmental Risks and Challenges Associated with Neonicotinoid Insecticides", "url": "https://pubs.acs.org/doi/10.1021/acs.est.7b06388"},
-                {"title": "The Sublethal Effects of Neonicotinoids on Honeybees - PMC", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12383910/"},
-                {"title": "Toxic and Environmental Effects of Neonicotinoid Based Insecticides - MDPI", "url": "https://www.mdpi.com/2076-3417/14/8/3310"}
-            ]
-        }
-    }
-    
+RELATED_MAP = {
+    "pressure-treated-lumber": ["deck-sealants", "chemical-pesticides"],
+    "deck-sealants": ["pressure-treated-lumber", "chemical-pesticides"],
+    "chemical-pesticides": ["pressure-treated-lumber", "deck-sealants"],
+}
+
+ARTICLES = [
+    {
+        "slug": "pressure-treated-lumber",
+        "title": "Pressure-Treated Lumber: Arsenic Legacy, Modern Risks, and Safer Builds",
+        "meta_description": "Learn the real safety risks of pressure-treated lumber, including older CCA arsenic wood and safer options for decks and raised beds.",
+        "verdict_level": "verdict-caution",
+        "verdict_rating": "Use with Caution — especially for older CCA wood",
+        "verdict_summary": "Older pressure-treated wood may contain arsenic (CCA) and should be handled carefully. Newer treatments are safer but still require dust control, sealing, and proper disposal.",
+        "sections": [
+            {
+                "id": "what-it-is",
+                "heading": "What It Is",
+                "content": """<p>Pressure-treated lumber is wood infused with preservatives to resist rot and insects. Older stock often used <strong>chromated copper arsenate (CCA)</strong>, while newer products use formulations like ACQ or copper azole.</p>""",
+            },
+            {
+                "id": "risk-breakdown",
+                "heading": "Risk Breakdown",
+                "content": """<p>CCA-treated wood can transfer arsenic residues to skin and surrounding soil, and cutting creates contaminated dust. The EPA phase-out for most residential uses reduced new CCA exposure, but many existing decks and structures remain in service.</p>
+<p>Newer treated wood removes arsenic concerns, but still contains biocides and should not be burned or used where food contact is likely.</p>""",
+            },
+            {
+                "id": "what-to-do",
+                "heading": "What You Can Do Right Now",
+                "content": """<ul class=\"key-facts\">
+  <li>Seal exterior treated wood regularly to reduce leaching.</li>
+  <li>Wear gloves and a dust mask when cutting or sanding.</li>
+  <li>Wash hands and work clothes after handling.</li>
+  <li>Never burn treated wood scraps.</li>
+</ul>""",
+            },
+        ],
+        "alternatives": [
+            {
+                "name": "Food-Safe Cedar for Raised Beds",
+                "type": "Material Swap",
+                "description": "Naturally durable cedar is a common alternative where food contact is a concern.",
+                "pros": "No pressure-treatment preservatives",
+                "cons": "Higher cost and periodic maintenance",
+                "asin": "B0C4M7R2X1",
+            },
+            {
+                "name": "Composite Deck Boards",
+                "type": "Low-Maintenance Option",
+                "description": "Composite boards avoid preservative chemistry and can reduce splintering.",
+                "pros": "No arsenic legacy risk",
+                "cons": "Heat retention and upfront cost",
+                "asin": "B0BZT8L4M2",
+            },
+        ],
+        "sources": [
+            ("US EPA: Chromated Arsenicals (CCA)", "https://www.epa.gov/ingredients-used-pesticide-products/chromated-arsenicals-cca"),
+            ("NPIC FAQ: CCA-treated wood", "https://npic.orst.edu/faq/cca.html"),
+        ],
+    },
+    {
+        "slug": "deck-sealants",
+        "title": "Deck Sealants and VOCs: How to Cut Fumes Without Sacrificing Protection",
+        "meta_description": "Many deck sealants emit VOCs. Compare oil-based and water-based formulas and choose lower-emission options for safer outdoor projects.",
+        "verdict_level": "verdict-caution",
+        "verdict_rating": "Prefer Low-VOC Formulas",
+        "verdict_summary": "Oil-based sealants can emit high VOC levels during application and curing. Water-based low-VOC products are usually a safer choice for routine projects.",
+        "sections": [
+            {
+                "id": "why-vocs-matter",
+                "heading": "Why VOCs Matter",
+                "content": """<p>Volatile organic compounds (VOCs) evaporate into air during application and drying. Short-term exposure can irritate eyes and airways and trigger headaches, especially in poorly ventilated spaces.</p>""",
+            },
+            {
+                "id": "product-differences",
+                "heading": "Oil-Based vs Water-Based",
+                "content": """<p>Oil-based products often provide deep penetration but usually carry more solvent load. Water-based sealants generally dry faster, clean up with soap and water, and can significantly reduce VOC emissions.</p>""",
+            },
+            {
+                "id": "practical-steps",
+                "heading": "Practical Steps",
+                "content": """<ul class=\"key-facts\">
+  <li>Choose products labeled low-VOC or zero-VOC.</li>
+  <li>Apply outdoors in dry weather with airflow.</li>
+  <li>Store and dispose of oily rags safely to avoid fire risk.</li>
+</ul>""",
+            },
+        ],
+        "alternatives": [
+            {
+                "name": "Water-Based Low-VOC Deck Sealer",
+                "type": "Lower-Emission Coating",
+                "description": "Good protection profile with lower solvent odor and easier cleanup.",
+                "pros": "Lower VOC burden",
+                "cons": "May need more frequent recoat",
+                "asin": "B0C2K9P8J5",
+            },
+            {
+                "name": "Plant-Oil Exterior Finish",
+                "type": "Natural-Finish Option",
+                "description": "Plant-oil products can reduce synthetic solvent exposure when used correctly.",
+                "pros": "Often simpler ingredient profile",
+                "cons": "Requires careful rag handling",
+                "asin": "B0BN7N5QF3",
+            },
+        ],
+        "sources": [
+            ("US EPA: VOCs and indoor air quality", "https://www.epa.gov/indoor-air-quality-iaq/volatile-organic-compounds-impact-indoor-air-quality"),
+            ("Green Seal guide to VOCs", "https://greenseal.org/guide-to-vocs-in-paint-and-cleaning-products/"),
+        ],
+    },
+    {
+        "slug": "chemical-pesticides",
+        "title": "Glyphosate and Neonicotinoids: What Home Gardeners Should Know",
+        "meta_description": "Evidence-based overview of glyphosate and neonicotinoid concerns, with practical integrated pest management alternatives for home gardens.",
+        "verdict_level": "verdict-caution",
+        "verdict_rating": "Reduce Routine Use",
+        "verdict_summary": "Both glyphosate and neonicotinoids remain controversial. For household use, minimizing routine application and prioritizing integrated pest management is a safer default.",
+        "sections": [
+            {
+                "id": "core-concerns",
+                "heading": "Core Concerns",
+                "content": """<p>Glyphosate has conflicting regulatory conclusions and ongoing scientific debate about long-term risk. Neonicotinoids are strongly linked to pollinator harm and aquatic ecosystem impacts.</p>""",
+            },
+            {
+                "id": "why-home-use-matters",
+                "heading": "Why Home Use Still Matters",
+                "content": """<p>Even non-farm use contributes to cumulative local exposure. Overspray, runoff, and repeated spot treatments can affect children, pets, and beneficial insects in residential areas.</p>""",
+            },
+            {
+                "id": "lower-risk-strategy",
+                "heading": "Lower-Risk Strategy",
+                "content": """<ul class=\"key-facts\">
+  <li>Use mechanical weeding and mulching first.</li>
+  <li>Spot-treat only when needed instead of blanket spraying.</li>
+  <li>Encourage beneficial insects and native plant diversity.</li>
+</ul>""",
+            },
+        ],
+        "alternatives": [
+            {
+                "name": "Weed Barrier + Mulch System",
+                "type": "Non-Chemical Control",
+                "description": "Physical suppression of weeds reduces need for herbicide reapplication.",
+                "pros": "No pesticide drift",
+                "cons": "Labor and seasonal upkeep",
+                "asin": "B09ZK8R6Y4",
+            },
+            {
+                "name": "Manual Stand-Up Weeder",
+                "type": "Mechanical Removal",
+                "description": "Root-level removal tool for regular maintenance without sprays.",
+                "pros": "Immediate, targeted control",
+                "cons": "Best for smaller areas",
+                "asin": "B07NQ5W3L8",
+            },
+        ],
+        "sources": [
+            ("IARC: Glyphosate Monograph summary", "https://www.iarc.who.int/featured-news/media-centre-iarc-news-glyphosate/"),
+            ("Environmental risks of neonicotinoids", "https://pubs.acs.org/doi/10.1021/acs.est.7b06388"),
+        ],
+    },
+]
