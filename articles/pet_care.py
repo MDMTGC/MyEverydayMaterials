@@ -1,278 +1,245 @@
 articles = {
-    "clay-clumping-litter": {
+    "silica-clay-litter": {
         "title": "Crystalline Silica in Clay Cat Litter",
-        "verdict": "CAUTION — Sodium bentonite and crystalline silica dust can cause respiratory issues; prioritize low-dust or natural fiber alternatives.",
+        "verdict": "CAUTION — Sodium bentonite and crystalline silica dust can cause respiratory issues in cats and owners; prioritize low-dust or natural fiber alternatives.",
         "content": """
-<h3>What is in Clay Litter?</h3>
-Traditional clumping litters are primarily composed of **Sodium Bentonite** for clumping and **Crystalline Silica** for moisture absorption.
+<h3>What Is in Clay Litter?</h3>
+Traditional clumping litters are primarily composed of <strong>Sodium Bentonite</strong> for clumping and <strong>Crystalline Silica</strong> for moisture absorption.
 
-<h3>The Health Risks (The Deep Dive)</h3>
+<h3>The Health Risks</h3>
 Because cats are fastidious groomers and use confined litter boxes, they are at higher risk for both inhalation and ingestion of litter components.
 <ul>
-    <li><strong>Silicosis Risk:</strong> The <i>OSHA</i> classifies crystalline silica as a known carcinogen when inhaled. In cats, chronic exposure to litter dust can lead to upper respiratory inflammation and "dust-induced" feline asthma.</li>
-    <li><strong>Gastrointestinal Blockage:</strong> Sodium bentonite expands up to 15 times its original volume when wet. If a cat ingests litter via paw grooming, it can lead to internal "clumping" and life-threatening intestinal blockages.</li>
+    <li><strong>Silicosis Risk:</strong> OSHA classifies crystalline silica as a known carcinogen when inhaled. In cats, chronic exposure can lead to upper respiratory inflammation and dust-induced feline asthma.</li>
+    <li><strong>Gastrointestinal Blockage:</strong> Sodium bentonite expands up to 15&times; its original volume when wet. If a cat ingests litter during paw grooming, it can cause life-threatening intestinal blockages.</li>
+    <li><strong>Owner Exposure:</strong> Visible dust clouds when pouring indicate high respirable silica levels — a hazard for human lungs too.</li>
 </ul>
 
 <h3>What You Can Do Right Now</h3>
 <ul>
-    <li><strong>Ditch the Lid:</strong> Covered litter boxes trap dust and ammonia; use an open-top box to ensure proper ventilation.</li>
-    <li><strong>The Dust Test:</strong> If you see a visible cloud when pouring, the silica content is high. Switch to a "99% dust-free" labeled product.</li>
+    <li><strong>The Dust Test:</strong> If you see a visible cloud when pouring, switch to a "99% dust-free" product immediately.</li>
+    <li><strong>Open Box:</strong> Covered litter boxes trap dust and ammonia; use an open-top box for better ventilation.</li>
+    <li><strong>Better Alternatives:</strong> Cassava, corn, or pine-based litters are biodegradable and produce significantly less respirable dust.</li>
 </ul>
-
-<h3>Better Alternatives</h3>
-Opt for **Cassava, Corn, or Pine-based** litters. These are biodegradable, generally edible if ingested in trace amounts, and produce significantly less respirable dust.
 """,
         "sources": [
-            {"title": "Silica Dust and Health", "org": "OSHA", "url": "https://www.osha.gov/silica-crystalline"},
-            {"title": "Feline Respiratory Health", "org": "Cornell Feline Health Center", "url": "https://www.vet.cornell.edu/"}
+            {"title": "Crystalline Silica — Occupational Exposure", "org": "OSHA", "url": "https://www.osha.gov/silica-crystalline"},
+            {"title": "Feline Respiratory Health", "org": "Cornell Feline Health Center", "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center"}
         ]
     },
 
-    "plastic-food-bowls": {
-        "title": "BPA & Bacteria in Plastic Pet Bowls",
-        "verdict": "AVOID — Scratched plastic traps pathogenic bacteria and leaches endocrine disruptors; use stainless steel or ceramic.",
+    "melamine-pet-bowls": {
+        "title": "Melamine Resin in Pet Food Bowls",
+        "verdict": "AVOID — Scratched melamine leaches toxic compounds into wet food; switch to 18/8 stainless steel or lead-free ceramic.",
         "content": """
-<h3>The Problem with Plastic</h3>
-Most affordable pet bowls are made of polycarbonate or miscellaneous plastics that utilize **Bisphenol A (BPA)** or phthalates for durability.
+<h3>The Problem with Melamine Plastic</h3>
+Many affordable pet bowls are made from melamine-formaldehyde resin — a hard plastic that looks like ceramic but degrades with use.
 
-<h3>The Health Risks (The Deep Dive)</h3>
+<h3>The Health Risks</h3>
 <ul>
-    <li><strong>Feline Acne:</strong> Plastic is porous and develops microscopic scratches. These crevices trap <i>Staphylococcus</i> bacteria, which causes "feline acne"—painful chin sores and infections.</li>
-    <li><strong>Endocrine Disruption:</strong> Bisphenols can leach into wet food, potentially impacting a pet's metabolic health, especially if the bowl is heated or washed in a dishwasher.</li>
+    <li><strong>Leaching into Food:</strong> When the surface is scratched (inevitable from pet teeth and dishwashers), melamine and formaldehyde can migrate into wet food or water, especially at elevated temperatures.</li>
+    <li><strong>Feline Acne:</strong> Porous scratched surfaces trap <em>Staphylococcus</em> bacteria, a leading cause of painful feline chin acne.</li>
+    <li><strong>Kidney Toxicity:</strong> Melamine is associated with kidney damage — the same compound implicated in the 2007 pet food contamination crisis.</li>
 </ul>
 
 <h3>What You Can Do Right Now</h3>
 <ul>
-    <li><strong>Check for Scratches:</strong> If your plastic bowl feels rough or looks cloudy, it is past its safe lifespan and should be recycled.</li>
-    <li><strong>Daily Washing:</strong> Wash bowls after every meal to prevent the buildup of "biofilm"—the slippery layer of bacteria on the surface.</li>
+    <li><strong>Inspect Weekly:</strong> Any bowl that feels rough or looks cloudy has exceeded its safe lifespan — recycle it.</li>
+    <li><strong>Daily Washing:</strong> Wash bowls after every meal to prevent biofilm buildup regardless of material.</li>
+    <li><strong>Upgrade:</strong> 304-grade stainless steel is non-porous, dishwasher safe, and impossible for bacteria to colonize.</li>
 </ul>
-
-<h3>Better Alternatives</h3>
-**304-Grade Stainless Steel** is non-porous and easy to sanitize. **Heavyweight Ceramic** (lead-free) is also an excellent option.
 """,
         "sources": [
-            {"title": "Bacterial Biofilms in Pet Bowls", "org": "NSF International", "url": "https://www.nsf.org"},
-            {"title": "Common Skin Conditions in Cats", "org": "VCA Animal Hospitals", "url": "https://vcahospitals.com"}
+            {"title": "Melamine Pet Food Recall", "org": "FDA", "url": "https://www.fda.gov/animal-veterinary/recalls-withdrawals/melamine-pet-food-recall-2007"},
+            {"title": "Bacterial Biofilms in Pet Bowls", "org": "NSF International", "url": "https://www.nsf.org"}
         ]
     },
 
-    "flea-tick-pesticides": {
-        "title": "Isoxazolines & Pyrethroids in Flea Treatments",
-        "verdict": "CAUTION — Certain topical and oral pesticides are linked to neurological events; always consult a vet for the lowest effective dose.",
+    "chemical-flea-collars": {
+        "title": "Organophosphates & Pyrethroids in Flea Collars",
+        "verdict": "CAUTION — Chemical flea collars release neurotoxic pesticides continuously; choose vet-approved oral or topical alternatives at the lowest effective dose.",
         "content": """
-<h3>What are Flea/Tick Pesticides?</h3>
-Most treatments use neurotoxins like **Fipronil**, **Permethrin**, or **Isoxazolines** to paralyze and kill parasites.
+<h3>How Flea Collars Work</h3>
+Traditional flea collars emit pesticides — primarily <strong>Tetrachlorvinphos (TCVP)</strong>, an organophosphate, or pyrethroids like permethrin — in a continuous low-dose release designed to kill fleas on contact.
 
-<h3>The Health Risks (The Deep Dive)</h3>
+<h3>The Health Risks</h3>
 <ul>
-    <li><strong>Neurological Events:</strong> The <i>FDA</i> has issued alerts regarding the Isoxazoline class, noting potential side effects including muscle tremors, ataxia (loss of coordination), and seizures.</li>
-    <li><strong>Pyrethroid Sensitivity in Cats:</strong> Permethrin is highly toxic to cats. A dog treated with a permethrin-based topical can accidentally poison a cat through shared bedding or social grooming.</li>
+    <li><strong>Neurological Toxicity:</strong> TCVP is classified as a possible human carcinogen by the EPA and is linked to neurological damage with chronic low-level exposure. Children who pet treated animals are particularly at risk.</li>
+    <li><strong>Permethrin Danger to Cats:</strong> Permethrin is acutely toxic to cats. A dog treated with a permethrin collar or topical can accidentally poison a cat sharing the same bed or through social grooming.</li>
+    <li><strong>Skin Irritation:</strong> The collar contact point often causes localized fur loss, skin inflammation, and chemical burns in sensitive animals.</li>
 </ul>
 
 <h3>What You Can Do Right Now</h3>
 <ul>
-    <li><strong>Weight-Specific Dosing:</strong> Never "split" a large dog dose for a small pet; pesticides are formulated specifically for metabolic rates.</li>
-    <li><strong>Monitor After Application:</strong> Watch your pet for 24 hours after a new treatment for any lethargy or unusual shaking.</li>
+    <li><strong>Wash Hands After Touching:</strong> Always wash hands after handling a treated pet, especially before food contact or around children.</li>
+    <li><strong>Separate Multi-Pet Households:</strong> Never use permethrin products on dogs if cats share the home.</li>
+    <li><strong>Consult a Vet:</strong> Newer oral isoxazoline medications (under veterinary supervision) provide effective flea control with a more targeted mechanism.</li>
 </ul>
 """,
         "sources": [
-            {"title": "Fact Sheet: Pet Spot-On Products", "org": "EPA", "url": "https://www.epa.gov/pets/"},
-            {"title": "FDA Alert: Isoxazoline Products", "org": "FDA", "url": "https://www.fda.gov/"}
+            {"title": "Spot-On Flea Products for Pets", "org": "EPA", "url": "https://www.epa.gov/pets/flea-and-tick-products-pets"},
+            {"title": "Tetrachlorvinphos (TCVP) Risk Assessment", "org": "NRDC", "url": "https://www.nrdc.org/resources/flea-collar-danger"}
         ]
     },
 
-    "vinyl-squeak-toys": {
-        "title": "Phthalates in Vinyl Pet Toys",
-        "verdict": "AVOID — Soft vinyl (PVC) toys leach plasticizers directly into the mouth; choose 100% natural rubber.",
+    "essential-oil-diffusers": {
+        "title": "Essential Oil Toxicity Near Pets",
+        "verdict": "CAUTION — Many common oils (tea tree, peppermint, eucalyptus) are acutely toxic to cats and dogs via inhalation or skin contact; use passive diffusion only.",
+        "content": """
+<h3>Why Pets Are More Vulnerable</h3>
+Cats lack the liver enzyme (glucuronyl transferase) needed to metabolize phenols and monoterpene hydrocarbons — the primary active compounds in concentrated essential oils.
+
+<h3>The Health Risks</h3>
+<ul>
+    <li><strong>Liver Failure:</strong> Tea tree, peppermint, pennyroyal, and wintergreen oils can cause acute hepatotoxicity in cats and small dogs even at low concentrations.</li>
+    <li><strong>Aspiration Pneumonia:</strong> Droplets from ultrasonic diffusers settle on fur. During grooming, the pet ingests the oil, which can cause aspiration pneumonia.</li>
+    <li><strong>Neurological Effects:</strong> Tremors, ataxia, and seizures have been reported in cats exposed to eucalyptus and tea tree oils in enclosed spaces.</li>
+</ul>
+
+<h3>What You Can Do Right Now</h3>
+<ul>
+    <li><strong>Room Access:</strong> Never run an ultrasonic diffuser in a room where pets sleep or cannot leave freely.</li>
+    <li><strong>Avoid the Highest-Risk Oils:</strong> Tea tree, pennyroyal, citrus, pine, cinnamon, and wintergreen should not be used around cats at all.</li>
+    <li><strong>Passive Diffusion:</strong> Reed diffusers in well-ventilated rooms pose significantly lower risk than ultrasonic mist devices.</li>
+</ul>
+""",
+        "sources": [
+            {"title": "Essential Oils and Cats", "org": "Pet Poison Helpline", "url": "https://www.petpoisonhelpline.com/poison/essential-oils/"},
+            {"title": "Toxicity of Essential Oils in Companion Animals", "org": "ASPCA Animal Poison Control", "url": "https://www.aspca.org/pet-care/animal-poison-control"}
+        ]
+    },
+
+    "pvc-vinyl-pet-toys": {
+        "title": "Phthalates in PVC Vinyl Pet Toys",
+        "verdict": "AVOID — Soft vinyl (PVC) toys require phthalate plasticizers that leach directly into saliva during chewing; choose 100% natural rubber or solid silicone.",
         "content": """
 <h3>The Regulation Gap</h3>
-Unlike children's toys, pet toys have far fewer regulations regarding chemical content. Most "squeezy" toys are made of PVC, which requires phthalates for flexibility.
+Unlike children's toys, pet toys have far fewer chemical content regulations in the US. Most soft "squeaky" toys are made from PVC, which requires phthalates like DEHP to remain flexible.
 
-<h3>The Health Risks (The Deep Dive)</h3>
+<h3>The Health Risks</h3>
 <ul>
-    <li><strong>Organ Toxicity:</strong> Phthalates like DEHP have been linked to liver and kidney damage in lab animals. Chewing creates a "pump" of chemical leaching into the saliva.</li>
-    <li><strong>Heavy Metals:</strong> Lead and cadmium are often used as stabilizers or pigments in cheap, unregulated plastic toys.</li>
+    <li><strong>Hormone Disruption:</strong> DEHP and other phthalates are endocrine disruptors linked to liver and kidney damage in animal studies. Chewing creates a continuous pump of chemicals into saliva.</li>
+    <li><strong>Heavy Metal Pigments:</strong> Lead and cadmium are used as stabilizers and colorants in unregulated toy plastics, especially in toys manufactured without international safety standards.</li>
+    <li><strong>Off-gassing:</strong> A strong "new plastic" smell indicates phthalate off-gassing — a signal to discard the toy immediately.</li>
 </ul>
 
 <h3>What You Can Do Right Now</h3>
 <ul>
-    <li><strong>The "Smell" Test:</strong> If a toy has a strong "new plastic" or chemical smell, it is likely off-gassing phthalates.</li>
-    <li><strong>Replace Damaged Toys:</strong> Once a plastic toy is punctured, the internal surface area increases, accelerating chemical leaching.</li>
+    <li><strong>The Smell Test:</strong> If the toy has a strong chemical plastic odor, it is actively off-gassing phthalates.</li>
+    <li><strong>Discard Damaged Toys:</strong> Once punctured, the internal surface area increases dramatically, accelerating chemical leaching.</li>
+    <li><strong>Better Choices:</strong> 100% natural Hevea rubber (e.g., Kong natural), solid silicone, or hemp-fiber chew toys are the safest alternatives.</li>
 </ul>
-
-<h3>Better Alternatives</h3>
-Look for **100% Natural Rubber** (Hevea), **Solid Silicone**, or **Hemp-based** chew toys.
 """,
         "sources": [
-            {"title": "Chemicals in Pet Toys", "org": "Ecology Center", "url": "https://www.ecocenter.org/"},
-            {"title": "Pet Toy Safety", "org": "AVMA", "url": "https://www.avma.org"}
+            {"title": "Chemicals in Pet Products", "org": "Ecology Center", "url": "https://www.ecocenter.org/"},
+            {"title": "Phthalates in Consumer Goods", "org": "ATSDR", "url": "https://www.atsdr.cdc.gov/toxprofiledocs/index.html"}
         ]
     },
 
-    "essential-oils-diffusers": {
-        "title": "Essential Oil Toxicity in Cats and Dogs",
-        "verdict": "CAUTION — Many common oils (Tea Tree, Peppermint, Eucalyptus) are toxic to pets via inhalation or skin contact.",
+    "plastic-water-fountains": {
+        "title": "Biofilm & BPA in Plastic Pet Water Fountains",
+        "verdict": "CAUTION — Plastic water fountains develop invisible bacterial biofilm in scratches and seams; replace with stainless steel or ceramic fountains.",
         "content": """
-<h3>The Science of Inhalation Toxicity</h3>
-Pets, particularly cats, lack the liver enzymes necessary to metabolize the phenols and monoterpene hydrocarbons found in concentrated essential oils.
+<h3>Why Fountains Accumulate Contamination</h3>
+Continuously running water in a warm home creates ideal conditions for biofilm — a structured community of bacteria, including <em>Serratia</em> and <em>Pseudomonas</em> — to colonize the inner surfaces of plastic fountain reservoirs.
 
-<h3>The Health Risks (The Deep Dive)</h3>
+<h3>The Health Risks</h3>
 <ul>
-    <li><strong>Liver Failure:</strong> Tea tree, peppermint, and wintergreen oils can lead to acute liver distress if absorbed through the skin or inhaled in high concentrations.</li>
-    <li><strong>Aspiration Pneumonia:</strong> Microscopic droplets from ultrasonic diffusers can settle on fur. During grooming, the pet ingests the oil, which can lead to chemical pneumonia.</li>
+    <li><strong>Chronic UTIs and Kidney Issues:</strong> Bacterial biofilm is a documented contributor to recurrent urinary tract infections and chronic kidney disease in cats — conditions that are already prevalent in the species.</li>
+    <li><strong>BPA Leaching:</strong> Most plastic fountains use polycarbonate or ABS plastic. Heat from pump motors and UV light from windows accelerates BPA migration into drinking water.</li>
+    <li><strong>Mold in Filters:</strong> Activated carbon filters in these fountains can harbor mold within 2–4 weeks if not replaced on schedule.</li>
 </ul>
 
 <h3>What You Can Do Right Now</h3>
 <ul>
-    <li><strong>Passive Diffusion Only:</strong> Avoid high-pressure ultrasonic diffusers in small, unventilated rooms where pets sleep.</li>
-    <li><strong>Identify the Toxins:</strong> Immediately stop using Tea Tree, Cinnamon, Citrus, Pennyroyal, and Pine oils around cats.</li>
-</ul>
-
-<h3>Better Alternatives</h3>
-Use **Pet-Safe Hydrosols** (flower waters) or ensure the diffuser is in a large, open-concept area.
-""",
-        "sources": [
-            {"title": "Essential Oils and Cats", "org": "Pet Poison Helpline", "url": "https://www.petpoisonhelpline.com/"},
-            {"title": "Toxicity of Essential Oils", "org": "ASPCA", "url": "https://www.aspca.org"}
-        ]
-    },
-
-    "rawhide-chews": {
-        "title": "Chemical Processing of Rawhide Chews",
-        "verdict": "AVOID — Rawhide is a leather industry byproduct heavily treated with bleach and preservatives; high risk of choking.",
-        "content": """
-<h3>What is Rawhide?</h3>
-Rawhide is not a food product; it is a byproduct of the leather industry. Hides are treated with high-concentration chemical baths to prevent decay during transport.
-
-<h3>The Health Risks (The Deep Dive)</h3>
-<ul>
-    <li><strong>Chemical Residues:</strong> Processing often involves sodium sulfide liming, hydrogen peroxide bleaching, and sometimes even arsenic or formaldehyde preservatives.</li>
-    <li><strong>Expansion:</strong> Rawhide does not break down easily and can swell to four times its size in the stomach, leading to surgical emergencies.</li>
-</ul>
-
-<h3>What You Can Do Right Now</h3>
-<ul>
-    <li><strong>Supervise All Chewing:</strong> Remove the chew once it becomes soft and small enough to be swallowed whole.</li>
-    <li><strong>Check Origin:</strong> Avoid rawhide sourced from countries with lax chemical processing regulations.</li>
-</ul>
-
-<h3>Better Alternatives</h3>
-Choose **Bully Sticks**, **Dehydrated Sweet Potato**, or **Frozen Carrots**.
-""",
-        "sources": [
-            {"title": "Dangers of Rawhide", "org": "AKC", "url": "https://www.akc.org"},
-            {"title": "Digestibility of Dog Chews", "org": "Journal of Animal Science", "url": "https://academic.oup.com/"}
-        ]
-    },
-
-    "synthetic-fragrances-pet-products": {
-        "title": "Phthalates in Pet Shampoos & Deodorizers",
-        "verdict": "CAUTION — 'Fragrance' is a legal loophole for endocrine-disrupting phthalates; choose fragrance-free products.",
-        "content": """
-<h3>The 'Fragrance' Loophole</h3>
-Pet grooming products are not required to list individual scent components. The term "Fragrance" can represent a mixture containing **DEP (Diethyl Phthalate)**.
-
-<h3>The Health Risks (The Deep Dive)</h3>
-<ul>
-    <li><strong>Systemic Absorption:</strong> Pets have a higher skin-to-body-mass ratio than humans, and phthalates can interfere with thyroid and reproductive hormones.</li>
-    <li><strong>Olfactory Overload:</strong> A pet's acute sense of smell means persistent synthetic scents can cause chronic stress and sensory fatigue.</li>
-</ul>
-
-<h3>What You Can Do Right Now</h3>
-<ul>
-    <li><strong>Rinse Thoroughly:</strong> Ensure every trace of suds is rinsed away to prevent the pet from ingesting residue during grooming.</li>
-    <li><strong>Switch to Fragrance-Free:</strong> Look for "Unscented" labels that explicitly state they do not contain synthetic musks.</li>
+    <li><strong>Weekly Disassembly:</strong> Fully disassemble and scrub every surface weekly — not just rinse. Biofilm is resistant to simple rinsing.</li>
+    <li><strong>Filter Replacement:</strong> Replace carbon filters every 2–4 weeks, not the manufacturer's suggested 4–8 weeks.</li>
+    <li><strong>Upgrade Material:</strong> Stainless steel or glazed ceramic fountains are non-porous and significantly easier to keep biofilm-free.</li>
 </ul>
 """,
         "sources": [
-            {"title": "Phthalates and Pet Health", "org": "EWG", "url": "https://www.ewg.org"},
-            {"title": "Grooming Product Safety", "org": "AVMA", "url": "https://www.avma.org"}
+            {"title": "Bacterial Biofilm in Pet Bowls and Fountains", "org": "NSF International", "url": "https://www.nsf.org"},
+            {"title": "Feline Lower Urinary Tract Disease", "org": "Cornell Feline Health Center", "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center"}
         ]
     },
 
-    "pet-bedding-flame-retardants": {
-        "title": "Flame Retardants in Pet Beds",
-        "verdict": "CAUTION — Polyurethane foam cores often contain PBDEs; look for certified foam or natural fillings.",
+    "polyurethane-pet-beds": {
+        "title": "Flame Retardants & VOCs in Polyurethane Pet Beds",
+        "verdict": "CAUTION — Polyurethane foam cores often contain organophosphate flame retardants; choose CertiPUR-US certified foam or natural fill alternatives.",
         "content": """
 <h3>Chemicals in the Core</h3>
-Many "orthopedic" pet beds use cheap polyurethane foam treated with **Chemical Flame Retardants**.
+Most "orthopedic" pet beds use petroleum-derived polyurethane foam, which is treated with chemical flame retardants (often organophosphates) to meet flammability standards.
 
-<h3>The Health Risks (The Deep Dive)</h3>
+<h3>The Health Risks</h3>
 <ul>
-    <li><strong>Bioaccumulation:</strong> PBDEs and organophosphates can be absorbed through the skin or inhaled, accumulating in fatty tissues over time.</li>
-    <li><strong>Dust Exposure:</strong> As foam ages, it breaks down into micro-particles that settle as household dust, which pets ingest during grooming.</li>
+    <li><strong>Bioaccumulation:</strong> Organophosphate and brominated flame retardants absorb through skin and fur. As foam ages and degrades, it releases micro-particles that settle as household dust — which pets ingest while grooming.</li>
+    <li><strong>VOC Off-gassing:</strong> New polyurethane foam off-gasses isocyanates and other VOCs for weeks, concentrated in the enclosed sleeping environment of the pet bed.</li>
+    <li><strong>Foam Degradation:</strong> Crumbling or yellowed foam dramatically increases chemical off-gassing rates — replace immediately.</li>
 </ul>
 
 <h3>What You Can Do Right Now</h3>
 <ul>
-    <li><strong>Wash Covers Weekly:</strong> Regularly washing the bed cover removes chemical-laden dust.</li>
-    <li><strong>Replace Old Foam:</strong> If a bed is crumbling or yellowed, the rate of chemical off-gassing increases.</li>
+    <li><strong>Air It Out:</strong> Allow new foam beds to off-gas outside for 48–72 hours before use.</li>
+    <li><strong>Wash Covers Weekly:</strong> The outer cover traps chemical-laden dust; frequent washing reduces pet exposure significantly.</li>
+    <li><strong>Choose Certified:</strong> Look for beds labeled CertiPUR-US (low-VOC foam) or filled with organic cotton, kapok, or wool.</li>
 </ul>
-
-<h3>Better Alternatives</h3>
-Look for beds with **CertiPUR-US** certified foam or those filled with **Organic Cotton** or **Wool**.
 """,
         "sources": [
-            {"title": "Flame Retardants in Pets", "org": "Environmental Science & Technology", "url": "https://pubs.acs.org"},
-            {"title": "Household Dust and Pet Health", "org": "NIH", "url": "https://www.nih.gov"}
-        ]
-    }
-}
-"synthetic-turf-pets": {
-        "title": "PFAS & Heat Risks in Synthetic Pet Turf",
-        "verdict": "CAUTION — Artificial grass can contain 'forever chemicals' and reach temperatures 40°F higher than natural grass; ensure PFAS-free certification.",
-        "content": """
-<h3>What is in Synthetic Turf?</h3>
-Most artificial turf is composed of polyethylene or polypropylene blades with a primary backing of polyurethane or latex. The "infill" used to keep blades upright often consists of crumb rubber or silica sand.
-
-<h3>The Health Risks (The Deep Dive)</h3>
-<ul>
-    <li><strong>PFAS Exposure:</strong> Many synthetic turfs use PFAS (Per- and Polyfluoroalkyl Substances) as an extrusion aid during manufacturing to prevent the plastic from sticking to machinery. These chemicals can migrate onto a pet's paws and fur, leading to ingestion during self-grooming.</li>
-    <li><strong>Thermal Stress and Paw Burns:</strong> On a 90°F day, synthetic turf can reach surface temperatures exceeding 130°F. Unlike natural grass, which cools via transpiration, synthetic blades can cause thermal stress and significant paw pad burns in dogs.</li>
-    <li><strong>Bacterial Accumulation:</strong> Unlike soil, synthetic turf lacks the natural microbial biome to break down pet waste. Without aggressive sanitation, the backing can trap <i>E. coli</i> and <i>Salmonella</i>.</li>
-</ul>
-
-<h3>What You Can Do Right Now</h3>
-<ul>
-    <li><strong>The 5-Second Rule:</strong> If you cannot hold the back of your hand against the turf for 5 seconds, it is too hot for your pet's paws.</li>
-    <li><strong>Rinse Frequently:</strong> Use a pet-safe antimicrobial spray or a simple diluted vinegar solution to rinse the turf weekly and prevent bacterial buildup.</li>
-</ul>
-
-<h3>Better Alternatives</h3>
-If using synthetic turf, look for manufacturers that provide <strong>Third-Party PFAS-Free Certification</strong>. For the safest environment, stick to **Klover** or **Buffalo Grass**, which are hardy, pet-friendly natural options.
-""",
-        "sources": [
-            {"title": "PFAS in Artificial Turf", "org": "Toxic Use Reduction Institute", "url": "https://www.turi.org/"},
-            {"title": "Surface Temperatures of Synthetic Turf", "org": "Penn State Center for Sports Surface Research", "url": "https://ssrc.psu.edu/"}
+            {"title": "Flame Retardants in Pet Environments", "org": "Environmental Science & Technology", "url": "https://pubs.acs.org"},
+            {"title": "CertiPUR-US Foam Certification", "org": "CertiPUR-US", "url": "https://certipur.us/"}
         ]
     },
 
-    "chemical-ice-melts": {
-        "title": "Paw Safety & Chemical Ice Melts",
-        "verdict": "AVOID — Traditional Rock Salt (Sodium Chloride) and Calcium Chloride can cause chemical burns and salt poisoning if ingested; use Magnesium Chloride.",
+    "hidden-fragrance-pet-wipes": {
+        "title": "Synthetic Fragrances in Pet Wipes & Shampoos",
+        "verdict": "CAUTION — 'Fragrance' is a legal loophole concealing endocrine-disrupting phthalates; choose fragrance-free, plant-surfactant-based products.",
         "content": """
-<h3>The Chemistry of De-Icers</h3>
-Standard ice melts utilize chloride salts to lower the freezing point of water. These are highly hygroscopic, meaning they pull moisture out of whatever they touch—including living tissue.
+<h3>The Fragrance Loophole</h3>
+Pet grooming products are not required to list individual fragrance components. The single word "Fragrance" can legally represent a mixture of dozens of chemicals, including <strong>Diethyl Phthalate (DEP)</strong> and synthetic musks.
 
-<h3>The Health Risks (The Deep Dive)</h3>
+<h3>The Health Risks</h3>
 <ul>
-    <li><strong>Chemical Burns and Dermatitis:</strong> Prolonged contact with Calcium Chloride or Sodium Chloride can lead to severe drying, cracking, and chemical burns on a pet's sensitive paw pads.</li>
-    <li><strong>Sodium Toxicosis (Salt Poisoning):</strong> Pets often lick their paws after a walk. Ingesting even small amounts of rock salt can lead to vomiting, diarrhea, and in severe cases, seizures and cerebral edema due to electrolyte imbalances.</li>
-    <li><strong>Gastrointestinal Distress:</strong> Anti-caking agents in many commercial melts contain ferrocyanides, which can be toxic if consumed in significant quantities.</li>
+    <li><strong>Skin-to-Body Mass Ratio:</strong> Pets have a much higher skin surface area relative to body mass than humans. Phthalates can interfere with thyroid and reproductive hormones, with greater effect in smaller animals.</li>
+    <li><strong>Ingestion During Grooming:</strong> After bathing, pets groom themselves extensively, directly ingesting any residual product left on fur — especially problematic for cats.</li>
+    <li><strong>Sensory Overload:</strong> A pet's sense of smell is 10,000–100,000 times more acute than a human's. Persistent synthetic musks cause chronic stress responses even at concentrations humans cannot detect.</li>
 </ul>
 
 <h3>What You Can Do Right Now</h3>
 <ul>
-    <li><strong>The Post-Walk Rinse:</strong> Always wipe down your pet’s paws with a warm, damp cloth immediately after a winter walk to remove chemical residues before they can be licked.</li>
-    <li><strong>Paw Wax:</strong> Apply a food-grade "musher’s wax" to create a breathable, protective barrier between the paw pad and the chemicals on the ground.</li>
+    <li><strong>Rinse Thoroughly:</strong> Rinse for twice as long as you think is necessary to remove all product residue from the coat.</li>
+    <li><strong>Read the Label:</strong> Choose products that say "Unscented" AND confirm they contain no masking fragrances or synthetic musks.</li>
+    <li><strong>Dry Wipes Alternative:</strong> For between-bath cleaning, unscented plant-fiber cloths moistened with plain water are safest.</li>
 </ul>
-
-<h3>Better Alternatives</h3>
-Look for "Pet Safe" melts that utilize **Magnesium Chloride** or **CMA (Calcium Magnesium Acetate)**, which are significantly less caustic. Avoid any product that does not disclose its full chemical profile.
 """,
         "sources": [
-            {"title": "Ice Melt Safety for Pets", "org": "ASPCA Poison Control", "url": "https://www.aspca.org/pet-care/animal-poison-control"},
-            {"title": "Salt Toxicity in Dogs", "org": "Pet Poison Helpline", "url": "https://www.petpoisonhelpline.com/"}
+            {"title": "Phthalates and Animal Health", "org": "EWG", "url": "https://www.ewg.org/"},
+            {"title": "Pet Grooming Product Safety", "org": "AVMA", "url": "https://www.avma.org"}
+        ]
+    },
+
+    "synthetic-carpet-cat-trees": {
+        "title": "VOCs & Adhesives in Synthetic Cat Trees",
+        "verdict": "CAUTION — Particleboard cores and spray adhesives in cat trees off-gas formaldehyde and VOCs; choose solid wood or sisal-wrapped frames with water-based glues.",
+        "content": """
+<h3>What Cat Trees Are Made Of</h3>
+Most cat trees consist of a particleboard or MDF (medium-density fiberboard) core wrapped in synthetic plush carpet (typically polyester or nylon) bonded with solvent-based spray adhesives.
+
+<h3>The Health Risks</h3>
+<ul>
+    <li><strong>Formaldehyde from the Core:</strong> MDF and particleboard use urea-formaldehyde (UF) resins as binders. UF resin is one of the most significant indoor sources of formaldehyde, classified as a Group 1 human carcinogen by IARC.</li>
+    <li><strong>VOCs from Adhesives:</strong> Solvent-based spray adhesives used to attach carpet to the frame release benzene, toluene, and xylene — all known neurotoxins — especially in the first weeks of use.</li>
+    <li><strong>Carpet Fiber Ingestion:</strong> Cats groom continuously. Shed synthetic carpet fibers from scratching posts are frequently ingested, potentially accumulating in the digestive tract.</li>
+</ul>
+
+<h3>What You Can Do Right Now</h3>
+<ul>
+    <li><strong>Off-gas Before Use:</strong> Unbox new cat trees and leave them outdoors or in a garage for 48–72 hours before bringing indoors.</li>
+    <li><strong>Ventilate:</strong> Place the tree in a well-ventilated room, not in a small bedroom or bathroom where the cat sleeps.</li>
+    <li><strong>Better Alternatives:</strong> Look for cat trees built from solid kiln-dried wood with natural sisal rope scratching posts and water-based adhesives. Certifications like CARB Phase 2 indicate lower formaldehyde emissions from board cores.</li>
+</ul>
+""",
+        "sources": [
+            {"title": "Formaldehyde in Building Materials", "org": "ATSDR", "url": "https://www.atsdr.cdc.gov/ToxProfiles/tp111.pdf"},
+            {"title": "Indoor Air Quality and Pets", "org": "EPA", "url": "https://www.epa.gov/indoor-air-quality-iaq"}
         ]
     }
 }

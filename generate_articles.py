@@ -5,6 +5,7 @@ import argparse
 import html
 import importlib
 import json
+import re
 import urllib.parse
 from collections import defaultdict
 from datetime import date
@@ -91,9 +92,47 @@ def grouped_material_rows():
 
 # Some category slugs differ from their module filenames.
 _MODULE_NAME_OVERRIDES = {
-    "household": "household",
-    "tech": "tech",
+    "household": "surfaces_fabrics",
+    "tech": "tech_office",
 }
+
+
+def _convert_old_format_article(slug, art):
+    """Convert old articles-dict entry to the new ARTICLES-list format."""
+    title = art.get("title", slug)
+    verdict = art.get("verdict", "")
+    status = "AVOID" if verdict.upper().startswith("AVOID") else "SAFE" if verdict.upper().startswith("SAFE") else "CAUTION"
+    content = art.get("content", "")
+    parts = re.split(r"<h3>(.*?)</h3>", content, flags=re.DOTALL)
+    sections = []
+    for i, heading in enumerate(parts[1::2]):
+        body = parts[2::2][i].strip() if i < len(parts[2::2]) else ""
+        sec_id = re.sub(r"[^a-z0-9]+", "-", heading.lower()).strip("-")
+        sections.append({"id": sec_id, "heading": heading.strip(), "content": body})
+    if not sections:
+        sections = [{"id": "overview", "heading": "Overview", "content": content.strip()}]
+    raw_sources = art.get("sources", [])
+    sources = [(s.get("title", ""), s.get("url", "")) for s in raw_sources]
+    return {
+        "slug": slug,
+        "title": title,
+        "meta_description": f"Safety guide for {title}. {verdict[:120]}",
+        "verdict_level": verdict_level(status),
+        "verdict_rating": f"{status.title()} — Research-Weighted Household Verdict",
+        "verdict_summary": verdict,
+        "sections": sections,
+        "alternatives": [
+            {
+                "name": f"Safer alternatives to {title}",
+                "type": "Primary Alternative",
+                "description": "Lower-exposure options recommended by our research.",
+                "pros": "Reduced exposure to identified hazards",
+                "cons": "Performance and cost vary by brand",
+                "url": amazon_search_link(f"{title} non toxic safe"),
+            }
+        ],
+        "sources": sources,
+    }
 
 
 def load_articles_module(category_slug):
@@ -105,7 +144,14 @@ def load_articles_module(category_slug):
     except (ImportError, SyntaxError) as exc:
         print(f"  WARN: Could not load 'articles/{module_name}.py' ({exc.__class__.__name__}: {exc})")
         return None, {}
-    return getattr(mod, "ARTICLES", None), getattr(mod, "RELATED_MAP", {})
+    mod_articles = getattr(mod, "ARTICLES", None)
+    if mod_articles is not None:
+        return mod_articles, getattr(mod, "RELATED_MAP", {})
+    old_format = getattr(mod, "articles", None)
+    if isinstance(old_format, dict):
+        converted = [_convert_old_format_article(slug, art) for slug, art in old_format.items()]
+        return converted, {}
+    return None, {}
 
 
 def verdict_level(status):

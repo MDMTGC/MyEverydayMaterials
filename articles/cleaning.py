@@ -78,9 +78,8 @@ Sodium Hypochlorite is a highly reactive chemical that can create dangerous seco
             {"title": "Bleach Safety", "org": "CDC / NIOSH", "url": "https://www.cdc.gov/niosh/"},
             {"title": "Cleaning Products and Lung Health", "org": "American Lung Association", "url": "https://www.lung.org/"}
         ]
-    }
-}
-"ammonia-cleaners": {
+    },
+    "ammonia-cleaners": {
         "title": "Ammonia in Glass and Surface Cleaners",
         "verdict": "CAUTION — A powerful respiratory irritant that can cause chronic bronchitis and severe reactions if mixed with bleach.",
         "content": """
