@@ -84,9 +84,8 @@ Vinyl flooring is a major contributor to indoor VOC levels, particularly in the 
             {"title": "Phthalates in the Indoor Environment", "org": "CDC", "url": "https://www.cdc.gov/"},
             {"title": "Flooring Emission Standards", "org": "SCS Global Services", "url": "https://www.scsglobalservices.com/floorscore"}
         ]
-    }
-}
-"laminate-flooring": {
+    },
+    "laminate-flooring": {
         "title": "Formaldehyde in Laminate Flooring",
         "verdict": "CAUTION — High-density fiberboard (HDF) cores often utilize formaldehyde-based resins; look for CARB Phase 2 or NAF compliance.",
         "content": """
@@ -171,8 +170,8 @@ Because you spend one-third of your life in close contact with your mattress, th
             {"title": "Mattress Off-gassing and Health", "org": "Sleep Foundation", "url": "https://www.sleepfoundation.org/"},
             {"title": "Polyurethane Foam Safety", "org": "CertiPUR-US", "url": "https://certipur.us/"}
         ]
-    }
-"engineered-wood-flooring": {
+    },
+    "engineered-wood-flooring": {
         "title": "Adhesives in Engineered Wood Flooring",
         "verdict": "CAUTION — The plywood or HDF base layers often utilize urea-formaldehyde resins; prioritize NAF (No Added Formaldehyde) certified products.",
         "content": """

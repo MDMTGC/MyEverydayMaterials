@@ -76,9 +76,8 @@ Sodium Lauryl Sulfate (SLS) and Sodium Laureth Sulfate (SLES) are surfactants th
             {"title": "1,4-Dioxane in Cosmetics", "org": "FDA", "url": "https://www.fda.gov/cosmetics/cosmetic-ingredients/14-dioxane-cosmetics-manufacturing-byproduct"},
             {"title": "Surfactants and Skin Safety", "org": "National Institutes of Health", "url": "https://pubmed.ncbi.nlm.nih.gov/"}
         ]
-    }
-}
-"triclosan-antibacterials": {
+    },
+    "triclosan-antibacterials": {
         "title": "Triclosan in Antibacterial Soaps",
         "verdict": "AVOID — This antimicrobial agent is linked to thyroid dysfunction and the rise of antibiotic-resistant bacteria.",
         "content": """
@@ -154,8 +153,8 @@ Aluminum salts, such as **Aluminum Zirconium** and **Aluminum Chlorohydrate**, w
             {"title": "Antiperspirants and Breast Cancer", "org": "National Cancer Institute", "url": "https://www.cancer.gov/about-cancer/causes-prevention/risk/substances/antiperspirants"},
             {"title": "Aluminum in Antiperspirants", "org": "Kidney Fund", "url": "https://www.kidneyfund.org"}
         ]
-    }
-"sunscreen-chemicals": {
+    },
+    "sunscreen-chemicals": {
         "title": "Chemical Filters: Oxybenzone & Octinoxate",
         "verdict": "CAUTION — These chemical filters are systemic endocrine disruptors and highly toxic to coral reefs; prioritize non-nano Zinc Oxide.",
         "content": """
@@ -230,9 +229,8 @@ To create a "smooth-glide" experience between tight teeth, many major brands coa
             {"title": "PFAS in Dental Floss", "org": "Nature / Journal of Exposure Science", "url": "https://www.nature.com/articles/s41370-018-0105-y"},
             {"title": "PFAS Explained", "org": "EPA", "url": "https://www.epa.gov/pfas"}
         ]
-    }
-}
-"hair-straighteners-relaxers": {
+    },
+    "hair-straighteners-relaxers": {
         "title": "Endocrine Disruptors in Hair Relaxers",
         "verdict": "AVOID — Chemical straighteners often contain high levels of phthalates and parabens; linked to increased risks of hormone-sensitive cancers.",
         "content": """

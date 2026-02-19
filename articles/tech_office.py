@@ -101,9 +101,8 @@ LED-backlit displays emit a peak of short-wavelength blue light (400-490nm). Whi
             {"title": "Blue Light and Sleep", "org": "Harvard Health Publishing", "url": "https://www.health.harvard.edu/"},
             {"title": "Computer Vision Syndrome", "org": "American Optometric Association", "url": "https://www.aoa.org/"}
         ]
-    }
-}
-"toner-dust-particulates": {
+    },
+    "toner-dust-particulates": {
         "title": "Ultra-Fine Particles in Laser Printer Toner",
         "verdict": "CAUTION — Laser printers emit ultra-fine particles and VOCs during the fusion process; ensure printers are placed in well-ventilated areas.",
         "content": """
