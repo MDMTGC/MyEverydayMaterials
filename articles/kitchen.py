@@ -235,7 +235,7 @@ ARTICLES = [
                 "description": "Food-grade silicone that stretches over bowls, cups, and cut produce. Airtight seal without any PVC or phthalates.",
                 "pros": "Reusable thousands of times, microwave/dishwasher safe, airtight",
                 "cons": "Don\u2019t work well on non-circular openings, limited sizes",
-                "asin": "B07FYPNFFS"
+                "asin": "B07QDGHLGP"
             },
             {
                 "name": "If You Care Parchment Paper (Unbleached)",

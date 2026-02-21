@@ -109,7 +109,7 @@ def main():
             batch_dict = dict(batch_items)
             print(f"   Processing batch {i//batch_size + 1}/{(len(old_articles_items)+batch_size-1)//batch_size} (Items {i+1} to {min(i+batch_size, len(old_articles_items))})")
             
-            time.sleep(5) # Rate limit protection
+            # Rate limits removed for premium tier
             max_retries = 3
             for attempt in range(max_retries):
                 try:
