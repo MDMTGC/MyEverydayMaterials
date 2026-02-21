@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "C:\Users\MDMTGC\Desktop\MyEverydayMaterials\MyEverydayMaterials\upgrade_articles_llm.py", line 169, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\MDMTGC\Desktop\MyEverydayMaterials\MyEverydayMaterials\upgrade_articles_llm.py", line 78, in main
+    module = importlib.import_module(f"articles.{target_category}")
+  File "C:\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1160, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1090, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\MDMTGC\Desktop\MyEverydayMaterials\MyEverydayMaterials\articles\pet_care.py", line 1
+    """Upgraded pet_care article data."""\n\nARTICLES = [\n    {
+                                          ^
+SyntaxError: unexpected character after line continuation character
