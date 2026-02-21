@@ -97,41 +97,43 @@ def main():
         if not is_already_upgraded:
              print(f"\\n--- Found {len(old_articles)} articles in {target_category} (Dict Format). Translating... ---")
         
-        new_articles_list = []
+        print(f"\n--- Processing {len(old_articles)} articles in {target_category} (Batch Mode - 5 at a time) ---")
         
-        for i, (slug, old_data) in enumerate(old_articles.items()):
-            # Check if it was already successfully generated previously
-            if is_already_upgraded and old_data.get('verdict_summary') != 'Failed to generate.':
-                 print(f"[{i+1}/{len(old_articles)}] Skipping {slug} (Already Upgraded)")
-                 new_articles_list.append(old_data)
-                 continue
-                 
-            print(f"[{i+1}/{len(old_articles)}] Upgrading {slug}...")
-            import time
-            time.sleep(4) # Protect against the 15 RPM rate limit
+        import time
+        new_articles_list = []
+        old_articles_items = list(old_articles.items())
+        batch_size = 5
+        
+        for i in range(0, len(old_articles_items), batch_size):
+            batch_items = old_articles_items[i:i+batch_size]
+            batch_dict = dict(batch_items)
+            print(f"   Processing batch {i//batch_size + 1}/{(len(old_articles_items)+batch_size-1)//batch_size} (Items {i+1} to {min(i+batch_size, len(old_articles_items))})")
+            
+            time.sleep(5) # Rate limit protection
             max_retries = 3
             for attempt in range(max_retries):
                 try:
                     prompt = f"""You are a World-Class Senior Scientific Writer for "Everyday Materials". 
-Your task is to rewrite a basic, short article into our Kitchen "Gold Standard" format.
+Your task is to rewrite a batch of basic, short articles into our Kitchen "Gold Standard" format.
 
-Input Data for '{slug}':
-{json.dumps(old_data, indent=2)}
+Input Data for this batch in '{target_category}':
+{json.dumps(batch_dict, indent=2)}
 
 Requirements:
-1. Return purely valid Python code (a single Python dictionary) matching the exact schema of our Gold Standard.
-2. The output must NOT be wrapped in markdown code blocks like ```python. Just the dictionary starting with {{}} and ending with {{}}.
-3. Create a compelling `title` (Topic: Problem & Solution format).
+1. Return purely valid Python code (a Python LIST of dictionaries) matching the exact schema of our Gold Standard.
+2. The output must NOT be wrapped in markdown code blocks like ```python. Just the list starting with [ and ending with ].
+3. For each article, create a compelling `title` (Topic: Problem & Solution format).
 4. `verdict_level` must be one of: 'verdict-avoid', 'verdict-caution', 'verdict-safe'.
 5. `verdict_summary` must be a deeply researched, 4-5 sentence summary of the specific chemical risk and mechanism of action.
 6. Generate exactly 3 well-written `sections` using proper HTML (`<p>`, `<ul>`, `<strong>`, etc.). Include a `<ul class="key-facts">` list with `<span class="fact-label">` tags in the Health Risks section, and a `<div class="callout callout-warning">` (or info/safe/danger) somewhere in the text.
 7. Generate EXACTLY 3-4 specific Amazon product recommendations in `alternatives`. You must provide realistic, real-world `asin` values for these products (e.g. B00006JSUA type strings, not generic).
 8. `sources` should be a list of tuples containing (Title, URL) of real scientific references (e.g. FDA, EPA, WHO, specific journals).
+9. Make sure to embed the `slug` key from the input data into each corresponding output dictionary.
 
-Gold Standard Schema Reference:
+Gold Standard Schema Reference for ONE article (You must return a LIST of these):
 {get_gold_standard_example()}
 
-Do not output anything except the evaluated Python dictionary.
+Do not output anything except the evaluated Python LIST of dictionaries.
 """
                     response = client.models.generate_content(
                         model='gemini-2.5-flash',
@@ -148,24 +150,27 @@ Do not output anything except the evaluated Python dictionary.
                         text = text[:-3]
                     
                     # Check for json/dict syntax issues
-                    new_data = eval(text.strip())
-                    new_data['slug'] = slug
-                    new_articles_list.append(new_data)
+                    parsed_batch = eval(text.strip())
+                    if not isinstance(parsed_batch, list):
+                        raise ValueError("Output was not a list")
+                    
+                    new_articles_list.extend(parsed_batch)
                     break
                 except Exception as e:
-                    print(f"   Failed to generate {slug} (Attempt {attempt+1}/{max_retries}): {e}")
+                    print(f"      Failed to generate batch (Attempt {attempt+1}/{max_retries}): {e}")
                     if attempt < max_retries - 1:
-                        time.sleep(65)
+                        time.sleep(30)
             else:
-                print(f"   Using fallback for {slug}")
-                new_articles_list.append({"slug": slug, "title": old_data.get("title", slug), "verdict_level": "verdict-caution", "verdict_summary": "Failed to generate.", "sections": [], "alternatives": [], "sources": []})
+                print(f"      Using fallback for batch {i//batch_size + 1}")
+                for slug, old_data in batch_dict.items():
+                    new_articles_list.append({"slug": slug, "title": old_data.get("title", slug), "verdict_level": "verdict-caution", "verdict_summary": "Failed to generate.", "sections": [], "alternatives": [], "sources": []})
                 
         # Write the new file
-        output_code = f'\"\"\"Upgraded {target_category} article data.\"\"\"\\n\\n'
-        output_code += "ARTICLES = [\\n"
+        output_code = f'"""Upgraded {target_category} article data."""\n\n'
+        output_code += "ARTICLES = [\n"
         for art in new_articles_list:
-            output_code += "    " + json.dumps(art, indent=4) + ",\\n"
-        output_code += "]\\n"
+            output_code += "    " + json.dumps(art, indent=4) + ",\n"
+        output_code += "]\n"
         
         # Backup original
         import shutil
