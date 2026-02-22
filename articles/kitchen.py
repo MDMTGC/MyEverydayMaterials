@@ -147,7 +147,7 @@ ARTICLES = [
                 "description": "Tempered glass containers with BPA-free lids. Completely non-reactive, microwave-safe, and oven-safe. The gold standard for food storage.",
                 "pros": "Zero leaching, microwave/oven/dishwasher safe, lasts indefinitely",
                 "cons": "Heavier than plastic, lids are still plastic (don\u2019t contact food), breakable",
-                "asin": "B09KYGVBCN"
+                "asin": "B01N1L1YXH"
             },
             {
                 "name": "Glasslock Oven-Safe Container Set",
@@ -251,7 +251,7 @@ ARTICLES = [
                 "description": "Non-porous glass eliminates all plasticizer contact with food. Ideal for storing fatty foods like cheese, oils, and leftovers.",
                 "pros": "Zero chemical migration, see-through, microwave/oven safe",
                 "cons": "Heavier, breakable, lid still plastic (but doesn\u2019t contact food)",
-                "asin": "B09KYGVBCN"
+                "asin": "B01N1L1YXH"
             }
         ],
         "sources": [
