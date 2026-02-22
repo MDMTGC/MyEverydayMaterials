@@ -1,24 +1,7 @@
-"""Kitchen & Dining article data for MyEverydayMaterials generator."""
+"""Upgraded kitchen article data."""
 
-# Related article cross-links (slug -> list of related slugs)
-RELATED_MAP = {
-    "pfas-forever-chemicals": ["teflon-ptfe-offgassing", "bpa-plastic-containers", "black-plastic-takeout"],
-    "bpa-plastic-containers": ["phthalates-food-wrap", "pfas-forever-chemicals", "antimony-pet-bottles"],
-    "phthalates-food-wrap": ["bpa-plastic-containers", "black-plastic-takeout", "pfas-forever-chemicals"],
-    "melamine-plates-safety": ["bamboo-fiber-plates", "silicone-bakeware-heat", "bpa-plastic-containers"],
-    "aluminum-foil-cooking": ["cast-iron-seasoning", "silicone-bakeware-heat", "teflon-ptfe-offgassing"],
-    "cast-iron-seasoning": ["teflon-ptfe-offgassing", "aluminum-foil-cooking", "unlined-copper-toxicity"],
-    "silicone-bakeware-heat": ["teflon-ptfe-offgassing", "aluminum-foil-cooking", "melamine-plates-safety"],
-    "unlined-copper-toxicity": ["cast-iron-seasoning", "aluminum-foil-cooking", "teflon-ptfe-offgassing"],
-    "antimony-pet-bottles": ["bpa-plastic-containers", "phthalates-food-wrap", "pfas-forever-chemicals"],
-    "teflon-ptfe-offgassing": ["pfas-forever-chemicals", "cast-iron-seasoning", "silicone-bakeware-heat"],
-    "black-plastic-takeout": ["phthalates-food-wrap", "bpa-plastic-containers", "bamboo-fiber-plates"],
-    "bamboo-fiber-plates": ["melamine-plates-safety", "black-plastic-takeout", "phthalates-food-wrap"],
-}
-
-# Full article content for all 12 Kitchen & Dining guides
-ARTICLES = [
-    # ─── 1. PFAS ───────────────────────────────────────────────────────
+ARTICLES = \
+[
     {
         "slug": "pfas-forever-chemicals",
         "title": "PFAS in Your Kitchen: What &ldquo;Forever Chemicals&rdquo; Really Mean for Your Health",
@@ -30,33 +13,17 @@ ARTICLES = [
             {
                 "id": "what-are-pfas",
                 "heading": "What Are PFAS?",
-                "content": """<p>PFAS stands for per- and polyfluoroalkyl substances &mdash; a family of over 12,000 synthetic chemicals built around carbon-fluorine bonds, one of the strongest in organic chemistry. This extreme stability is exactly what makes them useful (water-repellent, grease-proof, heat-resistant) and dangerous (they never fully break down in the environment or the human body).</p>
-<p>In the kitchen, PFAS appear in two main places: <strong>non-stick cookware coatings</strong> (marketed as PTFE, the base polymer behind Teflon) and <strong>grease-proof food packaging</strong> like microwave popcorn bags, fast-food wrappers, and some takeout containers.</p>"""
+                "content": "<p>PFAS stands for per- and polyfluoroalkyl substances &mdash; a family of over 12,000 synthetic chemicals built around carbon-fluorine bonds, one of the strongest in organic chemistry. This extreme stability is exactly what makes them useful (water-repellent, grease-proof, heat-resistant) and dangerous (they never fully break down in the environment or the human body).</p>\n<p>In the kitchen, PFAS appear in two main places: <strong>non-stick cookware coatings</strong> (marketed as PTFE, the base polymer behind Teflon) and <strong>grease-proof food packaging</strong> like microwave popcorn bags, fast-food wrappers, and some takeout containers.</p>"
             },
             {
                 "id": "health-risks",
                 "heading": "The Health Risks",
-                "content": """<p>The scientific consensus on PFAS has shifted dramatically. The EPA&rsquo;s 2024 National Primary Drinking Water Regulation set enforceable limits of just 4 parts per trillion for PFOA and PFOS &mdash; effectively declaring that no meaningful exposure is safe.</p>
-<p>Key findings from peer-reviewed research:</p>
-<ul class="key-facts">
-  <li><span class="fact-label">Cancer</span> PFOA classified as a Group 2B carcinogen by IARC; linked to kidney and testicular cancer in occupational studies.</li>
-  <li><span class="fact-label">Thyroid</span> Multiple studies link PFAS exposure to thyroid hormone disruption, especially in women.</li>
-  <li><span class="fact-label">Immune</span> The National Academies of Sciences (2022) concluded PFAS decrease vaccine antibody response.</li>
-  <li><span class="fact-label">Liver</span> PFAS exposure associated with elevated liver enzymes and non-alcoholic fatty liver disease.</li>
-  <li><span class="fact-label">Half-life</span> PFOS has a human half-life of 3&ndash;5 years &mdash; it accumulates faster than the body can clear it.</li>
-</ul>
-<div class="callout callout-danger">
-  <strong>Key fact:</strong> A 2023 study in Environmental Science &amp; Technology found that cooking in PFAS-coated pans at normal temperatures releases small amounts of PFAS into food. The dose is low per meal, but exposure is cumulative and lifelong.
-</div>"""
+                "content": "<p>The scientific consensus on PFAS has shifted dramatically. The EPA&rsquo;s 2024 National Primary Drinking Water Regulation set enforceable limits of just 4 parts per trillion for PFOA and PFOS &mdash; effectively declaring that no meaningful exposure is safe.</p>\n<p>Key findings from peer-reviewed research:</p>\n<ul class=\"key-facts\">\n  <li><span class=\"fact-label\">Cancer</span> PFOA classified as a Group 2B carcinogen by IARC; linked to kidney and testicular cancer in occupational studies.</li>\n  <li><span class=\"fact-label\">Thyroid</span> Multiple studies link PFAS exposure to thyroid hormone disruption, especially in women.</li>\n  <li><span class=\"fact-label\">Immune</span> The National Academies of Sciences (2022) concluded PFAS decrease vaccine antibody response.</li>\n  <li><span class=\"fact-label\">Liver</span> PFAS exposure associated with elevated liver enzymes and non-alcoholic fatty liver disease.</li>\n  <li><span class=\"fact-label\">Half-life</span> PFOS has a human half-life of 3&ndash;5 years &mdash; it accumulates faster than the body can clear it.</li>\n</ul>\n<div class=\"callout callout-danger\">\n  <strong>Key fact:</strong> A 2023 study in Environmental Science &amp; Technology found that cooking in PFAS-coated pans at normal temperatures releases small amounts of PFAS into food. The dose is low per meal, but exposure is cumulative and lifelong.\n</div>"
             },
             {
                 "id": "what-to-do",
                 "heading": "What You Can Do Right Now",
-                "content": """<p>You don&rsquo;t need to panic, but you should reduce exposure where practical:</p>
-<p><strong>Stop using damaged non-stick pans.</strong> Scratched or flaking PTFE coatings release far more particles. If your non-stick pan is peeling, replace it immediately.</p>
-<p><strong>Avoid microwave popcorn bags.</strong> The grease-proof lining is a significant PFAS source. Use a stovetop popper or silicone microwave bowl instead.</p>
-<p><strong>Reduce fast-food packaging contact.</strong> Transfer food to a plate rather than eating directly from wrappers.</p>
-<p><strong>Filter your water.</strong> Activated carbon and reverse osmosis filters reduce PFAS in drinking water significantly.</p>"""
+                "content": "<p>You don&rsquo;t need to panic, but you should reduce exposure where practical:</p>\n<p><strong>Stop using damaged non-stick pans.</strong> Scratched or flaking PTFE coatings release far more particles. If your non-stick pan is peeling, replace it immediately.</p>\n<p><strong>Avoid microwave popcorn bags.</strong> The grease-proof lining is a significant PFAS source. Use a stovetop popper or silicone microwave bowl instead.</p>\n<p><strong>Reduce fast-food packaging contact.</strong> Transfer food to a plate rather than eating directly from wrappers.</p>\n<p><strong>Filter your water.</strong> Activated carbon and reverse osmosis filters reduce PFAS in drinking water significantly.</p>"
             }
         ],
         "alternatives": [
@@ -94,14 +61,24 @@ ARTICLES = [
             }
         ],
         "sources": [
-            ("EPA PFAS National Primary Drinking Water Regulation (2024)", "https://www.epa.gov/sdwa/and-polyfluoroalkyl-substances-pfas"),
-            ("National Academies &mdash; Exposure, Health Effects of PFAS (2022)", "https://nap.nationalacademies.org/catalog/26156"),
-            ("IARC Monograph on PFOA (2023)", "https://monographs.iarc.who.int/"),
-            ("Environmental Science &amp; Technology &mdash; PFAS release from cookware (2023)", "https://pubs.acs.org/journal/esthag"),
+            [
+                "EPA PFAS National Primary Drinking Water Regulation (2024)",
+                "https://www.epa.gov/sdwa/and-polyfluoroalkyl-substances-pfas"
+            ],
+            [
+                "National Academies &mdash; Exposure, Health Effects of PFAS (2022)",
+                "https://nap.nationalacademies.org/catalog/26156"
+            ],
+            [
+                "IARC Monograph on PFOA (2023)",
+                "https://monographs.iarc.who.int/"
+            ],
+            [
+                "Environmental Science &amp; Technology &mdash; PFAS release from cookware (2023)",
+                "https://pubs.acs.org/journal/esthag"
+            ]
         ]
     },
-
-    # ─── 2. BPA ────────────────────────────────────────────────────────
     {
         "slug": "bpa-plastic-containers",
         "title": "BPA in Plastic Containers: Why &ldquo;BPA-Free&rdquo; Isn&rsquo;t Always Safer",
@@ -113,31 +90,17 @@ ARTICLES = [
             {
                 "id": "what-is-bpa",
                 "heading": "What Is BPA?",
-                "content": """<p>Bisphenol A is an industrial chemical used since the 1960s to make polycarbonate plastics and epoxy resins. In your kitchen, it shows up in <strong>hard clear plastic containers</strong> (marked with recycling code #7), the <strong>epoxy lining inside canned foods</strong>, and some <strong>reusable water bottles</strong>.</p>
-<p>BPA is structurally similar to estrogen, which is the core problem. It binds to estrogen receptors in the body, mimicking natural hormones at remarkably low concentrations.</p>"""
+                "content": "<p>Bisphenol A is an industrial chemical used since the 1960s to make polycarbonate plastics and epoxy resins. In your kitchen, it shows up in <strong>hard clear plastic containers</strong> (marked with recycling code #7), the <strong>epoxy lining inside canned foods</strong>, and some <strong>reusable water bottles</strong>.</p>\n<p>BPA is structurally similar to estrogen, which is the core problem. It binds to estrogen receptors in the body, mimicking natural hormones at remarkably low concentrations.</p>"
             },
             {
                 "id": "health-risks",
                 "heading": "The Health Risks",
-                "content": """<p>The scientific picture has sharpened considerably in recent years:</p>
-<ul class="key-facts">
-  <li><span class="fact-label">Endocrine</span> BPA acts as a xenoestrogen; detectable in 93% of Americans tested by CDC biomonitoring.</li>
-  <li><span class="fact-label">EFSA 2023</span> European Food Safety Authority reduced the tolerable daily intake to 0.2 ng/kg &mdash; a 20,000-fold reduction from its previous limit.</li>
-  <li><span class="fact-label">Fertility</span> Studies link BPA exposure to reduced sperm quality and disrupted ovarian function.</li>
-  <li><span class="fact-label">Metabolic</span> Association with increased risk of type 2 diabetes and obesity in epidemiological studies.</li>
-  <li><span class="fact-label">Heat risk</span> Leaching increases 55x when polycarbonate is exposed to boiling water vs. room temperature.</li>
-</ul>
-<div class="callout callout-warning">
-  <strong>The &ldquo;BPA-free&rdquo; trap:</strong> A 2020 study in <em>Current Opinion in Toxicology</em> found that BPS and BPF &mdash; the most common replacements &mdash; show estrogenic activity comparable to BPA itself. &ldquo;BPA-free&rdquo; on the label does not mean &ldquo;endocrine-disruptor-free.&rdquo;
-</div>"""
+                "content": "<p>The scientific picture has sharpened considerably in recent years:</p>\n<ul class=\"key-facts\">\n  <li><span class=\"fact-label\">Endocrine</span> BPA acts as a xenoestrogen; detectable in 93% of Americans tested by CDC biomonitoring.</li>\n  <li><span class=\"fact-label\">EFSA 2023</span> European Food Safety Authority reduced the tolerable daily intake to 0.2 ng/kg &mdash; a 20,000-fold reduction from its previous limit.</li>\n  <li><span class=\"fact-label\">Fertility</span> Studies link BPA exposure to reduced sperm quality and disrupted ovarian function.</li>\n  <li><span class=\"fact-label\">Metabolic</span> Association with increased risk of type 2 diabetes and obesity in epidemiological studies.</li>\n  <li><span class=\"fact-label\">Heat risk</span> Leaching increases 55x when polycarbonate is exposed to boiling water vs. room temperature.</li>\n</ul>\n<div class=\"callout callout-warning\">\n  <strong>The &ldquo;BPA-free&rdquo; trap:</strong> A 2020 study in <em>Current Opinion in Toxicology</em> found that BPS and BPF &mdash; the most common replacements &mdash; show estrogenic activity comparable to BPA itself. &ldquo;BPA-free&rdquo; on the label does not mean &ldquo;endocrine-disruptor-free.&rdquo;\n</div>"
             },
             {
                 "id": "what-to-do",
                 "heading": "Practical Steps to Reduce Exposure",
-                "content": """<p><strong>Never microwave plastic containers.</strong> Even &ldquo;microwave-safe&rdquo; plastics leach more chemicals when heated. Transfer food to glass or ceramic before reheating.</p>
-<p><strong>Avoid putting plastic in the dishwasher.</strong> The combination of heat and detergent accelerates degradation and leaching.</p>
-<p><strong>Choose cans labeled &ldquo;BPA-NI&rdquo; (non-intent).</strong> Brands like Amy&rsquo;s and Eden Foods use alternative can linings. Look for oleoresin or acrylic-based linings.</p>
-<p><strong>Discard old, cloudy, or scratched plastic containers.</strong> Degraded polycarbonate leaches significantly more BPA.</p>"""
+                "content": "<p><strong>Never microwave plastic containers.</strong> Even &ldquo;microwave-safe&rdquo; plastics leach more chemicals when heated. Transfer food to glass or ceramic before reheating.</p>\n<p><strong>Avoid putting plastic in the dishwasher.</strong> The combination of heat and detergent accelerates degradation and leaching.</p>\n<p><strong>Choose cans labeled &ldquo;BPA-NI&rdquo; (non-intent).</strong> Brands like Amy&rsquo;s and Eden Foods use alternative can linings. Look for oleoresin or acrylic-based linings.</p>\n<p><strong>Discard old, cloudy, or scratched plastic containers.</strong> Degraded polycarbonate leaches significantly more BPA.</p>"
             }
         ],
         "alternatives": [
@@ -175,14 +138,24 @@ ARTICLES = [
             }
         ],
         "sources": [
-            ("EFSA Re-evaluation of BPA (2023)", "https://www.efsa.europa.eu/en/topics/topic/bisphenol"),
-            ("CDC National Biomonitoring &mdash; BPA Factsheet", "https://www.cdc.gov/biomonitoring/BisphenolA_FactSheet.html"),
-            ("Current Opinion in Toxicology &mdash; BPA substitutes (2020)", "https://www.sciencedirect.com/journal/current-opinion-in-toxicology"),
-            ("FDA &mdash; Bisphenol A and Food Contact Applications", "https://www.fda.gov/food/food-additives-petitions/bisphenol-bpa-use-food-contact-application"),
+            [
+                "EFSA Re-evaluation of BPA (2023)",
+                "https://www.efsa.europa.eu/en/topics/topic/bisphenol"
+            ],
+            [
+                "CDC National Biomonitoring &mdash; BPA Factsheet",
+                "https://www.cdc.gov/biomonitoring/BisphenolA_FactSheet.html"
+            ],
+            [
+                "Current Opinion in Toxicology &mdash; BPA substitutes (2020)",
+                "https://www.sciencedirect.com/journal/current-opinion-in-toxicology"
+            ],
+            [
+                "FDA &mdash; Bisphenol A and Food Contact Applications",
+                "https://www.fda.gov/food/food-additives-petitions/bisphenol-bpa-use-food-contact-application"
+            ]
         ]
     },
-
-    # ─── 3. Phthalates ────────────────────────────────────────────────
     {
         "slug": "phthalates-food-wrap",
         "title": "Phthalates in Food Wrap: The Hidden Plasticizer in Your Kitchen",
@@ -194,30 +167,17 @@ ARTICLES = [
             {
                 "id": "what-are-phthalates",
                 "heading": "What Are Phthalates?",
-                "content": """<p>Phthalates are a group of chemicals used to make plastics soft and flexible. In food contact, the main culprits are <strong>DEHP</strong> (di-2-ethylhexyl phthalate) and <strong>DBP</strong> (dibutyl phthalate), commonly found in PVC-based cling wraps, food processing tubing, and printed food packaging.</p>
-<p>Unlike BPA, phthalates are not chemically bonded to the plastic &mdash; they&rsquo;re additives that can leach out easily, especially into fatty foods (cheese, meat, oils) and when exposed to heat.</p>"""
+                "content": "<p>Phthalates are a group of chemicals used to make plastics soft and flexible. In food contact, the main culprits are <strong>DEHP</strong> (di-2-ethylhexyl phthalate) and <strong>DBP</strong> (dibutyl phthalate), commonly found in PVC-based cling wraps, food processing tubing, and printed food packaging.</p>\n<p>Unlike BPA, phthalates are not chemically bonded to the plastic &mdash; they&rsquo;re additives that can leach out easily, especially into fatty foods (cheese, meat, oils) and when exposed to heat.</p>"
             },
             {
                 "id": "health-risks",
                 "heading": "The Health Risks",
-                "content": """<ul class="key-facts">
-  <li><span class="fact-label">Endocrine</span> Phthalates are anti-androgenic &mdash; they interfere with testosterone and reproductive development.</li>
-  <li><span class="fact-label">Fertility</span> DEHP exposure linked to reduced sperm count and quality in multiple human studies.</li>
-  <li><span class="fact-label">Children</span> Higher phthalate metabolites in children&rsquo;s urine associated with ADHD-like behaviors (meta-analysis, 2021).</li>
-  <li><span class="fact-label">Migration</span> Studies show phthalates migrate into food at 5&ndash;50x higher rates when wraps contact fatty foods or are heated.</li>
-  <li><span class="fact-label">Regulation</span> EU banned DEHP and three other phthalates in food contact materials. The US has been slower to act.</li>
-</ul>
-<div class="callout callout-warning">
-  <strong>The delivery food problem:</strong> A 2021 study in the <em>Journal of Exposure Science &amp; Environmental Epidemiology</em> found that people who eat restaurant or fast-food meals have 35% higher urinary phthalate levels than those who eat home-cooked food &mdash; largely due to food handling gloves and packaging.
-</div>"""
+                "content": "<ul class=\"key-facts\">\n  <li><span class=\"fact-label\">Endocrine</span> Phthalates are anti-androgenic &mdash; they interfere with testosterone and reproductive development.</li>\n  <li><span class=\"fact-label\">Fertility</span> DEHP exposure linked to reduced sperm count and quality in multiple human studies.</li>\n  <li><span class=\"fact-label\">Children</span> Higher phthalate metabolites in children&rsquo;s urine associated with ADHD-like behaviors (meta-analysis, 2021).</li>\n  <li><span class=\"fact-label\">Migration</span> Studies show phthalates migrate into food at 5&ndash;50x higher rates when wraps contact fatty foods or are heated.</li>\n  <li><span class=\"fact-label\">Regulation</span> EU banned DEHP and three other phthalates in food contact materials. The US has been slower to act.</li>\n</ul>\n<div class=\"callout callout-warning\">\n  <strong>The delivery food problem:</strong> A 2021 study in the <em>Journal of Exposure Science &amp; Environmental Epidemiology</em> found that people who eat restaurant or fast-food meals have 35% higher urinary phthalate levels than those who eat home-cooked food &mdash; largely due to food handling gloves and packaging.\n</div>"
             },
             {
                 "id": "what-to-do",
                 "heading": "How to Reduce Your Exposure",
-                "content": """<p><strong>Don&rsquo;t microwave food in plastic wrap.</strong> Even &ldquo;microwave-safe&rdquo; cling wrap can release phthalates when heated. Use a ceramic plate or silicone lid as a splatter guard instead.</p>
-<p><strong>Avoid PVC wraps on fatty foods.</strong> If you must use plastic wrap, choose polyethylene (PE/LDPE) wraps, which are phthalate-free. Check the box &mdash; it should say &ldquo;PVC-free&rdquo; or &ldquo;made from polyethylene.&rdquo;</p>
-<p><strong>Cook at home more often.</strong> The single biggest factor is reducing contact with commercial food-handling plastics and gloves.</p>
-<p><strong>Store oils and fatty foods in glass.</strong> Olive oil, butter, cheese, and nut butters should never sit in plastic long-term.</p>"""
+                "content": "<p><strong>Don&rsquo;t microwave food in plastic wrap.</strong> Even &ldquo;microwave-safe&rdquo; cling wrap can release phthalates when heated. Use a ceramic plate or silicone lid as a splatter guard instead.</p>\n<p><strong>Avoid PVC wraps on fatty foods.</strong> If you must use plastic wrap, choose polyethylene (PE/LDPE) wraps, which are phthalate-free. Check the box &mdash; it should say &ldquo;PVC-free&rdquo; or &ldquo;made from polyethylene.&rdquo;</p>\n<p><strong>Cook at home more often.</strong> The single biggest factor is reducing contact with commercial food-handling plastics and gloves.</p>\n<p><strong>Store oils and fatty foods in glass.</strong> Olive oil, butter, cheese, and nut butters should never sit in plastic long-term.</p>"
             }
         ],
         "alternatives": [
@@ -255,14 +215,24 @@ ARTICLES = [
             }
         ],
         "sources": [
-            ("NAS &mdash; Phthalates Cumulative Risk Assessment (2017)", "https://nap.nationalacademies.org/catalog/25043"),
-            ("Journal of Exposure Science &mdash; Dining out and phthalates (2021)", "https://www.nature.com/jes/"),
-            ("EU REACH Restriction on Phthalates in Food Contact", "https://echa.europa.eu/"),
-            ("FDA &mdash; Phthalates in Food Packaging", "https://www.fda.gov/food/food-ingredients-packaging"),
+            [
+                "NAS &mdash; Phthalates Cumulative Risk Assessment (2017)",
+                "https://nap.nationalacademies.org/catalog/25043"
+            ],
+            [
+                "Journal of Exposure Science &mdash; Dining out and phthalates (2021)",
+                "https://www.nature.com/jes/"
+            ],
+            [
+                "EU REACH Restriction on Phthalates in Food Contact",
+                "https://echa.europa.eu/"
+            ],
+            [
+                "FDA &mdash; Phthalates in Food Packaging",
+                "https://www.fda.gov/food/food-ingredients-packaging"
+            ]
         ]
     },
-
-    # ─── 4. Melamine ──────────────────────────────────────────────────
     {
         "slug": "melamine-plates-safety",
         "title": "Melamine Plates: Safe for Serving, Risky When Heated",
@@ -274,30 +244,17 @@ ARTICLES = [
             {
                 "id": "what-is-melamine",
                 "heading": "What Is Melamine Dinnerware?",
-                "content": """<p>Melamine is a nitrogen-rich organic compound that, when combined with formaldehyde, creates melamine-formaldehyde resin &mdash; a hard, glossy, shatter-resistant plastic. It&rsquo;s the material behind those colorful, lightweight plates marketed for outdoor dining, kids&rsquo; meals, and cafeterias.</p>
-<p>The appeal is obvious: it looks like ceramic, won&rsquo;t break when dropped, and costs a fraction of the price. The problem is what happens when heat enters the equation.</p>"""
+                "content": "<p>Melamine is a nitrogen-rich organic compound that, when combined with formaldehyde, creates melamine-formaldehyde resin &mdash; a hard, glossy, shatter-resistant plastic. It&rsquo;s the material behind those colorful, lightweight plates marketed for outdoor dining, kids&rsquo; meals, and cafeterias.</p>\n<p>The appeal is obvious: it looks like ceramic, won&rsquo;t break when dropped, and costs a fraction of the price. The problem is what happens when heat enters the equation.</p>"
             },
             {
                 "id": "health-risks",
                 "heading": "The Health Risks",
-                "content": """<ul class="key-facts">
-  <li><span class="fact-label">FDA Warning</span> The FDA explicitly states: &ldquo;Don&rsquo;t microwave food in melamine dishware.&rdquo; High heat causes measurable leaching.</li>
-  <li><span class="fact-label">Kidneys</span> Chronic melamine exposure damages renal tubules. The 2008 Chinese milk scandal (melamine-adulterated formula) caused kidney stones in 300,000 infants.</li>
-  <li><span class="fact-label">Leaching</span> A Taiwanese study found melamine levels in urine increased 8.35x after eating hot noodle soup from melamine bowls vs. ceramic bowls.</li>
-  <li><span class="fact-label">Acid trigger</span> Acidic foods (tomato sauce, citrus, vinegar-based dressings) significantly increase melamine migration, even at lower temperatures.</li>
-  <li><span class="fact-label">Degradation</span> Repeated dishwasher use gradually erodes the surface, increasing leaching in older plates.</li>
-</ul>
-<div class="callout callout-safe">
-  <strong>The good news:</strong> At room temperature with non-acidic foods (crackers, sandwiches, dry snacks), melamine plates pose minimal risk. The key is understanding when NOT to use them.
-</div>"""
+                "content": "<ul class=\"key-facts\">\n  <li><span class=\"fact-label\">FDA Warning</span> The FDA explicitly states: &ldquo;Don&rsquo;t microwave food in melamine dishware.&rdquo; High heat causes measurable leaching.</li>\n  <li><span class=\"fact-label\">Kidneys</span> Chronic melamine exposure damages renal tubules. The 2008 Chinese milk scandal (melamine-adulterated formula) caused kidney stones in 300,000 infants.</li>\n  <li><span class=\"fact-label\">Leaching</span> A Taiwanese study found melamine levels in urine increased 8.35x after eating hot noodle soup from melamine bowls vs. ceramic bowls.</li>\n  <li><span class=\"fact-label\">Acid trigger</span> Acidic foods (tomato sauce, citrus, vinegar-based dressings) significantly increase melamine migration, even at lower temperatures.</li>\n  <li><span class=\"fact-label\">Degradation</span> Repeated dishwasher use gradually erodes the surface, increasing leaching in older plates.</li>\n</ul>\n<div class=\"callout callout-safe\">\n  <strong>The good news:</strong> At room temperature with non-acidic foods (crackers, sandwiches, dry snacks), melamine plates pose minimal risk. The key is understanding when NOT to use them.\n</div>"
             },
             {
                 "id": "what-to-do",
                 "heading": "Safe Use Guidelines",
-                "content": """<p><strong>Never microwave melamine.</strong> This is the single most important rule. Transfer food to a ceramic or glass dish before reheating.</p>
-<p><strong>Don&rsquo;t serve hot soups or sauces in melamine bowls.</strong> If the food is steaming, use a different vessel.</p>
-<p><strong>Retire scratched or worn melamine.</strong> Surface degradation increases chemical migration significantly.</p>
-<p><strong>Use melamine for cold foods only.</strong> Chips, crackers, fruit salads, and sandwiches are fine. It&rsquo;s still excellent poolside or for camping with cold items.</p>"""
+                "content": "<p><strong>Never microwave melamine.</strong> This is the single most important rule. Transfer food to a ceramic or glass dish before reheating.</p>\n<p><strong>Don&rsquo;t serve hot soups or sauces in melamine bowls.</strong> If the food is steaming, use a different vessel.</p>\n<p><strong>Retire scratched or worn melamine.</strong> Surface degradation increases chemical migration significantly.</p>\n<p><strong>Use melamine for cold foods only.</strong> Chips, crackers, fruit salads, and sandwiches are fine. It&rsquo;s still excellent poolside or for camping with cold items.</p>"
             }
         ],
         "alternatives": [
@@ -324,18 +281,27 @@ ARTICLES = [
                 "pros": "Biodegradable, lightweight, stylish earth tones",
                 "cons": "Not microwave-safe, hand-wash only, less durable than melamine",
                 "url": "https://www.amazon.com/s?k=Bamboozle+Bamboo+Dinnerware+Set&tag=myeverydaymat-20"
-            },
-           
+            }
         ],
         "sources": [
-            ("FDA &mdash; Melamine in Tableware", "https://www.fda.gov/food/chemicals/melamine-tableware"),
-            ("JAMA Internal Medicine &mdash; Melamine in urine after soup consumption (2013)", "https://jamanetwork.com/journals/jamainternalmedicine"),
-            ("WHO &mdash; Melamine and Cyanuric Acid Toxicity", "https://www.who.int/news-room/questions-and-answers/item/melamine"),
-            ("European Commission &mdash; Melamine Migration Limits", "https://food.ec.europa.eu/safety/chemical-safety_en"),
+            [
+                "FDA &mdash; Melamine in Tableware",
+                "https://www.fda.gov/food/chemicals/melamine-tableware"
+            ],
+            [
+                "JAMA Internal Medicine &mdash; Melamine in urine after soup consumption (2013)",
+                "https://jamanetwork.com/journals/jamainternalmedicine"
+            ],
+            [
+                "WHO &mdash; Melamine and Cyanuric Acid Toxicity",
+                "https://www.who.int/news-room/questions-and-answers/item/melamine"
+            ],
+            [
+                "European Commission &mdash; Melamine Migration Limits",
+                "https://food.ec.europa.eu/safety/chemical-safety_en"
+            ]
         ]
     },
-
-    # ─── 5. Aluminum Foil ─────────────────────────────────────────────
     {
         "slug": "aluminum-foil-cooking",
         "title": "Aluminum Foil and Cooking: When It&rsquo;s Safe and When It&rsquo;s Not",
@@ -347,30 +313,17 @@ ARTICLES = [
             {
                 "id": "the-science",
                 "heading": "What the Science Actually Says",
-                "content": """<p>Aluminum is the most abundant metal in Earth&rsquo;s crust, and trace amounts are in most foods naturally. The question isn&rsquo;t whether you ingest aluminum &mdash; you do, daily &mdash; but whether cooking with foil pushes intake to harmful levels.</p>
-<p>The WHO established a Provisional Tolerable Weekly Intake (PTWI) of 2 mg/kg body weight. For a 150-lb adult, that&rsquo;s about 136 mg per week. Most people consume 1&ndash;10 mg daily from food alone.</p>"""
+                "content": "<p>Aluminum is the most abundant metal in Earth&rsquo;s crust, and trace amounts are in most foods naturally. The question isn&rsquo;t whether you ingest aluminum &mdash; you do, daily &mdash; but whether cooking with foil pushes intake to harmful levels.</p>\n<p>The WHO established a Provisional Tolerable Weekly Intake (PTWI) of 2 mg/kg body weight. For a 150-lb adult, that&rsquo;s about 136 mg per week. Most people consume 1&ndash;10 mg daily from food alone.</p>"
             },
             {
                 "id": "health-risks",
                 "heading": "When Foil Becomes a Concern",
-                "content": """<ul class="key-facts">
-  <li><span class="fact-label">Acidic foods</span> A 2019 study in <em>International Journal of Electrochemical Science</em> found tomatoes wrapped in foil at 400\u00b0F leached 4&ndash;6 mg of aluminum per serving.</li>
-  <li><span class="fact-label">Spices</span> Salt and acidic spices (turmeric, vinegar-based marinades) accelerate leaching significantly.</li>
-  <li><span class="fact-label">Temperature</span> Leaching increases exponentially above 350\u00b0F, especially with extended cooking times.</li>
-  <li><span class="fact-label">Alzheimer&rsquo;s</span> The 1965 hypothesis linking aluminum to Alzheimer&rsquo;s has been largely discredited. The Alzheimer&rsquo;s Association states the evidence is not convincing.</li>
-  <li><span class="fact-label">Kidneys</span> People with impaired kidney function cannot excrete aluminum as efficiently and should limit exposure.</li>
-</ul>
-<div class="callout callout-safe">
-  <strong>Bottom line:</strong> Wrapping a sandwich in foil or covering a baking sheet? Perfectly fine. Wrapping a lemon-herb chicken in foil at 425\u00b0F for an hour? Use parchment paper instead.
-</div>"""
+                "content": "<ul class=\"key-facts\">\n  <li><span class=\"fact-label\">Acidic foods</span> A 2019 study in <em>International Journal of Electrochemical Science</em> found tomatoes wrapped in foil at 400\u00b0F leached 4&ndash;6 mg of aluminum per serving.</li>\n  <li><span class=\"fact-label\">Spices</span> Salt and acidic spices (turmeric, vinegar-based marinades) accelerate leaching significantly.</li>\n  <li><span class=\"fact-label\">Temperature</span> Leaching increases exponentially above 350\u00b0F, especially with extended cooking times.</li>\n  <li><span class=\"fact-label\">Alzheimer&rsquo;s</span> The 1965 hypothesis linking aluminum to Alzheimer&rsquo;s has been largely discredited. The Alzheimer&rsquo;s Association states the evidence is not convincing.</li>\n  <li><span class=\"fact-label\">Kidneys</span> People with impaired kidney function cannot excrete aluminum as efficiently and should limit exposure.</li>\n</ul>\n<div class=\"callout callout-safe\">\n  <strong>Bottom line:</strong> Wrapping a sandwich in foil or covering a baking sheet? Perfectly fine. Wrapping a lemon-herb chicken in foil at 425\u00b0F for an hour? Use parchment paper instead.\n</div>"
             },
             {
                 "id": "what-to-do",
                 "heading": "Simple Rules for Safe Use",
-                "content": """<p><strong>Use foil freely for storage and cold wrapping.</strong> No leaching occurs at room or refrigerator temperatures.</p>
-<p><strong>Switch to parchment for acidic + hot.</strong> If your recipe involves tomatoes, citrus, vinegar, or wine &mdash; and heat &mdash; parchment paper is the better choice.</p>
-<p><strong>Don&rsquo;t cook directly on foil at high heat.</strong> Use it as a tent or cover, not as a direct cooking surface for acidic marinades.</p>
-<p><strong>Avoid foil with salty or spiced rubs.</strong> Salt + acid + heat is the worst-case combination for aluminum leaching.</p>"""
+                "content": "<p><strong>Use foil freely for storage and cold wrapping.</strong> No leaching occurs at room or refrigerator temperatures.</p>\n<p><strong>Switch to parchment for acidic + hot.</strong> If your recipe involves tomatoes, citrus, vinegar, or wine &mdash; and heat &mdash; parchment paper is the better choice.</p>\n<p><strong>Don&rsquo;t cook directly on foil at high heat.</strong> Use it as a tent or cover, not as a direct cooking surface for acidic marinades.</p>\n<p><strong>Avoid foil with salty or spiced rubs.</strong> Salt + acid + heat is the worst-case combination for aluminum leaching.</p>"
             }
         ],
         "alternatives": [
@@ -408,14 +361,24 @@ ARTICLES = [
             }
         ],
         "sources": [
-            ("WHO Provisional Tolerable Weekly Intake for Aluminum", "https://www.who.int/publications/i/item/9789241660600"),
-            ("International Journal of Electrochemical Science &mdash; Al leaching in cooking (2019)", "https://www.electrochemsci.org/"),
-            ("Alzheimer&rsquo;s Association &mdash; Aluminum and Alzheimer&rsquo;s", "https://www.alz.org/alzheimers-dementia/what-is-alzheimers/myths"),
-            ("EFSA &mdash; Safety of Aluminum from Dietary Intake (2008)", "https://www.efsa.europa.eu/en/efsajournal/pub/754"),
+            [
+                "WHO Provisional Tolerable Weekly Intake for Aluminum",
+                "https://www.who.int/publications/i/item/9789241660600"
+            ],
+            [
+                "International Journal of Electrochemical Science &mdash; Al leaching in cooking (2019)",
+                "https://www.electrochemsci.org/"
+            ],
+            [
+                "Alzheimer&rsquo;s Association &mdash; Aluminum and Alzheimer&rsquo;s",
+                "https://www.alz.org/alzheimers-dementia/what-is-alzheimers/myths"
+            ],
+            [
+                "EFSA &mdash; Safety of Aluminum from Dietary Intake (2008)",
+                "https://www.efsa.europa.eu/en/efsajournal/pub/754"
+            ]
         ]
     },
-
-    # ─── 6. Cast Iron Seasoning ───────────────────────────────────────
     {
         "slug": "cast-iron-seasoning",
         "title": "Cast Iron Seasoning: The Science Behind the Safest Non-Stick Surface",
@@ -427,31 +390,17 @@ ARTICLES = [
             {
                 "id": "what-is-seasoning",
                 "heading": "What Is Cast Iron Seasoning, Really?",
-                "content": """<p>Seasoning is not a spice or flavoring \u2014 it&rsquo;s a <strong>thin polymer layer</strong> formed when cooking oil is heated beyond its smoke point on the iron surface. The fatty acid chains in the oil break down (pyrolyze) and then re-bond through cross-linking, creating a hard, smooth, plastic-like film that is chemically bonded to the metal.</p>
-<p>This process is called <strong>oil polymerization</strong>, and it&rsquo;s the same chemistry behind drying oils used in art (linseed oil on paintings, for example). The result is a naturally non-stick surface that contains no synthetic chemicals whatsoever.</p>"""
+                "content": "<p>Seasoning is not a spice or flavoring \u2014 it&rsquo;s a <strong>thin polymer layer</strong> formed when cooking oil is heated beyond its smoke point on the iron surface. The fatty acid chains in the oil break down (pyrolyze) and then re-bond through cross-linking, creating a hard, smooth, plastic-like film that is chemically bonded to the metal.</p>\n<p>This process is called <strong>oil polymerization</strong>, and it&rsquo;s the same chemistry behind drying oils used in art (linseed oil on paintings, for example). The result is a naturally non-stick surface that contains no synthetic chemicals whatsoever.</p>"
             },
             {
                 "id": "is-it-safe",
                 "heading": "Is the &ldquo;Burnt Oil&rdquo; Carcinogenic?",
-                "content": """<p>This is the most common concern, and the answer is clear: <strong>no</strong>.</p>
-<ul class="key-facts">
-  <li><span class="fact-label">Polymerized</span> The oil undergoes a chemical transformation into a stable polymer. It is not &ldquo;burnt&rdquo; food or charred residue.</li>
-  <li><span class="fact-label">Inert</span> Once polymerized, the coating is chemically inert \u2014 it does not break down during normal cooking temperatures (up to 500\u00b0F).</li>
-  <li><span class="fact-label">Iron leaching</span> Cast iron does transfer small amounts of iron into food (1\u20133 mg per serving), especially with acidic foods. For most adults, this is beneficial and helps prevent iron deficiency.</li>
-  <li><span class="fact-label">No PAHs</span> Unlike charring meat, the thin-layer polymerization of oil at seasoning temperatures does not produce meaningful polycyclic aromatic hydrocarbons.</li>
-  <li><span class="fact-label">Track record</span> Cast iron has been used safely for cooking for over 2,000 years across virtually every culture.</li>
-</ul>
-<div class="callout callout-warning">
-  <strong>One exception:</strong> People with hemochromatosis (iron overload disorder) should limit cast iron use, as the extra dietary iron can be harmful. If you have this condition, consult your doctor.
-</div>"""
+                "content": "<p>This is the most common concern, and the answer is clear: <strong>no</strong>.</p>\n<ul class=\"key-facts\">\n  <li><span class=\"fact-label\">Polymerized</span> The oil undergoes a chemical transformation into a stable polymer. It is not &ldquo;burnt&rdquo; food or charred residue.</li>\n  <li><span class=\"fact-label\">Inert</span> Once polymerized, the coating is chemically inert \u2014 it does not break down during normal cooking temperatures (up to 500\u00b0F).</li>\n  <li><span class=\"fact-label\">Iron leaching</span> Cast iron does transfer small amounts of iron into food (1\u20133 mg per serving), especially with acidic foods. For most adults, this is beneficial and helps prevent iron deficiency.</li>\n  <li><span class=\"fact-label\">No PAHs</span> Unlike charring meat, the thin-layer polymerization of oil at seasoning temperatures does not produce meaningful polycyclic aromatic hydrocarbons.</li>\n  <li><span class=\"fact-label\">Track record</span> Cast iron has been used safely for cooking for over 2,000 years across virtually every culture.</li>\n</ul>\n<div class=\"callout callout-warning\">\n  <strong>One exception:</strong> People with hemochromatosis (iron overload disorder) should limit cast iron use, as the extra dietary iron can be harmful. If you have this condition, consult your doctor.\n</div>"
             },
             {
                 "id": "maintenance",
                 "heading": "How to Season and Maintain Properly",
-                "content": """<p><strong>Initial seasoning:</strong> Apply a thin layer of high-smoke-point oil (grapeseed, flaxseed, or Crisbee) and bake upside-down at 450\u00b0F for one hour. Repeat 2\u20133 times for a solid base layer.</p>
-<p><strong>Daily maintenance:</strong> After cooking, rinse with hot water and a stiff brush. A small amount of soap is fine \u2014 the myth that soap destroys seasoning is outdated (modern dish soap doesn&rsquo;t contain lye).</p>
-<p><strong>Dry immediately.</strong> Cast iron rusts quickly. Dry on the stovetop over low heat, then apply a very thin oil layer.</p>
-<p><strong>Avoid long-simmered acidic foods.</strong> Tomato sauce simmered for 30+ minutes will strip seasoning and add a metallic taste. Use enameled cast iron for those dishes.</p>"""
+                "content": "<p><strong>Initial seasoning:</strong> Apply a thin layer of high-smoke-point oil (grapeseed, flaxseed, or Crisbee) and bake upside-down at 450\u00b0F for one hour. Repeat 2\u20133 times for a solid base layer.</p>\n<p><strong>Daily maintenance:</strong> After cooking, rinse with hot water and a stiff brush. A small amount of soap is fine \u2014 the myth that soap destroys seasoning is outdated (modern dish soap doesn&rsquo;t contain lye).</p>\n<p><strong>Dry immediately.</strong> Cast iron rusts quickly. Dry on the stovetop over low heat, then apply a very thin oil layer.</p>\n<p><strong>Avoid long-simmered acidic foods.</strong> Tomato sauce simmered for 30+ minutes will strip seasoning and add a metallic taste. Use enameled cast iron for those dishes.</p>"
             }
         ],
         "alternatives": [
@@ -489,14 +438,24 @@ ARTICLES = [
             }
         ],
         "sources": [
-            ("Journal of Food Science &mdash; Iron leaching from cast iron cookware", "https://ift.onlinelibrary.wiley.com/journal/17503841"),
-            ("America&rsquo;s Test Kitchen &mdash; Science of Cast Iron Seasoning", "https://www.americastestkitchen.com/"),
-            ("Sheryl Canter &mdash; Chemistry of Cast Iron Seasoning (Polymerization)", "https://sherylcanter.com/wordpress/2010/01/a-science-based-technique-for-seasoning-cast-iron/"),
-            ("NIH &mdash; Iron Deficiency and Dietary Sources", "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/"),
+            [
+                "Journal of Food Science &mdash; Iron leaching from cast iron cookware",
+                "https://ift.onlinelibrary.wiley.com/journal/17503841"
+            ],
+            [
+                "America&rsquo;s Test Kitchen &mdash; Science of Cast Iron Seasoning",
+                "https://www.americastestkitchen.com/"
+            ],
+            [
+                "Sheryl Canter &mdash; Chemistry of Cast Iron Seasoning (Polymerization)",
+                "https://sherylcanter.com/wordpress/2010/01/a-science-based-technique-for-seasoning-cast-iron/"
+            ],
+            [
+                "NIH &mdash; Iron Deficiency and Dietary Sources",
+                "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/"
+            ]
         ]
     },
-
-    # ─── 7. Silicone Bakeware ─────────────────────────────────────────
     {
         "slug": "silicone-bakeware-heat",
         "title": "Silicone Bakeware: Safe at What Temperature?",
@@ -508,30 +467,17 @@ ARTICLES = [
             {
                 "id": "what-is-silicone",
                 "heading": "What Is Food-Grade Silicone?",
-                "content": """<p>Silicone (polydimethylsiloxane, or PDMS) is a synthetic polymer made from silicon, oxygen, carbon, and hydrogen. Unlike plastics derived from petroleum, silicone is based on <strong>siloxane bonds</strong> (silicon-oxygen), which are exceptionally stable and heat-resistant.</p>
-<p>There are two manufacturing processes: <strong>platinum-cured</strong> (addition cure) and <strong>peroxide-cured</strong> (tin-cured). Platinum-cured silicone is the gold standard for food contact \u2014 it produces no byproducts and contains no residual catalysts that could leach.</p>"""
+                "content": "<p>Silicone (polydimethylsiloxane, or PDMS) is a synthetic polymer made from silicon, oxygen, carbon, and hydrogen. Unlike plastics derived from petroleum, silicone is based on <strong>siloxane bonds</strong> (silicon-oxygen), which are exceptionally stable and heat-resistant.</p>\n<p>There are two manufacturing processes: <strong>platinum-cured</strong> (addition cure) and <strong>peroxide-cured</strong> (tin-cured). Platinum-cured silicone is the gold standard for food contact \u2014 it produces no byproducts and contains no residual catalysts that could leach.</p>"
             },
             {
                 "id": "health-risks",
                 "heading": "What the Research Shows",
-                "content": """<ul class="key-facts">
-  <li><span class="fact-label">FDA status</span> Silicone is classified as GRAS (Generally Recognized As Safe) for food contact by the FDA.</li>
-  <li><span class="fact-label">Stability</span> Quality silicone remains stable up to approximately 425\u00b0F. Most baking occurs in the 325\u2013400\u00b0F range.</li>
-  <li><span class="fact-label">Above 425\u00b0F</span> A 2018 German Federal Institute study detected trace siloxane compounds at high temperatures, but below levels of health concern.</li>
-  <li><span class="fact-label">No leaching</span> Multiple studies confirm platinum-cured silicone does not leach detectable chemicals into food at normal baking temperatures.</li>
-  <li><span class="fact-label">Fillers</span> Low-cost silicone may contain plastic fillers that compromise heat stability \u2014 this is the primary safety concern.</li>
-</ul>
-<div class="callout callout-warning">
-  <strong>The twist test:</strong> Pinch and twist the silicone. If it stays the same color, it\u2019s pure silicone. If a white line or white color shows through, it contains fillers and should not be used for baking.
-</div>"""
+                "content": "<ul class=\"key-facts\">\n  <li><span class=\"fact-label\">FDA status</span> Silicone is classified as GRAS (Generally Recognized As Safe) for food contact by the FDA.</li>\n  <li><span class=\"fact-label\">Stability</span> Quality silicone remains stable up to approximately 425\u00b0F. Most baking occurs in the 325\u2013400\u00b0F range.</li>\n  <li><span class=\"fact-label\">Above 425\u00b0F</span> A 2018 German Federal Institute study detected trace siloxane compounds at high temperatures, but below levels of health concern.</li>\n  <li><span class=\"fact-label\">No leaching</span> Multiple studies confirm platinum-cured silicone does not leach detectable chemicals into food at normal baking temperatures.</li>\n  <li><span class=\"fact-label\">Fillers</span> Low-cost silicone may contain plastic fillers that compromise heat stability \u2014 this is the primary safety concern.</li>\n</ul>\n<div class=\"callout callout-warning\">\n  <strong>The twist test:</strong> Pinch and twist the silicone. If it stays the same color, it\u2019s pure silicone. If a white line or white color shows through, it contains fillers and should not be used for baking.\n</div>"
             },
             {
                 "id": "what-to-do",
                 "heading": "How to Buy and Use Silicone Safely",
-                "content": """<p><strong>Buy platinum-cured, FDA-grade silicone.</strong> Look for brands that specifically advertise &ldquo;platinum-cured&rdquo; or &ldquo;medical-grade&rdquo; silicone.</p>
-<p><strong>Stay below 425\u00b0F.</strong> This covers virtually all baking. If you\u2019re broiling or cooking above 450\u00b0F, use metal or glass instead.</p>
-<p><strong>Perform the twist test before first use.</strong> Reject any silicone product that shows white when deformed.</p>
-<p><strong>&ldquo;Cure&rdquo; new silicone bakeware.</strong> Bake empty at 350\u00b0F for 30 minutes to off-gas any manufacturing residues. This is a one-time step.</p>"""
+                "content": "<p><strong>Buy platinum-cured, FDA-grade silicone.</strong> Look for brands that specifically advertise &ldquo;platinum-cured&rdquo; or &ldquo;medical-grade&rdquo; silicone.</p>\n<p><strong>Stay below 425\u00b0F.</strong> This covers virtually all baking. If you\u2019re broiling or cooking above 450\u00b0F, use metal or glass instead.</p>\n<p><strong>Perform the twist test before first use.</strong> Reject any silicone product that shows white when deformed.</p>\n<p><strong>&ldquo;Cure&rdquo; new silicone bakeware.</strong> Bake empty at 350\u00b0F for 30 minutes to off-gas any manufacturing residues. This is a one-time step.</p>"
             }
         ],
         "alternatives": [
@@ -569,13 +515,20 @@ ARTICLES = [
             }
         ],
         "sources": [
-            ("FDA &mdash; Silicone as GRAS for Food Contact", "https://www.fda.gov/food/food-ingredients-packaging"),
-            ("German Federal Institute for Risk Assessment &mdash; Silicone bakeware (2018)", "https://www.bfr.bund.de/en/"),
-            ("European Commission Regulation on Silicone Food Contact Materials", "https://food.ec.europa.eu/safety/chemical-safety/food-contact-materials_en"),
+            [
+                "FDA &mdash; Silicone as GRAS for Food Contact",
+                "https://www.fda.gov/food/food-ingredients-packaging"
+            ],
+            [
+                "German Federal Institute for Risk Assessment &mdash; Silicone bakeware (2018)",
+                "https://www.bfr.bund.de/en/"
+            ],
+            [
+                "European Commission Regulation on Silicone Food Contact Materials",
+                "https://food.ec.europa.eu/safety/chemical-safety/food-contact-materials_en"
+            ]
         ]
     },
-
-    # ─── 8. Unlined Copper ────────────────────────────────────────────
     {
         "slug": "unlined-copper-toxicity",
         "title": "Unlined Copper Cookware: Beautiful but Potentially Toxic",
@@ -587,30 +540,17 @@ ARTICLES = [
             {
                 "id": "the-appeal",
                 "heading": "Why Copper Is Prized in Kitchens",
-                "content": """<p>Copper has the best thermal conductivity of any common cookware metal \u2014 roughly 25x better than stainless steel. This means <strong>instant, even heat response</strong> with no hot spots. It&rsquo;s why professional French kitchens have used copper for centuries.</p>
-<p>The problem is that copper is also <strong>highly reactive</strong>. When it contacts acidic foods (tomatoes, wine, lemon juice, vinegar), it dissolves into the food as copper ions, forming compounds like copper acetate and copper citrate \u2014 collectively known as <strong>verdigris</strong>.</p>"""
+                "content": "<p>Copper has the best thermal conductivity of any common cookware metal \u2014 roughly 25x better than stainless steel. This means <strong>instant, even heat response</strong> with no hot spots. It&rsquo;s why professional French kitchens have used copper for centuries.</p>\n<p>The problem is that copper is also <strong>highly reactive</strong>. When it contacts acidic foods (tomatoes, wine, lemon juice, vinegar), it dissolves into the food as copper ions, forming compounds like copper acetate and copper citrate \u2014 collectively known as <strong>verdigris</strong>.</p>"
             },
             {
                 "id": "health-risks",
                 "heading": "The Health Risks",
-                "content": """<ul class="key-facts">
-  <li><span class="fact-label">Acute toxicity</span> Ingesting more than 15 mg of copper in a single dose can cause nausea, vomiting, and abdominal pain.</li>
-  <li><span class="fact-label">WHO limit</span> Tolerable upper intake is 10 mg/day for adults. A single acidic dish cooked in unlined copper can leach 5\u201350 mg.</li>
-  <li><span class="fact-label">Liver damage</span> Chronic copper overexposure causes hepatic (liver) damage. Wilson&rsquo;s disease patients are especially vulnerable.</li>
-  <li><span class="fact-label">Verdigris</span> The green patina on old copper is copper carbonate/acetate \u2014 toxic if it contacts food.</li>
-  <li><span class="fact-label">Safe use exists</span> Copper bowls for whipping egg whites are safe because eggs are not acidic, and the copper stabilizes the foam via a protein-copper interaction.</li>
-</ul>
-<div class="callout callout-danger">
-  <strong>Warning:</strong> Never cook tomato sauce, wine-based sauces, citrus marinades, or vinegar dressings in unlined copper. The copper leaching can be rapid and significant.
-</div>"""
+                "content": "<ul class=\"key-facts\">\n  <li><span class=\"fact-label\">Acute toxicity</span> Ingesting more than 15 mg of copper in a single dose can cause nausea, vomiting, and abdominal pain.</li>\n  <li><span class=\"fact-label\">WHO limit</span> Tolerable upper intake is 10 mg/day for adults. A single acidic dish cooked in unlined copper can leach 5\u201350 mg.</li>\n  <li><span class=\"fact-label\">Liver damage</span> Chronic copper overexposure causes hepatic (liver) damage. Wilson&rsquo;s disease patients are especially vulnerable.</li>\n  <li><span class=\"fact-label\">Verdigris</span> The green patina on old copper is copper carbonate/acetate \u2014 toxic if it contacts food.</li>\n  <li><span class=\"fact-label\">Safe use exists</span> Copper bowls for whipping egg whites are safe because eggs are not acidic, and the copper stabilizes the foam via a protein-copper interaction.</li>\n</ul>\n<div class=\"callout callout-danger\">\n  <strong>Warning:</strong> Never cook tomato sauce, wine-based sauces, citrus marinades, or vinegar dressings in unlined copper. The copper leaching can be rapid and significant.\n</div>"
             },
             {
                 "id": "what-to-do",
                 "heading": "How to Enjoy Copper Safely",
-                "content": """<p><strong>Always buy lined copper.</strong> Modern copper cookware uses stainless steel linings that completely prevent food-metal contact. Tin-lined is traditional but requires re-tinning every few years.</p>
-<p><strong>Inspect tin linings regularly.</strong> If the tin layer wears through to expose copper, stop cooking in it until it&rsquo;s re-tinned.</p>
-<p><strong>Use unlined copper only for sugar work and egg whites.</strong> These are the two culinary applications where unlined copper is both safe and beneficial.</p>
-<p><strong>Never let copper develop green patina near food.</strong> Clean copper regularly if used decoratively in the kitchen.</p>"""
+                "content": "<p><strong>Always buy lined copper.</strong> Modern copper cookware uses stainless steel linings that completely prevent food-metal contact. Tin-lined is traditional but requires re-tinning every few years.</p>\n<p><strong>Inspect tin linings regularly.</strong> If the tin layer wears through to expose copper, stop cooking in it until it&rsquo;s re-tinned.</p>\n<p><strong>Use unlined copper only for sugar work and egg whites.</strong> These are the two culinary applications where unlined copper is both safe and beneficial.</p>\n<p><strong>Never let copper develop green patina near food.</strong> Clean copper regularly if used decoratively in the kitchen.</p>"
             }
         ],
         "alternatives": [
@@ -648,14 +588,24 @@ ARTICLES = [
             }
         ],
         "sources": [
-            ("WHO &mdash; Copper in Drinking Water Guidelines", "https://www.who.int/publications/i/item/9789241546553"),
-            ("European Copper Institute &mdash; Copper and Health", "https://copperalliance.org/"),
-            ("NIH &mdash; Copper Fact Sheet for Health Professionals", "https://ods.od.nih.gov/factsheets/Copper-HealthProfessional/"),
-            ("Harold McGee &mdash; On Food and Cooking (Copper Chemistry)", "https://www.penguinrandomhouse.com/books/293199/on-food-and-cooking-by-harold-mcgee/"),
+            [
+                "WHO &mdash; Copper in Drinking Water Guidelines",
+                "https://www.who.int/publications/i/item/9789241546553"
+            ],
+            [
+                "European Copper Institute &mdash; Copper and Health",
+                "https://copperalliance.org/"
+            ],
+            [
+                "NIH &mdash; Copper Fact Sheet for Health Professionals",
+                "https://ods.od.nih.gov/factsheets/Copper-HealthProfessional/"
+            ],
+            [
+                "Harold McGee &mdash; On Food and Cooking (Copper Chemistry)",
+                "https://www.penguinrandomhouse.com/books/293199/on-food-and-cooking-by-harold-mcgee/"
+            ]
         ]
     },
-
-    # ─── 9. Antimony / PET Bottles ────────────────────────────────────
     {
         "slug": "antimony-pet-bottles",
         "title": "Antimony in PET Bottles: Should You Worry About Your Water Bottle?",
@@ -667,30 +617,17 @@ ARTICLES = [
             {
                 "id": "what-is-antimony",
                 "heading": "What Is Antimony and Why Is It in Plastic?",
-                "content": """<p>Antimony trioxide (Sb\u2082O\u2083) is a catalyst used during the polymerization of PET (polyethylene terephthalate) \u2014 the plastic used in virtually all single-use water bottles, soda bottles, and many food containers marked with recycling code #1.</p>
-<p>After manufacturing, trace amounts of antimony remain embedded in the plastic. Under normal conditions, the amount that leaches into water is extremely small. The concern arises with <strong>heat, time, and repeated use</strong>.</p>"""
+                "content": "<p>Antimony trioxide (Sb\u2082O\u2083) is a catalyst used during the polymerization of PET (polyethylene terephthalate) \u2014 the plastic used in virtually all single-use water bottles, soda bottles, and many food containers marked with recycling code #1.</p>\n<p>After manufacturing, trace amounts of antimony remain embedded in the plastic. Under normal conditions, the amount that leaches into water is extremely small. The concern arises with <strong>heat, time, and repeated use</strong>.</p>"
             },
             {
                 "id": "health-risks",
                 "heading": "When Antimony Becomes a Problem",
-                "content": """<ul class="key-facts">
-  <li><span class="fact-label">EPA limit</span> Maximum contaminant level for antimony in drinking water is 6 ppb (parts per billion).</li>
-  <li><span class="fact-label">Room temp</span> Studies consistently show leaching below 1 ppb at 25\u00b0C \u2014 well within safe limits.</li>
-  <li><span class="fact-label">Heat effect</span> A 2016 study in <em>Journal of Environmental Monitoring</em> found that storing PET bottles at 60\u00b0C (140\u00b0F) for one week increased antimony leaching up to 90x vs. room temperature.</li>
-  <li><span class="fact-label">Sunlight</span> UV exposure also accelerates leaching, even at moderate temperatures.</li>
-  <li><span class="fact-label">Chronic risk</span> Antimony is classified as a possible carcinogen (IARC Group 2B as antimony trioxide). Chronic exposure affects the lungs, heart, and liver.</li>
-</ul>
-<div class="callout callout-warning">
-  <strong>The car dashboard scenario:</strong> On a 90\u00b0F day, the inside of a parked car reaches 130\u2013170\u00b0F. A PET water bottle left on the dashboard for hours can leach antimony well above safe levels. This is the most common real-world risk.
-</div>"""
+                "content": "<ul class=\"key-facts\">\n  <li><span class=\"fact-label\">EPA limit</span> Maximum contaminant level for antimony in drinking water is 6 ppb (parts per billion).</li>\n  <li><span class=\"fact-label\">Room temp</span> Studies consistently show leaching below 1 ppb at 25\u00b0C \u2014 well within safe limits.</li>\n  <li><span class=\"fact-label\">Heat effect</span> A 2016 study in <em>Journal of Environmental Monitoring</em> found that storing PET bottles at 60\u00b0C (140\u00b0F) for one week increased antimony leaching up to 90x vs. room temperature.</li>\n  <li><span class=\"fact-label\">Sunlight</span> UV exposure also accelerates leaching, even at moderate temperatures.</li>\n  <li><span class=\"fact-label\">Chronic risk</span> Antimony is classified as a possible carcinogen (IARC Group 2B as antimony trioxide). Chronic exposure affects the lungs, heart, and liver.</li>\n</ul>\n<div class=\"callout callout-warning\">\n  <strong>The car dashboard scenario:</strong> On a 90\u00b0F day, the inside of a parked car reaches 130\u2013170\u00b0F. A PET water bottle left on the dashboard for hours can leach antimony well above safe levels. This is the most common real-world risk.\n</div>"
             },
             {
                 "id": "what-to-do",
                 "heading": "Simple Precautions",
-                "content": """<p><strong>Never leave PET bottles in hot cars.</strong> This is the single most impactful step you can take.</p>
-<p><strong>Don\u2019t refill single-use PET bottles.</strong> Repeated filling, squeezing, and washing degrades the plastic and increases leaching.</p>
-<p><strong>Store bottled water in a cool, dark place.</strong> A pantry or refrigerator is ideal. Avoid garages and storage sheds.</p>
-<p><strong>Switch to a reusable bottle.</strong> Stainless steel and glass eliminate the issue entirely and pay for themselves quickly.</p>"""
+                "content": "<p><strong>Never leave PET bottles in hot cars.</strong> This is the single most impactful step you can take.</p>\n<p><strong>Don\u2019t refill single-use PET bottles.</strong> Repeated filling, squeezing, and washing degrades the plastic and increases leaching.</p>\n<p><strong>Store bottled water in a cool, dark place.</strong> A pantry or refrigerator is ideal. Avoid garages and storage sheds.</p>\n<p><strong>Switch to a reusable bottle.</strong> Stainless steel and glass eliminate the issue entirely and pay for themselves quickly.</p>"
             }
         ],
         "alternatives": [
@@ -728,14 +665,24 @@ ARTICLES = [
             }
         ],
         "sources": [
-            ("EPA &mdash; Antimony Drinking Water Standard", "https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations"),
-            ("Journal of Environmental Monitoring &mdash; Antimony leaching from PET (2016)", "https://pubs.rsc.org/en/journals/journalissues/em"),
-            ("IARC &mdash; Antimony Trioxide Classification", "https://monographs.iarc.who.int/"),
-            ("Water Research &mdash; PET bottle leaching review (2018)", "https://www.sciencedirect.com/journal/water-research"),
+            [
+                "EPA &mdash; Antimony Drinking Water Standard",
+                "https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations"
+            ],
+            [
+                "Journal of Environmental Monitoring &mdash; Antimony leaching from PET (2016)",
+                "https://pubs.rsc.org/en/journals/journalissues/em"
+            ],
+            [
+                "IARC &mdash; Antimony Trioxide Classification",
+                "https://monographs.iarc.who.int/"
+            ],
+            [
+                "Water Research &mdash; PET bottle leaching review (2018)",
+                "https://www.sciencedirect.com/journal/water-research"
+            ]
         ]
     },
-
-    # ─── 10. Teflon (PTFE) ────────────────────────────────────────────
     {
         "slug": "teflon-ptfe-offgassing",
         "title": "Teflon Off-Gassing: What Happens When Non-Stick Pans Overheat",
@@ -747,33 +694,17 @@ ARTICLES = [
             {
                 "id": "ptfe-vs-pfoa",
                 "heading": "PTFE vs. PFOA: An Important Distinction",
-                "content": """<p>There is massive public confusion between PTFE and PFOA, and understanding the difference is critical:</p>
-<p><strong>PTFE (polytetrafluoroethylene)</strong> is the actual non-stick coating on your pan. It&rsquo;s a large, stable polymer that is biologically inert at normal temperatures. If you accidentally swallowed a flake of Teflon, it would pass through you undigested \u2014 your body can&rsquo;t break it down.</p>
-<p><strong>PFOA (perfluorooctanoic acid)</strong> was a processing aid used to manufacture PTFE coatings. It was the genuinely dangerous part \u2014 a PFAS chemical linked to cancer. PFOA was <strong>voluntarily phased out of Teflon production by 2015</strong> under EPA pressure. Modern non-stick pans do not contain PFOA.</p>
-<p>The remaining concern with PTFE is purely thermal: <strong>what happens when it gets too hot</strong>.</p>"""
+                "content": "<p>There is massive public confusion between PTFE and PFOA, and understanding the difference is critical:</p>\n<p><strong>PTFE (polytetrafluoroethylene)</strong> is the actual non-stick coating on your pan. It&rsquo;s a large, stable polymer that is biologically inert at normal temperatures. If you accidentally swallowed a flake of Teflon, it would pass through you undigested \u2014 your body can&rsquo;t break it down.</p>\n<p><strong>PFOA (perfluorooctanoic acid)</strong> was a processing aid used to manufacture PTFE coatings. It was the genuinely dangerous part \u2014 a PFAS chemical linked to cancer. PFOA was <strong>voluntarily phased out of Teflon production by 2015</strong> under EPA pressure. Modern non-stick pans do not contain PFOA.</p>\n<p>The remaining concern with PTFE is purely thermal: <strong>what happens when it gets too hot</strong>.</p>"
             },
             {
                 "id": "health-risks",
                 "heading": "The Temperature Thresholds",
-                "content": """<ul class="key-facts">
-  <li><span class="fact-label">Below 400\u00b0F</span> PTFE is completely stable. Most cooking (saut\u00e9ing, eggs, pancakes) occurs in this range. No risk.</li>
-  <li><span class="fact-label">400\u2013500\u00b0F</span> PTFE begins to degrade slightly. Normal cooking rarely sustains these temperatures, but an empty pan on high heat reaches them in 2\u20135 minutes.</li>
-  <li><span class="fact-label">Above 500\u00b0F</span> PTFE releases measurable toxic fumes (ultrafine particles and fluorocarbon gases). Causes &ldquo;polymer fume fever&rdquo; &mdash; flu-like symptoms in humans.</li>
-  <li><span class="fact-label">Above 660\u00b0F</span> Rapid decomposition with more dangerous fumes. Essentially impossible in normal cooking but possible with prolonged empty preheating on max heat.</li>
-  <li><span class="fact-label">Pet birds</span> Birds have extremely efficient respiratory systems. PTFE fumes that cause mild symptoms in humans can kill a pet bird in minutes. This is well-documented in veterinary literature.</li>
-</ul>
-<div class="callout callout-danger">
-  <strong>The empty pan problem:</strong> An empty non-stick pan on high heat reaches 500\u00b0F+ in just 2\u20133 minutes. Never preheat non-stick pans empty. Always add oil or food before turning on the heat, and keep the burner at medium or below.
-</div>"""
+                "content": "<ul class=\"key-facts\">\n  <li><span class=\"fact-label\">Below 400\u00b0F</span> PTFE is completely stable. Most cooking (saut\u00e9ing, eggs, pancakes) occurs in this range. No risk.</li>\n  <li><span class=\"fact-label\">400\u2013500\u00b0F</span> PTFE begins to degrade slightly. Normal cooking rarely sustains these temperatures, but an empty pan on high heat reaches them in 2\u20135 minutes.</li>\n  <li><span class=\"fact-label\">Above 500\u00b0F</span> PTFE releases measurable toxic fumes (ultrafine particles and fluorocarbon gases). Causes &ldquo;polymer fume fever&rdquo; &mdash; flu-like symptoms in humans.</li>\n  <li><span class=\"fact-label\">Above 660\u00b0F</span> Rapid decomposition with more dangerous fumes. Essentially impossible in normal cooking but possible with prolonged empty preheating on max heat.</li>\n  <li><span class=\"fact-label\">Pet birds</span> Birds have extremely efficient respiratory systems. PTFE fumes that cause mild symptoms in humans can kill a pet bird in minutes. This is well-documented in veterinary literature.</li>\n</ul>\n<div class=\"callout callout-danger\">\n  <strong>The empty pan problem:</strong> An empty non-stick pan on high heat reaches 500\u00b0F+ in just 2\u20133 minutes. Never preheat non-stick pans empty. Always add oil or food before turning on the heat, and keep the burner at medium or below.\n</div>"
             },
             {
                 "id": "what-to-do",
                 "heading": "Safe Use Guidelines for Non-Stick",
-                "content": """<p><strong>Keep heat at medium or below.</strong> Non-stick pans are designed for low-to-medium heat cooking: eggs, crepes, fish, delicate saut\u00e9s.</p>
-<p><strong>Never preheat empty.</strong> Add butter, oil, or food to the pan before turning on the burner.</p>
-<p><strong>Use wooden, silicone, or nylon utensils.</strong> Metal utensils scratch the coating, creating areas where food sticks and the coating degrades faster.</p>
-<p><strong>Replace damaged pans.</strong> If the coating is flaking, peeling, or visibly scratched to the metal, it\u2019s time for a new pan. A damaged coating is less effective and may release particles.</p>
-<p><strong>Ventilate your kitchen.</strong> Use a range hood or open a window when cooking, regardless of cookware type.</p>"""
+                "content": "<p><strong>Keep heat at medium or below.</strong> Non-stick pans are designed for low-to-medium heat cooking: eggs, crepes, fish, delicate saut\u00e9s.</p>\n<p><strong>Never preheat empty.</strong> Add butter, oil, or food to the pan before turning on the burner.</p>\n<p><strong>Use wooden, silicone, or nylon utensils.</strong> Metal utensils scratch the coating, creating areas where food sticks and the coating degrades faster.</p>\n<p><strong>Replace damaged pans.</strong> If the coating is flaking, peeling, or visibly scratched to the metal, it\u2019s time for a new pan. A damaged coating is less effective and may release particles.</p>\n<p><strong>Ventilate your kitchen.</strong> Use a range hood or open a window when cooking, regardless of cookware type.</p>"
             }
         ],
         "alternatives": [
@@ -811,14 +742,24 @@ ARTICLES = [
             }
         ],
         "sources": [
-            ("EPA &mdash; PFOA Stewardship Program (Phase-out)", "https://www.epa.gov/assessing-and-managing-chemicals-under-tsca/risk-management-and-polyfluoroalkyl-substances-pfas"),
-            ("Environmental Science &amp; Technology &mdash; PTFE decomposition products (2001)", "https://pubs.acs.org/journal/esthag"),
-            ("Avian and Exotic Animal Clinic &mdash; PTFE toxicosis in birds", "https://www.avianandexotic.com/"),
-            ("DuPont &mdash; Teflon Safety Data (Thermal Decomposition Thresholds)", "https://www.chemours.com/en/brands-and-products/teflon"),
+            [
+                "EPA &mdash; PFOA Stewardship Program (Phase-out)",
+                "https://www.epa.gov/assessing-and-managing-chemicals-under-tsca/risk-management-and-polyfluoroalkyl-substances-pfas"
+            ],
+            [
+                "Environmental Science &amp; Technology &mdash; PTFE decomposition products (2001)",
+                "https://pubs.acs.org/journal/esthag"
+            ],
+            [
+                "Avian and Exotic Animal Clinic &mdash; PTFE toxicosis in birds",
+                "https://www.avianandexotic.com/"
+            ],
+            [
+                "DuPont &mdash; Teflon Safety Data (Thermal Decomposition Thresholds)",
+                "https://www.chemours.com/en/brands-and-products/teflon"
+            ]
         ]
     },
-
-    # ─── 11. Black Plastic Takeout Containers ─────────────────────────
     {
         "slug": "black-plastic-takeout",
         "title": "Black Plastic Takeout Containers: The Hidden Recycling Problem in Your Kitchen",
@@ -830,30 +771,17 @@ ARTICLES = [
             {
                 "id": "the-problem",
                 "heading": "Why Black Plastic Is Different",
-                "content": """<p>Most colored plastics are tinted with conventional pigments. Black plastic is different. <strong>Carbon black pigment</strong> makes the plastic invisible to the near-infrared sensors used in recycling facilities, so it cannot be sorted. This creates a glut of cheap, unsorted black plastic on the recycling market.</p>
-<p>The problem: this unsorted stream often includes black plastic from <strong>electronics housings</strong> &mdash; TV casings, computer monitors, printers &mdash; which are treated with <strong>brominated flame retardants (BFRs)</strong>. When this e-waste plastic enters the food packaging supply chain, those flame retardants come with it.</p>"""
+                "content": "<p>Most colored plastics are tinted with conventional pigments. Black plastic is different. <strong>Carbon black pigment</strong> makes the plastic invisible to the near-infrared sensors used in recycling facilities, so it cannot be sorted. This creates a glut of cheap, unsorted black plastic on the recycling market.</p>\n<p>The problem: this unsorted stream often includes black plastic from <strong>electronics housings</strong> &mdash; TV casings, computer monitors, printers &mdash; which are treated with <strong>brominated flame retardants (BFRs)</strong>. When this e-waste plastic enters the food packaging supply chain, those flame retardants come with it.</p>"
             },
             {
                 "id": "health-risks",
                 "heading": "The Health Risks",
-                "content": """<ul class="key-facts">
-  <li><span class="fact-label">BFRs found</span> A 2019 University of Plymouth study found brominated flame retardants in 25% of black plastic kitchen utensils purchased at retail.</li>
-  <li><span class="fact-label">Heavy metals</span> The same study detected cadmium, lead, and chromium in some black plastic food contact items.</li>
-  <li><span class="fact-label">Not food-grade</span> Flame retardants like decaBDE are regulated under the EU&rsquo;s REACH and the Stockholm Convention. They are endocrine disruptors linked to thyroid dysfunction and neurodevelopmental effects.</li>
-  <li><span class="fact-label">Heat accelerates</span> Microwaving or heating food in contaminated black plastic increases chemical migration into food significantly.</li>
-  <li><span class="fact-label">No labeling</span> There is no requirement to label black plastic with its recycled source material, so consumers cannot tell safe from contaminated by looking at it.</li>
-</ul>
-<div class="callout callout-warning">
-  <strong>The microwave problem:</strong> Takeout containers marked &ldquo;microwave-safe&rdquo; are tested for structural integrity (they won&rsquo;t melt), not for chemical migration. A container that survives the microwave physically may still be leaching harmful compounds into your food.
-</div>"""
+                "content": "<ul class=\"key-facts\">\n  <li><span class=\"fact-label\">BFRs found</span> A 2019 University of Plymouth study found brominated flame retardants in 25% of black plastic kitchen utensils purchased at retail.</li>\n  <li><span class=\"fact-label\">Heavy metals</span> The same study detected cadmium, lead, and chromium in some black plastic food contact items.</li>\n  <li><span class=\"fact-label\">Not food-grade</span> Flame retardants like decaBDE are regulated under the EU&rsquo;s REACH and the Stockholm Convention. They are endocrine disruptors linked to thyroid dysfunction and neurodevelopmental effects.</li>\n  <li><span class=\"fact-label\">Heat accelerates</span> Microwaving or heating food in contaminated black plastic increases chemical migration into food significantly.</li>\n  <li><span class=\"fact-label\">No labeling</span> There is no requirement to label black plastic with its recycled source material, so consumers cannot tell safe from contaminated by looking at it.</li>\n</ul>\n<div class=\"callout callout-warning\">\n  <strong>The microwave problem:</strong> Takeout containers marked &ldquo;microwave-safe&rdquo; are tested for structural integrity (they won&rsquo;t melt), not for chemical migration. A container that survives the microwave physically may still be leaching harmful compounds into your food.\n</div>"
             },
             {
                 "id": "what-to-do",
                 "heading": "Simple Precautions",
-                "content": """<p><strong>Never microwave black plastic containers.</strong> Transfer food to a glass or ceramic dish before reheating. This is the single most impactful step.</p>
-<p><strong>Don&rsquo;t store hot food in them long-term.</strong> If the restaurant packs steaming food into a black plastic tray, transfer it when you get home.</p>
-<p><strong>Bring your own containers.</strong> A glass or stainless steel container eliminates the question entirely for regular takeout orders.</p>
-<p><strong>Avoid black plastic utensils for cooking.</strong> Spatulas, spoons, and turners that contact hot food directly are a greater exposure risk than storage containers.</p>"""
+                "content": "<p><strong>Never microwave black plastic containers.</strong> Transfer food to a glass or ceramic dish before reheating. This is the single most impactful step.</p>\n<p><strong>Don&rsquo;t store hot food in them long-term.</strong> If the restaurant packs steaming food into a black plastic tray, transfer it when you get home.</p>\n<p><strong>Bring your own containers.</strong> A glass or stainless steel container eliminates the question entirely for regular takeout orders.</p>\n<p><strong>Avoid black plastic utensils for cooking.</strong> Spatulas, spoons, and turners that contact hot food directly are a greater exposure risk than storage containers.</p>"
             }
         ],
         "alternatives": [
@@ -891,14 +819,24 @@ ARTICLES = [
             }
         ],
         "sources": [
-            ("University of Plymouth &mdash; BFRs in black plastic kitchen utensils (2019)", "https://www.plymouth.ac.uk/"),
-            ("Environment International &mdash; Hazardous substances in recycled plastics", "https://www.sciencedirect.com/journal/environment-international"),
-            ("Stockholm Convention &mdash; Brominated Flame Retardants", "http://chm.pops.int/"),
-            ("WRAP UK &mdash; Black Plastic Packaging Report", "https://wrap.org.uk/"),
+            [
+                "University of Plymouth &mdash; BFRs in black plastic kitchen utensils (2019)",
+                "https://www.plymouth.ac.uk/"
+            ],
+            [
+                "Environment International &mdash; Hazardous substances in recycled plastics",
+                "https://www.sciencedirect.com/journal/environment-international"
+            ],
+            [
+                "Stockholm Convention &mdash; Brominated Flame Retardants",
+                "http://chm.pops.int/"
+            ],
+            [
+                "WRAP UK &mdash; Black Plastic Packaging Report",
+                "https://wrap.org.uk/"
+            ]
         ]
     },
-
-    # ─── 12. Bamboo Fiber Plates ──────────────────────────────────────
     {
         "slug": "bamboo-fiber-plates",
         "title": "Bamboo Fiber Plates: The &ldquo;Eco-Friendly&rdquo; Dinnerware with a Hidden Problem",
@@ -910,30 +848,17 @@ ARTICLES = [
             {
                 "id": "the-deception",
                 "heading": "What &ldquo;Bamboo Fiber&rdquo; Really Means",
-                "content": """<p>When you see a plate marketed as &ldquo;bamboo fiber,&rdquo; &ldquo;bamboo composite,&rdquo; or &ldquo;eco-friendly bamboo,&rdquo; it almost never means the plate is made from solid bamboo. Instead, it&rsquo;s <strong>bamboo powder or fiber</strong> mixed with a <strong>melamine-formaldehyde resin binder</strong> that holds the particles together and gives the plate its rigid, smooth finish.</p>
-<p>This creates a cruel irony: consumers choosing bamboo plates to avoid plastic are getting a product that is <strong>majority plastic resin by weight</strong>, with the same chemical leaching concerns as melamine dinnerware \u2014 and often worse, because the bamboo fibers can degrade the resin matrix faster.</p>"""
+                "content": "<p>When you see a plate marketed as &ldquo;bamboo fiber,&rdquo; &ldquo;bamboo composite,&rdquo; or &ldquo;eco-friendly bamboo,&rdquo; it almost never means the plate is made from solid bamboo. Instead, it&rsquo;s <strong>bamboo powder or fiber</strong> mixed with a <strong>melamine-formaldehyde resin binder</strong> that holds the particles together and gives the plate its rigid, smooth finish.</p>\n<p>This creates a cruel irony: consumers choosing bamboo plates to avoid plastic are getting a product that is <strong>majority plastic resin by weight</strong>, with the same chemical leaching concerns as melamine dinnerware \u2014 and often worse, because the bamboo fibers can degrade the resin matrix faster.</p>"
             },
             {
                 "id": "health-risks",
                 "heading": "The Health Risks",
-                "content": """<ul class="key-facts">
-  <li><span class="fact-label">BfR testing</span> The German Federal Institute for Risk Assessment found formaldehyde migration 5&ndash;8x above the EU specific migration limit (SML) of 15 mg/kg in bamboo-melamine products tested with hot liquids.</li>
-  <li><span class="fact-label">Melamine</span> Migration of melamine from these products also exceeded the EU SML of 2.5 mg/kg in the same tests.</li>
-  <li><span class="fact-label">EU ban</span> Multiple EU countries (Belgium, Luxembourg, Netherlands, Austria) have banned the sale of bamboo-melamine food contact products.</li>
-  <li><span class="fact-label">Formaldehyde</span> Classified as a Group 1 carcinogen by IARC. Chronic low-level exposure causes respiratory irritation and is linked to nasopharyngeal cancer.</li>
-  <li><span class="fact-label">Degradation</span> The bamboo fibers absorb moisture and swell, cracking the resin matrix over time. Older, worn bamboo-composite plates leach more than new ones.</li>
-</ul>
-<div class="callout callout-danger">
-  <strong>The hot liquid trigger:</strong> Like melamine, the leaching from bamboo-composite plates is heavily temperature-dependent. Pouring hot coffee, tea, or soup into these products causes the highest chemical migration. Never use them for hot foods or beverages.
-</div>"""
+                "content": "<ul class=\"key-facts\">\n  <li><span class=\"fact-label\">BfR testing</span> The German Federal Institute for Risk Assessment found formaldehyde migration 5&ndash;8x above the EU specific migration limit (SML) of 15 mg/kg in bamboo-melamine products tested with hot liquids.</li>\n  <li><span class=\"fact-label\">Melamine</span> Migration of melamine from these products also exceeded the EU SML of 2.5 mg/kg in the same tests.</li>\n  <li><span class=\"fact-label\">EU ban</span> Multiple EU countries (Belgium, Luxembourg, Netherlands, Austria) have banned the sale of bamboo-melamine food contact products.</li>\n  <li><span class=\"fact-label\">Formaldehyde</span> Classified as a Group 1 carcinogen by IARC. Chronic low-level exposure causes respiratory irritation and is linked to nasopharyngeal cancer.</li>\n  <li><span class=\"fact-label\">Degradation</span> The bamboo fibers absorb moisture and swell, cracking the resin matrix over time. Older, worn bamboo-composite plates leach more than new ones.</li>\n</ul>\n<div class=\"callout callout-danger\">\n  <strong>The hot liquid trigger:</strong> Like melamine, the leaching from bamboo-composite plates is heavily temperature-dependent. Pouring hot coffee, tea, or soup into these products causes the highest chemical migration. Never use them for hot foods or beverages.\n</div>"
             },
             {
                 "id": "what-to-do",
                 "heading": "How to Identify and Avoid Risky Products",
-                "content": """<p><strong>Read the fine print.</strong> If the product description mentions &ldquo;bamboo powder,&rdquo; &ldquo;bamboo fiber,&rdquo; or &ldquo;bamboo composite,&rdquo; it contains resin binder. Genuine bamboo products are made from solid bamboo pieces, not powder.</p>
-<p><strong>Avoid for hot food and drinks.</strong> If you already own bamboo-composite plates, use them only for cold, dry foods (crackers, fruit, sandwiches).</p>
-<p><strong>Don&rsquo;t microwave or dishwasher-wash them.</strong> Both heat sources accelerate resin breakdown and chemical migration.</p>
-<p><strong>Choose genuinely eco-friendly alternatives.</strong> Palm leaf plates, solid bamboo, or tempered glass are all better choices for the environment and your health.</p>"""
+                "content": "<p><strong>Read the fine print.</strong> If the product description mentions &ldquo;bamboo powder,&rdquo; &ldquo;bamboo fiber,&rdquo; or &ldquo;bamboo composite,&rdquo; it contains resin binder. Genuine bamboo products are made from solid bamboo pieces, not powder.</p>\n<p><strong>Avoid for hot food and drinks.</strong> If you already own bamboo-composite plates, use them only for cold, dry foods (crackers, fruit, sandwiches).</p>\n<p><strong>Don&rsquo;t microwave or dishwasher-wash them.</strong> Both heat sources accelerate resin breakdown and chemical migration.</p>\n<p><strong>Choose genuinely eco-friendly alternatives.</strong> Palm leaf plates, solid bamboo, or tempered glass are all better choices for the environment and your health.</p>"
             }
         ],
         "alternatives": [
@@ -971,10 +896,22 @@ ARTICLES = [
             }
         ],
         "sources": [
-            ("BfR &mdash; Release of melamine and formaldehyde from bamboo tableware (2020)", "https://www.bfr.bund.de/en/"),
-            ("European Commission RASFF &mdash; Notifications on bamboo-melamine products", "https://webgate.ec.europa.eu/rasff-window/"),
-            ("IARC &mdash; Formaldehyde Classification (Group 1)", "https://monographs.iarc.who.int/"),
-            ("Belgian Federal Agency for the Safety of the Food Chain &mdash; Bamboo ware ban", "https://www.favv-afsca.be/"),
+            [
+                "BfR &mdash; Release of melamine and formaldehyde from bamboo tableware (2020)",
+                "https://www.bfr.bund.de/en/"
+            ],
+            [
+                "European Commission RASFF &mdash; Notifications on bamboo-melamine products",
+                "https://webgate.ec.europa.eu/rasff-window/"
+            ],
+            [
+                "IARC &mdash; Formaldehyde Classification (Group 1)",
+                "https://monographs.iarc.who.int/"
+            ],
+            [
+                "Belgian Federal Agency for the Safety of the Food Chain &mdash; Bamboo ware ban",
+                "https://www.favv-afsca.be/"
+            ]
         ]
-    },
+    }
 ]

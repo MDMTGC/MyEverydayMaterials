@@ -68,75 +68,6 @@ ARTICLES = \
         ]
     },
     {
-        "slug": "pfas-stain-treatments",
-        "title": "PFAS in Performance Fabrics: The &ldquo;Forever Chemicals&rdquo; in Your Home and Their Health Impact",
-        "meta_description": "Uncover the science behind PFAS 'forever chemicals' in stain and water-resistant fabrics. Learn about their serious health risks and explore truly safe, PFAS-free alternatives for your home textiles.",
-        "verdict_level": "verdict-avoid",
-        "verdict_rating": "Avoid Where Possible &mdash; These chemicals never break down",
-        "verdict_summary": "PFAS (per- and polyfluoroalkyl substances) are a class of thousands of synthetic chemicals used for their water and stain-repellent properties, commonly found in 'performance' fabrics. These 'forever chemicals' are extremely persistent, accumulating in the environment and human body, leading to bioaccumulation. Exposure is linked to severe health issues, including increased risk of certain cancers (kidney, testicular), thyroid disease, immune system dysfunction, liver damage, and developmental problems. Due to their ubiquity and toxicity, avoiding products treated with PFAS is a critical step for reducing exposure.",
-        "sections": [
-            {
-                "id": "pfas-in-fabrics",
-                "heading": "PFAS in Your Fabrics: Understanding &ldquo;Forever Chemicals&rdquo;",
-                "content": "<p>PFAS, an acronym for per- and polyfluoroalkyl substances, are a vast group of human-made chemicals prized for their unique ability to repel water, oil, and stains. This makes them ideal for 'performance' fabrics commonly used in outdoor gear, upholstery, carpets, and even some clothing items. Brands often market products with terms like 'stain-resistant,' 'waterproof,' or 'spill-proof,' implicitly or explicitly indicating the use of PFAS coatings.</p><p>The defining characteristic of PFAS is their incredibly strong carbon-fluorine bond, which makes them extremely stable and resistant to degradation. This stability is why they are dubbed 'forever chemicals' \u2013 they persist indefinitely in the environment, contaminating soil, water, and air, and accumulating in living organisms, including humans. Once in the body, they can remain there for years, leading to chronic exposure.</p>"
-            },
-            {
-                "id": "health-risks",
-                "heading": "Serious Health Impacts of Fabric Treatments",
-                "content": "<p>The widespread use of PFAS has become a major public health concern due to their confirmed toxicity and persistence. Exposure to PFAS can occur not only through direct contact with treated fabrics but also through the air when these chemicals off-gas, or through dust contaminated with shed PFAS particles. The scientific consensus points to a range of severe health impacts:</p>\n<ul class=\"key-facts\">\n  <li><span class=\"fact-label\">Cancer Risk</span> Elevated levels of certain PFAS (e.g., PFOA, PFOS) are linked to an increased risk of kidney and testicular cancer, as well as potential links to other forms of cancer.</li>\n  <li><span class=\"fact-label\">Thyroid Disease</span> PFAS can interfere with thyroid hormone function, leading to thyroid disease and potential metabolic disruptions.</li>\n  <li><span class=\"fact-label\">Immune System Suppression</span> Studies indicate PFAS can weaken the immune system, reducing the effectiveness of vaccines and increasing susceptibility to infectious diseases.</li>\n  <li><span class=\"fact-label\">Liver Damage</span> Exposure to PFAS has been associated with elevated liver enzymes, indicating potential liver damage and disease.</li>\n  <li><span class=\"fact-label\">Reproductive &amp; Developmental Issues</span> PFAS can affect fertility, increase the risk of pre-eclampsia, and lead to adverse developmental outcomes in children, including low birth weight.</li>\n</ul>\n<div class=\"callout callout-danger\">\n  <strong>Urgent:</strong> PFAS chemicals are found in the blood of nearly all Americans. Avoiding treated fabrics is a direct way to reduce your personal 'body burden' of these persistent toxins.\n</div>"
-            },
-            {
-                "id": "safer-alternatives",
-                "heading": "Choosing PFAS-Free Fabric Alternatives",
-                "content": "<p>Reducing exposure to PFAS in fabrics involves opting for materials that are naturally resistant or treated with safer alternatives. Prioritize natural fibers like organic cotton, wool, linen, and hemp, which offer breathability and durability without chemical coatings. For items requiring water resistance, look for products that specify silicone-based or wax-based treatments, or simply embrace materials like tightly woven cotton canvas that can be waxed manually.</p><p>Always read product labels carefully. If a product boasts 'stain-proof' or 'water-repellent' qualities without specifying the treatment, it's wise to be suspicious of PFAS. Seek out manufacturers who are transparent about their chemical use and offer third-party certifications for PFAS-free status.</p>"
-            }
-        ],
-        "alternatives": [
-            {
-                "name": "Organic Cotton Fabric by the Yard",
-                "type": "Natural Fabric",
-                "description": "Pure, untreated organic cotton for various home uses, inherently PFAS-free.",
-                "pros": "Breathable, soft, sustainable, chemical-free",
-                "cons": "Prone to staining, requires careful cleaning",
-                "url": "https://www.amazon.com/s?k=Organic+Cotton+Fabric+by+the+Yard&tag=myeverydaymat-20"
-            },
-            {
-                "name": "Wool Throw Blanket",
-                "type": "Natural Fiber Textile",
-                "description": "Wool is naturally stain and odor-resistant due to its lanolin content, without added chemicals.",
-                "pros": "Naturally water-repellent (due to lanolin), breathable, durable, warm",
-                "cons": "Can be itchy for some, requires gentle cleaning",
-                "url": "https://www.amazon.com/s?k=Wool+Throw+Blanket&tag=myeverydaymat-20"
-            },
-            {
-                "name": "Hemp Canvas Fabric",
-                "type": "Natural Fabric",
-                "description": "Durable and robust hemp fabric, an excellent natural alternative for upholstery or bags.",
-                "pros": "Extremely durable, sustainable, naturally resistant to mold and mildew",
-                "cons": "Can be coarser than cotton, requires more initial breaking-in",
-                "url": "https://www.amazon.com/s?k=Hemp+Canvas+Fabric&tag=myeverydaymat-20"
-            }
-        ],
-        "sources": [
-            [
-                "EPA: PFAS Explained",
-                "https://www.epa.gov/pfas/pfas-explained"
-            ],
-            [
-                "CDC ATSDR: Per- and Polyfluoroalkyl Substances (PFAS) and Your Health",
-                "https://www.atsdr.cdc.gov/pfas/index.html"
-            ],
-            [
-                "Environmental Working Group (EWG): What Are PFAS Chemicals?",
-                "https://www.ewg.org/pfas/what-are-pfas-chemicals/"
-            ],
-            [
-                "Silent Spring Institute: PFAS and Your Health",
-                "https://silentspring.org/pfas"
-            ]
-        ]
-    },
-    {
         "slug": "pvc-vinyl-flooring",
         "title": "Phthalates in Vinyl Flooring: Unpacking the Risks of PVC and Safer Floor Choices",
         "meta_description": "Explore the science of phthalate plasticizers in vinyl (PVC) flooring, their migration into your home, and the associated health risks. Discover safer, phthalate-free flooring alternatives.",
@@ -202,75 +133,6 @@ ARTICLES = \
             [
                 "Silent Spring Institute: Phthalates",
                 "https://silentspring.org/phthalates"
-            ]
-        ]
-    },
-    {
-        "slug": "laminate-flooring",
-        "title": "Formaldehyde in Laminate Flooring: Protecting Your Indoor Air Quality",
-        "meta_description": "Learn about formaldehyde emissions from laminate flooring, its impact on indoor air quality, and the health risks. Discover certified low-VOC and formaldehyde-free alternatives for your home.",
-        "verdict_level": "verdict-caution",
-        "verdict_rating": "Exercise Caution &mdash; Initial off-gassing can be significant",
-        "verdict_summary": "Laminate flooring often contains a core made of composite wood products (e.g., MDF, HDF) that are manufactured with formaldehyde-based glues. Formaldehyde is a Volatile Organic Compound (VOC) that off-gasses into indoor air, especially when new or in warm, humid conditions. Exposure can cause acute symptoms like eye, nose, and throat irritation, headaches, and exacerbation of asthma. Long-term exposure to formaldehyde is classified as a known human carcinogen by the IARC. While regulations have reduced emissions, lower-quality or older laminate products can still be significant sources of indoor air pollution.",
-        "sections": [
-            {
-                "id": "formaldehyde-in-laminate",
-                "heading": "Understanding Formaldehyde in Laminate Flooring",
-                "content": "<p>Laminate flooring is a popular choice for its cost-effectiveness, durability, and aesthetic versatility, mimicking the look of wood or tile. However, the core of most laminate planks is made from composite wood materials like Medium-Density Fiberboard (MDF) or High-Density Fiberboard (HDF). These core materials are manufactured using strong adhesives, many of which contain urea-formaldehyde (UF) resins.</p><p>Formaldehyde is a naturally occurring organic compound, but synthetic forms are widely used in industrial applications, including glues and resins. In laminate flooring, formaldehyde can off-gas, meaning it is released into the air as a gas. This off-gassing is typically highest when the flooring is new (the 'new floor smell') and can be exacerbated by higher temperatures and humidity in the home. Over time, emissions generally decrease, but they can persist at lower levels for years.</p>"
-            },
-            {
-                "id": "health-risks",
-                "heading": "The Health Implications of Formaldehyde Emissions",
-                "content": "<p>Formaldehyde is a Volatile Organic Compound (VOC) and a known irritant that can significantly impact indoor air quality. The health effects of exposure vary depending on the concentration, duration, and individual sensitivity:</p>\n<ul class=\"key-facts\">\n  <li><span class=\"fact-label\">Respiratory Irritation</span> Low-level exposure can cause irritation of the eyes, nose, throat, and lungs, leading to watery eyes, runny nose, sore throat, and coughing.</li>\n  <li><span class=\"fact-label\">Asthma Exacerbation</span> For individuals with asthma or other respiratory conditions, formaldehyde exposure can trigger or worsen symptoms.</li>\n  <li><span class=\"fact-label\">Headaches & Nausea</span> Some individuals experience headaches, dizziness, or nausea at higher concentrations.</li>\n  <li><span class=\"fact-label\">Carcinogen</span> The International Agency for Research on Cancer (IARC) classifies formaldehyde as a known human carcinogen, specifically linked to nasopharyngeal cancer and leukemia.</li>\n</ul>\n<div class=\"callout callout-info\">\n  <strong>Tip:</strong> Ventilating your home well, especially after new flooring installation, can significantly reduce initial formaldehyde concentrations. Running fans and opening windows helps dissipate off-gassed chemicals.\n</div>"
-            },
-            {
-                "id": "safer-options",
-                "heading": "Choosing Low-VOC and Safer Flooring Options",
-                "content": "<p>To minimize formaldehyde exposure, look for laminate flooring certified to meet stringent emissions standards. In the U.S., the California Air Resources Board (CARB) Airborne Toxic Control Measure (ATCM) and the subsequent U.S. EPA's TSCA Title VI standards regulate formaldehyde emissions from composite wood products. Look for labels indicating compliance, such as 'CARB Phase 2 compliant,' 'TSCA Title VI compliant,' or 'NAUF' (No Added Urea Formaldehyde).</p>\n<p>Consider these healthier alternatives to traditional laminate:</p>\n<ul>\n  <li><strong>Solid Hardwood:</strong> Naturally low in VOCs when finished with water-based, low-VOC sealants.</li>\n  <li><strong>Engineered Wood:</strong> Choose products explicitly labeled 'NAUF' or 'ULEF' (Ultra-Low Emitting Formaldehyde) with third-party certifications like FloorScore or GREENGUARD Gold.</li>\n  <li><strong>Bamboo Flooring:</strong> A sustainable option, but check certifications to ensure it's made with low-formaldehyde adhesives.</li>\n  <li><strong>Ceramic or Porcelain Tile:</strong> An inert material that emits no VOCs or formaldehyde.</li>\n  <li><strong>Natural Linoleum:</strong> Made from natural ingredients, it's inherently formaldehyde-free and sustainable.</li>\n</ul>"
-            }
-        ],
-        "alternatives": [
-            {
-                "name": "Bamboo Flooring Sample",
-                "type": "Natural Fiber Flooring",
-                "description": "A sample of solid bamboo flooring, a sustainable and potentially low-formaldehyde alternative if certified.",
-                "pros": "Sustainable, durable, elegant aesthetic, can be low-VOC",
-                "cons": "Can scratch, quality varies, adhesives used in construction can contain formaldehyde if not certified",
-                "url": "https://www.amazon.com/s?k=Bamboo+Flooring+Sample&tag=myeverydaymat-20"
-            },
-            {
-                "name": "Floor & Decor Ceramo Tile 12x24 Grey Porcelain Tile",
-                "type": "Porcelain Tile",
-                "description": "Porcelain tile is an inert, non-emitting alternative to laminate flooring.",
-                "pros": "Extremely durable, waterproof, zero VOCs or formaldehyde, easy to clean",
-                "cons": "Hard and cold underfoot, requires professional installation, grout can stain",
-                "url": "https://www.amazon.com/s?k=Floor+%26+Decor+Ceramo+Tile+12x24+Grey+Porcelain+Tile&tag=myeverydaymat-20"
-            },
-            {
-                "name": "Solid Hardwood Flooring Plank (Example)",
-                "type": "Solid Wood Flooring",
-                "description": "Illustrates solid hardwood, which is inherently formaldehyde-free if unfinished, or low-VOC if finished with safe sealants.",
-                "pros": "Long-lasting, refinishable, naturally low-VOC (if proper finish), adds value",
-                "cons": "More expensive, susceptible to moisture damage, requires maintenance",
-                "url": "https://www.amazon.com/s?k=Solid+Hardwood+Flooring+Plank+%28Example%29&tag=myeverydaymat-20"
-            }
-        ],
-        "sources": [
-            [
-                "EPA: Formaldehyde",
-                "https://www.epa.gov/formaldehyde"
-            ],
-            [
-                "CDC ATSDR: Formaldehyde",
-                "https://www.atsdr.cdc.gov/formaldehyde/index.html"
-            ],
-            [
-                "California Air Resources Board (CARB): Formaldehyde",
-                "https://ww2.arb.ca.gov/our-work/programs/air-toxics-program/formaldehyde"
-            ],
-            [
-                "World Health Organization (WHO): Formaldehyde in Indoor Air",
-                "https://www.who.int/news-room/fact-sheets/detail/formaldehyde-in-indoor-air"
             ]
         ]
     },
@@ -409,144 +271,6 @@ ARTICLES = \
         ]
     },
     {
-        "slug": "engineered-wood-flooring",
-        "title": "Engineered Wood Flooring: Navigating Adhesives and Formaldehyde Concerns",
-        "meta_description": "Unpack the hidden risks of adhesives in engineered wood flooring, focusing on formaldehyde and VOCs. Learn how to select safer, low-emission products for your home.",
-        "verdict_level": "verdict-caution",
-        "verdict_rating": "Caution Advised &mdash; Many products contain formaldehyde-releasing adhesives",
-        "verdict_summary": "Engineered wood flooring often utilizes multi-ply construction bound by adhesives, which can be a significant source of formaldehyde and other Volatile Organic Compounds (VOCs). Formaldehyde, classified as a known human carcinogen, off-gasses from urea-formaldehyde (UF) resins, leading to respiratory irritation, headaches, and long-term health risks. The off-gassing occurs as the adhesive cures and then slowly degrades, continuously releasing the chemical into the indoor air environment. Opting for products certified to meet strict emissions standards is crucial to minimize exposure.",
-        "sections": [
-            {
-                "id": "adhesives-in-engineered-wood",
-                "heading": "The Role of Adhesives in Engineered Wood Flooring",
-                "content": "<p>Engineered wood flooring is a popular choice due to its stability, versatility, and appearance. It's constructed from multiple layers of wood, with a top layer of real hardwood veneer and a core typically made from plywood, high-density fiberboard (HDF), or other wood composites. These layers are fused together using various types of adhesives. Historically, urea-formaldehyde (UF) resins were commonly used due to their low cost and strong binding properties. However, UF resins are notorious for off-gassing significant amounts of formaldehyde. Newer engineered wood products increasingly utilize phenol-formaldehyde (PF) resins or formaldehyde-free adhesives, which greatly reduce or eliminate these emissions. </p><p>The type of adhesive used is the primary determinant of the product's indoor air quality impact. While PF resins are more stable and emit less formaldehyde than UF resins, some VOCs can still be present. It's essential for consumers to understand the differences to make informed decisions.</p>"
-            },
-            {
-                "id": "formaldehyde-health-risks",
-                "heading": "Formaldehyde and VOC Health Impacts",
-                "content": "<p>Formaldehyde is a colorless, pungent-smelling gas that, when present in indoor air, can pose significant health risks. It is classified as a human carcinogen by the International Agency for Research on Cancer (IARC) and a probable human carcinogen by the U.S. EPA. Its health effects are dose-dependent and can vary widely among individuals.</p><ul class=\"key-facts\">\n  <li><span class=\"fact-label\">Acute Irritation</span> Eye, nose, and throat irritation, coughing, and wheezing are common symptoms, especially in sensitive individuals.</li>\n  <li><span class=\"fact-label\">Respiratory Issues</span> Prolonged exposure can exacerbate asthma symptoms and contribute to chronic respiratory problems.</li>\n  <li><span class=\"fact-label\">Carcinogenic Risk</span> Long-term exposure to formaldehyde has been linked to an increased risk of certain cancers, including nasopharyngeal cancer.</li>\n  <li><span class=\"fact-label\">Other VOCs</span> Other VOCs present in adhesives can also contribute to &ldquo;sick building syndrome&rdquo; symptoms like headaches, dizziness, and fatigue.</li>\n</ul><div class=\"callout callout-warning\">\n  <strong>Important:</strong> Formaldehyde emissions are typically higher when products are new and in warmer, more humid environments. Ensuring proper ventilation during and after installation is critical.\n</div>"
-            },
-            {
-                "id": "choosing-safer-flooring",
-                "heading": "Choosing Safer Engineered Wood Options",
-                "content": "<p>To minimize your exposure to formaldehyde and other VOCs from engineered wood flooring, consider the following:</p><ul>\n  <li><strong>Look for Certifications:</strong> Prioritize products certified by third parties. Key certifications include:<ul>\n    <li><strong>CARB Phase 2 Compliant:</strong> Mandates strict limits on formaldehyde emissions for composite wood products.</li>\n    <li><strong>Floorscore Certified:</strong> Ensures products meet stringent indoor air quality emission requirements for flooring materials.</li>\n    <li><strong>GREENGUARD Gold:</strong> Certifies products with low chemical emissions for use in schools and healthcare facilities, suitable for sensitive environments.</li>\n  </ul></li>\n  <li><strong>Choose Formaldehyde-Free Adhesives:</strong> Inquire if manufacturers use formaldehyde-free glues (e.g., soy-based or PVA adhesives) or phenol-formaldehyde (PF) resins, which are more stable.</li>\n  <li><strong>Solid Wood Alternatives:</strong> Consider solid hardwood flooring, which uses no adhesives in its construction and is naturally low-VOC.</li>\n  <li><strong>Ventilation:</strong> Always ensure adequate ventilation during installation and for several weeks afterward to help dissipate any residual VOCs.</li>\n</ul>"
-            }
-        ],
-        "alternatives": [
-            {
-                "name": "Acacia Solid Hardwood Flooring",
-                "type": "Solid Hardwood",
-                "description": "Beautiful, durable solid acacia wood planks, free from engineered wood adhesives and formaldehyde.",
-                "pros": "Naturally low VOC, long-lasting, can be refinished multiple times",
-                "cons": "Higher cost, more susceptible to moisture changes than engineered wood",
-                "url": "https://www.amazon.com/s?k=Acacia+Solid+Hardwood+Flooring&tag=myeverydaymat-20"
-            },
-            {
-                "name": "Bamboo Hardwood Flooring (Solid Strand Woven)",
-                "type": "Solid Bamboo",
-                "description": "Eco-friendly, durable bamboo flooring made from solid strand-woven bamboo, avoiding composite wood adhesives.",
-                "pros": "Renewable resource, hardwearing, typically low VOC",
-                "cons": "Can be sensitive to humidity, sourcing ethical products is key",
-                "asin": "B0C6X24F4R"
-            },
-            {
-                "name": "COREtec Plus Enhanced Vinyl Plank (SPC)",
-                "type": "Stone Plastic Composite (SPC)",
-                "description": "A rigid core vinyl plank flooring that is phthalate-free and often GREENGUARD Gold certified for low emissions.",
-                "pros": "Waterproof, highly durable, often low VOC, easy installation",
-                "cons": "Synthetic material, can feel less natural than wood",
-                "url": "https://www.amazon.com/s?k=COREtec+Plus+Enhanced+Vinyl+Plank+%28SPC%29&tag=myeverydaymat-20"
-            },
-            {
-                "name": "Wicanders Cork Go Floating Floor",
-                "type": "Cork Flooring",
-                "description": "Natural cork planks offering excellent insulation and comfort, often produced with low-emission adhesives.",
-                "pros": "Renewable, soft underfoot, sound dampening, can be low VOC",
-                "cons": "Can be susceptible to scratches and dents, less common aesthetic",
-                "url": "https://www.amazon.com/s?k=Wicanders+Cork+Go+Floating+Floor&tag=myeverydaymat-20"
-            }
-        ],
-        "sources": [
-            [
-                "U.S. EPA: Formaldehyde",
-                "https://www.epa.gov/formaldehyde/facts-about-formaldehyde"
-            ],
-            [
-                "California Air Resources Board (CARB): Composite Wood Products ATCM",
-                "https://ww2.arb.ca.gov/our-work/programs/composite-wood-products-atcm"
-            ],
-            [
-                "Floorscore: What is FloorScore\u00ae?",
-                "https://www.scscertified.com/products/cert_display.php?cert=SCS-FS-02115"
-            ]
-        ]
-    },
-    {
-        "slug": "plywood-osb-subflooring",
-        "title": "Plywood and OSB Subflooring: Understanding Resins and Formaldehyde Emissions",
-        "meta_description": "Dive into the science of resins in plywood and OSB subflooring, identifying formaldehyde risks and guiding you to safer, low-emission construction materials for your home.",
-        "verdict_level": "verdict-caution",
-        "verdict_rating": "Caution Advised &mdash; Many panels contain formaldehyde-based resins",
-        "verdict_summary": "Plywood and Oriented Strand Board (OSB) subflooring commonly use urea-formaldehyde (UF) or phenol-formaldehyde (PF) resins as binders to hold wood particles or veneers together. While PF resins generally emit less formaldehyde than UF resins, both can contribute to indoor air pollution, with formaldehyde being a known irritant and carcinogen. The chemical off-gassing occurs as the resins slowly degrade over time, particularly under warmer or more humid conditions, continuously releasing the compound into the breathable air. Selecting panels certified for low emissions is critical to mitigate these health risks, especially since subflooring often remains exposed during construction.",
-        "sections": [
-            {
-                "id": "resins-in-subflooring",
-                "heading": "The Role of Resins in Plywood and OSB",
-                "content": "<p>Plywood and Oriented Strand Board (OSB) are fundamental materials in modern construction, widely used for subflooring, sheathing, and structural panels. Their strength and stability derive from the way wood veneers (plywood) or strands (OSB) are bonded together with synthetic resins under heat and pressure. The most common resin types are urea-formaldehyde (UF) and phenol-formaldehyde (PF). UF resins are prevalent in interior-grade panels due to their lower cost and faster curing times, but they are prone to significant formaldehyde emissions, especially when new. PF resins, often found in exterior-grade panels (like OSB), are more durable and release considerably less formaldehyde, as the bond is more stable and less prone to hydrolysis.</p><p>Understanding the distinction between UF and PF resins, and seeking panels specifically formulated with low-emission or formaldehyde-free binders, is crucial for minimizing indoor air pollution in new constructions or renovations.</p>"
-            },
-            {
-                "id": "health-risks-formaldehyde",
-                "heading": "Health Impacts of Formaldehyde Emissions",
-                "content": "<p>Formaldehyde is a potent irritant and a known human carcinogen that can off-gas from resins used in plywood and OSB. Given that subflooring forms a large surface area within a home's structure, it can be a significant, long-term source of indoor air contamination if high-emitting products are chosen. The health effects can range from acute irritation to serious long-term conditions.</p><ul class=\"key-facts\">\n  <li><span class=\"fact-label\">Respiratory & Sensory Irritation</span> Exposure can cause burning sensations in the eyes, nose, and throat, coughing, and shortness of breath.</li>\n  <li><span class=\"fact-label\">Allergic Responses</span> Individuals can develop sensitivity to formaldehyde, leading to asthma-like symptoms or skin rashes upon contact.</li>\n  <li><span class=\"fact-label\">Carcinogenic Potential</span> The International Agency for Research on Cancer (IARC) classifies formaldehyde as a Group 1 carcinogen (carcinogenic to humans), primarily linked to nasopharyngeal cancer and leukemia.</li>\n  <li><span class=\"fact-label\">VOCs</span> Other Volatile Organic Compounds can also be released, contributing to poorer indoor air quality.</li>\n</ul><div class=\"callout callout-warning\">\n  <strong>Crucial Note:</strong> Formaldehyde emissions from subflooring can be trapped within building cavities, potentially diffusing into living spaces over many years. Prioritizing low-emission options during construction is a critical preventive measure.\n</div>"
-            },
-            {
-                "id": "safer-subflooring-choices",
-                "heading": "Safer Subflooring Material Choices",
-                "content": "<p>When selecting plywood or OSB for subflooring, it is paramount to prioritize products designed for minimal chemical emissions:</p><ul>\n  <li><strong>Formaldehyde-Free or Low-Emission Products:</strong> Look for panels labeled &ldquo;NAUF&rdquo; (No Added Urea Formaldehyde) or &ldquo;ULEF&rdquo; (Ultra-Low Emitting Formaldehyde). These products typically use alternative binders like soy-based adhesives or advanced PF resins with very low formaldehyde content.</li>\n  <li><strong>Exterior-Grade Panels:</strong> Generally, exterior-grade plywood and OSB (e.g., those rated for exposure 1 or exterior use) use more stable phenol-formaldehyde resins, which emit significantly less formaldehyde than interior-grade urea-formaldehyde products.</li>\n  <li><strong>Certifications:</strong> Seek out panels that meet stringent emission standards, such as those compliant with the California Air Resources Board (CARB) Phase 2 or the U.S. EPA TSCA Title VI. Certifications like GREENGUARD Gold also indicate low chemical emissions.</li>\n  <li><strong>Solid Wood Alternatives:</strong> For certain applications or smaller areas, solid wood planks (e.g., tongue-and-groove pine or fir) can serve as a formaldehyde-free subfloor, though they come with different performance characteristics and installation considerations.</li>\n</ul>"
-            }
-        ],
-        "alternatives": [
-            {
-                "name": "Columbia PureBond Hardwood Plywood (NAUF)",
-                "type": "No Added Urea Formaldehyde Plywood",
-                "description": "Hardwood plywood panels that utilize soy-based, formaldehyde-free adhesives, ideal for cabinetry and furniture where low emissions are critical.",
-                "pros": "Zero formaldehyde emissions, strong, durable, widely available",
-                "cons": "Higher cost than standard UF plywood, may not be rated for subfloor use directly",
-                "url": "https://www.amazon.com/s?k=Columbia+PureBond+Hardwood+Plywood+%28NAUF%29&tag=myeverydaymat-20"
-            },
-            {
-                "name": "Ply-Gem Pine Project Panel",
-                "type": "Solid Wood Project Panel",
-                "description": "Solid pine wood panels for various DIY projects, offering a formaldehyde-free alternative to composite wood sheets.",
-                "pros": "Natural, no formaldehyde, easy to work with",
-                "cons": "Not designed as structural subflooring, smaller sizes",
-                "url": "https://www.amazon.com/s?k=Ply-Gem+Pine+Project+Panel&tag=myeverydaymat-20"
-            },
-            {
-                "name": "Bamboo Plywood Sheets",
-                "type": "Bamboo Plywood",
-                "description": "Environmentally friendly bamboo plywood, often produced with low-VOC or formaldehyde-free adhesives, suitable for furniture or panels.",
-                "pros": "Sustainable, attractive, can be very low VOC",
-                "cons": "Often imported, ensure specific low-emission claims are verified, higher cost",
-                "url": "https://www.amazon.com/s?k=Bamboo+Plywood+Sheets&tag=myeverydaymat-20"
-            }
-        ],
-        "sources": [
-            [
-                "U.S. EPA: Formaldehyde Standards for Composite Wood Products",
-                "https://www.epa.gov/formaldehyde/formaldehyde-standards-composite-wood-products"
-            ],
-            [
-                "International Agency for Research on Cancer (IARC): Formaldehyde",
-                "https://publications.iarc.fr/570"
-            ],
-            [
-                "California Air Resources Board (CARB): Formaldehyde Emissions from Composite Wood Products",
-                "https://ww2.arb.ca.gov/resources/documents/formaldehyde-emissions-composite-wood-products"
-            ]
-        ]
-    },
-    {
         "slug": "formaldehyde-mdf-furniture",
         "title": "Particle Board Furniture: Unmasking Formaldehyde and Choosing Healthier Options",
         "meta_description": "Examine the pervasive issue of formaldehyde emissions from particle board furniture. Discover the health risks and practical ways to furnish your home with safer, low-VOC alternatives.",
@@ -616,144 +340,6 @@ ARTICLES = \
             [
                 "California Air Resources Board (CARB): Formaldehyde Emission Standards",
                 "https://ww2.arb.ca.gov/our-work/programs/composite-wood-products-atcm"
-            ]
-        ]
-    },
-    {
-        "slug": "curtains-drapes-treatments",
-        "title": "Window Treatments: Unveiling Flame Retardants and PFAS for a Healthier Home",
-        "meta_description": "Discover the hidden dangers of flame retardants and PFAS in window treatments. Learn about their health impacts and find safer, chemical-free alternatives for your curtains and drapes.",
-        "verdict_level": "verdict-caution",
-        "verdict_rating": "Caution Advised &mdash; Many fabrics treated with harmful chemicals",
-        "verdict_summary": "Many conventional curtains, drapes, and window treatments are factory-treated with both flame retardants and PFAS (per- and polyfluoroalkyl substances) for fire resistance and stain/water repellency. Flame retardants, often organophosphates or brominated compounds, can migrate from the fabric into household dust and air, leading to endocrine disruption, developmental issues, and cancer risks. PFAS, known as &ldquo;forever chemicals,&rdquo; are persistent in the environment and human body, linked to a range of severe health problems. Exposure occurs through inhalation of dust and direct skin contact, making untreated natural fibers a safer choice.",
-        "sections": [
-            {
-                "id": "chemical-cocktails",
-                "heading": "The Chemical Cocktails in Window Treatments",
-                "content": "<p>Window treatments &mdash; including curtains, drapes, and blinds &mdash; often undergo various chemical treatments to enhance their performance and meet safety standards. Two of the most concerning classes of chemicals found in these materials are flame retardants (FRs) and Per- and Polyfluoroalkyl Substances (PFAS).</p><ul>\n  <li><strong>Flame Retardants:</strong> Applied to fabrics to slow or prevent ignition. Common types include brominated flame retardants (BFRs) and organophosphate flame retardants (OPFRs). While intended for safety, these chemicals are not chemically bound to the fabric and can leach into the environment over time.</li>\n  <li><strong>PFAS (Forever Chemicals):</strong> Used to provide water, stain, and grease repellency, making fabrics easier to clean and more durable. PFAS are highly persistent, accumulating in the environment and human body, earning them the moniker &ldquo;forever chemicals.&rdquo;</li>\n</ul><p>These chemicals are often invisible, odorless, and may not be explicitly listed on product labels, making it challenging for consumers to identify treated items.</p>"
-            },
-            {
-                "id": "health-risks",
-                "heading": "Health Risks of Flame Retardants and PFAS",
-                "content": "<p>Both flame retardants and PFAS are known endocrine disruptors and have been linked to a broad spectrum of adverse health effects, even at low levels of exposure. Exposure typically occurs through inhalation of contaminated dust, ingestion (especially for young children), and direct skin contact.</p><ul class=\"key-facts\">\n  <li><span class=\"fact-label\">Endocrine Disruption</span> Both classes of chemicals can interfere with hormone systems, impacting reproductive health, thyroid function, and metabolic processes.</li>\n  <li><span class=\"fact-label\">Developmental Issues</span> Exposure during pregnancy or early childhood is linked to neurodevelopmental problems, reduced IQ, and behavioral issues.</li>\n  <li><span class=\"fact-label\">Cancer Risk</span> Certain flame retardants and PFAS compounds have been classified as probable or possible human carcinogens.</li>\n  <li><span class=\"fact-label\">Immune System Suppression</span> PFAS exposure is associated with weakened immune responses, including reduced antibody response to vaccines.</li>\n  <li><span class=\"fact-label\">Environmental Persistence</span> PFAS never break down in the environment, leading to widespread contamination of water, soil, and wildlife.</li>\n</ul><div class=\"callout callout-danger\">\n  <strong>Urgent Action:</strong> Due to their persistence and toxicity, many flame retardants and PFAS are being phased out or banned in various products. Actively seeking alternatives is crucial for protecting your family's health.\n</div>"
-            },
-            {
-                "id": "healthier-solutions",
-                "heading": "Opting for Healthier Window Covering Solutions",
-                "content": "<p>Reducing exposure to flame retardants and PFAS from window treatments involves mindful selection and opting for naturally safer materials:</p><ul>\n  <li><strong>Natural, Untreated Fabrics:</strong> Choose curtains and drapes made from natural fibers like organic cotton, linen, hemp, or wool that are explicitly labeled as &ldquo;untreated&rdquo; or &ldquo;chemical-free.&rdquo; These materials inherently have better breathability and are less likely to contain synthetic additives.</li>\n  <li><strong>Mechanical Window Treatments:</strong> Consider blinds or shades made from natural wood, bamboo, or aluminum. These materials typically do not require flame retardants or stain-resistant coatings. For fabric shades, look for certifications.</li>\n  <li><strong>Certifications:</strong> Seek textiles with certifications like GOTS (Global Organic Textile Standard) for organic cotton or linen, which ensures ecological and social criteria, including the absence of hazardous chemicals. OEKO-TEX Standard 100 also certifies that textiles are free from harmful substances.</li>\n  <li><strong>Read Labels Carefully:</strong> Be wary of terms like &ldquo;stain-resistant,&rdquo; &ldquo;waterproof,&rdquo; &ldquo;wrinkle-free,&rdquo; or &ldquo;fire-resistant,&rdquo; as these often indicate chemical treatments.</li>\n  <li><strong>Ventilation:</strong> Ensure good ventilation in your home, as this helps dissipate any VOCs or chemical off-gassing that might be present.</li>\n</ul>"
-            }
-        ],
-        "alternatives": [
-            {
-                "name": "Nicetown Linen Blend Sheer Curtains (Untreated)",
-                "type": "Linen Blend Curtains",
-                "description": "Light filtering curtains made from a linen and cotton blend, focusing on natural fibers and an untreated finish.",
-                "pros": "Breathable, natural aesthetic, less likely to contain harsh chemicals",
-                "cons": "May wrinkle easily, not blackout",
-                "url": "https://www.amazon.com/s?k=Nicetown+Linen+Blend+Sheer+Curtains+%28Untreated%29&tag=myeverydaymat-20"
-            },
-            {
-                "name": "Deconovo 100% Blackout Cotton Curtains (Untreated)",
-                "type": "Organic Cotton Curtains",
-                "description": "Heavy-duty blackout curtains made from 100% organic cotton, offering light blocking without chemical treatments.",
-                "pros": "Effective light blocking, natural material, GOTS certified (if available, assume for this entry)",
-                "cons": "Can be heavier, may require specific care",
-                "url": "https://www.amazon.com/s?k=Deconovo+100%25+Blackout+Cotton+Curtains+%28Untreated%29&tag=myeverydaymat-20"
-            },
-            {
-                "name": "Arlo Blinds Bamboo Roman Shade",
-                "type": "Bamboo Blinds",
-                "description": "Natural bamboo roll-up blinds, a simple and elegant window covering free from synthetic fabrics and chemical treatments.",
-                "pros": "Natural material, sustainable, easy to install, no fabric-based chemicals",
-                "cons": "Limited light control compared to fabric, delicate slats",
-                "url": "https://www.amazon.com/s?k=Arlo+Blinds+Bamboo+Roman+Shade&tag=myeverydaymat-20"
-            },
-            {
-                "name": "Radiance Imperial Matchstick Jute Roll Up Blind",
-                "type": "Jute Blinds",
-                "description": "Hand-woven jute roll-up blinds providing natural texture and light filtration, avoiding synthetic fabrics.",
-                "pros": "Sustainable, natural look, chemical-free material",
-                "cons": "Not blackout, can be less durable than wood, some shedding",
-                "url": "https://www.amazon.com/s?k=Radiance+Imperial+Matchstick+Jute+Roll+Up+Blind&tag=myeverydaymat-20"
-            }
-        ],
-        "sources": [
-            [
-                "Environmental Working Group (EWG): Flame Retardants",
-                "https://www.ewg.org/areas-of-work/toxic-chemicals/flame-retardants"
-            ],
-            [
-                "U.S. EPA: Per- and Polyfluoroalkyl Substances (PFAS)",
-                "https://www.epa.gov/pfas"
-            ],
-            [
-                "National Institute of Environmental Health Sciences (NIEHS): Endocrine Disruptors",
-                "https://www.niehs.nih.gov/health/topics/agents/endocrine/index.cfm"
-            ]
-        ]
-    },
-    {
-        "slug": "vinyl-wallpaper",
-        "title": "Vinyl Wallpaper: Navigating Phthalate and VOC Emissions for Healthier Interiors",
-        "meta_description": "Uncover the hidden dangers of phthalates and VOCs in vinyl wallpaper. Learn about their health impacts and discover safer, chemical-free alternatives for your home.",
-        "verdict_level": "verdict-caution",
-        "verdict_rating": "Caution &mdash; Off-gasses harmful chemicals, especially when new",
-        "verdict_summary": "Vinyl wallpaper, made from polyvinyl chloride (PVC), commonly contains phthalates as plasticizers and can off-gas volatile organic compounds (VOCs) from both the PVC itself and the adhesives used. Phthalates are endocrine disruptors linked to reproductive issues and developmental problems, while VOCs like formaldehyde can cause respiratory irritation, headaches, and have long-term carcinogenic potential. These chemicals persist in indoor air, contributing to poor air quality and potential chronic health effects, making careful selection crucial.",
-        "sections": [
-            {
-                "id": "whats-in-vinyl-wallpaper",
-                "heading": "What's in Vinyl Wallpaper?",
-                "content": "<p>Vinyl wallpaper, a popular choice for its durability and ease of cleaning, is primarily made from polyvinyl chloride (PVC). To make the rigid PVC flexible enough for wallpaper applications, plasticizers are added, most notably a class of chemicals called <strong>phthalates</strong>. Beyond the PVC itself, the manufacturing process and the adhesives used for installation can introduce a range of <strong>Volatile Organic Compounds (VOCs)</strong> into your home environment. These substances can off-gas, releasing chemicals into the air that we breathe, particularly when the wallpaper is new or exposed to heat.</p><p>Common phthalates found in vinyl products include DEHP, DBP, BBP, and DINP, many of which are under increasing scrutiny due to their potential health impacts. VOCs can originate from the vinyl material itself, the inks used for patterns, and especially from strong-smelling wallpaper glues which often contain formaldehyde, benzene, and toluene.</p>"
-            },
-            {
-                "id": "health-implications",
-                "heading": "The Health Implications",
-                "content": "<p>The continuous exposure to phthalates and VOCs off-gassing from vinyl wallpaper can pose significant health risks, impacting both immediate comfort and long-term well-being.</p><ul class=\"key-facts\">\n  <li><span class=\"fact-label\">Endocrine Disruption</span> Phthalates are known endocrine-disrupting chemicals (EDCs) that can interfere with hormone systems, potentially leading to reproductive and developmental issues, particularly in children.</li>\n  <li><span class=\"fact-label\">Respiratory & Neurological Effects</span> VOCs can trigger respiratory problems such as asthma exacerbation, throat irritation, and coughing. They are also linked to headaches, dizziness, fatigue, and other neurological symptoms, often collectively referred to as 'sick building syndrome'.</li>\n  <li><span class=\"fact-label\">Carcinogenic Potential</span> Some VOCs, like formaldehyde, are classified as known human carcinogens by organizations such as the International Agency for Research on Cancer (IARC), raising concerns about long-term exposure.</li>\n  <li><span class=\"fact-label\">Indoor Air Quality</span> The accumulation of these chemicals significantly degrades indoor air quality, which can be particularly problematic in poorly ventilated spaces or for sensitive individuals.</li>\n</ul>\n<div class=\"callout callout-warning\">\n  <strong>Warning:</strong> Studies have shown that phthalate levels in indoor dust can be elevated in homes with vinyl products, indicating continuous shedding and potential ingestion or inhalation pathways for exposure.\n</div>"
-            },
-            {
-                "id": "safer-choices",
-                "heading": "Safer Choices for Your Walls",
-                "content": "<p>Reducing exposure to phthalates and VOCs from wallpaper is achievable by opting for materials that prioritize natural composition and low chemical emissions. When selecting wallpaper, look for certifications and clear labeling:</p><ul>\n  <li><strong>PVC-Free & Phthalate-Free:</strong> Many manufacturers now offer non-vinyl wallpapers made from materials like paper, natural fibers (e.g., grasscloth, linen), or non-woven substrates. Always confirm they are explicitly phthalate-free.</li>\n  <li><strong>Low-VOC or Zero-VOC Adhesives:</strong> The glue used for installation is as important as the wallpaper itself. Choose water-based, low-VOC, or zero-VOC adhesives to minimize off-gassing during and after application.</li>\n  <li><strong>Natural Materials:</strong> Options such as grasscloth, cork, or bamboo-based wallpapers, when paired with non-toxic backing and adhesives, offer aesthetic appeal with a significantly reduced chemical footprint.</li>\n  <li><strong>Paint as an Alternative:</strong> For a completely different approach, consider using zero-VOC paints. Modern formulations offer durability and a wide range of colors without the off-gassing concerns of vinyl.</li>\n</ul><p>Always check product specifications and manufacturer declarations regarding chemical content and emissions before making a purchase. Prioritizing good ventilation during and after installation of any new wall covering is also a critical step.</p>"
-            }
-        ],
-        "alternatives": [
-            {
-                "name": "NuWallpaper Gray Grasscloth Peel & Stick Wallpaper",
-                "type": "Natural Fiber (Faux)",
-                "description": "A stylish, self-adhesive wallpaper designed to mimic natural grasscloth, typically PVC and phthalate-free, offering an easy, low-VOC application.",
-                "pros": "Peel and stick for easy installation, often PVC-free, low-VOC options available, natural aesthetic.",
-                "cons": "May not be truly natural grasscloth (check specifics), adhesive quality varies.",
-                "url": "https://www.amazon.com/s?k=NuWallpaper+Gray+Grasscloth+Peel+%26+Stick+Wallpaper&tag=myeverydaymat-20"
-            },
-            {
-                "name": "Tempaper Grasscloth Removable Peel and Stick Wallpaper",
-                "type": "Natural Fiber (Faux)",
-                "description": "Another removable peel-and-stick option, aiming for a grasscloth look without the traditional vinyl. Designed for easy removal and often low in VOCs.",
-                "pros": "DIY-friendly, removable, often free of PVC and phthalates, diverse designs.",
-                "cons": "Durability can vary compared to traditional wallpaper, requires careful surface prep.",
-                "url": "https://www.amazon.com/s?k=Tempaper+Grasscloth+Removable+Peel+and+Stick+Wallpaper&tag=myeverydaymat-20"
-            },
-            {
-                "name": "Spoonflower Peel and Stick Wallpaper, Solid White",
-                "type": "Non-Vinyl, Printed Fabric",
-                "description": "A popular option for custom and plain non-vinyl wallpapers, made from woven polyester fabric with a low-tack adhesive. Free of PVC and phthalates.",
-                "pros": "Customizable, PVC and phthalate-free, easy to install and remove, breathable.",
-                "cons": "Can be more expensive, less durable than vinyl for high-traffic areas.",
-                "url": "https://www.amazon.com/s?k=Spoonflower+Peel+and+Stick+Wallpaper%2C+Solid+White&tag=myeverydaymat-20"
-            }
-        ],
-        "sources": [
-            [
-                "EPA - Volatile Organic Compounds' Impact on Indoor Air Quality",
-                "https://www.epa.gov/indoor-air-quality-iaq/volatile-organic-compounds-impact-indoor-air-quality"
-            ],
-            [
-                "National Institute of Environmental Health Sciences (NIEHS) - Phthalates",
-                "https://www.niehs.nih.gov/health/topics/agents/phthalates/index.cfm"
-            ],
-            [
-                "California Air Resources Board (CARB) - Indoor Air Pollution",
-                "https://ww2.arb.ca.gov/resources/fact-sheets/indoor-air-pollution"
             ]
         ]
     },
@@ -835,145 +421,133 @@ ARTICLES = \
         ]
     },
     {
-        "slug": "bamboo-flooring",
-        "title": "Stranded Bamboo Flooring: Navigating Formaldehyde Glues for a Safer Home",
-        "meta_description": "Explore the hidden formaldehyde risks in stranded bamboo flooring's adhesives. Understand health impacts and learn how to choose low-VOC alternatives for a healthier indoor environment.",
+        "slug": "aerosol-propellants",
+        "title": "Aerosol Sprays: Why Butane and Propane Propellants Pose Indoor Air Risks",
+        "meta_description": "Discover how aerosol propellants like butane and propane disperse harmful ultra-fine particles and VOCs, impacting indoor air quality and lung health. Choose safer non-aerosol options.",
         "verdict_level": "verdict-caution",
-        "verdict_rating": "Caution &mdash; Can off-gas formaldehyde from adhesives",
-        "verdict_summary": "Stranded bamboo flooring, while promoted as eco-friendly, typically relies on strong adhesives to bind the bamboo fibers into a dense material. These adhesives often contain urea-formaldehyde (UF) resins, a significant source of formaldehyde off-gassing. Formaldehyde is a known human carcinogen and a potent irritant, capable of causing respiratory problems, eye and skin irritation, and chronic health issues, especially in new installations. Ensuring products meet strict emission standards like CARB Phase 2 or FloorScore is crucial to mitigate this indoor air quality risk.",
+        "verdict_rating": "Caution \u2014 Aerosol sprays disperse ultra-fine particles and VOCs deep into the lungs; prioritize non-aerosol delivery systems.",
+        "verdict_summary": "Aerosol sprays, commonly found in air fresheners and cleaners, utilize liquefied petroleum gases like butane and propane as propellants to dispense products. This mechanism, however, releases a fine mist of \"respirable\" particles that can bypass the body's natural defenses and penetrate deep into the lungs, potentially causing irritation and inflammation. Additionally, these aerosols significantly elevate indoor concentrations of Volatile Organic Compounds (VOCs), contributing to poor air quality and potential immediate symptoms like headaches and dizziness.",
         "sections": [
             {
-                "id": "understanding-stranded-bamboo-construction",
-                "heading": "Understanding Stranded Bamboo Construction",
-                "content": "<p>Stranded bamboo flooring is celebrated for its hardness, durability, and renewable source. Unlike traditional bamboo flooring, which uses whole strips of bamboo, stranded bamboo is manufactured through a unique process: bamboo stalks are shredded into fibers, which are then compressed under intense pressure and heat. This process necessitates the use of powerful resins and adhesives to bind the fibers together, forming an extremely dense and resilient plank.</p><p>While the bamboo itself is a natural material, the glues used in this manufacturing process are where concerns arise. These binders are typically synthetic resins, and many historically, and some currently, contain <strong>urea-formaldehyde (UF)</strong> or <strong>phenol-formaldehyde (PF)</strong>. These formaldehyde-based adhesives are the primary source of volatile organic compound (VOC) emissions, particularly formaldehyde gas, which can be released into your home's air for an extended period.</p>"
+                "id": "whats-powering-the-spray",
+                "heading": "What&rsquo;s Powering the Spray?",
+                "content": "<p>When you press the nozzle of an aerosol cleaner or air freshener, you're not just releasing the product itself; you're also releasing the propellant that expels it from the can. Many aerosol products rely on liquefied petroleum gases (LPGs) like <strong>butane</strong> and <strong>propane</strong> as these propellants. These highly pressurized gases enable the fine mist delivery system that makes aerosol products so convenient, but their release into indoor environments comes with distinct health and air quality implications.</p>"
             },
             {
-                "id": "formaldehyde-emissions-health-impacts",
-                "heading": "Formaldehyde Emissions & Health Impacts",
-                "content": "<p>Formaldehyde is a colorless, pungent-smelling gas that can be released from a variety of building materials, including those found in stranded bamboo flooring. Its presence in indoor air, even at low levels, can have significant health implications.</p><ul class=\"key-facts\">\n  <li><span class=\"fact-label\">Respiratory Irritation</span> Exposure can cause irritation of the eyes, nose, throat, and lungs, leading to symptoms like watery eyes, burning sensations, coughing, and breathing difficulties.</li>\n  <li><span class=\"fact-label\">Allergic Reactions</span> Some individuals may develop allergic reactions to formaldehyde, experiencing skin rashes or asthma attacks.</li>\n  <li><span class=\"fact-label\">Carcinogenic Risk</span> The International Agency for Research on Cancer (IARC) classifies formaldehyde as a known human carcinogen, with strong evidence linking it to nasopharyngeal cancer and leukemia.</li>\n  <li><span class=\"fact-label\">Chronic Effects</span> Long-term exposure to formaldehyde can contribute to chronic respiratory issues and a general decline in indoor air quality, particularly problematic for children, the elderly, and those with pre-existing conditions.</li>\n</ul>\n<div class=\"callout callout-warning\">\n  <strong>Important:</strong> Off-gassing of formaldehyde from new flooring can be particularly high immediately after installation and can persist for months or even years, especially in warmer, humid environments which accelerate emission rates.\n</div>"
+                "id": "health-risks",
+                "heading": "The Health Risks",
+                "content": "<p>The convenience of aerosol sprays often masks the hidden dangers they can introduce into your home's air, impacting respiratory health and overall indoor air quality.</p>\n<ul class=\"key-facts\">\n    <li><span class=\"fact-label\">Ultra-fine Particle Exposure</span> Aerosols, by their very design, create a mist of extremely small, \"respirable\" particles. These ultra-fine particles are so tiny that they can bypass the natural filtering mechanisms of the nose and throat, penetrating deep into the alveolar region of the lungs. Once there, they can cause inflammation, irritation, and potentially introduce other harmful chemicals directly into the bloodstream.</li>\n    <li><span class=\"fact-label\">Elevated VOC Concentration</span> The use of aerosols, particularly in enclosed spaces, significantly spikes indoor Volatile Organic Compound (VOC) levels. Both the propellants themselves (butane, propane) and the product ingredients (like synthetic fragrances, solvents) contribute to this surge. High VOC concentrations can cause immediate symptoms such as dizziness, headaches, nausea, and respiratory tract irritation in sensitive individuals. Long-term exposure to certain VOCs is linked to more severe health issues.</li>\n    <li><span class=\"fact-label\">Asthma and Allergic Reactions</span> The combination of ultra-fine particles and high VOC levels from aerosol sprays can trigger or exacerbate asthma symptoms and allergic reactions in vulnerable individuals.</li>\n</ul>\n<div class=\"callout callout-warning\">\n  <strong>Caution:</strong> Even \"natural\" or \"organic\" aerosols can still rely on propellants that disperse fine particles and VOCs. Always check the delivery system.\n</div>"
             },
             {
-                "id": "choosing-low-voc-bamboo-alternatives",
-                "heading": "Choosing Low-VOC Bamboo & Alternatives",
-                "content": "<p>To minimize formaldehyde exposure when choosing flooring, careful consideration of product certifications and material alternatives is essential:</p><ul>\n  <li><strong>Certified Low-VOC Bamboo:</strong> Look for stranded bamboo flooring that is explicitly certified for low formaldehyde emissions. Key certifications include <strong>CARB Phase 2 compliant</strong> (California Air Resources Board), <strong>FloorScore\u00ae</strong>, or <strong>Greenguard Gold certified</strong>. These programs ensure products meet stringent indoor air quality standards.</li>\n  <li><strong>Solid Hardwood Flooring:</strong> Opt for solid hardwood flooring finished with low-VOC or water-based sealants. This offers a natural, durable option with minimal chemical binders.</li>\n  <li><strong>Ceramic or Porcelain Tile:</strong> These materials are inherently inert and do not off-gas. Ensure you use low-VOC thin-set mortars and grouts for installation.</li>\n  <li><strong>Natural Linoleum:</strong> Made from linseed oil, cork, wood flour, and natural resins, genuine linoleum (not vinyl) is a durable, biodegradable, and naturally low-VOC option.</li>\n  <li><strong>Engineered Wood with Soy-Based Adhesives:</strong> Some engineered wood products use soy-based or other formaldehyde-free adhesives, offering a lower-emission alternative to traditional engineered options.</li>\n</ul><p>Always ask manufacturers for documentation of their certifications and inquire about the type of adhesives and finishes used in their products. Prioritizing good ventilation during and after any new flooring installation is also advisable.</p>"
+                "id": "what-to-do",
+                "heading": "What You Can Do Right Now",
+                "content": "<p>Choosing non-aerosol delivery systems is a straightforward way to reduce exposure to harmful propellants and airborne particulates in your home.</p>\n<ul>\n    <li><strong>Choose Pump Sprays:</strong> Opt for products that come in pump-action spray bottles instead of aerosol cans. These deliver product in larger droplets, reducing the amount of fine, respirable particles released into the air.</li>\n    <li><strong>Prioritize Ventilation:</strong> If you must use an aerosol product, ensure the area is extremely well-ventilated. Open windows and doors, and use exhaust fans to minimize inhalation of propellants and VOCs.</li>\n    <li><strong>Consider Non-Spray Alternatives:</strong> For air freshening, choose alternatives like essential oil diffusers, potpourri, baking soda, or simply opening a window for natural ventilation. For cleaning, consider solid sticks, gels, or liquid concentrate refills.</li>\n    <li><strong>Read Labels Carefully:</strong> Check product labels for \"propellants\" and ingredient lists to identify butane, propane, or isobutane.</li>\n</ul>"
             }
         ],
         "alternatives": [
             {
-                "name": "Cali Bamboo French Oak Hardwood Flooring Sample",
-                "type": "Solid Hardwood",
-                "description": "A sample of solid hardwood flooring, representing a natural, low-VOC alternative to stranded bamboo when paired with appropriate finishes.",
-                "pros": "Natural material, durable, can be refinished multiple times, typically low VOC with modern finishes.",
-                "cons": "Can be expensive, susceptible to moisture, requires professional installation.",
-                "url": "https://www.amazon.com/s?k=Cali+Bamboo+French+Oak+Hardwood+Flooring+Sample&tag=myeverydaymat-20"
+                "name": "Mrs. Meyer's Clean Day Multi-Surface Everyday Cleaner, Lemon Verbena",
+                "type": "Pump Spray All-Purpose Cleaner",
+                "description": "Hard-working multi-surface cleaner, concentrated formula, comes in a pump spray bottle.",
+                "pros": "Non-aerosol delivery, plant-derived ingredients, pleasant scent from essential oils",
+                "cons": "Contains fragrance (though essential oil-based, still a consideration for sensitivities)",
+                "url": "https://www.amazon.com/s?k=Mrs.+Meyer%27s+Clean+Day+Multi-Surface+Everyday+Cleaner%2C+Lemon+Verbena&tag=myeverydaymat-20"
             },
             {
-                "name": "MSI Take Home Sample - Carrara White Ceramic Wall Tile",
-                "type": "Ceramic Tile",
-                "description": "A sample of ceramic tile, an inert and non-off-gassing flooring material when installed with low-VOC mortar and grout.",
-                "pros": "Extremely durable, waterproof, zero VOCs (from tile itself), versatile designs.",
-                "cons": "Hard underfoot, can be cold, grout lines require maintenance.",
-                "url": "https://www.amazon.com/s?k=MSI+Take+Home+Sample+-+Carrara+White+Ceramic+Wall+Tile&tag=myeverydaymat-20"
+                "name": "Grow Fragrance Air + Fabric Freshener, Cedarwood Citrus",
+                "type": "Pump Spray Air Freshener",
+                "description": "100% plant-based air and fabric freshener, no phthalates, parabens, or synthetic chemicals.",
+                "pros": "Non-aerosol, truly natural ingredients, safe for fabrics",
+                "cons": "Scent may not last as long as synthetic aerosol sprays",
+                "url": "https://www.amazon.com/s?k=Grow+Fragrance+Air+%2B+Fabric+Freshener%2C+Cedarwood+Citrus&tag=myeverydaymat-20"
             },
             {
-                "name": "Cali Bamboo Engineered Hardwood Flooring Sample",
-                "type": "Engineered Hardwood (Low-VOC)",
-                "description": "A sample of engineered hardwood from a brand known for sustainability, potentially offering lower-VOC adhesive options compared to conventional engineered floors.",
-                "pros": "More stable than solid wood, can be installed in more areas, many brands offer low-VOC options.",
-                "cons": "Still uses adhesives (verify type), wear layer can be thin, cannot be refinished as often as solid wood.",
-                "url": "https://www.amazon.com/s?k=Cali+Bamboo+Engineered+Hardwood+Flooring+Sample&tag=myeverydaymat-20"
+                "name": "URPOWER 300ml Aroma Essential Oil Diffuser",
+                "type": "Ultrasonic Essential Oil Diffuser",
+                "description": "Disperses essential oils and humidifies air without heat or propellants.",
+                "pros": "Natural scenting, humidifies, no chemical emissions, reusable",
+                "cons": "Requires essential oils, needs water refills",
+                "url": "https://www.amazon.com/s?k=URPOWER+300ml+Aroma+Essential+Oil+Diffuser&tag=myeverydaymat-20"
             }
         ],
         "sources": [
             [
-                "EPA - Formaldehyde: Learn About Formaldehyde",
-                "https://www.epa.gov/formaldehyde/learn-about-formaldehyde"
+                "Aerosols and Indoor Air Quality",
+                "https://www.epa.gov/indoor-air-quality-iaq/indoor-air-facts-no-4-sick-building-syndrome"
             ],
             [
-                "California Air Resources Board (CARB) - Composite Wood Products ATCM (Formaldehyde)",
-                "https://ww2.arb.ca.gov/our-work/programs/composite-wood-products-atcm-formaldehyde"
+                "Propellants and Health Risks (from NIOSH)",
+                "https://www.cdc.gov/niosh/index.html"
             ],
             [
-                "GreenGuard Certification - Flooring Products",
-                "https://www.ul.com/resources/greenguard-certification-program-floor-score"
+                "Cleaning Products and Your Health",
+                "https://www.lung.org/clean-air/at-home/indoor-air-pollutants/cleaning-supplies"
             ]
         ]
     },
     {
-        "slug": "cork-flooring",
-        "title": "Cork Flooring: Decoding Sealants and Adhesives for a Truly Eco-Friendly Choice",
-        "meta_description": "Investigate the VOCs in cork flooring adhesives and sealants. Understand potential health effects and learn how to select low-emission cork products for a healthier, sustainable home.",
+        "slug": "perchloroethylene-dry-cleaning",
+        "title": "Perchloroethylene (PERC): The Hidden Neurotoxin in Your Dry-Cleaned Clothes",
+        "meta_description": "Discover the risks of Perchloroethylene (PERC), a common dry cleaning solvent classified as a probable carcinogen and neurotoxin, and learn about safer dry cleaning methods.",
         "verdict_level": "verdict-caution",
-        "verdict_rating": "Caution &mdash; Glues and finishes can off-gas VOCs and formaldehyde",
-        "verdict_summary": "While cork itself is a natural and renewable material, the glues used for installation and the finishes (sealants, varnishes) applied to cork flooring can be significant sources of volatile organic compounds (VOCs), including formaldehyde. These chemicals off-gas into the indoor air, contributing to respiratory irritation, headaches, and potential long-term health issues. The key to a truly eco-friendly cork floor lies in selecting products that use low-VOC or formaldehyde-free adhesives and water-based, non-toxic finishes.",
+        "verdict_rating": "CAUTION \u2014 A known neurotoxin and 'probable' carcinogen that off-gasses from freshly dry-cleaned clothes.",
+        "verdict_summary": "Perchloroethylene (PERC) is the dominant solvent used in approximately 80% of conventional dry cleaning establishments. While effective for cleaning, PERC is a recognized neurotoxin, causing acute symptoms like dizziness, headaches, and impaired coordination upon inhalation. The U.S. Environmental Protection Agency (EPA) has classified PERC as a \"probable human carcinogen,\" linking it to various cancers, including bladder and kidney cancer. Crucially, PERC can off-gas from freshly cleaned garments for days, meaning exposure continues even after items are brought home, posing a risk to indoor air quality.",
         "sections": [
             {
-                "id": "beyond-the-natural-cork-core",
-                "heading": "Beyond the Natural Cork Core",
-                "content": "<p>Cork flooring is widely praised for its sustainability, natural insulation properties, and soft feel underfoot. Harvested from the bark of the cork oak tree, cork is a renewable resource that does not require the tree to be cut down. However, the finished cork flooring product typically consists of more than just natural cork.</p><p>Many cork flooring options are engineered products, featuring layers of cork compressed together, often with a high-density fiberboard (HDF) core, and topped with a wear layer. Each of these layers, as well as the installation method, can introduce chemical components:</p><ul>\n  <li><strong>Binders in Composite Cork:</strong> Granulated cork particles are often bound together with synthetic resins.</li>\n  <li><strong>Adhesives for Installation:</strong> Glue-down cork requires adhesives to attach planks to the subfloor.</li>\n  <li><strong>Surface Finishes/Sealants:</strong> Most cork flooring is factory-finished or requires on-site application of sealants (like polyurethane or acrylic) for durability and protection.</li>\n</ul><p>It is these binders, adhesives, and finishes that can introduce <strong>Volatile Organic Compounds (VOCs)</strong> and, in some cases, formaldehyde, into your indoor environment, detracting from the natural benefits of cork.</p>"
+                "id": "what-is-perc",
+                "heading": "What is Perchloroethylene (PERC)?",
+                "content": "<p>Perchloroethylene, often abbreviated as PERC, is a synthetic chlorinated hydrocarbon widely used as a solvent in the dry cleaning industry. Its ability to effectively dissolve fats, oils, and waxes without causing fabrics to shrink or lose shape made it the preferred chemical for decades. PERC is a volatile organic compound (VOC) with a distinctive chemical odor, often associated with the 'smell of dry cleaning'.</p><p>Despite its cleaning efficacy, PERC is a hazardous air pollutant and a known environmental contaminant. It can leach into groundwater and evaporate into the air, contributing to air pollution and posing risks to workers and communities near dry cleaning facilities.</p>"
             },
             {
-                "id": "the-hidden-chemicals-adhesives-and-finishes",
-                "heading": "The Hidden Chemicals: Adhesives and Finishes",
-                "content": "<p>The chemical composition of adhesives and finishes in cork flooring is crucial for indoor air quality. These components are the primary source of chemical emissions.</p><ul class=\"key-facts\">\n  <li><span class=\"fact-label\">VOCs from Finishes</span> Many conventional polyurethane or acrylic finishes contain high levels of VOCs such as xylene, toluene, and other solvents. These off-gas significantly during curing and can continue to emit at lower levels for an extended period, contributing to 'new floor smell' and poor air quality.</li>\n  <li><span class=\"fact-label\">Formaldehyde in Adhesives</span> Some adhesives used in manufacturing the cork planks (especially composite cores) or for glue-down installation may contain formaldehyde-based resins (e.g., urea-formaldehyde). Formaldehyde is a known irritant and carcinogen.</li>\n  <li><span class=\"fact-label\">Isocyanates in Polyurethane</span> Two-part polyurethane finishes can contain isocyanates, which are potent respiratory sensitizers and can cause asthma and other respiratory problems, particularly during application.</li>\n  <li><span class=\"fact-label\">Plasticizers</span> In some lower-quality cork products, plasticizers may be used in binders or finishes, which can include phthalates, known endocrine disruptors.</li>\n</ul>\n<div class=\"callout callout-info\">\n  <strong>Tip:</strong> Floating (click-and-lock) cork flooring can significantly reduce the need for adhesive chemicals during installation, though the planks themselves will still have binders and finishes.\n</div>"
+                "id": "the-invisible-dangers",
+                "heading": "The Invisible Dangers: Neurotoxicity and Carcinogenic Potential",
+                "content": "<p>Exposure to PERC, primarily through inhalation of its fumes, poses significant health risks:</p><ul class=\"key-facts\">\n  <li><span class=\"fact-label\">Neurological Impact:</span> Short-term exposure can lead to central nervous system effects such as dizziness, headaches, drowsiness, nausea, and impaired coordination, often described as a 'feeling of being drunk'. Chronic exposure has been linked to more severe neurological damage, including memory loss and mood disturbances.</li>\n  <li><span class=\"fact-label\">Cancer Risk:</span> The <i>U.S. EPA</i> and the <i>International Agency for Research on Cancer (IARC)</i> classify PERC as a \"probable human carcinogen\" (Group 2A). Studies suggest potential links to bladder cancer, kidney cancer, and non-Hodgkin lymphoma.</li>\n  <li><span class=\"fact-label\">Organ Damage:</span> PERC can also cause damage to the liver and kidneys, and irritate the skin and respiratory tract.</li>\n  <li><span class=\"fact-label\">Off-gassing:</span> A significant concern for consumers is the off-gassing of PERC from freshly dry-cleaned clothes, which can release the chemical into your home's air for days, contributing to indoor air pollution.</li>\n</ul><div class=\"callout callout-warning\">\n  <strong>Ventilation is Key:</strong> If you use conventional dry cleaning, remove plastic bags immediately upon bringing clothes home and air them out in a well-ventilated area (e.g., outdoors or in a garage) for several hours before hanging them in your closet or wearing them.\n</div>"
             },
             {
-                "id": "making-a-truly-healthy-cork-choice",
-                "heading": "Making a Truly Healthy Cork Choice",
-                "content": "<p>To enjoy the benefits of cork without compromising indoor air quality, focus on products and installation methods designed for minimal chemical emissions:</p><ul>\n  <li><strong>Opt for Low-VOC or Zero-VOC Certified Products:</strong> Look for cork flooring that carries certifications such as <strong>FloorScore\u00ae</strong> or <strong>Greenguard Gold</strong>. These programs rigorously test products for VOC emissions, ensuring they meet strict indoor air quality standards.</li>\n  <li><strong>Choose Click-and-Lock Cork:</strong> Floating cork floors that use a tongue-and-groove or click-and-lock system eliminate the need for glue-down installation, thereby reducing a major source of adhesive-related VOCs.</li>\n  <li><strong>Specify Water-Based, Low-VOC Finishes:</strong> If your cork flooring requires an on-site finish, choose water-based polyurethane or natural oil/wax finishes with verified low-VOC content. Avoid solvent-based finishes.</li>\n  <li><strong>Select Formaldehyde-Free Adhesives:</strong> For glue-down installations, ensure the adhesive is explicitly labeled as formaldehyde-free and low-VOC. Natural rubber or plant-based adhesives are often superior options.</li>\n  <li><strong>Verify Core Material:</strong> If choosing engineered cork, inquire about the core material (e.g., HDF). Ensure it also meets low-emission standards, as some HDF can be a source of formaldehyde.</li>\n</ul><p>Always review manufacturer specifications and ask for documentation of product certifications. Proper ventilation during and after any flooring installation, especially for new finishes, is crucial for dissipating any residual VOCs.</p>"
+                "id": "safer-dry-cleaning-solutions",
+                "heading": "Seeking Safer Solutions: Alternatives to PERC Dry Cleaning",
+                "content": "<p>Fortunately, safer dry cleaning methods are increasingly available. Look for dry cleaners that advertise:</p><ul>\n  <li><strong>Wet Cleaning:</strong> This professional process uses water, biodegradable detergents, and specialized equipment to safely clean 'dry clean only' garments without harsh chemicals.</li>\n  <li><strong>CO2 Cleaning:</strong> Using liquid carbon dioxide as a solvent, this method is non-toxic, non-flammable, and leaves no chemical residue or odor.</li>\n  <li><strong>Hydrocarbon Cleaning:</strong> While still a chemical solvent, hydrocarbon cleaners are generally considered less toxic and less regulated than PERC.</li>\n</ul><p>For items that can tolerate it, consider hand washing or using at-home dry cleaning kits, though always check the ingredients in these kits to ensure they don't contain other problematic chemicals. Ultimately, minimizing your reliance on conventional PERC dry cleaning is the best way to reduce exposure to this harmful chemical.</p>"
             }
         ],
         "alternatives": [
             {
-                "name": "Cali Bamboo French Oak Hardwood Flooring Sample",
-                "type": "Solid Hardwood",
-                "description": "A sample of solid hardwood flooring, offering a naturally derived, durable option that, when finished with low-VOC products, is an excellent healthy home choice.",
-                "pros": "Natural, long-lasting, can be refinished, zero VOC from wood itself.",
-                "cons": "Requires specific care, susceptible to moisture, can be costly.",
-                "url": "https://www.amazon.com/s?k=Cali+Bamboo+French+Oak+Hardwood+Flooring+Sample&tag=myeverydaymat-20"
+                "name": "Tide Dry Cleaner At-Home Kit",
+                "type": "At-Home Dry Cleaning",
+                "description": "A convenient kit to refresh and de-wrinkle dry-clean-only clothes at home, typically without harsh solvents like PERC.",
+                "pros": "Cost-effective, extends time between professional dry cleaning, convenient",
+                "cons": "Not suitable for heavily soiled items, doesn't deep clean",
+                "url": "https://www.amazon.com/s?k=Tide+Dry+Cleaner+At-Home+Kit&tag=myeverydaymat-20"
             },
             {
-                "name": "MSI Take Home Sample - Carrara White Ceramic Wall Tile",
-                "type": "Ceramic Tile",
-                "description": "An inert and naturally non-emitting material for flooring, ideal for kitchens and bathrooms when installed with low-VOC thin-set and grout.",
-                "pros": "Zero VOC emissions, extremely durable, water-resistant, easy to clean.",
-                "cons": "Can be cold and hard underfoot, installation can be labor-intensive.",
-                "url": "https://www.amazon.com/s?k=MSI+Take+Home+Sample+-+Carrara+White+Ceramic+Wall+Tile&tag=myeverydaymat-20"
+                "name": "Woolite At-Home Dry Cleaner",
+                "type": "At-Home Dry Cleaning",
+                "description": "Safely cleans and freshens delicate clothes in your dryer, free from PERC and other harsh chemicals.",
+                "pros": "Gentle on fabrics, removes odors, easy to use",
+                "cons": "Limited cleaning power, not a substitute for professional cleaning of stains",
+                "url": "https://www.amazon.com/s?k=Woolite+At-Home+Dry+Cleaner&tag=myeverydaymat-20"
             },
             {
-                "name": "Cali Bamboo Engineered Hardwood Flooring Sample",
-                "type": "Engineered Hardwood (Low-VOC)",
-                "description": "A sample of engineered hardwood from a brand that emphasizes low-VOC formulations in their adhesives and finishes, providing a more stable wood alternative.",
-                "pros": "More stable than solid wood, suitable for wider range of environments, low-VOC options available.",
-                "cons": "Still contains adhesives (check specs), thinner wear layer than solid wood.",
-                "url": "https://www.amazon.com/s?k=Cali+Bamboo+Engineered+Hardwood+Flooring+Sample&tag=myeverydaymat-20"
-            },
-            {
-                "name": "Amorim Wise Inspire 700 WoodLook Cork Flooring Sample",
-                "type": "Low-VOC Cork (Certified)",
-                "description": "A sample from a brand known for its low-VOC and FloorScore certified cork flooring, representing a healthier cork option.",
-                "pros": "FloorScore certified, sustainable, natural insulation, softer underfoot.",
-                "cons": "May still have binders and finishes (though certified low-VOC), susceptible to scratches.",
-                "url": "https://www.amazon.com/s?k=Amorim+Wise+Inspire+700+WoodLook+Cork+Flooring+Sample&tag=myeverydaymat-20"
+                "name": "The Laundress Darks Detergent",
+                "type": "Specialty Laundry Detergent",
+                "description": "Designed for delicate dark fabrics that are often dry-cleaned, allowing for safe at-home washing instead.",
+                "pros": "Allows for chemical-free washing of many 'dry clean only' items, preserves fabric color",
+                "cons": "Requires hand washing or delicate machine cycle, not for all fabric types",
+                "url": "https://www.amazon.com/s?k=The+Laundress+Darks+Detergent&tag=myeverydaymat-20"
             }
         ],
         "sources": [
-            [
-                "EPA - Volatile Organic Compounds' Impact on Indoor Air Quality",
-                "https://www.epa.gov/indoor-air-quality-iaq/volatile-organic-compounds-impact-indoor-air-quality"
-            ],
-            [
-                "GreenGuard Certification - Flooring Products",
-                "https://www.ul.com/resources/greenguard-certification-program-floor-score"
-            ],
-            [
-                "Healthy Building Network - Pharos Project (Cork Flooring)",
-                "https://pharosproject.net/materials/533923-cork-flooring"
-            ],
-            [
-                "Occupational Safety and Health Administration (OSHA) - Isocyanates",
-                "https://www.osha.gov/isocyanates"
-            ]
+            {
+                "title": "ATSDR: Perchloroethylene ToxFAQs",
+                "url": "https://www.atsdr.cdc.gov/toxprofiles/tp18.pdf"
+            },
+            {
+                "title": "California Air Resources Board (CARB): Perchloroethylene and Dry Cleaning",
+                "url": "https://ww2.arb.ca.gov/our-work/programs/perchloroethylene-dry-cleaning"
+            },
+            {
+                "title": "IARC Monographs: Perchloroethylene (Group 2A)",
+                "url": "https://monographs.iarc.who.int/agents-classified-by-the-iarc-monographs/"
+            }
         ]
     }
 ]
