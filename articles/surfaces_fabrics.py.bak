@@ -1,330 +1,130 @@
-articles = {
-    "polyurethane-foam-sofas": {
-        "title": "Flame Retardants in Polyurethane Furniture",
-        "verdict": "CAUTION — Older foam furniture (pre-2015) often contains banned PBDEs; look for the TB117-2013 'No Added Flame Retardants' label.",
-        "content": """
-<h3>What is Polyurethane Foam?</h3>
-Polyurethane foam is the primary cushioning material in over 90% of modern upholstered furniture. Because it is petroleum-based, it is highly flammable and historically required heavy chemical treatment to meet fire safety standards.
+"""Upgraded surfaces_fabrics article data."""
 
-<h3>The Health Risks (The Deep Dive)</h3>
-The primary risk stems from semi-volatile organic compounds (SVOCs) like **PBDEs** and **organophosphate flame retardants (OPFRs)** that migrate from the foam into household dust.
-<ul>
-    <li><strong>Endocrine Disruption:</strong> PBDEs are structurally similar to thyroid hormones and can interfere with thyroid function and fetal brain development.</li>
-    <li><strong>Bioaccumulation:</strong> These chemicals are lipophilic, meaning they store in human fat cells and can be passed through breast milk.</li>
-</ul>
-
-<h3>What You Can Do Right Now</h3>
-<ul>
-    <li><strong>Check the Law Label:</strong> Look for the TB117-2013 tag. If it has an 'X' next to "contains NO added flame retardants," the piece is significantly safer.</li>
-    <li><strong>HEPA Filtration:</strong> Since retardants bind to dust, using a HEPA-filter vacuum twice weekly can reduce inhalation exposure by up to 50%.</li>
-</ul>
-
-<h3>Better Alternatives</h3>
-Choose furniture made with **Natural Latex**, **Wool**, or **Organic Cotton** batting, which are naturally fire-resistant without requiring chemical additives.
-""",
-        "sources": [
-            {"title": "Flame Retardants in the Home", "org": "NIEHS", "url": "https://www.niehs.nih.gov/"},
-            {"title": "Furniture Safety Standards", "org": "CPSC", "url": "https://www.cpsc.gov"}
-        ]
-    },
-
-    "pfas-stain-treatments": {
-        "title": "PFAS 'Forever Chemicals' in Performance Fabrics",
-        "verdict": "AVOID — 'Stain-resistant' and 'Performance' coatings on carpets and upholstery are primary sources of PFAS exposure in the home.",
-        "content": """
-<h3>The Science of Stain Resistance</h3>
-Performance fabrics (like those used in 'easy-clean' sofas) are often coated with **Per- and Polyfluoroalkyl Substances (PFAS)** to repel water and oils.
-
-<h3>The Health Risks (The Deep Dive)</h3>
-PFAS are highly persistent and mobile, meaning they easily flake off fabrics and enter the air and household dust.
-<ul>
-    <li><strong>Immune Suppression:</strong> The <i>EPA</i> has linked certain PFAS to decreased vaccine efficacy and increased susceptibility to infections.</li>
-    <li><strong>Liver & Kidney Stress:</strong> Chronic low-level exposure is associated with altered cholesterol levels and increased risk of kidney cancer.</li>
-</ul>
-
-<h3>What You Can Do Right Now</h3>
-<ul>
-    <li><strong>Avoid After-Market Sprays:</strong> Never apply DIY stain-guard sprays to your furniture or rugs, as these are highly concentrated PFAS sources.</li>
-    <li><strong>Steam Clean with Water:</strong> Use high-heat steam cleaners instead of chemical shampoos to maintain your upholstery.</li>
-</ul>
-
-<h3>Better Alternatives</h3>
-Look for fabrics labeled **"PFAS-Free"** or choose naturally stain-resistant fibers like **Wool** or **Solution-Dyed Polyester**, which rely on the fiber structure rather than a chemical coating for protection.
-""",
-        "sources": [
-            {"title": "PFAS in Consumer Products", "org": "EPA", "url": "https://www.epa.gov/pfas"},
-            {"title": "Stain Resistance Safety", "org": "Green Science Policy Institute", "url": "https://greensciencepolicy.org/"}
-        ]
-    },
-
-    "vinyl-pvc-flooring": {
-        "title": "Phthalates in Vinyl (PVC) Flooring",
-        "verdict": "CAUTION — Luxury Vinyl Tile (LVT) and sheet vinyl can release phthalates and VOCs; prioritize FloorScore or Greenguard Gold certified products.",
-        "content": """
-<h3>What is PVC Flooring?</h3>
-Vinyl flooring is made of Polyvinyl Chloride (PVC). Because PVC is naturally rigid, it requires **Phthalates** (plasticizers) to become the flexible material used in "plank" or "sheet" flooring.
-
-<h3>The Health Risks (The Deep Dive)</h3>
-Vinyl flooring is a major contributor to indoor VOC levels, particularly in the first year after installation.
-<ul>
-    <li><strong>Endocrine Disruption:</strong> Phthalates are semi-volatile and migrate from the floor into the air. In children, exposure is linked to increased rates of asthma and eczema.</li>
-    <li><strong>Dioxin Production:</strong> The lifecycle of PVC—from manufacturing to disposal—releases dioxins, which are highly toxic and persistent environmental pollutants.</li>
-</ul>
-
-<h3>What You Can Do Right Now</h3>
-<ul>
-    <li><strong>Ventilation:</strong> If you have new vinyl floors, increase ventilation by keeping windows open and using fans for the first 30 days.</li>
-    <li><strong>Avoid Steam Mopping Vinyl:</strong> High heat can accelerate the release of plasticizers and potentially damage the floor's wear layer.</li>
-</ul>
-
-<h3>Better Alternatives</h3>
-**Linoleum** (made from linseed oil and cork), **Ceramic Tile**, or **FSC-Certified Hardwood** are safer, non-toxic alternatives that do not rely on plasticizers for flexibility.
-""",
-        "sources": [
-            {"title": "Phthalates in the Indoor Environment", "org": "CDC", "url": "https://www.cdc.gov/"},
-            {"title": "Flooring Emission Standards", "org": "SCS Global Services", "url": "https://www.scsglobalservices.com/floorscore"}
-        ]
-    },
-    "laminate-flooring": {
-        "title": "Formaldehyde in Laminate Flooring",
-        "verdict": "CAUTION — High-density fiberboard (HDF) cores often utilize formaldehyde-based resins; look for CARB Phase 2 or NAF compliance.",
-        "content": """
-<h3>What is Laminate Flooring?</h3>
-Laminate is a multi-layer synthetic flooring product fused together with a lamination process. The inner core layer is usually composed of melamine resin and high-density fiberboard (HDF).
-
-<h3>The Health Risks (The Deep Dive)</h3>
-The primary concern with laminate is the off-gassing of **Formaldehyde**, a volatile organic compound (VOC) used in the urea-formaldehyde resins that bond the wood fibers.
-<ul>
-    <li><strong>Respiratory and Eye Irritation:</strong> Even at low levels, formaldehyde can cause watery eyes, burning sensations in the throat, and difficulty breathing, particularly in children and those with asthma.</li>
-    <li><strong>Long-Term Carcinogenicity:</strong> Formaldehyde is classified as a known human carcinogen by the <i>International Agency for Research on Cancer (IARC)</i>. Prolonged inhalation exposure in the home environment increases the cumulative risk of nasopharyngeal cancer.</li>
-</ul>
-
-<h3>What You Can Do Right Now</h3>
-<ul>
-    <li><strong>Verify Compliance:</strong> Check the packaging for the **CARB Phase 2** or **TSCA Title VI** compliant labels, which indicate the product meets strict emission standards.</li>
-    <li><strong>Seal the Perimeter:</strong> Ensure that baseboards and transitions are tightly sealed to minimize gas escape from the raw edges of the laminate planks.</li>
-</ul>
-
-<h3>Better Alternatives</h3>
-Choose **Solid Hardwood**, **Bamboo** (with NAF - No Added Formaldehyde resins), or **Engineered Wood** that is specifically labeled as **Greenguard Gold** certified to ensure the lowest possible VOC emissions.
-""",
-        "sources": [
-            {"title": "Formaldehyde in Laminate Flooring", "org": "CDC", "url": "https://www.cdc.gov/nceh/laminate_flooring/default.html"},
-            {"title": "Formaldehyde and Cancer Risk", "org": "National Cancer Institute", "url": "https://www.cancer.gov"}
-        ]
-    },
-
-    "synthetic-carpets": {
-        "title": "VOCs and SVOCs in Synthetic Carpeting",
-        "verdict": "CAUTION — New carpets can emit over 4-phenylcyclohexene (4-PC) and other VOCs; ensure 'CRI Green Label Plus' certification.",
-        "content": """
-<h3>The Composition of Modern Carpet</h3>
-Over 90% of carpets sold today are made of synthetic fibers like nylon, polyester, or triexta, backed with styrene-butadiene rubber (SBR) latex.
-
-<h3>The Health Risks (The Deep Dive)</h3>
-The "new carpet smell" is a cocktail of volatile organic compounds (VOCs) and semi-volatile organic compounds (SVOCs) off-gassing from the adhesives and backings.
-<ul>
-    <li><strong>4-Phenylcyclohexene (4-PC):</strong> This specific VOC is a byproduct of the SBR latex backing. It is a known respiratory irritant and is responsible for the distinct chemical odor of new installations.</li>
-    <li><strong>Chemical Sink Effect:</strong> Carpets act as a "sink" for other household pollutants, including dust mites, pet dander, and lead dust, which can be re-released into the air through foot traffic.</li>
-</ul>
-
-<h3>What You Can Do Right Now</h3>
-<ul>
-    <li><strong>Request a 72-Hour Air-Out:</strong> Ask your retailer to unroll the carpet in their warehouse for 72 hours before delivery to your home.</li>
-    <li><strong>Maximize Ventilation:</strong> Use window fans and keep the HVAC system running for at least 48-72 hours post-installation to flush out initial VOC spikes.</li>
-</ul>
-
-<h3>Better Alternatives</h3>
-**Wool Carpeting** with a natural jute backing is the safest choice, as it is naturally flame-retardant and does not require synthetic SBR latex glues.
-""",
-        "sources": [
-            {"title": "Carpet and Indoor Air Quality", "org": "EPA", "url": "https://www.epa.gov/indoor-air-quality-iaq/carpet-and-indoor-air-quality"},
-            {"title": "Green Label Plus Program", "org": "Carpet and Rug Institute", "url": "https://carpet-rug.org/"}
-        ]
-    },
-
-    "memory-foam-mattresses": {
-        "title": "Off-gassing in Memory Foam Mattresses",
-        "verdict": "CAUTION — Viscoelastic foam is petroleum-based and can emit VOCs like isocyanates; prioritize CertiPUR-US or GOLS certified materials.",
-        "content": """
-<h3>What is Memory Foam?</h3>
-Memory foam is a high-density polyurethane foam (viscoelastic foam) treated with additional chemicals to increase its viscosity and density.
-
-<h3>The Health Risks (The Deep Dive)</h3>
-Because you spend one-third of your life in close contact with your mattress, the inhalation of off-gassing VOCs is a significant concern.
-<ul>
-    <li><strong>Isocyanates:</strong> These are the raw materials used to create polyurethane. They are potent sensitizers and can cause occupational asthma and skin irritation if trace amounts remain unreacted in the foam.</li>
-    <li><strong>Acetone and Benzene:</strong> Studies have detected low levels of these solvents off-gassing from new memory foam, which can cause headaches and dizziness in sensitive individuals.</li>
-</ul>
-
-<h3>What You Can Do Right Now</h3>
-<ul>
-    <li><strong>The "Active" Off-gas:</strong> Unbox your mattress in a spare room with the windows open and a fan running for at least 3 to 7 days before sleeping on it.</li>
-    <li><strong>Use a Barrier:</strong> A high-quality organic cotton mattress protector can provide a slight physical barrier against particulate shedding from the foam as it ages.</li>
-</ul>
-
-<h3>Better Alternatives</h3>
-**Natural Latex Mattresses** (GOLS certified) or **Innerspring Mattresses** using organic wool and cotton layers are superior for breathability and lack the VOC profile of synthetic foams.
-""",
-        "sources": [
-            {"title": "Mattress Off-gassing and Health", "org": "Sleep Foundation", "url": "https://www.sleepfoundation.org/"},
-            {"title": "Polyurethane Foam Safety", "org": "CertiPUR-US", "url": "https://certipur.us/"}
-        ]
-    },
-    "engineered-wood-flooring": {
-        "title": "Adhesives in Engineered Wood Flooring",
-        "verdict": "CAUTION — The plywood or HDF base layers often utilize urea-formaldehyde resins; prioritize NAF (No Added Formaldehyde) certified products.",
-        "content": """
-<h3>What is Engineered Wood?</h3>
-Engineered wood consists of a thin veneer of real hardwood bonded over multiple layers of plywood or high-density fiberboard (HDF).
-
-<h3>The Health Risks (The Deep Dive)</h3>
-While the surface is real wood, the structural integrity depends on adhesive resins that can off-gas into the home for years.
-<ul>
-    <li><strong>Formaldehyde Off-gassing:</strong> Urea-formaldehyde (UF) resins are common in lower-cost engineered products. The <i>IARC</i> classifies formaldehyde as a Group 1 carcinogen.</li>
-    <li><strong>Isocyanate Binders:</strong> Some manufacturers use methylene diphenyl diisocyanate (MDI). While lower in VOCs than UF, isocyanates are potent respiratory sensitizers.</li>
-</ul>
-
-<h3>What You Can Do Right Now</h3>
-<ul>
-    <li><strong>Check for NAF/ULEF Labels:</strong> Look for products labeled "No Added Formaldehyde" (NAF) or "Ultra-Low Emitting Formaldehyde" (ULEF).</li>
-    <li><strong>Seal Exposed Edges:</strong> During installation, ensure the raw edges of planks are not left exposed to the air in closets or under baseboards.</li>
-</ul>
-""",
-        "sources": [
-            {"title": "Formaldehyde in Home Products", "org": "EPA", "url": "https://www.epa.gov/formaldehyde"},
-            {"title": "Wood Product Emissions", "org": "CARB", "url": "https://ww2.arb.ca.gov/"}
-        ]
-    },
-
-    "plywood-osb-subflooring": {
-        "title": "Resins in Plywood and OSB Subflooring",
-        "verdict": "CAUTION — These structural materials are a major source of hidden formaldehyde; ensure they meet TSCA Title VI standards.",
-        "content": """
-<h3>Hidden Sources of VOCs</h3>
-Plywood and Oriented Strand Board (OSB) are the "bones" of your floors and walls. Because they are hidden behind finished surfaces, their chemical profile is often overlooked.
-
-<h3>The Health Risks (The Deep Dive)</h3>
-<ul>
-    <li><strong>Cumulative Load:</strong> Because of the sheer volume of subflooring in a home, even low emission rates can contribute to a high total VOC load.</li>
-    <li><strong>Phenol-Formaldehyde (PF):</strong> Exterior-grade plywood often uses PF resins, which off-gas at a much slower rate than urea-formaldehyde but are still significant in tightly sealed modern homes.</li>
-</ul>
-""",
-        "sources": [
-            {"title": "TSCA Title VI Requirements", "org": "EPA", "url": "https://www.epa.gov/tsca-title-vi"},
-            {"title": "Building Materials and IAQ", "org": "Lawrence Berkeley National Lab", "url": "https://iaqscience.lbl.gov/"}
-        ]
-    },
-
-    "particle-board-furniture": {
-        "title": "Formaldehyde in Particle Board Furniture",
-        "verdict": "AVOID — Raw particle board is one of the highest emitters of formaldehyde in the home; seal all raw edges immediately.",
-        "content": """
-<h3>The Science of Pressed Wood</h3>
-Particle board is made from wood chips and sawdust bonded with synthetic resins. It is the primary material in "flat-pack" or "ready-to-assemble" furniture.
-
-<h3>The Health Risks (The Deep Dive)</h3>
-<ul>
-    <li><strong>High Emission Surface Area:</strong> Unlike solid wood, particle board is highly porous, allowing gas to escape more easily from the core.</li>
-    <li><strong>Respiratory Irritation:</strong> High levels of off-gassing are linked to "Sick Building Syndrome" symptoms, including chronic headaches and throat irritation.</li>
-</ul>
-""",
-        "sources": [
-            {"title": "Formaldehyde and Indoor Air", "org": "CPSC", "url": "https://www.cpsc.gov/"},
-            {"title": "Cancer Risk from Formaldehyde", "org": "National Cancer Institute", "url": "https://www.cancer.gov/"}
-        ]
-    },
-
-    "curtains-drapes-treatments": {
-        "title": "Flame Retardants and PFAS in Window Treatments",
-        "verdict": "CAUTION — Synthetic drapes often contain PFAS for stain resistance and flame retardants; choose natural linen or organic cotton.",
-        "content": """
-<h3>Treatments on Textiles</h3>
-Curtains are frequently treated with chemical finishes to meet NFPA 701 flammability standards, especially in multi-family housing.
-
-<h3>The Health Risks (The Deep Dive)</h3>
-<ul>
-    <li><strong>Dust Accumulation:</strong> Curtains act as a large vertical filter for household air, trapping PBDE-laden dust which is then disturbed every time the curtains are moved.</li>
-    <li><strong>PFAS Off-gassing:</strong> Stain-resistant coatings (PFAS) can degrade into the air, contributing to the "forever chemical" load in the home.</li>
-</ul>
-""",
-        "sources": [
-            {"title": "Chemicals in Textiles", "org": "OEKO-TEX", "url": "https://www.oeko-tex.com/"},
-            {"title": "Flame Retardants in Home Textiles", "org": "Green Science Policy Institute", "url": "https://greensciencepolicy.org/"}
-        ]
-    },
-
-    "vinyl-wallpaper": {
-        "title": "Phthalates and VOCs in Vinyl Wallpaper",
-        "verdict": "AVOID — PVC wallcoverings can release phthalates and trap moisture, leading to hidden mold growth.",
-        "content": """
-<h3>The Problem with PVC Walls</h3>
-Vinyl wallpaper is essentially a large sheet of PVC applied to your walls. To stay flexible, it is heavily plasticized with phthalates.
-
-<h3>The Health Risks (The Deep Dive)</h3>
-<ul>
-    <li><strong>Phthalate Migration:</strong> Semi-volatile phthalates migrate from the wallpaper into the air and settle in dust, where they can be inhaled or ingested.</li>
-    <li><strong>Permeability and Mold:</strong> Vinyl is non-breathable. In humid climates, it can trap moisture behind the paper, leading to systemic mold growth inside the wall cavity.</li>
-</ul>
-""",
-        "sources": [
-            {"title": "Phthalates Factsheet", "org": "CDC", "url": "https://www.cdc.gov/"},
-            {"title": "Mold and Health", "org": "EPA", "url": "https://www.epa.gov/mold"}
-        ]
-    },
-
-    "synthetic-bedding": {
-        "title": "Microfibers and Chemicals in Synthetic Bedding",
-        "verdict": "CAUTION — Polyester and 'microfiber' sheets shed microplastics and may contain antimony residuals from manufacturing.",
-        "content": """
-<h3>Petroleum-Based Sleep</h3>
-Synthetic bedding is made from plastic fibers like polyester (PET). These are often treated with chemical softeners to mimic the feel of cotton.
-
-<h3>The Health Risks (The Deep Dive)</h3>
-<ul>
-    <li><strong>Antimony Residuals:</strong> Antimony trioxide is used as a catalyst in PET production. Studies show it can leach into sweat and be absorbed through the skin during sleep.</li>
-    <li><strong>Microplastic Inhalation:</strong> Synthetic fibers shed microscopic plastic fragments that are easily inhaled in the high-contact environment of a bed.</li>
-</ul>
-""",
-        "sources": [
-            {"title": "Chemicals in Clothing and Bedding", "org": "National Institute of Standards and Technology", "url": "https://www.nist.gov/"},
-            {"title": "Sleep and Chemical Exposure", "org": "Sleep Foundation", "url": "https://www.sleepfoundation.org/"}
-        ]
-    },
-
-    "bamboo-flooring": {
-        "title": "Adhesives in Stranded Bamboo Flooring",
-        "verdict": "CAUTION — 'Strand-woven' bamboo requires significantly more adhesive than traditional bamboo; look for Phenol-Formaldehyde or NAF labels.",
-        "content": """
-<h3>Is Bamboo Always Green?</h3>
-While bamboo is a renewable resource, the "strand-woven" variety is made by shredding bamboo and compressing it with large amounts of resin.
-
-<h3>The Health Risks (The Deep Dive)</h3>
-<ul>
-    <li><strong>Resin Content:</strong> Some stranded bamboo can contain up to 30% adhesive by weight. If that adhesive is urea-formaldehyde, emission levels can be very high.</li>
-</ul>
-""",
-        "sources": [
-            {"title": "Eco-Friendly Flooring Guide", "org": "Environmental Working Group", "url": "https://www.ewg.org/"},
-            {"title": "Formaldehyde in Building Products", "org": "Health Canada", "url": "https://www.canada.ca/"}
-        ]
-    },
-
-    "cork-flooring": {
-        "title": "Sealants and Glues in Cork Flooring",
-        "verdict": "SAFE — Generally the lowest-emission hard flooring; ensure the polyurethane finish is water-based and Greenguard Gold certified.",
-        "content": """
-<h3>Natural Benefits of Cork</h3>
-Cork is naturally antimicrobial and fire-resistant. It is harvested from the bark of the cork oak tree without harming the tree.
-
-<h3>The Health Risks (The Deep Dive)</h3>
-<ul>
-    <li><strong>Finish VOCs:</strong> The primary risk comes from the topcoat. Traditional oil-based polyurethanes can off-gas VOCs for weeks.</li>
-</ul>
-""",
-        "sources": [
-            {"title": "Natural Flooring Comparison", "org": "Sustainable Furnishings Council", "url": "https://sustainablefurnishings.org/"},
-            {"title": "Low-VOC Finishes", "org": "Greenguard", "url": "https://www.ul.com/"}
-        ]
-    }
-}
+ARTICLES = [
+    {
+    "slug": "polyurethane-foam-sofas",
+    "title": "Flame Retardants in Polyurethane Furniture",
+    "verdict_level": "verdict-caution",
+    "verdict_summary": "Failed to generate.",
+    "sections": [],
+    "alternatives": [],
+    "sources": []
+},
+    {
+    "slug": "pfas-stain-treatments",
+    "title": "PFAS 'Forever Chemicals' in Performance Fabrics",
+    "verdict_level": "verdict-caution",
+    "verdict_summary": "Failed to generate.",
+    "sections": [],
+    "alternatives": [],
+    "sources": []
+},
+    {
+    "slug": "vinyl-pvc-flooring",
+    "title": "Phthalates in Vinyl (PVC) Flooring",
+    "verdict_level": "verdict-caution",
+    "verdict_summary": "Failed to generate.",
+    "sections": [],
+    "alternatives": [],
+    "sources": []
+},
+    {
+    "slug": "laminate-flooring",
+    "title": "Formaldehyde in Laminate Flooring",
+    "verdict_level": "verdict-caution",
+    "verdict_summary": "Failed to generate.",
+    "sections": [],
+    "alternatives": [],
+    "sources": []
+},
+    {
+    "slug": "synthetic-carpets",
+    "title": "VOCs and SVOCs in Synthetic Carpeting",
+    "verdict_level": "verdict-caution",
+    "verdict_summary": "Failed to generate.",
+    "sections": [],
+    "alternatives": [],
+    "sources": []
+},
+    {
+    "slug": "memory-foam-mattresses",
+    "title": "Off-gassing in Memory Foam Mattresses",
+    "verdict_level": "verdict-caution",
+    "verdict_summary": "Failed to generate.",
+    "sections": [],
+    "alternatives": [],
+    "sources": []
+},
+    {
+    "slug": "engineered-wood-flooring",
+    "title": "Adhesives in Engineered Wood Flooring",
+    "verdict_level": "verdict-caution",
+    "verdict_summary": "Failed to generate.",
+    "sections": [],
+    "alternatives": [],
+    "sources": []
+},
+    {
+    "slug": "plywood-osb-subflooring",
+    "title": "Resins in Plywood and OSB Subflooring",
+    "verdict_level": "verdict-caution",
+    "verdict_summary": "Failed to generate.",
+    "sections": [],
+    "alternatives": [],
+    "sources": []
+},
+    {
+    "slug": "particle-board-furniture",
+    "title": "Formaldehyde in Particle Board Furniture",
+    "verdict_level": "verdict-caution",
+    "verdict_summary": "Failed to generate.",
+    "sections": [],
+    "alternatives": [],
+    "sources": []
+},
+    {
+    "slug": "curtains-drapes-treatments",
+    "title": "Flame Retardants and PFAS in Window Treatments",
+    "verdict_level": "verdict-caution",
+    "verdict_summary": "Failed to generate.",
+    "sections": [],
+    "alternatives": [],
+    "sources": []
+},
+    {
+    "slug": "vinyl-wallpaper",
+    "title": "Phthalates and VOCs in Vinyl Wallpaper",
+    "verdict_level": "verdict-caution",
+    "verdict_summary": "Failed to generate.",
+    "sections": [],
+    "alternatives": [],
+    "sources": []
+},
+    {
+    "slug": "synthetic-bedding",
+    "title": "Microfibers and Chemicals in Synthetic Bedding",
+    "verdict_level": "verdict-caution",
+    "verdict_summary": "Failed to generate.",
+    "sections": [],
+    "alternatives": [],
+    "sources": []
+},
+    {
+    "slug": "bamboo-flooring",
+    "title": "Adhesives in Stranded Bamboo Flooring",
+    "verdict_level": "verdict-caution",
+    "verdict_summary": "Failed to generate.",
+    "sections": [],
+    "alternatives": [],
+    "sources": []
+},
+    {
+    "slug": "cork-flooring",
+    "title": "Sealants and Glues in Cork Flooring",
+    "verdict_level": "verdict-caution",
+    "verdict_summary": "Failed to generate.",
+    "sections": [],
+    "alternatives": [],
+    "sources": []
+},
+]
