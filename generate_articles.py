@@ -5,8 +5,11 @@ import argparse
 import html
 import importlib
 import json
+<<<<<<< Updated upstream
 import re
 import urllib.parse
+=======
+>>>>>>> Stashed changes
 from collections import defaultdict
 from datetime import date
 from html import unescape
@@ -90,6 +93,7 @@ def grouped_material_rows():
     return grouped
 
 
+<<<<<<< Updated upstream
 # Some category slugs differ from their module filenames.
 _MODULE_NAME_OVERRIDES = {
     "household": "surfaces_fabrics",
@@ -137,6 +141,10 @@ def _convert_old_format_article(slug, art):
 
 def load_articles_module(category_slug):
     module_name = _MODULE_NAME_OVERRIDES.get(category_slug, category_slug.replace("-", "_"))
+=======
+def load_articles_module(category_slug):
+    module_name = category_slug.replace("-", "_")
+>>>>>>> Stashed changes
     try:
         mod = importlib.import_module(f"articles.{module_name}")
     except ModuleNotFoundError:
@@ -144,6 +152,7 @@ def load_articles_module(category_slug):
     except (ImportError, SyntaxError) as exc:
         print(f"  WARN: Could not load 'articles/{module_name}.py' ({exc.__class__.__name__}: {exc})")
         return None, {}
+<<<<<<< Updated upstream
     mod_articles = getattr(mod, "ARTICLES", None)
     if mod_articles is not None:
         return mod_articles, getattr(mod, "RELATED_MAP", {})
@@ -152,6 +161,9 @@ def load_articles_module(category_slug):
         converted = [_convert_old_format_article(slug, art) for slug, art in old_format.items()]
         return converted, {}
     return None, {}
+=======
+    return getattr(mod, "ARTICLES", None), getattr(mod, "RELATED_MAP", {})
+>>>>>>> Stashed changes
 
 
 def verdict_level(status):
@@ -327,7 +339,11 @@ def generate_article(article, all_articles, category_slug, related_map):
   <link rel=\"stylesheet\" href=\"../css/style.css?v={CSS_VERSION}\" />
 </head>
 <body>
+<<<<<<< Updated upstream
   <nav class=\"breadcrumb\"><a href=\"../\">&larr; {SITE_NAME}</a></nav>
+=======
+  <nav class=\"breadcrumb\"><a href=\"../index.html\">&larr; {SITE_NAME}</a></nav>
+>>>>>>> Stashed changes
   <article>
     <h1>{article['title']}</h1>
     <div class=\"editors-note\">{EDITORS_NOTE}</div>
@@ -368,7 +384,11 @@ def generate_category_index(category_slug, generated_articles, target_count):
   <link rel=\"stylesheet\" href=\"../css/style.css?v={CSS_VERSION}\" />
   <link rel=\"icon\" href=\"../favicon.svg\" type=\"image/svg+xml\" />
 </head><body>
+<<<<<<< Updated upstream
   <nav class=\"breadcrumb\"><a href=\"../\">&larr; {SITE_NAME}</a></nav>
+=======
+  <nav class=\"breadcrumb\"><a href=\"../index.html\">&larr; {SITE_NAME}</a></nav>
+>>>>>>> Stashed changes
   <div class=\"category-header\"><h1>{cat['name']}</h1><p>{cat['tagline']}</p></div>
   <p class=\"registry-meta\">{len(generated_articles)} published guides • {target_count} materials in catalog</p>
   <main><ul class=\"category-list\">{links}
@@ -383,7 +403,11 @@ def generate_homepage(catalog_by_category, generated_counts):
     for cat_slug, cat in CATEGORIES.items():
         total = len(catalog_by_category.get(cat_slug, []))
         published = generated_counts.get(cat_slug, 0)
+<<<<<<< Updated upstream
         href = f"{cat_slug}/" if published else "#"
+=======
+        href = f"{cat_slug}/index.html" if published else "#"
+>>>>>>> Stashed changes
         state = "Live" if published else "In Progress"
         cta = "Browse guides" if published else "Catalog preview"
         sections.append(
