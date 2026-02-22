@@ -32,7 +32,7 @@ ARTICLES = [
             "description": "Developed with dermatologists, this cream is paraben-free, fragrance-free, and contains ceramides to restore the skin barrier.",
             "pros": "Non-comedogenic, suitable for sensitive skin, deeply hydrating, widely available.",
             "cons": "Large tub may be inconvenient for travel.",
-            "asin": "B00TTD9Y0C"
+            "url": "https://www.amazon.com/s?k=CeraVe+Moisturizing+Cream&tag=myeverydaymat-20"
         },
         {
             "name": "The Ordinary Niacinamide 10% + Zinc 1%",
@@ -40,7 +40,7 @@ ARTICLES = [
             "description": "A popular, affordable serum formulated without parabens, silicones, or alcohol, targeting blemishes and congestion.",
             "pros": "Effective for skin concerns, budget-friendly, minimalist ingredient list.",
             "cons": "Can cause purging in some users initially.",
-            "asin": "B071D5GQ7T"
+            "url": "https://www.amazon.com/s?k=The+Ordinary+Niacinamide+10%25+%2B+Zinc+1%25&tag=myeverydaymat-20"
         },
         {
             "name": "ATTITUDE Natural Shampoo, Super Leaves Science",
@@ -48,7 +48,7 @@ ARTICLES = [
             "description": "EWG Verified, hypoallergenic shampoo made with plant-derived ingredients and free from parabens, phthalates, and synthetic fragrances.",
             "pros": "Eco-friendly, gentle on scalp and hair, pleasant natural scents.",
             "cons": "May not lather as much as conventional shampoos.",
-            "asin": "B07B653L7F"
+            "url": "https://www.amazon.com/s?k=ATTITUDE+Natural+Shampoo%2C+Super+Leaves+Science&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -97,7 +97,7 @@ ARTICLES = [
             "description": "An all-natural, versatile soap concentrate free of synthetic fragrances and phthalates, suitable for body, hair, and household cleaning.",
             "pros": "Extremely versatile, organic ingredients, no synthetic fragrances.",
             "cons": "Can be drying if not diluted properly, thin consistency.",
-            "asin": "B000HK1O9G"
+            "url": "https://www.amazon.com/s?k=Dr.+Bronner%27s+Pure-Castile+Liquid+Soap%2C+Unscented&tag=myeverydaymat-20"
         },
         {
             "name": "ATTITUDE Dish Soap, Fragrance-Free",
@@ -105,7 +105,7 @@ ARTICLES = [
             "description": "EWG Verified, plant-based dish soap that is hypoallergenic and completely free of phthalates, phosphates, and artificial fragrances.",
             "pros": "Safe for sensitive skin, effective cleaning, eco-friendly.",
             "cons": "May require more product for heavy grease.",
-            "asin": "B07BNQ8R5R"
+            "url": "https://www.amazon.com/s?k=ATTITUDE+Dish+Soap%2C+Fragrance-Free&tag=myeverydaymat-20"
         },
         {
             "name": "Everyone Hand Soap, Citrus & Mint",
@@ -113,7 +113,7 @@ ARTICLES = [
             "description": "Naturally scented with essential oils (no synthetic fragrance), this hand soap is free from phthalates, parabens, and dyes.",
             "pros": "Pleasant natural scent, gentle, good value for money.",
             "cons": "Pump can sometimes clog with use.",
-            "asin": "B00862L7N4"
+            "url": "https://www.amazon.com/s?k=Everyone+Hand+Soap%2C+Citrus+%26+Mint&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -166,7 +166,7 @@ ARTICLES = [
             "description": "A popular sulfate-free shampoo formulated with argan oil to help smooth, strengthen, and restore luster to dry, damaged hair.",
             "pros": "Widely available, pleasant scent, leaves hair soft.",
             "cons": "Can be heavy for very fine hair.",
-            "asin": "B000N7D89I"
+            "url": "https://www.amazon.com/s?k=OGX+Renewing+%2B+Argan+Oil+of+Morocco+Shampoo&tag=myeverydaymat-20"
         },
         {
             "name": "Acure Organics Ultra Hydrating Shampoo, Argan & Stem Cell",
@@ -174,7 +174,7 @@ ARTICLES = [
             "description": "Vegan and sulfate-free shampoo designed to provide moisture to dry and damaged hair using organic ingredients.",
             "pros": "Certified organic ingredients, good for sensitive scalps, moisturizing.",
             "cons": "Lathers less than conventional shampoos.",
-            "asin": "B004Z2Q4A2"
+            "url": "https://www.amazon.com/s?k=Acure+Organics+Ultra+Hydrating+Shampoo%2C+Argan+%26+Stem+Cell&tag=myeverydaymat-20"
         },
         {
             "name": "Honeydew Sulfate Free Body Wash for Sensitive Skin",
@@ -182,7 +182,7 @@ ARTICLES = [
             "description": "A gentle body wash specifically formulated for sensitive skin, free from sulfates, parabens, and artificial fragrances.",
             "pros": "Hypoallergenic, naturally scented, moisturizing.",
             "cons": "Some users find the scent mild.",
-            "asin": "B079D99JGR"
+            "url": "https://www.amazon.com/s?k=Honeydew+Sulfate+Free+Body+Wash+for+Sensitive+Skin&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -235,7 +235,7 @@ ARTICLES = [
             "description": "Made with plant-derived ingredients and essential oils, this hand soap is triclosan-free and provides gentle yet effective cleansing.",
             "pros": "Pleasant natural scents, gentle on hands, widely available.",
             "cons": "Some scents might be strong for sensitive individuals.",
-            "asin": "B002K88CJC"
+            "url": "https://www.amazon.com/s?k=Mrs.+Meyer%27s+Clean+Day+Liquid+Hand+Soap%2C+Lavender&tag=myeverydaymat-20"
         },
         {
             "name": "Puracy Natural Liquid Hand Soap, Lavender & Vanilla",
@@ -243,7 +243,7 @@ ARTICLES = [
             "description": "A dermatologist-tested, hypoallergenic hand soap crafted with natural ingredients, free from triclosan, sulfates, and harsh chemicals.",
             "pros": "Gentle for frequent use, moisturizing, biodegradable formula.",
             "cons": "Higher price point than some conventional soaps.",
-            "asin": "B01N2K3J25"
+            "url": "https://www.amazon.com/s?k=Puracy+Natural+Liquid+Hand+Soap%2C+Lavender+%26+Vanilla&tag=myeverydaymat-20"
         },
         {
             "name": "Touchland Power Mist Hydrating Hand Sanitizer, Aloe Vera",
@@ -251,7 +251,7 @@ ARTICLES = [
             "description": "An 80% alcohol hand sanitizer with a hydrating formula, free of triclosan and parabens, delivering a fine mist for even coverage.",
             "pros": "Non-sticky, moisturizing, convenient spray format.",
             "cons": "More expensive than traditional gel sanitizers.",
-            "asin": "B084GZYW3K"
+            "url": "https://www.amazon.com/s?k=Touchland+Power+Mist+Hydrating+Hand+Sanitizer%2C+Aloe+Vera&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -304,7 +304,7 @@ ARTICLES = [
             "description": "Formulated for sensitive skin, free of common chemical irritants including formaldehyde, parabens, and dyes.",
             "pros": "Non-comedogenic, fragrance-free, effective for very sensitive skin.",
             "cons": "Thick consistency may feel heavy for some, can be greasy if overapplied.",
-            "asin": "B000NWGC2S"
+            "url": "https://www.amazon.com/s?k=Vanicream+Moisturizing+Cream+with+Pump&tag=myeverydaymat-20"
         },
         {
             "name": "Pipette Baby Shampoo & Wash, Fragrance-Free",
@@ -312,7 +312,7 @@ ARTICLES = [
             "description": "Hypoallergenic and EWG Verified, this gentle formula is free from formaldehyde releasers, sulfates, and synthetic fragrances.",
             "pros": "Ultra-gentle, plant-derived ingredients, suitable for newborns and sensitive adults.",
             "cons": "Higher price point for a baby product.",
-            "asin": "B084G4731L"
+            "url": "https://www.amazon.com/s?k=Pipette+Baby+Shampoo+%26+Wash%2C+Fragrance-Free&tag=myeverydaymat-20"
         },
         {
             "name": "Beautycounter Countermatch Adaptive Moisture Lotion",
@@ -320,7 +320,7 @@ ARTICLES = [
             "description": "This lotion uses alternative preservatives (like phenoxyethanol) and is rigorously tested to be free of formaldehyde-releasing chemicals and over 2,800 questionable ingredients.",
             "pros": "Adapts to skin's needs, lightweight, strong commitment to ingredient safety.",
             "cons": "Premium price point.",
-            "asin": "B079D99JGR"
+            "url": "https://www.amazon.com/s?k=Beautycounter+Countermatch+Adaptive+Moisture+Lotion&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -373,7 +373,7 @@ ARTICLES = [
             "description": "Popular aluminum-free deodorant using naturally derived ingredients to fight odor.",
             "pros": "No aluminum, parabens, or phthalates; variety of scents",
             "cons": "Does not block sweat, may require reapplication",
-            "asin": "B079Z964J4"
+            "url": "https://www.amazon.com/s?k=Native+Deodorant+for+Women+and+Men+-+Aluminum-Free&tag=myeverydaymat-20"
         },
         {
             "name": "Tom's of Maine Long Lasting Deodorant, Aluminum-Free",
@@ -381,7 +381,7 @@ ARTICLES = [
             "description": "Natural, aluminum-free deodorant offering long-lasting odor protection.",
             "pros": "Natural ingredients, no artificial fragrances, effective odor control",
             "cons": "Does not prevent sweating, texture can be different",
-            "asin": "B000052Y9A"
+            "url": "https://www.amazon.com/s?k=Tom%27s+of+Maine+Long+Lasting+Deodorant%2C+Aluminum-Free&tag=myeverydaymat-20"
         },
         {
             "name": "Schmidt's Natural Deodorant, Aluminum Free",
@@ -389,7 +389,7 @@ ARTICLES = [
             "description": "Certified natural deodorant that helps neutralize odor with plant-based powders.",
             "pros": "Vegan, cruelty-free, no aluminum, strong odor protection",
             "cons": "Can be firm upon application, may stain some clothing",
-            "asin": "B07S4R4QGF"
+            "url": "https://www.amazon.com/s?k=Schmidt%27s+Natural+Deodorant%2C+Aluminum+Free&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -442,7 +442,7 @@ ARTICLES = [
             "description": "A broad-spectrum mineral sunscreen formulated for sensitive skin, using Zinc Oxide and Titanium Dioxide.",
             "pros": "100% mineral active ingredients, paraben-free, no harsh chemicals, reef-safe",
             "cons": "Can leave a slight white cast on darker skin tones, thick consistency",
-            "asin": "B01N0P68J2"
+            "url": "https://www.amazon.com/s?k=Blue+Lizard+Sensitive+Mineral+Sunscreen+SPF+50%2B&tag=myeverydaymat-20"
         },
         {
             "name": "EltaMD UV Clear Facial Sunscreen Broad-Spectrum SPF 46",
@@ -450,7 +450,7 @@ ARTICLES = [
             "description": "Combines zinc oxide with niacinamide for sensitive, acne-prone skin.",
             "pros": "Lightweight, non-comedogenic, good for acne/rosacea, no white cast",
             "cons": "Contains octinoxate (a chemical filter) in some versions, check ingredients carefully",
-            "asin": "B002VA4EEQ"
+            "url": "https://www.amazon.com/s?k=EltaMD+UV+Clear+Facial+Sunscreen+Broad-Spectrum+SPF+46&tag=myeverydaymat-20"
         },
         {
             "name": "Thinkbaby Safe Sunscreen SPF 50+",
@@ -458,7 +458,7 @@ ARTICLES = [
             "description": "Highly rated mineral sunscreen with 20% non-nano zinc oxide, water resistant.",
             "pros": "EWG Verified, very water resistant, no PABA, parabens, phthalates, BPA, oxybenzone, avobenzone, petroleum, gluten, dairy or toxic chemicals",
             "cons": "Thick, can be hard to rub in completely, might leave a white residue",
-            "asin": "B0063J7K4W"
+            "url": "https://www.amazon.com/s?k=Thinkbaby+Safe+Sunscreen+SPF+50%2B&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -511,7 +511,7 @@ ARTICLES = [
             "description": "Dermatologist-recommended, fragrance-free moisturizing cream for sensitive skin.",
             "pros": "Free of common chemical irritants, dyes, fragrance, parabens, formaldehyde, non-comedogenic",
             "cons": "Can be thick for some, not specifically 'natural' ingredients",
-            "asin": "B000NWGB2S"
+            "url": "https://www.amazon.com/s?k=Vanicream+Moisturizing+Cream+with+Pump&tag=myeverydaymat-20"
         },
         {
             "name": "ATTITUDE Laundry Detergent, Hypoallergenic & Fragrance-Free",
@@ -519,7 +519,7 @@ ARTICLES = [
             "description": "EWG Verified, plant-based laundry detergent, free of harmful chemicals and fragrances.",
             "pros": "EWG Verified, hypoallergenic, vegan, septic safe, effective cleaning",
             "cons": "Higher price point than conventional detergents",
-            "asin": "B079D92W51"
+            "url": "https://www.amazon.com/s?k=ATTITUDE+Laundry+Detergent%2C+Hypoallergenic+%26+Fragrance-Free&tag=myeverydaymat-20"
         },
         {
             "name": "Seventh Generation Free & Clear Dish Liquid, Fragrance-Free",
@@ -527,7 +527,7 @@ ARTICLES = [
             "description": "Plant-based, biodegradable dish soap without dyes or synthetic fragrances.",
             "pros": "USDA Certified Biobased, no harsh chemicals, effective, gentle on hands",
             "cons": "May not produce as much suds as conventional soaps",
-            "asin": "B0033PS2C4"
+            "url": "https://www.amazon.com/s?k=Seventh+Generation+Free+%26+Clear+Dish+Liquid%2C+Fragrance-Free&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -580,7 +580,7 @@ ARTICLES = [
             "description": "Waxed dental floss infused with natural tea tree oil for effective cleaning without PFAS.",
             "pros": "PTFE-free, vegan, natural wax coating, helps fight bacteria",
             "cons": "Thicker than gliding floss, may shred for some users",
-            "asin": "B000Z94R0E"
+            "url": "https://www.amazon.com/s?k=Desert+Essence+Tea+Tree+Oil+Dental+Floss&tag=myeverydaymat-20"
         },
         {
             "name": "Georganics Dental Floss, Spearmint (Silk)",
@@ -588,7 +588,7 @@ ARTICLES = [
             "description": "Compostable silk dental floss coated with candelilla wax, zero waste.",
             "pros": "100% biodegradable silk, PFAS-free, plastic-free packaging, natural wax",
             "cons": "Higher cost, may require adjusting technique due to texture",
-            "asin": "B07K649P4F"
+            "url": "https://www.amazon.com/s?k=Georganics+Dental+Floss%2C+Spearmint+%28Silk%29&tag=myeverydaymat-20"
         },
         {
             "name": "RADIUS Vegan Sponge Floss",
@@ -596,7 +596,7 @@ ARTICLES = [
             "description": "Expands to clean more surface area, made from nylon with plant-based waxes, PTFE-free.",
             "pros": "Soft, spongy texture for effective cleaning, PTFE-free, vegan wax",
             "cons": "Can be thicker, some users find it shreds easily",
-            "asin": "B0068D7B1C"
+            "url": "https://www.amazon.com/s?k=RADIUS+Vegan+Sponge+Floss&tag=myeverydaymat-20"
         },
         {
             "name": "Woobamboo! Natural Eco-Friendly Dental Floss (Biodegradable)",
@@ -604,7 +604,7 @@ ARTICLES = [
             "description": "Biodegradable silk floss with natural beeswax and mint flavor, in a refillable dispenser.",
             "pros": "Biodegradable, natural ingredients, refillable dispenser, pleasant flavor",
             "cons": "Silk can be delicate, may break if used aggressively",
-            "asin": "B00E7I0YVO"
+            "url": "https://www.amazon.com/s?k=Woobamboo%21+Natural+Eco-Friendly+Dental+Floss+%28Biodegradable%29&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -657,7 +657,7 @@ ARTICLES = [
             "description": "Formulated for curly, coily, and tight-textured hair, promoting hydration and definition.",
             "pros": "No parabens, phthalates, formaldehyde, SLS/SLES, provides moisture, defines curls",
             "cons": "Higher price point, might be too heavy for finer hair types",
-            "asin": "B0842X1J9N"
+            "url": "https://www.amazon.com/s?k=PATTERN+Beauty+by+Tracee+Ellis+Ross+Leave-In+Conditioner&tag=myeverydaymat-20"
         },
         {
             "name": "Mielle Organics Rosemary Mint Scalp & Hair Strengthening Oil",
@@ -665,7 +665,7 @@ ARTICLES = [
             "description": "Infused with biotin and essential oils for scalp health and hair growth.",
             "pros": "Natural ingredients, promotes scalp circulation, strengthening benefits, no harsh chemicals",
             "cons": "Strong mint scent, can be oily if overused",
-            "asin": "B08D79Q2G7"
+            "url": "https://www.amazon.com/s?k=Mielle+Organics+Rosemary+Mint+Scalp+%26+Hair+Strengthening+Oil&tag=myeverydaymat-20"
         },
         {
             "name": "SheaMoisture Coconut & Hibiscus Curl Enhancing Smoothie",
@@ -673,7 +673,7 @@ ARTICLES = [
             "description": "Designed to define curls, reduce frizz, and smooth hair, with natural and organic ingredients.",
             "pros": "Sulfate-free, paraben-free, no phthalates, enhances natural curl pattern, moisturizing",
             "cons": "Can be heavy, may build up if not clarified, strong scent",
-            "asin": "B003BJXJ3S"
+            "url": "https://www.amazon.com/s?k=SheaMoisture+Coconut+%26+Hibiscus+Curl+Enhancing+Smoothie&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -726,7 +726,7 @@ ARTICLES = [
             "description": "Ammonia and PPD-free formula using plant extracts to achieve lasting color with less irritation.",
             "pros": "No ammonia, no PPD, natural ingredients, wide color range",
             "cons": "May still contain other potential sensitizers like TD, requires mixing",
-            "asin": "B07D2C5W6F"
+            "url": "https://www.amazon.com/s?k=Herbatint+Permanent+Haircolor+Gel&tag=myeverydaymat-20"
         },
         {
             "name": "The Henna Guys Pure Henna Powder",
@@ -734,7 +734,7 @@ ARTICLES = [
             "description": "100% pure, natural henna powder for vibrant red tones and hair conditioning, free from chemicals.",
             "pros": "All-natural, chemical-free, conditions hair, no PPD",
             "cons": "Limited color range (mostly red/brown), messy application, long processing time",
-            "asin": "B08KFM2B4F"
+            "url": "https://www.amazon.com/s?k=The+Henna+Guys+Pure+Henna+Powder&tag=myeverydaymat-20"
         },
         {
             "name": "Manic Panic Classic High Voltage Semi-Permanent Hair Color",
@@ -742,7 +742,7 @@ ARTICLES = [
             "description": "Vegan, PPD-free, and ammonia-free semi-permanent color that washes out gradually, ideal for vibrant fashion colors.",
             "pros": "No PPD, no ammonia, easy to use, wide range of temporary colors",
             "cons": "Not permanent, requires pre-lightening for best results on dark hair, vibrant shades may stain",
-            "asin": "B09489J4C3"
+            "url": "https://www.amazon.com/s?k=Manic+Panic+Classic+High+Voltage+Semi-Permanent+Hair+Color&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -795,7 +795,7 @@ ARTICLES = [
             "description": "A clean, mineral-based skin tint with SPF, known for its rigorous ingredient standards and commitment to avoiding heavy metal contamination.",
             "pros": "SPF 40, clean ingredients, buildable coverage, widely tested for purity",
             "cons": "Limited shade range compared to traditional brands, may not suit all skin types",
-            "asin": "B08D9Q8XW7"
+            "url": "https://www.amazon.com/s?k=ILIA+Super+Serum+Skin+Tint+SPF+40+Foundation&tag=myeverydaymat-20"
         },
         {
             "name": "RMS Beauty \"Un\" Cover-up Concealer",
@@ -803,7 +803,7 @@ ARTICLES = [
             "description": "A lightweight, organic, and minimalist concealer made with raw, food-grade ingredients, minimizing the risk of heavy metal impurities.",
             "pros": "Organic ingredients, versatile, minimal formula, good for sensitive skin",
             "cons": "Sheer coverage for some, pot packaging can be less hygienic for some users",
-            "asin": "B00J4N1M2A"
+            "url": "https://www.amazon.com/s?k=RMS+Beauty+Un+Cover-up+Concealer&tag=myeverydaymat-20"
         },
         {
             "name": "Burt's Bees 100% Natural Moisturizing Lipstick",
@@ -811,7 +811,7 @@ ARTICLES = [
             "description": "Formulated with natural oils and waxes, this lipstick provides moisture and color while avoiding synthetic dyes and heavy metal concerns.",
             "pros": "Natural ingredients, moisturizing, PETA-certified, accessible price point",
             "cons": "Color payoff may vary, not completely transfer-proof",
-            "asin": "B01C9P4640"
+            "url": "https://www.amazon.com/s?k=Burt%27s+Bees+100%25+Natural+Moisturizing+Lipstick&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -864,7 +864,7 @@ ARTICLES = [
             "description": "A natural, beeswax-based lip balm that hydrates and protects without petroleum jelly, known for its simple, effective formula.",
             "pros": "100% natural, beeswax provides protective barrier, variety of flavors",
             "cons": "May not be suitable for vegans, less intense moisture for very chapped lips than some thicker balms",
-            "asin": "B01N917H4N"
+            "url": "https://www.amazon.com/s?k=Burt%27s+Bees+Moisturizing+Lip+Balm+%284-pack%29&tag=myeverydaymat-20"
         },
         {
             "name": "L'Occitane Shea Butter Ultra Rich Lip Balm",
@@ -872,7 +872,7 @@ ARTICLES = [
             "description": "Enriched with 10% shea butter, this balm intensely nourishes and protects dry lips, offering deep hydration.",
             "pros": "High shea butter content, rich texture, petroleum-free, comforting scent",
             "cons": "Higher price point, not entirely flavorless",
-            "asin": "B000U6V1O4"
+            "url": "https://www.amazon.com/s?k=L%27Occitane+Shea+Butter+Ultra+Rich+Lip+Balm&tag=myeverydaymat-20"
         },
         {
             "name": "Lanolin Medical Grade Nipple Cream",
@@ -880,7 +880,7 @@ ARTICLES = [
             "description": "100% pure, medical-grade lanolin provides an ultra-rich, hypoallergenic barrier for intensely dry or chapped skin and lips.",
             "pros": "Extremely moisturizing, forms a strong protective barrier, natural origin (from sheep's wool)",
             "cons": "Sticky texture, some individuals may have a lanolin allergy",
-            "asin": "B001157VGY"
+            "url": "https://www.amazon.com/s?k=Lanolin+Medical+Grade+Nipple+Cream&tag=myeverydaymat-20"
         },
         {
             "name": "Acure Seriously Soothing Blue Tansy Balm",
@@ -888,7 +888,7 @@ ARTICLES = [
             "description": "A petroleum-free balm featuring blue tansy and various plant oils to soothe and hydrate dry, irritated skin and lips.",
             "pros": "Vegan, petroleum-free, soothing ingredients, multi-purpose",
             "cons": "Distinct herbal scent, may be too rich for some skin types",
-            "asin": "B07C1S4X2G"
+            "url": "https://www.amazon.com/s?k=Acure+Seriously+Soothing+Blue+Tansy+Balm&tag=myeverydaymat-20"
         }
     ],
     "sources": [

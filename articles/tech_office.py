@@ -32,7 +32,7 @@ ARTICLES = [
             "description": "Features a durable, passively cooled aluminum unibody enclosure, naturally fire-resistant, reducing the need for chemical flame retardants in the main casing.",
             "pros": "Aluminum chassis, fanless design, high performance, long lifespan.",
             "cons": "Higher price point, limited repairability.",
-            "asin": "B0CC9H5B6G"
+            "url": "https://www.amazon.com/s?k=Apple+MacBook+Air+15-inch+Laptop+%28M3+Chip%29&tag=myeverydaymat-20"
         },
         {
             "name": "Dell XPS 15 Laptop (Intel Core Ultra)",
@@ -40,7 +40,7 @@ ARTICLES = [
             "description": "Known for its premium, machined aluminum chassis and thoughtful design, minimizing the reliance on plastic with added flame retardants for the primary enclosure.",
             "pros": "Premium aluminum build, powerful performance, elegant design.",
             "cons": "Can be expensive, some models may still use plastics for internal components.",
-            "asin": "B0BX82755P"
+            "url": "https://www.amazon.com/s?k=Dell+XPS+15+Laptop+%28Intel+Core+Ultra%29&tag=myeverydaymat-20"
         },
         {
             "name": "HP Spectre x360 14-inch 2-in-1 Laptop",
@@ -48,7 +48,7 @@ ARTICLES = [
             "description": "Boasts a full aluminum unibody design, offering a robust and inherently fire-resistant alternative to plastic-heavy laptops, reducing OFR exposure.",
             "pros": "Convertible design, solid aluminum construction, high-resolution display.",
             "cons": "Can be heavier than plastic counterparts, premium price.",
-            "asin": "B0BP995N8B"
+            "url": "https://www.amazon.com/s?k=HP+Spectre+x360+14-inch+2-in-1+Laptop&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -101,7 +101,7 @@ ARTICLES = [
             "description": "High-performance Cat6A cable with LSZH jacketing, offering superior speed and environmental safety without fluoropolymers.",
             "pros": "High speed (10 Gigabit), LSZH for reduced toxicity in fire, durable.",
             "cons": "Can be thicker than standard cables.",
-            "asin": "B081T2M81S"
+            "url": "https://www.amazon.com/s?k=Monoprice+Cat6A+Ethernet+Network+Patch+Cable%2C+LSZH+%28Low+Smoke+Zero+Halogen%29&tag=myeverydaymat-20"
         },
         {
             "name": "Cable Matters Cat6 Snagless Ethernet Cable, LSZH (25 ft)",
@@ -109,7 +109,7 @@ ARTICLES = [
             "description": "Reliable Cat6 cable featuring Low Smoke Zero Halogen jacket for safer indoor installations, suitable for general home office networking.",
             "pros": "LSZH compliant, good for standard home networking, various lengths.",
             "cons": "Not Cat6A for highest speeds, though sufficient for most homes.",
-            "asin": "B007R5T9FK"
+            "url": "https://www.amazon.com/s?k=Cable+Matters+Cat6+Snagless+Ethernet+Cable%2C+LSZH+%2825+ft%29&tag=myeverydaymat-20"
         },
         {
             "name": "StarTech.com 1m (3 ft) HDMI 2.0 Cable - High Speed with Ethernet - 4K 60Hz - LSZH",
@@ -117,7 +117,7 @@ ARTICLES = [
             "description": "Premium HDMI cable with LSZH jacket, ensuring a safe connection for your display without introducing halogenated materials.",
             "pros": "4K 60Hz support, LSZH jacket, high quality video and audio.",
             "cons": "Typically more expensive than non-LSZH HDMI cables.",
-            "asin": "B08GS52S53"
+            "url": "https://www.amazon.com/s?k=StarTech.com+1m+%283+ft%29+HDMI+2.0+Cable+-+High+Speed+with+Ethernet+-+4K+60Hz+-+LSZH&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -170,7 +170,7 @@ ARTICLES = [
             "description": "Digitize receipts quickly and easily, minimizing physical contact with thermal paper. Scan directly to cloud services or your computer.",
             "pros": "High-speed scanning, wireless connectivity, creates digital archives.",
             "cons": "Initial investment cost.",
-            "asin": "B07G316H3W"
+            "url": "https://www.amazon.com/s?k=Epson+WorkForce+ES-500W+Wireless+Document+Scanner&tag=myeverydaymat-20"
         },
         {
             "name": "Avery Clear Shipping Labels for Laser/Inkjet Printers (2\" x 4\")",
@@ -178,7 +178,7 @@ ARTICLES = [
             "description": "Print your own shipping labels using a standard inkjet or laser printer and these adhesive labels, avoiding the need for thermal label printers and their associated papers.",
             "pros": "Compatible with standard printers, professional appearance, customizable.",
             "cons": "Requires a separate printer and ink/toner.",
-            "asin": "B00006JN1D"
+            "url": "https://www.amazon.com/s?k=Avery+Clear+Shipping+Labels+Laser+Inkjet+Printers+2x4&tag=myeverydaymat-20"
         },
         {
             "name": "Canon PIXMA TR4720 All-in-One Wireless Printer",
@@ -186,7 +186,7 @@ ARTICLES = [
             "description": "A versatile inkjet printer suitable for printing standard documents and labels, offering an alternative to thermal label printers for various home office needs.",
             "pros": "Prints, scans, copies, versatile for various paper types.",
             "cons": "Requires ink cartridges, slower than dedicated label printers.",
-            "asin": "B09BY4P1X1"
+            "url": "https://www.amazon.com/s?k=Canon+PIXMA+TR4720+All-in-One+Wireless+Printer&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -239,7 +239,7 @@ ARTICLES = [
             "description": "Stylish blue light filtering glasses designed to block harmful HEVL and reduce eye strain from digital screens, available in various styles.",
             "pros": "Reduces eye fatigue, improves sleep quality, lightweight.",
             "cons": "May alter color perception slightly, aesthetic preference.",
-            "asin": "B07G76B13D"
+            "url": "https://www.amazon.com/s?k=Cyxus+Blue+Light+Blocking+Glasses&tag=myeverydaymat-20"
         },
         {
             "name": "Vintez Anti-Blue Light Screen Protector (for 24-inch Monitor)",
@@ -247,7 +247,7 @@ ARTICLES = [
             "description": "An anti-blue light film that adheres to your monitor, physically filtering out a percentage of HEVL to protect your eyes without software.",
             "pros": "Physical blue light filter, anti-glare, easy to install.",
             "cons": "May slightly reduce screen clarity, specific to monitor size.",
-            "asin": "B09H2Q4P5Q"
+            "url": "https://www.amazon.com/s?k=Vintez+Anti-Blue+Light+Screen+Protector+%28for+24-inch+Monitor%29&tag=myeverydaymat-20"
         },
         {
             "name": "BenQ GW2485TC 24 inch Eye-Care Monitor",
@@ -255,7 +255,7 @@ ARTICLES = [
             "description": "A purpose-built monitor with 'Eye-Care' technology, including Low Blue Light Plus, Flicker-Free, and Brightness Intelligence features.",
             "pros": "Integrated eye protection, ergonomic design, good for prolonged use.",
             "cons": "Higher cost than standard monitors.",
-            "asin": "B097L37Q8P"
+            "url": "https://www.amazon.com/s?k=BenQ+GW2485TC+24+inch+Eye-Care+Monitor&tag=myeverydaymat-20"
         },
         {
             "name": "Philips Hue White and Color Ambiance A19 LED Smart Bulb (2-Pack)",
@@ -263,7 +263,7 @@ ARTICLES = [
             "description": "Control your room's ambient lighting with tunable white and color light, allowing you to shift to warmer, blue-light-free tones in the evening.",
             "pros": "Full color control, customizable schedules, reduces ambient blue light.",
             "cons": "Requires a Hue Bridge for full functionality, higher upfront cost.",
-            "asin": "B09C9D79F1"
+            "url": "https://www.amazon.com/s?k=Philips+Hue+White+and+Color+Ambiance+A19+LED+Smart+Bulb+%282-Pack%29&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -316,7 +316,7 @@ ARTICLES = [
             "description": "An inkjet alternative that uses liquid ink, eliminating toner dust and ultra-fine particle emissions. Features refillable ink tanks for lower waste.",
             "pros": "No toner dust, low running costs, good for photos and documents.",
             "cons": "Slower for high-volume text printing than laser, ink can dry out if not used.",
-            "asin": "B097R27P16"
+            "url": "https://www.amazon.com/s?k=Epson+EcoTank+ET-2800+Wireless+Color+All-in-One+Supertank+Printer&tag=myeverydaymat-20"
         },
         {
             "name": "Coway Airmega 200M Air Purifier with True HEPA and Activated Carbon Filters",
@@ -324,7 +324,7 @@ ARTICLES = [
             "description": "Effectively captures ultra-fine particles and absorbs volatile organic compounds (VOCs) emitted by laser printers, improving indoor air quality.",
             "pros": "Excellent filtration for UFPs and VOCs, quiet operation, sleek design.",
             "cons": "Requires filter replacement, initial investment.",
-            "asin": "B07G63XXG7"
+            "url": "https://www.amazon.com/s?k=Coway+Airmega+200M+Air+Purifier+with+True+HEPA+and+Activated+Carbon+Filters&tag=myeverydaymat-20"
         },
         {
             "name": "Levoit Core 300S Smart True HEPA Air Purifier",
@@ -332,7 +332,7 @@ ARTICLES = [
             "description": "A compact and powerful air purifier ideal for home offices, equipped with a True HEPA filter to trap particles and an activated carbon filter for odors and VOCs.",
             "pros": "Compact size, effective filtration, smart app control.",
             "cons": "Best for smaller rooms, filter replacement costs.",
-            "asin": "B0BJ18YV3W"
+            "url": "https://www.amazon.com/s?k=Levoit+Core+300S+Smart+True+HEPA+Air+Purifier&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -385,7 +385,7 @@ ARTICLES = [
             "description": "High-quality, RoHS-compliant lead-free solder (Sn96.5/Ag3.0/Cu0.5) for safer DIY electronics repair.",
             "pros": "No lead content, strong joints, RoHS compliant",
             "cons": "Requires slightly higher soldering temperatures",
-            "asin": "B09T856B7P"
+            "url": "https://www.amazon.com/s?k=Kester+24-7068-0027+Lead-Free+Solder&tag=myeverydaymat-20"
         },
         {
             "name": "Hakko FA-400 Bench Top Fume Extractor",
@@ -393,7 +393,7 @@ ARTICLES = [
             "description": "Essential active carbon filter fume extractor to protect against toxic soldering fumes.",
             "pros": "Removes harmful fumes, compact design, quiet operation",
             "cons": "Requires filter replacement, takes up bench space",
-            "asin": "B092W3B6K2"
+            "url": "https://www.amazon.com/s?k=Hakko+FA-400+Bench+Top+Fume+Extractor&tag=myeverydaymat-20"
         },
         {
             "name": "AMMEX Nitrile Exam Gloves",
@@ -401,7 +401,7 @@ ARTICLES = [
             "description": "Powder-free nitrile gloves for handling internal electronics components without direct skin contact.",
             "pros": "Chemical resistant, good tactile sensitivity, latex-free",
             "cons": "Disposable, can tear if snagged",
-            "asin": "B07J2Q1D9K"
+            "url": "https://www.amazon.com/s?k=AMMEX+Nitrile+Exam+Gloves&tag=myeverydaymat-20"
         },
         {
             "name": "3M LeadCheck Swabs Lead Test Kit",
@@ -409,7 +409,7 @@ ARTICLES = [
             "description": "Quick and easy way to detect lead on surfaces and electronic components.",
             "pros": "Instant results, easy to use, EPA recognized",
             "cons": "Single-use, provides qualitative not quantitative results",
-            "asin": "B08B3N6T77"
+            "url": "https://www.amazon.com/s?k=3M+LeadCheck+Swabs+Lead+Test+Kit&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -458,7 +458,7 @@ ARTICLES = [
             "description": "Educational magnetic building tiles with safely encapsulated magnets, designed for creative play.",
             "pros": "Magnets securely enclosed, durable, promotes STEM learning",
             "cons": "Higher price point, not all magnetic toys are equally safe",
-            "asin": "B07Z4C3F7L"
+            "url": "https://www.amazon.com/s?k=Magna-Tiles+32-Piece+Clear+Colors+Set&tag=myeverydaymat-20"
         },
         {
             "name": "Magnetic Tool Holder 24 Inch",
@@ -466,7 +466,7 @@ ARTICLES = [
             "description": "Wall-mounted tool strip with safely embedded magnets for organizing tools securely.",
             "pros": "Keeps tools accessible, prevents clutter, magnets are encased",
             "cons": "Requires wall mounting, tools can be heavy",
-            "asin": "B07Q5W453L"
+            "url": "https://www.amazon.com/s?k=Magnetic+Tool+Holder+24+Inch&tag=myeverydaymat-20"
         },
         {
             "name": "ESR HaloLock Magnetic Wireless Car Charger",
@@ -474,7 +474,7 @@ ARTICLES = [
             "description": "Car phone mount with safely integrated magnets for secure, convenient device charging and navigation.",
             "pros": "Strong magnetic hold, wireless charging, keeps phone visible",
             "cons": "Requires compatible phone or case, specific mounting",
-            "asin": "B091X7D8H9"
+            "url": "https://www.amazon.com/s?k=ESR+HaloLock+Magnetic+Wireless+Car+Charger&tag=myeverydaymat-20"
         },
         {
             "name": "Custom Leathercraft 125M Work Gloves",
@@ -482,7 +482,7 @@ ARTICLES = [
             "description": "Durable work gloves offering protection for hands when handling heavy or potentially hazardous items.",
             "pros": "Padded for protection, good grip, multi-purpose",
             "cons": "Can reduce dexterity for fine tasks, not cut-proof",
-            "asin": "B073Z13C2Q"
+            "url": "https://www.amazon.com/s?k=Custom+Leathercraft+125M+Work+Gloves&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -531,7 +531,7 @@ ARTICLES = [
             "description": "Features a durable, textured hard plastic shell for grip and longevity, avoiding soft-touch degradation.",
             "pros": "Durable, high-performance sensor, no sticky coatings",
             "cons": "Can feel less 'premium' than soft-touch, heavier",
-            "asin": "B083Q7JBFG"
+            "url": "https://www.amazon.com/s?k=Logitech+G502+HERO+High+Performance+Gaming+Mouse&tag=myeverydaymat-20"
         },
         {
             "name": "Apple Magic Mouse 2",
@@ -539,7 +539,7 @@ ARTICLES = [
             "description": "Sleek design with a smooth, hard plastic top and aluminum base, resistant to material degradation.",
             "pros": "Elegant design, multi-touch surface, no soft-touch issues",
             "cons": "Expensive, charging port placement, specific ergonomics",
-            "asin": "B07Z8P157Y"
+            "url": "https://www.amazon.com/s?k=Apple+Magic+Mouse+2&tag=myeverydaymat-20"
         },
         {
             "name": "WHOOSH! Screen Cleaner Spray Kit",
@@ -547,7 +547,7 @@ ARTICLES = [
             "description": "Gentle, non-toxic, and alcohol-free cleaning spray safe for a wide range of electronic surfaces, including plastics.",
             "pros": "Effective without harsh chemicals, anti-static properties",
             "cons": "Requires a microfiber cloth, not for heavy grime",
-            "asin": "B08H28113W"
+            "url": "https://www.amazon.com/s?k=WHOOSH%21+Screen+Cleaner+Spray+Kit&tag=myeverydaymat-20"
         },
         {
             "name": "ZEISS Lens Wipes",
@@ -555,7 +555,7 @@ ARTICLES = [
             "description": "Pre-moistened, individually wrapped wipes that are alcohol-free and safe for many plastic and coated surfaces.",
             "pros": "Convenient, streak-free, gentle on coatings",
             "cons": "Single-use, not ideal for deep cleaning",
-            "asin": "B099R624S8"
+            "url": "https://www.amazon.com/s?k=ZEISS+Lens+Wipes&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -604,7 +604,7 @@ ARTICLES = [
             "description": "A fire-resistant bag designed to contain fires from charging or damaged lithium polymer/ion batteries.",
             "pros": "Contains fire and smoke, peace of mind during charging/storage",
             "cons": "Does not prevent thermal runaway, only contains it",
-            "asin": "B09P6J8H9Q"
+            "url": "https://www.amazon.com/s?k=Lipo+Safe+Bag%2C+Fireproof+Explosionproof+Storage+Bag&tag=myeverydaymat-20"
         },
         {
             "name": "Anker Portable Charger, 20000mAh Power Bank",
@@ -612,7 +612,7 @@ ARTICLES = [
             "description": "High-capacity power bank from a reputable brand known for robust battery safety features and quality control.",
             "pros": "MultiProtect safety system, high capacity, fast charging",
             "cons": "Can be heavy, not all batteries are equally safe",
-            "asin": "B0B8MV1N3F"
+            "url": "https://www.amazon.com/s?k=Anker+Portable+Charger%2C+20000mAh+Power+Bank&tag=myeverydaymat-20"
         },
         {
             "name": "Kidde FA110 Multi-Purpose Fire Extinguisher",
@@ -620,7 +620,7 @@ ARTICLES = [
             "description": "A lightweight, rechargeable fire extinguisher suitable for A, B, and C class fires, including electrical fires.",
             "pros": "Essential home safety device, effective on electrical fires",
             "cons": "Requires training for effective use, can leave residue",
-            "asin": "B00002N835"
+            "url": "https://www.amazon.com/s?k=Kidde+FA110+Multi-Purpose+Fire+Extinguisher&tag=myeverydaymat-20"
         },
         {
             "name": "TP-Link Kasa Smart Wi-Fi Power Strip",
@@ -628,7 +628,7 @@ ARTICLES = [
             "description": "Smart surge protector with individual outlet control and overload protection to prevent overcharging devices.",
             "pros": "Prevents overcharging, remote control, surge protection",
             "cons": "Requires Wi-Fi, complex setup for some users",
-            "asin": "B09Z1D9Y7W"
+            "url": "https://www.amazon.com/s?k=TP-Link+Kasa+Smart+Wi-Fi+Power+Strip&tag=myeverydaymat-20"
         }
     ],
     "sources": [

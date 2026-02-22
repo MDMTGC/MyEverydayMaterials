@@ -74,7 +74,7 @@ ARTICLES = [
                 "description": "Sol-gel ceramic coating free of PTFE, PFOA, and PFAS. Tested by independent labs for chemical safety. Excellent non-stick at medium heat.",
                 "pros": "Lightweight, easy to clean, no chemical off-gassing",
                 "cons": "Coating degrades after 2\u20133 years, not dishwasher-safe long-term",
-                "asin": "B0BFBKZJNL"
+                "url": "https://www.amazon.com/s?k=Caraway+Ceramic-Coated+Fry+Pan&tag=myeverydaymat-20"
             },
             {
                 "name": "All-Clad D3 Stainless Steel Fry Pan",
@@ -155,7 +155,7 @@ ARTICLES = [
                 "description": "Snap-lock lids with silicone seals for leak-proof storage. Borosilicate glass withstands thermal shock from freezer to oven.",
                 "pros": "Leak-proof lids, freezer-to-oven safe, stackable design",
                 "cons": "Lids not oven-safe, slightly heavier than Pyrex equivalents",
-                "asin": "B007STLBSY"
+                "url": "https://www.amazon.com/s?k=Glasslock+Oven-Safe+Container+Set&tag=myeverydaymat-20"
             },
             {
                 "name": "LunchBots Stainless Steel Containers",
@@ -163,7 +163,7 @@ ARTICLES = [
                 "description": "18/8 food-grade stainless steel with no plastic, coatings, or linings. Ideal for packed lunches and dry or wet food storage.",
                 "pros": "Virtually indestructible, zero chemicals, lightweight vs. glass",
                 "cons": "Not microwave-safe, can dent, no transparent viewing",
-                "asin": "B004WCXFKE"
+                "url": "https://www.amazon.com/s?k=LunchBots+Stainless+Steel+Containers&tag=myeverydaymat-20"
             },
             {
                 "name": "Stasher Platinum Silicone Bags",
@@ -171,7 +171,7 @@ ARTICLES = [
                 "description": "Self-sealing platinum-cured silicone bags. No BPA, BPS, or phthalates. FDA food-grade, dishwasher-safe, and good for sous vide up to 400\u00b0F.",
                 "pros": "Reusable (replaces zip-locks), flexible, microwave and freezer safe",
                 "cons": "More expensive than disposable bags, can retain odors over time",
-                "asin": "B07C7NHS5Q"
+                "url": "https://www.amazon.com/s?k=Stasher+Platinum+Silicone+Bags&tag=myeverydaymat-20"
             }
         ],
         "sources": [
@@ -243,7 +243,7 @@ ARTICLES = [
                 "description": "Chlorine-free, silicone-coated parchment from FSC-certified wood. Excellent for wrapping food for storage or baking without any plastic contact.",
                 "pros": "No plastic chemicals, compostable, oven-safe to 428\u00b0F",
                 "cons": "Single-use, not suitable for liquids, less clingy than wrap",
-                "asin": "B002YUAM0Q"
+                "url": "https://www.amazon.com/s?k=If+You+Care+Parchment+Paper+%28Unbleached%29&tag=myeverydaymat-20"
             },
             {
                 "name": "Pyrex Glass Storage with Lids",
@@ -307,7 +307,7 @@ ARTICLES = [
                 "description": "Triple-layer Vitrelle glass that\u2019s ultra-thin, lightweight, and remarkably break-resistant. Microwave, oven, and dishwasher safe with zero chemical leaching.",
                 "pros": "Chip/break resistant, lightweight like melamine, completely non-reactive",
                 "cons": "Can shatter on hard impact (though rarely), higher upfront cost",
-                "asin": "B0C1QNSVY8"
+                "url": "https://www.amazon.com/s?k=Corelle+Vitrelle+Glass+Dinnerware+Set&tag=myeverydaymat-20"
             },
             {
                 "name": "Kangovou Stainless Steel Kids\u2019 Plate Set",
@@ -315,7 +315,7 @@ ARTICLES = [
                 "description": "18/8 stainless steel divided plates with BPA-free PP lids. Designed specifically for children\u2019s meals with no chemical coatings.",
                 "pros": "Truly unbreakable, zero leaching, dishwasher safe",
                 "cons": "Gets hot with hot food, not microwave safe, metallic look",
-                "asin": "B00E6PUTQI"
+                "url": "https://www.amazon.com/s?k=Kangovou+Stainless+Steel+Kids+Plate+Set&tag=myeverydaymat-20"
             },
             {
                 "name": "Bamboozle Bamboo Dinnerware Set",
@@ -323,7 +323,7 @@ ARTICLES = [
                 "description": "Made from bamboo fiber bound with plant-based (non-formaldehyde) resin. Lightweight and biodegradable. Verify &ldquo;melamine-free&rdquo; on label.",
                 "pros": "Biodegradable, lightweight, stylish earth tones",
                 "cons": "Not microwave-safe, hand-wash only, less durable than melamine",
-                "asin": "B07P63BFKJ"
+                "url": "https://www.amazon.com/s?k=Bamboozle+Bamboo+Dinnerware+Set&tag=myeverydaymat-20"
             },
            
         ],
@@ -380,7 +380,7 @@ ARTICLES = [
                 "description": "Silicone-coated, chlorine-free parchment that handles up to 428\u00b0F. Perfect for acidic foods in the oven \u2014 zero metal contact.",
                 "pros": "No aluminum leaching, non-stick, compostable",
                 "cons": "Single-use, not great for wrapping leftovers, max 428\u00b0F",
-                "asin": "B002YUAM0Q"
+                "url": "https://www.amazon.com/s?k=If+You+Care+Unbleached+Parchment+Paper&tag=myeverydaymat-20"
             },
             {
                 "name": "Silpat Premium Silicone Baking Mat",
@@ -396,7 +396,7 @@ ARTICLES = [
                 "description": "Borosilicate glass handles oven temperatures without any reactivity. Ideal for casseroles and acidic dishes like lasagna.",
                 "pros": "Completely non-reactive, oven and microwave safe, doubles as storage",
                 "cons": "Heavy, breakable, can\u2019t wrap food in it",
-                "asin": "B09V233X46"
+                "url": "https://www.amazon.com/s?k=Pyrex+Deep+Glass+Baking+Dish&tag=myeverydaymat-20"
             },
             {
                 "name": "Lodge Cast Iron Grill Pan",
@@ -477,7 +477,7 @@ ARTICLES = [
                 "description": "Blend of beeswax, soy, and palm oils specifically formulated for cast iron. Easier and more consistent than DIY oil seasoning.",
                 "pros": "Easy application, great results, also works on carbon steel",
                 "cons": "Added cost, not strictly necessary (any oil works)",
-                "asin": "B00R5BXF4Y"
+                "url": "https://www.amazon.com/s?k=Crisbee+Cast+Iron+Seasoning+Puck&tag=myeverydaymat-20"
             },
             {
                 "name": "The Ringer Stainless Steel Chainmail Scrubber",
@@ -557,7 +557,7 @@ ARTICLES = [
                 "description": "Non-porous tempered glass that never reacts with food. Ideal for casseroles, roasting, and any recipe involving acidic ingredients.",
                 "pros": "Completely inert, doubles as serving dish, microwave safe",
                 "cons": "Cannot handle sudden temperature changes (thermal shock), heavy",
-                "asin": "B09V233X46"
+                "url": "https://www.amazon.com/s?k=Pyrex+Basics+Glass+Baking+Dish&tag=myeverydaymat-20"
             },
             {
                 "name": "Nordic Ware Natural Aluminum Muffin Pan",
@@ -565,7 +565,7 @@ ARTICLES = [
                 "description": "Pure aluminum with no non-stick coating. Use with paper liners or a thin coat of butter. Professional bakeries prefer uncoated aluminum for even browning.",
                 "pros": "Best heat conductivity, no coatings to wear out, dishwasher safe",
                 "cons": "Requires liners or greasing, reacts with highly acidic batters",
-                "asin": "B0049EILDI"
+                "url": "https://www.amazon.com/s?k=Nordic+Ware+Natural+Aluminum+Muffin+Pan&tag=myeverydaymat-20"
             }
         ],
         "sources": [
@@ -620,7 +620,7 @@ ARTICLES = [
                 "description": "1.5mm French copper with a bonded stainless steel interior. All the thermal performance of copper with a fully non-reactive cooking surface.",
                 "pros": "Best of both worlds \u2014 copper conductivity + safe interior, gorgeous",
                 "cons": "Expensive, heavy, requires copper polishing for appearance",
-                "asin": "B00EOGMJSC"
+                "url": "https://www.amazon.com/s?k=Mauviel+M150S+Copper+Saucepan+Stainless+Lined&tag=myeverydaymat-20"
             },
             {
                 "name": "All-Clad Copper Core 3-Qt Saucepan",
@@ -628,7 +628,7 @@ ARTICLES = [
                 "description": "Five-ply construction with a copper core sandwiched between stainless steel. Excellent conductivity without any copper touching food.",
                 "pros": "Dishwasher safe, no copper maintenance, professional heat control",
                 "cons": "Expensive, copper is hidden (no aesthetic copper look)",
-                "asin": "B004O6KXR4"
+                "url": "https://www.amazon.com/s?k=All-Clad+Copper+Core+3-Qt+Saucepan&tag=myeverydaymat-20"
             },
             {
                 "name": "Matfer Bourgeat Copper Egg White Bowl",
@@ -636,7 +636,7 @@ ARTICLES = [
                 "description": "14-inch unlined copper bowl specifically designed for whipping egg whites. The copper ions stabilize egg foam, producing superior meringue. This is the one safe use of unlined copper.",
                 "pros": "Produces better meringue, traditional French technique, stunning",
                 "cons": "Single-purpose, expensive, must be cleaned with salt and vinegar before each use",
-                "asin": "B00009B7NR"
+                "url": "https://www.amazon.com/s?k=Matfer+Bourgeat+Copper+Egg+White+Bowl&tag=myeverydaymat-20"
             },
             {
                 "name": "Demeyere Industry5 Stainless Steel Saucepan",
@@ -644,7 +644,7 @@ ARTICLES = [
                 "description": "If you want excellent heat distribution without copper maintenance, five-ply stainless steel with an aluminum core is the practical choice.",
                 "pros": "Non-reactive, dishwasher safe, no special maintenance",
                 "cons": "Not as responsive as copper, utilitarian appearance",
-                "asin": "B000ON8ILG"
+                "url": "https://www.amazon.com/s?k=Demeyere+Industry5+Stainless+Steel+Saucepan&tag=myeverydaymat-20"
             }
         ],
         "sources": [
@@ -700,7 +700,7 @@ ARTICLES = [
                 "description": "Double-wall vacuum-insulated 18/8 stainless steel. Keeps water cold for 24 hours. No plastic touches the water \u2014 the entire interior is steel.",
                 "pros": "Insulated, no chemicals, extremely durable, BPA/phthalate-free",
                 "cons": "Heavier than plastic, dents if dropped, hand-wash recommended",
-                "asin": "B09YDQP4Q4"
+                "url": "https://www.amazon.com/s?k=Hydro+Flask+Standard+Mouth+%2821+oz%29&tag=myeverydaymat-20"
             },
             {
                 "name": "Lifefactory Glass Water Bottle (22 oz)",
@@ -708,7 +708,7 @@ ARTICLES = [
                 "description": "Borosilicate glass with a protective silicone sleeve. Completely inert \u2014 glass doesn\u2019t leach anything regardless of temperature or time.",
                 "pros": "Zero chemical migration, dishwasher safe, taste-neutral",
                 "cons": "Heavier than steel, can break even with sleeve, no insulation",
-                "asin": "B07CSPG2GG"
+                "url": "https://www.amazon.com/s?k=Lifefactory+Glass+Water+Bottle+%2822+oz%29&tag=myeverydaymat-20"
             },
             {
                 "name": "Nalgene Tritan Wide Mouth (32 oz)",
@@ -716,7 +716,7 @@ ARTICLES = [
                 "description": "Made from Eastman Tritan (not PET), which is BPA-free, antimony-free, and does not use bisphenol catalysts. Independently tested for estrogenic activity.",
                 "pros": "Lightweight like PET, shatter-resistant, no antimony or BPA",
                 "cons": "Still plastic (though inert), not insulated, can retain odors",
-                "asin": "B08198JKFG"
+                "url": "https://www.amazon.com/s?k=Nalgene+Tritan+Wide+Mouth+%2832+oz%29&tag=myeverydaymat-20"
             },
             {
                 "name": "Brita Premium Filtering Water Bottle (26 oz)",
@@ -724,7 +724,7 @@ ARTICLES = [
                 "description": "BPA-free bottle with a built-in activated carbon filter that reduces chlorine taste, microplastics, and some contaminants as you drink.",
                 "pros": "Filters on the go, reduces microplastics, affordable",
                 "cons": "Filters need replacement every 40 gallons, still a plastic shell",
-                "asin": "B0BT9F1P5P"
+                "url": "https://www.amazon.com/s?k=Brita+Premium+Filtering+Water+Bottle+%2826+oz%29&tag=myeverydaymat-20"
             }
         ],
         "sources": [
@@ -863,7 +863,7 @@ ARTICLES = [
                 "description": "Tempered glass containers ideal for storing and reheating takeout leftovers. Completely non-reactive at any temperature. Microwave and oven safe.",
                 "pros": "Zero chemical migration, microwave safe, see-through for easy ID",
                 "cons": "Heavier than plastic, breakable, lids are still plastic",
-                "asin": "B09KYGVBCN"
+                "url": "https://www.amazon.com/s?k=Pyrex+Simply+Store+Glass+Set+%2810-Piece%29&tag=myeverydaymat-20"
             },
             {
                 "name": "LunchBots Stainless Steel Containers",
@@ -871,7 +871,7 @@ ARTICLES = [
                 "description": "18/8 food-grade stainless steel with no coatings. Excellent for packing meals and storing leftovers. Completely inert.",
                 "pros": "Virtually indestructible, zero leaching, lightweight vs. glass",
                 "cons": "Not microwave-safe, opaque, can dent",
-                "asin": "B004WCXFKE"
+                "url": "https://www.amazon.com/s?k=LunchBots+Stainless+Steel+Containers&tag=myeverydaymat-20"
             },
             {
                 "name": "Glasslock Oven-Safe Container Set",
@@ -879,7 +879,7 @@ ARTICLES = [
                 "description": "Snap-lock lids with silicone seals for leak-proof takeout storage. Freezer to oven safe with no thermal shock risk.",
                 "pros": "Leak-proof, freezer-to-oven transition, stackable",
                 "cons": "Bulkier than disposable containers, heavier for transport",
-                "asin": "B007STLBSY"
+                "url": "https://www.amazon.com/s?k=Glasslock+Oven-Safe+Container+Set&tag=myeverydaymat-20"
             },
             {
                 "name": "Stasher Reusable Silicone Bags",
@@ -887,7 +887,7 @@ ARTICLES = [
                 "description": "FDA food-grade platinum-cured silicone bags. Great for storing portioned leftovers. Microwave and dishwasher safe.",
                 "pros": "Flexible, microwave safe, replaces zip-lock bags",
                 "cons": "Can retain odors, pricier than disposables",
-                "asin": "B07C7NHS5Q"
+                "url": "https://www.amazon.com/s?k=Stasher+Reusable+Silicone+Bags&tag=myeverydaymat-20"
             }
         ],
         "sources": [
@@ -943,7 +943,7 @@ ARTICLES = [
                 "description": "Made from naturally fallen areca palm leaves \u2014 no binders, resins, or chemicals. Fully compostable and sturdy enough for hot food.",
                 "pros": "100% natural, compostable, handles hot food safely, no chemicals",
                 "cons": "Disposable (single-use), limited shapes, natural color variation",
-                "asin": "B0CHKP8XFG"
+                "url": "https://www.amazon.com/s?k=Fallen+Leaf+Palm+Leaf+Plates+%2825-Pack%29&tag=myeverydaymat-20"
             },
             {
                 "name": "Corelle Vitrelle Glass Dinnerware Set",
@@ -951,7 +951,7 @@ ARTICLES = [
                 "description": "Triple-layer Vitrelle glass that\u2019s ultra-thin and break-resistant. Microwave, oven, and dishwasher safe with zero chemical leaching.",
                 "pros": "Lightweight, nearly unbreakable, completely non-reactive, lasts decades",
                 "cons": "Not compostable (but lasts so long it offsets environmental cost)",
-                "asin": "B0C1QNSVY8"
+                "url": "https://www.amazon.com/s?k=Corelle+Vitrelle+Glass+Dinnerware+Set&tag=myeverydaymat-20"
             },
             {
                 "name": "Bambu Veneerware Disposable Bamboo Plates",
@@ -959,7 +959,7 @@ ARTICLES = [
                 "description": "Made from a single sheet of solid bamboo veneer \u2014 no powders, resins, or melamine. Certified organic and compostable.",
                 "pros": "Genuinely bamboo (no resin), compostable, attractive grain pattern",
                 "cons": "Single-use, more expensive than palm leaf, limited heat tolerance",
-                "asin": "B001BKRSW0"
+                "url": "https://www.amazon.com/s?k=Bambu+Veneerware+Disposable+Bamboo+Plates&tag=myeverydaymat-20"
             },
             {
                 "name": "Kangovou Stainless Steel Kids\u2019 Plate Set",
@@ -967,7 +967,7 @@ ARTICLES = [
                 "description": "18/8 stainless steel divided plates. Truly unbreakable, zero chemical risk, and dishwasher safe. Great for families wanting durability.",
                 "pros": "Indestructible, zero leaching, dishwasher safe, reusable for life",
                 "cons": "Not compostable, metallic appearance, not microwave safe",
-                "asin": "B00E6PUTQI"
+                "url": "https://www.amazon.com/s?k=Kangovou+Stainless+Steel+Kids+Plate+Set&tag=myeverydaymat-20"
             }
         ],
         "sources": [
