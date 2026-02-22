@@ -319,7 +319,7 @@ def convert_to_fact_cards(content):
                 cards.append(f'<div class="fact-card"><span class="fact-label">{label}</span><p class="fact-desc">{desc}</p></div>')
             else:
                 cards.append(f'<div class="fact-card"><p class="fact-desc">{item.strip()}</p></div>')
-        return "\\n".join(cards)
+        return "\n".join(cards)
     return re.sub(r'<ul class="key-facts">(.*?)</ul>', repl, content, flags=re.DOTALL)
 
 def generate_article(article, all_articles, category_slug, related_map):
@@ -333,7 +333,7 @@ def generate_article(article, all_articles, category_slug, related_map):
     v_bubble = html.escape(v_raw.split(' — ')[0]) if ' — ' in v_raw else html.escape(v_raw)
     v_title = html.escape("Research-Weighted Household Verdict")
 
-    sections_html = "\\n\\n".join(f'    <h2 id="{s["id"]}">{s["heading"]}</h2>\\n    {convert_to_fact_cards(s["content"]).strip()}' for s in article["sections"])
+    sections_html = "\n\n".join(f'    <h2 id="{s["id"]}">{s["heading"]}</h2>\n    {convert_to_fact_cards(s["content"]).strip()}' for s in article["sections"])
 
     return f"""<!DOCTYPE html>
 <html lang=\"en\">

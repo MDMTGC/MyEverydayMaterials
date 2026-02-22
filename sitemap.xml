@@ -31,12 +31,12 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://myeverydaymaterials.com/kitchen/bpa-plastic-containers.html</loc>
+    <loc>https://myeverydaymaterials.com/kitchen/bamboo-fiber-plates.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://myeverydaymaterials.com/kitchen/bamboo-fiber-plates.html</loc>
+    <loc>https://myeverydaymaterials.com/kitchen/bpa-plastic-containers.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
   </url>
@@ -47,6 +47,11 @@
   </url>
   <url>
     <loc>https://myeverydaymaterials.com/kitchen/cast-iron-seasoning.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://myeverydaymaterials.com/kitchen/unlined-copper-toxicity.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
   </url>
@@ -81,11 +86,6 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://myeverydaymaterials.com/kitchen/unlined-copper-toxicity.html</loc>
-    <lastmod>2026-02-22</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://myeverydaymaterials.com/nursery/</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.8</priority>
@@ -111,11 +111,6 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://myeverydaymaterials.com/nursery/medical-grade-silicone-pacifiers.html</loc>
-    <lastmod>2026-02-22</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://myeverydaymaterials.com/nursery/melamine-baby-plates.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
@@ -132,6 +127,11 @@
   </url>
   <url>
     <loc>https://myeverydaymaterials.com/nursery/polyurethane-crib-mattress.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://myeverydaymaterials.com/nursery/medical-grade-silicone-pacifiers.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
   </url>
@@ -156,17 +156,7 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://myeverydaymaterials.com/pet-care/silica-clay-litter.html</loc>
-    <lastmod>2026-02-22</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://myeverydaymaterials.com/pet-care/essential-oil-diffusers.html</loc>
-    <lastmod>2026-02-22</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://myeverydaymaterials.com/pet-care/hidden-fragrance-pet-wipes.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
   </url>
@@ -187,6 +177,16 @@
   </url>
   <url>
     <loc>https://myeverydaymaterials.com/pet-care/polyurethane-pet-beds.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://myeverydaymaterials.com/pet-care/hidden-fragrance-pet-wipes.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://myeverydaymaterials.com/pet-care/silica-clay-litter.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
   </url>
@@ -226,7 +226,7 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://myeverydaymaterials.com/household/polyurethane-foam-offgassing.html</loc>
+    <loc>https://myeverydaymaterials.com/household/formaldehyde-mdf-furniture.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
   </url>
@@ -236,7 +236,7 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://myeverydaymaterials.com/household/formaldehyde-mdf-furniture.html</loc>
+    <loc>https://myeverydaymaterials.com/household/microplastics-synthetic-laundry.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
   </url>
@@ -246,7 +246,7 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://myeverydaymaterials.com/household/pvc-vinyl-flooring.html</loc>
+    <loc>https://myeverydaymaterials.com/household/polyurethane-foam-offgassing.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
   </url>
@@ -256,12 +256,12 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://myeverydaymaterials.com/household/microplastics-synthetic-laundry.html</loc>
+    <loc>https://myeverydaymaterials.com/household/vocs-paint-carpet.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://myeverydaymaterials.com/household/vocs-paint-carpet.html</loc>
+    <loc>https://myeverydaymaterials.com/household/pvc-vinyl-flooring.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
   </url>
@@ -276,17 +276,7 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://myeverydaymaterials.com/personal-care/titanium-dioxide-toothpaste.html</loc>
-    <lastmod>2026-02-22</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://myeverydaymaterials.com/personal-care/ppd-hair-dye.html</loc>
-    <lastmod>2026-02-22</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://myeverydaymaterials.com/personal-care/nail-polish-toxic-trio.html</loc>
+    <loc>https://myeverydaymaterials.com/personal-care/fragrance-parfum-chemicals.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
   </url>
@@ -296,12 +286,17 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://myeverydaymaterials.com/personal-care/talc-asbestos-risk.html</loc>
+    <loc>https://myeverydaymaterials.com/personal-care/microbeads-exfoliants.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://myeverydaymaterials.com/personal-care/microbeads-exfoliants.html</loc>
+    <loc>https://myeverydaymaterials.com/personal-care/nail-polish-toxic-trio.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://myeverydaymaterials.com/personal-care/ppd-hair-dye.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
   </url>
@@ -326,7 +321,12 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://myeverydaymaterials.com/personal-care/fragrance-parfum-chemicals.html</loc>
+    <loc>https://myeverydaymaterials.com/personal-care/talc-asbestos-risk.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://myeverydaymaterials.com/personal-care/titanium-dioxide-toothpaste.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
   </url>
@@ -346,12 +346,12 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://myeverydaymaterials.com/cleaning/ammonia-screen-cleaners.html</loc>
+    <loc>https://myeverydaymaterials.com/cleaning/ammonia-window-cleaner.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://myeverydaymaterials.com/cleaning/ammonia-window-cleaner.html</loc>
+    <loc>https://myeverydaymaterials.com/cleaning/ammonia-screen-cleaners.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
   </url>
@@ -367,6 +367,11 @@
   </url>
   <url>
     <loc>https://myeverydaymaterials.com/cleaning/borax-cleaning.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://myeverydaymaterials.com/cleaning/caustic-soda-drain-cleaner.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
   </url>
@@ -431,11 +436,6 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://myeverydaymaterials.com/cleaning/caustic-soda-drain-cleaner.html</loc>
-    <lastmod>2026-02-22</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://myeverydaymaterials.com/cleaning/trichloroethylene-degreaser.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
@@ -456,12 +456,17 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://myeverydaymaterials.com/tech/bfrs-electronics.html</loc>
+    <loc>https://myeverydaymaterials.com/tech/abs-plastic-filaments.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://myeverydaymaterials.com/tech/ozone-laser-printers.html</loc>
+    <loc>https://myeverydaymaterials.com/tech/air-duster-propellants.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://myeverydaymaterials.com/tech/bfrs-electronics.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
   </url>
@@ -476,12 +481,7 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://myeverydaymaterials.com/tech/abs-plastic-filaments.html</loc>
-    <lastmod>2026-02-22</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://myeverydaymaterials.com/tech/pvc-wire-coatings.html</loc>
+    <loc>https://myeverydaymaterials.com/tech/ozone-laser-printers.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
   </url>
@@ -491,12 +491,12 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://myeverydaymaterials.com/tech/phthalates-mousepads.html</loc>
+    <loc>https://myeverydaymaterials.com/tech/pvc-wire-coatings.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://myeverydaymaterials.com/tech/air-duster-propellants.html</loc>
+    <loc>https://myeverydaymaterials.com/tech/phthalates-mousepads.html</loc>
     <lastmod>2026-02-22</lastmod>
     <priority>0.9</priority>
   </url>
