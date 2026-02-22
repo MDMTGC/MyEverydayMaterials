@@ -912,3 +912,19 @@ ARTICLES = \
         ]
     }
 ]
+
+RELATED_MAP = {
+    "parabens-preservatives": [('Shared Chemical Profile', 'methylene-glycol-hair'), ('Related Exposure Risk', 'talc-asbestos-risk'), ('Shared Chemical Profile', 'sodium-lauryl-sulfate')],
+    "phthalates-cosmetics": [('Related Exposure Risk', 'ppd-hair-dye'), ('Similar Alternative Available', 'methylene-glycol-hair'), ('Related Exposure Risk', 'pfas-dental-floss')],
+    "sodium-lauryl-sulfate": [('Cross-Category Hazard', 'aluminum-deodorant-safety'), ('Related Exposure Risk', 'fragrance-parfum-chemicals'), ('Shared Chemical Profile', 'talc-asbestos-risk')],
+    "triclosan-antibacterial": [('Cross-Category Hazard', 'parabens-preservatives'), ('Cross-Category Hazard', 'phthalates-cosmetics'), ('Cross-Category Hazard', 'aluminum-deodorant-safety')],
+    "nail-polish-toxic-trio": [('Cross-Category Hazard', 'ppd-hair-dye'), ('Shared Chemical Profile', 'talc-asbestos-risk'), ('Similar Alternative Available', 'phthalates-cosmetics')],
+    "aluminum-deodorant-safety": [('Shared Chemical Profile', 'sodium-lauryl-sulfate'), ('Cross-Category Hazard', 'talc-asbestos-risk'), ('Shared Chemical Profile', 'methylene-glycol-hair')],
+    "titanium-dioxide-toothpaste": [('Cross-Category Hazard', 'microbeads-exfoliants'), ('Similar Alternative Available', 'ppd-hair-dye'), ('Related Exposure Risk', 'pfas-dental-floss')],
+    "fragrance-parfum-chemicals": [('Similar Alternative Available', 'talc-asbestos-risk'), ('Similar Alternative Available', 'nail-polish-toxic-trio'), ('Related Exposure Risk', 'titanium-dioxide-toothpaste')],
+    "pfas-dental-floss": [('Related Exposure Risk', 'titanium-dioxide-toothpaste'), ('Similar Alternative Available', 'ppd-hair-dye'), ('Shared Chemical Profile', 'fragrance-parfum-chemicals')],
+    "methylene-glycol-hair": [('Similar Alternative Available', 'nail-polish-toxic-trio'), ('Related Exposure Risk', 'triclosan-antibacterial'), ('Shared Chemical Profile', 'phthalates-cosmetics')],
+    "ppd-hair-dye": [('Shared Chemical Profile', 'parabens-preservatives'), ('Similar Alternative Available', 'sodium-lauryl-sulfate'), ('Shared Chemical Profile', 'triclosan-antibacterial')],
+    "talc-asbestos-risk": [('Similar Alternative Available', 'titanium-dioxide-toothpaste'), ('Similar Alternative Available', 'ppd-hair-dye'), ('Related Exposure Risk', 'microbeads-exfoliants')],
+    "microbeads-exfoliants": [('Similar Alternative Available', 'pfas-dental-floss'), ('Shared Chemical Profile', 'ppd-hair-dye'), ('Shared Chemical Profile', 'nail-polish-toxic-trio')],
+}

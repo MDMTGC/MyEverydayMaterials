@@ -393,3 +393,12 @@ ARTICLES = \
         ]
     }
 ]
+
+RELATED_MAP = {
+    "quats-disinfectants": [('Similar Alternative Available', 'ammonia-window-cleaner'), ('Cross-Category Hazard', 'caustic-soda-drain-cleaner'), ('Cross-Category Hazard', '2-butoxyethanol-cleaners')],
+    "chlorine-bleach-safety": [('Related Exposure Risk', 'caustic-soda-drain-cleaner'), ('Similar Alternative Available', '2-butoxyethanol-cleaners'), ('Similar Alternative Available', 'sodium-bicarbonate')],
+    "ammonia-window-cleaner": [('Related Exposure Risk', 'caustic-soda-drain-cleaner'), ('Related Exposure Risk', 'chlorine-bleach-safety'), ('Similar Alternative Available', 'sodium-bicarbonate')],
+    "2-butoxyethanol-cleaners": [('Cross-Category Hazard', 'ammonia-window-cleaner'), ('Shared Chemical Profile', 'sodium-bicarbonate'), ('Similar Alternative Available', 'chlorine-bleach-safety')],
+    "caustic-soda-drain-cleaner": [('Related Exposure Risk', 'chlorine-bleach-safety'), ('Cross-Category Hazard', '2-butoxyethanol-cleaners'), ('Related Exposure Risk', 'quats-disinfectants')],
+    "sodium-bicarbonate": [('Similar Alternative Available', 'chlorine-bleach-safety'), ('Related Exposure Risk', '2-butoxyethanol-cleaners'), ('Similar Alternative Available', 'quats-disinfectants')],
+}

@@ -551,3 +551,14 @@ ARTICLES = \
         ]
     }
 ]
+
+RELATED_MAP = {
+    "flame-retardants-foam": [('Cross-Category Hazard', 'polyurethane-foam-offgassing'), ('Cross-Category Hazard', 'aerosol-propellants'), ('Related Exposure Risk', 'formaldehyde-mdf-furniture')],
+    "pvc-vinyl-flooring": [('Shared Chemical Profile', 'formaldehyde-mdf-furniture'), ('Similar Alternative Available', 'aerosol-propellants'), ('Similar Alternative Available', 'perchloroethylene-dry-cleaning')],
+    "vocs-paint-carpet": [('Cross-Category Hazard', 'perchloroethylene-dry-cleaning'), ('Similar Alternative Available', 'formaldehyde-mdf-furniture'), ('Shared Chemical Profile', 'pvc-vinyl-flooring')],
+    "polyurethane-foam-offgassing": [('Cross-Category Hazard', 'microplastics-synthetic-laundry'), ('Related Exposure Risk', 'formaldehyde-mdf-furniture'), ('Cross-Category Hazard', 'perchloroethylene-dry-cleaning')],
+    "formaldehyde-mdf-furniture": [('Related Exposure Risk', 'aerosol-propellants'), ('Shared Chemical Profile', 'polyurethane-foam-offgassing'), ('Similar Alternative Available', 'flame-retardants-foam')],
+    "microplastics-synthetic-laundry": [('Similar Alternative Available', 'polyurethane-foam-offgassing'), ('Related Exposure Risk', 'aerosol-propellants'), ('Cross-Category Hazard', 'vocs-paint-carpet')],
+    "aerosol-propellants": [('Cross-Category Hazard', 'microplastics-synthetic-laundry'), ('Similar Alternative Available', 'pvc-vinyl-flooring'), ('Similar Alternative Available', 'formaldehyde-mdf-furniture')],
+    "perchloroethylene-dry-cleaning": [('Shared Chemical Profile', 'aerosol-propellants'), ('Similar Alternative Available', 'pvc-vinyl-flooring'), ('Shared Chemical Profile', 'polyurethane-foam-offgassing')],
+}

@@ -270,9 +270,9 @@ def build_alternatives(alternatives):
         if alt.get("asin"):
             href = f"https://www.amazon.com/dp/{alt['asin']}?tag={AFFILIATE_TAG}"
         if href:
-            link = f'\n        <a href="{href}" class="alt-link" rel="sponsored nofollow noopener noreferrer" target="_blank">Check Current Price &rarr;</a>'
+            link = f'\n        <a href="{href}" class="btn" rel="sponsored nofollow noopener noreferrer" target="_blank">View on Amazon</a>'
         cards.append(
-            f"""      <div class=\"alt-card\">\n        <div class=\"alt-type\">{alt.get('type','Alternative')}</div>\n        <div class=\"alt-name\">{alt.get('name','Alternative')}</div>\n        <p class=\"alt-desc\">{alt.get('description','')}</p>\n        <p class=\"alt-pros\">&plus; {alt.get('pros','')}</p>\n        <p class=\"alt-cons\">&Delta; {alt.get('cons','')}</p>{link}\n      </div>"""
+            f"""      <div class=\"alt-card\">\n        <div class=\"alt-type\">{html.escape(alt.get('type','Alternative'))}</div>\n        <div class=\"alt-name\">{html.escape(alt.get('name','Alternative'))}</div>\n        <p class=\"alt-desc\">{html.escape(alt.get('description',''))}</p>\n        <div class=\"alt-pros-cons\">\n          <div class=\"alt-pro\">{html.escape(alt.get('pros',''))}</div>\n          <div class=\"alt-con\">{html.escape(alt.get('cons',''))}</div>\n        </div>{link}\n      </div>"""
         )
     return "\n".join(cards)
 
@@ -290,11 +290,37 @@ def build_related(slug, all_articles, related_map):
     if not related_slugs:
         return ""
     title_map = {a["slug"]: a["title"] for a in all_articles}
-    links = [f'        <li><a href="{rs}.html">{title_map[rs]}</a></li>' for rs in related_slugs if rs in title_map]
+    links = []
+    for rs in related_slugs:
+        target_slug = rs
+        context = "Related Article"
+        if isinstance(rs, (tuple, list)):
+            if len(rs) == 2:
+                context, target_slug = rs
+            else:
+                target_slug = rs[0]
+        if target_slug in title_map:
+            links.append(f"""        <a href="{target_slug}.html" class="connect-link">\n          <div class="connect-type">{html.escape(context)}</div>\n          <div class="connect-title">{html.escape(title_map[target_slug])} <span>&rarr;</span></div>\n        </a>""")
     if not links:
         return ""
-    return "    <nav class=\"related-articles\">\n      <h2>Related Articles</h2>\n      <ul>\n" + "\n".join(links) + "\n      </ul>\n    </nav>"
+    cards_html = "\n".join(links)
+    return f"""    <div class=\"connection-hub\">\n      <h3>Explore Connections</h3>\n      <p>Dive deeper into related hazards, similar chemical profiles, or safe material equivalents on our site.</p>\n      <div class=\"connection-grid\">\n{cards_html}\n      </div>\n    </div>"""
 
+
+def convert_to_fact_cards(content):
+    def repl(m):
+        items = re.findall(r'<li>(.*?)</li>', m.group(1), flags=re.DOTALL)
+        cards = []
+        for item in items:
+            label_match = re.search(r'<span class="fact-label">(.*?)</span>(.*?)$', item, flags=re.DOTALL)
+            if label_match:
+                label = label_match.group(1).strip().strip(':')
+                desc = label_match.group(2).strip()
+                cards.append(f'<div class="fact-card"><span class="fact-label">{label}</span><p class="fact-desc">{desc}</p></div>')
+            else:
+                cards.append(f'<div class="fact-card"><p class="fact-desc">{item.strip()}</p></div>')
+        return "\\n".join(cards)
+    return re.sub(r'<ul class="key-facts">(.*?)</ul>', repl, content, flags=re.DOTALL)
 
 def generate_article(article, all_articles, category_slug, related_map):
     cat = CATEGORIES[category_slug]
@@ -302,7 +328,12 @@ def generate_article(article, all_articles, category_slug, related_map):
     plain_title = html.escape(unescape(article["title"]), quote=True)
     plain_desc = html.escape(article["meta_description"], quote=True)
     today = date.today().isoformat()
-    sections_html = "\n\n".join(f'    <h2 id="{s["id"]}">{s["heading"]}</h2>\n    {s["content"].strip()}' for s in article["sections"])
+    
+    v_raw = article.get('verdict_rating', 'Caution')
+    v_bubble = html.escape(v_raw.split(' — ')[0]) if ' — ' in v_raw else html.escape(v_raw)
+    v_title = html.escape("Research-Weighted Household Verdict")
+
+    sections_html = "\\n\\n".join(f'    <h2 id="{s["id"]}">{s["heading"]}</h2>\\n    {convert_to_fact_cards(s["content"]).strip()}' for s in article["sections"])
 
     return f"""<!DOCTYPE html>
 <html lang=\"en\">
@@ -331,10 +362,12 @@ def generate_article(article, all_articles, category_slug, related_map):
   <article>
     <h1>{article['title']}</h1>
     <div class=\"editors-note\">{EDITORS_NOTE}</div>
-    <div class=\"verdict-box {article['verdict_level']}\">
-      <div class=\"verdict-label\">30-Second Verdict</div>
-      <div class=\"verdict-rating\">{article['verdict_rating']}</div>
-      <p class=\"verdict-summary\">{article['verdict_summary']}</p>
+    <div class=\"verdict-card {article['verdict_level']}\">
+      <div class=\"verdict-header\">
+        <span class=\"verdict-bubble\">{v_bubble}</span>
+        <span class=\"verdict-title\">{v_title}</span>
+      </div>
+      <p class=\"verdict-text\">{article['verdict_summary']}</p>
     </div>
 {build_toc(article['sections'])}
 {sections_html}

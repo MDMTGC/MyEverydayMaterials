@@ -717,3 +717,16 @@ ARTICLES = \
         ]
     }
 ]
+
+RELATED_MAP = {
+    "baby-wipe-preservatives": [('Similar Alternative Available', 'polyurethane-crib-mattress'), ('Related Exposure Risk', 'melamine-baby-plates'), ('Cross-Category Hazard', 'bamboo-resin-toddler-cups')],
+    "bamboo-resin-toddler-cups": [('Related Exposure Risk', 'baby-wipe-preservatives'), ('Cross-Category Hazard', 'polyurethane-crib-mattress'), ('Cross-Category Hazard', 'melamine-baby-plates')],
+    "car-seat-flame-retardants": [('Similar Alternative Available', 'polypropylene-baby-bottles'), ('Related Exposure Risk', 'pvc-play-mats'), ('Related Exposure Risk', 'talc-baby-powder')],
+    "fiberglass-mattress-covers": [('Shared Chemical Profile', 'melamine-baby-plates'), ('Similar Alternative Available', 'baby-wipe-preservatives'), ('Shared Chemical Profile', 'bamboo-resin-toddler-cups')],
+    "melamine-baby-plates": [('Shared Chemical Profile', 'medical-grade-silicone-pacifiers'), ('Cross-Category Hazard', 'baby-wipe-preservatives'), ('Shared Chemical Profile', 'fiberglass-mattress-covers')],
+    "pvc-play-mats": [('Cross-Category Hazard', 'baby-wipe-preservatives'), ('Related Exposure Risk', 'polypropylene-baby-bottles'), ('Cross-Category Hazard', 'medical-grade-silicone-pacifiers')],
+    "polypropylene-baby-bottles": [('Related Exposure Risk', 'pvc-play-mats'), ('Cross-Category Hazard', 'baby-wipe-preservatives'), ('Cross-Category Hazard', 'talc-baby-powder')],
+    "polyurethane-crib-mattress": [('Cross-Category Hazard', 'bamboo-resin-toddler-cups'), ('Related Exposure Risk', 'pvc-play-mats'), ('Cross-Category Hazard', 'car-seat-flame-retardants')],
+    "medical-grade-silicone-pacifiers": [('Related Exposure Risk', 'baby-wipe-preservatives'), ('Related Exposure Risk', 'car-seat-flame-retardants'), ('Related Exposure Risk', 'polyurethane-crib-mattress')],
+    "talc-baby-powder": [('Shared Chemical Profile', 'baby-wipe-preservatives'), ('Similar Alternative Available', 'polyurethane-crib-mattress'), ('Similar Alternative Available', 'fiberglass-mattress-covers')],
+}

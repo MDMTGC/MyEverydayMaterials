@@ -915,3 +915,18 @@ ARTICLES = \
         ]
     }
 ]
+
+RELATED_MAP = {
+    "pfas-forever-chemicals": [('Related Exposure Risk', 'antimony-pet-bottles'), ('Related Exposure Risk', 'silicone-bakeware-heat'), ('Cross-Category Hazard', 'phthalates-food-wrap')],
+    "bpa-plastic-containers": [('Shared Chemical Profile', 'aluminum-foil-cooking'), ('Related Exposure Risk', 'black-plastic-takeout'), ('Shared Chemical Profile', 'silicone-bakeware-heat')],
+    "phthalates-food-wrap": [('Cross-Category Hazard', 'black-plastic-takeout'), ('Cross-Category Hazard', 'antimony-pet-bottles'), ('Related Exposure Risk', 'cast-iron-seasoning')],
+    "melamine-plates-safety": [('Related Exposure Risk', 'antimony-pet-bottles'), ('Similar Alternative Available', 'phthalates-food-wrap'), ('Related Exposure Risk', 'bpa-plastic-containers')],
+    "aluminum-foil-cooking": [('Similar Alternative Available', 'black-plastic-takeout'), ('Cross-Category Hazard', 'antimony-pet-bottles'), ('Cross-Category Hazard', 'phthalates-food-wrap')],
+    "cast-iron-seasoning": [('Cross-Category Hazard', 'black-plastic-takeout'), ('Similar Alternative Available', 'aluminum-foil-cooking'), ('Similar Alternative Available', 'teflon-ptfe-offgassing')],
+    "silicone-bakeware-heat": [('Related Exposure Risk', 'bamboo-fiber-plates'), ('Similar Alternative Available', 'antimony-pet-bottles'), ('Cross-Category Hazard', 'phthalates-food-wrap')],
+    "unlined-copper-toxicity": [('Related Exposure Risk', 'teflon-ptfe-offgassing'), ('Cross-Category Hazard', 'aluminum-foil-cooking'), ('Cross-Category Hazard', 'bamboo-fiber-plates')],
+    "antimony-pet-bottles": [('Cross-Category Hazard', 'pfas-forever-chemicals'), ('Similar Alternative Available', 'silicone-bakeware-heat'), ('Related Exposure Risk', 'bamboo-fiber-plates')],
+    "teflon-ptfe-offgassing": [('Related Exposure Risk', 'aluminum-foil-cooking'), ('Shared Chemical Profile', 'bamboo-fiber-plates'), ('Shared Chemical Profile', 'cast-iron-seasoning')],
+    "black-plastic-takeout": [('Similar Alternative Available', 'melamine-plates-safety'), ('Related Exposure Risk', 'pfas-forever-chemicals'), ('Similar Alternative Available', 'phthalates-food-wrap')],
+    "bamboo-fiber-plates": [('Cross-Category Hazard', 'phthalates-food-wrap'), ('Related Exposure Risk', 'aluminum-foil-cooking'), ('Shared Chemical Profile', 'unlined-copper-toxicity')],
+}

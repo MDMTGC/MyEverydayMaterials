@@ -588,3 +588,15 @@ ARTICLES = \
         ]
     }
 ]
+
+RELATED_MAP = {
+    "silica-clay-litter": [('Shared Chemical Profile', 'polyurethane-pet-beds'), ('Similar Alternative Available', 'plastic-water-fountains'), ('Cross-Category Hazard', 'pvc-vinyl-pet-toys')],
+    "melamine-pet-bowls": [('Related Exposure Risk', 'pvc-vinyl-pet-toys'), ('Related Exposure Risk', 'synthetic-carpet-cat-trees'), ('Similar Alternative Available', 'chemical-flea-collars')],
+    "chemical-flea-collars": [('Similar Alternative Available', 'essential-oil-diffusers'), ('Related Exposure Risk', 'synthetic-carpet-cat-trees'), ('Related Exposure Risk', 'hidden-fragrance-pet-wipes')],
+    "essential-oil-diffusers": [('Similar Alternative Available', 'plastic-water-fountains'), ('Shared Chemical Profile', 'pvc-vinyl-pet-toys'), ('Shared Chemical Profile', 'silica-clay-litter')],
+    "pvc-vinyl-pet-toys": [('Cross-Category Hazard', 'essential-oil-diffusers'), ('Similar Alternative Available', 'plastic-water-fountains'), ('Related Exposure Risk', 'polyurethane-pet-beds')],
+    "plastic-water-fountains": [('Similar Alternative Available', 'chemical-flea-collars'), ('Similar Alternative Available', 'silica-clay-litter'), ('Shared Chemical Profile', 'melamine-pet-bowls')],
+    "polyurethane-pet-beds": [('Shared Chemical Profile', 'melamine-pet-bowls'), ('Shared Chemical Profile', 'hidden-fragrance-pet-wipes'), ('Related Exposure Risk', 'synthetic-carpet-cat-trees')],
+    "hidden-fragrance-pet-wipes": [('Similar Alternative Available', 'chemical-flea-collars'), ('Related Exposure Risk', 'pvc-vinyl-pet-toys'), ('Similar Alternative Available', 'plastic-water-fountains')],
+    "synthetic-carpet-cat-trees": [('Similar Alternative Available', 'essential-oil-diffusers'), ('Similar Alternative Available', 'pvc-vinyl-pet-toys'), ('Related Exposure Risk', 'polyurethane-pet-beds')],
+}

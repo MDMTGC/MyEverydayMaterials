@@ -648,3 +648,15 @@ ARTICLES = \
         ]
     }
 ]
+
+RELATED_MAP = {
+    "bfrs-electronics": [('Similar Alternative Available', 'ozone-laser-printers'), ('Shared Chemical Profile', 'heavy-metals-keyboards'), ('Related Exposure Risk', 'polyurethane-office-chairs')],
+    "pvc-wire-coatings": [('Shared Chemical Profile', 'phthalates-mousepads'), ('Similar Alternative Available', 'bfrs-electronics'), ('Related Exposure Risk', 'lithium-ion-battery-gases')],
+    "air-duster-propellants": [('Cross-Category Hazard', 'bfrs-electronics'), ('Similar Alternative Available', 'heavy-metals-keyboards'), ('Similar Alternative Available', 'abs-plastic-filaments')],
+    "polyurethane-office-chairs": [('Cross-Category Hazard', 'abs-plastic-filaments'), ('Cross-Category Hazard', 'heavy-metals-keyboards'), ('Similar Alternative Available', 'pvc-wire-coatings')],
+    "ozone-laser-printers": [('Shared Chemical Profile', 'pvc-wire-coatings'), ('Related Exposure Risk', 'polyurethane-office-chairs'), ('Cross-Category Hazard', 'lithium-ion-battery-gases')],
+    "heavy-metals-keyboards": [('Similar Alternative Available', 'pvc-wire-coatings'), ('Shared Chemical Profile', 'air-duster-propellants'), ('Shared Chemical Profile', 'ozone-laser-printers')],
+    "abs-plastic-filaments": [('Cross-Category Hazard', 'ozone-laser-printers'), ('Shared Chemical Profile', 'polyurethane-office-chairs'), ('Cross-Category Hazard', 'pvc-wire-coatings')],
+    "phthalates-mousepads": [('Similar Alternative Available', 'ozone-laser-printers'), ('Similar Alternative Available', 'bfrs-electronics'), ('Cross-Category Hazard', 'lithium-ion-battery-gases')],
+    "lithium-ion-battery-gases": [('Shared Chemical Profile', 'bfrs-electronics'), ('Shared Chemical Profile', 'ozone-laser-printers'), ('Shared Chemical Profile', 'air-duster-propellants')],
+}
