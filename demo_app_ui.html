@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Demo: Black Plastic Containers</title>
+    <style>
+        /* CSS Reset & App OS Fonts */
+        :root {
+            --bg-color: #f7f7f9;
+            --surface-color: #ffffff;
+            --text-main: #111111;
+            --text-muted: #666666;
+            --border-light: #eaeaea;
+            --accent-kitchen: #007aff; /* iOS Blue */
+            --accent-kitchen-bg: #e5f0ff;
+            --nav-bg: rgba(255, 255, 255, 0.9);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.5;
+            padding-bottom: 80px; /* Space for bottom nav */
+        }
+
+        /* App-like Header */
+        header {
+            background-color: var(--surface-color);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border-light);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .back-btn {
+            color: var(--accent-kitchen);
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .category-pill {
+            background-color: var(--accent-kitchen-bg);
+            color: var(--accent-kitchen);
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        /* Main Content Container */
+        main {
+            padding: 24px 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .meta-desc {
+            color: var(--text-muted);
+            font-size: 15px;
+            margin-bottom: 24px;
+        }
+
+        /* The Clinical Verdict Card */
+        .verdict-card {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-light);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 32px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+        }
+
+        .verdict-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .status-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #ff3b30; /* iOS Red for Avoid/Caution */
+            margin-right: 8px;
+        }
+
+        .verdict-title {
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .verdict-text {
+            font-size: 15px;
+            color: var(--text-muted);
+        }
+
+        /* Content Typography */
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid var(--border-light);
+            padding-bottom: 6px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 16px;
+            color: #333;
+        }
+
+        /* Tap-friendly Bullet Points */
+        .fact-list {
+            list-style: none;
+            background: var(--surface-color);
+            border-radius: 16px;
+            border: 1px solid var(--border-light);
+            overflow: hidden;
+            margin-bottom: 24px;
+        }
+
+        .fact-list li {
+            padding: 16px;
+            border-bottom: 1px solid var(--border-light);
+            font-size: 15px;
+        }
+        
+        .fact-list li:last-child {
+            border-bottom: none;
+        }
+
+        .fact-label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 4px;
+            color: var(--text-main);
+        }
+
+        /* Alternatives Swipe/Stack Cards */
+        .alt-card {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-light);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        .alt-type {
+            font-size: 12px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .alt-name {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .alt-pros, .alt-cons {
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+
+        .alt-pros { color: #34c759; } /* iOS Green */
+        .alt-cons { color: #ff3b30; }
+
+        /* Chunky App Button */
+        button, .btn {
+            display: block;
+            width: 100%;
+            background-color: var(--accent-kitchen);
+            color: white;
+            text-align: center;
+            padding: 16px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            border: none;
+            margin-top: 16px;
+            cursor: pointer;
+            transition: transform 0.1s ease, opacity 0.2s ease;
+        }
+
+        button:active, .btn:active {
+            transform: scale(0.98);
+            opacity: 0.9;
+        }
+
+        /* Persistent Bottom Nav (App Feel) */
+        nav.bottom-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--nav-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-top: 1px solid var(--border-light);
+            display: flex;
+            justify-content: space-around;
+            padding: 12px 0 20px 0; /* Extra padding for iPhone home indicator */
+            z-index: 100;
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--text-muted);
+            font-size: 10px;
+            font-weight: 500;
+        }
+
+        .nav-item.active {
+            color: var(--accent-kitchen);
+        }
+
+        .nav-icon {
+            width: 24px;
+            height: 24px;
+            margin-bottom: 4px;
+            background-color: currentColor;
+            /* Placeholder for SVG icons */
+            mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>') center/contain no-repeat;
+            -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>') center/contain no-repeat;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- App Header -->
+    <header>
+        <a href="#" class="back-btn">&larr; Back</a>
+        <span class="category-pill">Kitchen</span>
+    </header>
+
+    <main>
+        <h1>Black Plastic Containers</h1>
+        <p class="meta-desc">The hidden recycling problem in your kitchen and why to avoid microwaving them.</p>
+
+        <!-- Clinical Verdict Card instead of heavy images -->
+        <div class="verdict-card">
+            <div class="verdict-header">
+                <div class="status-dot"></div>
+                <div class="verdict-title">Transfer to Glass Immediately</div>
+            </div>
+            <p class="verdict-text">Black plastic takeout containers are notoriously difficult to recycle because sorting lasers cannot detect the carbon black pigment. To cut costs, many manufacturers use recycled plastic from electronic waste (like TV casings) which contains harmful brominated flame retardants (BFRs).</p>
+        </div>
+
+        <h2>The Heath Risks</h2>
+        <ul class="fact-list">
+            <li>
+                <span class="fact-label">Electronic Waste Contamination</span> 
+                <span class="verdict-text">Studies have found concerning levels of heavy metals and brominated flame retardants (BFRs) in black plastic food containers, originating from unregulated recycled e-waste.</span>
+            </li>
+            <li>
+                <span class="fact-label">Endocrine Disruption</span> 
+                <span class="verdict-text">BFRs are known endocrine disruptors that can interfere with thyroid function and have been linked to developmental and reproductive issues.</span>
+            </li>
+            <li>
+                <span class="fact-label">Heat Extraction</span> 
+                <span class="verdict-text">Microwaving black plastic accelerates the leaching of these toxic chemicals directly into your hot food.</span>
+            </li>
+        </ul>
+
+        <h2>Better Alternatives</h2>
+        
+        <!-- App-style Swipe/Tap Cards -->
+        <div class="alt-card">
+            <div class="alt-type">Meal Prep Solution</div>
+            <div class="alt-name">Pyrex Glass Storage Containers</div>
+            <p class="verdict-text" style="font-size: 14px; margin-bottom: 12px;">Non-porous, non-toxic tempered glass that won't absorb food odors, flavors, or stains.</p>
+            <div class="alt-pros">&check; Microwave, oven, and dishwasher safe</div>
+            <div class="alt-cons">&times; Heavier, lids are still plastic (don't microwave lids)</div>
+            <a href="#" class="btn">View on Amazon</a>
+        </div>
+        
+    </main>
+
+    <!-- App Bottom Nav -->
+    <nav class="bottom-bar">
+        <div class="nav-item active">
+            <div class="nav-icon"></div>
+            Explore
+        </div>
+        <div class="nav-item">
+            <div class="nav-icon" style="-webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'black\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><circle cx=\'11\' cy=\'11\' r=\'8\'></circle><line x1=\'21\' y1=\'21\' x2=\'16.65\' y2=\'16.65\'></line></svg>') center/contain no-repeat;"></div>
+            Search
+        </div>
+        <div class="nav-item">
+            <div class="nav-icon" style="-webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'black\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><path d=\'M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z\'></path></svg>') center/contain no-repeat;"></div>
+            Saved
+        </div>
+    </nav>
+
+</body>
+</html>
