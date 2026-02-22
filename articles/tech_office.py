@@ -178,7 +178,7 @@ ARTICLES = [
             "description": "Print your own shipping labels using a standard inkjet or laser printer and these adhesive labels, avoiding the need for thermal label printers and their associated papers.",
             "pros": "Compatible with standard printers, professional appearance, customizable.",
             "cons": "Requires a separate printer and ink/toner.",
-            "url": "https://www.amazon.com/s?k=Avery+Clear+Shipping+Labels+for+Laser%2FInkjet+Printers+%282%5C&tag=myeverydaymat-20"
+            "url": "https://www.amazon.com/s?k=Avery+Clear+Shipping+Labels+Laser+Inkjet+Printers+2x4&tag=myeverydaymat-20"
         },
         {
             "name": "Canon PIXMA TR4720 All-in-One Wireless Printer",

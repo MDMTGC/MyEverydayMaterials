@@ -803,7 +803,7 @@ ARTICLES = [
             "description": "A lightweight, organic, and minimalist concealer made with raw, food-grade ingredients, minimizing the risk of heavy metal impurities.",
             "pros": "Organic ingredients, versatile, minimal formula, good for sensitive skin",
             "cons": "Sheer coverage for some, pot packaging can be less hygienic for some users",
-            "url": "https://www.amazon.com/s?k=RMS+Beauty+%5C&tag=myeverydaymat-20"
+            "url": "https://www.amazon.com/s?k=RMS+Beauty+Un+Cover-up+Concealer&tag=myeverydaymat-20"
         },
         {
             "name": "Burt's Bees 100% Natural Moisturizing Lipstick",

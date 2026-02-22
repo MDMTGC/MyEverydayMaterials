@@ -430,7 +430,7 @@ ARTICLES = [
             "description": "High-quality, CertiPUR-US certified orthopedic foam for large breeds, engineered for joint support and longevity.",
             "pros": "Exceptional support, no harmful chemicals, machine-washable cover",
             "cons": "Premium price, very large footprint",
-            "url": "https://www.amazon.com/s?k=Big+Barker+7%5C&tag=myeverydaymat-20"
+            "url": "https://www.amazon.com/s?k=Big+Barker+7+Inch+Orthopedic+Dog+Bed+CertiPUR-US+Foam&tag=myeverydaymat-20"
         },
         {
             "name": "Molly Mutt Dog Bed Duvet Cover - Natural Organic Cotton Canvas",

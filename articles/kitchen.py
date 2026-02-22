@@ -315,7 +315,7 @@ ARTICLES = [
                 "description": "18/8 stainless steel divided plates with BPA-free PP lids. Designed specifically for children\u2019s meals with no chemical coatings.",
                 "pros": "Truly unbreakable, zero leaching, dishwasher safe",
                 "cons": "Gets hot with hot food, not microwave safe, metallic look",
-                "url": "https://www.amazon.com/s?k=Kangovou+Stainless+Steel+Kids%5Cu2019+Plate+Set&tag=myeverydaymat-20"
+                "url": "https://www.amazon.com/s?k=Kangovou+Stainless+Steel+Kids+Plate+Set&tag=myeverydaymat-20"
             },
             {
                 "name": "Bamboozle Bamboo Dinnerware Set",
@@ -620,7 +620,7 @@ ARTICLES = [
                 "description": "1.5mm French copper with a bonded stainless steel interior. All the thermal performance of copper with a fully non-reactive cooking surface.",
                 "pros": "Best of both worlds \u2014 copper conductivity + safe interior, gorgeous",
                 "cons": "Expensive, heavy, requires copper polishing for appearance",
-                "url": "https://www.amazon.com/s?k=Mauviel+M%5Cu2019150S+Copper+Saucepan+%28Stainless+Lined%29&tag=myeverydaymat-20"
+                "url": "https://www.amazon.com/s?k=Mauviel+M150S+Copper+Saucepan+Stainless+Lined&tag=myeverydaymat-20"
             },
             {
                 "name": "All-Clad Copper Core 3-Qt Saucepan",
@@ -967,7 +967,7 @@ ARTICLES = [
                 "description": "18/8 stainless steel divided plates. Truly unbreakable, zero chemical risk, and dishwasher safe. Great for families wanting durability.",
                 "pros": "Indestructible, zero leaching, dishwasher safe, reusable for life",
                 "cons": "Not compostable, metallic appearance, not microwave safe",
-                "url": "https://www.amazon.com/s?k=Kangovou+Stainless+Steel+Kids%5Cu2019+Plate+Set&tag=myeverydaymat-20"
+                "url": "https://www.amazon.com/s?k=Kangovou+Stainless+Steel+Kids+Plate+Set&tag=myeverydaymat-20"
             }
         ],
         "sources": [

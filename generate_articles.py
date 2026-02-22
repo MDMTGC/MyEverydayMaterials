@@ -270,7 +270,7 @@ def build_alternatives(alternatives):
         if alt.get("asin"):
             href = f"https://www.amazon.com/dp/{alt['asin']}?tag={AFFILIATE_TAG}"
         if href:
-            link = f'\n        <a href="{href}" class="alt-link" rel="sponsored nofollow" target="_blank">Check Current Price &rarr;</a>'
+            link = f'\n        <a href="{href}" class="alt-link" rel="sponsored nofollow noopener noreferrer" target="_blank">Check Current Price &rarr;</a>'
         cards.append(
             f"""      <div class=\"alt-card\">\n        <div class=\"alt-type\">{alt.get('type','Alternative')}</div>\n        <div class=\"alt-name\">{alt.get('name','Alternative')}</div>\n        <p class=\"alt-desc\">{alt.get('description','')}</p>\n        <p class=\"alt-pros\">&plus; {alt.get('pros','')}</p>\n        <p class=\"alt-cons\">&Delta; {alt.get('cons','')}</p>{link}\n      </div>"""
         )
