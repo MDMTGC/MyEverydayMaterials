@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 I don't want to constantly generate images, so maybe just aligning design philosophy with smart tricks.
 
 Smart move. Relying on constant image generation creates a "content treadmill" that kills the passive nature of the project. To bridge the gap between "minimalist" and "credible" without more assets, we should use Systems Design—letting the code do the heavy lifting.
@@ -190,6 +191,8 @@ The "Trust" Finish
 To finalize the "Anti-Sketchy" vibe, have Claude add a "Scientific References" section to the bottom of every article. It doesn't need to be long—just 2-3 links to PubMed, the EPA, or the EWG.
 
 =======
+=======
+>>>>>>> Stashed changes
 I don't want to constantly generate images, so maybe just aligning design philosophy with smart tricks.
 
 Smart move. Relying on constant image generation creates a "content treadmill" that kills the passive nature of the project. To bridge the gap between "minimalist" and "credible" without more assets, we should use Systems Design—letting the code do the heavy lifting.
@@ -380,5 +383,8 @@ Add Data-Tooltips: When a user hovers over a 'Status Badge,' show a one-sentence
 The "Trust" Finish
 To finalize the "Anti-Sketchy" vibe, have Claude add a "Scientific References" section to the bottom of every article. It doesn't need to be long—just 2-3 links to PubMed, the EPA, or the EWG.
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 Would you like me to generate the "30-Second Verdict" copy for the remaining 30 materials so Claude can finish all the articles today?

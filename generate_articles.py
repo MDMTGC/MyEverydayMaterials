@@ -6,8 +6,11 @@ import html
 import importlib
 import json
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import re
 import urllib.parse
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 from collections import defaultdict
@@ -94,6 +97,7 @@ def grouped_material_rows():
 
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 # Some category slugs differ from their module filenames.
 _MODULE_NAME_OVERRIDES = {
     "household": "surfaces_fabrics",
@@ -142,6 +146,8 @@ def _convert_old_format_article(slug, art):
 def load_articles_module(category_slug):
     module_name = _MODULE_NAME_OVERRIDES.get(category_slug, category_slug.replace("-", "_"))
 =======
+=======
+>>>>>>> Stashed changes
 def load_articles_module(category_slug):
     module_name = category_slug.replace("-", "_")
 >>>>>>> Stashed changes
@@ -153,6 +159,7 @@ def load_articles_module(category_slug):
         print(f"  WARN: Could not load 'articles/{module_name}.py' ({exc.__class__.__name__}: {exc})")
         return None, {}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     mod_articles = getattr(mod, "ARTICLES", None)
     if mod_articles is not None:
         return mod_articles, getattr(mod, "RELATED_MAP", {})
@@ -161,6 +168,9 @@ def load_articles_module(category_slug):
         converted = [_convert_old_format_article(slug, art) for slug, art in old_format.items()]
         return converted, {}
     return None, {}
+=======
+    return getattr(mod, "ARTICLES", None), getattr(mod, "RELATED_MAP", {})
+>>>>>>> Stashed changes
 =======
     return getattr(mod, "ARTICLES", None), getattr(mod, "RELATED_MAP", {})
 >>>>>>> Stashed changes
@@ -340,7 +350,11 @@ def generate_article(article, all_articles, category_slug, related_map):
 </head>
 <body>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   <nav class=\"breadcrumb\"><a href=\"../\">&larr; {SITE_NAME}</a></nav>
+=======
+  <nav class=\"breadcrumb\"><a href=\"../index.html\">&larr; {SITE_NAME}</a></nav>
+>>>>>>> Stashed changes
 =======
   <nav class=\"breadcrumb\"><a href=\"../index.html\">&larr; {SITE_NAME}</a></nav>
 >>>>>>> Stashed changes
@@ -385,7 +399,11 @@ def generate_category_index(category_slug, generated_articles, target_count):
   <link rel=\"icon\" href=\"../favicon.svg\" type=\"image/svg+xml\" />
 </head><body>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   <nav class=\"breadcrumb\"><a href=\"../\">&larr; {SITE_NAME}</a></nav>
+=======
+  <nav class=\"breadcrumb\"><a href=\"../index.html\">&larr; {SITE_NAME}</a></nav>
+>>>>>>> Stashed changes
 =======
   <nav class=\"breadcrumb\"><a href=\"../index.html\">&larr; {SITE_NAME}</a></nav>
 >>>>>>> Stashed changes
@@ -404,7 +422,11 @@ def generate_homepage(catalog_by_category, generated_counts):
         total = len(catalog_by_category.get(cat_slug, []))
         published = generated_counts.get(cat_slug, 0)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         href = f"{cat_slug}/" if published else "#"
+=======
+        href = f"{cat_slug}/index.html" if published else "#"
+>>>>>>> Stashed changes
 =======
         href = f"{cat_slug}/index.html" if published else "#"
 >>>>>>> Stashed changes
