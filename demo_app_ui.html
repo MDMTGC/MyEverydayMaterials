@@ -1,321 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Demo: Black Plastic Containers</title>
+    <title>Demo: Black Plastic Containers (Dynamic Minimalism)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
-        /* CSS Reset & App OS Fonts */
+        /* CSS Reset & Dynamic Minimalist Aesthetic */
         :root {
-            --bg-color: #f7f7f9;
+            /* Warm, tactile background instead of sterile white/grey */
+            --bg-color: #faf9f5;
             --surface-color: #ffffff;
-            --text-main: #111111;
-            --text-muted: #666666;
-            --border-light: #eaeaea;
-            --accent-kitchen: #007aff; /* iOS Blue */
-            --accent-kitchen-bg: #e5f0ff;
-            --nav-bg: rgba(255, 255, 255, 0.9);
+            --surface-float: rgba(255, 255, 255, 0.7);
+
+            /* High contrast but slightly softer text */
+            --text-main: #18181b;
+            --text-muted: #52525b;
+
+            /* Brand accents - sophisticated and fun */
+            --accent-primary: #ef4444;
+            /* Poppy red for caution */
+            --accent-brand: #6366f1;
+            /* Indigo for navigation/links */
+            --border-light: rgba(0, 0, 0, 0.06);
+            --border-strong: rgba(0, 0, 0, 0.12);
+
+            /* Shadows for depth, not just flat iOS */
+            --shadow-float: 0 8px 32px rgba(0, 0, 0, 0.06);
+            --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.03);
+
+            /* Snappy Bezier Curves */
+            --spring: cubic-bezier(0.175, 0.885, 0.32, 1.15);
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Plus Jakarta Sans', sans-serif;
             background-color: var(--bg-color);
             color: var(--text-main);
-            line-height: 1.5;
-            padding-bottom: 80px; /* Space for bottom nav */
+            line-height: 1.6;
+            padding-bottom: 100px;
+            /* Space for floating nav */
+            background-image: radial-gradient(var(--border-strong) 1px, transparent 1px);
+            background-size: 24px 24px;
+            /* A very subtle dot-grid for a "technical" but fun feel */
         }
 
-        /* App-like Header */
+        /* Airy Header */
         header {
-            background-color: var(--surface-color);
-            position: sticky;
-            top: 0;
-            z-index: 10;
-            padding: 16px 20px;
-            border-bottom: 1px solid var(--border-light);
+            padding: 24px 20px;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            max-width: 640px;
+            margin: 0 auto;
         }
 
         .back-btn {
-            color: var(--accent-kitchen);
+            color: var(--text-muted);
             text-decoration: none;
-            font-size: 16px;
-            font-weight: 500;
+            font-size: 15px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: color 0.2s;
+        }
+
+        .back-btn:hover {
+            color: var(--text-main);
         }
 
         .category-pill {
-            background-color: var(--accent-kitchen-bg);
-            color: var(--accent-kitchen);
-            padding: 4px 10px;
-            border-radius: 12px;
+            background-color: var(--text-main);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-family: 'Outfit', sans-serif;
             font-size: 12px;
-            font-weight: 600;
+            font-weight: 700;
             letter-spacing: 0.5px;
             text-transform: uppercase;
         }
 
         /* Main Content Container */
         main {
-            padding: 24px 20px;
-            max-width: 600px;
+            padding: 0 20px;
+            max-width: 640px;
             margin: 0 auto;
         }
 
         h1 {
-            font-size: 28px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 36px;
             font-weight: 800;
-            line-height: 1.2;
-            margin-bottom: 8px;
-            letter-spacing: -0.5px;
+            line-height: 1.1;
+            margin-bottom: 12px;
+            letter-spacing: -1px;
         }
 
         .meta-desc {
+            font-size: 18px;
             color: var(--text-muted);
-            font-size: 15px;
-            margin-bottom: 24px;
+            margin-bottom: 32px;
+            font-weight: 400;
+            line-height: 1.5;
         }
 
-        /* The Clinical Verdict Card */
+        /* High-Impact Verdict Card */
         .verdict-card {
-            background-color: var(--surface-color);
-            border: 1px solid var(--border-light);
-            border-radius: 16px;
-            padding: 20px;
-            margin-bottom: 32px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+            background: linear-gradient(145deg, #fffafa 0%, #fff0f0 100%);
+            border: 2px solid #fecaca;
+            border-radius: 24px;
+            padding: 28px;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 12px 24px rgba(239, 68, 68, 0.08);
+            /* Glowing shadow */
         }
 
         .verdict-header {
             display: flex;
             align-items: center;
-            margin-bottom: 12px;
+            margin-bottom: 16px;
         }
 
-        .status-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background-color: #ff3b30; /* iOS Red for Avoid/Caution */
-            margin-right: 8px;
+        .verdict-pill {
+            background: var(--accent-primary);
+            color: white;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 10px;
+            border-radius: 8px;
+            margin-right: 12px;
+            display: inline-block;
         }
 
         .verdict-title {
-            font-weight: 700;
-            font-size: 16px;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 20px;
+            color: #991b1b;
         }
 
         .verdict-text {
-            font-size: 15px;
-            color: var(--text-muted);
+            font-size: 16px;
+            color: #7f1d1d;
+            font-weight: 500;
         }
 
         /* Content Typography */
         h2 {
-            font-size: 20px;
-            font-weight: 700;
-            margin-top: 32px;
-            margin-bottom: 12px;
-            border-bottom: 1px solid var(--border-light);
-            padding-bottom: 6px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 24px;
+            font-weight: 800;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
         }
 
         p {
-            font-size: 16px;
-            margin-bottom: 16px;
-            color: #333;
+            font-size: 17px;
+            margin-bottom: 20px;
+            color: var(--text-muted);
         }
 
-        /* Tap-friendly Bullet Points */
-        .fact-list {
-            list-style: none;
+        /* Distinct, Floating Fact Cards instead of a single list */
+        .fact-card {
             background: var(--surface-color);
-            border-radius: 16px;
             border: 1px solid var(--border-light);
-            overflow: hidden;
-            margin-bottom: 24px;
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 16px;
+            box-shadow: var(--shadow-card);
+            transition: transform 0.3s var(--spring), box-shadow 0.3s ease;
         }
 
-        .fact-list li {
-            padding: 16px;
-            border-bottom: 1px solid var(--border-light);
-            font-size: 15px;
+        .fact-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-float);
+            border-color: var(--border-strong);
         }
-        
-        .fact-list li:last-child {
-            border-bottom: none;
+
+        .fact-icon {
+            font-size: 24px;
+            margin-bottom: 12px;
         }
 
         .fact-label {
+            font-family: 'Outfit', sans-serif;
             display: block;
-            font-weight: 600;
-            margin-bottom: 4px;
+            font-weight: 800;
+            font-size: 18px;
+            margin-bottom: 8px;
             color: var(--text-main);
         }
 
-        /* Alternatives Swipe/Stack Cards */
+        /* Modern Hover-Interactive Alternatives */
         .alt-card {
             background-color: var(--surface-color);
-            border: 1px solid var(--border-light);
-            border-radius: 16px;
-            padding: 20px;
-            margin-bottom: 16px;
+            border: 2px solid var(--border-light);
+            border-radius: 24px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: all 0.2s ease;
+        }
+
+        .alt-card:hover {
+            border-color: var(--accent-brand);
+            box-shadow: 0 12px 32px rgba(99, 102, 241, 0.12);
+        }
+
+        .alt-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
         }
 
         .alt-type {
-            font-size: 12px;
-            color: var(--text-muted);
+            font-family: 'Outfit', sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--accent-brand);
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 4px;
+            letter-spacing: 1px;
+            background: #e0e7ff;
+            padding: 4px 10px;
+            border-radius: 8px;
         }
 
         .alt-name {
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 8px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            line-height: 1.2;
         }
 
-        .alt-pros, .alt-cons {
+        .alt-pros-cons {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 20px;
+            background: var(--bg-color);
+            padding: 16px;
+            border-radius: 12px;
+        }
+
+        .alt-pro,
+        .alt-con {
             font-size: 14px;
-            margin-bottom: 4px;
+            font-weight: 600;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
         }
 
-        .alt-pros { color: #34c759; } /* iOS Green */
-        .alt-cons { color: #ff3b30; }
+        .alt-pro::before {
+            content: '✓';
+            color: #16a34a;
+            font-weight: 800;
+        }
 
-        /* Chunky App Button */
-        button, .btn {
-            display: block;
+        .alt-con::before {
+            content: '✕';
+            color: #ef4444;
+            font-weight: 800;
+        }
+
+        /* Dynamic Magnet Button */
+        .btn {
+            display: inline-block;
             width: 100%;
-            background-color: var(--accent-kitchen);
+            background-color: var(--text-main);
             color: white;
             text-align: center;
             padding: 16px;
-            border-radius: 12px;
+            border-radius: 16px;
+            font-family: 'Outfit', sans-serif;
             font-size: 16px;
-            font-weight: 600;
+            font-weight: 700;
             text-decoration: none;
             border: none;
-            margin-top: 16px;
             cursor: pointer;
-            transition: transform 0.1s ease, opacity 0.2s ease;
+            transition: all 0.2s var(--spring);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
-        button:active, .btn:active {
+        .btn:hover,
+        .btn:active {
             transform: scale(0.98);
-            opacity: 0.9;
+            background-color: var(--accent-brand);
+            /* Flips to brand color on interact */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        /* Persistent Bottom Nav (App Feel) */
-        nav.bottom-bar {
+        /* Floating "Pill" Navigation (More fun than a full bottom bar) */
+        .floating-nav {
             position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: var(--nav-bg);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-top: 1px solid var(--border-light);
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--surface-float);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 100px;
             display: flex;
-            justify-content: space-around;
-            padding: 12px 0 20px 0; /* Extra padding for iPhone home indicator */
+            padding: 8px;
+            gap: 8px;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
             z-index: 100;
         }
 
         .nav-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            padding: 12px 24px;
+            border-radius: 100px;
             color: var(--text-muted);
-            font-size: 10px;
-            font-weight: 500;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
         }
 
         .nav-item.active {
-            color: var(--accent-kitchen);
+            background: var(--text-main);
+            color: white;
         }
 
-        .nav-icon {
-            width: 24px;
-            height: 24px;
-            margin-bottom: 4px;
-            background-color: currentColor;
-            /* Placeholder for SVG icons */
-            mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>') center/contain no-repeat;
-            -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>') center/contain no-repeat;
+        .nav-item:hover:not(.active) {
+            background: rgba(0, 0, 0, 0.04);
+            color: var(--text-main);
         }
     </style>
 </head>
+
 <body>
 
-    <!-- App Header -->
     <header>
-        <a href="#" class="back-btn">&larr; Back</a>
-        <span class="category-pill">Kitchen</span>
+        <a href="#" class="back-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            Home
+        </a>
+        <span class="category-pill">Kitchen + Dining</span>
     </header>
 
     <main>
-        <h1>Black Plastic Containers</h1>
+        <h1>Black Plastic <br /> Takeout Containers</h1>
         <p class="meta-desc">The hidden recycling problem in your kitchen and why to avoid microwaving them.</p>
 
-        <!-- Clinical Verdict Card instead of heavy images -->
+        <!-- Bold, dynamic verdict card -->
         <div class="verdict-card">
             <div class="verdict-header">
-                <div class="status-dot"></div>
-                <div class="verdict-title">Transfer to Glass Immediately</div>
+                <div class="verdict-pill">Caution</div>
+                <div class="verdict-title">Transfer to Glass</div>
             </div>
-            <p class="verdict-text">Black plastic takeout containers are notoriously difficult to recycle because sorting lasers cannot detect the carbon black pigment. To cut costs, many manufacturers use recycled plastic from electronic waste (like TV casings) which contains harmful brominated flame retardants (BFRs).</p>
+            <p class="verdict-text">Black plastic takeout containers are notoriously difficult to recycle because
+                sorting lasers cannot detect the carbon black pigment. To cut costs, many manufacturers use recycled
+                plastic from electronic waste (like TV casings) which contains harmful brominated flame retardants
+                (BFRs).</p>
         </div>
 
         <h2>The Heath Risks</h2>
-        <ul class="fact-list">
-            <li>
-                <span class="fact-label">Electronic Waste Contamination</span> 
-                <span class="verdict-text">Studies have found concerning levels of heavy metals and brominated flame retardants (BFRs) in black plastic food containers, originating from unregulated recycled e-waste.</span>
-            </li>
-            <li>
-                <span class="fact-label">Endocrine Disruption</span> 
-                <span class="verdict-text">BFRs are known endocrine disruptors that can interfere with thyroid function and have been linked to developmental and reproductive issues.</span>
-            </li>
-            <li>
-                <span class="fact-label">Heat Extraction</span> 
-                <span class="verdict-text">Microwaving black plastic accelerates the leaching of these toxic chemicals directly into your hot food.</span>
-            </li>
-        </ul>
+
+        <!-- Individual floating fact cards -->
+        <div class="fact-card">
+            <div class="fact-icon">🔋</div>
+            <span class="fact-label">Electronic Waste Contamination</span>
+            <p style="margin:0;">Studies have found concerning levels of heavy metals and brominated flame retardants
+                (BFRs) in black plastic food containers, originating from unregulated recycled e-waste.</p>
+        </div>
+
+        <div class="fact-card">
+            <div class="fact-icon">🧬</div>
+            <span class="fact-label">Endocrine Disruption</span>
+            <p style="margin:0;">BFRs are known endocrine disruptors that can interfere with thyroid function and have
+                been linked to developmental and reproductive issues.</p>
+        </div>
+
+        <div class="fact-card">
+            <div class="fact-icon">🔥</div>
+            <span class="fact-label">Heat Extraction</span>
+            <p style="margin:0;">Microwaving black plastic accelerates the leaching of these toxic chemicals directly
+                into your hot food.</p>
+        </div>
 
         <h2>Better Alternatives</h2>
-        
-        <!-- App-style Swipe/Tap Cards -->
+
+        <!-- Interactive modern cards -->
         <div class="alt-card">
-            <div class="alt-type">Meal Prep Solution</div>
+            <div class="alt-header">
+                <div class="alt-type">Meal Prep Solution</div>
+            </div>
             <div class="alt-name">Pyrex Glass Storage Containers</div>
-            <p class="verdict-text" style="font-size: 14px; margin-bottom: 12px;">Non-porous, non-toxic tempered glass that won't absorb food odors, flavors, or stains.</p>
-            <div class="alt-pros">&check; Microwave, oven, and dishwasher safe</div>
-            <div class="alt-cons">&times; Heavier, lids are still plastic (don't microwave lids)</div>
+            <p>Non-porous, non-toxic tempered glass that won't absorb food odors, flavors, or stains.</p>
+
+            <div class="alt-pros-cons">
+                <div class="alt-pro">Microwave, oven, and dishwasher safe</div>
+                <div class="alt-con">Heavier, lids are still plastic (don't microwave lids)</div>
+            </div>
+
             <a href="#" class="btn">View on Amazon</a>
         </div>
-        
+
+        <div class="alt-card">
+            <div class="alt-header">
+                <div class="alt-type">Lightweight Option</div>
+            </div>
+            <div class="alt-name">Food-Grade Stainless Steel Bento Boxes</div>
+            <p>Unbreakable and completely chemical-free option for cold or temperature-stable lunches.</p>
+
+            <div class="alt-pros-cons">
+                <div class="alt-pro">Zero leaching or degradation</div>
+                <div class="alt-con">Cannot be microwaved</div>
+            </div>
+
+            <a href="#" class="btn">View on Amazon</a>
+        </div>
+
     </main>
 
-    <!-- App Bottom Nav -->
-    <nav class="bottom-bar">
-        <div class="nav-item active">
-            <div class="nav-icon"></div>
-            Explore
-        </div>
-        <div class="nav-item">
-            <div class="nav-icon" style="-webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'black\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><circle cx=\'11\' cy=\'11\' r=\'8\'></circle><line x1=\'21\' y1=\'21\' x2=\'16.65\' y2=\'16.65\'></line></svg>') center/contain no-repeat;"></div>
-            Search
-        </div>
-        <div class="nav-item">
-            <div class="nav-icon" style="-webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'black\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><path d=\'M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z\'></path></svg>') center/contain no-repeat;"></div>
-            Saved
-        </div>
+    <!-- Floating Pill Navigation -->
+    <nav class="floating-nav">
+        <div class="nav-item active">Reads</div>
+        <div class="nav-item">Catalog</div>
+        <div class="nav-item">Search</div>
     </nav>
 
 </body>
+
 </html>
