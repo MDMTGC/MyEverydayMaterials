@@ -32,7 +32,7 @@ ARTICLES = [
             "description": "Kills 99.9% of household germs, botanically derived active ingredient (Thymol).",
             "pros": "No synthetic fragrances, no harsh fumes, EPA-registered",
             "cons": "Distinct herbal scent (from thymol)",
-            "asin": "B079DFJ11R"
+            "url": "https://www.amazon.com/s?k=Seventh+Generation+Disinfecting+Multi-Surface+Cleaner&tag=myeverydaymat-20"
         },
         {
             "name": "Force of Nature Multi-Purpose Cleaner & Disinfectant",
@@ -40,7 +40,7 @@ ARTICLES = [
             "description": "Turns salt, water, and vinegar into a powerful cleaner & deodorizer, generating hypochlorous acid.",
             "pros": "EPA-registered, no harsh chemicals, breaks down into water",
             "cons": "Requires starter kit and capsules, slightly more involved setup",
-            "asin": "B0B885W74X"
+            "url": "https://www.amazon.com/s?k=Force+of+Nature+Multi-Purpose+Cleaner+%26+Disinfectant&tag=myeverydaymat-20"
         },
         {
             "name": "CleanSmart Disinfectant Spray",
@@ -48,7 +48,7 @@ ARTICLES = [
             "description": "Kills 99.9% of bacteria and viruses, leaves no harmful residue, contains hypochlorous acid.",
             "pros": "Fragrance-free, gentle on skin, safe around kids and pets",
             "cons": "May be less effective on heavily soiled surfaces",
-            "asin": "B00O890C2W"
+            "url": "https://www.amazon.com/s?k=CleanSmart+Disinfectant+Spray&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -97,7 +97,7 @@ ARTICLES = [
             "description": "Plant-based formula, no dyes, no synthetic fragrances, hypoallergenic.",
             "pros": "Gentle on sensitive skin, effective cleaning, environmentally conscious",
             "cons": "Higher price point than conventional detergents",
-            "asin": "B00L1W8JFI"
+            "url": "https://www.amazon.com/s?k=Seventh+Generation+Laundry+Detergent%2C+Free+%26+Clear&tag=myeverydaymat-20"
         },
         {
             "name": "ATTITUDE Living All-Purpose Cleaner, Fragrance-Free",
@@ -105,7 +105,7 @@ ARTICLES = [
             "description": "PETA certified, vegan, hypoallergenic, made with plant- and mineral-based ingredients.",
             "pros": "No added perfumes or dyes, safe for various surfaces, eco-friendly",
             "cons": "May need more scrubbing for tough grime",
-            "asin": "B07D27S9B6"
+            "url": "https://www.amazon.com/s?k=ATTITUDE+Living+All-Purpose+Cleaner%2C+Fragrance-Free&tag=myeverydaymat-20"
         },
         {
             "name": "Dr. Bronner's - Pure-Castile Liquid Soap, Unscented Baby Mild",
@@ -113,7 +113,7 @@ ARTICLES = [
             "description": "Made with organic oils, can be diluted for many cleaning tasks (dishes, floors, laundry).",
             "pros": "Extremely versatile, concentrated, truly unscented",
             "cons": "Requires dilution for most uses, can be drying if used undiluted on skin",
-            "asin": "B00222N71O"
+            "url": "https://www.amazon.com/s?k=Dr.+Bronner%27s+-+Pure-Castile+Liquid+Soap%2C+Unscented+Baby+Mild&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -162,7 +162,7 @@ ARTICLES = [
             "description": "Kills 99.9% of germs with a plant-based active ingredient (Thymol).",
             "pros": "Convenient, no harsh fumes, effective on hard surfaces",
             "cons": "Still creates waste, distinct herbal scent",
-            "asin": "B07C745Y3P"
+            "url": "https://www.amazon.com/s?k=Seventh+Generation+Disinfecting+Wipes%2C+Lemongrass+Citrus&tag=myeverydaymat-20"
         },
         {
             "name": "Hydrogen Peroxide 3% Topical Solution",
@@ -170,7 +170,7 @@ ARTICLES = [
             "description": "A versatile and simple disinfectant for surfaces, breaks down to water and oxygen.",
             "pros": "Commonly available, low toxicity, effective on many pathogens",
             "cons": "Can bleach fabrics, may need to sit for specific contact times",
-            "asin": "B009L13F6G"
+            "url": "https://www.amazon.com/s?k=Hydrogen+Peroxide+3%25+Topical+Solution&tag=myeverydaymat-20"
         },
         {
             "name": "Puracy Multi-Surface Cleaner, Free & Clear",
@@ -178,7 +178,7 @@ ARTICLES = [
             "description": "A streak-free cleaning solution formulated by chemists with plant-derived ingredients.",
             "pros": "Fragrance-free, safe for kids and pets, effective on various surfaces",
             "cons": "Not a registered disinfectant for all pathogens, primarily a cleaner",
-            "asin": "B07N1P58C4"
+            "url": "https://www.amazon.com/s?k=Puracy+Multi-Surface+Cleaner%2C+Free+%26+Clear&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -227,7 +227,7 @@ ARTICLES = [
             "description": "Designed for streak-free cleaning of glass and mirrors with just water.",
             "pros": "Chemical-free cleaning, reusable, highly effective",
             "cons": "Requires regular washing, may not remove heavy grime alone",
-            "asin": "B0BW45V6N6"
+            "url": "https://www.amazon.com/s?k=Fiskars+Microfiber+Cleaning+Cloths+for+Glass+%26+Mirrors&tag=myeverydaymat-20"
         },
         {
             "name": "Puracy Multi-Surface Cleaner, Free & Clear",
@@ -235,7 +235,7 @@ ARTICLES = [
             "description": "A streak-free cleaning solution formulated by chemists with plant-derived ingredients.",
             "pros": "Fragrance-free, safe for kids and pets, effective on various surfaces",
             "cons": "Not a registered disinfectant for all pathogens, primarily a cleaner",
-            "asin": "B07N1P58C4"
+            "url": "https://www.amazon.com/s?k=Puracy+Multi-Surface+Cleaner%2C+Free+%26+Clear&tag=myeverydaymat-20"
         },
         {
             "name": "Aunt Fannie's Glass & Window Vinegar Wash",
@@ -243,7 +243,7 @@ ARTICLES = [
             "description": "Made with distilled white vinegar and essential oils for a streak-free clean.",
             "pros": "Natural, safe ingredients, effectively cleans glass",
             "cons": "Strong vinegar scent (though often mitigated by essential oils)",
-            "asin": "B0782L1V6L"
+            "url": "https://www.amazon.com/s?k=Aunt+Fannie%27s+Glass+%26+Window+Vinegar+Wash&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -292,7 +292,7 @@ ARTICLES = [
             "description": "Hard-working multi-surface cleaner, concentrated formula, comes in a pump spray bottle.",
             "pros": "Non-aerosol delivery, plant-derived ingredients, pleasant scent from essential oils",
             "cons": "Contains fragrance (though essential oil-based, still a consideration for sensitivities)",
-            "asin": "B07P88H4S6"
+            "url": "https://www.amazon.com/s?k=Mrs.+Meyer%27s+Clean+Day+Multi-Surface+Everyday+Cleaner%2C+Lemon+Verbena&tag=myeverydaymat-20"
         },
         {
             "name": "Grow Fragrance Air + Fabric Freshener, Cedarwood Citrus",
@@ -300,7 +300,7 @@ ARTICLES = [
             "description": "100% plant-based air and fabric freshener, no phthalates, parabens, or synthetic chemicals.",
             "pros": "Non-aerosol, truly natural ingredients, safe for fabrics",
             "cons": "Scent may not last as long as synthetic aerosol sprays",
-            "asin": "B09R22T19V"
+            "url": "https://www.amazon.com/s?k=Grow+Fragrance+Air+%2B+Fabric+Freshener%2C+Cedarwood+Citrus&tag=myeverydaymat-20"
         },
         {
             "name": "URPOWER 300ml Aroma Essential Oil Diffuser",
@@ -308,7 +308,7 @@ ARTICLES = [
             "description": "Disperses essential oils and humidifies air without heat or propellants.",
             "pros": "Natural scenting, humidifies, no chemical emissions, reusable",
             "cons": "Requires essential oils, needs water refills",
-            "asin": "B01MTK3K32"
+            "url": "https://www.amazon.com/s?k=URPOWER+300ml+Aroma+Essential+Oil+Diffuser&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -357,7 +357,7 @@ ARTICLES = [
             "description": "A natural, chlorine-free brightener that safely whitens clothes without optical brighteners or harsh chemicals.",
             "pros": "Non-toxic, safe for colors, biodegradable",
             "cons": "Requires hot water for best activation",
-            "asin": "B00O8S4D0I"
+            "url": "https://www.amazon.com/s?k=Molly%27s+Suds+Oxygen+Whitener&tag=myeverydaymat-20"
         },
         {
             "name": "Seventh Generation Laundry Detergent Free & Clear",
@@ -365,7 +365,7 @@ ARTICLES = [
             "description": "A plant-based detergent free of dyes, fragrances, and optical brighteners, ideal for sensitive skin.",
             "pros": "Hypoallergenic, EPA Safer Choice certified, effective cleaning",
             "cons": "May not contain strong whitening agents (use with oxygen boost)",
-            "asin": "B000BPMU8M"
+            "url": "https://www.amazon.com/s?k=Seventh+Generation+Laundry+Detergent+Free+%26+Clear&tag=myeverydaymat-20"
         },
         {
             "name": "Mrs. Meyer's Clean Day Laundry Detergent",
@@ -373,7 +373,7 @@ ARTICLES = [
             "description": "Concentrated, plant-derived formula with essential oils, free from optical brighteners and harsh chemicals.",
             "pros": "Pleasant natural scents, effective, biodegradable",
             "cons": "Higher cost per load than some alternatives",
-            "asin": "B000ULR2I2"
+            "url": "https://www.amazon.com/s?k=Mrs.+Meyer%27s+Clean+Day+Laundry+Detergent&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -422,7 +422,7 @@ ARTICLES = [
             "description": "A highly concentrated, plant-based cleaner that cuts grease effectively without harsh synthetic solvents or fragrances.",
             "pros": "Biodegradable, versatile for many surfaces, strong degreasing power",
             "cons": "Must be diluted, not suitable for all finishes (test first)",
-            "asin": "B0012A32C4"
+            "url": "https://www.amazon.com/s?k=Dr.+Bronner%27s+Sal+Suds+Biodegradable+Cleaner&tag=myeverydaymat-20"
         },
         {
             "name": "Aunt Fannie's Cleaning Vinegar Wipes",
@@ -430,7 +430,7 @@ ARTICLES = [
             "description": "Convenient, vinegar-based cleaning wipes that naturally cut grease and grime without toxic chemicals.",
             "pros": "Non-toxic, easy to use, effective on light grease",
             "cons": "Strong vinegar smell initially, not for heavy-duty degreasing",
-            "asin": "B078YY395K"
+            "url": "https://www.amazon.com/s?k=Aunt+Fannie%27s+Cleaning+Vinegar+Wipes&tag=myeverydaymat-20"
         },
         {
             "name": "ECOS All Purpose Cleaner Parsley",
@@ -438,7 +438,7 @@ ARTICLES = [
             "description": "A plant-powered formula that provides excellent cleaning and degreasing, free from 2-Butoxyethanol and other harsh chemicals.",
             "pros": "Biodegradable, pH neutral, pleasant natural scent",
             "cons": "Less concentrated than some industrial options, may need more product for heavy tasks",
-            "asin": "B000K607PG"
+            "url": "https://www.amazon.com/s?k=ECOS+All+Purpose+Cleaner+Parsley&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -487,7 +487,7 @@ ARTICLES = [
             "description": "A versatile, plant-based concentrate that cleans every surface in your home; free of ethanolamines, fragrances, and other harsh chemicals.",
             "pros": "Non-toxic, highly concentrated, multi-purpose, fragrance-free",
             "cons": "Initial cost for starter kit, requires dilution",
-            "asin": "B0B8D9N4F4"
+            "url": "https://www.amazon.com/s?k=Branch+Basics+Concentrate&tag=myeverydaymat-20"
         },
         {
             "name": "Puracy Multi-Surface Cleaner",
@@ -495,7 +495,7 @@ ARTICLES = [
             "description": "A streak-free, plant-based cleaner for all surfaces, formulated without harsh chemicals, including ethanolamines.",
             "pros": "Natural scents, non-toxic, effective on various surfaces",
             "cons": "May not be strong enough for heavy-duty grease without pre-treatment",
-            "asin": "B01C9F5952"
+            "url": "https://www.amazon.com/s?k=Puracy+Multi-Surface+Cleaner&tag=myeverydaymat-20"
         },
         {
             "name": "ECOS All Purpose Cleaner Lemon",
@@ -503,7 +503,7 @@ ARTICLES = [
             "description": "pH-neutral, plant-powered formula that effectively cleans without ethanolamines, dyes, or synthetic fragrances.",
             "pros": "Biodegradable, pleasant natural scent, readily available",
             "cons": "Contains limonene which can be a sensitizer for some individuals",
-            "asin": "B000K8I0D0"
+            "url": "https://www.amazon.com/s?k=ECOS+All+Purpose+Cleaner+Lemon&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -552,7 +552,7 @@ ARTICLES = [
             "description": "A quiet, BPA-free ultrasonic diffuser that disperses pure essential oils, creating natural aromas without synthetic chemicals.",
             "pros": "Uses natural essential oils, creates ambient humidity, timer settings",
             "cons": "Requires regular cleaning, essential oils can be costly",
-            "asin": "B01N0P6A09"
+            "url": "https://www.amazon.com/s?k=NOW+Solutions+Ultrasonic+Essential+Oil+Diffuser&tag=myeverydaymat-20"
         },
         {
             "name": "Vitruvi Stone Diffuser",
@@ -560,7 +560,7 @@ ARTICLES = [
             "description": "A stylish ceramic essential oil diffuser that adds aesthetic appeal while naturally scenting your space with pure essential oils.",
             "pros": "Elegant design, quiet operation, made with natural materials",
             "cons": "Higher price point, smaller water capacity than some diffusers",
-            "asin": "B07V3V8K5J"
+            "url": "https://www.amazon.com/s?k=Vitruvi+Stone+Diffuser&tag=myeverydaymat-20"
         },
         {
             "name": "Blueair Classic 205 Air Purifier",
@@ -568,7 +568,7 @@ ARTICLES = [
             "description": "A high-performance air purifier that effectively removes airborne particles, odors, and VOCs, improving overall indoor air quality.",
             "pros": "Filters allergens, dust, odors; quiet operation; energy efficient",
             "cons": "Requires filter replacement, initial cost can be high",
-            "asin": "B01N9V2478"
+            "url": "https://www.amazon.com/s?k=Blueair+Classic+205+Air+Purifier&tag=myeverydaymat-20"
         },
         {
             "name": "Enviroscent Scent Pods",
@@ -576,7 +576,7 @@ ARTICLES = [
             "description": "A natural, plant-fiber based air freshener that slowly releases pure essential oil scents without sprays, phthalates, or VOCs.",
             "pros": "Phthalate-free, VOC-free, natural scents, eco-friendly",
             "cons": "Scent intensity may be less than synthetic air fresheners, limited scent options",
-            "asin": "B08F7H6R2N"
+            "url": "https://www.amazon.com/s?k=Enviroscent+Scent+Pods&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -625,7 +625,7 @@ ARTICLES = [
             "description": "A plant-based dish soap that effectively cuts through grease, free of triclosan, dyes, phosphates, and fragrances, ideal for sensitive skin.",
             "pros": "Non-toxic, hypoallergenic, EPA Safer Choice certified, effective cleaning",
             "cons": "May require slightly more product for very greasy dishes",
-            "asin": "B000BPMU8M"
+            "url": "https://www.amazon.com/s?k=Seventh+Generation+Dish+Liquid%2C+Free+%26+Clear&tag=myeverydaymat-20"
         },
         {
             "name": "Mrs. Meyer's Clean Day Dish Soap, Lemon Verbena",
@@ -633,7 +633,7 @@ ARTICLES = [
             "description": "Naturally derived dish soap with essential oils, free from triclosan, phthalates, parabens, and artificial colors.",
             "pros": "Pleasant, natural scents, effective on grease, biodegradable formula",
             "cons": "Contains fragrance, which can be an irritant for some sensitive individuals",
-            "asin": "B0013X8A84"
+            "url": "https://www.amazon.com/s?k=Mrs.+Meyer%27s+Clean+Day+Dish+Soap%2C+Lemon+Verbena&tag=myeverydaymat-20"
         },
         {
             "name": "Blueland Dish Soap Tablets",
@@ -641,7 +641,7 @@ ARTICLES = [
             "description": "Eco-friendly, waterless dish soap tablets that dissolve to create a powerful cleaning solution, completely free of triclosan and single-use plastic.",
             "pros": "Zero-waste, non-toxic, effective, convenient storage",
             "cons": "Requires a reusable bottle, may take time to dissolve completely",
-            "asin": "B08GFJFW5K"
+            "url": "https://www.amazon.com/s?k=Blueland+Dish+Soap+Tablets&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -690,7 +690,7 @@ ARTICLES = [
             "description": "Plant-based formula, free of NPEs, dyes, and synthetic fragrances, designed for sensitive skin.",
             "pros": "Eco-friendly, hypoallergenic, effective cleaning",
             "cons": "Can be pricier than conventional detergents",
-            "asin": "B07F17G7Y9"
+            "url": "https://www.amazon.com/s?k=Seventh+Generation+Laundry+Detergent&tag=myeverydaymat-20"
         },
         {
             "name": "Molly's Suds Original Laundry Powder",
@@ -698,7 +698,7 @@ ARTICLES = [
             "description": "Made with only 5 earth-derived ingredients, certified vegan, and free from harsh chemicals like NPEs.",
             "pros": "Minimal ingredients, highly concentrated, excellent for sensitive skin",
             "cons": "Powder form might not dissolve perfectly in all machines",
-            "asin": "B07W94Q8K2"
+            "url": "https://www.amazon.com/s?k=Molly%27s+Suds+Original+Laundry+Powder&tag=myeverydaymat-20"
         },
         {
             "name": "Biokleen Laundry Liquid",
@@ -706,7 +706,7 @@ ARTICLES = [
             "description": "Concentrated, plant-derived cleaner that works powerfully on dirt and stains without the use of NPEs, phosphates, or chlorine.",
             "pros": "Eco-conscious, effective in all water temperatures, no harsh fumes",
             "cons": "Specific scent options might not appeal to everyone",
-            "asin": "B00C4Q8K5W"
+            "url": "https://www.amazon.com/s?k=Biokleen+Laundry+Liquid&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -755,7 +755,7 @@ ARTICLES = [
             "description": "A convenient kit to refresh and de-wrinkle dry-clean-only clothes at home, typically without harsh solvents like PERC.",
             "pros": "Cost-effective, extends time between professional dry cleaning, convenient",
             "cons": "Not suitable for heavily soiled items, doesn't deep clean",
-            "asin": "B07P8835B9"
+            "url": "https://www.amazon.com/s?k=Tide+Dry+Cleaner+At-Home+Kit&tag=myeverydaymat-20"
         },
         {
             "name": "Woolite At-Home Dry Cleaner",
@@ -763,7 +763,7 @@ ARTICLES = [
             "description": "Safely cleans and freshens delicate clothes in your dryer, free from PERC and other harsh chemicals.",
             "pros": "Gentle on fabrics, removes odors, easy to use",
             "cons": "Limited cleaning power, not a substitute for professional cleaning of stains",
-            "asin": "B07P882X7Y"
+            "url": "https://www.amazon.com/s?k=Woolite+At-Home+Dry+Cleaner&tag=myeverydaymat-20"
         },
         {
             "name": "The Laundress Darks Detergent",
@@ -771,7 +771,7 @@ ARTICLES = [
             "description": "Designed for delicate dark fabrics that are often dry-cleaned, allowing for safe at-home washing instead.",
             "pros": "Allows for chemical-free washing of many 'dry clean only' items, preserves fabric color",
             "cons": "Requires hand washing or delicate machine cycle, not for all fabric types",
-            "asin": "B003V1B9X6"
+            "url": "https://www.amazon.com/s?k=The+Laundress+Darks+Detergent&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -820,7 +820,7 @@ ARTICLES = [
             "description": "Plant-based formula designed to cut through grease without harsh chemicals like lye, featuring a non-toxic fragrance.",
             "pros": "Non-caustic, biodegradable, safer for home use",
             "cons": "May require more scrubbing for heavily caked-on grime",
-            "asin": "B07971K4F3"
+            "url": "https://www.amazon.com/s?k=Ecover+Oven+%26+Hob+Cleaner&tag=myeverydaymat-20"
         },
         {
             "name": "Method Heavy Duty Degreaser",
@@ -828,7 +828,7 @@ ARTICLES = [
             "description": "A powerful, naturally derived degreaser that works on ovens, stovetops, and other kitchen surfaces, without the need for sodium hydroxide.",
             "pros": "Non-toxic, pleasant scent, versatile for multiple surfaces",
             "cons": "Requires direct application and scrubbing for baked-on residues",
-            "asin": "B007R6XJ7U"
+            "url": "https://www.amazon.com/s?k=Method+Heavy+Duty+Degreaser&tag=myeverydaymat-20"
         },
         {
             "name": "Arm & Hammer Pure Baking Soda",
@@ -836,7 +836,7 @@ ARTICLES = [
             "description": "Food-grade baking soda, an excellent natural abrasive and odor absorber, perfect for DIY oven cleaning pastes.",
             "pros": "Extremely safe, inexpensive, versatile for many cleaning tasks",
             "cons": "Requires more manual effort, works best on moderately dirty ovens",
-            "asin": "B00112QGOW"
+            "url": "https://www.amazon.com/s?k=Arm+%26+Hammer+Pure+Baking+Soda&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -885,7 +885,7 @@ ARTICLES = [
             "description": "Uses powerful enzymes to break down hair, grease, soap scum, and other organic matter without harsh, corrosive chemicals.",
             "pros": "Non-corrosive, safe for all pipes, biodegradable, effective over time",
             "cons": "Slower acting than chemical drain openers, may require overnight application",
-            "asin": "B01B7M9R9K"
+            "url": "https://www.amazon.com/s?k=Green+Gobbler+Drain+Clog+Dissolver+%28Enzyme-Based%29&tag=myeverydaymat-20"
         },
         {
             "name": "Bio-Clean Drain Clog Remover (Bacterial)",
@@ -893,7 +893,7 @@ ARTICLES = [
             "description": "A natural bacterial drain cleaner that eats away at organic waste, preventing clogs and odors in a safe, environmentally friendly way.",
             "pros": "Eco-friendly, prevents future clogs, non-toxic, safe for septic systems",
             "cons": "Requires regular maintenance, not for immediate severe clogs",
-            "asin": "B000C8K954"
+            "url": "https://www.amazon.com/s?k=Bio-Clean+Drain+Clog+Remover+%28Bacterial%29&tag=myeverydaymat-20"
         },
         {
             "name": "FlexiSnake Drain Weasel Hair Clog Tool",
@@ -901,7 +901,7 @@ ARTICLES = [
             "description": "A flexible, barbed tool designed to physically grab and remove hair clogs from drains without the need for chemicals.",
             "pros": "Instant clog removal, no chemicals, reusable, easy to use",
             "cons": "Only effective for hair clogs, can be messy to remove",
-            "asin": "B00B9W969K"
+            "url": "https://www.amazon.com/s?k=FlexiSnake+Drain+Weasel+Hair+Clog+Tool&tag=myeverydaymat-20"
         },
         {
             "name": "Heavy Duty Plunger",
@@ -909,7 +909,7 @@ ARTICLES = [
             "description": "A robust toilet and drain plunger designed to create a powerful seal and clear common clogs through suction.",
             "pros": "Immediate effect, no chemicals, simple and effective for most clogs",
             "cons": "Can be messy, not effective for all types of clogs",
-            "asin": "B09STHPG3F"
+            "url": "https://www.amazon.com/s?k=Heavy+Duty+Plunger&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -958,7 +958,7 @@ ARTICLES = [
             "description": "Botanical disinfectant that kills 99.9% of household germs without harsh chemicals like MIT, bleach, or synthetic fragrances.",
             "pros": "Non-toxic, plant-based active ingredient, effective disinfectant",
             "cons": "Natural scent may not appeal to everyone, needs dwell time for disinfection",
-            "asin": "B077M7P262"
+            "url": "https://www.amazon.com/s?k=Seventh+Generation+Disinfecting+Multi-Surface+Cleaner&tag=myeverydaymat-20"
         },
         {
             "name": "Mrs. Meyer's Clean Day Multi-Surface Everyday Cleaner",
@@ -966,7 +966,7 @@ ARTICLES = [
             "description": "Features garden-inspired scents and plant-derived cleaning agents, typically formulated without MIT or CMIT/MIT.",
             "pros": "Pleasant natural fragrances, effective for everyday cleaning, biodegradable",
             "cons": "Contains essential oils which can be irritants for some highly sensitive individuals",
-            "asin": "B071221K4K"
+            "url": "https://www.amazon.com/s?k=Mrs.+Meyer%27s+Clean+Day+Multi-Surface+Everyday+Cleaner&tag=myeverydaymat-20"
         },
         {
             "name": "Attitude All-Purpose Cleaner",
@@ -974,7 +974,7 @@ ARTICLES = [
             "description": "EWG Verified, hypoallergenic, and formulated with plant- and mineral-based ingredients, free from MIT, artificial fragrances, and dyes.",
             "pros": "Extremely gentle, safe for sensitive skin, environmentally conscious",
             "cons": "May be less effective on very stubborn stains compared to harsher chemicals",
-            "asin": "B00C0L07W6"
+            "url": "https://www.amazon.com/s?k=Attitude+All-Purpose+Cleaner&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -1023,7 +1023,7 @@ ARTICLES = [
             "description": "A water-based, GREENGUARD GOLD certified formula safe for daily use on hardwood floors. Free from harsh chemicals.",
             "pros": "Non-toxic, residue-free, environmentally friendly, safe for pets and kids.",
             "cons": "Specifically for hardwood, not suitable for all floor types.",
-            "asin": "B000PDDIL2"
+            "url": "https://www.amazon.com/s?k=Bona+Hardwood+Floor+Cleaner+Spray%2C+Original+Formula&tag=myeverydaymat-20"
         },
         {
             "name": "Method Squirt + Mop Hard Floor Cleaner, Lemon Ginger",
@@ -1031,7 +1031,7 @@ ARTICLES = [
             "description": "Plant-based formula designed for a streak-free clean on sealed hard floors. No buckets needed, just squirt and mop.",
             "pros": "Pleasant scent, plant-based, easy to use, biodegradable ingredients.",
             "cons": "Not suitable for unfinished or waxed wood.",
-            "asin": "B007X87K1W"
+            "url": "https://www.amazon.com/s?k=Method+Squirt+%2B+Mop+Hard+Floor+Cleaner%2C+Lemon+Ginger&tag=myeverydaymat-20"
         },
         {
             "name": "Better Life Floor Cleaner, Citrus & Mint",
@@ -1039,7 +1039,7 @@ ARTICLES = [
             "description": "Naturally derived, plant-based cleaner effective on hardwood, tile, laminate, and more. Free of harsh chemicals.",
             "pros": "Versatile for multiple floor types, cruelty-free, no dyes or synthetic fragrances.",
             "cons": "May require extra effort for heavily soiled areas.",
-            "asin": "B00KAE3B42"
+            "url": "https://www.amazon.com/s?k=Better+Life+Floor+Cleaner%2C+Citrus+%26+Mint&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -1088,7 +1088,7 @@ ARTICLES = [
             "description": "Botanically derived disinfectant powered by thymol (a component of thyme oil). Kills 99.9% of household germs.",
             "pros": "Non-toxic, plant-based, no harsh fumes, effective against bacteria and viruses.",
             "cons": "Strong herbal scent may not be preferred by all, limited to certain surfaces.",
-            "asin": "B00B4U09D2"
+            "url": "https://www.amazon.com/s?k=Seventh+Generation+Disinfecting+Multi-Surface+Cleaner%2C+Lemon+%26+Tea+Tree&tag=myeverydaymat-20"
         },
         {
             "name": "Force of Nature Multi-Purpose Cleaner & Disinfectant",
@@ -1096,7 +1096,7 @@ ARTICLES = [
             "description": "Uses electricity to convert tap water, salt, and vinegar into a powerful cleaner and disinfectant (hypochlorous acid & sodium hydroxide).",
             "pros": "Non-toxic, no harsh chemicals, kills 99.9% of germs, suitable for food contact surfaces.",
             "cons": "Requires a starter kit and capsules for making the solution, initial cost is higher.",
-            "asin": "B077F7F6J6"
+            "url": "https://www.amazon.com/s?k=Force+of+Nature+Multi-Purpose+Cleaner+%26+Disinfectant&tag=myeverydaymat-20"
         },
         {
             "name": "Clorox Hydrogen Peroxide Cleaner Disinfectant Spray",
@@ -1104,7 +1104,7 @@ ARTICLES = [
             "description": "Hydrogen peroxide-based cleaner that kills 99.9% of viruses and bacteria, leaving no harsh chemical residue.",
             "pros": "Non-bleach, fragrance-free, effective disinfectant, breaks down into water and oxygen.",
             "cons": "May not be suitable for all colored fabrics or surfaces due to mild bleaching action.",
-            "asin": "B003L49DPE"
+            "url": "https://www.amazon.com/s?k=Clorox+Hydrogen+Peroxide+Cleaner+Disinfectant+Spray&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -1153,7 +1153,7 @@ ARTICLES = [
             "description": "High-quality, food-grade citric acid powder for cleaning, descaling, and food preservation. Offers maximum versatility.",
             "pros": "Pure, versatile, cost-effective for DIY solutions, food-grade safe.",
             "cons": "Requires dilution and mixing, not a ready-to-use spray.",
-            "asin": "B00J65J6E8"
+            "url": "https://www.amazon.com/s?k=Essential+Depot+Food+Grade+Citric+Acid%2C+2+lb&tag=myeverydaymat-20"
         },
         {
             "name": "Puracy Multi-Surface Cleaner, Plant-Based",
@@ -1161,7 +1161,7 @@ ARTICLES = [
             "description": "Natural, plant-derived cleaner using green chemistry to safely clean and degrease hard surfaces. Often contains citric acid.",
             "pros": "Non-toxic, streak-free, safe for pets and children, pleasant scent.",
             "cons": "May not be strong enough for very heavy limescale deposits.",
-            "asin": "B01B7T2K92"
+            "url": "https://www.amazon.com/s?k=Puracy+Multi-Surface+Cleaner%2C+Plant-Based&tag=myeverydaymat-20"
         },
         {
             "name": "Ecover Zero All-Purpose Cleaner, Fragrance-Free",
@@ -1169,7 +1169,7 @@ ARTICLES = [
             "description": "A fragrance-free, plant-based and mineral-based cleaner that tackles dirt and grime without harsh chemicals or fumes.",
             "pros": "Hypoallergenic, no artificial dyes or fragrances, environmentally friendly.",
             "cons": "Less concentrated for specific descaling needs than pure citric acid.",
-            "asin": "B07YBH594P"
+            "url": "https://www.amazon.com/s?k=Ecover+Zero+All-Purpose+Cleaner%2C+Fragrance-Free&tag=myeverydaymat-20"
         },
         {
             "name": "Seventh Generation Disinfecting Bathroom Cleaner, Emerald Cypress & Fir",
@@ -1177,7 +1177,7 @@ ARTICLES = [
             "description": "Utilizes citric acid as its active ingredient to kill 99.9% of household germs, tackle mold and mildew, and cut soap scum.",
             "pros": "EPA Safer Choice certified, effective disinfectant, plant-based.",
             "cons": "Specific to bathroom use, may have a strong scent for some.",
-            "asin": "B074PY57R7"
+            "url": "https://www.amazon.com/s?k=Seventh+Generation+Disinfecting+Bathroom+Cleaner%2C+Emerald+Cypress+%26+Fir&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -1234,7 +1234,7 @@ ARTICLES = [
             "description": "A natural, powdered alkaline cleaner that boosts laundry performance and serves as a heavy-duty household cleaner.",
             "pros": "Powerful degreaser, natural, phosphate-free, chlorine-free.",
             "cons": "Stronger alkali than baking soda, requires gloves for handling, not food-grade.",
-            "asin": "B003AK0TGA"
+            "url": "https://www.amazon.com/s?k=Nellie%27s+All-Natural+Washing+Soda&tag=myeverydaymat-20"
         },
         {
             "name": "Dr. Bronner's Sal Suds Biodegradable Cleaner",
@@ -1242,7 +1242,7 @@ ARTICLES = [
             "description": "A natural, plant-based, concentrated all-purpose cleaner that is effective on tough grease and dirt.",
             "pros": "Highly concentrated, biodegradable, non-toxic, versatile for many surfaces.",
             "cons": "Strong pine scent may not be for everyone, requires dilution.",
-            "asin": "B000R3L0C6"
+            "url": "https://www.amazon.com/s?k=Dr.+Bronner%27s+Sal+Suds+Biodegradable+Cleaner&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -1291,7 +1291,7 @@ ARTICLES = [
             "description": "The classic, food-grade distilled white vinegar for cooking, pickling, and all your cleaning needs.",
             "pros": "Economical, versatile, food-grade safe, effective.",
             "cons": "Strong smell, requires dilution for most cleaning, not suitable for all surfaces.",
-            "asin": "B004P89G0A"
+            "url": "https://www.amazon.com/s?k=Heinz+Distilled+White+Vinegar%2C+1+Gallon&tag=myeverydaymat-20"
         },
         {
             "name": "Harris Cleaning Vinegar, 1 Gallon",
@@ -1299,7 +1299,7 @@ ARTICLES = [
             "description": "A higher acidity (10%) vinegar specifically formulated for household cleaning tasks, offering enhanced cleaning power.",
             "pros": "Stronger cleaning power, natural, non-toxic, large volume.",
             "cons": "Stronger odor, higher acidity means more caution needed for delicate surfaces.",
-            "asin": "B077B8B1K4"
+            "url": "https://www.amazon.com/s?k=Harris+Cleaning+Vinegar%2C+1+Gallon&tag=myeverydaymat-20"
         },
         {
             "name": "Aunt Fannie's All-Purpose Cleaning Vinegar Spray, Eucalyptus",
@@ -1307,7 +1307,7 @@ ARTICLES = [
             "description": "A pre-mixed, naturally scented, vinegar-based all-purpose cleaner designed for convenience and effective cleaning.",
             "pros": "Ready-to-use, pleasant natural scent, effective, non-toxic.",
             "cons": "More expensive than bulk vinegar, still unsuitable for natural stone.",
-            "asin": "B073H31M4D"
+            "url": "https://www.amazon.com/s?k=Aunt+Fannie%27s+All-Purpose+Cleaning+Vinegar+Spray%2C+Eucalyptus&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -1356,7 +1356,7 @@ ARTICLES = [
             "description": "Standard 3% hydrogen peroxide, suitable for a wide range of household cleaning and disinfecting tasks.",
             "pros": "Versatile, breaks down harmlessly, cost-effective",
             "cons": "Requires dwell time for disinfection, can bleach colored fabrics",
-            "asin": "B07V3K1Q2P"
+            "url": "https://www.amazon.com/s?k=Paisley+%26+Products+3%25+Hydrogen+Peroxide&tag=myeverydaymat-20"
         },
         {
             "name": "Seventh Generation Disinfectant Spray, Botanical Cleaning",
@@ -1364,7 +1364,7 @@ ARTICLES = [
             "description": "A botanical disinfectant spray using thymol as an active ingredient, offering an alternative to bleach and H2O2.",
             "pros": "No harsh fumes, plant-based, effective against common germs",
             "cons": "May be less versatile for some specific tasks (e.g., whitening), higher cost",
-            "asin": "B071L2N5C5"
+            "url": "https://www.amazon.com/s?k=Seventh+Generation+Disinfectant+Spray%2C+Botanical+Cleaning&tag=myeverydaymat-20"
         },
         {
             "name": "Biokleen Bac-Out Stain & Odor Remover",
@@ -1372,7 +1372,7 @@ ARTICLES = [
             "description": "An enzyme-based cleaner that uses live cultures to break down organic stains and odors, an alternative for tough biological messes.",
             "pros": "Excellent for pet stains and odors, non-toxic, plant-derived",
             "cons": "Not a disinfectant, works slower than oxidizers on some stains",
-            "asin": "B00006JO8A"
+            "url": "https://www.amazon.com/s?k=Biokleen+Bac-Out+Stain+%26+Odor+Remover&tag=myeverydaymat-20"
         },
         {
             "name": "OxiClean Versatile Stain Remover Powder",
@@ -1380,7 +1380,7 @@ ARTICLES = [
             "description": "Powdered oxygen bleach (sodium percarbonate) that activates with water to release hydrogen peroxide for laundry and surface cleaning.",
             "pros": "Powerful stain remover, color-safe for laundry, good for large cleaning jobs",
             "cons": "Requires mixing, not a direct disinfectant, can be abrasive",
-            "asin": "B08HGVF25H"
+            "url": "https://www.amazon.com/s?k=OxiClean+Versatile+Stain+Remover+Powder&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -1429,7 +1429,7 @@ ARTICLES = [
             "description": "The iconic multi-purpose organic soap, made with fair trade ingredients and known for its invigorating peppermint scent.",
             "pros": "Highly concentrated, versatile, organic, fair trade",
             "cons": "Strong scent may not appeal to all, can be drying if not diluted",
-            "asin": "B000HK0EUM"
+            "url": "https://www.amazon.com/s?k=Dr.+Bronner%27s+Pure-Castile+Liquid+Soap%2C+Peppermint&tag=myeverydaymat-20"
         },
         {
             "name": "Kirk's Original Coco Castile Liquid Soap",
@@ -1437,7 +1437,7 @@ ARTICLES = [
             "description": "A long-standing brand offering a pure, natural coconut oil-based liquid Castile soap, gentle and fragrance-free.",
             "pros": "Gentle, fragrance-free, moisturizing, good for sensitive skin",
             "cons": "Less widely available than Dr. Bronner's in some areas",
-            "asin": "B07P49T77Q"
+            "url": "https://www.amazon.com/s?k=Kirk%27s+Original+Coco+Castile+Liquid+Soap&tag=myeverydaymat-20"
         },
         {
             "name": "Dr. Bronner's Sal Suds Biodegradable Cleaner",
@@ -1453,7 +1453,7 @@ ARTICLES = [
             "description": "An eco-friendly, hypoallergenic dish soap formulated with plant and mineral-based ingredients, free from harsh chemicals.",
             "pros": "Specific for dishes, good sudsing, EWG verified, septic safe",
             "cons": "Less versatile than Castile soap, for dishes primarily",
-            "asin": "B075F4M7V3"
+            "url": "https://www.amazon.com/s?k=ATTITUDE+Living+Dish+Soap%2C+Pink+Grapefruit&tag=myeverydaymat-20"
         }
     ],
     "sources": [

@@ -32,7 +32,7 @@ ARTICLES = [
             "description": "Natural, whole-kernel corn and cassava formula offers excellent clumping and odor control with significantly reduced dust.",
             "pros": "Low dust, flushable, biodegradable, strong odor control",
             "cons": "Higher cost, some cats may not adapt easily",
-            "asin": "B000K6O5R4"
+            "url": "https://www.amazon.com/s?k=World%27s+Best+Cat+Litter%2C+Clumping+Formula&tag=myeverydaymat-20"
         },
         {
             "name": "Feline Pine Original Cat Litter",
@@ -40,7 +40,7 @@ ARTICLES = [
             "description": "Made from 100% natural pine, these pellets absorb liquid and odors effectively, turning to sawdust when wet.",
             "pros": "Virtually dust-free, natural pine scent, biodegradable",
             "cons": "Different texture, requires sifting, some cats dislike texture",
-            "asin": "B000B0Q620"
+            "url": "https://www.amazon.com/s?k=Feline+Pine+Original+Cat+Litter&tag=myeverydaymat-20"
         },
         {
             "name": "Naturally Fresh Multi-Cat Clumping Litter",
@@ -48,7 +48,7 @@ ARTICLES = [
             "description": "Sustainable clumping litter made from an annually renewable resource, known for superior odor absorption and low dust.",
             "pros": "Excellent odor control, low dust, biodegradable, natural",
             "cons": "Can track slightly, darker color might be new for some cats",
-            "asin": "B00593N3X2"
+            "url": "https://www.amazon.com/s?k=Naturally+Fresh+Multi-Cat+Clumping+Litter&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -97,7 +97,7 @@ ARTICLES = [
             "description": "High-quality stainless steel interior with a poly-resin exterior, offering durability and a non-porous surface.",
             "pros": "Non-porous, dishwasher safe, bacteria resistant, easy to clean",
             "cons": "Outer coating could eventually chip (but main surface is steel)",
-            "asin": "B000NJSY8W"
+            "url": "https://www.amazon.com/s?k=Loving+Pets+Bella+Bowls+Stainless+Steel+Pet+Bowl&tag=myeverydaymat-20"
         },
         {
             "name": "PetRageous Designs Ceramic Dog Bowl",
@@ -105,7 +105,7 @@ ARTICLES = [
             "description": "Sturdy, heavy-duty ceramic bowl with a lead-free glaze, resistant to tipping and scratching.",
             "pros": "Non-porous, heavy and stable, attractive design, microwave/dishwasher safe",
             "cons": "Can chip or break if dropped, heavier than other options",
-            "asin": "B001T94E3O"
+            "url": "https://www.amazon.com/s?k=PetRageous+Designs+Ceramic+Dog+Bowl&tag=myeverydaymat-20"
         },
         {
             "name": "Midwest Homes for Pets Stainless Steel Snap'y Fit Bowl",
@@ -113,7 +113,7 @@ ARTICLES = [
             "description": "Simple, durable stainless steel bowl designed to securely attach to crates, but also great as a standalone bowl.",
             "pros": "Pure stainless steel, highly durable, easy to clean, non-porous",
             "cons": "Basic aesthetic, less insulation than double-walled options",
-            "asin": "B0002AR1B6"
+            "url": "https://www.amazon.com/s?k=Midwest+Homes+for+Pets+Stainless+Steel+Snap%27y+Fit+Bowl&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -162,7 +162,7 @@ ARTICLES = [
             "description": "Vet-recommended topical treatment that kills fleas and ticks, and prevents new infestations for a full month.",
             "pros": "Long-lasting, effective, widely available without prescription",
             "cons": "Requires proper application technique, minor residues on fur",
-            "asin": "B002KMWG2G"
+            "url": "https://www.amazon.com/s?k=Frontline+Plus+for+Dogs+%28Small+Dog%29&tag=myeverydaymat-20"
         },
         {
             "name": "Safari by Coastal Pet Products Flea Comb",
@@ -170,7 +170,7 @@ ARTICLES = [
             "description": "Fine-toothed comb designed to physically remove fleas, flea eggs, and debris from your pet's coat.",
             "pros": "Non-toxic, immediate relief, good for sensitive pets, helps monitor infestation",
             "cons": "Requires regular grooming, less effective for heavy infestations alone",
-            "asin": "B0002AR0I2"
+            "url": "https://www.amazon.com/s?k=Safari+by+Coastal+Pet+Products+Flea+Comb&tag=myeverydaymat-20"
         },
         {
             "name": "Capstar Fast-Acting Oral Flea Treatment (Dogs & Cats)",
@@ -178,7 +178,7 @@ ARTICLES = [
             "description": "Starts killing adult fleas within 30 minutes, offering quick relief for existing infestations (consult vet for long-term plan).",
             "pros": "Very fast-acting, oral means no external residue, effective for immediate infestation",
             "cons": "Only kills adult fleas, short-lived effect (24 hrs), not a preventative",
-            "asin": "B003P7R9Y2"
+            "url": "https://www.amazon.com/s?k=Capstar+Fast-Acting+Oral+Flea+Treatment+%28Dogs+%26+Cats%29&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -227,7 +227,7 @@ ARTICLES = [
             "description": "Natural bamboo charcoal bag that naturally absorbs odors, allergens, and pollutants without any added chemicals or fragrances.",
             "pros": "Completely natural, pet-safe, fragrance-free, reusable (recharge in sun)",
             "cons": "No added scent, takes time to work on strong odors",
-            "asin": "B0017TP1Y8"
+            "url": "https://www.amazon.com/s?k=Moso+Natural+Air+Purifying+Bag&tag=myeverydaymat-20"
         },
         {
             "name": "Hamilton Beach TrueAir Room Odor Eliminator",
@@ -243,7 +243,7 @@ ARTICLES = [
             "description": "Simple, inexpensive, and highly effective natural deodorizer for carpets, litter boxes, and general air freshening.",
             "pros": "Non-toxic, fragrance-free, versatile, extremely affordable",
             "cons": "No active scent, requires direct application or placement",
-            "asin": "B000NY7X3I"
+            "url": "https://www.amazon.com/s?k=Baking+Soda+-+Arm+%26+Hammer+Pure+Baking+Soda&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -292,7 +292,7 @@ ARTICLES = [
             "description": "Durable, non-toxic natural rubber toy designed for chewing, fetching, and stuffing with treats.",
             "pros": "Extremely durable, non-toxic natural rubber, mentally stimulating when stuffed",
             "cons": "Can be expensive, not all dogs like the texture",
-            "asin": "B000AY4GRI"
+            "url": "https://www.amazon.com/s?k=KONG+Classic+Dog+Toy&tag=myeverydaymat-20"
         },
         {
             "name": "Planet Dog Orbee-Tuff Squeak Ball",
@@ -300,7 +300,7 @@ ARTICLES = [
             "description": "Made from a blend of proprietary materials, these toys are known for durability and safety, free from phthalates, BPA, and lead.",
             "pros": "Non-toxic, highly durable, bouncy, infused with mint oil",
             "cons": "Higher price point, might not appeal to all chewers",
-            "asin": "B08K1712M3"
+            "url": "https://www.amazon.com/s?k=Planet+Dog+Orbee-Tuff+Squeak+Ball&tag=myeverydaymat-20"
         },
         {
             "name": "West Paw Zogoflex Hurley Dog Bone",
@@ -308,7 +308,7 @@ ARTICLES = [
             "description": "Extremely durable, floatable, and dishwasher-safe toy made from Zogoflex material, guaranteed non-toxic.",
             "pros": "Very tough, guaranteed chew-resistant, BPA/phthalate-free, recyclable",
             "cons": "Can be heavy for smaller dogs, not a 'soft' chew",
-            "asin": "B002GP96K4"
+            "url": "https://www.amazon.com/s?k=West+Paw+Zogoflex+Hurley+Dog+Bone&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -357,7 +357,7 @@ ARTICLES = [
             "description": "Durable, hygienic, and non-porous stainless steel design for multiple pets. Easy to clean and resists biofilm.",
             "pros": "Resists biofilm, dishwasher safe, durable",
             "cons": "Can be noisy, requires frequent filter changes",
-            "asin": "B003LL1Q6Y"
+            "url": "https://www.amazon.com/s?k=PetSafe+Drinkwell+360+Stainless+Steel+Pet+Fountain&tag=myeverydaymat-20"
         },
         {
             "name": "Pioneer Pet Raindrop Ceramic Pet Drinking Fountain",
@@ -365,7 +365,7 @@ ARTICLES = [
             "description": "Stylish, heavy, and quiet ceramic fountain with a non-porous glazed surface for easy cleaning.",
             "pros": "Non-porous surface, quiet operation, aesthetically pleasing",
             "cons": "Can be fragile if dropped, heavier to move",
-            "asin": "B001712W1K"
+            "url": "https://www.amazon.com/s?k=Pioneer+Pet+Raindrop+Ceramic+Pet+Drinking+Fountain&tag=myeverydaymat-20"
         },
         {
             "name": "Catit Pixi Stainless Steel Water Fountain",
@@ -373,7 +373,7 @@ ARTICLES = [
             "description": "Compact and ergonomic stainless steel fountain designed for cats, featuring a triple filtration system.",
             "pros": "Hygienic stainless steel, small footprint, quiet pump",
             "cons": "Smaller capacity, filters can be proprietary",
-            "asin": "B09T5F5V7V"
+            "url": "https://www.amazon.com/s?k=Catit+Pixi+Stainless+Steel+Water+Fountain&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -422,7 +422,7 @@ ARTICLES = [
             "description": "Features CertiPUR-US certified foam for a supportive, low-VOC sleep surface. Designed for durability and pet comfort.",
             "pros": "No harmful flame retardants, low VOCs, orthopedic support",
             "cons": "Can be heavy, initial off-gassing still recommended",
-            "asin": "B07XN651M6"
+            "url": "https://www.amazon.com/s?k=Brentwood+Home+Runyon+Pet+Bed+-+CertiPUR-US+Memory+Foam&tag=myeverydaymat-20"
         },
         {
             "name": "Big Barker 7\" Orthopedic Dog Bed with Headrest - CertiPUR-US Foam",
@@ -430,7 +430,7 @@ ARTICLES = [
             "description": "High-quality, CertiPUR-US certified orthopedic foam for large breeds, engineered for joint support and longevity.",
             "pros": "Exceptional support, no harmful chemicals, machine-washable cover",
             "cons": "Premium price, very large footprint",
-            "asin": "B0794K4B87"
+            "url": "https://www.amazon.com/s?k=Big+Barker+7%5C&tag=myeverydaymat-20"
         },
         {
             "name": "Molly Mutt Dog Bed Duvet Cover - Natural Organic Cotton Canvas",
@@ -438,7 +438,7 @@ ARTICLES = [
             "description": "An organic cotton canvas duvet cover allowing you to fill with your own chemical-free materials like old clothes, blankets, or natural fibers.",
             "pros": "Customizable, uses existing materials, easy to wash, truly natural",
             "cons": "Requires self-filling, not a complete bed solution",
-            "asin": "B00B298J1Y"
+            "url": "https://www.amazon.com/s?k=Molly+Mutt+Dog+Bed+Duvet+Cover+-+Natural+Organic+Cotton+Canvas&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -487,7 +487,7 @@ ARTICLES = [
             "description": "A soap-free, paraben-free, and sulfate-free shampoo formulated for sensitive skin. Explicitly fragrance-free.",
             "pros": "No synthetic fragrances, gentle, natural ingredients",
             "cons": "May be less effective on very strong odors, can be pricier",
-            "asin": "B0006L2X7K"
+            "url": "https://www.amazon.com/s?k=Earthbath+All+Natural+Oatmeal+%26+Aloe+Pet+Shampoo&tag=myeverydaymat-20"
         },
         {
             "name": "Pogi's Pet Supplies Grooming Wipes, Fragrance-Free",
@@ -495,7 +495,7 @@ ARTICLES = [
             "description": "Hypoallergenic, plant-based wipes explicitly labeled fragrance-free, suitable for sensitive pets.",
             "pros": "Completely fragrance-free, large and durable wipes, biodegradable",
             "cons": "Can dry out if not sealed properly, still a disposable product",
-            "asin": "B079237JRL"
+            "url": "https://www.amazon.com/s?k=Pogi%27s+Pet+Supplies+Grooming+Wipes%2C+Fragrance-Free&tag=myeverydaymat-20"
         },
         {
             "name": "Burt's Bees for Dogs Natural Shedding Shampoo, Fragrance-Free",
@@ -503,7 +503,7 @@ ARTICLES = [
             "description": "A pH-balanced, natural shedding shampoo from a trusted brand, formulated without added fragrances or harsh chemicals.",
             "pros": "Natural ingredients, promotes healthy coat, no added fragrance",
             "cons": "Specific for shedding, may not be suitable for all coat types",
-            "asin": "B01J416J4I"
+            "url": "https://www.amazon.com/s?k=Burt%27s+Bees+for+Dogs+Natural+Shedding+Shampoo%2C+Fragrance-Free&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -552,7 +552,7 @@ ARTICLES = [
             "description": "Constructed with real wood posts wrapped in sisal, offering a sturdy, natural scratching and climbing experience.",
             "pros": "Solid wood construction, natural sisal, durable",
             "cons": "Simpler design, may not have plush elements",
-            "asin": "B0006L2B32"
+            "url": "https://www.amazon.com/s?k=SmartCat+Multi-Level+Cat+Climber%2C+Natural+Wood&tag=myeverydaymat-20"
         },
         {
             "name": "The Refined Feline Lotus Cat Tower, Espresso",
@@ -560,7 +560,7 @@ ARTICLES = [
             "description": "A stylish cat tower built with solid wood frames (plywood) and sisal scratching pads, offering a more contemporary and less toxic option.",
             "pros": "Modern design, sturdy plywood, replaceable parts, sisal scratching",
             "cons": "Higher price point, still uses wood-based product (plywood)",
-            "asin": "B007B0F3U8"
+            "url": "https://www.amazon.com/s?k=The+Refined+Feline+Lotus+Cat+Tower%2C+Espresso&tag=myeverydaymat-20"
         },
         {
             "name": "CatastrophiCreations Cat Mod - Sisal Pole System - Wall-Mounted",
@@ -568,7 +568,7 @@ ARTICLES = [
             "description": "A customizable wall-mounted system made from solid pine wood and natural sisal, offering vertical space without particleboard.",
             "pros": "Solid wood construction, natural sisal, space-saving, low VOC",
             "cons": "Requires installation, less of a traditional 'tree'",
-            "asin": "B01N13A23K"
+            "url": "https://www.amazon.com/s?k=CatastrophiCreations+Cat+Mod+-+Sisal+Pole+System+-+Wall-Mounted&tag=myeverydaymat-20"
         }
     ],
     "sources": [

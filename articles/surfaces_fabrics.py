@@ -32,7 +32,7 @@ ARTICLES = [
             "description": "Made from natural latex, inherently flame resistant without added chemicals, suitable for cushioning.",
             "pros": "Hypoallergenic, durable, chemical-free, supportive",
             "cons": "Heavy, can be expensive, distinct natural scent initially",
-            "asin": "B08B3QJ542"
+            "url": "https://www.amazon.com/s?k=Natural+Latex+Mattress+Topper&tag=myeverydaymat-20"
         },
         {
             "name": "Brentwood Home Organic Wool Crib Mattress",
@@ -40,7 +40,7 @@ ARTICLES = [
             "description": "Uses organic wool as a natural flame barrier, illustrating a safer material choice for furniture components.",
             "pros": "Naturally flame resistant, breathable, temperature regulating",
             "cons": "Higher cost, not directly a sofa, but uses similar principles",
-            "asin": "B079LBB9P1"
+            "url": "https://www.amazon.com/s?k=Brentwood+Home+Organic+Wool+Crib+Mattress&tag=myeverydaymat-20"
         },
         {
             "name": "Avocado Green Mattress (Natural & Organic)",
@@ -48,7 +48,7 @@ ARTICLES = [
             "description": "Demonstrates a commitment to natural materials like GOLS certified organic latex and GOTS organic wool and cotton, without flame retardants.",
             "pros": "Certified organic, non-toxic, sustainable, durable",
             "cons": "Premium price point, heavy",
-            "asin": "B06XGB8R2F"
+            "url": "https://www.amazon.com/s?k=Avocado+Green+Mattress+%28Natural+%26+Organic%29&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -97,7 +97,7 @@ ARTICLES = [
             "description": "Pure, untreated organic cotton for various home uses, inherently PFAS-free.",
             "pros": "Breathable, soft, sustainable, chemical-free",
             "cons": "Prone to staining, requires careful cleaning",
-            "asin": "B0892G6S1G"
+            "url": "https://www.amazon.com/s?k=Organic+Cotton+Fabric+by+the+Yard&tag=myeverydaymat-20"
         },
         {
             "name": "Wool Throw Blanket",
@@ -105,7 +105,7 @@ ARTICLES = [
             "description": "Wool is naturally stain and odor-resistant due to its lanolin content, without added chemicals.",
             "pros": "Naturally water-repellent (due to lanolin), breathable, durable, warm",
             "cons": "Can be itchy for some, requires gentle cleaning",
-            "asin": "B0CHW5F9G8"
+            "url": "https://www.amazon.com/s?k=Wool+Throw+Blanket&tag=myeverydaymat-20"
         },
         {
             "name": "Hemp Canvas Fabric",
@@ -113,7 +113,7 @@ ARTICLES = [
             "description": "Durable and robust hemp fabric, an excellent natural alternative for upholstery or bags.",
             "pros": "Extremely durable, sustainable, naturally resistant to mold and mildew",
             "cons": "Can be coarser than cotton, requires more initial breaking-in",
-            "asin": "B07Q44R5K2"
+            "url": "https://www.amazon.com/s?k=Hemp+Canvas+Fabric&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -166,7 +166,7 @@ ARTICLES = [
             "description": "A sample representing real linoleum flooring, made from natural materials, phthalate-free.",
             "pros": "Natural, durable, antibacterial, environmentally friendly",
             "cons": "Can be more expensive than vinyl, installation can be specialized",
-            "asin": "B002XW70I6"
+            "url": "https://www.amazon.com/s?k=Forbo+Marmoleum+Click+Cinch+Loc+Flooring+%28Sample%29&tag=myeverydaymat-20"
         },
         {
             "name": "AMZBASE Cork Coasters",
@@ -174,7 +174,7 @@ ARTICLES = [
             "description": "While coasters, these exemplify cork, a natural, sustainable, and phthalate-free material for flooring.",
             "pros": "Natural, renewable, soft underfoot, sound-absorbing",
             "cons": "Less water resistant than tile, can be susceptible to scratches",
-            "asin": "B0B8Y47Y1M"
+            "url": "https://www.amazon.com/s?k=AMZBASE+Cork+Coasters&tag=myeverydaymat-20"
         },
         {
             "name": "MSI Carrara White 12 in. x 24 in. Ceramic Floor and Wall Tile (Sample)",
@@ -182,7 +182,7 @@ ARTICLES = [
             "description": "An inert and durable ceramic tile sample, free from plasticizers and VOCs.",
             "pros": "Extremely durable, waterproof, easy to clean, no chemical emissions",
             "cons": "Hard underfoot, can be cold, grout requires maintenance",
-            "asin": "B08R9P964N"
+            "url": "https://www.amazon.com/s?k=MSI+Carrara+White+12+in.+x+24+in.+Ceramic+Floor+and+Wall+Tile+%28Sample%29&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -235,7 +235,7 @@ ARTICLES = [
             "description": "A sample of solid bamboo flooring, a sustainable and potentially low-formaldehyde alternative if certified.",
             "pros": "Sustainable, durable, elegant aesthetic, can be low-VOC",
             "cons": "Can scratch, quality varies, adhesives used in construction can contain formaldehyde if not certified",
-            "asin": "B079D8967N"
+            "url": "https://www.amazon.com/s?k=Bamboo+Flooring+Sample&tag=myeverydaymat-20"
         },
         {
             "name": "Floor & Decor Ceramo Tile 12x24 Grey Porcelain Tile",
@@ -243,7 +243,7 @@ ARTICLES = [
             "description": "Porcelain tile is an inert, non-emitting alternative to laminate flooring.",
             "pros": "Extremely durable, waterproof, zero VOCs or formaldehyde, easy to clean",
             "cons": "Hard and cold underfoot, requires professional installation, grout can stain",
-            "asin": "B0BQ9S7W2D"
+            "url": "https://www.amazon.com/s?k=Floor+%26+Decor+Ceramo+Tile+12x24+Grey+Porcelain+Tile&tag=myeverydaymat-20"
         },
         {
             "name": "Solid Hardwood Flooring Plank (Example)",
@@ -251,7 +251,7 @@ ARTICLES = [
             "description": "Illustrates solid hardwood, which is inherently formaldehyde-free if unfinished, or low-VOC if finished with safe sealants.",
             "pros": "Long-lasting, refinishable, naturally low-VOC (if proper finish), adds value",
             "cons": "More expensive, susceptible to moisture damage, requires maintenance",
-            "asin": "B0CHW61V7P"
+            "url": "https://www.amazon.com/s?k=Solid+Hardwood+Flooring+Plank+%28Example%29&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -304,7 +304,7 @@ ARTICLES = [
             "description": "Made from 100% organic wool, this rug is naturally low in VOCs and resistant to stains.",
             "pros": "Naturally low-VOC, durable, soft, inherently flame-resistant, good insulator",
             "cons": "Can be expensive, requires professional cleaning for deep stains",
-            "asin": "B0BNY8361R"
+            "url": "https://www.amazon.com/s?k=Organic+Wool+Area+Rug&tag=myeverydaymat-20"
         },
         {
             "name": "Natural Jute Area Rug",
@@ -312,7 +312,7 @@ ARTICLES = [
             "description": "An eco-friendly and durable rug made from sustainable jute fibers, free from synthetic chemicals.",
             "pros": "Sustainable, durable, affordable, naturally low-VOC",
             "cons": "Can be rough in texture, less soft than wool, not ideal for wet areas",
-            "asin": "B0BQ567J9W"
+            "url": "https://www.amazon.com/s?k=Natural+Jute+Area+Rug&tag=myeverydaymat-20"
         },
         {
             "name": "Handmade Cotton Braided Area Rug",
@@ -320,7 +320,7 @@ ARTICLES = [
             "description": "Made from 100% cotton, offering a soft, washable, and chemical-free alternative.",
             "pros": "Soft, washable (for smaller sizes), chemical-free, breathable",
             "cons": "Less durable than wool or jute, prone to staining, can attract dust",
-            "asin": "B0BC82M7HB"
+            "url": "https://www.amazon.com/s?k=Handmade+Cotton+Braided+Area+Rug&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -373,7 +373,7 @@ ARTICLES = [
             "description": "Made from 100% natural Dunlop latex, offering comfort without synthetic foams or chemical flame retardants.",
             "pros": "Hypoallergenic, durable, low VOC emissions, responsive support",
             "cons": "Can be heavy, initial natural latex odor for some",
-            "asin": "B07QJ8YQ9P"
+            "url": "https://www.amazon.com/s?k=Sleep+On+Latex+Pure+Green+Natural+Latex+Mattress+Topper&tag=myeverydaymat-20"
         },
         {
             "name": "Avocado Green Mattress (Natural & Organic Certified)",
@@ -381,7 +381,7 @@ ARTICLES = [
             "description": "Combines natural latex, organic wool, and organic cotton with an innerspring system for breathable, non-toxic sleep.",
             "pros": "GOLS, GOTS, and GREENGUARD Gold certified, excellent support, durable",
             "cons": "Higher price point, heavy to move",
-            "asin": "B0C873327K"
+            "url": "https://www.amazon.com/s?k=Avocado+Green+Mattress+%28Natural+%26+Organic+Certified%29&tag=myeverydaymat-20"
         },
         {
             "name": "Birch by Helix Natural Mattress",
@@ -438,7 +438,7 @@ ARTICLES = [
             "description": "Beautiful, durable solid acacia wood planks, free from engineered wood adhesives and formaldehyde.",
             "pros": "Naturally low VOC, long-lasting, can be refinished multiple times",
             "cons": "Higher cost, more susceptible to moisture changes than engineered wood",
-            "asin": "B09M7Y3V1M"
+            "url": "https://www.amazon.com/s?k=Acacia+Solid+Hardwood+Flooring&tag=myeverydaymat-20"
         },
         {
             "name": "Bamboo Hardwood Flooring (Solid Strand Woven)",
@@ -454,7 +454,7 @@ ARTICLES = [
             "description": "A rigid core vinyl plank flooring that is phthalate-free and often GREENGUARD Gold certified for low emissions.",
             "pros": "Waterproof, highly durable, often low VOC, easy installation",
             "cons": "Synthetic material, can feel less natural than wood",
-            "asin": "B0C7XY7Q9N"
+            "url": "https://www.amazon.com/s?k=COREtec+Plus+Enhanced+Vinyl+Plank+%28SPC%29&tag=myeverydaymat-20"
         },
         {
             "name": "Wicanders Cork Go Floating Floor",
@@ -462,7 +462,7 @@ ARTICLES = [
             "description": "Natural cork planks offering excellent insulation and comfort, often produced with low-emission adhesives.",
             "pros": "Renewable, soft underfoot, sound dampening, can be low VOC",
             "cons": "Can be susceptible to scratches and dents, less common aesthetic",
-            "asin": "B0B7F8L74V"
+            "url": "https://www.amazon.com/s?k=Wicanders+Cork+Go+Floating+Floor&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -511,7 +511,7 @@ ARTICLES = [
             "description": "Hardwood plywood panels that utilize soy-based, formaldehyde-free adhesives, ideal for cabinetry and furniture where low emissions are critical.",
             "pros": "Zero formaldehyde emissions, strong, durable, widely available",
             "cons": "Higher cost than standard UF plywood, may not be rated for subfloor use directly",
-            "asin": "B0BQ2R1T1S"
+            "url": "https://www.amazon.com/s?k=Columbia+PureBond+Hardwood+Plywood+%28NAUF%29&tag=myeverydaymat-20"
         },
         {
             "name": "Ply-Gem Pine Project Panel",
@@ -519,7 +519,7 @@ ARTICLES = [
             "description": "Solid pine wood panels for various DIY projects, offering a formaldehyde-free alternative to composite wood sheets.",
             "pros": "Natural, no formaldehyde, easy to work with",
             "cons": "Not designed as structural subflooring, smaller sizes",
-            "asin": "B09V7N4W2T"
+            "url": "https://www.amazon.com/s?k=Ply-Gem+Pine+Project+Panel&tag=myeverydaymat-20"
         },
         {
             "name": "Bamboo Plywood Sheets",
@@ -527,7 +527,7 @@ ARTICLES = [
             "description": "Environmentally friendly bamboo plywood, often produced with low-VOC or formaldehyde-free adhesives, suitable for furniture or panels.",
             "pros": "Sustainable, attractive, can be very low VOC",
             "cons": "Often imported, ensure specific low-emission claims are verified, higher cost",
-            "asin": "B0CBYT8V51"
+            "url": "https://www.amazon.com/s?k=Bamboo+Plywood+Sheets&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -576,7 +576,7 @@ ARTICLES = [
             "description": "Constructed from solid pine wood with a rustic finish, offering a durable and formaldehyde-free alternative to composite tables.",
             "pros": "Natural wood, sturdy, low VOC if using safe finishes",
             "cons": "Can be heavy, susceptible to scratches",
-            "asin": "B09W5X175Y"
+            "url": "https://www.amazon.com/s?k=Signature+Design+by+Ashley+Trinell+Rustic+Dining+Table&tag=myeverydaymat-20"
         },
         {
             "name": "Amazon Basics 5-Shelf Adjustable, Heavy Duty Storage Shelving Unit",
@@ -584,7 +584,7 @@ ARTICLES = [
             "description": "Industrial-grade steel shelving unit, offering robust storage without any wood composites or formaldehyde glues.",
             "pros": "Extremely durable, chemical-free, easy to assemble",
             "cons": "Aesthetic may not suit all decors, can be heavy",
-            "asin": "B0BS883Q44"
+            "url": "https://www.amazon.com/s?k=Amazon+Basics+5-Shelf+Adjustable%2C+Heavy+Duty+Storage+Shelving+Unit&tag=myeverydaymat-20"
         },
         {
             "name": "HOOBRO Bamboo Bookcase 5-Tier",
@@ -592,7 +592,7 @@ ARTICLES = [
             "description": "Freestanding bookshelf made from natural bamboo, a sustainable and often low-emission alternative to particle board.",
             "pros": "Renewable resource, lightweight yet strong, attractive natural finish",
             "cons": "May be less durable than solid hardwood, ensure specific glues used are low-VOC",
-            "asin": "B0BNW1R2L1"
+            "url": "https://www.amazon.com/s?k=HOOBRO+Bamboo+Bookcase+5-Tier&tag=myeverydaymat-20"
         },
         {
             "name": "Sauder Edge Water Collection Storage Cabinet (CARB Compliant)",
@@ -600,7 +600,7 @@ ARTICLES = [
             "description": "A storage cabinet constructed with engineered wood panels that meet CARB Phase 2 compliance for reduced formaldehyde emissions.",
             "pros": "Affordable, meets emission standards, variety of styles",
             "cons": "Still an engineered wood product, not entirely formaldehyde-free",
-            "asin": "B0BZ48C21S"
+            "url": "https://www.amazon.com/s?k=Sauder+Edge+Water+Collection+Storage+Cabinet+%28CARB+Compliant%29&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -649,7 +649,7 @@ ARTICLES = [
             "description": "Light filtering curtains made from a linen and cotton blend, focusing on natural fibers and an untreated finish.",
             "pros": "Breathable, natural aesthetic, less likely to contain harsh chemicals",
             "cons": "May wrinkle easily, not blackout",
-            "asin": "B0BNW1L2K1"
+            "url": "https://www.amazon.com/s?k=Nicetown+Linen+Blend+Sheer+Curtains+%28Untreated%29&tag=myeverydaymat-20"
         },
         {
             "name": "Deconovo 100% Blackout Cotton Curtains (Untreated)",
@@ -657,7 +657,7 @@ ARTICLES = [
             "description": "Heavy-duty blackout curtains made from 100% organic cotton, offering light blocking without chemical treatments.",
             "pros": "Effective light blocking, natural material, GOTS certified (if available, assume for this entry)",
             "cons": "Can be heavier, may require specific care",
-            "asin": "B0BG53X21K"
+            "url": "https://www.amazon.com/s?k=Deconovo+100%25+Blackout+Cotton+Curtains+%28Untreated%29&tag=myeverydaymat-20"
         },
         {
             "name": "Arlo Blinds Bamboo Roman Shade",
@@ -665,7 +665,7 @@ ARTICLES = [
             "description": "Natural bamboo roll-up blinds, a simple and elegant window covering free from synthetic fabrics and chemical treatments.",
             "pros": "Natural material, sustainable, easy to install, no fabric-based chemicals",
             "cons": "Limited light control compared to fabric, delicate slats",
-            "asin": "B0BT4X21W9"
+            "url": "https://www.amazon.com/s?k=Arlo+Blinds+Bamboo+Roman+Shade&tag=myeverydaymat-20"
         },
         {
             "name": "Radiance Imperial Matchstick Jute Roll Up Blind",
@@ -673,7 +673,7 @@ ARTICLES = [
             "description": "Hand-woven jute roll-up blinds providing natural texture and light filtration, avoiding synthetic fabrics.",
             "pros": "Sustainable, natural look, chemical-free material",
             "cons": "Not blackout, can be less durable than wood, some shedding",
-            "asin": "B07DGFK78D"
+            "url": "https://www.amazon.com/s?k=Radiance+Imperial+Matchstick+Jute+Roll+Up+Blind&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -722,7 +722,7 @@ ARTICLES = [
             "description": "A stylish, self-adhesive wallpaper designed to mimic natural grasscloth, typically PVC and phthalate-free, offering an easy, low-VOC application.",
             "pros": "Peel and stick for easy installation, often PVC-free, low-VOC options available, natural aesthetic.",
             "cons": "May not be truly natural grasscloth (check specifics), adhesive quality varies.",
-            "asin": "B08R789D42"
+            "url": "https://www.amazon.com/s?k=NuWallpaper+Gray+Grasscloth+Peel+%26+Stick+Wallpaper&tag=myeverydaymat-20"
         },
         {
             "name": "Tempaper Grasscloth Removable Peel and Stick Wallpaper",
@@ -730,7 +730,7 @@ ARTICLES = [
             "description": "Another removable peel-and-stick option, aiming for a grasscloth look without the traditional vinyl. Designed for easy removal and often low in VOCs.",
             "pros": "DIY-friendly, removable, often free of PVC and phthalates, diverse designs.",
             "cons": "Durability can vary compared to traditional wallpaper, requires careful surface prep.",
-            "asin": "B074QY9J5R"
+            "url": "https://www.amazon.com/s?k=Tempaper+Grasscloth+Removable+Peel+and+Stick+Wallpaper&tag=myeverydaymat-20"
         },
         {
             "name": "Spoonflower Peel and Stick Wallpaper, Solid White",
@@ -738,7 +738,7 @@ ARTICLES = [
             "description": "A popular option for custom and plain non-vinyl wallpapers, made from woven polyester fabric with a low-tack adhesive. Free of PVC and phthalates.",
             "pros": "Customizable, PVC and phthalate-free, easy to install and remove, breathable.",
             "cons": "Can be more expensive, less durable than vinyl for high-traffic areas.",
-            "asin": "B07C43WJ5V"
+            "url": "https://www.amazon.com/s?k=Spoonflower+Peel+and+Stick+Wallpaper%2C+Solid+White&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -787,7 +787,7 @@ ARTICLES = [
             "description": "Soft and breathable sheets made from GOTS certified 100% organic cotton, ensuring no harmful chemicals from growth to production.",
             "pros": "GOTS certified, breathable, durable, free from synthetic chemicals.",
             "cons": "May wrinkle more than synthetic options, initial cost can be higher.",
-            "asin": "B09Z4V3Z2Y"
+            "url": "https://www.amazon.com/s?k=Amazon+Basics+Organic+Cotton+Sheet+Set&tag=myeverydaymat-20"
         },
         {
             "name": "Luxor Linens Organic Cotton Duvet Cover",
@@ -795,7 +795,7 @@ ARTICLES = [
             "description": "A premium organic cotton duvet cover, prioritizing natural materials and sustainable production for a healthy sleep environment.",
             "pros": "100% organic, soft and comfortable, environmentally friendly.",
             "cons": "Can be expensive, requires gentle care.",
-            "asin": "B0B88K7W6S"
+            "url": "https://www.amazon.com/s?k=Luxor+Linens+Organic+Cotton+Duvet+Cover&tag=myeverydaymat-20"
         },
         {
             "name": "Sijo Eucalyptus Tencel Lyocell Sheet Set",
@@ -803,7 +803,7 @@ ARTICLES = [
             "description": "Luxuriously soft and cooling sheets made from 100% Tencel Lyocell, known for its moisture-wicking and hypoallergenic properties.",
             "pros": "Extremely soft, breathable, sustainable production, hypoallergenic.",
             "cons": "Can be delicate, higher price point.",
-            "asin": "B0B84D2FHN"
+            "url": "https://www.amazon.com/s?k=Sijo+Eucalyptus+Tencel+Lyocell+Sheet+Set&tag=myeverydaymat-20"
         },
         {
             "name": "Pendleton Eco-Wise Washable Wool Blanket",
@@ -811,7 +811,7 @@ ARTICLES = [
             "description": "A high-quality, washable wool blanket that provides natural warmth and breathability, free from harmful chemical treatments.",
             "pros": "Naturally flame resistant, excellent temperature regulation, durable, eco-friendly.",
             "cons": "Can be heavier than synthetic blankets, requires specific washing care.",
-            "asin": "B01LZA595L"
+            "url": "https://www.amazon.com/s?k=Pendleton+Eco-Wise+Washable+Wool+Blanket&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -864,7 +864,7 @@ ARTICLES = [
             "description": "A sample of solid hardwood flooring, representing a natural, low-VOC alternative to stranded bamboo when paired with appropriate finishes.",
             "pros": "Natural material, durable, can be refinished multiple times, typically low VOC with modern finishes.",
             "cons": "Can be expensive, susceptible to moisture, requires professional installation.",
-            "asin": "B0738Q793R"
+            "url": "https://www.amazon.com/s?k=Cali+Bamboo+French+Oak+Hardwood+Flooring+Sample&tag=myeverydaymat-20"
         },
         {
             "name": "MSI Take Home Sample - Carrara White Ceramic Wall Tile",
@@ -872,7 +872,7 @@ ARTICLES = [
             "description": "A sample of ceramic tile, an inert and non-off-gassing flooring material when installed with low-VOC mortar and grout.",
             "pros": "Extremely durable, waterproof, zero VOCs (from tile itself), versatile designs.",
             "cons": "Hard underfoot, can be cold, grout lines require maintenance.",
-            "asin": "B07GFQ152F"
+            "url": "https://www.amazon.com/s?k=MSI+Take+Home+Sample+-+Carrara+White+Ceramic+Wall+Tile&tag=myeverydaymat-20"
         },
         {
             "name": "Cali Bamboo Engineered Hardwood Flooring Sample",
@@ -880,7 +880,7 @@ ARTICLES = [
             "description": "A sample of engineered hardwood from a brand known for sustainability, potentially offering lower-VOC adhesive options compared to conventional engineered floors.",
             "pros": "More stable than solid wood, can be installed in more areas, many brands offer low-VOC options.",
             "cons": "Still uses adhesives (verify type), wear layer can be thin, cannot be refinished as often as solid wood.",
-            "asin": "B08622W8L2"
+            "url": "https://www.amazon.com/s?k=Cali+Bamboo+Engineered+Hardwood+Flooring+Sample&tag=myeverydaymat-20"
         }
     ],
     "sources": [
@@ -929,7 +929,7 @@ ARTICLES = [
             "description": "A sample of solid hardwood flooring, offering a naturally derived, durable option that, when finished with low-VOC products, is an excellent healthy home choice.",
             "pros": "Natural, long-lasting, can be refinished, zero VOC from wood itself.",
             "cons": "Requires specific care, susceptible to moisture, can be costly.",
-            "asin": "B0738Q793R"
+            "url": "https://www.amazon.com/s?k=Cali+Bamboo+French+Oak+Hardwood+Flooring+Sample&tag=myeverydaymat-20"
         },
         {
             "name": "MSI Take Home Sample - Carrara White Ceramic Wall Tile",
@@ -937,7 +937,7 @@ ARTICLES = [
             "description": "An inert and naturally non-emitting material for flooring, ideal for kitchens and bathrooms when installed with low-VOC thin-set and grout.",
             "pros": "Zero VOC emissions, extremely durable, water-resistant, easy to clean.",
             "cons": "Can be cold and hard underfoot, installation can be labor-intensive.",
-            "asin": "B07GFQ152F"
+            "url": "https://www.amazon.com/s?k=MSI+Take+Home+Sample+-+Carrara+White+Ceramic+Wall+Tile&tag=myeverydaymat-20"
         },
         {
             "name": "Cali Bamboo Engineered Hardwood Flooring Sample",
@@ -945,7 +945,7 @@ ARTICLES = [
             "description": "A sample of engineered hardwood from a brand that emphasizes low-VOC formulations in their adhesives and finishes, providing a more stable wood alternative.",
             "pros": "More stable than solid wood, suitable for wider range of environments, low-VOC options available.",
             "cons": "Still contains adhesives (check specs), thinner wear layer than solid wood.",
-            "asin": "B08622W8L2"
+            "url": "https://www.amazon.com/s?k=Cali+Bamboo+Engineered+Hardwood+Flooring+Sample&tag=myeverydaymat-20"
         },
         {
             "name": "Amorim Wise Inspire 700 WoodLook Cork Flooring Sample",
@@ -953,7 +953,7 @@ ARTICLES = [
             "description": "A sample from a brand known for its low-VOC and FloorScore certified cork flooring, representing a healthier cork option.",
             "pros": "FloorScore certified, sustainable, natural insulation, softer underfoot.",
             "cons": "May still have binders and finishes (though certified low-VOC), susceptible to scratches.",
-            "asin": "B08F6J731D"
+            "url": "https://www.amazon.com/s?k=Amorim+Wise+Inspire+700+WoodLook+Cork+Flooring+Sample&tag=myeverydaymat-20"
         }
     ],
     "sources": [

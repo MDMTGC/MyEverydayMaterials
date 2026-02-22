@@ -44,7 +44,7 @@ ARTICLES = [
                 "description": "Naturally durable cedar is a common alternative where food contact is a concern.",
                 "pros": "No pressure-treatment preservatives",
                 "cons": "Higher cost and periodic maintenance",
-                "asin": "B0C4M7R2X1",
+                "url": "https://www.amazon.com/s?k=Food-Safe+Cedar+for+Raised+Beds&tag=myeverydaymat-20",
             },
             {
                 "name": "Composite Deck Boards",
@@ -52,7 +52,7 @@ ARTICLES = [
                 "description": "Composite boards avoid preservative chemistry and can reduce splintering.",
                 "pros": "No arsenic legacy risk",
                 "cons": "Heat retention and upfront cost",
-                "asin": "B0BZT8L4M2",
+                "url": "https://www.amazon.com/s?k=Composite+Deck+Boards&tag=myeverydaymat-20",
             },
         ],
         "sources": [
@@ -95,7 +95,7 @@ ARTICLES = [
                 "description": "Good protection profile with lower solvent odor and easier cleanup.",
                 "pros": "Lower VOC burden",
                 "cons": "May need more frequent recoat",
-                "asin": "B0C2K9P8J5",
+                "url": "https://www.amazon.com/s?k=Water-Based+Low-VOC+Deck+Sealer&tag=myeverydaymat-20",
             },
             {
                 "name": "Plant-Oil Exterior Finish",
@@ -103,7 +103,7 @@ ARTICLES = [
                 "description": "Plant-oil products can reduce synthetic solvent exposure when used correctly.",
                 "pros": "Often simpler ingredient profile",
                 "cons": "Requires careful rag handling",
-                "asin": "B0BN7N5QF3",
+                "url": "https://www.amazon.com/s?k=Plant-Oil+Exterior+Finish&tag=myeverydaymat-20",
             },
         ],
         "sources": [
@@ -146,7 +146,7 @@ ARTICLES = [
                 "description": "Physical suppression of weeds reduces need for herbicide reapplication.",
                 "pros": "No pesticide drift",
                 "cons": "Labor and seasonal upkeep",
-                "asin": "B09ZK8R6Y4",
+                "url": "https://www.amazon.com/s?k=Weed+Barrier+%2B+Mulch+System&tag=myeverydaymat-20",
             },
             {
                 "name": "Manual Stand-Up Weeder",
@@ -154,7 +154,7 @@ ARTICLES = [
                 "description": "Root-level removal tool for regular maintenance without sprays.",
                 "pros": "Immediate, targeted control",
                 "cons": "Best for smaller areas",
-                "asin": "B07NQ5W3L8",
+                "url": "https://www.amazon.com/s?k=Manual+Stand-Up+Weeder&tag=myeverydaymat-20",
             },
         ],
         "sources": [
