@@ -37,3 +37,44 @@ publish = "public"
   from = "/kitchen"
   to = "/kitchen/"
   status = 301
+
+[[redirects]]
+  from = "/nursery"
+  to = "/nursery/"
+  status = 301
+
+[[redirects]]
+  from = "/pet-care"
+  to = "/pet-care/"
+  status = 301
+
+[[redirects]]
+  from = "/household"
+  to = "/household/"
+  status = 301
+
+[[redirects]]
+  from = "/personal-care"
+  to = "/personal-care/"
+  status = 301
+
+[[redirects]]
+  from = "/cleaning"
+  to = "/cleaning/"
+  status = 301
+
+[[redirects]]
+  from = "/tech"
+  to = "/tech/"
+  status = 301
+
+[[redirects]]
+  from = "/outdoor"
+  to = "/outdoor/"
+  status = 301
+
+# Custom 404
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
