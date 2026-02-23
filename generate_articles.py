@@ -390,23 +390,39 @@ def generate_article(article, all_articles, category_slug, related_map):
 
 def generate_category_index(category_slug, generated_articles, target_count):
     cat = CATEGORIES[category_slug]
-    links = "\n".join(f'        <li><a href="{slug}.html">{title}</a></li>' for slug, title in generated_articles)
+    
+    links_html = "\n".join(
+        f"""        <a href="{slug}.html" class="connect-link">
+          <div class="connect-type">Guide</div>
+          <div class="connect-title">{html.escape(title)} <span>&rarr;</span></div>
+        </a>"""
+        for slug, title in generated_articles
+    )
+
     return f"""<!DOCTYPE html>
-<html lang=\"en\"><head>
-  <meta charset=\"UTF-8\" />
-  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />
+<html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{cat['name']} &mdash; {SITE_NAME}</title>
-  <meta name=\"description\" content=\"{cat['description']}\" />
-  <link rel=\"canonical\" href=\"{SITE_URL}/{category_slug}/\" />
-  <link rel=\"stylesheet\" href=\"../css/style.css?v={CSS_VERSION}\" />
-  <link rel=\"icon\" href=\"../favicon.svg\" type=\"image/svg+xml\" />
+  <meta name="description" content="{cat['description']}" />
+  <link rel="canonical" href="{SITE_URL}/{category_slug}/" />
+  <link rel="stylesheet" href="../css/style.css?v={CSS_VERSION}" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
 </head><body>
-  <nav class=\"breadcrumb\"><a href=\"../\">&larr; {SITE_NAME}</a></nav>
-  <div class=\"category-header\"><h1>{cat['name']}</h1><p>{cat['tagline']}</p></div>
-  <p class=\"registry-meta\">{len(generated_articles)} published guides • {target_count} materials in catalog</p>
-  <main><ul class=\"category-list\">{links}
-    </ul></main>
-  <div class=\"site-footer\"><nav><a href=\"../about.html\">About</a><a href=\"../methodology.html\">Methodology</a><a href=\"../privacy.html\">Privacy Policy</a></nav><p class=\"copyright\">&copy; {date.today().year} {SITE_NAME}</p></div>
+  <nav class="breadcrumb"><a href="../">&larr; {SITE_NAME}</a></nav>
+  <div class="category-header">
+    <h1>{cat['name']}</h1>
+    <p class="dek">{cat['tagline']}</p>
+    <div class="alt-type" style="margin-bottom: 2rem;">{len(generated_articles)} published guides • {target_count} materials catalog</div>
+  </div>
+  <main>
+    <div class="connection-hub" style="margin-top: 0; border-top: none; padding-top: 0;">
+      <div class="connection-grid">
+{links_html}
+      </div>
+    </div>
+  </main>
+  <div class="site-footer"><nav><a href="../about.html">About</a><a href="../methodology.html">Methodology</a><a href="../privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></div>
 </body></html>
 """
 
@@ -418,28 +434,34 @@ def generate_homepage(catalog_by_category, generated_counts):
         published = generated_counts.get(cat_slug, 0)
         href = f"{cat_slug}/" if published else "#"
         state = "Live" if published else "In Progress"
-        cta = "Browse guides" if published else "Catalog preview"
-        sections.append(
-            f"""      <li class=\"material-row\"><a href=\"{href}\">\n        <div class=\"row-name\">{cat['name']}<span class=\"row-sub\">{cat['tagline']}</span></div>\n        <div class=\"row-status\"><span class=\"badge {'badge-safe' if published else 'badge-caution'}\">{state}</span></div>\n        <div class=\"row-alt\">{published}/{total} published &middot; {cta}</div>\n      </a></li>"""
-        )
+        
+        sections.append(f"""        <a href="{href}" class="connect-link">
+          <div class="connect-type">{published}/{total} Published &middot; {state}</div>
+          <div class="connect-title">{cat['name']} <span>&rarr;</span></div>
+          <p class="alt-desc" style="margin-top: 0.75rem; margin-bottom: 0;">{cat['tagline']}</p>
+        </a>""")
 
     html_out = f"""<!DOCTYPE html>
-<html lang=\"en\"><head>
-  <meta charset=\"UTF-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />
+<html lang="en"><head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{SITE_NAME} — Science-Backed Safety Guides for Your Home</title>
-  <meta name=\"description\" content=\"Browse 100 household material safety entries across 8 categories.\" />
-  <link rel=\"canonical\" href=\"{SITE_URL}/\" />
-  <link rel=\"stylesheet\" href=\"css/style.css?v={CSS_VERSION}\" />
-  <link rel=\"icon\" href=\"favicon.svg\" type=\"image/svg+xml\" />
+  <meta name="description" content="Browse 100 household material safety entries across 8 categories." />
+  <link rel="canonical" href="{SITE_URL}/" />
+  <link rel="stylesheet" href="css/style.css?v={CSS_VERSION}" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 </head><body>
-  <div class=\"hero\"><h1>{SITE_NAME}</h1><p class=\"tagline\">The Science of Your Home, Simplified.</p></div>
+  <div class="hero">
+    <h1>{SITE_NAME}</h1>
+    <p class="dek" style="margin-bottom: 0; color: rgba(255,255,255,0.9);">The Science of Your Home, Simplified.</p>
+  </div>
   <main>
-    <div class=\"section-label\"><h2>Safety Guide Categories</h2></div>
-    <p class=\"registry-meta\">Catalog: {sum(len(v) for v in catalog_by_category.values())} materials across 8 categories</p>
-    <div class=\"registry-header\"><span>Category</span><span style=\"text-align:center\">Status</span><span class=\"col-alt\">Coverage</span></div>
-    <ul class=\"material-grid\">\n{''.join(sections)}\n    </ul>
+    <div class="connection-hub" style="margin-top: 0; border-top: none; padding-top: 0;">
+      <h2 style="font-family: var(--serif); font-size: 2rem; margin-bottom: 0.5rem; color: var(--text-main);">Safety Guide Categories</h2>
+      <p class="dek">Browse {sum(len(v) for v in catalog_by_category.values())} household material safety entries across 8 categories.</p>
+      <div class="connection-grid">\n{chr(10).join(sections)}\n      </div>
+    </div>
   </main>
-  <div class=\"site-footer\"><nav><a href=\"about.html\">About</a><a href=\"methodology.html\">Methodology</a><a href=\"privacy.html\">Privacy Policy</a></nav><p class=\"copyright\">&copy; {date.today().year} {SITE_NAME}</p></div>
+  <div class="site-footer"><nav><a href="about.html">About</a><a href="methodology.html">Methodology</a><a href="privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></div>
 </body></html>
 """
     Path("index.html").write_text(html_out, encoding="utf-8")
