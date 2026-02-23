@@ -289,8 +289,11 @@ def build_related(slug, all_articles, related_map):
     related_slugs = related_map.get(slug, [])
     if not related_slugs:
         return ""
-    title_map = {a["slug"]: a["title"] for a in all_articles}
+    
+    # all_articles is already a dict mapping {slug: title}
+    title_map = all_articles
     links = []
+    
     for rs in related_slugs:
         target_slug = rs
         context = "Related Article"
@@ -299,12 +302,40 @@ def build_related(slug, all_articles, related_map):
                 context, target_slug = rs
             else:
                 target_slug = rs[0]
-        if target_slug in title_map:
-            links.append(f"""        <a href="{target_slug}.html" class="connect-link">\n          <div class="connect-type">{html.escape(context)}</div>\n          <div class="connect-title">{html.escape(title_map[target_slug])} <span>&rarr;</span></div>\n        </a>""")
+        
+        target_title = title_map.get(target_slug)
+        if not target_title:
+            continue
+            
+        # Discover category of target_slug by searching the overall catalog
+        # Since this runs inside build_related we can import overall dict from generation scope
+        target_category = ""
+        for cat_key, arts in grouped_material_rows().items():
+            if any(a.get("slug") == target_slug for a in arts):
+                target_category = cat_key
+                break
+        
+        # Fallback to the first word of the slug if category isn't found
+        if not target_category:
+            target_category = target_slug.split('-')[0]
+            
+        links.append(
+            f"""        <a href="../{target_category}/{target_slug}.html" class="connect-link">
+          <div class="connect-type">{html.escape(context)}</div>
+          <div class="connect-title">{target_title} <span>&rarr;</span></div>
+        </a>"""
+        )
+        
     if not links:
         return ""
-    cards_html = "\n".join(links)
-    return f"""    <div class=\"connection-hub\">\n      <h3>Explore Connections</h3>\n      <p>Dive deeper into related hazards, similar chemical profiles, or safe material equivalents on our site.</p>\n      <div class=\"connection-grid\">\n{cards_html}\n      </div>\n    </div>"""
+        
+    return f"""    <div class="connection-hub">
+      <h2 style="font-family: var(--serif); font-size: 1.75rem; color: var(--text-main); margin-bottom: 0.5rem; border: none; margin-top: 0;">Explore Connections</h2>
+      <p style="color: var(--text-muted); margin-bottom: 2rem;">Dive deeper into related hazards, similar chemical profiles, or safe material equivalents.</p>
+      <div class="connection-grid">
+{chr(10).join(links)}
+      </div>
+    </div>"""
 
 
 def convert_to_fact_cards(content):
@@ -329,60 +360,63 @@ def generate_article(article, all_articles, category_slug, related_map):
     plain_desc = html.escape(article["meta_description"], quote=True)
     today = date.today().isoformat()
     
-    v_raw = article.get('verdict_rating', 'Caution')
-    v_bubble = html.escape(v_raw.split(' — ')[0]) if ' — ' in v_raw else html.escape(v_raw)
-    v_title = html.escape("Research-Weighted Household Verdict")
+    v_raw = unescape(article.get('verdict_rating', 'Caution'))
+    v_bubble = v_raw.split(' — ')[0] if ' — ' in v_raw else v_raw
+    v_title = "Research-Weighted Household Verdict"
 
     sections_html = "\n\n".join(f'    <h2 id="{s["id"]}">{s["heading"]}</h2>\n    {convert_to_fact_cards(s["content"]).strip()}' for s in article["sections"])
 
     return f"""<!DOCTYPE html>
-<html lang=\"en\">
+<html lang="en">
 <head>
-  <meta charset=\"UTF-8\" />
-  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{article['title']} &mdash; {SITE_NAME}</title>
-  <meta name=\"description\" content=\"{plain_desc}\" />
-  <link rel=\"canonical\" href=\"{canonical}\" />
-  <meta property=\"og:type\" content=\"article\" />
-  <meta property=\"og:title\" content=\"{plain_title}\" />
-  <meta property=\"og:description\" content=\"{plain_desc}\" />
-  <meta property=\"og:url\" content=\"{canonical}\" />
-  <meta property=\"og:site_name\" content=\"{SITE_NAME}\" />
-  <meta name=\"twitter:card\" content=\"summary\" />
-  <meta name=\"twitter:title\" content=\"{plain_title}\" />
-  <meta name=\"twitter:description\" content=\"{plain_desc}\" />
-  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" />
-  <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin />
-  <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap\" />
-  <link rel=\"icon\" href=\"../favicon.svg\" type=\"image/svg+xml\" />
-  <link rel=\"stylesheet\" href=\"../css/style.css?v={CSS_VERSION}\" />
+  <meta name="description" content="{plain_desc}" />
+  <link rel="canonical" href="{canonical}" />
+  <meta property="og:title" content="{plain_title}" />
+  <meta property="og:description" content="{plain_desc}" />
+  <meta property="og:url" content="{canonical}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="{SITE_NAME}" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="{plain_title}" />
+  <meta name="twitter:description" content="{plain_desc}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../css/style.css?v={CSS_VERSION}" />
 </head>
 <body>
-  <nav class=\"breadcrumb\"><a href=\"../\">&larr; {SITE_NAME}</a></nav>
-  <article>
+  <header>
+    <a href="../" class="brand">{SITE_NAME}</a>
+    <span class="category-pill">{CATEGORIES.get(category_slug, {}).get("name", category_slug.title()).replace("&amp;", "&")}</span>
+  </header>
+  <main>
     <h1>{article['title']}</h1>
-    <div class=\"editors-note\">{EDITORS_NOTE}</div>
-    <div class=\"verdict-card {article['verdict_level']}\">
-      <div class=\"verdict-header\">
-        <span class=\"verdict-bubble\">{v_bubble}</span>
-        <span class=\"verdict-title\">{v_title}</span>
+    <p class="title-dek">{plain_desc}</p>
+    <div class="editors-note">{EDITORS_NOTE}</div>
+    <div class="verdict-card {article['verdict_level']}">
+      <div class="verdict-header">
+        <span class="verdict-bubble">{v_bubble}</span>
+        <span class="verdict-title">{v_title}</span>
       </div>
-      <p class=\"verdict-text\">{article['verdict_summary']}</p>
+      <p class="verdict-text">{html.escape(article['verdict_summary'])}</p>
     </div>
 {build_toc(article['sections'])}
 {sections_html}
-    <h2 id=\"alternatives\">Better Alternatives</h2>
-    <div class=\"alternatives-grid\">{build_alternatives(article['alternatives'])}
-    </div>
-    <div class=\"sources\">
-      <h2 id=\"sources\">Sources</h2>
+    <h2 id="alternatives">Better Alternatives</h2>
+    {build_alternatives(article['alternatives'])}
+    <div class="sources">
+      <h2 id="sources">Sources</h2>
       <ol>
 {build_sources(article['sources'])}
       </ol>
     </div>
 {build_related(article['slug'], all_articles, related_map)}
-  </article>
-  <div class=\"site-footer\"><nav><a href=\"../about.html\">About</a><a href=\"../methodology.html\">Methodology</a><a href=\"../privacy.html\">Privacy Policy</a></nav><p class=\"copyright\">&copy; {today[:4]} {SITE_NAME}</p></div>
+  </main>
+  <div class="site-footer"><nav><a href="../about.html">About</a><a href="../methodology.html">Methodology</a><a href="../privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {today[:4]} {SITE_NAME}</p></div>
 </body>
 </html>
 """
@@ -394,7 +428,7 @@ def generate_category_index(category_slug, generated_articles, target_count):
     links_html = "\n".join(
         f"""        <a href="{slug}.html" class="connect-link">
           <div class="connect-type">Guide</div>
-          <div class="connect-title">{html.escape(title)} <span>&rarr;</span></div>
+          <div class="connect-title">{title} <span>&rarr;</span></div>
         </a>"""
         for slug, title in generated_articles
     )
@@ -403,20 +437,21 @@ def generate_category_index(category_slug, generated_articles, target_count):
 <html lang="en"><head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{cat['name']} &mdash; {SITE_NAME}</title>
+  <title>{cat['name'].replace('&amp;', '&')} &mdash; {SITE_NAME}</title>
   <meta name="description" content="{cat['description']}" />
   <link rel="canonical" href="{SITE_URL}/{category_slug}/" />
   <link rel="stylesheet" href="../css/style.css?v={CSS_VERSION}" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
 </head><body>
-  <nav class="breadcrumb"><a href="../">&larr; {SITE_NAME}</a></nav>
-  <div class="category-header">
-    <h1>{cat['name']}</h1>
-    <p class="dek">{cat['tagline']}</p>
-    <div class="alt-type" style="margin-bottom: 2rem;">{len(generated_articles)} published guides • {target_count} materials catalog</div>
-  </div>
+  <header>
+    <a href="../" class="brand">{SITE_NAME}</a>
+    <span class="category-pill">{cat['name'].replace("&amp;", "&")}</span>
+  </header>
   <main>
-    <div class="connection-hub" style="margin-top: 0; border-top: none; padding-top: 0;">
+    <h1>{cat['name'].replace('&amp;', '&')}</h1>
+    <p class="title-dek">{cat['tagline']}</p>
+    <div class="alt-type" style="margin-bottom: 2rem;">{len(generated_articles)} published guides • {target_count} materials catalog</div>
+    <div class="connection-hub" style="margin-top: 0; border-top: none; padding-top: 0; background: transparent;">
       <div class="connection-grid">
 {links_html}
       </div>
@@ -451,39 +486,58 @@ def generate_homepage(catalog_by_category, generated_counts):
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 </head><body>
   <div class="hero">
+    <div class="site-mark">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+    </div>
     <h1>{SITE_NAME}</h1>
-    <p class="dek" style="margin-bottom: 0; color: rgba(255,255,255,0.9);">The Science of Your Home, Simplified.</p>
+    <p class="tagline" style="margin-bottom: 0; color: rgba(255,255,255,0.9);">The Science of Your Home, Simplified.</p>
   </div>
   <main>
-    <div class="connection-hub" style="margin-top: 0; border-top: none; padding-top: 0;">
+    <div class="connection-hub" style="margin-top: 0; border-top: none; padding-top: 0; background: transparent;">
       <h2 style="font-family: var(--serif); font-size: 2rem; margin-bottom: 0.5rem; color: var(--text-main);">Safety Guide Categories</h2>
-      <p class="dek">Browse {sum(len(v) for v in catalog_by_category.values())} household material safety entries across 8 categories.</p>
+      <p class="title-dek">Browse {sum(len(v) for v in catalog_by_category.values())} household material safety entries across 8 categories.</p>
       <div class="connection-grid">\n{chr(10).join(sections)}\n      </div>
     </div>
   </main>
   <div class="site-footer"><nav><a href="about.html">About</a><a href="methodology.html">Methodology</a><a href="privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></div>
 </body></html>
 """
-    Path("index.html").write_text(html_out, encoding="utf-8")
-    print("  Generated: index.html (category gateway homepage)")
+    Path("public/index.html").write_text(html_out, encoding="utf-8")
+    
+    # Generate About/Privacy/Methodology boilerplate text directly into public/
+    nav_html = f"""<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — {SITE_NAME}</title>
+  <link rel="stylesheet" href="css/style.css?v={CSS_VERSION}" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+</head><body>
+  <header>
+    <a href="/" class="brand">{SITE_NAME}</a>
+  </header>
+  <main>
+    <h1>Coming Soon</h1>
+    <p class="title-dek">This page is currently under construction.</p>
+  </main>
+  <div class="site-footer"><nav><a href="about.html">About</a><a href="methodology.html">Methodology</a><a href="privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></div>
+</body></html>"""
+    
+    Path("public/about.html").write_text(nav_html, encoding="utf-8")
+    Path("public/methodology.html").write_text(nav_html, encoding="utf-8")
+    Path("public/privacy.html").write_text(nav_html, encoding="utf-8")
 
 
-def update_sitemap(all_generated):
-    today = date.today().isoformat()
-    urls = [(f"{SITE_URL}/", "1.0"), (f"{SITE_URL}/about.html", "0.5"), (f"{SITE_URL}/methodology.html", "0.5")]
-    for cat_slug, articles in all_generated.items():
-        if not articles:
-            continue
-        urls.append((f"{SITE_URL}/{cat_slug}/", "0.8"))
-        for slug, _ in articles:
-            urls.append((f"{SITE_URL}/{cat_slug}/{slug}.html", "0.9"))
-    entries = "\n".join(
-        f"  <url>\n    <loc>{loc}</loc>\n    <lastmod>{today}</lastmod>\n    <priority>{priority}</priority>\n  </url>" for loc, priority in urls
-    )
-    Path("sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + entries + '\n</urlset>\n', encoding="utf-8")
-    print(f"  Updated: sitemap.xml ({len(urls)} URLs)")
+def generate_sitemap(urls):
+    lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for loc in urls:
+        lines.append(f"  <url><loc>{loc}</loc></url>")
+    lines.append('</urlset>')
+    Path("public/sitemap.xml").write_text("\n".join(lines), encoding="utf-8")
 
 
+# The generate_category function is no longer used as its logic is integrated into main.
+# It can be removed or kept if there's an external call to it.
+# For this change, we'll keep it but it won't be called by the new main.
 def generate_category(category_slug):
     if category_slug not in CATEGORIES:
         print(f"  ERROR: Unknown category '{category_slug}'")
@@ -522,40 +576,98 @@ def generate_category(category_slug):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Generate articles for MyEverydayMaterials")
-    parser.add_argument("--category", "-c", help="Category slug to generate")
-    parser.add_argument("--all", "-a", action="store_true", help="Generate all categories")
-    parser.add_argument("--list", "-l", action="store_true", help="List all category counts from materials_data.json")
+    parser = argparse.ArgumentParser(description="Generate MyEverydayMaterials site.")
+    parser.add_argument("--all", action="store_true", help="Generate all materials")
+    parser.add_argument("--category", type=str, help="Generate a specific category")
+    parser.add_argument("--cleanup", action="store_true", help="Remove all generated HTML files")
+    
     args = parser.parse_args()
-
-    catalog_by_category = grouped_material_rows()
-
-    if args.list:
-        print(f"\nConfigured categories ({len(CATEGORIES)}):\n")
-        for slug, cat in CATEGORIES.items():
-            count = len(catalog_by_category.get(slug, []))
-            print(f"  {slug:15s}  {unescape(cat['name']):35s}  [{count} catalog entries]")
-        print()
+    
+    if args.cleanup:
+        for cat in CATEGORIES:
+            cat_dir = Path("public") / cat
+            if cat_dir.exists():
+                for f in cat_dir.glob("*.html"):
+                    f.unlink()
+                print(f"Cleaned {cat_dir}")
+        for html_file in Path("public").glob("*.html"):
+            html_file.unlink()
+        if Path("public/sitemap.xml").exists():
+            Path("public/sitemap.xml").unlink()
+        print("Cleaned public root")
         return
 
-    categories = list(CATEGORIES.keys()) if args.all else ([args.category] if args.category else [])
-    if not categories:
+    # Create public directories and copy static assets
+    public_dir = Path("public")
+    public_dir.mkdir(exist_ok=True)
+    
+    css_dir = public_dir / "css"
+    css_dir.mkdir(exist_ok=True)
+    
+    import shutil
+    if Path("css/style.css").exists():
+        shutil.copy("css/style.css", css_dir / "style.css")
+    if Path("favicon.svg").exists():
+        shutil.copy("favicon.svg", public_dir / "favicon.svg")
+
+    overall = grouped_material_rows()
+    all_generated = defaultdict(list)
+    counts = {}
+
+    if args.category:
+        if args.category in CATEGORIES:
+             cats_to_run = [args.category]
+        else:
+             print(f"ERROR: Unknown category '{args.category}'")
+             return
+    elif args.all:
+        cats_to_run = list(CATEGORIES.keys())
+    else:
         parser.print_help()
         return
 
-    all_generated = {}
-    for cat_slug in categories:
-        print(f"\n── {CATEGORIES.get(cat_slug, {}).get('name', cat_slug)} ──")
-        generated = generate_category(cat_slug)
-        all_generated[cat_slug] = generated
+    all_articles_map = {row["slug"]: row["material_name"] for cat in overall.values() for row in cat}
 
-    print()
-    update_sitemap(all_generated)
-    generated_counts = {k: len(v) for k, v in all_generated.items()}
-    generate_homepage(catalog_by_category, generated_counts)
-    total = sum(len(v) for v in all_generated.values())
-    print(f"\n  Total generated pages: {total} across {sum(1 for v in all_generated.values() if v)} categories\n")
+    for cat_slug in cats_to_run:
+        articles_data = overall.get(cat_slug, [])
+        cat_dir = public_dir / cat_slug
+        cat_dir.mkdir(exist_ok=True)
+        mod_arts, related_map = load_articles_module(cat_slug)
+        if not mod_arts:
+            counts[cat_slug] = 0
+            continue
+        
+        print(f"\n── {CATEGORIES[cat_slug]['name']} ──")
+        gen_list = []
+        for art in mod_arts:
+            target = cat_dir / f"{art['slug']}.html"
+            html_code = generate_article(art, all_articles_map, cat_slug, related_map)
+            target.write_text(html_code, encoding="utf-8")
+            print(f"  Generated: public/{cat_slug}/{art['slug']}.html")
+            gen_list.append((art['slug'], art['title']))
+        
+        all_generated[cat_slug] = gen_list
+        counts[cat_slug] = len(gen_list)
+        
+        if gen_list:
+            idx_html = generate_category_index(cat_slug, gen_list, len(articles_data))
+            idx_target = cat_dir / "index.html"
+            idx_target.write_text(idx_html, encoding="utf-8")
+            print(f"  Generated: public/{cat_slug}/index.html (category page)")
+            
+        print(f"  Done: {counts[cat_slug]} pages in public/{cat_slug}/")
 
+    if args.all:
+        generate_homepage(overall, counts)
+        # Gather URLs for sitemap
+        sitemap_urls = [SITE_URL + "/"]
+        for cat_slug, articles in all_generated.items():
+            if not articles: continue
+            sitemap_urls.append(f"{SITE_URL}/{cat_slug}/")
+            for slug, _ in articles:
+                sitemap_urls.append(f"{SITE_URL}/{cat_slug}/{slug}.html")
+        generate_sitemap(sitemap_urls)
+        print(f"\n  Total generated pages: {sum(counts.values())} across {len([c for c in counts.values() if c > 0])} categories in public/")
 
 if __name__ == "__main__":
     main()
