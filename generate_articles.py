@@ -609,6 +609,8 @@ def main():
         shutil.copy("css/style.css", css_dir / "style.css")
     if Path("favicon.svg").exists():
         shutil.copy("favicon.svg", public_dir / "favicon.svg")
+    if Path("images").exists():
+        shutil.copytree("images", public_dir / "images", dirs_exist_ok=True)
 
     overall = grouped_material_rows()
     all_generated = defaultdict(list)

@@ -1,6 +1,6 @@
 [build]
 command = "python generate_articles.py --all"
-  publish = "."
+publish = "public"
 
 # Cache static assets aggressively
 [[headers]]
