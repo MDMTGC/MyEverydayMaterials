@@ -15,7 +15,7 @@ from pathlib import Path
 SITE_NAME = "Everyday Materials"
 SITE_URL = "https://myeverydaymaterials.com"
 AFFILIATE_TAG = "myeverydaymat-20"
-CSS_VERSION = "7"
+CSS_VERSION = "8"
 MATERIALS_DATA_FILE = Path("materials_data.json")
 
 EDITORS_NOTE = (
