@@ -5,3 +5,8 @@ Image Assets/
 __pycache__/
 *.pyc
 *.env
+
+# Log files
+*.log
+error.log
+links.log

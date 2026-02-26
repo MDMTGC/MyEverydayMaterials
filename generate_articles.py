@@ -280,9 +280,14 @@ def build_alternatives(alternatives):
 def build_sources(sources):
     if not sources:
         return "        <li>Detailed source references will be added in the full article update.</li>"
-    return "\n".join(
-        f'        <li>{title} &mdash; <a href="{url}" target="_blank" rel="noopener">{url}</a></li>' for title, url in sources
-    )
+    items = []
+    for s in sources:
+        if isinstance(s, dict):
+            title, url = s.get("title", ""), s.get("url", "")
+        else:
+            title, url = s[0], s[1]
+        items.append(f'        <li>{title} &mdash; <a href="{url}" target="_blank" rel="noopener">{url}</a></li>')
+    return "\n".join(items)
 
 
 def build_related(slug, all_articles, related_map):
@@ -609,6 +614,10 @@ def main():
         shutil.copy("css/style.css", css_dir / "style.css")
     if Path("favicon.svg").exists():
         shutil.copy("favicon.svg", public_dir / "favicon.svg")
+    if Path("robots.txt").exists():
+        shutil.copy("robots.txt", public_dir / "robots.txt")
+    if Path("404.html").exists():
+        shutil.copy("404.html", public_dir / "404.html")
     if Path("images").exists():
         shutil.copytree("images", public_dir / "images", dirs_exist_ok=True)
 
@@ -631,32 +640,34 @@ def main():
     all_articles_map = {row["slug"]: row["material_name"] for cat in overall.values() for row in cat}
 
     for cat_slug in cats_to_run:
-        articles_data = overall.get(cat_slug, [])
         cat_dir = public_dir / cat_slug
         cat_dir.mkdir(exist_ok=True)
-        mod_arts, related_map = load_articles_module(cat_slug)
-        if not mod_arts:
+
+        # merge_articles() combines module articles with JSON-only fallback stubs,
+        # ensuring every slug in materials_data.json gets a published page.
+        articles, related_map, total_in_catalog = merge_articles(cat_slug)
+        if not articles:
             counts[cat_slug] = 0
             continue
-        
+
         print(f"\n── {CATEGORIES[cat_slug]['name']} ──")
         gen_list = []
-        for art in mod_arts:
+        for art in articles:
             target = cat_dir / f"{art['slug']}.html"
             html_code = generate_article(art, all_articles_map, cat_slug, related_map)
             target.write_text(html_code, encoding="utf-8")
             print(f"  Generated: public/{cat_slug}/{art['slug']}.html")
             gen_list.append((art['slug'], art['title']))
-        
+
         all_generated[cat_slug] = gen_list
         counts[cat_slug] = len(gen_list)
-        
+
         if gen_list:
-            idx_html = generate_category_index(cat_slug, gen_list, len(articles_data))
+            idx_html = generate_category_index(cat_slug, gen_list, total_in_catalog)
             idx_target = cat_dir / "index.html"
             idx_target.write_text(idx_html, encoding="utf-8")
             print(f"  Generated: public/{cat_slug}/index.html (category page)")
-            
+
         print(f"  Done: {counts[cat_slug]} pages in public/{cat_slug}/")
 
     if args.all:

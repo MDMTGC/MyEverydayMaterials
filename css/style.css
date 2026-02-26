@@ -128,6 +128,63 @@ p {
   font-size: 15px;
 }
 
+/* ─── Homepage Hero ─── */
+
+.hero {
+  background: linear-gradient(160deg, #18181b 0%, #27272a 100%);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem 3.5rem;
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  color: white;
+  margin-top: 0;
+}
+
+.site-mark {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 1.5rem;
+}
+
+/* ─── Site Footer ─── */
+
+.site-footer {
+  max-width: 680px;
+  margin: 4rem auto 0;
+  padding: 2rem 20px;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.site-footer nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.site-footer nav a {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.site-footer nav a:hover {
+  color: var(--text-main);
+}
+
+.site-footer .copyright {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
 .trust-item {
   display: flex;
   gap: 0.75rem;
@@ -143,180 +200,181 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* ─── Breadcrumbs ─── */
+}
 
-  .breadcrumb {
-    margin-bottom: 2rem;
-    font-size: 0.8125rem;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-  }
+/* ─── Breadcrumbs ─── */
 
-  .breadcrumb a {
-    color: var(--text-muted);
-    transition: color 0.2s ease;
-  }
+.breadcrumb {
+  margin-bottom: 2rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
 
-  .breadcrumb a:hover {
-    color: var(--text-main);
-  }
+.breadcrumb a {
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
 
-  /* ─── Editor's Note & Affiliates ─── */
+.breadcrumb a:hover {
+  color: var(--text-main);
+}
 
-  .editors-note {
-    background: var(--surface-color);
-    border: 1px solid var(--border-strong);
-    border-radius: 12px;
-    padding: 16px 20px;
-    font-size: 14px;
-    color: var(--text-muted);
-    line-height: 1.5;
-    margin-bottom: 32px;
-  }
+/* ─── Editor's Note & Affiliates ─── */
 
-  .editors-note strong {
-    color: var(--text-main);
-  }
+.editors-note {
+  background: var(--surface-color);
+  border: 1px solid var(--border-strong);
+  border-radius: 12px;
+  padding: 16px 20px;
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
 
-  /* ─── Table of Contents ─── */
+.editors-note strong {
+  color: var(--text-main);
+}
 
-  .toc {
-    background-color: var(--surface-color);
-    border: 1px solid var(--border-light);
-    border-radius: var(--radius-soft);
-    padding: 24px;
-    margin: 32px 0 48px;
-    box-shadow: var(--shadow-card);
-  }
+/* ─── Table of Contents (first definition) ─── */
 
-  .toc h2 {
-    font-size: 18px;
-    margin: 0 0 16px 0;
-    border-bottom: none;
-    font-family: var(--serif);
-  }
+.toc {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-soft);
+  padding: 24px;
+  margin: 32px 0 48px;
+  box-shadow: var(--shadow-card);
+}
 
-  .toc ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+.toc h2 {
+  font-size: 18px;
+  margin: 0 0 16px 0;
+  border-bottom: none;
+  font-family: var(--serif);
+}
 
-  .toc li {
-    margin-bottom: 12px;
-  }
+.toc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-  .toc a {
-    font-family: var(--sans);
-    font-size: 16px;
-    color: var(--accent-brand);
-    font-weight: 500;
-    border-bottom: 1px dotted transparent;
-    transition: border-bottom-color 0.2s ease;
-  }
+.toc li {
+  margin-bottom: 12px;
+}
 
-  .toc a:hover {
-    border-bottom-color: var(--accent-brand);
-  }
+.toc a {
+  font-family: var(--sans);
+  font-size: 16px;
+  color: var(--accent-brand);
+  font-weight: 500;
+  border-bottom: 1px dotted transparent;
+  transition: border-bottom-color 0.2s ease;
+}
 
-  /* ─── Dynamic Verdict Cards ─── */
+.toc a:hover {
+  border-bottom-color: var(--accent-brand);
+}
 
-  .verdict-card {
-    border-radius: var(--radius-soft);
-    padding: 32px;
-    margin-bottom: 48px;
-    position: relative;
-    transition: box-shadow 0.3s ease;
-  }
+/* ─── Dynamic Verdict Cards (first definition) ─── */
 
-  .verdict-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 16px;
-  }
+.verdict-card {
+  border-radius: var(--radius-soft);
+  padding: 32px;
+  margin-bottom: 48px;
+  position: relative;
+  transition: box-shadow 0.3s ease;
+}
 
-  .verdict-bubble {
-    font-family: var(--sans);
-    font-weight: 800;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 6px 14px;
-    border-radius: var(--radius-pill);
-    margin-right: 12px;
-    display: inline-block;
-    color: white;
-  }
+.verdict-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
 
-  .verdict-title {
-    font-family: var(--serif);
-    font-size: 24px;
-    font-weight: 700;
-  }
+.verdict-bubble {
+  font-family: var(--sans);
+  font-weight: 800;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  margin-right: 12px;
+  display: inline-block;
+  color: white;
+}
 
-  .verdict-text {
-    font-size: 16px;
-    font-weight: 500;
-    margin: 0;
-    line-height: 1.6;
-  }
+.verdict-title {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 700;
+}
 
-  /* Danger (Avoid) */
-  .verdict-avoid {
-    background: linear-gradient(145deg, #fffafa 0%, #fff0f0 100%);
-    border: 2px solid #fecaca;
-    box-shadow: 0 12px 24px rgba(239, 68, 68, 0.08);
-  }
+.verdict-text {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.6;
+}
 
-  .verdict-avoid .verdict-bubble {
-    background: #ef4444;
-  }
+/* Danger (Avoid) */
+.verdict-avoid {
+  background: linear-gradient(145deg, #fffafa 0%, #fff0f0 100%);
+  border: 2px solid #fecaca;
+  box-shadow: 0 12px 24px rgba(239, 68, 68, 0.08);
+}
 
-  .verdict-avoid .verdict-title {
-    color: #991b1b;
-  }
+.verdict-avoid .verdict-bubble {
+  background: #ef4444;
+}
 
-  .verdict-avoid .verdict-text {
-    color: #7f1d1d;
-  }
+.verdict-avoid .verdict-title {
+  color: #991b1b;
+}
 
-  /* Warning (Caution) */
-  .verdict-caution {
-    background: linear-gradient(145deg, #fffcf0 0%, #fffae0 100%);
-    border: 2px solid #fde047;
-    box-shadow: 0 12px 24px rgba(234, 179, 8, 0.08);
-  }
+.verdict-avoid .verdict-text {
+  color: #7f1d1d;
+}
 
-  .verdict-caution .verdict-bubble {
-    background: #eab308;
-  }
+/* Warning (Caution) */
+.verdict-caution {
+  background: linear-gradient(145deg, #fffcf0 0%, #fffae0 100%);
+  border: 2px solid #fde047;
+  box-shadow: 0 12px 24px rgba(234, 179, 8, 0.08);
+}
 
-  .verdict-caution .verdict-title {
-    color: #854d0e;
-  }
+.verdict-caution .verdict-bubble {
+  background: #eab308;
+}
 
-  .verdict-caution .verdict-text {
-    color: #713f12;
-  }
+.verdict-caution .verdict-title {
+  color: #854d0e;
+}
 
-  /* Safe (Green) */
-  .verdict-safe {
-    background: linear-gradient(145deg, #f0fdf4 0%, #e8fce8 100%);
-    border: 2px solid #bbf7d0;
-    box-shadow: 0 12px 24px rgba(34, 197, 94, 0.08);
-  }
+.verdict-caution .verdict-text {
+  color: #713f12;
+}
 
-  .verdict-safe .verdict-bubble {
-    background: #22c55e;
-  }
+/* Safe (Green) */
+.verdict-safe {
+  background: linear-gradient(145deg, #f0fdf4 0%, #e8fce8 100%);
+  border: 2px solid #bbf7d0;
+  box-shadow: 0 12px 24px rgba(34, 197, 94, 0.08);
+}
 
-  .verdict-safe .verdict-title {
-    color: #166534;
-  }
+.verdict-safe .verdict-bubble {
+  background: #22c55e;
+}
 
-  .verdict-safe .verdict-text {
-    color: #14532d;
-  }
+.verdict-safe .verdict-title {
+  color: #166534;
+}
+
+.verdict-safe .verdict-text {
+  color: #14532d;
 }
 
 /* ─── 30-Second Verdict Box ─── */
@@ -519,6 +577,15 @@ p {
 
 .callout-danger strong {
   color: var(--red-700);
+}
+
+.callout-info {
+  background: #eff6ff;
+  border-left: 4px solid #3b82f6;
+}
+
+.callout-info strong {
+  color: #1d4ed8;
 }
 
 /* ─── Sources / References ─── */
