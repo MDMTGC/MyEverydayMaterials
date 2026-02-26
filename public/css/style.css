@@ -28,6 +28,32 @@
 
   --serif: 'Playfair Display', serif;
   --sans: 'Inter', sans-serif;
+
+  /* Component aliases */
+  --card-bg: #ffffff;
+  --primary: #6366f1;
+
+  /* Slate scale */
+  --slate-50: #f8fafc;
+  --slate-200: #e2e8f0;
+  --slate-500: #64748b;
+  --slate-700: #334155;
+
+  /* Gray scale */
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-900: #111827;
+
+  /* Semantic color scales */
+  --green-50: #f0fdf4;
+  --green-700: #15803d;
+  --amber-50: #fffbeb;
+  --amber-600: #d97706;
+  --amber-700: #b45309;
+  --red-50: #fef2f2;
+  --red-700: #b91c1c;
 }
 
 * {
@@ -375,6 +401,25 @@ p {
 
 .verdict-safe .verdict-text {
   color: #14532d;
+}
+
+/* Neutral / Unknown */
+.verdict-neutral {
+  background: linear-gradient(145deg, #f3f4f6 0%, #e5e7eb 100%);
+  border: 2px solid #d1d5db;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+}
+
+.verdict-neutral .verdict-bubble {
+  background: #6b7280;
+}
+
+.verdict-neutral .verdict-title {
+  color: #374151;
+}
+
+.verdict-neutral .verdict-text {
+  color: #4b5563;
 }
 
 /* ─── 30-Second Verdict Box ─── */
