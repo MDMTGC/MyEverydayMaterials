@@ -377,6 +377,25 @@ p {
   color: #14532d;
 }
 
+/* Neutral / Unknown */
+.verdict-neutral {
+  background: linear-gradient(145deg, #f3f4f6 0%, #e5e7eb 100%);
+  border: 2px solid #d1d5db;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+}
+
+.verdict-neutral .verdict-bubble {
+  background: #6b7280;
+}
+
+.verdict-neutral .verdict-title {
+  color: #374151;
+}
+
+.verdict-neutral .verdict-text {
+  color: #4b5563;
+}
+
 /* ─── 30-Second Verdict Box ─── */
 
 .verdict-box {
