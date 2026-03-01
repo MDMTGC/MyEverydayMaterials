@@ -84,19 +84,28 @@ a {
 
 .skip-link {
   position: absolute;
-  top: -100%;
-  left: 1rem;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 100;
   background: var(--accent-brand);
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 0 0 0.5rem 0.5rem;
   font-size: 0.875rem;
   font-weight: 600;
-  z-index: 100;
+  text-decoration: none;
 }
 
 .skip-link:focus {
+  position: fixed;
   top: 0;
+  left: 1rem;
+  width: auto;
+  height: auto;
+  overflow: visible;
 }
 
 /* ─── Nav ─── */
