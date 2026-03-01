@@ -535,27 +535,186 @@ def generate_homepage(catalog_by_category, generated_counts):
 """
     Path("public/index.html").write_text(html_out, encoding="utf-8")
     
-    # Generate About/Privacy/Methodology boilerplate text directly into public/
-    nav_html = f"""<!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us — {SITE_NAME}</title>
-  <link rel="stylesheet" href="css/style.css?v={CSS_VERSION}" />
+    # Generate About/Privacy/Methodology with real content
+    _prose_head = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {{title_meta}}
+  <link rel="canonical" href="{SITE_URL}/{{filename}}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-</head><body>
+  <link rel="stylesheet" href="css/style.css?v={CSS_VERSION}" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <header>
     <a href="/" class="brand">{SITE_NAME}</a>
   </header>
-  <main>
-    <h1>Coming Soon</h1>
-    <p class="title-dek">This page is currently under construction.</p>
+  <main id="main-content" class="prose">
+{{body}}
   </main>
   <footer class="site-footer"><nav><a href="about.html">About</a><a href="methodology.html">Methodology</a><a href="privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
-</body></html>"""
-    
-    Path("public/about.html").write_text(nav_html, encoding="utf-8")
-    Path("public/methodology.html").write_text(nav_html, encoding="utf-8")
-    Path("public/privacy.html").write_text(nav_html, encoding="utf-8")
+</body>
+</html>"""
+
+    about_body = f"""    <h1>About {SITE_NAME}</h1>
+
+    <p>{SITE_NAME} is an independent research project focused on one question: <strong>are the materials in your home safe?</strong></p>
+
+    <p>We read the peer-reviewed studies, regulatory reports, and toxicology data so you don&rsquo;t have to. Then we distill that research into clear, actionable guides with a simple verdict: safe, use with caution, or avoid.</p>
+
+    <h2>Why We Started</h2>
+
+    <p>The information gap around household materials is enormous. Search for &ldquo;is Teflon safe&rdquo; and you&rsquo;ll find everything from unfounded panic to industry-funded reassurance. Neither helps you make a real decision.</p>
+
+    <p>We built {SITE_NAME} to be the resource we wished existed: science-based, practical, honest about uncertainty, and free from the influence of the companies whose products we evaluate.</p>
+
+    <h2>How We&rsquo;re Funded</h2>
+
+    <p>When we recommend a &ldquo;Better Alternative&rdquo; in our guides, we link to that product on Amazon. If you choose to purchase through that link, we earn a small commission at no extra cost to you. This is our only source of revenue.</p>
+
+    <p>Critically, this model means we are never paid by the manufacturers of the materials we research. Our incentive is to give you honest verdicts &mdash; because trust is the only thing that keeps you coming back.</p>
+
+    <h2>What We Cover</h2>
+
+    <p>We are building an initial foundation of 100 in-depth safety guides across our primary household categories:</p>
+
+    <ul>
+      <li><a href="kitchen/">Kitchen &amp; Dining</a> &mdash; Cookware, food packaging, and storage materials</li>
+      <li><a href="nursery/">Nursery &amp; Baby Gear</a> &mdash; Non-toxic sleep environments, feeding essentials, and play</li>
+      <li><a href="pet-care/">Pet Care</a> &mdash; Safe litters, toys, and grooming products for cats and dogs</li>
+      <li><a href="household/">Household Surfaces &amp; Fabrics</a> &mdash; Furniture, flooring, textiles, and indoor air quality</li>
+      <li><a href="personal-care/">Personal Care &amp; Chemicals</a> &mdash; Ingredients in hygiene and beauty products</li>
+      <li><a href="cleaning/">Cleaning &amp; Maintenance</a> &mdash; Household cleaners, solvents, laundry, and water filtration</li>
+      <li><a href="tech/">Tech &amp; Home Office</a> &mdash; Electronics, 3D printing materials, and workspace ergonomics</li>
+      <li><a href="outdoor/">Outdoor &amp; Garden</a> &mdash; Pesticides, decking, hoses, and lawn care equipment</li>
+    </ul>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <p><strong>How do you determine a &ldquo;Safe&rdquo; vs. &ldquo;Avoid&rdquo; status?</strong><br />
+    We use a tri-tier safety system based on the weight of evidence from peer-reviewed journals, government standard bodies (like the EPA and FDA), and national academies. Our <a href="methodology.html">methodology page</a> explains the full process.</p>
+
+    <p><strong>Are your &ldquo;Better Alternatives&rdquo; sponsored by brands?</strong><br />
+    No. We never accept payment from manufacturers to feature their products. Our recommendations are based strictly on material purity, functional utility, and high user ratings.</p>
+
+    <p><strong>Why does your site load so much faster than other health sites?</strong><br />
+    {SITE_NAME} is built as a lightweight static registry. We prioritize instant accessibility and performance &mdash; especially for mobile users in shopping environments &mdash; by avoiding heavy tracking scripts and unnecessary image assets.</p>
+
+    <p><strong>How often is the data verified?</strong><br />
+    Each entry includes a &ldquo;Last Verified&rdquo; date. We actively monitor new toxicology reports and regulatory updates to ensure our verdicts reflect the current scientific consensus.</p>
+
+    <p><strong>Can I suggest a material for you to analyze?</strong><br />
+    Yes. We prioritize our research roadmap based on community interest and emerging safety trends. Send us an email at the address below.</p>
+
+    <h2>Contact {SITE_NAME}</h2>
+
+    <p>We value precision and transparency. If you have a technical question, a correction regarding a specific study, or a material you&rsquo;d like us to cover, please reach out.</p>
+
+    <ul>
+      <li><strong>General Inquiries &amp; Feedback:</strong> hello@myeverydaymaterials.com</li>
+      <li><strong>Corrections:</strong> Please include a link to the relevant peer-reviewed study or regulatory report so our research team can investigate promptly.</li>
+    </ul>
+
+    <h2>Technical Philosophy</h2>
+
+    <p>We believe speed is a feature of accessibility. This site is built as a static registry to ensure that whether you are at home or in a grocery store aisle, you get the safety data you need instantly, without the weight of heavy scripts or trackers.</p>"""
+
+    methodology_body = f"""    <h1>Our Methodology</h1>
+
+    <p>Transparency is core to what we do. Here&rsquo;s exactly how we research, evaluate, and present information about the materials in your home.</p>
+
+    <h2>Sources We Use</h2>
+
+    <p>Every factual claim in our guides is supported by at least one of the following:</p>
+
+    <ul>
+      <li><strong>Peer-reviewed journals</strong> &mdash; Published in indexed scientific journals (e.g., <em>Environmental Science &amp; Technology</em>, <em>JAMA</em>, <em>Water Research</em>)</li>
+      <li><strong>Government agencies</strong> &mdash; EPA, FDA, EFSA, WHO, CDC, IARC, and their official publications</li>
+      <li><strong>National academies</strong> &mdash; National Academies of Sciences, Engineering, and Medicine consensus reports</li>
+      <li><strong>Standards bodies</strong> &mdash; EU REACH, Stockholm Convention, and other regulatory frameworks</li>
+    </ul>
+
+    <p>We do not cite blogs, press releases, or manufacturer-funded studies without independent corroboration. Every source is linked directly in the article so you can verify it yourself.</p>
+
+    <h2>Our Verdict System</h2>
+
+    <p>Each guide includes a &ldquo;30-Second Verdict&rdquo; with one of three ratings:</p>
+
+    <ul>
+      <li><strong>Safe</strong> (green) &mdash; The scientific evidence supports that this material is safe under normal use conditions. We still note edge cases where applicable.</li>
+      <li><strong>Use with Caution</strong> (amber) &mdash; The material has documented risks under specific conditions (e.g., high heat, acidic food contact). We explain exactly when it&rsquo;s safe and when it isn&rsquo;t.</li>
+      <li><strong>Avoid</strong> (red) &mdash; The weight of evidence indicates significant risk even under normal conditions. We recommend specific alternatives.</li>
+    </ul>
+
+    <h2>How We Select &ldquo;Better Alternatives&rdquo;</h2>
+
+    <p>When we recommend an alternative product, it must meet all of the following criteria:</p>
+
+    <ul>
+      <li>It must genuinely solve the safety concern identified in the article</li>
+      <li>It must be readily available and reasonably priced</li>
+      <li>It must have strong user reviews and a track record of quality</li>
+      <li>We must be comfortable recommending it to our own families</li>
+    </ul>
+
+    <p>We include honest pros and cons for every recommendation. If a product has drawbacks, we say so.</p>
+
+    <h2>Corrections &amp; Updates</h2>
+
+    <p>Science evolves, and so do our guides. When new research changes the picture, we update the relevant article and note the modification date. If you spot an error or outdated claim, please contact us at <strong>hello@myeverydaymaterials.com</strong> and we&rsquo;ll investigate promptly.</p>"""
+
+    privacy_body = """    <h1>Privacy Policy</h1>
+    <p><em>Last updated: March 2026</em></p>
+
+    <p>Everyday Materials (&ldquo;we,&rdquo; &ldquo;us&rdquo;) respects your privacy. This policy explains what data we collect and how we use it.</p>
+
+    <h2>What We Collect</h2>
+
+    <p><strong>Hosting analytics:</strong> Our site is hosted on Netlify, which collects standard server logs (IP address, browser type, pages visited). These logs are used for performance monitoring and are not shared with third parties.</p>
+
+    <p><strong>No tracking scripts:</strong> We do not use Google Analytics, Facebook Pixel, or any third-party tracking scripts. We do not use cookies for advertising or behavioral profiling.</p>
+
+    <h2>Affiliate Links</h2>
+
+    <p>Our &ldquo;Better Alternatives&rdquo; sections contain affiliate links to Amazon.com. When you click these links, Amazon may set cookies on your device to track the referral. This is governed by <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=468496" rel="noopener noreferrer" target="_blank">Amazon&rsquo;s Privacy Notice</a>, not ours.</p>
+
+    <p>We receive a small commission if you purchase through our links. We do not receive any data about you personally from Amazon.</p>
+
+    <h2>Google Fonts</h2>
+
+    <p>We load the Inter typeface from Google Fonts. When you visit our site, your browser makes a request to Google&rsquo;s servers to download the font files. Google&rsquo;s <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">privacy policy</a> applies to this request.</p>
+
+    <h2>Children&rsquo;s Privacy</h2>
+
+    <p>Our site is not directed at children under 13. We do not knowingly collect personal information from children.</p>
+
+    <h2>Contact</h2>
+
+    <p>Questions about this policy? Email us at <strong>hello@myeverydaymaterials.com</strong>.</p>"""
+
+    _pages = {
+        "about.html": (
+            '<title>About &mdash; {0}</title>\n  <meta name="description" content="Learn about {0} — who we are, why we started, and how we help you make safer choices about the materials in your home." />'.format(SITE_NAME),
+            about_body,
+        ),
+        "methodology.html": (
+            '<title>Our Methodology &mdash; {0}</title>\n  <meta name="description" content="How {0} researches, verifies, and rates the safety of household materials. Our sources, verdict system, and editorial standards." />'.format(SITE_NAME),
+            methodology_body,
+        ),
+        "privacy.html": (
+            '<title>Privacy Policy &mdash; {0}</title>\n  <meta name="description" content="Privacy policy for {0}. We respect your privacy and collect minimal data." />\n  <meta name="robots" content="noindex" />'.format(SITE_NAME),
+            privacy_body,
+        ),
+    }
+
+    for filename, (title_meta, body) in _pages.items():
+        page_html = _prose_head.replace("{title_meta}", title_meta).replace("{filename}", filename).replace("{body}", body)
+        Path(f"public/{filename}").write_text(page_html, encoding="utf-8")
 
 
 def generate_sitemap(urls):
