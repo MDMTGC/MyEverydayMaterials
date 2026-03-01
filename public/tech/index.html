@@ -17,7 +17,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" />
-  <link rel="stylesheet" href="../css/style.css?v=8" />
+  <script>!function(){var t=localStorage.getItem("mem-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}()</script>
+  <link rel="stylesheet" href="../css/style.css?v=9" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <script type="application/ld+json">
   {
@@ -96,7 +97,9 @@
 </head><body>
   <header>
     <a href="../" class="brand">Everyday Materials</a>
-    <span class="category-pill">Tech & Home Office</span>
+    <div class="header-right">
+      <span class="category-pill">Tech & Home Office</span>
+    </div>
   </header>
   <main>
     <h1>Tech & Home Office</h1>
@@ -104,44 +107,45 @@
     <div class="alt-type alt-type--spaced">9 published guides &middot; 9 materials catalog</div>
     <div class="connection-hub connection-hub--transparent">
       <div class="connection-grid">
-        <a href="bfrs-electronics.html" class="connect-link">
-          <div class="connect-type">Guide</div>
+        <a href="bfrs-electronics.html" class="connect-link" data-status="verdict-caution">
+          <div class="connect-type">Guide <span class="status-badge status-badge--caution">Caution</span></div>
           <div class="connect-title">Flame Retardants in Your Tech: Unpacking the Hidden Chemicals in Electronic Casings <span>&rarr;</span></div>
         </a>
-        <a href="ozone-laser-printers.html" class="connect-link">
-          <div class="connect-type">Guide</div>
+        <a href="ozone-laser-printers.html" class="connect-link" data-status="verdict-caution">
+          <div class="connect-type">Guide <span class="status-badge status-badge--caution">Caution</span></div>
           <div class="connect-title">Laser Printer Emissions: Protecting Your Lungs from Toner Dust & VOCs <span>&rarr;</span></div>
         </a>
-        <a href="heavy-metals-keyboards.html" class="connect-link">
-          <div class="connect-type">Guide</div>
+        <a href="heavy-metals-keyboards.html" class="connect-link" data-status="verdict-caution">
+          <div class="connect-type">Guide <span class="status-badge status-badge--caution">Caution</span></div>
           <div class="connect-title">Lead Solder in Legacy Electronics: Understanding Hidden Risks and Safe Handling <span>&rarr;</span></div>
         </a>
-        <a href="lithium-ion-battery-gases.html" class="connect-link">
-          <div class="connect-type">Guide</div>
+        <a href="lithium-ion-battery-gases.html" class="connect-link" data-status="verdict-caution">
+          <div class="connect-type">Guide <span class="status-badge status-badge--caution">Caution</span></div>
           <div class="connect-title">Lithium-Ion Battery Safety: Identifying Swelling and Preventing Chemical Leaks <span>&rarr;</span></div>
         </a>
-        <a href="abs-plastic-filaments.html" class="connect-link">
-          <div class="connect-type">Guide</div>
+        <a href="abs-plastic-filaments.html" class="connect-link" data-status="verdict-safe">
+          <div class="connect-type">Guide <span class="status-badge status-badge--safe">Safe</span></div>
           <div class="connect-title">Neodymium Magnets in Your Hardware: Unseen Strength, Hidden Dangers <span>&rarr;</span></div>
         </a>
-        <a href="pvc-wire-coatings.html" class="connect-link">
-          <div class="connect-type">Guide</div>
+        <a href="pvc-wire-coatings.html" class="connect-link" data-status="verdict-caution">
+          <div class="connect-type">Guide <span class="status-badge status-badge--caution">Caution</span></div>
           <div class="connect-title">PFAS in Your Cables: Navigating &ldquo;Forever Chemicals&rdquo; in Home Office Wiring <span>&rarr;</span></div>
         </a>
-        <a href="polyurethane-office-chairs.html" class="connect-link">
-          <div class="connect-type">Guide</div>
+        <a href="polyurethane-office-chairs.html" class="connect-link" data-status="verdict-caution">
+          <div class="connect-type">Guide <span class="status-badge status-badge--caution">Caution</span></div>
           <div class="connect-title">Screen Time & Sleep: Understanding Blue Light's Impact on Your Circadian Rhythm <span>&rarr;</span></div>
         </a>
-        <a href="phthalates-mousepads.html" class="connect-link">
-          <div class="connect-type">Guide</div>
+        <a href="phthalates-mousepads.html" class="connect-link" data-status="verdict-safe">
+          <div class="connect-type">Guide <span class="status-badge status-badge--safe">Safe</span></div>
           <div class="connect-title">Soft-Touch Coatings: Navigating TPE and Longevity on Your Peripherals <span>&rarr;</span></div>
         </a>
-        <a href="air-duster-propellants.html" class="connect-link">
-          <div class="connect-type">Guide</div>
+        <a href="air-duster-propellants.html" class="connect-link" data-status="verdict-avoid">
+          <div class="connect-type">Guide <span class="status-badge status-badge--avoid">Avoid</span></div>
           <div class="connect-title">Thermal Paper Dangers: Why Receipts & Labels Are a Hidden Source of BPA/BPS <span>&rarr;</span></div>
         </a>
       </div>
     </div>
   </main>
   <footer class="site-footer"><nav><a href="../about.html">About</a><a href="../methodology.html">Methodology</a><a href="../privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; 2026 Everyday Materials</p></footer>
+  <script src="../js/main.js" defer></script>
 </body></html>
