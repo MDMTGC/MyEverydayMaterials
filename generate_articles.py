@@ -814,7 +814,7 @@ def generate_sitemap(urls):
         elif loc.endswith("/"):
             priority = "0.8"   # category index
             freq = "weekly"
-        elif "/about." in loc or "/methodology." in loc:
+        elif loc.endswith("/about") or loc.endswith("/methodology"):
             priority = "0.5"   # static info pages
             freq = "monthly"
         else:
@@ -919,13 +919,13 @@ def main():
         generate_homepage(overall, counts)
         # Gather URLs for sitemap
         sitemap_urls = [SITE_URL + "/"]
-        sitemap_urls.append(f"{SITE_URL}/about.html")
-        sitemap_urls.append(f"{SITE_URL}/methodology.html")
+        sitemap_urls.append(f"{SITE_URL}/about")
+        sitemap_urls.append(f"{SITE_URL}/methodology")
         for cat_slug, articles in all_generated.items():
             if not articles: continue
             sitemap_urls.append(f"{SITE_URL}/{cat_slug}/")
             for slug, _ in articles:
-                sitemap_urls.append(f"{SITE_URL}/{cat_slug}/{slug}.html")
+                sitemap_urls.append(f"{SITE_URL}/{cat_slug}/{slug}")
         generate_sitemap(sitemap_urls)
         print(f"\n  Total generated pages: {sum(counts.values())} across {len([c for c in counts.values() if c > 0])} categories in public/")
 
