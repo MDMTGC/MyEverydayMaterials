@@ -84,28 +84,29 @@ a {
 
 .skip-link {
   position: absolute;
-  left: -9999px;
-  top: auto;
   width: 1px;
   height: 1px;
   overflow: hidden;
-  z-index: 100;
-  background: var(--accent-brand);
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 0 0 0.5rem 0.5rem;
-  font-size: 0.875rem;
-  font-weight: 600;
-  text-decoration: none;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
 }
 
 .skip-link:focus {
-  position: fixed;
-  top: 0;
-  left: 1rem;
+  position: static;
+  display: block;
   width: auto;
   height: auto;
   overflow: visible;
+  clip: auto;
+  white-space: normal;
+  max-width: 680px;
+  margin: 0.75rem auto 0;
+  padding: 0.4rem 0;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--fg-secondary);
+  text-decoration: none;
+  outline: none;
 }
 
 /* ─── Nav ─── */
