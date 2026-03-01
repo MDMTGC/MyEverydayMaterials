@@ -128,6 +128,11 @@
   box-sizing: border-box;
 }
 
+/* Ensure [hidden] always wins over component display values */
+[hidden] {
+  display: none !important;
+}
+
 /* ─── Base ─── */
 
 html {
@@ -1017,6 +1022,12 @@ a.btn:active {
   appearance: none;
 }
 
+/* Hide native WebKit clear button (we provide our own) */
+.search-input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  display: none;
+}
+
 .search-input::placeholder {
   color: var(--text-tertiary);
 }
@@ -1155,6 +1166,34 @@ a.btn:active {
   font-weight: normal;
 }
 
+/* ─── Breadcrumb Navigation ─── */
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  font-size: 0.8125rem;
+  color: var(--text-tertiary);
+  margin-bottom: 0.25rem;
+}
+
+.breadcrumb a {
+  color: var(--text-tertiary);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.breadcrumb a:hover {
+  color: var(--accent);
+}
+
+.breadcrumb-sep {
+  color: var(--border-default);
+  font-size: 0.6875rem;
+  user-select: none;
+}
+
 /* ═══════════════════════════════════════════════════════════════════════════
    Responsive
    ═══════════════════════════════════════════════════════════════════════════ */
@@ -1214,5 +1253,58 @@ a.btn:active {
 
   .search-bar {
     max-width: 100%;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Print
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+@media print {
+  /* Strip chrome */
+  header, .site-footer, .back-to-top, .theme-toggle,
+  .search-bar, .connection-hub, .editors-note, a.btn {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    color: #1a1a1d !important;
+    padding: 0;
+    line-height: 1.5;
+  }
+
+  main {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  h1 { font-size: 1.75rem; margin-top: 0; }
+  h2 { font-size: 1.25rem; margin-top: 2rem; }
+  p, .fact-desc, .alt-desc { color: #333 !important; }
+
+  a { color: #333; text-decoration: underline; }
+
+  /* Prevent page-break inside content blocks */
+  .verdict-card, .alt-card, .fact-card, .callout, .toc {
+    break-inside: avoid;
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+    background: white !important;
+  }
+
+  .verdict-card *, .callout * { color: #333 !important; }
+  .verdict-bubble { color: white !important; }
+
+  h1, h2 { break-after: avoid; }
+
+  .breadcrumb { display: none !important; }
+
+  /* Show link URLs inline for reference */
+  .sources a::after {
+    content: " (" attr(href) ")";
+    font-size: 0.7rem;
+    word-break: break-all;
   }
 }

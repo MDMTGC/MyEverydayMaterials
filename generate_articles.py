@@ -417,10 +417,15 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
   <header>
     <a href="../" class="brand">{SITE_NAME}</a>
     <div class="header-right">
-      <span class="category-pill">{CATEGORIES.get(category_slug, {}).get("name", category_slug.title()).replace("&amp;", "&")}</span>
+      <a href="./" class="category-pill">{CATEGORIES.get(category_slug, {}).get("name", category_slug.title()).replace("&amp;", "&")}</a>
     </div>
   </header>
   <main id="main-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <a href="./">{CATEGORIES.get(category_slug, {}).get("name", category_slug.title()).replace("&amp;", "&")}</a>
+    </nav>
     <article>
     <h1>{article['title']}</h1>
     <p class="title-dek">{plain_desc}</p>
@@ -445,7 +450,7 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
 {build_related(article['slug'], all_articles, related_map, slug_to_category)}
     </article>
   </main>
-  <footer class="site-footer"><nav><a href="../about.html">About</a><a href="../methodology.html">Methodology</a><a href="../privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {today[:4]} {SITE_NAME}</p></footer>
+  <footer class="site-footer"><nav><a href="../">Home</a><a href="../about.html">About</a><a href="../methodology.html">Methodology</a><a href="../privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {today[:4]} {SITE_NAME}</p></footer>
   <script src="../js/main.js" defer></script>
 </body>
 </html>
@@ -536,6 +541,11 @@ def generate_category_index(category_slug, generated_articles, target_count):
     </div>
   </header>
   <main>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <span aria-current="page">{cat_name}</span>
+    </nav>
     <h1>{cat_name}</h1>
     <p class="title-dek">{cat['tagline']}</p>
     <div class="alt-type alt-type--spaced">{len(generated_articles)} published guides &middot; {target_count} materials catalog</div>
@@ -545,7 +555,7 @@ def generate_category_index(category_slug, generated_articles, target_count):
       </div>
     </div>
   </main>
-  <footer class="site-footer"><nav><a href="../about.html">About</a><a href="../methodology.html">Methodology</a><a href="../privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
+  <footer class="site-footer"><nav><a href="../">Home</a><a href="../about.html">About</a><a href="../methodology.html">Methodology</a><a href="../privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
   <script src="../js/main.js" defer></script>
 </body></html>
 """
@@ -672,7 +682,7 @@ def generate_homepage(catalog_by_category, generated_counts):
   <main id="main-content" class="prose">
 {{body}}
   </main>
-  <footer class="site-footer"><nav><a href="about.html">About</a><a href="methodology.html">Methodology</a><a href="privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
+  <footer class="site-footer"><nav><a href="./">Home</a><a href="about.html">About</a><a href="methodology.html">Methodology</a><a href="privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
   <script src="js/main.js" defer></script>
 </body>
 </html>"""
