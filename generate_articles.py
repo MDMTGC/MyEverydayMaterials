@@ -286,19 +286,20 @@ def build_sources(sources):
             title, url = s.get("title", ""), s.get("url", "")
         else:
             title, url = s[0], s[1]
-        items.append(f'        <li>{title} &mdash; <a href="{url}" target="_blank" rel="noopener">{url}</a></li>')
+        items.append(f'        <li>{html.escape(title)} &mdash; <a href="{html.escape(url, quote=True)}" target="_blank" rel="noopener">{html.escape(url)}</a></li>')
     return "\n".join(items)
 
 
-def build_related(slug, all_articles, related_map):
+def build_related(slug, all_articles, related_map, slug_to_category=None):
     related_slugs = related_map.get(slug, [])
     if not related_slugs:
         return ""
-    
-    # all_articles is already a dict mapping {slug: title}
+
     title_map = all_articles
+    if slug_to_category is None:
+        slug_to_category = {}
     links = []
-    
+
     for rs in related_slugs:
         target_slug = rs
         context = "Related Article"
@@ -307,20 +308,13 @@ def build_related(slug, all_articles, related_map):
                 context, target_slug = rs
             else:
                 target_slug = rs[0]
-        
+
         target_title = title_map.get(target_slug)
         if not target_title:
             continue
-            
-        # Discover category of target_slug by searching the overall catalog
-        # Since this runs inside build_related we can import overall dict from generation scope
-        target_category = ""
-        for cat_key, arts in grouped_material_rows().items():
-            if any(a.get("slug") == target_slug for a in arts):
-                target_category = cat_key
-                break
-        
-        # Fallback to the first word of the slug if category isn't found
+
+        target_category = slug_to_category.get(target_slug, "")
+
         if not target_category:
             target_category = target_slug.split('-')[0]
             
@@ -358,7 +352,7 @@ def convert_to_fact_cards(content):
         return "\n".join(cards)
     return re.sub(r'<ul class="key-facts">(.*?)</ul>', repl, content, flags=re.DOTALL)
 
-def generate_article(article, all_articles, category_slug, related_map):
+def generate_article(article, all_articles, category_slug, related_map, slug_to_category=None):
     cat = CATEGORIES[category_slug]
     canonical = f"{SITE_URL}/{category_slug}/{article['slug']}.html"
     plain_title = html.escape(unescape(article["title"]), quote=True)
@@ -392,6 +386,26 @@ def generate_article(article, all_articles, category_slug, related_map):
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="../css/style.css?v={CSS_VERSION}" />
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{plain_title}",
+    "description": "{plain_desc}",
+    "url": "{canonical}",
+    "datePublished": "{today}",
+    "dateModified": "{today}",
+    "publisher": {{
+      "@type": "Organization",
+      "name": "{SITE_NAME}",
+      "url": "{SITE_URL}"
+    }},
+    "mainEntityOfPage": {{
+      "@type": "WebPage",
+      "@id": "{canonical}"
+    }}
+  }}
+  </script>
 </head>
 <body>
   <header>
@@ -399,6 +413,7 @@ def generate_article(article, all_articles, category_slug, related_map):
     <span class="category-pill">{CATEGORIES.get(category_slug, {}).get("name", category_slug.title()).replace("&amp;", "&")}</span>
   </header>
   <main>
+    <article>
     <h1>{article['title']}</h1>
     <p class="title-dek">{plain_desc}</p>
     <div class="editors-note">{EDITORS_NOTE}</div>
@@ -419,7 +434,8 @@ def generate_article(article, all_articles, category_slug, related_map):
 {build_sources(article['sources'])}
       </ol>
     </div>
-{build_related(article['slug'], all_articles, related_map)}
+{build_related(article['slug'], all_articles, related_map, slug_to_category)}
+    </article>
   </main>
   <div class="site-footer"><nav><a href="../about.html">About</a><a href="../methodology.html">Methodology</a><a href="../privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {today[:4]} {SITE_NAME}</p></div>
 </body>
@@ -445,6 +461,9 @@ def generate_category_index(category_slug, generated_articles, target_count):
   <title>{cat['name'].replace('&amp;', '&')} &mdash; {SITE_NAME}</title>
   <meta name="description" content="{cat['description']}" />
   <link rel="canonical" href="{SITE_URL}/{category_slug}/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" />
   <link rel="stylesheet" href="../css/style.css?v={CSS_VERSION}" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
 </head><body>
@@ -477,7 +496,7 @@ def generate_homepage(catalog_by_category, generated_counts):
         
         sections.append(f"""        <a href="{href}" class="connect-link">
           <div class="connect-type">{published}/{total} Published &middot; {state}</div>
-          <div class="connect-title">{cat['name']} <span>&rarr;</span></div>
+          <div class="connect-title">{cat['name'].replace("&amp;", "&")} <span>&rarr;</span></div>
           <p class="alt-desc" style="margin-top: 0.75rem; margin-bottom: 0;">{cat['tagline']}</p>
         </a>""")
 
@@ -487,6 +506,9 @@ def generate_homepage(catalog_by_category, generated_counts):
   <title>{SITE_NAME} — Science-Backed Safety Guides for Your Home</title>
   <meta name="description" content="Browse 100 household material safety entries across 8 categories." />
   <link rel="canonical" href="{SITE_URL}/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" />
   <link rel="stylesheet" href="css/style.css?v={CSS_VERSION}" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 </head><body>
@@ -538,46 +560,6 @@ def generate_sitemap(urls):
         lines.append(f"  <url><loc>{loc}</loc></url>")
     lines.append('</urlset>')
     Path("public/sitemap.xml").write_text("\n".join(lines), encoding="utf-8")
-
-
-# The generate_category function is no longer used as its logic is integrated into main.
-# It can be removed or kept if there's an external call to it.
-# For this change, we'll keep it but it won't be called by the new main.
-def generate_category(category_slug):
-    if category_slug not in CATEGORIES:
-        print(f"  ERROR: Unknown category '{category_slug}'")
-        return []
-
-    articles, related_map, total_in_catalog = merge_articles(category_slug)
-    if not articles:
-        print(f"  SKIP: No entries found for '{category_slug}'")
-        return []
-
-    output_dir = Path(category_slug)
-    output_dir.mkdir(exist_ok=True)
-    generated = []
-
-    expected_files = set()
-    for article in articles:
-        filename = f"{article['slug']}.html"
-        expected_files.add(filename)
-        outfile = output_dir / filename
-        outfile.write_text(generate_article(article, articles, category_slug, related_map), encoding="utf-8")
-        generated.append((article["slug"], article["title"]))
-        print(f"  Generated: {category_slug}/{filename}")
-
-    # Remove stale generated article pages that no longer exist in the catalog/module merge.
-    for stale in output_dir.glob("*.html"):
-        if stale.name == "index.html":
-            continue
-        if stale.name not in expected_files:
-            stale.unlink()
-            print(f"  Removed stale: {category_slug}/{stale.name}")
-
-    (output_dir / "index.html").write_text(generate_category_index(category_slug, generated, total_in_catalog), encoding="utf-8")
-    print(f"  Generated: {category_slug}/index.html (category page)")
-    print(f"  Done: {len(generated)} pages in {category_slug}/")
-    return generated
 
 
 def main():
@@ -638,6 +620,7 @@ def main():
         return
 
     all_articles_map = {row["slug"]: row["material_name"] for cat in overall.values() for row in cat}
+    slug_to_category = {row["slug"]: cat_key for cat_key, rows in overall.items() for row in rows}
 
     for cat_slug in cats_to_run:
         cat_dir = public_dir / cat_slug
@@ -654,7 +637,7 @@ def main():
         gen_list = []
         for art in articles:
             target = cat_dir / f"{art['slug']}.html"
-            html_code = generate_article(art, all_articles_map, cat_slug, related_map)
+            html_code = generate_article(art, all_articles_map, cat_slug, related_map, slug_to_category)
             target.write_text(html_code, encoding="utf-8")
             print(f"  Generated: public/{cat_slug}/{art['slug']}.html")
             gen_list.append((art['slug'], art['title']))
