@@ -6,10 +6,10 @@ import html
 import importlib
 import json
 import re
+import shutil
 import urllib.parse
 from collections import defaultdict
 from datetime import date
-from html import unescape
 from pathlib import Path
 
 SITE_NAME = "Everyday Materials"
@@ -286,7 +286,7 @@ def build_sources(sources):
             title, url = s.get("title", ""), s.get("url", "")
         else:
             title, url = s[0], s[1]
-        items.append(f'        <li>{html.escape(title)} &mdash; <a href="{html.escape(url, quote=True)}" target="_blank" rel="noopener">{html.escape(url)}</a></li>')
+        items.append(f'        <li>{html.escape(title)} &mdash; <a href="{html.escape(url, quote=True)}" target="_blank" rel="noopener noreferrer">{html.escape(url)}</a></li>')
     return "\n".join(items)
 
 
@@ -329,8 +329,8 @@ def build_related(slug, all_articles, related_map, slug_to_category=None):
         return ""
         
     return f"""    <div class="connection-hub">
-      <h2 style="font-family: var(--serif); font-size: 1.75rem; color: var(--text-main); margin-bottom: 0.5rem; border: none; margin-top: 0;">Explore Connections</h2>
-      <p style="color: var(--text-muted); margin-bottom: 2rem;">Dive deeper into related hazards, similar chemical profiles, or safe material equivalents.</p>
+      <h2>Explore Connections</h2>
+      <p class="connection-hub-subtitle">Dive deeper into related hazards, similar chemical profiles, or safe material equivalents.</p>
       <div class="connection-grid">
 {chr(10).join(links)}
       </div>
@@ -355,11 +355,11 @@ def convert_to_fact_cards(content):
 def generate_article(article, all_articles, category_slug, related_map, slug_to_category=None):
     cat = CATEGORIES[category_slug]
     canonical = f"{SITE_URL}/{category_slug}/{article['slug']}.html"
-    plain_title = html.escape(unescape(article["title"]), quote=True)
+    plain_title = html.escape(html.unescape(article["title"]), quote=True)
     plain_desc = html.escape(article["meta_description"], quote=True)
     today = date.today().isoformat()
-    
-    v_raw = unescape(article.get('verdict_rating', 'Caution'))
+
+    v_raw = html.unescape(article.get('verdict_rating', 'Caution'))
     v_bubble = v_raw.split(' — ')[0] if ' — ' in v_raw else v_raw
     v_title = "Research-Weighted Household Verdict"
 
@@ -385,34 +385,36 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <meta property="og:image" content="{SITE_URL}/images/og-default.png" />
   <link rel="stylesheet" href="../css/style.css?v={CSS_VERSION}" />
   <script type="application/ld+json">
-  {{
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "{plain_title}",
-    "description": "{plain_desc}",
-    "url": "{canonical}",
-    "datePublished": "{today}",
-    "dateModified": "{today}",
-    "publisher": {{
-      "@type": "Organization",
-      "name": "{SITE_NAME}",
-      "url": "{SITE_URL}"
-    }},
-    "mainEntityOfPage": {{
-      "@type": "WebPage",
-      "@id": "{canonical}"
-    }}
-  }}
+  {json.dumps({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": html.unescape(article["title"]),
+      "description": article["meta_description"],
+      "url": canonical,
+      "datePublished": today,
+      "dateModified": today,
+      "publisher": {
+          "@type": "Organization",
+          "name": SITE_NAME,
+          "url": SITE_URL,
+      },
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": canonical,
+      },
+  }, indent=4, ensure_ascii=False)}
   </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <header>
     <a href="../" class="brand">{SITE_NAME}</a>
     <span class="category-pill">{CATEGORIES.get(category_slug, {}).get("name", category_slug.title()).replace("&amp;", "&")}</span>
   </header>
-  <main>
+  <main id="main-content">
     <article>
     <h1>{article['title']}</h1>
     <p class="title-dek">{plain_desc}</p>
@@ -437,7 +439,7 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
 {build_related(article['slug'], all_articles, related_map, slug_to_category)}
     </article>
   </main>
-  <div class="site-footer"><nav><a href="../about.html">About</a><a href="../methodology.html">Methodology</a><a href="../privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {today[:4]} {SITE_NAME}</p></div>
+  <footer class="site-footer"><nav><a href="../about.html">About</a><a href="../methodology.html">Methodology</a><a href="../privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {today[:4]} {SITE_NAME}</p></footer>
 </body>
 </html>
 """
@@ -474,14 +476,14 @@ def generate_category_index(category_slug, generated_articles, target_count):
   <main>
     <h1>{cat['name'].replace('&amp;', '&')}</h1>
     <p class="title-dek">{cat['tagline']}</p>
-    <div class="alt-type" style="margin-bottom: 2rem;">{len(generated_articles)} published guides • {target_count} materials catalog</div>
-    <div class="connection-hub" style="margin-top: 0; border-top: none; padding-top: 0; background: transparent;">
+    <div class="alt-type alt-type--spaced">{len(generated_articles)} published guides &middot; {target_count} materials catalog</div>
+    <div class="connection-hub connection-hub--transparent">
       <div class="connection-grid">
 {links_html}
       </div>
     </div>
   </main>
-  <div class="site-footer"><nav><a href="../about.html">About</a><a href="../methodology.html">Methodology</a><a href="../privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></div>
+  <footer class="site-footer"><nav><a href="../about.html">About</a><a href="../methodology.html">Methodology</a><a href="../privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
 </body></html>
 """
 
@@ -497,7 +499,7 @@ def generate_homepage(catalog_by_category, generated_counts):
         sections.append(f"""        <a href="{href}" class="connect-link">
           <div class="connect-type">{published}/{total} Published &middot; {state}</div>
           <div class="connect-title">{cat['name'].replace("&amp;", "&")} <span>&rarr;</span></div>
-          <p class="alt-desc" style="margin-top: 0.75rem; margin-bottom: 0;">{cat['tagline']}</p>
+          <p class="alt-desc hero-tagline">{cat['tagline']}</p>
         </a>""")
 
     html_out = f"""<!DOCTYPE html>
@@ -509,24 +511,26 @@ def generate_homepage(catalog_by_category, generated_counts):
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" />
+  <meta property="og:image" content="{SITE_URL}/images/og-default.png" />
   <link rel="stylesheet" href="css/style.css?v={CSS_VERSION}" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 </head><body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <div class="hero">
     <div class="site-mark">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-label="{SITE_NAME} logo" role="img"><path d="M12 2L2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
     </div>
     <h1>{SITE_NAME}</h1>
-    <p class="tagline" style="margin-bottom: 0; color: rgba(255,255,255,0.9);">The Science of Your Home, Simplified.</p>
+    <p class="hero-subtitle">The Science of Your Home, Simplified.</p>
   </div>
-  <main>
-    <div class="connection-hub" style="margin-top: 0; border-top: none; padding-top: 0; background: transparent;">
-      <h2 style="font-family: var(--serif); font-size: 2rem; margin-bottom: 0.5rem; color: var(--text-main);">Safety Guide Categories</h2>
+  <main id="main-content">
+    <div class="connection-hub connection-hub--transparent">
+      <h2>Safety Guide Categories</h2>
       <p class="title-dek">Browse {sum(len(v) for v in catalog_by_category.values())} household material safety entries across 8 categories.</p>
       <div class="connection-grid">\n{chr(10).join(sections)}\n      </div>
     </div>
   </main>
-  <div class="site-footer"><nav><a href="about.html">About</a><a href="methodology.html">Methodology</a><a href="privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></div>
+  <footer class="site-footer"><nav><a href="about.html">About</a><a href="methodology.html">Methodology</a><a href="privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
 </body></html>
 """
     Path("public/index.html").write_text(html_out, encoding="utf-8")
@@ -546,7 +550,7 @@ def generate_homepage(catalog_by_category, generated_counts):
     <h1>Coming Soon</h1>
     <p class="title-dek">This page is currently under construction.</p>
   </main>
-  <div class="site-footer"><nav><a href="about.html">About</a><a href="methodology.html">Methodology</a><a href="privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></div>
+  <footer class="site-footer"><nav><a href="about.html">About</a><a href="methodology.html">Methodology</a><a href="privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
 </body></html>"""
     
     Path("public/about.html").write_text(nav_html, encoding="utf-8")
@@ -555,9 +559,16 @@ def generate_homepage(catalog_by_category, generated_counts):
 
 
 def generate_sitemap(urls):
+    today = date.today().isoformat()
     lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for loc in urls:
-        lines.append(f"  <url><loc>{loc}</loc></url>")
+        if loc.endswith("/") and loc.count("/") == 3:
+            priority = "1.0"  # homepage
+        elif loc.endswith("/"):
+            priority = "0.8"  # category index
+        else:
+            priority = "0.9"  # article
+        lines.append(f"  <url><loc>{loc}</loc><lastmod>{today}</lastmod><priority>{priority}</priority></url>")
     lines.append('</urlset>')
     Path("public/sitemap.xml").write_text("\n".join(lines), encoding="utf-8")
 
@@ -591,7 +602,6 @@ def main():
     css_dir = public_dir / "css"
     css_dir.mkdir(exist_ok=True)
     
-    import shutil
     if Path("css/style.css").exists():
         shutil.copy("css/style.css", css_dir / "style.css")
     if Path("favicon.svg").exists():
