@@ -177,8 +177,9 @@
       input.focus();
     });
 
-    // Keyboard shortcut: press "/" to focus search (common UX pattern)
+    // Keyboard shortcuts
     document.addEventListener('keydown', function (e) {
+      // "/" to focus search (common UX pattern)
       if (
         e.key === '/' &&
         document.activeElement !== input &&
@@ -187,6 +188,13 @@
       ) {
         e.preventDefault();
         input.focus();
+      }
+
+      // Escape to clear search and blur
+      if (e.key === 'Escape' && document.activeElement === input) {
+        input.value = '';
+        filter('');
+        input.blur();
       }
     });
   }

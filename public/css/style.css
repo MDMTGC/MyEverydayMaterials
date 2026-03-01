@@ -128,6 +128,11 @@
   box-sizing: border-box;
 }
 
+/* Ensure [hidden] always wins over component display values */
+[hidden] {
+  display: none !important;
+}
+
 /* ─── Base ─── */
 
 html {
@@ -1015,6 +1020,12 @@ a.btn:active {
   box-shadow: var(--shadow-sm);
   -webkit-appearance: none;
   appearance: none;
+}
+
+/* Hide native WebKit clear button (we provide our own) */
+.search-input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  display: none;
 }
 
 .search-input::placeholder {
