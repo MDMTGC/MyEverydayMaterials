@@ -29,10 +29,6 @@
   --serif: 'Playfair Display', serif;
   --sans: 'Inter', sans-serif;
 
-  /* Component aliases */
-  --card-bg: #ffffff;
-  --primary: #6366f1;
-
   /* Slate scale */
   --slate-50: #f8fafc;
   --slate-200: #e2e8f0;
@@ -263,88 +259,7 @@ p {
   color: var(--text-main);
 }
 
-/* ─── Table of Contents (first definition) ─── */
-
-.toc {
-  background-color: var(--surface-color);
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-soft);
-  padding: 24px;
-  margin: 32px 0 48px;
-  box-shadow: var(--shadow-card);
-}
-
-.toc h2 {
-  font-size: 18px;
-  margin: 0 0 16px 0;
-  border-bottom: none;
-  font-family: var(--serif);
-}
-
-.toc ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.toc li {
-  margin-bottom: 12px;
-}
-
-.toc a {
-  font-family: var(--sans);
-  font-size: 16px;
-  color: var(--accent-brand);
-  font-weight: 500;
-  border-bottom: 1px dotted transparent;
-  transition: border-bottom-color 0.2s ease;
-}
-
-.toc a:hover {
-  border-bottom-color: var(--accent-brand);
-}
-
-/* ─── Dynamic Verdict Cards (first definition) ─── */
-
-.verdict-card {
-  border-radius: var(--radius-soft);
-  padding: 32px;
-  margin-bottom: 48px;
-  position: relative;
-  transition: box-shadow 0.3s ease;
-}
-
-.verdict-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
-.verdict-bubble {
-  font-family: var(--sans);
-  font-weight: 800;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 6px 14px;
-  border-radius: var(--radius-pill);
-  margin-right: 12px;
-  display: inline-block;
-  color: white;
-}
-
-.verdict-title {
-  font-family: var(--serif);
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.verdict-text {
-  font-size: 16px;
-  font-weight: 500;
-  margin: 0;
-  line-height: 1.6;
-}
+/* ─── Verdict Card Severity Variants ─── */
 
 /* Danger (Avoid) */
 .verdict-avoid {
@@ -425,7 +340,7 @@ p {
 /* ─── 30-Second Verdict Box ─── */
 
 .verdict-box {
-  background: var(--card-bg);
+  background: var(--surface-color);
   border: 2px solid var(--slate-200);
   border-radius: 0.75rem;
   padding: 1.5rem;
@@ -519,7 +434,7 @@ p {
 }
 
 .alt-card {
-  background: var(--card-bg);
+  background: var(--surface-color);
   border: 1px solid var(--slate-200);
   border-radius: 0.75rem;
   padding: 1.25rem;
@@ -542,7 +457,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--primary);
+  color: var(--accent-brand);
   margin-bottom: 0.5rem;
 }
 
@@ -569,16 +484,16 @@ p {
   display: inline-block;
   font-size: 0.8125rem;
   font-weight: 600;
-  color: var(--primary);
+  color: var(--accent-brand);
   text-decoration: none;
   padding: 0.375rem 0.75rem;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--accent-brand);
   border-radius: 0.375rem;
   transition: all 0.15s ease;
 }
 
 .alt-card .alt-link:hover {
-  background: var(--primary);
+  background: var(--accent-brand);
   color: #fff;
 }
 
@@ -660,7 +575,7 @@ p {
 }
 
 .sources ol li a {
-  color: var(--primary);
+  color: var(--accent-brand);
   text-decoration: none;
 }
 
@@ -671,7 +586,7 @@ p {
 /* ─── Table of Contents ─── */
 
 .toc {
-  background: var(--card-bg);
+  background: var(--surface-color);
   border: 1px solid var(--gray-200);
   border-radius: 0.75rem;
   padding: 1.25rem;
@@ -700,7 +615,7 @@ p {
 
 .toc ol li a {
   font-size: 0.875rem;
-  color: var(--primary);
+  color: var(--accent-brand);
   text-decoration: none;
   font-weight: 500;
   display: inline;
@@ -788,7 +703,7 @@ p {
 }
 
 .prose a {
-  color: var(--primary);
+  color: var(--accent-brand);
 }
 
 .prose a:hover {

@@ -149,8 +149,8 @@ Do not output anything except the evaluated Python LIST of dictionaries.
                     if text.endswith("```"):
                         text = text[:-3]
                     
-                    # Check for json/dict syntax issues
-                    parsed_batch = eval(text.strip())
+                    import ast
+                    parsed_batch = ast.literal_eval(text.strip())
                     if not isinstance(parsed_batch, list):
                         raise ValueError("Output was not a list")
                     
