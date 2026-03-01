@@ -447,7 +447,10 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
 
 def generate_category_index(category_slug, generated_articles, target_count):
     cat = CATEGORIES[category_slug]
-    
+    cat_name = cat["name"].replace("&amp;", "&")
+    cat_title = f"{cat_name} &mdash; {SITE_NAME}"
+    cat_canonical = f"{SITE_URL}/{category_slug}/"
+
     links_html = "\n".join(
         f"""        <a href="{slug}.html" class="connect-link">
           <div class="connect-type">Guide</div>
@@ -456,25 +459,61 @@ def generate_category_index(category_slug, generated_articles, target_count):
         for slug, title in generated_articles
     )
 
+    # ld+json: CollectionPage with article list
+    cat_items = [
+        {
+            "@type": "ListItem",
+            "position": i,
+            "name": html.unescape(title),
+            "url": f"{SITE_URL}/{category_slug}/{slug}.html",
+        }
+        for i, (slug, title) in enumerate(generated_articles, 1)
+    ]
+    cat_ld = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": html.unescape(cat_name),
+        "description": cat["description"],
+        "url": cat_canonical,
+        "isPartOf": {"@type": "WebSite", "name": SITE_NAME, "url": SITE_URL + "/"},
+        "mainEntity": {
+            "@type": "ItemList",
+            "numberOfItems": len(cat_items),
+            "itemListElement": cat_items,
+        },
+    }, indent=4, ensure_ascii=False)
+
     return f"""<!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{cat['name'].replace('&amp;', '&')} &mdash; {SITE_NAME}</title>
+  <title>{cat_title}</title>
   <meta name="description" content="{cat['description']}" />
-  <link rel="canonical" href="{SITE_URL}/{category_slug}/" />
+  <link rel="canonical" href="{cat_canonical}" />
+  <meta property="og:title" content="{cat_title}" />
+  <meta property="og:description" content="{cat['description']}" />
+  <meta property="og:url" content="{cat_canonical}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="{SITE_NAME}" />
+  <meta property="og:image" content="{SITE_URL}/images/og-default.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="{cat_title}" />
+  <meta name="twitter:description" content="{cat['description']}" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" />
   <link rel="stylesheet" href="../css/style.css?v={CSS_VERSION}" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <script type="application/ld+json">
+  {cat_ld}
+  </script>
 </head><body>
   <header>
     <a href="../" class="brand">{SITE_NAME}</a>
-    <span class="category-pill">{cat['name'].replace("&amp;", "&")}</span>
+    <span class="category-pill">{cat_name}</span>
   </header>
   <main>
-    <h1>{cat['name'].replace('&amp;', '&')}</h1>
+    <h1>{cat_name}</h1>
     <p class="title-dek">{cat['tagline']}</p>
     <div class="alt-type alt-type--spaced">{len(generated_articles)} published guides &middot; {target_count} materials catalog</div>
     <div class="connection-hub connection-hub--transparent">
@@ -502,18 +541,66 @@ def generate_homepage(catalog_by_category, generated_counts):
           <p class="alt-desc hero-tagline">{cat['tagline']}</p>
         </a>""")
 
+    total_articles = sum(len(v) for v in catalog_by_category.values())
+    home_desc = f"Browse {total_articles} household material safety entries across 8 categories."
+    home_title = f"{SITE_NAME} — Science-Backed Safety Guides for Your Home"
+
+    # Build ld+json: WebSite + ItemList of categories
+    cat_items = []
+    for i, (cat_slug, cat) in enumerate(CATEGORIES.items(), 1):
+        published = generated_counts.get(cat_slug, 0)
+        if published:
+            cat_items.append({
+                "@type": "ListItem",
+                "position": i,
+                "name": html.unescape(cat["name"]),
+                "url": f"{SITE_URL}/{cat_slug}/",
+            })
+    homepage_ld = json.dumps([
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": SITE_NAME,
+            "url": SITE_URL + "/",
+            "description": home_desc,
+            "publisher": {
+                "@type": "Organization",
+                "name": SITE_NAME,
+                "url": SITE_URL,
+            },
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Safety Guide Categories",
+            "numberOfItems": len(cat_items),
+            "itemListElement": cat_items,
+        },
+    ], indent=4, ensure_ascii=False)
+
     html_out = f"""<!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{SITE_NAME} — Science-Backed Safety Guides for Your Home</title>
-  <meta name="description" content="Browse 100 household material safety entries across 8 categories." />
+  <title>{home_title}</title>
+  <meta name="description" content="{home_desc}" />
   <link rel="canonical" href="{SITE_URL}/" />
+  <meta property="og:title" content="{home_title}" />
+  <meta property="og:description" content="{home_desc}" />
+  <meta property="og:url" content="{SITE_URL}/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="{SITE_NAME}" />
+  <meta property="og:image" content="{SITE_URL}/images/og-default.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="{home_title}" />
+  <meta name="twitter:description" content="{home_desc}" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" />
-  <meta property="og:image" content="{SITE_URL}/images/og-default.png" />
   <link rel="stylesheet" href="css/style.css?v={CSS_VERSION}" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <script type="application/ld+json">
+  {homepage_ld}
+  </script>
 </head><body>
   <a href="#main-content" class="skip-link">Skip to content</a>
   <div class="hero">
@@ -526,7 +613,7 @@ def generate_homepage(catalog_by_category, generated_counts):
   <main id="main-content">
     <div class="connection-hub connection-hub--transparent">
       <h2>Safety Guide Categories</h2>
-      <p class="title-dek">Browse {sum(len(v) for v in catalog_by_category.values())} household material safety entries across 8 categories.</p>
+      <p class="title-dek">{home_desc}</p>
       <div class="connection-grid">\n{chr(10).join(sections)}\n      </div>
     </div>
   </main>
@@ -722,12 +809,18 @@ def generate_sitemap(urls):
     lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for loc in urls:
         if loc.endswith("/") and loc.count("/") == 3:
-            priority = "1.0"  # homepage
+            priority = "1.0"   # homepage
+            freq = "weekly"
         elif loc.endswith("/"):
-            priority = "0.8"  # category index
+            priority = "0.8"   # category index
+            freq = "weekly"
+        elif "/about." in loc or "/methodology." in loc:
+            priority = "0.5"   # static info pages
+            freq = "monthly"
         else:
-            priority = "0.9"  # article
-        lines.append(f"  <url><loc>{loc}</loc><lastmod>{today}</lastmod><priority>{priority}</priority></url>")
+            priority = "0.9"   # article
+            freq = "weekly"
+        lines.append(f"  <url><loc>{loc}</loc><lastmod>{today}</lastmod><changefreq>{freq}</changefreq><priority>{priority}</priority></url>")
     lines.append('</urlset>')
     Path("public/sitemap.xml").write_text("\n".join(lines), encoding="utf-8")
 
@@ -826,6 +919,8 @@ def main():
         generate_homepage(overall, counts)
         # Gather URLs for sitemap
         sitemap_urls = [SITE_URL + "/"]
+        sitemap_urls.append(f"{SITE_URL}/about.html")
+        sitemap_urls.append(f"{SITE_URL}/methodology.html")
         for cat_slug, articles in all_generated.items():
             if not articles: continue
             sitemap_urls.append(f"{SITE_URL}/{cat_slug}/")
