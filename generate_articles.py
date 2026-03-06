@@ -357,7 +357,7 @@ def convert_to_fact_cards(content):
 
 def generate_article(article, all_articles, category_slug, related_map, slug_to_category=None):
     cat = CATEGORIES[category_slug]
-    canonical = f"{SITE_URL}/{category_slug}/{article['slug']}.html"
+    canonical = f"{SITE_URL}/{category_slug}/{article['slug']}"
     plain_title = html.escape(html.unescape(article["title"]), quote=True)
     plain_desc = html.escape(article["meta_description"], quote=True)
     today = date.today().isoformat()
