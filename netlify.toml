@@ -75,6 +75,47 @@ publish = "public"
   to = "/outdoor/"
   status = 301
 
+# Strip trailing slashes from article URLs to prevent redirect errors
+[[redirects]]
+  from = "/kitchen/*/"
+  to = "/kitchen/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/nursery/*/"
+  to = "/nursery/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/pet-care/*/"
+  to = "/pet-care/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/household/*/"
+  to = "/household/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/personal-care/*/"
+  to = "/personal-care/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/cleaning/*/"
+  to = "/cleaning/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/tech/*/"
+  to = "/tech/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/outdoor/*/"
+  to = "/outdoor/:splat"
+  status = 301
+
 # Custom 404
 [[redirects]]
   from = "/*"
