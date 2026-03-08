@@ -15,7 +15,7 @@ from pathlib import Path
 SITE_NAME = "Everyday Materials"
 SITE_URL = "https://myeverydaymaterials.com"
 AFFILIATE_TAG = "myeverydaymat-20"
-CSS_VERSION = "9"
+CSS_VERSION = "10"
 
 # Inline script to prevent Flash of Default Theme — runs before CSS is parsed
 THEME_INIT_SCRIPT = '<script>!function(){var t=localStorage.getItem("mem-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}()</script>'
@@ -73,6 +73,35 @@ CATEGORIES = {
         "tagline": "What’s in your yard, garden, and outdoor living spaces.",
     },
 }
+
+
+_NAV_CHEVRON = '<svg class="nav-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>'
+_HAMBURGER_ICON = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>'
+
+
+def build_site_header():
+    """Build the site-wide navigation header used on every page."""
+    dropdown_links = "\n".join(
+        f'        <a href="/{slug}/">{cat["name"].replace("&amp;", "&")}</a>'
+        for slug, cat in CATEGORIES.items()
+    )
+    return f"""  <header>
+    <a href="/" class="brand">{SITE_NAME}</a>
+    <nav class="site-nav" id="site-nav">
+      <a href="/" class="site-nav-link">Home</a>
+      <div class="site-nav-dropdown" id="nav-dropdown">
+        <button class="site-nav-link site-nav-dropdown-toggle" type="button" aria-expanded="false">Articles {_NAV_CHEVRON}</button>
+        <div class="site-nav-dropdown-menu">
+{dropdown_links}
+        </div>
+      </div>
+      <a href="/methodology" class="site-nav-link">Methodology</a>
+      <a href="/about" class="site-nav-link">About</a>
+      <a href="/about#contact" class="site-nav-link">Contact</a>
+    </nav>
+    <div class="header-right"></div>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">{_HAMBURGER_ICON}</button>
+  </header>"""
 
 
 def load_material_rows():
@@ -414,12 +443,7 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to content</a>
-  <header>
-    <a href="../" class="brand">{SITE_NAME}</a>
-    <div class="header-right">
-      <a href="./" class="category-pill">{CATEGORIES.get(category_slug, {}).get("name", category_slug.title()).replace("&amp;", "&")}</a>
-    </div>
-  </header>
+{build_site_header()}
   <main id="main-content">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="../">Home</a>
@@ -534,12 +558,7 @@ def generate_category_index(category_slug, generated_articles, target_count):
   {cat_ld}
   </script>
 </head><body>
-  <header>
-    <a href="../" class="brand">{SITE_NAME}</a>
-    <div class="header-right">
-      <span class="category-pill">{cat_name}</span>
-    </div>
-  </header>
+{build_site_header()}
   <main>
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="../">Home</a>
@@ -638,6 +657,7 @@ def generate_homepage(catalog_by_category, generated_counts):
   </script>
 </head><body>
   <a href="#main-content" class="skip-link">Skip to content</a>
+{build_site_header()}
   <div class="hero">
     <div class="site-mark">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-label="{SITE_NAME} logo" role="img"><path d="M12 2L2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
@@ -675,10 +695,7 @@ def generate_homepage(catalog_by_category, generated_counts):
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to content</a>
-  <header>
-    <a href="/" class="brand">{SITE_NAME}</a>
-    <div class="header-right"></div>
-  </header>
+{build_site_header()}
   <main id="main-content" class="prose">
 {{body}}
   </main>
@@ -737,7 +754,7 @@ def generate_homepage(catalog_by_category, generated_counts):
     <p><strong>Can I suggest a material for you to analyze?</strong><br />
     Yes. We prioritize our research roadmap based on community interest and emerging safety trends. Send us an email at the address below.</p>
 
-    <h2>Contact {SITE_NAME}</h2>
+    <h2 id="contact">Contact {SITE_NAME}</h2>
 
     <p>We value precision and transparency. If you have a technical question, a correction regarding a specific study, or a material you&rsquo;d like us to cover, please reach out.</p>
 

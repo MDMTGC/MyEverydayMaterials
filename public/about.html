@@ -11,13 +11,33 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <script>!function(){var t=localStorage.getItem("mem-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}()</script>
-  <link rel="stylesheet" href="css/style.css?v=9" />
+  <link rel="stylesheet" href="css/style.css?v=10" />
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to content</a>
   <header>
     <a href="/" class="brand">Everyday Materials</a>
+    <nav class="site-nav" id="site-nav">
+      <a href="/" class="site-nav-link">Home</a>
+      <div class="site-nav-dropdown" id="nav-dropdown">
+        <button class="site-nav-link site-nav-dropdown-toggle" type="button" aria-expanded="false">Articles <svg class="nav-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="site-nav-dropdown-menu">
+        <a href="/kitchen/">Kitchen & Dining Safety</a>
+        <a href="/nursery/">Nursery & Baby Gear</a>
+        <a href="/pet-care/">Pet Care Safety</a>
+        <a href="/household/">Household Surfaces & Fabrics</a>
+        <a href="/personal-care/">Personal Care & Chemicals</a>
+        <a href="/cleaning/">Cleaning & Maintenance</a>
+        <a href="/tech/">Tech & Home Office</a>
+        <a href="/outdoor/">Outdoor & Garden</a>
+        </div>
+      </div>
+      <a href="/methodology" class="site-nav-link">Methodology</a>
+      <a href="/about" class="site-nav-link">About</a>
+      <a href="/about#contact" class="site-nav-link">Contact</a>
+    </nav>
     <div class="header-right"></div>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg></button>
   </header>
   <main id="main-content" class="prose">
     <h1>About Everyday Materials</h1>
@@ -70,7 +90,7 @@
     <p><strong>Can I suggest a material for you to analyze?</strong><br />
     Yes. We prioritize our research roadmap based on community interest and emerging safety trends. Send us an email at the address below.</p>
 
-    <h2>Contact Everyday Materials</h2>
+    <h2 id="contact">Contact Everyday Materials</h2>
 
     <p>We value precision and transparency. If you have a technical question, a correction regarding a specific study, or a material you&rsquo;d like us to cover, please reach out.</p>
 
