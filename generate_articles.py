@@ -322,7 +322,7 @@ def build_related(slug, all_articles, related_map, slug_to_category=None):
             target_category = target_slug.split('-')[0]
             
         links.append(
-            f"""        <a href="../{target_category}/{target_slug}.html" class="connect-link">
+            f"""        <a href="../{target_category}/{target_slug}" class="connect-link">
           <div class="connect-type">{html.escape(context)}</div>
           <div class="connect-title">{target_title} <span>&rarr;</span></div>
         </a>"""
@@ -388,7 +388,7 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-  <meta property="og:image" content="{SITE_URL}/images/og-default.png" />
+  <meta property="og:image" content="{SITE_URL}/images/hero.jpg" />
   {THEME_INIT_SCRIPT}
   <link rel="stylesheet" href="../css/style.css?v={CSS_VERSION}" />
   <script type="application/ld+json">
@@ -450,7 +450,7 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
 {build_related(article['slug'], all_articles, related_map, slug_to_category)}
     </article>
   </main>
-  <footer class="site-footer"><nav><a href="../">Home</a><a href="../about.html">About</a><a href="../methodology.html">Methodology</a><a href="../privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {today[:4]} {SITE_NAME}</p></footer>
+  <footer class="site-footer"><nav><a href="../">Home</a><a href="../about">About</a><a href="../methodology">Methodology</a><a href="../privacy">Privacy Policy</a></nav><p class="copyright">&copy; {today[:4]} {SITE_NAME}</p></footer>
   <script src="../js/main.js" defer></script>
 </body>
 </html>
@@ -477,7 +477,7 @@ def generate_category_index(category_slug, generated_articles, target_count):
         badge_html = f' <span class="status-badge status-badge--{badge_cls}">{badge_txt}</span>' if badge_cls else ""
         data_attr = f' data-status="{vlevel}"' if vlevel else ""
         link_parts.append(
-            f'        <a href="{slug}.html" class="connect-link"{data_attr}>\n'
+            f'        <a href="{slug}" class="connect-link"{data_attr}>\n'
             f'          <div class="connect-type">Guide{badge_html}</div>\n'
             f'          <div class="connect-title">{title} <span>&rarr;</span></div>\n'
             f'        </a>'
@@ -490,7 +490,7 @@ def generate_category_index(category_slug, generated_articles, target_count):
             "@type": "ListItem",
             "position": i,
             "name": html.unescape(entry[1]),
-            "url": f"{SITE_URL}/{category_slug}/{entry[0]}.html",
+            "url": f"{SITE_URL}/{category_slug}/{entry[0]}",
         }
         for i, entry in enumerate(generated_articles, 1)
     ]
@@ -520,7 +520,7 @@ def generate_category_index(category_slug, generated_articles, target_count):
   <meta property="og:url" content="{cat_canonical}" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="{SITE_NAME}" />
-  <meta property="og:image" content="{SITE_URL}/images/og-default.png" />
+  <meta property="og:image" content="{SITE_URL}/images/hero.jpg" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="{cat_title}" />
   <meta name="twitter:description" content="{cat['description']}" />
@@ -555,7 +555,7 @@ def generate_category_index(category_slug, generated_articles, target_count):
       </div>
     </div>
   </main>
-  <footer class="site-footer"><nav><a href="../">Home</a><a href="../about.html">About</a><a href="../methodology.html">Methodology</a><a href="../privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
+  <footer class="site-footer"><nav><a href="../">Home</a><a href="../about">About</a><a href="../methodology">Methodology</a><a href="../privacy">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
   <script src="../js/main.js" defer></script>
 </body></html>
 """
@@ -623,7 +623,7 @@ def generate_homepage(catalog_by_category, generated_counts):
   <meta property="og:url" content="{SITE_URL}/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="{SITE_NAME}" />
-  <meta property="og:image" content="{SITE_URL}/images/og-default.png" />
+  <meta property="og:image" content="{SITE_URL}/images/hero.jpg" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="{home_title}" />
   <meta name="twitter:description" content="{home_desc}" />
@@ -652,7 +652,7 @@ def generate_homepage(catalog_by_category, generated_counts):
       <div class="connection-grid">\n{chr(10).join(sections)}\n      </div>
     </div>
   </main>
-  <footer class="site-footer"><nav><a href="about.html">About</a><a href="methodology.html">Methodology</a><a href="privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
+  <footer class="site-footer"><nav><a href="about">About</a><a href="methodology">Methodology</a><a href="privacy">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
   <script src="js/main.js" defer></script>
 </body></html>
 """
@@ -665,7 +665,7 @@ def generate_homepage(catalog_by_category, generated_counts):
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   {{title_meta}}
-  <link rel="canonical" href="{SITE_URL}/{{filename}}" />
+  <link rel="canonical" href="{SITE_URL}/{{pagename}}" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" />
@@ -682,7 +682,7 @@ def generate_homepage(catalog_by_category, generated_counts):
   <main id="main-content" class="prose">
 {{body}}
   </main>
-  <footer class="site-footer"><nav><a href="./">Home</a><a href="about.html">About</a><a href="methodology.html">Methodology</a><a href="privacy.html">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
+  <footer class="site-footer"><nav><a href="./">Home</a><a href="about">About</a><a href="methodology">Methodology</a><a href="privacy">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
   <script src="js/main.js" defer></script>
 </body>
 </html>"""
@@ -723,7 +723,7 @@ def generate_homepage(catalog_by_category, generated_counts):
     <h2>Frequently Asked Questions</h2>
 
     <p><strong>How do you determine a &ldquo;Safe&rdquo; vs. &ldquo;Avoid&rdquo; status?</strong><br />
-    We use a tri-tier safety system based on the weight of evidence from peer-reviewed journals, government standard bodies (like the EPA and FDA), and national academies. Our <a href="methodology.html">methodology page</a> explains the full process.</p>
+    We use a tri-tier safety system based on the weight of evidence from peer-reviewed journals, government standard bodies (like the EPA and FDA), and national academies. Our <a href="methodology">methodology page</a> explains the full process.</p>
 
     <p><strong>Are your &ldquo;Better Alternatives&rdquo; sponsored by brands?</strong><br />
     No. We never accept payment from manufacturers to feature their products. Our recommendations are based strictly on material purity, functional utility, and high user ratings.</p>
@@ -839,7 +839,8 @@ def generate_homepage(catalog_by_category, generated_counts):
     }
 
     for filename, (title_meta, body) in _pages.items():
-        page_html = _prose_head.replace("{title_meta}", title_meta).replace("{filename}", filename).replace("{body}", body)
+        pagename = filename.replace(".html", "")
+        page_html = _prose_head.replace("{title_meta}", title_meta).replace("{pagename}", pagename).replace("{body}", body)
         Path(f"public/{filename}").write_text(page_html, encoding="utf-8")
 
 
