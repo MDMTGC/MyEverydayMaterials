@@ -1071,6 +1071,30 @@ a.btn:active {
   color: var(--accent);
 }
 
+/* Category card images (homepage) */
+
+.connect-link--has-img {
+  padding: 0;
+  overflow: hidden;
+}
+
+.connect-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 400 / 250;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.connect-link--has-img:hover .connect-img {
+  transform: scale(1.04);
+}
+
+.connect-link--has-img .connect-body {
+  padding: 1rem 1.25rem 1.25rem;
+}
+
 /* ─── Status Badges (Category Index Cards) ─── */
 
 .status-badge {
