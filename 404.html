@@ -10,30 +10,38 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <script>!function(){var t=localStorage.getItem("mem-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}()</script>
-  <link rel="stylesheet" href="/css/style.css?v=9" />
+  <link rel="stylesheet" href="/css/style.css?v=10" />
 </head>
 <body>
 
   <header>
     <a href="/" class="brand">Everyday Materials</a>
+    <nav class="site-nav" id="site-nav">
+      <a href="/" class="site-nav-link">Home</a>
+      <div class="site-nav-dropdown" id="nav-dropdown">
+        <button class="site-nav-link site-nav-dropdown-toggle" type="button" aria-expanded="false">Articles <svg class="nav-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="site-nav-dropdown-menu">
+          <a href="/kitchen/">Kitchen &amp; Dining Safety</a>
+          <a href="/nursery/">Nursery &amp; Baby Gear</a>
+          <a href="/pet-care/">Pet Care Safety</a>
+          <a href="/household/">Household Surfaces &amp; Fabrics</a>
+          <a href="/personal-care/">Personal Care &amp; Chemicals</a>
+          <a href="/cleaning/">Cleaning &amp; Maintenance</a>
+          <a href="/tech/">Tech &amp; Home Office</a>
+          <a href="/outdoor/">Outdoor &amp; Garden</a>
+        </div>
+      </div>
+      <a href="/methodology" class="site-nav-link">Methodology</a>
+      <a href="/about" class="site-nav-link">About</a>
+      <a href="/about#contact" class="site-nav-link">Contact</a>
+    </nav>
     <div class="header-right"></div>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg></button>
   </header>
 
   <main class="prose">
     <h1>Page Not Found</h1>
     <p>The page you&rsquo;re looking for doesn&rsquo;t exist or has been moved.</p>
-    <h2>Try These Instead</h2>
-    <ul>
-      <li><a href="/">Home &mdash; All Safety Guides</a></li>
-      <li><a href="/kitchen/">Kitchen &amp; Dining Safety</a></li>
-      <li><a href="/nursery/">Nursery &amp; Baby Gear</a></li>
-      <li><a href="/pet-care/">Pet Care Safety</a></li>
-      <li><a href="/household/">Household Surfaces &amp; Fabrics</a></li>
-      <li><a href="/personal-care/">Personal Care &amp; Chemicals</a></li>
-      <li><a href="/cleaning/">Cleaning &amp; Maintenance</a></li>
-      <li><a href="/tech/">Tech &amp; Home Office</a></li>
-      <li><a href="/outdoor/">Outdoor &amp; Garden</a></li>
-    </ul>
   </main>
 
   <footer class="site-footer">
