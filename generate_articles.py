@@ -588,10 +588,13 @@ def generate_homepage(catalog_by_category, generated_counts):
         href = f"{cat_slug}/" if published else "#"
         state = "Live" if published else "In Progress"
         
-        sections.append(f"""        <a href="{href}" class="connect-link">
-          <div class="connect-type">{published}/{total} Published &middot; {state}</div>
-          <div class="connect-title">{cat['name'].replace("&amp;", "&")} <span>&rarr;</span></div>
-          <p class="alt-desc hero-tagline">{cat['tagline']}</p>
+        sections.append(f"""        <a href="{href}" class="connect-link connect-link--has-img">
+          <img class="connect-img" src="images/categories/{cat_slug}.webp" alt="{cat['name'].replace("&amp;", "&")}" width="400" height="250" loading="lazy" />
+          <div class="connect-body">
+            <div class="connect-type">{published}/{total} Published &middot; {state}</div>
+            <div class="connect-title">{cat['name'].replace("&amp;", "&")} <span>&rarr;</span></div>
+            <p class="alt-desc hero-tagline">{cat['tagline']}</p>
+          </div>
         </a>""")
 
     total_articles = sum(len(v) for v in catalog_by_category.values())
