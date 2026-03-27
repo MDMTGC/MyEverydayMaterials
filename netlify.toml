@@ -34,6 +34,19 @@ publish = "public"
   [headers.values]
     Cache-Control = "public, max-age=3600"
 
+# Force www to non-www (fixes redirect validation errors in Search Console)
+[[redirects]]
+  from = "https://www.myeverydaymaterials.com/*"
+  to = "https://myeverydaymaterials.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.myeverydaymaterials.com/*"
+  to = "https://myeverydaymaterials.com/:splat"
+  status = 301
+  force = true
+
 # Redirect trailing slashes for clean URLs
 [[redirects]]
   from = "/kitchen"
