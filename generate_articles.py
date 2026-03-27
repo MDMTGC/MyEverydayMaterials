@@ -2,6 +2,7 @@
 """Universal static site generator for MyEverydayMaterials."""
 
 import argparse
+import hashlib
 import html
 import importlib
 import json
@@ -9,13 +10,30 @@ import re
 import shutil
 import urllib.parse
 from collections import defaultdict
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 SITE_NAME = "Everyday Materials"
 SITE_URL = "https://myeverydaymaterials.com"
 AFFILIATE_TAG = "myeverydaymat-20"
 CSS_VERSION = "10"
+
+# Stable launch date — articles get deterministic publication dates spread over
+# the weeks following launch so Google sees organic publishing cadence.
+SITE_LAUNCH_DATE = date(2026, 2, 1)
+
+AUTHOR_NAME = "Everyday Materials Research Team"
+
+
+def stable_publish_date(slug):
+    """Return a deterministic publication date based on the article slug.
+
+    Spreads articles across ~8 weeks after SITE_LAUNCH_DATE so that each
+    article has a unique, stable datePublished that doesn't change on rebuild.
+    """
+    h = int(hashlib.md5(slug.encode()).hexdigest(), 16)
+    offset_days = h % 56  # spread over 8 weeks
+    return (SITE_LAUNCH_DATE + timedelta(days=offset_days)).isoformat()
 
 # Inline script to prevent Flash of Default Theme — runs before CSS is parsed
 THEME_INIT_SCRIPT = '<script>!function(){var t=localStorage.getItem("mem-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}()</script>'
@@ -389,7 +407,12 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
     canonical = f"{SITE_URL}/{category_slug}/{article['slug']}"
     plain_title = html.escape(html.unescape(article["title"]), quote=True)
     plain_desc = html.escape(article["meta_description"], quote=True)
-    today = date.today().isoformat()
+    pub_date = stable_publish_date(article["slug"])
+    mod_date = date.today().isoformat()
+
+    # Estimate word count from section content (strip tags for rough count)
+    raw_text = " ".join(s.get("content", "") for s in article["sections"])
+    word_count = len(re.sub(r"<[^>]+>", " ", raw_text).split())
 
     v_raw = html.unescape(article.get('verdict_rating', 'Caution'))
     v_bubble = v_raw.split(' — ')[0] if ' — ' in v_raw else v_raw
@@ -410,6 +433,9 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
   <meta property="og:url" content="{canonical}" />
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="{SITE_NAME}" />
+  <meta property="article:published_time" content="{pub_date}" />
+  <meta property="article:modified_time" content="{mod_date}" />
+  <meta property="article:section" content="{cat['name'].replace('&amp;', '&')}" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="{plain_title}" />
   <meta name="twitter:description" content="{plain_desc}" />
@@ -427,8 +453,14 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
       "headline": html.unescape(article["title"]),
       "description": article["meta_description"],
       "url": canonical,
-      "datePublished": today,
-      "dateModified": today,
+      "datePublished": pub_date,
+      "dateModified": mod_date,
+      "wordCount": word_count,
+      "author": {
+          "@type": "Organization",
+          "name": AUTHOR_NAME,
+          "url": SITE_URL + "/about",
+      },
       "publisher": {
           "@type": "Organization",
           "name": SITE_NAME,
@@ -474,7 +506,7 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
 {build_related(article['slug'], all_articles, related_map, slug_to_category)}
     </article>
   </main>
-  <footer class="site-footer"><nav><a href="../">Home</a><a href="../about">About</a><a href="../methodology">Methodology</a><a href="../privacy">Privacy Policy</a></nav><p class="copyright">&copy; {today[:4]} {SITE_NAME}</p></footer>
+  <footer class="site-footer"><nav><a href="../">Home</a><a href="../about">About</a><a href="../methodology">Methodology</a><a href="../privacy">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
   <script src="../js/main.js" defer></script>
 </body>
 </html>
@@ -871,16 +903,22 @@ def generate_sitemap(urls):
         if loc.endswith("/") and loc.count("/") == 3:
             priority = "1.0"   # homepage
             freq = "weekly"
+            lastmod = today
         elif loc.endswith("/"):
             priority = "0.8"   # category index
             freq = "weekly"
+            lastmod = today
         elif loc.endswith("/about") or loc.endswith("/methodology"):
             priority = "0.5"   # static info pages
             freq = "monthly"
+            lastmod = today
         else:
             priority = "0.9"   # article
-            freq = "weekly"
-        lines.append(f"  <url><loc>{loc}</loc><lastmod>{today}</lastmod><changefreq>{freq}</changefreq><priority>{priority}</priority></url>")
+            freq = "monthly"
+            # Extract slug from URL for stable lastmod
+            slug = loc.rsplit("/", 1)[-1]
+            lastmod = stable_publish_date(slug)
+        lines.append(f"  <url><loc>{loc}</loc><lastmod>{lastmod}</lastmod><changefreq>{freq}</changefreq><priority>{priority}</priority></url>")
     lines.append('</urlset>')
     Path("public/sitemap.xml").write_text("\n".join(lines), encoding="utf-8")
 
