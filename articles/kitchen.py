@@ -4,6 +4,7 @@ ARTICLES = \
 [
     {
         "slug": "pfas-forever-chemicals",
+        "featured": True,
         "title": "PFAS in Your Kitchen: What &ldquo;Forever Chemicals&rdquo; Really Mean for Your Health",
         "meta_description": "Science-backed guide to PFAS forever chemicals in cookware and food packaging. Learn the real risks and discover safer alternatives.",
         "verdict_level": "verdict-avoid",
