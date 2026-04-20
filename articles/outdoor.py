@@ -46,7 +46,7 @@ ARTICLES = [
         "sources": [
             [
                 "US EPA: Assessing and managing chemical risk in consumer environments",
-                "https://www.epa.gov/",
+                "https://www.epa.gov/ingredients-used-pesticide-products/chromated-arsenicals-cca",
             ],
             [
                 "ATSDR Toxicological Profiles",
@@ -103,7 +103,7 @@ ARTICLES = [
         "sources": [
             [
                 "US EPA: Assessing and managing chemical risk in consumer environments",
-                "https://www.epa.gov/",
+                "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1009BZL.TXT",
             ],
             [
                 "ATSDR Toxicological Profiles",
@@ -160,7 +160,7 @@ ARTICLES = [
         "sources": [
             [
                 "US EPA: Assessing and managing chemical risk in consumer environments",
-                "https://www.epa.gov/",
+                "https://www.epa.gov/insect-repellents/deet",
             ],
             [
                 "ATSDR Toxicological Profiles",
@@ -217,7 +217,7 @@ ARTICLES = [
         "sources": [
             [
                 "US EPA: Assessing and managing chemical risk in consumer environments",
-                "https://www.epa.gov/",
+                "https://www.epa.gov/sites/default/files/2015-11/documents/aim_coatings_detailed_factsheet.pdf",
             ],
             [
                 "ATSDR Toxicological Profiles",
@@ -274,7 +274,7 @@ ARTICLES = [
         "sources": [
             [
                 "US EPA: Assessing and managing chemical risk in consumer environments",
-                "https://www.epa.gov/",
+                "https://www.epa.gov/regulations-emissions-vehicles-and-engines/regulations-emissions-small-equipment-tools",
             ],
             [
                 "ATSDR Toxicological Profiles",
@@ -331,7 +331,7 @@ ARTICLES = [
         "sources": [
             [
                 "US EPA: Assessing and managing chemical risk in consumer environments",
-                "https://www.epa.gov/",
+                "https://www.epa.gov/ingredients-used-pesticide-products/draft-human-health-and-ecological-risk-assessments-glyphosate",
             ],
             [
                 "ATSDR Toxicological Profiles",
@@ -388,7 +388,7 @@ ARTICLES = [
         "sources": [
             [
                 "US EPA: Assessing and managing chemical risk in consumer environments",
-                "https://www.epa.gov/",
+                "https://www.epa.gov/pesticides/epa-releases-neonicotinoid-assessments-public-comment",
             ],
             [
                 "ATSDR Toxicological Profiles",
@@ -445,7 +445,7 @@ ARTICLES = [
         "sources": [
             [
                 "US EPA: Assessing and managing chemical risk in consumer environments",
-                "https://www.epa.gov/",
+                "https://www.epa.gov/chemical-research/tire-crumb-questions-and-answers",
             ],
             [
                 "ATSDR Toxicological Profiles",
@@ -502,7 +502,7 @@ ARTICLES = [
         "sources": [
             [
                 "US EPA: Assessing and managing chemical risk in consumer environments",
-                "https://www.epa.gov/",
+                "https://www.epa.gov/chemical-research/federal-research-recycled-tire-crumb-used-playing-fields-and-playgrounds",
             ],
             [
                 "ATSDR Toxicological Profiles",

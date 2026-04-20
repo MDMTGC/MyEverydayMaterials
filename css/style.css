@@ -756,6 +756,16 @@ p {
 }
 .callout-info strong { color: var(--callout-info-text); }
 
+.callout-personal {
+  background: var(--bg-elevated);
+  border-left: 4px solid var(--accent);
+  font-style: italic;
+}
+.callout-personal strong {
+  font-style: normal;
+  color: var(--accent);
+}
+
 /* ─── Table of Contents ─── */
 
 .toc {

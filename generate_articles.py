@@ -511,6 +511,7 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
     <article>
     <h1>{article['title']}</h1>
     {build_byline(pub_date, reviewed_date)}
+    {'<div class="callout callout-personal"><strong>A note from Melecio</strong>' + html.escape(article["personal_note"]) + '</div>' if article.get("personal_note") else ''}
     <p class="title-dek">{plain_desc}</p>
     <div class="editors-note">{EDITORS_NOTE}</div>
     <div class="verdict-card {article['verdict_level']}">

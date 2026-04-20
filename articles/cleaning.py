@@ -4,6 +4,7 @@ ARTICLES = \
 [
     {
         "slug": "quats-disinfectants",
+        "personal_note": "QUATs were one of the first things I looked into when I started thinking about which cleaners were actually safe to use around four cats. Cats walk on cleaned floors and then groom themselves — that's not a hypothetical exposure pathway, that's what cats do. The fact that these compounds are in nearly every disinfecting wipe changed how I stock my cleaning cabinet.",
         "title": "Quaternary Ammonium Compounds (Quats): Understanding the Risks in Your Disinfectants",
         "meta_description": "Uncover the science behind Quats in common disinfectants, linked to respiratory and reproductive issues. Learn safer cleaning alternatives.",
         "verdict_level": "verdict-caution",
@@ -70,6 +71,7 @@ ARTICLES = \
     {
         "slug": "chlorine-bleach-safety",
         "featured": True,
+        "personal_note": "Bleach came up early in my research into what's safe to use in a home with four cats. The fume issue is real, but the part I hadn't thought about was residue — bleach left on a floor dries and looks gone, but cats walk on it, and then they groom. Understanding the actual risk profile here, rather than \"bleach is dangerous\" versus \"bleach is fine,\" was what I was after.",
         "title": "Chlorine Bleach: Safe Handling to Avoid Respiratory Risks and Toxic Fumes",
         "meta_description": "Learn the dangers of chlorine bleach fumes and toxic gas formation. Discover how to use bleach safely or switch to safer disinfectants.",
         "verdict_level": "verdict-caution",

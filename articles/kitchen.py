@@ -5,6 +5,7 @@ ARTICLES = \
     {
         "slug": "pfas-forever-chemicals",
         "featured": True,
+        "personal_note": "Pan coatings were my entry point into household chemical research. Once I started pulling on that thread — what exactly is on a non-stick pan, where does it go when the pan is scratched or overheated — PFAS kept coming up. The \"forever chemical\" label stopped sounding like environmentalist hyperbole and started sounding chemically accurate.",
         "title": "PFAS in Your Kitchen: What &ldquo;Forever Chemicals&rdquo; Really Mean for Your Health",
         "meta_description": "Science-backed guide to PFAS forever chemicals in cookware and food packaging. Learn the real risks and discover safer alternatives.",
         "verdict_level": "verdict-avoid",
@@ -72,7 +73,7 @@ ARTICLES = \
             ],
             [
                 "IARC Monograph on PFOA (2023)",
-                "https://monographs.iarc.who.int/"
+                "https://monographs.iarc.who.int/news-events/volume-135-perfluorooctanoic-acid-pfoa-and-perfluorooctanesulfonic-acid-pfos/"
             ],
             [
                 "Environmental Science &amp; Technology &mdash; PFAS release from cookware (2023)",
@@ -368,7 +369,7 @@ ARTICLES = \
             ],
             [
                 "International Journal of Electrochemical Science &mdash; Al leaching in cooking (2019)",
-                "https://www.electrochemsci.org/"
+                "https://www.electrochemsci.org/papers/vol7/7054498.pdf"
             ],
             [
                 "Alzheimer&rsquo;s Association &mdash; Aluminum and Alzheimer&rsquo;s",
@@ -445,7 +446,7 @@ ARTICLES = \
             ],
             [
                 "America&rsquo;s Test Kitchen &mdash; Science of Cast Iron Seasoning",
-                "https://www.americastestkitchen.com/"
+                "https://www.americastestkitchen.com/guides/cook-it-in-cast-iron/cleaning-and-seasoning-a-cast-iron-skillet"
             ],
             [
                 "Sheryl Canter &mdash; Chemistry of Cast Iron Seasoning (Polymerization)",
@@ -595,7 +596,7 @@ ARTICLES = \
             ],
             [
                 "European Copper Institute &mdash; Copper and Health",
-                "https://copperalliance.org/"
+                "https://copperalliance.org/policy-focus/health-safety/occupational-exposure/"
             ],
             [
                 "NIH &mdash; Copper Fact Sheet for Health Professionals",
@@ -676,7 +677,7 @@ ARTICLES = \
             ],
             [
                 "IARC &mdash; Antimony Trioxide Classification",
-                "https://monographs.iarc.who.int/"
+                "https://monographs.iarc.who.int/news-events/iarc-monographs-volume-131-cobalt-antimony-compounds-and-weapons-grade-tungsten-alloy/"
             ],
             [
                 "Water Research &mdash; PET bottle leaching review (2018)",
@@ -686,6 +687,7 @@ ARTICLES = \
     },
     {
         "slug": "teflon-ptfe-offgassing",
+        "personal_note": "This is the article that started everything. I noticed my non-stick pan was scratched and wanted to know whether that actually mattered. It does — and the answer sent me down a research path that eventually became this site. The short version: normal cooking temperatures are fine, but a scratched or overheated pan is a different story.",
         "title": "Teflon Off-Gassing: What Happens When Non-Stick Pans Overheat",
         "meta_description": "The science on PTFE (Teflon) off-gassing at high temperatures. When non-stick is safe, when it's dangerous, and what to use instead.",
         "verdict_level": "verdict-caution",
@@ -753,7 +755,7 @@ ARTICLES = \
             ],
             [
                 "Avian and Exotic Animal Clinic &mdash; PTFE toxicosis in birds",
-                "https://www.avianandexotic.com/"
+                "https://vcahospitals.com/know-your-pet/teflon-polytetrafluoroethylene-poisoning-in-birds"
             ],
             [
                 "DuPont &mdash; Teflon Safety Data (Thermal Decomposition Thresholds)",
@@ -822,7 +824,7 @@ ARTICLES = \
         "sources": [
             [
                 "University of Plymouth &mdash; BFRs in black plastic kitchen utensils (2019)",
-                "https://www.plymouth.ac.uk/"
+                "https://www.plymouth.ac.uk/news/recycled-electrical-products-lead-to-hazardous-chemicals-appearing-in-everyday-items"
             ],
             [
                 "Environment International &mdash; Hazardous substances in recycled plastics",
@@ -830,11 +832,11 @@ ARTICLES = \
             ],
             [
                 "Stockholm Convention &mdash; Brominated Flame Retardants",
-                "http://chm.pops.int/"
+                "https://chm.pops.int/Implementation/Alternatives/AlternativestoPOPs/ChemicalslistedinAnnexA/HBB/tabid/5860/Default.aspx"
             ],
             [
                 "WRAP UK &mdash; Black Plastic Packaging Report",
-                "https://wrap.org.uk/"
+                "https://www.wrap.ngo/resources/report/recyclability-black-plastic-packaging"
             ]
         ]
     },
@@ -907,11 +909,11 @@ ARTICLES = \
             ],
             [
                 "IARC &mdash; Formaldehyde Classification (Group 1)",
-                "https://monographs.iarc.who.int/"
+                "https://publications.iarc.who.int/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans/Formaldehyde-2-Butoxyethanol-And-1--Em-Tert-Em--Butoxypropan-2-ol-2006"
             ],
             [
                 "Belgian Federal Agency for the Safety of the Food Chain &mdash; Bamboo ware ban",
-                "https://www.favv-afsca.be/"
+                "https://www.fasfc.be/food/food-contact-materials"
             ]
         ]
     }
