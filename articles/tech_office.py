@@ -55,11 +55,11 @@ ARTICLES = \
         "sources": [
             [
                 "Flame Retardants in Consumer Electronics",
-                "https://greensciencepolicy.org/"
+                "https://greensciencepolicy.org/our-work/electronics/"
             ],
             [
                 "TBBPA Factsheet",
-                "https://echa.europa.eu/"
+                "https://echa.europa.eu/-/echa-raises-environmental-concerns-over-certain-aromatic-brominated-flame-retardants"
             ],
             [
                 "TBBPA and Thyroid Hormone Signaling",
@@ -124,11 +124,11 @@ ARTICLES = \
         "sources": [
             [
                 "PFAS in Wire and Cable",
-                "https://www.ewg.org/"
+                "https://www.ewg.org/areas-focus/toxic-chemicals/phthalates"
             ],
             [
                 "Fluoropolymers in Electronics",
-                "https://www.americanchemistry.com/"
+                "https://www.americanchemistry.com/better-policy-regulation/plastics/resources/cradle-to-gate-life-cycle-analysis-of-polyvinyl-pvc-resin"
             ],
             [
                 "PFAS and E-Waste: A Growing Concern",
