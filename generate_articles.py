@@ -16,13 +16,18 @@ from pathlib import Path
 SITE_NAME = "Everyday Materials"
 SITE_URL = "https://myeverydaymaterials.com"
 AFFILIATE_TAG = "myeverydaymat-20"
-CSS_VERSION = "10"
+CSS_VERSION = "11"
 
 # Stable launch date — articles get deterministic publication dates spread over
 # the weeks following launch so Google sees organic publishing cadence.
 SITE_LAUNCH_DATE = date(2026, 2, 1)
 
-AUTHOR_NAME = "Everyday Materials Research Team"
+AUTHOR_NAME = "Melecio"
+AUTHOR_EMAIL = "myeverydaymaterials@gmail.com"
+AUTHOR_PHOTO = "/images/Mymaterials.png"
+AUTHOR_URL = f"{SITE_URL}/about"
+AUTHOR_ID = f"{SITE_URL}/about#author"
+REVIEW_DATE = "2026-04-19"  # DEFAULT_REVIEW_DATE from prompt
 
 
 def stable_publish_date(slug):
@@ -120,6 +125,33 @@ def build_site_header():
     <div class="header-right"></div>
     <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">{_HAMBURGER_ICON}</button>
   </header>"""
+
+
+def _fmt_date_long(iso_date):
+    """Convert ISO date string (YYYY-MM-DD) to 'Month D, YYYY'."""
+    try:
+        d = date.fromisoformat(iso_date)
+        return d.strftime("%B %-d, %Y")
+    except (ValueError, AttributeError):
+        return iso_date
+
+
+def build_byline(pub_date, reviewed_date=None):
+    """Render author byline: photo, name/link, published date, reviewed date."""
+    pub_long = _fmt_date_long(pub_date)
+    if reviewed_date and reviewed_date != pub_date:
+        date_line = f'Published {pub_long} &middot; Last reviewed {_fmt_date_long(reviewed_date)}'
+    else:
+        date_line = f'Published {pub_long}'
+    return (
+        f'<div class="byline">'
+        f'<img class="byline-photo" src="{AUTHOR_PHOTO}" alt="{AUTHOR_NAME}" width="48" height="48" />'
+        f'<div class="byline-text">'
+        f'<span class="byline-name">By <a href="/about">{AUTHOR_NAME}</a></span>'
+        f'<span class="byline-dates">{date_line}</span>'
+        f'</div>'
+        f'</div>'
+    )
 
 
 def load_material_rows():
@@ -407,16 +439,17 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
     canonical = f"{SITE_URL}/{category_slug}/{article['slug']}"
     plain_title = html.escape(html.unescape(article["title"]), quote=True)
     plain_desc = html.escape(article["meta_description"], quote=True)
-    pub_date = stable_publish_date(article["slug"])
-    mod_date = date.today().isoformat()
+    pub_date = article.get("published") or stable_publish_date(article["slug"])
+    reviewed_date = article.get("reviewed") or REVIEW_DATE
+    mod_date = reviewed_date
 
     # Estimate word count from section content (strip tags for rough count)
     raw_text = " ".join(s.get("content", "") for s in article["sections"])
     word_count = len(re.sub(r"<[^>]+>", " ", raw_text).split())
 
-    v_raw = html.unescape(article.get('verdict_rating', 'Caution'))
-    v_bubble = v_raw.split(' — ')[0] if ' — ' in v_raw else v_raw
-    v_title = "Research-Weighted Household Verdict"
+    # Derive the simple SAFE / CAUTION / AVOID badge label from verdict_level
+    _badge_label_map = {"verdict-safe": "SAFE", "verdict-caution": "CAUTION", "verdict-avoid": "AVOID"}
+    v_bubble = _badge_label_map.get(article.get("verdict_level", ""), "CAUTION")
 
     sections_html = "\n\n".join(f'    <h2 id="{s["id"]}">{s["heading"]}</h2>\n    {convert_to_fact_cards(s["content"]).strip()}' for s in article["sections"])
 
@@ -454,22 +487,15 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
       "description": article["meta_description"],
       "url": canonical,
       "datePublished": pub_date,
-      "dateModified": mod_date,
+      "dateModified": reviewed_date,
       "wordCount": word_count,
-      "author": {
-          "@type": "Organization",
-          "name": AUTHOR_NAME,
-          "url": SITE_URL + "/about",
-      },
+      "author": {"@id": AUTHOR_ID},
       "publisher": {
           "@type": "Organization",
           "name": SITE_NAME,
           "url": SITE_URL,
       },
-      "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": canonical,
-      },
+      "mainEntityOfPage": canonical,
   }, indent=4, ensure_ascii=False)}
   </script>
 </head>
@@ -484,12 +510,12 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
     </nav>
     <article>
     <h1>{article['title']}</h1>
+    {build_byline(pub_date, reviewed_date)}
     <p class="title-dek">{plain_desc}</p>
     <div class="editors-note">{EDITORS_NOTE}</div>
     <div class="verdict-card {article['verdict_level']}">
       <div class="verdict-header">
         <span class="verdict-bubble">{v_bubble}</span>
-        <span class="verdict-title">{v_title}</span>
       </div>
       <p class="verdict-text">{html.escape(article['verdict_summary'])}</p>
     </div>
@@ -534,7 +560,7 @@ def generate_category_index(category_slug, generated_articles, target_count):
         data_attr = f' data-status="{vlevel}"' if vlevel else ""
         link_parts.append(
             f'        <a href="{slug}" class="connect-link"{data_attr}>\n'
-            f'          <div class="connect-type">Guide{badge_html}</div>\n'
+            f'          <div class="connect-type">{badge_html.strip() if badge_html else "Guide"}</div>\n'
             f'          <div class="connect-title">{title} <span>&rarr;</span></div>\n'
             f'        </a>'
         )
@@ -612,25 +638,21 @@ def generate_category_index(category_slug, generated_articles, target_count):
 """
 
 
-def generate_homepage(catalog_by_category, generated_counts):
+def generate_homepage(catalog_by_category, generated_counts, all_generated=None):
     sections = []
     for cat_slug, cat in CATEGORIES.items():
-        total = len(catalog_by_category.get(cat_slug, []))
         published = generated_counts.get(cat_slug, 0)
         href = f"{cat_slug}/" if published else "#"
-        state = "Live" if published else "In Progress"
-        
+
         sections.append(f"""        <a href="{href}" class="connect-link connect-link--has-img">
           <img class="connect-img" src="images/categories/{cat_slug}.webp" alt="{cat['name'].replace("&amp;", "&")}" width="400" height="250" loading="lazy" />
           <div class="connect-body">
-            <div class="connect-type">{published}/{total} Published &middot; {state}</div>
             <div class="connect-title">{cat['name'].replace("&amp;", "&")} <span>&rarr;</span></div>
             <p class="alt-desc hero-tagline">{cat['tagline']}</p>
           </div>
         </a>""")
 
-    total_articles = sum(len(v) for v in catalog_by_category.values())
-    home_desc = f"Browse {total_articles} household material safety entries across 8 categories."
+    home_desc = "Science-backed guides to the materials in your home — what they&rsquo;re made of, whether they&rsquo;re safe, and what to do about it."
     home_title = f"{SITE_NAME} — Science-Backed Safety Guides for Your Home"
 
     # Build ld+json: WebSite + ItemList of categories
@@ -666,6 +688,56 @@ def generate_homepage(catalog_by_category, generated_counts):
         },
     ], indent=4, ensure_ascii=False)
 
+    # Featured guide: first article with featured=True across all generated articles,
+    # checking kitchen first, then personal-care, then cleaning per Phase 4 spec.
+    featured_html = ""
+    if all_generated:
+        _badge_label_map = {"verdict-safe": "SAFE", "verdict-caution": "CAUTION", "verdict-avoid": "AVOID"}
+        _preferred_cats = ["kitchen", "personal-care", "cleaning"]
+        _search_order = _preferred_cats + [c for c in all_generated if c not in _preferred_cats]
+        for _cat_slug in _search_order:
+            for _art in all_generated.get(_cat_slug, []):
+                if _art.get("featured"):
+                    _badge = _badge_label_map.get(_art.get("verdict_level", ""), "CAUTION")
+                    _badge_cls = _art.get("verdict_level", "verdict-caution").replace("verdict-", "")
+                    featured_html = (
+                        f'<div class="featured-guide">'
+                        f'<div class="featured-guide-label">Featured Guide</div>'
+                        f'<a href="{_cat_slug}/{_art["slug"]}" class="connect-link">'
+                        f'<div class="connect-type"><span class="status-badge status-badge--{_badge_cls}">{_badge}</span> {CATEGORIES[_cat_slug]["name"].replace("&amp;", "&")}</div>'
+                        f'<div class="connect-title">{_art["title"]} <span>&rarr;</span></div>'
+                        f'</a>'
+                        f'</div>'
+                    )
+                    break
+            if featured_html:
+                break
+
+    # Recently reviewed strip: 3 articles with the latest reviewed date.
+    recently_reviewed_html = ""
+    if all_generated:
+        _all_arts = []
+        for _cat_slug, _arts in all_generated.items():
+            for _art in _arts:
+                _all_arts.append((_cat_slug, _art))
+        _all_arts.sort(key=lambda x: x[1].get("reviewed", REVIEW_DATE), reverse=True)
+        _recent_links = []
+        for _cat_slug, _art in _all_arts[:3]:
+            _reviewed = _art.get("reviewed", REVIEW_DATE)
+            _recent_links.append(
+                f'<a href="{_cat_slug}/{_art["slug"]}" class="connect-link">'
+                f'<div class="connect-type">Reviewed {_fmt_date_long(_reviewed)}</div>'
+                f'<div class="connect-title">{_art["title"]} <span>&rarr;</span></div>'
+                f'</a>'
+            )
+        if _recent_links:
+            recently_reviewed_html = (
+                f'<div class="connection-hub connection-hub--transparent">'
+                f'<h2>Recently Reviewed</h2>'
+                f'<div class="connection-grid">{"".join(_recent_links)}</div>'
+                f'</div>'
+            )
+
     html_out = f"""<!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -699,13 +771,15 @@ def generate_homepage(catalog_by_category, generated_counts):
     </div>
     <h1>{SITE_NAME}</h1>
     <p class="hero-subtitle">The Science of Your Home, Simplified.</p>
+    <p class="hero-intro">Every guide here is a plain-English translation of what peer-reviewed research, regulatory agencies, and independent testing say about a material in your home. Each lands on one of three verdicts &mdash; Safe, Caution, or Avoid &mdash; with sources cited. Written by {AUTHOR_NAME}, updated as evidence changes.</p>
   </div>
   <main id="main-content">
+    {featured_html}
     <div class="connection-hub connection-hub--transparent">
-      <h2>Safety Guide Categories</h2>
-      <p class="title-dek">{home_desc}</p>
+      <h2>Browse guides by category</h2>
       <div class="connection-grid">\n{chr(10).join(sections)}\n      </div>
     </div>
+    {recently_reviewed_html}
   </main>
   <footer class="site-footer"><nav><a href="about">About</a><a href="methodology">Methodology</a><a href="privacy">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
   <script src="js/main.js" defer></script>
@@ -739,112 +813,95 @@ def generate_homepage(catalog_by_category, generated_counts):
 </body>
 </html>"""
 
-    about_body = f"""    <h1>About {SITE_NAME}</h1>
+    _person_ld = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": AUTHOR_ID,
+        "name": AUTHOR_NAME,
+        "url": AUTHOR_URL,
+        "image": SITE_URL + AUTHOR_PHOTO,
+        "email": AUTHOR_EMAIL,
+    }, indent=4, ensure_ascii=False)
 
-    <p>{SITE_NAME} is an independent research project focused on one question: <strong>are the materials in your home safe?</strong></p>
+    about_body = f"""    {build_byline(REVIEW_DATE)}
+    <h1>About {SITE_NAME}</h1>
 
-    <p>We read the peer-reviewed studies, regulatory reports, and toxicology data so you don&rsquo;t have to. Then we distill that research into clear, actionable guides with a simple verdict: safe, use with caution, or avoid.</p>
+    <p>I&rsquo;m {AUTHOR_NAME}, and I started this site because the internet is terrible at answering a specific kind of question.</p>
 
-    <h2>Why We Started</h2>
+    <p>Is the plastic in my kid&rsquo;s sippy cup safe? Does that non-stick pan leach something when I overheat it? Is bamboo dinnerware actually eco-friendly, or is it a scam? What&rsquo;s in the fire retardant on my couch?</p>
 
-    <p>The information gap around household materials is enormous. Search for &ldquo;is Teflon safe&rdquo; and you&rsquo;ll find everything from unfounded panic to industry-funded reassurance. Neither helps you make a real decision.</p>
+    <p>Google these questions and you get two extremes: alarmist blogs selling you a $60 &ldquo;clean&rdquo; alternative, or industry pages quietly reassuring you everything is fine. Neither shows its work. Neither tells you which specific conditions matter. Neither updates when new research comes out.</p>
 
-    <p>We built {SITE_NAME} to be the resource we wished existed: science-based, practical, honest about uncertainty, and free from the influence of the companies whose products we evaluate.</p>
+    <p>I got frustrated enough to start doing my own research. Download the actual studies. Read the methodology sections. Check what regulatory agencies &mdash; the EPA, FDA, European Chemicals Agency, WHO &mdash; had actually published, versus what a blog claimed they&rsquo;d published. Over a few years of this, I got reasonably good at it.</p>
 
-    <h2>How We&rsquo;re Funded</h2>
+    <p>{SITE_NAME} is what that process looks like when I write it down.</p>
 
-    <p>When we recommend a &ldquo;Better Alternative&rdquo; in our guides, we link to that product on Amazon. If you choose to purchase through that link, we earn a small commission at no extra cost to you. This is our only source of revenue.</p>
+    <h2>What this site is</h2>
 
-    <p>Critically, this model means we are never paid by the manufacturers of the materials we research. Our incentive is to give you honest verdicts &mdash; because trust is the only thing that keeps you coming back.</p>
+    <p>A growing library of evidence-based guides on household materials &mdash; what they&rsquo;re made of, what&rsquo;s known about their safety, and what a reasonable person should actually do about it. Every guide lands on one of three verdicts: <strong>Safe</strong>, <strong>Caution</strong>, or <strong>Avoid</strong>, based on the weight of current research. Every claim links to a source. Every verdict explains its reasoning. When research is genuinely mixed, I say so.</p>
 
-    <h2>What We Cover</h2>
+    <h2>What I&rsquo;m not</h2>
 
-    <p>We are building an initial foundation of 100 in-depth safety guides across our primary household categories:</p>
+    <p>I&rsquo;m not a toxicologist, chemist, materials scientist, or medical professional. I don&rsquo;t have a degree in any relevant field. I have no financial relationship with any manufacturer covered on this site and no brand partnerships that influence verdicts. Amazon affiliate links fund this site &mdash; those are disclosed on every guide.</p>
 
-    <ul>
-      <li><a href="kitchen/">Kitchen &amp; Dining</a> &mdash; Cookware, food packaging, and storage materials</li>
-      <li><a href="nursery/">Nursery &amp; Baby Gear</a> &mdash; Non-toxic sleep environments, feeding essentials, and play</li>
-      <li><a href="pet-care/">Pet Care</a> &mdash; Safe litters, toys, and grooming products for cats and dogs</li>
-      <li><a href="household/">Household Surfaces &amp; Fabrics</a> &mdash; Furniture, flooring, textiles, and indoor air quality</li>
-      <li><a href="personal-care/">Personal Care &amp; Chemicals</a> &mdash; Ingredients in hygiene and beauty products</li>
-      <li><a href="cleaning/">Cleaning &amp; Maintenance</a> &mdash; Household cleaners, solvents, laundry, and water filtration</li>
-      <li><a href="tech/">Tech &amp; Home Office</a> &mdash; Electronics, 3D printing materials, and workspace ergonomics</li>
-      <li><a href="outdoor/">Outdoor &amp; Garden</a> &mdash; Pesticides, decking, hoses, and lawn care equipment</li>
-    </ul>
+    <p>What I <em>am</em> is a careful researcher who decided the internet needed fewer opinion pieces and more synthesis. If you want credentialed medical advice, see a doctor. If you want to understand the research landscape around the plastic in your kitchen before you buy the $40 alternative, this site is for you.</p>
 
-    <h2>Frequently Asked Questions</h2>
+    <h2 id="contact">Reach me</h2>
 
-    <p><strong>How do you determine a &ldquo;Safe&rdquo; vs. &ldquo;Avoid&rdquo; status?</strong><br />
-    We use a tri-tier safety system based on the weight of evidence from peer-reviewed journals, government standard bodies (like the EPA and FDA), and national academies. Our <a href="methodology">methodology page</a> explains the full process.</p>
+    <p>Email: <a href="mailto:{AUTHOR_EMAIL}">{AUTHOR_EMAIL}</a>. If you spot an error, find a newer study I should incorporate, or have a material you&rsquo;d like me to research, I want to hear about it.</p>
 
-    <p><strong>Are your &ldquo;Better Alternatives&rdquo; sponsored by brands?</strong><br />
-    No. We never accept payment from manufacturers to feature their products. Our recommendations are based strictly on material purity, functional utility, and high user ratings.</p>
+    <p><a href="methodology">Read my research methodology &rarr;</a></p>"""
 
-    <p><strong>Why does your site load so much faster than other health sites?</strong><br />
-    {SITE_NAME} is built as a lightweight static registry. We prioritize instant accessibility and performance &mdash; especially for mobile users in shopping environments &mdash; by avoiding heavy tracking scripts and unnecessary image assets.</p>
+    methodology_body = f"""    {build_byline(REVIEW_DATE)}
+    <h1>Methodology</h1>
 
-    <p><strong>How often is the data verified?</strong><br />
-    Each entry includes a &ldquo;Last Verified&rdquo; date. We actively monitor new toxicology reports and regulatory updates to ensure our verdicts reflect the current scientific consensus.</p>
+    <p>Every guide on {SITE_NAME} follows the same research and writing process. This page documents that process so you can evaluate the work on its merits.</p>
 
-    <p><strong>Can I suggest a material for you to analyze?</strong><br />
-    Yes. We prioritize our research roadmap based on community interest and emerging safety trends. Send us an email at the address below.</p>
+    <h2>How topics are selected</h2>
 
-    <h2 id="contact">Contact {SITE_NAME}</h2>
+    <p>Topics come from three sources: (1) direct reader questions, (2) materials that appear in common consumer products where safety claims are contested or confusing, and (3) emerging chemicals of regulatory interest &mdash; the EPA&rsquo;s TSCA work plan, ECHA&rsquo;s SVHC candidate list, Proposition 65 listings. Topics are prioritized by how often real people need to make decisions about them and how confusing the existing information landscape is.</p>
 
-    <p>We value precision and transparency. If you have a technical question, a correction regarding a specific study, or a material you&rsquo;d like us to cover, please reach out.</p>
+    <h2>Source hierarchy</h2>
 
-    <ul>
-      <li><strong>General Inquiries &amp; Feedback:</strong> hello@myeverydaymaterials.com</li>
-      <li><strong>Corrections:</strong> Please include a link to the relevant peer-reviewed study or regulatory report so our research team can investigate promptly.</li>
-    </ul>
+    <p>Not all sources are equal. Guides prioritize in this order:</p>
 
-    <h2>Technical Philosophy</h2>
+    <p><strong>Tier 1 &mdash; Primary research and official regulatory documents.</strong> Peer-reviewed studies, systematic reviews and meta-analyses, government agency technical reports (EPA, FDA, CDC, WHO, EFSA, ECHA, NIOSH), and the testing standards they reference.</p>
 
-    <p>We believe speed is a feature of accessibility. This site is built as a static registry to ensure that whether you are at home or in a grocery store aisle, you get the safety data you need instantly, without the weight of heavy scripts or trackers.</p>"""
+    <p><strong>Tier 2 &mdash; Secondary synthesis from authoritative bodies.</strong> Position statements from established medical and scientific organizations (American Academy of Pediatrics, ACS, Consumer Reports independent testing), regulatory fact sheets, well-cited review articles.</p>
 
-    methodology_body = f"""    <h1>Our Methodology</h1>
+    <p><strong>Tier 3 &mdash; Reliable journalism.</strong> Investigative reporting from outlets with demonstrated science-reporting track records, when they&rsquo;re citing Tier 1 sources I can verify independently.</p>
 
-    <p>Transparency is core to what we do. Here&rsquo;s exactly how we research, evaluate, and present information about the materials in your home.</p>
+    <p>Blog posts, industry marketing, and single-study claims without replication are not accepted as evidence. Industry-funded research is cited only when it&rsquo;s the available evidence &mdash; and the funding source is always disclosed.</p>
 
-    <h2>Sources We Use</h2>
+    <h2>How verdicts are assigned</h2>
 
-    <p>Every factual claim in our guides is supported by at least one of the following:</p>
+    <p>Each guide lands on one of three verdicts:</p>
 
-    <ul>
-      <li><strong>Peer-reviewed journals</strong> &mdash; Published in indexed scientific journals (e.g., <em>Environmental Science &amp; Technology</em>, <em>JAMA</em>, <em>Water Research</em>)</li>
-      <li><strong>Government agencies</strong> &mdash; EPA, FDA, EFSA, WHO, CDC, IARC, and their official publications</li>
-      <li><strong>National academies</strong> &mdash; National Academies of Sciences, Engineering, and Medicine consensus reports</li>
-      <li><strong>Standards bodies</strong> &mdash; EU REACH, Stockholm Convention, and other regulatory frameworks</li>
-    </ul>
+    <p><strong>Safe</strong> &mdash; The weight of current evidence supports normal, common-sense use. No credible mechanism of harm at realistic exposure levels. Any narrow conditions under which the material should still be avoided are specified (e.g., kidney-impaired individuals, extreme temperatures).</p>
 
-    <p>We do not cite blogs, press releases, or manufacturer-funded studies without independent corroboration. Every source is linked directly in the article so you can verify it yourself.</p>
+    <p><strong>Caution</strong> &mdash; Evidence suggests harm is possible under specific conditions (heat, acidity, damage, prolonged exposure). The material is usable if those conditions are avoided. Guides specify what to do and not do.</p>
 
-    <h2>Our Verdict System</h2>
+    <p><strong>Avoid</strong> &mdash; Either clear evidence of harm at realistic exposure levels, or a recognized regulatory action (ban, restriction, SVHC listing) that supports removal from normal use. Alternatives are always provided.</p>
 
-    <p>Each guide includes a &ldquo;30-Second Verdict&rdquo; with one of three ratings:</p>
+    <p>These verdicts reflect research weight, not personal risk tolerance. A &ldquo;Caution&rdquo; rating means <em>be thoughtful</em>, not <em>this will hurt you</em>.</p>
 
-    <ul>
-      <li><strong>Safe</strong> (green) &mdash; The scientific evidence supports that this material is safe under normal use conditions. We still note edge cases where applicable.</li>
-      <li><strong>Use with Caution</strong> (amber) &mdash; The material has documented risks under specific conditions (e.g., high heat, acidic food contact). We explain exactly when it&rsquo;s safe and when it isn&rsquo;t.</li>
-      <li><strong>Avoid</strong> (red) &mdash; The weight of evidence indicates significant risk even under normal conditions. We recommend specific alternatives.</li>
-    </ul>
+    <h2>Update policy</h2>
 
-    <h2>How We Select &ldquo;Better Alternatives&rdquo;</h2>
+    <p>Guides are reviewed on a rolling basis when a new peer-reviewed study or meta-analysis is published, a regulatory body issues new guidance, a reader flags a missed source, or twelve months have passed since the last review. Each guide displays its publish date and most recent review date. Substantive changes are logged in a visible change note on the guide.</p>
 
-    <p>When we recommend an alternative product, it must meet all of the following criteria:</p>
+    <h2>Conflicts of interest</h2>
 
-    <ul>
-      <li>It must genuinely solve the safety concern identified in the article</li>
-      <li>It must be readily available and reasonably priced</li>
-      <li>It must have strong user reviews and a track record of quality</li>
-      <li>We must be comfortable recommending it to our own families</li>
-    </ul>
+    <p>{SITE_NAME} earns commissions on qualifying Amazon purchases made through links in the &ldquo;Better Alternatives&rdquo; section of guides. These affiliate relationships do not influence which products are recommended &mdash; recommendations are selected before affiliate availability is checked, and products without affiliate options are included when they&rsquo;re the right call. No sponsored content, no brand partnerships, no paid placements.</p>
 
-    <p>We include honest pros and cons for every recommendation. If a product has drawbacks, we say so.</p>
+    <h2>Limitations</h2>
 
-    <h2>Corrections &amp; Updates</h2>
+    <p>This site is not medical advice. It does not substitute for consultation with a physician, toxicologist, or other credentialed professional regarding your specific situation. Guides cover material safety at the population level based on published research &mdash; individual risk factors (pregnancy, pre-existing conditions, occupational exposure, children) may warrant different thresholds than the general guidance here.</p>
 
-    <p>Science evolves, and so do our guides. When new research changes the picture, we update the relevant article and note the modification date. If you spot an error or outdated claim, please contact us at <strong>hello@myeverydaymaterials.com</strong> and we&rsquo;ll investigate promptly.</p>"""
+    <h2>Corrections</h2>
+
+    <p>If you find an error &mdash; a misquoted source, an outdated study, a missed update, a logical mistake &mdash; email <a href="mailto:{AUTHOR_EMAIL}">{AUTHOR_EMAIL}</a> with specifics. Every correction submitted is acted on. Substantive corrections are logged with a dated changelog on the guide.</p>
+
+    <p><em>Maintained by {AUTHOR_NAME}. <a href="about">About &rarr;</a></em></p>"""
 
     privacy_body = """    <h1>Privacy Policy</h1>
     <p><em>Last updated: March 2026</em></p>
@@ -877,7 +934,9 @@ def generate_homepage(catalog_by_category, generated_counts):
 
     _pages = {
         "about.html": (
-            '<title>About &mdash; {0}</title>\n  <meta name="description" content="Learn about {0} — who we are, why we started, and how we help you make safer choices about the materials in your home." />'.format(SITE_NAME),
+            '<title>About {author} &mdash; {site}</title>\n  <meta name="description" content="{author} started {site} to translate peer-reviewed household material research into plain-English verdicts. Learn about the research process and methodology." />\n  <script type="application/ld+json">\n  {ld}\n  </script>'.format(
+                author=AUTHOR_NAME, site=SITE_NAME, ld=_person_ld
+            ),
             about_body,
         ),
         "methodology.html": (
@@ -970,6 +1029,7 @@ def main():
 
     overall = grouped_material_rows()
     all_generated = defaultdict(list)
+    all_generated_articles = defaultdict(list)  # full article dicts for homepage
     counts = {}
 
     if args.category:
@@ -1001,11 +1061,15 @@ def main():
         print(f"\n── {CATEGORIES[cat_slug]['name']} ──")
         gen_list = []
         for art in articles:
+            # Ensure stable date fields are set on the dict for homepage use
+            art.setdefault("published", stable_publish_date(art["slug"]))
+            art.setdefault("reviewed", REVIEW_DATE)
             target = cat_dir / f"{art['slug']}.html"
             html_code = generate_article(art, all_articles_map, cat_slug, related_map, slug_to_category)
             target.write_text(html_code, encoding="utf-8")
             print(f"  Generated: public/{cat_slug}/{art['slug']}.html")
             gen_list.append((art['slug'], art['title'], art.get('verdict_level', 'verdict-neutral')))
+            all_generated_articles[cat_slug].append(art)
 
         all_generated[cat_slug] = gen_list
         counts[cat_slug] = len(gen_list)
@@ -1019,7 +1083,7 @@ def main():
         print(f"  Done: {counts[cat_slug]} pages in public/{cat_slug}/")
 
     if args.all:
-        generate_homepage(overall, counts)
+        generate_homepage(overall, counts, all_generated_articles)
         # Gather URLs for sitemap
         sitemap_urls = [SITE_URL + "/"]
         sitemap_urls.append(f"{SITE_URL}/about")
