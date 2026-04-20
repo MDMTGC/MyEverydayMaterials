@@ -69,6 +69,7 @@ ARTICLES = \
     },
     {
         "slug": "chlorine-bleach-safety",
+        "featured": True,
         "title": "Chlorine Bleach: Safe Handling to Avoid Respiratory Risks and Toxic Fumes",
         "meta_description": "Learn the dangers of chlorine bleach fumes and toxic gas formation. Discover how to use bleach safely or switch to safer disinfectants.",
         "verdict_level": "verdict-caution",
