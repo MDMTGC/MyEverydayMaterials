@@ -16,7 +16,7 @@ from pathlib import Path
 SITE_NAME = "Everyday Materials"
 SITE_URL = "https://myeverydaymaterials.com"
 AFFILIATE_TAG = "myeverydaymat-20"
-CSS_VERSION = "11"
+CSS_VERSION = "13"
 
 # Stable launch date — articles get deterministic publication dates spread over
 # the weeks following launch so Google sees organic publishing cadence.
@@ -24,7 +24,7 @@ SITE_LAUNCH_DATE = date(2026, 2, 1)
 
 AUTHOR_NAME = "Melecio"
 AUTHOR_EMAIL = "myeverydaymaterials@gmail.com"
-AUTHOR_PHOTO = "/images/Mymaterials.png"
+AUTHOR_PHOTO = "/images/Melecio.png"
 AUTHOR_URL = f"{SITE_URL}/about"
 AUTHOR_ID = f"{SITE_URL}/about#author"
 REVIEW_DATE = "2026-04-19"  # DEFAULT_REVIEW_DATE from prompt
