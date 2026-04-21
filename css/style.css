@@ -1480,13 +1480,20 @@ a.btn:active {
   margin: 0.75rem 0 1.5rem;
 }
 
-.byline-photo {
+.byline-avatar {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  object-fit: cover;
   flex-shrink: 0;
-  border: 2px solid var(--border-default);
+  background: var(--accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+  letter-spacing: 0;
+  user-select: none;
 }
 
 .byline-text {
