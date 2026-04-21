@@ -480,6 +480,32 @@ p {
   color: rgba(255, 255, 255, 0.9);
 }
 
+.hero-intro {
+  max-width: 42rem;
+  margin: 1.25rem auto 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.featured-guide {
+  margin: 2rem auto 0;
+  max-width: 48rem;
+  padding: 1.5rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-soft);
+}
+
+.featured-guide-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
 .site-mark {
   width: 48px;
   height: 48px;
@@ -729,6 +755,16 @@ p {
   border-left: 4px solid var(--callout-info-border);
 }
 .callout-info strong { color: var(--callout-info-text); }
+
+.callout-personal {
+  background: var(--bg-elevated);
+  border-left: 4px solid var(--accent);
+  font-style: italic;
+}
+.callout-personal strong {
+  font-style: normal;
+  color: var(--accent);
+}
 
 /* ─── Table of Contents ─── */
 
@@ -1431,6 +1467,52 @@ a.btn:active {
   .search-bar {
     max-width: 100%;
   }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Byline
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.byline {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.75rem 0 1.5rem;
+}
+
+.byline-photo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid var(--border-default);
+}
+
+.byline-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.byline-name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.byline-name a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.byline-name a:hover {
+  color: var(--accent);
+}
+
+.byline-dates {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════

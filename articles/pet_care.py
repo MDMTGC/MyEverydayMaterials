@@ -124,7 +124,7 @@ ARTICLES = \
             ],
             [
                 "Bacterial Biofilms in Pet Bowls",
-                "https://www.nsf.org"
+                "https://www.nsf.org/nsf-standards/standards-portfolio/home-products-protocols-standards"
             ],
             [
                 "Feline Acne: Causes and Treatment",
@@ -134,6 +134,7 @@ ARTICLES = \
     },
     {
         "slug": "chemical-flea-collars",
+        "personal_note": "I have four cats, which makes flea prevention a real, recurring decision — not a theoretical one. Researching what's actually in these collars was sobering. The gap between \"EPA-registered\" and \"safe for continuous skin contact on a cat you live with\" is larger than the packaging suggests.",
         "title": "Chemical Flea Collars: Understanding the Neurotoxic Risks to Pets and People",
         "meta_description": "Learn about the continuous release of neurotoxic pesticides like Tetrachlorvinphos (TCVP) and permethrin from flea collars. Understand the risks to pets and children, and explore safer, vet-approved alternatives.",
         "verdict_level": "verdict-caution",
@@ -199,6 +200,7 @@ ARTICLES = \
     },
     {
         "slug": "essential-oil-diffusers",
+        "personal_note": "\"Natural\" is not the same as safe for cats — this was one of the more counterintuitive things I found researching toxicity in cat environments. Cats lack the liver enzymes to metabolize many compounds that humans and dogs clear without issue. A diffuser running eucalyptus or tea tree in a closed room is a meaningfully different exposure situation when you have four cats than when you don't.",
         "title": "Essential Oil Diffusers: Navigating Pet Safety with Aromatic Scents",
         "meta_description": "Understand why essential oils are toxic to pets, especially cats lacking key liver enzymes. Learn about risks like liver failure and aspiration pneumonia, and how to safely use passive diffusion methods.",
         "verdict_level": "verdict-caution",
@@ -264,6 +266,7 @@ ARTICLES = \
     },
     {
         "slug": "pvc-vinyl-pet-toys",
+        "personal_note": "Cat toys are one of those categories where the marketing and the chemistry point in opposite directions. Researching what's in soft plastic chews for cats — especially the ones sold as \"fun\" and \"stimulating\" — was part of a broader effort to understand what my cats were actually being exposed to. PVC was the chemical I kept finding.",
         "title": "PVC Vinyl Pet Toys: Why Soft Plastic Chews are a Hard &ldquo;No&rdquo;",
         "meta_description": "Uncover the dangers of phthalates and heavy metals in PVC vinyl pet toys, which leach toxins during chewing. Learn why these endocrine disruptors pose health risks and find safer alternatives like natural rubber.",
         "verdict_level": "verdict-avoid",
@@ -449,7 +452,7 @@ ARTICLES = \
             ],
             [
                 "CertiPUR-US Foam Certification - CertiPUR-US",
-                "https://certipur.us/"
+                "https://certipur.us/wp-content/uploads/2025/03/CertiPUR-US_Molded-Technical-Guidelines-2025-v1-3.24.25_final.pdf"
             ],
             [
                 "Exposure to Flame Retardants and Thyroid Hormone Disruption in Companion Animals - Environmental International (General Journal Link)",

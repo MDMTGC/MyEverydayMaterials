@@ -4,6 +4,7 @@ ARTICLES = \
 [
     {
         "slug": "parabens-preservatives",
+        "featured": True,
         "title": "Parabens in Skincare: Are These Common Preservatives Harming Your Health?",
         "meta_description": "Explore the science behind parabens in skincare, their potential health risks like endocrine disruption, and how to choose safer, paraben-free alternatives.",
         "verdict_level": "verdict-caution",
