@@ -16,7 +16,7 @@ from pathlib import Path
 SITE_NAME = "Everyday Materials"
 SITE_URL = "https://myeverydaymaterials.com"
 AFFILIATE_TAG = "myeverydaymat-20"
-CSS_VERSION = "12"
+CSS_VERSION = "13"
 
 # Stable launch date — articles get deterministic publication dates spread over
 # the weeks following launch so Google sees organic publishing cadence.
@@ -24,7 +24,7 @@ SITE_LAUNCH_DATE = date(2026, 2, 1)
 
 AUTHOR_NAME = "Melecio"
 AUTHOR_EMAIL = "myeverydaymaterials@gmail.com"
-AUTHOR_INITIAL = "M"
+AUTHOR_PHOTO = "/images/Melecio.png"
 AUTHOR_URL = f"{SITE_URL}/about"
 AUTHOR_ID = f"{SITE_URL}/about#author"
 REVIEW_DATE = "2026-04-19"  # DEFAULT_REVIEW_DATE from prompt
@@ -145,7 +145,7 @@ def build_byline(pub_date, reviewed_date=None):
         date_line = f'Published {pub_long}'
     return (
         f'<div class="byline">'
-        f'<div class="byline-avatar" aria-hidden="true">{AUTHOR_INITIAL}</div>'
+        f'<img class="byline-photo" src="{AUTHOR_PHOTO}" alt="{AUTHOR_NAME}" width="48" height="48" />'
         f'<div class="byline-text">'
         f'<span class="byline-name">By <a href="/about">{AUTHOR_NAME}</a></span>'
         f'<span class="byline-dates">{date_line}</span>'
@@ -820,6 +820,7 @@ def generate_homepage(catalog_by_category, generated_counts, all_generated=None)
         "@id": AUTHOR_ID,
         "name": AUTHOR_NAME,
         "url": AUTHOR_URL,
+        "image": SITE_URL + AUTHOR_PHOTO,
         "email": AUTHOR_EMAIL,
     }, indent=4, ensure_ascii=False)
 
