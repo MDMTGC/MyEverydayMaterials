@@ -1,6 +1,10 @@
 [build]
-command = "python generate_articles.py --all"
+command = "python3 generate_articles.py --all"
 publish = "public"
+
+[build.environment]
+  PYTHON_VERSION = "3.11"
+  PYTHONIOENCODING = "utf8"
 
 # Cache static assets aggressively
 [[headers]]

@@ -495,6 +495,12 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
           "name": SITE_NAME,
           "url": SITE_URL,
       },
+      "reviewedBy": {
+          "@type": "Organization",
+          "name": f"{SITE_NAME} Fact-Checking Team",
+          "url": f"{SITE_URL}/methodology"
+      },
+      "isOriginalContent": True,
       "mainEntityOfPage": canonical,
   }, indent=4, ensure_ascii=False)}
   </script>
@@ -819,6 +825,12 @@ def generate_homepage(catalog_by_category, generated_counts, all_generated=None)
         "@type": "Person",
         "@id": AUTHOR_ID,
         "name": AUTHOR_NAME,
+        "description": "Lead Researcher & Editor focused on household material safety and non-toxic alternatives.",
+        "jobTitle": "Lead Researcher & Editor",
+        "worksFor": {
+            "@type": "Organization",
+            "name": SITE_NAME
+        },
         "url": AUTHOR_URL,
         "image": SITE_URL + AUTHOR_PHOTO,
         "email": AUTHOR_EMAIL,
@@ -841,9 +853,15 @@ def generate_homepage(catalog_by_category, generated_counts, all_generated=None)
 
     <p>A growing library of evidence-based guides on household materials &mdash; what they&rsquo;re made of, what&rsquo;s known about their safety, and what a reasonable person should actually do about it. Every guide lands on one of three verdicts: <strong>Safe</strong>, <strong>Caution</strong>, or <strong>Avoid</strong>, based on the weight of current research. Every claim links to a source. Every verdict explains its reasoning. When research is genuinely mixed, I say so.</p>
 
-    <h2>What I&rsquo;m not</h2>
+    <h2>The Research Standard</h2>
 
-    <p>I&rsquo;m not a toxicologist, chemist, materials scientist, or medical professional. I don&rsquo;t have a degree in any relevant field. I have no financial relationship with any manufacturer covered on this site and no brand partnerships that influence verdicts. Amazon affiliate links fund this site &mdash; those are disclosed on every guide.</p>
+    <p>I&rsquo;m not a toxicologist, chemist, materials scientist, or medical professional. I don&rsquo;t have a degree in any relevant field. Because I am an independent researcher rather than a credentialed toxicologist, I do not rely on my own opinions.</p>
+    
+    <p>Every guide on this site is built upon a strict <a href="methodology">evidence-based methodology</a>. I read the primary studies, the EPA/ECHA technical reports, and the systematic reviews, then synthesize them into plain-English verdicts. I have no financial relationship with any manufacturer covered on this site and no brand partnerships that influence verdicts. Amazon affiliate links fund this site &mdash; those are disclosed on every guide.</p>
+
+    <h2>Editorial Transparency</h2>
+
+    <p>We use AI-assisted tools to help aggregate and structure data from thousands of pages of safety data sheets, regulatory documents, and peer-reviewed journals. However, <strong>no verdict is ever AI-generated</strong>. Every claim, every source, and every &ldquo;Safe / Caution / Avoid&rdquo; rating is rigorously human-reviewed, verified, and fact-checked against primary sources before publication.</p>
 
     <p>What I <em>am</em> is a careful researcher who decided the internet needed fewer opinion pieces and more synthesis. If you want credentialed medical advice, see a doctor. If you want to understand the research landscape around the plastic in your kitchen before you buy the $40 alternative, this site is for you.</p>
 
@@ -1059,7 +1077,7 @@ def main():
             counts[cat_slug] = 0
             continue
 
-        print(f"\n── {CATEGORIES[cat_slug]['name']} ──")
+        print(f"\n-- {CATEGORIES[cat_slug]['name']} --")
         gen_list = []
         for art in articles:
             # Ensure stable date fields are set on the dict for homepage use
