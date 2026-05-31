@@ -27,7 +27,7 @@ AUTHOR_EMAIL = "myeverydaymaterials@gmail.com"
 AUTHOR_PHOTO = "/images/Melecio.png"
 AUTHOR_URL = f"{SITE_URL}/about"
 AUTHOR_ID = f"{SITE_URL}/about#author"
-REVIEW_DATE = "2026-04-19"  # DEFAULT_REVIEW_DATE from prompt
+REVIEW_DATE = "2026-05-31"  # DEFAULT_REVIEW_DATE from prompt
 
 
 def stable_publish_date(slug):
@@ -923,7 +923,7 @@ def generate_homepage(catalog_by_category, generated_counts, all_generated=None)
     <p><em>Maintained by {AUTHOR_NAME}. <a href="about">About &rarr;</a></em></p>"""
 
     privacy_body = """    <h1>Privacy Policy</h1>
-    <p><em>Last updated: March 2026</em></p>
+    <p><em>Last updated: May 2026</em></p>
 
     <p>Everyday Materials (&ldquo;we,&rdquo; &ldquo;us&rdquo;) respects your privacy. This policy explains what data we collect and how we use it.</p>
 
