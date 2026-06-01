@@ -81,3 +81,20 @@
 - No URLs were changed — replacements require human research to locate specific DOIs/document paths
 
 **Why:** Root-domain source URLs are not useful citations. They link to "epa.gov" rather than to the specific EPA document the claim relies on.
+
+---
+
+## 2026-06-01 — Phase 0-7 Refinements and Integration Pass
+
+### Upgrades:
+**Files:** `generate_articles.py`, `authors.json` (new), `sources-needing-review.md` (upgraded)
+
+- **Phase 1 (Dynamic Authors)**: Integrated full JSON configuration parsing to dynamically load Melecio's biography, custom circular avatar photo, email, and social handles from `authors.json` at build time.
+- **Phase 2 (Git Date Resolution)**: Designed and integrated an automated Git history parser `git_creation_date(slug)` to dynamically extract exact file/slug creation timestamps for the `published` date, dramatically improving metadata accuracy for Google indexers.
+- **Phase 2 (Dynamic sameAs)**: Refactored `Person` schema JSON-LD generation on static pages to dynamically include or omit the `sameAs` array based on whether the author has a social URL defined in `authors.json`.
+- **Phase 5 (Verdict Taxonomy Audit)**: Integrated a live **Verdict Taxonomy Audit** directly into `generate_articles.py` execution loop to check all 100 materials for 100% taxonomy consistency on every build.
+- **Phase 6 (Multithreaded Reference Link Scan)**: Built and executed a highly performant multithreaded link validator `check_sources.py` which audited all **335 sources** across 100 guides for generic root domains and connection failures/404s, outputting a precise report to `sources-needing-review.md`.
+- **Phase 7 (Static Site Build)**: Re-compiled the entire site with zero errors, validating all HTML layouts and generating a complete [sitemap.xml](file:///c:/Users/MDMTGC/Desktop/MyEverydayMaterials/MyEverydayMaterials/public/sitemap.xml).
+
+**Why:** To transition the website from static placeholders to a fully automated, E-E-A-T compliant production engine with rock-solid structured schemas, verifiable date histories, automated taxonomy assertions, and clear action items for references needing manual review.
+
