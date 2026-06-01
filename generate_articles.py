@@ -282,7 +282,7 @@ def normalize_basic_article(row):
             {
                 "id": "what-to-do",
                 "heading": "What You Can Do Right Now",
-                "content": f"<ul class=\"key-facts\"><li>Reduce direct exposure opportunities (heat, friction, prolonged contact, and enclosed-space accumulation).</li><li>Prefer simpler materials and clearer ingredient disclosure when purchasing replacements.</li><li>Phase out high-exposure items first for the best risk reduction per dollar.</li></ul><p><strong>Better direction for this material:</strong> {html.escape(alternative)}</p>",
+                "content": f"<ul class=\"key-facts\"><li><span class=\"fact-label\">Exposure</span> Reduce direct exposure opportunities (heat, friction, prolonged contact, and enclosed-space accumulation).</li><li><span class=\"fact-label\">Purchase</span> Prefer simpler materials and clearer ingredient disclosure when purchasing replacements.</li><li><span class=\"fact-label\">Action</span> Phase out high-exposure items first for the best risk reduction per dollar.</li></ul><p><strong>Better direction for this material:</strong> {html.escape(alternative)}</p>",
             },
         ],
         "alternatives": [
@@ -326,6 +326,7 @@ def merge_articles(category_slug):
         if not slug:
             continue
         if row_slugs and slug not in row_slugs:
+            print(f"  [WARN] SKIPPED: Article '{slug}' in 'articles/{category_slug}.py' is not in materials_data.json!")
             continue
         by_slug[slug] = article
 
@@ -352,6 +353,12 @@ def build_alternatives(alternatives):
         if alt.get("asin"):
             href = f"https://www.amazon.com/dp/{alt['asin']}?tag={AFFILIATE_TAG}"
         if href:
+            # Dynamically replace any hardcoded Amazon affiliate tag with the configured constant
+            if "amazon.com" in href:
+                href = re.sub(r'tag=[^&]+', f'tag={AFFILIATE_TAG}', href)
+                if "tag=" not in href:
+                    sep = "&" if "?" in href else "?"
+                    href = f"{href}{sep}tag={AFFILIATE_TAG}"
             link = f'\n        <a href="{href}" class="btn" rel="sponsored nofollow noopener noreferrer" target="_blank">View on Amazon</a>'
         cards.append(
             f"""      <div class=\"alt-card\">\n        <div class=\"alt-type\">{html.escape(alt.get('type','Alternative'))}</div>\n        <div class=\"alt-name\">{html.escape(alt.get('name','Alternative'))}</div>\n        <p class=\"alt-desc\">{html.escape(alt.get('description',''))}</p>\n        <div class=\"alt-pros-cons\">\n          <div class=\"alt-pro\">{html.escape(alt.get('pros',''))}</div>\n          <div class=\"alt-con\">{html.escape(alt.get('cons',''))}</div>\n        </div>{link}\n      </div>"""
@@ -401,7 +408,7 @@ def build_related(slug, all_articles, related_map, slug_to_category=None):
             target_category = target_slug.split('-')[0]
             
         links.append(
-            f"""        <a href="../{target_category}/{target_slug}" class="connect-link">
+            f"""        <a href="/{target_category}/{target_slug}" class="connect-link">
           <div class="connect-type">{html.escape(context)}</div>
           <div class="connect-title">{target_title} <span>&rarr;</span></div>
         </a>"""
@@ -475,10 +482,10 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" />
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <meta property="og:image" content="{SITE_URL}/images/hero.jpg" />
   {THEME_INIT_SCRIPT}
-  <link rel="stylesheet" href="../css/style.css?v={CSS_VERSION}" />
+  <link rel="stylesheet" href="/css/style.css?v={CSS_VERSION}" />
   <script type="application/ld+json">
   {json.dumps({
       "@context": "https://schema.org",
@@ -496,9 +503,9 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
           "url": SITE_URL,
       },
       "reviewedBy": {
-          "@type": "Organization",
-          "name": f"{SITE_NAME} Fact-Checking Team",
-          "url": f"{SITE_URL}/methodology"
+          "@type": "Person",
+          "name": AUTHOR_NAME,
+          "url": AUTHOR_URL
       },
       "isOriginalContent": True,
       "mainEntityOfPage": canonical,
@@ -510,9 +517,9 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
 {build_site_header()}
   <main id="main-content">
     <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="../">Home</a>
+      <a href="/">Home</a>
       <span class="breadcrumb-sep" aria-hidden="true">/</span>
-      <a href="./">{CATEGORIES.get(category_slug, {}).get("name", category_slug.title()).replace("&amp;", "&")}</a>
+      <a href="/{category_slug}/">{CATEGORIES.get(category_slug, {}).get("name", category_slug.title()).replace("&amp;", "&")}</a>
     </nav>
     <article>
     <h1>{article['title']}</h1>
@@ -539,8 +546,8 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
 {build_related(article['slug'], all_articles, related_map, slug_to_category)}
     </article>
   </main>
-  <footer class="site-footer"><nav><a href="../">Home</a><a href="../about">About</a><a href="../methodology">Methodology</a><a href="../privacy">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
-  <script src="../js/main.js" defer></script>
+  <footer class="site-footer"><nav><a href="/">Home</a><a href="/about">About</a><a href="/methodology">Methodology</a><a href="/privacy">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
+  <script src="/js/main.js" defer></script>
 </body>
 </html>
 """
@@ -566,7 +573,7 @@ def generate_category_index(category_slug, generated_articles, target_count):
         badge_html = f' <span class="status-badge status-badge--{badge_cls}">{badge_txt}</span>' if badge_cls else ""
         data_attr = f' data-status="{vlevel}"' if vlevel else ""
         link_parts.append(
-            f'        <a href="{slug}" class="connect-link"{data_attr}>\n'
+            f'        <a href="/{category_slug}/{slug}" class="connect-link"{data_attr}>\n'
             f'          <div class="connect-type">{badge_html.strip() if badge_html else "Guide"}</div>\n'
             f'          <div class="connect-title">{title} <span>&rarr;</span></div>\n'
             f'        </a>'
@@ -617,8 +624,8 @@ def generate_category_index(category_slug, generated_articles, target_count):
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" />
   {THEME_INIT_SCRIPT}
-  <link rel="stylesheet" href="../css/style.css?v={CSS_VERSION}" />
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css?v={CSS_VERSION}" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <script type="application/ld+json">
   {cat_ld}
   </script>
@@ -626,7 +633,7 @@ def generate_category_index(category_slug, generated_articles, target_count):
 {build_site_header()}
   <main>
     <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="../">Home</a>
+      <a href="/">Home</a>
       <span class="breadcrumb-sep" aria-hidden="true">/</span>
       <span aria-current="page">{cat_name}</span>
     </nav>
@@ -639,8 +646,8 @@ def generate_category_index(category_slug, generated_articles, target_count):
       </div>
     </div>
   </main>
-  <footer class="site-footer"><nav><a href="../">Home</a><a href="../about">About</a><a href="../methodology">Methodology</a><a href="../privacy">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
-  <script src="../js/main.js" defer></script>
+  <footer class="site-footer"><nav><a href="/">Home</a><a href="/about">About</a><a href="/methodology">Methodology</a><a href="/privacy">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
+  <script src="/js/main.js" defer></script>
 </body></html>
 """
 
@@ -764,8 +771,8 @@ def generate_homepage(catalog_by_category, generated_counts, all_generated=None)
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" />
   {THEME_INIT_SCRIPT}
-  <link rel="stylesheet" href="css/style.css?v={CSS_VERSION}" />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css?v={CSS_VERSION}" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <script type="application/ld+json">
   {homepage_ld}
   </script>
@@ -788,8 +795,8 @@ def generate_homepage(catalog_by_category, generated_counts, all_generated=None)
     </div>
     {recently_reviewed_html}
   </main>
-  <footer class="site-footer"><nav><a href="about">About</a><a href="methodology">Methodology</a><a href="privacy">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
-  <script src="js/main.js" defer></script>
+  <footer class="site-footer"><nav><a href="/about">About</a><a href="/methodology">Methodology</a><a href="/privacy">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
+  <script src="/js/main.js" defer></script>
 </body></html>
 """
     Path("public/index.html").write_text(html_out, encoding="utf-8")
@@ -805,9 +812,9 @@ def generate_homepage(catalog_by_category, generated_counts, all_generated=None)
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   {THEME_INIT_SCRIPT}
-  <link rel="stylesheet" href="css/style.css?v={CSS_VERSION}" />
+  <link rel="stylesheet" href="/css/style.css?v={CSS_VERSION}" />
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to content</a>
@@ -815,8 +822,8 @@ def generate_homepage(catalog_by_category, generated_counts, all_generated=None)
   <main id="main-content" class="prose">
 {{body}}
   </main>
-  <footer class="site-footer"><nav><a href="./">Home</a><a href="about">About</a><a href="methodology">Methodology</a><a href="privacy">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
-  <script src="js/main.js" defer></script>
+  <footer class="site-footer"><nav><a href="/">Home</a><a href="/about">About</a><a href="/methodology">Methodology</a><a href="/privacy">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
+  <script src="/js/main.js" defer></script>
 </body>
 </html>"""
 
@@ -974,7 +981,7 @@ def generate_homepage(catalog_by_category, generated_counts, all_generated=None)
         Path(f"public/{filename}").write_text(page_html, encoding="utf-8")
 
 
-def generate_sitemap(urls):
+def generate_sitemap(urls, slug_to_reviewed=None):
     today = date.today().isoformat()
     lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for loc in urls:
@@ -995,7 +1002,7 @@ def generate_sitemap(urls):
             freq = "monthly"
             # Extract slug from URL for stable lastmod
             slug = loc.rsplit("/", 1)[-1]
-            lastmod = stable_publish_date(slug)
+            lastmod = (slug_to_reviewed or {}).get(slug, stable_publish_date(slug))
         lines.append(f"  <url><loc>{loc}</loc><lastmod>{lastmod}</lastmod><changefreq>{freq}</changefreq><priority>{priority}</priority></url>")
     lines.append('</urlset>')
     Path("public/sitemap.xml").write_text("\n".join(lines), encoding="utf-8")
@@ -1050,6 +1057,12 @@ def main():
     all_generated = defaultdict(list)
     all_generated_articles = defaultdict(list)  # full article dicts for homepage
     counts = {}
+
+    # Validate that dynamic category WebP images exist in images/categories/ at build time
+    for cat_slug in CATEGORIES:
+        img_path = Path("images/categories") / f"{cat_slug}.webp"
+        if not img_path.exists():
+            raise FileNotFoundError(f"CRITICAL BUILD FAILURE: Missing category WebP image for '{cat_slug}' at {img_path}. Build stopped to protect visual standards.")
 
     if args.category:
         if args.category in CATEGORIES:
@@ -1112,7 +1125,14 @@ def main():
             sitemap_urls.append(f"{SITE_URL}/{cat_slug}/")
             for slug, *_ in articles:
                 sitemap_urls.append(f"{SITE_URL}/{cat_slug}/{slug}")
-        generate_sitemap(sitemap_urls)
+                
+        # Build slug-to-reviewed map for sitemap lastmod tags
+        slug_to_reviewed = {}
+        for cat_slug, articles in all_generated_articles.items():
+            for art in articles:
+                slug_to_reviewed[art["slug"]] = art.get("reviewed") or REVIEW_DATE
+                
+        generate_sitemap(sitemap_urls, slug_to_reviewed)
         print(f"\n  Total generated pages: {sum(counts.values())} across {len([c for c in counts.values() if c > 0])} categories in public/")
 
 if __name__ == "__main__":
