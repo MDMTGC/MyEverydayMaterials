@@ -8,6 +8,7 @@ import importlib
 import json
 import re
 import shutil
+import subprocess
 import urllib.parse
 from collections import defaultdict
 from datetime import date, timedelta
@@ -22,12 +23,38 @@ CSS_VERSION = "13"
 # the weeks following launch so Google sees organic publishing cadence.
 SITE_LAUNCH_DATE = date(2026, 2, 1)
 
-AUTHOR_NAME = "Melecio"
-AUTHOR_EMAIL = "myeverydaymaterials@gmail.com"
-AUTHOR_PHOTO = "/images/Melecio.png"
-AUTHOR_URL = f"{SITE_URL}/about"
+# Load authors data dynamically from authors.json
+AUTHORS_DATA_FILE = Path("authors.json")
+if AUTHORS_DATA_FILE.exists():
+    try:
+        _authors = json.loads(AUTHORS_DATA_FILE.read_text(encoding="utf-8"))
+        _main_author = _authors.get("main", {})
+        AUTHOR_NAME = _main_author.get("name", "Melecio")
+        AUTHOR_EMAIL = _main_author.get("email", "myeverydaymaterials@gmail.com")
+        AUTHOR_PHOTO = _main_author.get("photo", "/images/Melecio.png")
+        AUTHOR_SOCIAL_URL = _main_author.get("social_url", "")
+        AUTHOR_URL = _main_author.get("url", f"{SITE_URL}/about")
+        AUTHOR_BIO_SHORT = _main_author.get("bio_short", "")
+    except Exception as exc:
+        print(f"WARN: Failed to load authors.json ({exc}), using defaults.")
+        AUTHOR_NAME = "Melecio"
+        AUTHOR_EMAIL = "myeverydaymaterials@gmail.com"
+        AUTHOR_PHOTO = "/images/Melecio.png"
+        AUTHOR_SOCIAL_URL = ""
+        AUTHOR_URL = f"{SITE_URL}/about"
+        AUTHOR_BIO_SHORT = ""
+else:
+    AUTHOR_NAME = "Melecio"
+    AUTHOR_EMAIL = "myeverydaymaterials@gmail.com"
+    AUTHOR_PHOTO = "/images/Melecio.png"
+    AUTHOR_SOCIAL_URL = ""
+    AUTHOR_URL = f"{SITE_URL}/about"
+    AUTHOR_BIO_SHORT = ""
+
 AUTHOR_ID = f"{SITE_URL}/about#author"
-REVIEW_DATE = "2026-05-31"  # DEFAULT_REVIEW_DATE from prompt
+REVIEW_DATE = "2026-04-19"  # DEFAULT_REVIEW_DATE from prompt
+
+
 
 
 def stable_publish_date(slug):
@@ -39,6 +66,24 @@ def stable_publish_date(slug):
     h = int(hashlib.md5(slug.encode()).hexdigest(), 16)
     offset_days = h % 56  # spread over 8 weeks
     return (SITE_LAUNCH_DATE + timedelta(days=offset_days)).isoformat()
+
+
+def git_creation_date(slug):
+    """Attempt to get the date the article slug was first added to Git,
+    falling back to stable_publish_date(slug).
+    """
+    try:
+        # Run git log to find when the slug was introduced
+        cmd = ["git", "log", "-S", f'"{slug}"', "--diff-filter=A", "--format=%as"]
+        out = subprocess.check_output(cmd, stderr=subprocess.DEVNULL).decode("utf-8").strip()
+        if out:
+            # Get the oldest commit date returned
+            dates = [d for d in out.split("\n") if d]
+            if dates:
+                return sorted(dates)[0]
+    except Exception:
+        pass
+    return stable_publish_date(slug)
 
 # Inline script to prevent Flash of Default Theme — runs before CSS is parsed
 THEME_INIT_SCRIPT = '<script>!function(){var t=localStorage.getItem("mem-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}()</script>'
@@ -446,7 +491,7 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
     canonical = f"{SITE_URL}/{category_slug}/{article['slug']}"
     plain_title = html.escape(html.unescape(article["title"]), quote=True)
     plain_desc = html.escape(article["meta_description"], quote=True)
-    pub_date = article.get("published") or stable_publish_date(article["slug"])
+    pub_date = article.get("published") or git_creation_date(article["slug"])
     reviewed_date = article.get("reviewed") or REVIEW_DATE
     mod_date = reviewed_date
 
@@ -827,21 +872,18 @@ def generate_homepage(catalog_by_category, generated_counts, all_generated=None)
 </body>
 </html>"""
 
-    _person_ld = json.dumps({
+    _person_dict = {
         "@context": "https://schema.org",
         "@type": "Person",
         "@id": AUTHOR_ID,
         "name": AUTHOR_NAME,
-        "description": "Lead Researcher & Editor focused on household material safety and non-toxic alternatives.",
-        "jobTitle": "Lead Researcher & Editor",
-        "worksFor": {
-            "@type": "Organization",
-            "name": SITE_NAME
-        },
         "url": AUTHOR_URL,
         "image": SITE_URL + AUTHOR_PHOTO,
-        "email": AUTHOR_EMAIL,
-    }, indent=4, ensure_ascii=False)
+        "email": AUTHOR_EMAIL
+    }
+    if AUTHOR_SOCIAL_URL:
+        _person_dict["sameAs"] = [AUTHOR_SOCIAL_URL]
+    _person_ld = json.dumps(_person_dict, indent=4, ensure_ascii=False)
 
     about_body = f"""    {build_byline(REVIEW_DATE)}
     <h1>About {SITE_NAME}</h1>
@@ -1002,7 +1044,7 @@ def generate_sitemap(urls, slug_to_reviewed=None):
             freq = "monthly"
             # Extract slug from URL for stable lastmod
             slug = loc.rsplit("/", 1)[-1]
-            lastmod = (slug_to_reviewed or {}).get(slug, stable_publish_date(slug))
+            lastmod = (slug_to_reviewed or {}).get(slug, git_creation_date(slug))
         lines.append(f"  <url><loc>{loc}</loc><lastmod>{lastmod}</lastmod><changefreq>{freq}</changefreq><priority>{priority}</priority></url>")
     lines.append('</urlset>')
     Path("public/sitemap.xml").write_text("\n".join(lines), encoding="utf-8")
@@ -1079,6 +1121,34 @@ def main():
     all_articles_map = {row["slug"]: row["material_name"] for cat in overall.values() for row in cat}
     slug_to_category = {row["slug"]: cat_key for cat_key, rows in overall.items() for row in rows}
 
+    # Phase 5: Verdict Taxonomy Audit
+    print("Executing Verdict Taxonomy Audit...")
+    invalid_verdicts = []
+    
+    # Audit materials_data.json
+    for row in load_material_rows():
+        slug = row.get("slug")
+        status = row.get("status")
+        if status not in ["SAFE", "CAUTION", "AVOID"]:
+            invalid_verdicts.append(f"Catalog JSON entry '{slug}' has invalid status: '{status}'")
+            
+    # Audit python modules articles
+    for cat_slug in CATEGORIES:
+        module_articles, _ = load_articles_module(cat_slug)
+        if module_articles:
+            for art in module_articles:
+                slug = art.get("slug")
+                v_level = art.get("verdict_level")
+                if v_level not in ["verdict-safe", "verdict-caution", "verdict-avoid"]:
+                    invalid_verdicts.append(f"Module article '{slug}' has invalid/missing verdict_level: '{v_level}'")
+                    
+    if invalid_verdicts:
+        print("\n[WARNING] Verdict taxonomy inconsistencies found:")
+        for iv in invalid_verdicts:
+            print(f"  - {iv}")
+    else:
+        print("Taxonomy audit complete: 100% consistent.")
+
     for cat_slug in cats_to_run:
         cat_dir = public_dir / cat_slug
         cat_dir.mkdir(exist_ok=True)
@@ -1094,7 +1164,7 @@ def main():
         gen_list = []
         for art in articles:
             # Ensure stable date fields are set on the dict for homepage use
-            art.setdefault("published", stable_publish_date(art["slug"]))
+            art.setdefault("published", git_creation_date(art["slug"]))
             art.setdefault("reviewed", REVIEW_DATE)
             target = cat_dir / f"{art['slug']}.html"
             html_code = generate_article(art, all_articles_map, cat_slug, related_map, slug_to_category)
