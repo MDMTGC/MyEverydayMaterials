@@ -59,11 +59,11 @@ ARTICLES = \
             ],
             [
                 "Feline Respiratory Health",
-                "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center"
+                "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/feline-asthma-what-you-need-know/health-information/feline-health-topics/feline-asthma-what-you-need-know"
             ],
             [
                 "Intestinal Foreign Bodies in Cats",
-                "https://www.acvs.org/small-animal/intestinal-foreign-bodies-cats"
+                "https://www.acvs.org/small-animal/gastrointestinal-foreign-bodies"
             ]
         ]
     },
@@ -120,7 +120,7 @@ ARTICLES = \
         "sources": [
             [
                 "Melamine Pet Food Recall",
-                "https://www.fda.gov/animal-veterinary/recalls-withdrawals/melamine-pet-food-recall-2007"
+                "https://www.fda.gov/animal-veterinary/safety-health/recalls-withdrawals"
             ],
             [
                 "Bacterial Biofilms in Pet Bowls",
@@ -128,7 +128,7 @@ ARTICLES = \
             ],
             [
                 "Feline Acne: Causes and Treatment",
-                "https://vcahospitals.com/know-your-pet/feline-acne"
+                "https://vcahospitals.com/know-your-pet/chin-acne-in-cats"
             ]
         ]
     },
@@ -186,7 +186,7 @@ ARTICLES = \
         "sources": [
             [
                 "Spot-On Flea Products for Pets",
-                "https://www.epa.gov/pets/flea-and-tick-products-pets"
+                "https://www.epa.gov/pets/controlling-fleas-and-ticks-your-pet"
             ],
             [
                 "Tetrachlorvinphos (TCVP) Risk Assessment",
@@ -194,7 +194,7 @@ ARTICLES = \
             ],
             [
                 "Permethrin Toxicity in Cats",
-                "https://www.petpoisonhelpline.com/poison/permethrin/"
+                "https://www.petpoisonhelpline.com/poison/pyrethrin/"
             ]
         ]
     },
@@ -252,7 +252,7 @@ ARTICLES = \
         "sources": [
             [
                 "Essential Oils and Cats",
-                "https://www.petpoisonhelpline.com/poison/essential-oils/"
+                "https://www.petpoisonhelpline.com/pet-safety-tips/essential-oils-and-cats/"
             ],
             [
                 "Toxicity of Essential Oils in Companion Animals",
@@ -318,11 +318,11 @@ ARTICLES = \
         "sources": [
             [
                 "Chemicals in Pet Products",
-                "https://www.ecocenter.org/our-work/healthy-stuff/healthy-stuff-blog/chemicals-in-pet-products"
+                "https://www.ecocenter.org/healthy-stuff"
             ],
             [
                 "Phthalates in Consumer Goods",
-                "https://www.atsdr.cdc.gov/toxprofiledocs/index.html"
+                "https://www.atsdr.cdc.gov/toxprofiles/tp20.pdf"
             ],
             [
                 "Heavy Metals in Dog Toys",
@@ -387,11 +387,11 @@ ARTICLES = \
             ],
             [
                 "Feline Lower Urinary Tract Disease - Cornell Feline Health Center",
-                "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/feline-lower-urinary-tract-disease"
+                "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/feline-asthma-what-you-need-know/health-information/feline-health-topics/feline-asthma-what-you-need-know/health-information/feline-health-topics/feline-lower-urinary-tract-disease"
             ],
             [
                 "Bisphenol A (BPA) - National Institute of Environmental Health Sciences",
-                "https://www.niehs.nih.gov/health/topics/agents/bpa/"
+                "https://www.niehs.nih.gov/health/topics/agents/sya-bpa"
             ]
         ]
     },
@@ -448,7 +448,7 @@ ARTICLES = \
         "sources": [
             [
                 "Flame Retardants and Pets: How Much is Too Much? - Tufts University Cummings School of Veterinary Medicine",
-                "https://www.tuftsyourdog.com/dog-health/flame-retardants-and-pets-how-much-is-too-much/"
+                "https://www.tuftsyourdog.com/dog-health/flame-retardants-and-pets/"
             ],
             [
                 "CertiPUR-US Foam Certification - CertiPUR-US",
@@ -513,11 +513,11 @@ ARTICLES = \
         "sources": [
             [
                 "Phthalates and Animal Health - Environmental Working Group (EWG)",
-                "https://www.ewg.org/areas-of-work/healthy-living/pets/phthalates-and-animal-health"
+                "https://www.ewg.org/research/polluted-pets"
             ],
             [
                 "Pet Grooming Product Safety - American Veterinary Medical Association (AVMA)",
-                "https://www.avma.org/resources/pet-owners/petcare/pet-grooming-product-safety"
+                "https://www.avma.org/resources/pet-owners/petcare"
             ],
             [
                 "Endocrine Disrupting Chemicals: An Overview - National Institute of Environmental Health Sciences (NIEHS)",
@@ -582,11 +582,11 @@ ARTICLES = \
             ],
             [
                 "Indoor Air Quality and Pets - U.S. Environmental Protection Agency (EPA)",
-                "https://www.epa.gov/indoor-air-quality-iaq/indoor-air-quality-pet-health"
+                "https://www.epa.gov/indoor-air-quality-iaq"
             ],
             [
                 "Formaldehyde Emission Standards for Composite Wood Products (CARB Phase 2) - California Air Resources Board",
-                "https://ww2.arb.ca.gov/our-work/programs/air-quality-standards/formaldehyde-emission-standards-composite-wood-products"
+                "https://ww2.arb.ca.gov/our-work/programs/composite-wood-products-program"
             ]
         ]
     }

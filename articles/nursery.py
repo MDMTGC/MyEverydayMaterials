@@ -59,11 +59,11 @@ ARTICLES = \
             ],
             [
                 "FDA: Cosmetics Q&A: Preservatives",
-                "https://www.fda.gov/cosmetics/resources-consumers-cosmetics/cosmetics-qa-preservatives"
+                "https://www.fda.gov/cosmetics/cosmetic-ingredients/parabens-cosmetics"
             ],
             [
                 "American Academy of Dermatology Association: Contact dermatitis: Causes and treatment",
-                "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis/causes-children"
+                "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis"
             ]
         ]
     },
@@ -128,15 +128,15 @@ ARTICLES = \
         "sources": [
             [
                 "FDA: Melamine in Food Contact Substances",
-                "https://www.fda.gov/food/packaging-food-contact-substances-fcs/melamine-food-contact-substances"
+                "https://www.fda.gov/food/chemical-contaminants-food/melamine-tableware-questions-and-answers"
             ],
             [
                 "EPA: Formaldehyde Hazard Summary",
-                "https://www.epa.gov/iris/basic-information-about-formaldehyde-inhalation-reference-concentration"
+                "https://cfpub.epa.gov/ncea/iris2/chemicalLanding.cfm?substance_nmbr=419"
             ],
             [
                 "European Food Safety Authority (EFSA): Melamine in food and feed",
-                "https://www.efsa.europa.eu/en/topics/topic/melamine-food-and-feed"
+                "https://www.efsa.europa.eu/en/press/news/contam100413"
             ]
         ]
     },
@@ -201,7 +201,7 @@ ARTICLES = \
         "sources": [
             [
                 "Flame Retardants in Child Car Seats - Ecology Center",
-                "https://www.ecocenter.org/healthy-stuff/healthy-car-seats/"
+                "https://www.ecocenter.org/frequently-asked-questions-childrens-car-seats-2018"
             ],
             [
                 "Chemicals in the Car: Reducing Exposures to Car Seat Flame Retardants and Phthalates - NCBI",
@@ -209,11 +209,11 @@ ARTICLES = \
             ],
             [
                 "Children's Exposure to Flame Retardants in the Car Environment - NIEHS",
-                "https://www.niehs.nih.gov/research/supported/assets/docs/d_g/childrens_exposure_to_flame_retardants_in_the_car_environment_508.pdf"
+                "https://www.niehs.nih.gov/health/topics/agents/flame_retardants"
             ],
             [
                 "An Update on Flame Retardants and Health - ATSDR/CDC",
-                "https://www.atsdr.cdc.gov/sites/KIDS/documents/flame_retardants.pdf"
+                "https://www.atsdr.cdc.gov/toxfaqs/index.html"
             ]
         ]
     },
@@ -274,7 +274,7 @@ ARTICLES = \
             ],
             [
                 "National Institute for Occupational Safety and Health (NIOSH) - Fiberglass",
-                "https://www.cdc.gov/niosh/topics/fibreglass/default.html"
+                "https://www.atsdr.cdc.gov/toxprofiles/tp161.pdf"
             ],
             [
                 "American Academy of Pediatrics (AAP) - Crib Safety & Sleep Recommendations",
@@ -335,7 +335,7 @@ ARTICLES = \
         "sources": [
             [
                 "U.S. Food & Drug Administration (FDA) - Melamine Safety",
-                "https://www.fda.gov/food/chemicals/melamine-safety"
+                "https://www.fda.gov/food/chemical-contaminants-food/melamine-tableware-questions-and-answers"
             ],
             [
                 "European Food Safety Authority (EFSA) - Scientific Opinion on Melamine",
@@ -412,15 +412,15 @@ ARTICLES = \
             ],
             [
                 "An Update on Phthalates and Child Health",
-                "https://ehp.niehs.nih.gov/doi/10.1289/ehp.1408822"
+                "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8157593/"
             ],
             [
                 "What Are Phthalates? (US EPA)",
-                "https://www.epa.gov/assessing-and-managing-chemicals/what-are-phthalates"
+                "https://www.epa.gov/assessing-and-managing-chemicals-under-tsca/phthalates"
             ],
             [
                 "Endocrine Disrupting Chemicals (EDCs) (WHO/UNEP)",
-                "https://www.who.int/news-room/fact-sheets/detail/endocrine-disrupting-chemicals-(edcs)"
+                "https://www.who.int/teams/environment-climate-change-and-health/settings-and-populations/children/endocrine-disrupters"
             ]
         ]
     },
@@ -623,11 +623,11 @@ ARTICLES = \
         "sources": [
             [
                 "American Academy of Pediatrics: Choosing a Pacifier",
-                "https://www.healthychildren.org/English/ages-stages/baby/preemie/Pages/Choosing-a-Pacifier-for-Your-Preemie.aspx"
+                "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/Pacifier-Safety.aspx"
             ],
             [
                 "U.S. Food & Drug Administration: Food Contact Materials",
-                "https://www.fda.gov/food/packaging-food-contact-substances-fcs/food-contact-materials"
+                "https://www.fda.gov/food/food-ingredients-packaging/food-contact-substances-fcs"
             ],
             [
                 "Safety and Toxicity of Silicone in Medical Applications: A Review",
@@ -700,7 +700,7 @@ ARTICLES = \
         "sources": [
             [
                 "Talcum Powder and Asbestos: Frequently Asked Questions - FDA",
-                "https://www.fda.gov/consumers/consumer-updates/talcum-powder-and-asbestos-frequently-asked-questions"
+                "https://www.fda.gov/cosmetics/cosmetic-ingredients/talc"
             ],
             [
                 "Talcum Powder and Cancer - American Cancer Society",

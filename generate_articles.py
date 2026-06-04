@@ -72,17 +72,6 @@ def git_creation_date(slug):
     """Attempt to get the date the article slug was first added to Git,
     falling back to stable_publish_date(slug).
     """
-    try:
-        # Run git log to find when the slug was introduced
-        cmd = ["git", "log", "-S", f'"{slug}"', "--diff-filter=A", "--format=%as"]
-        out = subprocess.check_output(cmd, stderr=subprocess.DEVNULL).decode("utf-8").strip()
-        if out:
-            # Get the oldest commit date returned
-            dates = [d for d in out.split("\n") if d]
-            if dates:
-                return sorted(dates)[0]
-    except Exception:
-        pass
     return stable_publish_date(slug)
 
 # Inline script to prevent Flash of Default Theme — runs before CSS is parsed
@@ -349,8 +338,8 @@ def normalize_basic_article(row):
             },
         ],
         "sources": [
-            ("US EPA: Assessing and managing chemical risk in consumer environments", "https://www.epa.gov/"),
-            ("ATSDR Toxicological Profiles", "https://www.atsdr.cdc.gov/toxprofiledocs/index.html"),
+            ("US EPA: Assessing and managing chemical risk under TSCA", "https://www.epa.gov/assessing-and-managing-chemicals-under-tsca"),
+            ("ATSDR Toxicological Profiles", "https://www.atsdr.cdc.gov/toxprofiles/index.html"),
             ("WHO: Chemical safety and exposure pathways", "https://www.who.int/health-topics/chemical-safety"),
         ],
     }

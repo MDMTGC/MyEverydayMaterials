@@ -59,11 +59,11 @@ ARTICLES = \
             ],
             [
                 "TBBPA Factsheet",
-                "https://echa.europa.eu/-/echa-raises-environmental-concerns-over-certain-aromatic-brominated-flame-retardants"
+                "https://echa.europa.eu/registration-dossier/-/registered-dossier/15399"
             ],
             [
                 "TBBPA and Thyroid Hormone Signaling",
-                "https://ehp.niehs.nih.gov/doi/10.1289/ehp.1104753"
+                "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3222079/"
             ],
             [
                 "Exposure to flame retardant chemicals in the home environment",
@@ -193,7 +193,7 @@ ARTICLES = \
         "sources": [
             [
                 "BPA in Thermal Paper",
-                "https://ntp.niehs.nih.gov/"
+                "https://www.niehs.nih.gov/health/topics/agents/sya-bpa"
             ],
             [
                 "Dermal Absorption of Bisphenols from Thermal Paper",
@@ -416,11 +416,11 @@ ARTICLES = \
         "sources": [
             [
                 "Lead in Electronics",
-                "https://www.epa.gov/smm/electronics-waste-management"
+                "https://www.epa.gov/recycle/electronics-donation-and-recycling"
             ],
             [
                 "RoHS Directive Overview",
-                "https://ec.europa.eu/environment/topics/waste/rohs-directive_en"
+                "https://environment.ec.europa.eu/topics/waste-and-recycling/rohs-directive_en"
             ],
             [
                 "OSHA Lead Exposure in General Industry",
@@ -493,7 +493,7 @@ ARTICLES = \
             ],
             [
                 "Rare Earth Elements in Tech",
-                "https://www.usgs.gov/mission-areas/natural-resources/mineral-resources/science/rare-earth-elements"
+                "https://www.usgs.gov/centers/national-minerals-information-center/rare-earths-statistics-and-information"
             ],
             [
                 "AAP: Dangers of High-Powered Magnets",
@@ -562,15 +562,15 @@ ARTICLES = \
         "sources": [
             [
                 "Safety of TPE in Consumer Goods",
-                "https://www.fda.gov/media/89360/download"
+                "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/CFRSearch.cfm?fr=177.1210"
             ],
             [
                 "Chemicals in Computer Peripherals",
-                "https://www.greenpeace.org/international/publication/10398/green-electronics-guide-2017/"
+                "https://www.greenpeace.org/usa/reports/greener-electronics-2017/"
             ],
             [
                 "ASTM International Standards for Thermoplastic Elastomers",
-                "https://www.astm.org/products-services/standards-and-publications/standards/d-section-thermoplastic-elastomers.html"
+                "https://www.astm.org/d5538-13r23.html"
             ]
         ]
     },
@@ -635,7 +635,7 @@ ARTICLES = \
         "sources": [
             [
                 "Lithium Battery Safety",
-                "https://www.osha.gov/electric-power/safety-guidance/lithium-ion-battery-safety"
+                "https://www.osha.gov/sites/default/files/publications/shib011819.pdf"
             ],
             [
                 "Battery Off-gassing Analysis",
@@ -643,7 +643,7 @@ ARTICLES = \
             ],
             [
                 "NFPA: Lithium-Ion Battery Safety",
-                "https://www.nfpa.org/Public-Education/By-topic/Safety-in-the-home/Lithium-ion-batteries"
+                "https://www.nfpa.org/education-and-research/home-fire-safety/lithium-ion-batteries"
             ]
         ]
     }

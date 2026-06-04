@@ -56,11 +56,11 @@ ARTICLES = \
         "sources": [
             [
                 "Quaternary Ammonium Compounds",
-                "https://www.ewg.org/guides/cleaners/content/quats/"
+                "https://www.ewg.org/news-insights/news/2023/05/skip-quats-your-cleaning-routine"
             ],
             [
                 "Disinfectants and Asthma",
-                "http://www.aoec.org/"
+                "https://www.aoecdata.org/"
             ],
             [
                 "EPA Registered Antimicrobial Products",
@@ -123,11 +123,11 @@ ARTICLES = \
         "sources": [
             [
                 "Chlorine Bleach: Health Hazards and Safe Use",
-                "https://www.cdc.gov/niosh/topics/bleach.html"
+                "https://www.cdc.gov/hygiene/about/cleaning-and-disinfecting-with-bleach.html"
             ],
             [
                 "Cleaning Products and Lung Health",
-                "https://www.lung.org/clean-air/at-home/indoor-air-pollutants/cleaning-supplies"
+                "https://www.lung.org/clean-air/at-home/indoor-air-pollutants/cleaning-supplies-household-chem-household-chem"
             ],
             [
                 "Household Products Database - Bleach",
@@ -188,11 +188,11 @@ ARTICLES = \
         "sources": [
             [
                 "Ammonia Safety & Health Guide",
-                "https://www.osha.gov/ammonia"
+                "https://www.osha.gov/sites/default/files/publications/osha3144.pdf"
             ],
             [
                 "Cleaning Chemicals and Lung Health",
-                "https://www.lung.org/clean-air/at-home/indoor-air-pollutants/cleaning-supplies"
+                "https://www.lung.org/clean-air/at-home/indoor-air-pollutants/cleaning-supplies-household-chem-household-chem"
             ],
             [
                 "Household Products Database - Ammonia",
@@ -322,7 +322,7 @@ ARTICLES = \
             },
             {
                 "title": "Poison Control: Caustic Ingestions (from Acids and Alkalis)",
-                "url": "https://www.poison.org/articles/caustic-ingestions-2016"
+                "url": "https://www.poison.org/articles/caution-with-caustics"
             },
             {
                 "title": "OSHA: Chemical Hazards and Toxic Substances",
@@ -391,7 +391,7 @@ ARTICLES = \
             },
             {
                 "title": "University of Nebraska-Lincoln Extension: Using Baking Soda",
-                "url": "https://lancaster.unl.edu/hort/articles/2006/bakingsoda.shtml"
+                "url": "https://www.purdue.edu/hla/sites/yardandgarden/baking-soda-as-a-fungicide/"
             }
         ]
     }

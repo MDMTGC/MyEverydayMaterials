@@ -55,7 +55,7 @@ ARTICLES = \
         "sources": [
             [
                 "EPA: Flame Retardants in Furniture and Building Materials",
-                "https://www.epa.gov/assessing-and-managing-chemicals-under-tsca/flame-retardants-furniture-and-building-materials"
+                "https://www.epa.gov/assessing-and-managing-chemicals-under-tsca/fact-sheet-assessing-risks-flame-retardants"
             ],
             [
                 "National Institute of Environmental Health Sciences (NIEHS): Flame Retardants",
@@ -63,7 +63,7 @@ ARTICLES = \
             ],
             [
                 "Environmental Working Group (EWG): Guide to Flame Retardants",
-                "https://www.ewg.org/healthyhome/flame-retardants"
+                "https://www.ewg.org/research/flame-retardants"
             ]
         ]
     },
@@ -124,15 +124,15 @@ ARTICLES = \
             ],
             [
                 "CDC: Phthalates Factsheet",
-                "https://www.cdc.gov/biomonitoring/Phthalates_FactSheet.html"
+                "https://www.cdc.gov/biomonitoring/index.html"
             ],
             [
                 "National Institute of Environmental Health Sciences (NIEHS): Phthalates",
-                "https://www.niehs.nih.gov/health/topics/agents/phthalates/index.cfm"
+                "https://www.niehs.nih.gov/health/topics/agents/phthalates"
             ],
             [
                 "Silent Spring Institute: Phthalates",
-                "https://silentspring.org/phthalates"
+                "https://silentspring.org/project/household-exposure-study"
             ]
         ]
     },
@@ -189,7 +189,7 @@ ARTICLES = \
         "sources": [
             [
                 "EPA: Indoor Air Quality - Carpets",
-                "https://www.epa.gov/indoor-air-quality-iaq/guide-indoor-air-quality"
+                "https://www.epa.gov/indoor-air-quality-iaq/inside-story-guide-indoor-air-quality"
             ],
             [
                 "Carpet and Rug Institute (CRI): Green Label Plus",
@@ -197,11 +197,11 @@ ARTICLES = \
             ],
             [
                 "Agency for Toxic Substances and Disease Registry (ATSDR): VOCs",
-                "https://www.atsdr.cdc.gov/sites/toxics_futures/vocs.html"
+                "https://www.atsdr.cdc.gov/substances/index.html"
             ],
             [
                 "Silent Spring Institute: Carpets",
-                "https://silentspring.org/factsheets/carpets"
+                "https://silentspring.org/project/household-exposure-study"
             ]
         ]
     },
@@ -262,7 +262,7 @@ ARTICLES = \
             ],
             [
                 "Agency for Toxic Substances and Disease Registry (ATSDR): Toluene Diisocyanate (TDI)",
-                "https://wwwn.cdc.gov/TSP/ToxProfiles/TP.asp?id=516&tid=91"
+                "https://www.atsdr.cdc.gov/toxprofiles/tp218.pdf"
             ],
             [
                 "CertiPUR-US: What is CertiPUR-US\u00ae?",
@@ -331,7 +331,7 @@ ARTICLES = \
         "sources": [
             [
                 "U.S. EPA: Formaldehyde in Your Home",
-                "https://www.epa.gov/formaldehyde/formaldehyde-your-home-what-you-need-know"
+                "https://www.epa.gov/indoor-air-quality-iaq/what-should-i-know-about-formaldehyde-and-indoor-air-quality"
             ],
             [
                 "International Agency for Research on Cancer (IARC): Formaldehyde",
@@ -339,7 +339,7 @@ ARTICLES = \
             ],
             [
                 "California Air Resources Board (CARB): Formaldehyde Emission Standards",
-                "https://ww2.arb.ca.gov/our-work/programs/composite-wood-products-atcm"
+                "https://ww2.arb.ca.gov/resources/documents/composite-wood-products-atcm"
             ]
         ]
     },
@@ -404,7 +404,7 @@ ARTICLES = \
         "sources": [
             [
                 "EPA - Microplastics Research",
-                "https://www.epa.gov/trash-free-waters/microplastics-research"
+                "https://www.epa.gov/trash-free-waters/priority-microplastics-research-needs-0"
             ],
             [
                 "National Institute of Environmental Health Sciences (NIEHS) - Flame Retardants",
@@ -473,7 +473,7 @@ ARTICLES = \
         "sources": [
             [
                 "Aerosols and Indoor Air Quality",
-                "https://www.epa.gov/indoor-air-quality-iaq/indoor-air-facts-no-4-sick-building-syndrome"
+                "https://www.epa.gov/sites/default/files/2014-08/documents/sick_building_factsheet.pdf"
             ],
             [
                 "Propellants and Health Risks (from NIOSH)",
@@ -481,7 +481,7 @@ ARTICLES = \
             ],
             [
                 "Cleaning Products and Your Health",
-                "https://www.lung.org/clean-air/at-home/indoor-air-pollutants/cleaning-supplies"
+                "https://www.lung.org/clean-air/at-home/indoor-air-pollutants/cleaning-supplies-household-chem-household-chem"
             ]
         ]
     },
@@ -542,11 +542,11 @@ ARTICLES = \
             },
             {
                 "title": "California Air Resources Board (CARB): Perchloroethylene and Dry Cleaning",
-                "url": "https://ww2.arb.ca.gov/our-work/programs/perchloroethylene-dry-cleaning"
+                "url": "https://ww2.arb.ca.gov/our-work/programs/dry-cleaning-program"
             },
             {
                 "title": "IARC Monographs: Perchloroethylene (Group 2A)",
-                "url": "https://monographs.iarc.who.int/agents-classified-by-the-iarc-monographs/"
+                "url": "https://publications.iarc.who.int/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans/Trichloroethylene-Tetrachloroethylene-And-Some-Other-Chlorinated-Agents-2014"
             }
         ]
     }

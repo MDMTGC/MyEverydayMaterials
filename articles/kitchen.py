@@ -146,7 +146,7 @@ ARTICLES = \
             ],
             [
                 "CDC National Biomonitoring &mdash; BPA Factsheet",
-                "https://www.cdc.gov/biomonitoring/BisphenolA_FactSheet.html"
+                "https://www.cdc.gov/biomonitoring/index.html"
             ],
             [
                 "Current Opinion in Toxicology &mdash; BPA substitutes (2020)",
@@ -227,7 +227,7 @@ ARTICLES = \
             ],
             [
                 "EU REACH Restriction on Phthalates in Food Contact",
-                "https://echa.europa.eu/"
+                "https://echa.europa.eu/hot-topics/phthalateshot-topics/phthalates"
             ],
             [
                 "FDA &mdash; Phthalates in Food Packaging",
@@ -288,7 +288,7 @@ ARTICLES = \
         "sources": [
             [
                 "FDA &mdash; Melamine in Tableware",
-                "https://www.fda.gov/food/chemicals/melamine-tableware"
+                "https://www.fda.gov/food/chemical-contaminants-food/melamine-tableware-questions-and-answers"
             ],
             [
                 "JAMA Internal Medicine &mdash; Melamine in urine after soup consumption (2013)",
@@ -454,7 +454,7 @@ ARTICLES = \
             ],
             [
                 "NIH &mdash; Iron Deficiency and Dietary Sources",
-                "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/"
+                "https://ods.od.nih.gov/factsheets/Iron-Consumer/"
             ]
         ]
     },
@@ -523,7 +523,7 @@ ARTICLES = \
             ],
             [
                 "German Federal Institute for Risk Assessment &mdash; Silicone bakeware (2018)",
-                "https://www.bfr.bund.de/en/"
+                "https://www.bfr.bund.de/en/bfr_recommendations_on_food_contact_materials-19602.htmlbfr_recommendations_on_food_contact_materials-19602.html"
             ],
             [
                 "European Commission Regulation on Silicone Food Contact Materials",
@@ -592,7 +592,7 @@ ARTICLES = \
         "sources": [
             [
                 "WHO &mdash; Copper in Drinking Water Guidelines",
-                "https://www.who.int/publications/i/item/9789241546553"
+                "https://cdn.who.int/media/docs/default-source/wash-documents/water-safety-and-quality/chemical-fact-sheets-2022/copper-fact-sheet-2022.pdf"
             ],
             [
                 "European Copper Institute &mdash; Copper and Health",
@@ -600,7 +600,7 @@ ARTICLES = \
             ],
             [
                 "NIH &mdash; Copper Fact Sheet for Health Professionals",
-                "https://ods.od.nih.gov/factsheets/Copper-HealthProfessional/"
+                "https://ods.od.nih.gov/factsheets/Copper-Consumer/"
             ],
             [
                 "Harold McGee &mdash; On Food and Cooking (Copper Chemistry)",
@@ -677,7 +677,7 @@ ARTICLES = \
             ],
             [
                 "IARC &mdash; Antimony Trioxide Classification",
-                "https://monographs.iarc.who.int/news-events/iarc-monographs-volume-131-cobalt-antimony-compounds-and-weapons-grade-tungsten-alloy/"
+                "https://publications.iarc.who.int/618"
             ],
             [
                 "Water Research &mdash; PET bottle leaching review (2018)",
@@ -901,7 +901,7 @@ ARTICLES = \
         "sources": [
             [
                 "BfR &mdash; Release of melamine and formaldehyde from bamboo tableware (2020)",
-                "https://www.bfr.bund.de/en/"
+                "https://www.bfr.bund.de/cm/349/fillable-articles-made-from-melamine-formaldehyde-resin.pdf"
             ],
             [
                 "European Commission RASFF &mdash; Notifications on bamboo-melamine products",

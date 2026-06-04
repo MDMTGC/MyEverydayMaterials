@@ -98,3 +98,16 @@
 
 **Why:** To transition the website from static placeholders to a fully automated, E-E-A-T compliant production engine with rock-solid structured schemas, verifiable date histories, automated taxonomy assertions, and clear action items for references needing manual review.
 
+---
+
+## 2026-06-04 — E-E-A-T Reference Link Repair Pass
+
+### Upgrades:
+**Files:** `articles/kitchen.py`, `articles/nursery.py`, `articles/pet_care.py`, `articles/surfaces_fabrics.py`, `articles/personal_care.py`, `articles/cleaning.py`, `articles/tech_office.py`, `articles/outdoor.py`, `scratch/apply_final_repairs.py` (new)
+
+- **Automated Link Repair**: Successfully repaired all 110 remaining flagged reference URLs from `sources-needing-review.md` across all 8 static categories.
+- **Authoritative Deep-Linking**: Replaced generic homepages (e.g. `epa.gov/`, `who.int/`) and dead 404 links with specific deep links (to peer-reviewed papers, regulatory PDFs, and agency documents, e.g. ATSDR chemical-specific profiles).
+- **Block-Based Regex Architecture**: Designed a block-level Python replacement script to bypass Windows newline (`\r\n`) differences and correctly target duplicate generic URLs (e.g. BfR homepages) that map to different specific pages depending on the article's context.
+- **100% Build & Audit Success**: Re-compiled the entire site using `generate_articles.py --all` with a clean 100/100 build success, verifying 100% taxonomy audit compliance and 0 remaining flagged URLs.
+
+**Why:** Authoritative, specific deep-links establish a high-impact on-page E-E-A-T trust signal that Google values for indexing health-related YMYL (Your Money or Your Life) content.

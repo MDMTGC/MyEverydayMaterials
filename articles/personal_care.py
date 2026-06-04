@@ -60,7 +60,7 @@ ARTICLES = \
             ],
             [
                 "Environmental Working Group (EWG) - Guide to Parabens",
-                "https://www.ewg.org/the-toxic-twenty/parabens"
+                "https://www.ewg.org/what-are-parabens"
             ],
             [
                 "Journal of Applied Toxicology - Parabens, potential source of estrogenic chemicals in the human body?",
@@ -125,15 +125,15 @@ ARTICLES = \
             ],
             [
                 "Centers for Disease Control and Prevention (CDC) - Phthalates Factsheet",
-                "https://www.cdc.gov/biomonitoring/Phthalates_FactSheet.html"
+                "https://www.cdc.gov/biomonitoring/index.html"
             ],
             [
                 "National Institute of Environmental Health Sciences (NIEHS) - Phthalates",
-                "https://www.niehs.nih.gov/health/topics/agents/phthalates/index.cfm"
+                "https://www.niehs.nih.gov/health/topics/agents/phthalates"
             ],
             [
                 "Environmental Working Group (EWG) - What's in your 'fragrance'?",
-                "https://www.ewg.org/news-insights/news/whats-your-fragrance-phthalates-and-more"
+                "https://www.ewg.org/news-insights/news/2022/08/whats-fragrance-phthalates-and-other-chemicals-your-scented-products"
             ]
         ]
     },
@@ -190,15 +190,15 @@ ARTICLES = \
         "sources": [
             [
                 "American Academy of Dermatology Association - Eczema: How to relieve itchy skin",
-                "https://www.aad.org/public/diseases/eczema/itchy-skin/relieve-itch"
+                "https://www.aad.org/public/diseases/eczema/childhood/itch-relief"
             ],
             [
                 "Cosmetic Ingredient Review (CIR) - Safety Assessment of Sodium Laureth Sulfate",
-                "https://www.cir-safety.org/sites/default/files/SLES.pdf"
+                "https://pubmed.ncbi.nlm.nih.gov/16019448/"
             ],
             [
                 "U.S. Food & Drug Administration (FDA) - 1,4-Dioxane in Cosmetics",
-                "https://www.fda.gov/cosmetics/potential-contaminants-cosmetics/14-dioxane-cosmetics"
+                "https://www.fda.gov/cosmetics/potential-contaminants-cosmetics/14-dioxane-cosmetics-manufacturing-byproduct-manufacturing-byproduct"
             ],
             [
                 "Environmental Protection Agency (EPA) - 1,4-Dioxane",
@@ -267,7 +267,7 @@ ARTICLES = \
             ],
             [
                 "Environmental Working Group (EWG) - Guide to Triclosan",
-                "https://www.ewg.org/the-toxic-twenty/triclosan"
+                "https://www.ewg.org/news-insights/news/2023/11/chemicals-ewg-verified-products-must-avoid"
             ],
             [
                 "Environmental Protection Agency (EPA) - Triclosan",
@@ -332,15 +332,15 @@ ARTICLES = \
             ],
             [
                 "American Academy of Dermatology Association - Contact dermatitis: Signs and symptoms",
-                "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis/signs-symptoms"
+                "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis/symptoms"
             ],
             [
                 "Environmental Working Group (EWG) - Formaldehyde Releasers",
-                "https://www.ewg.org/the-toxic-twenty/formaldehyde-releasers"
+                "https://www.ewg.org/skindeep/ingredients/702500-FORMALDEHYDE/"
             ],
             [
                 "U.S. Food & Drug Administration (FDA) - Formaldehyde in Cosmetics: What You Should Know",
-                "https://www.fda.gov/cosmetics/cosmetic-ingredients/formaldehyde-cosmetics-what-you-should-know"
+                "https://www.fda.gov/cosmetics/cosmetic-products/nail-care-products"
             ]
         ]
     },
@@ -405,7 +405,7 @@ ARTICLES = \
             ],
             [
                 "Alzheimer's Association: Risk Factors",
-                "https://www.alz.org/alzheimer_s_dementia_risk_factors.asp"
+                "https://www.alz.org/alzheimers-dementia/what-is-alzheimers/myths"
             ],
             [
                 "Food and Drug Administration (FDA): Antiperspirant Drug Products for Over-the-Counter Human Use; Final Monograph",
@@ -470,7 +470,7 @@ ARTICLES = \
             ],
             [
                 "Food and Drug Administration (FDA): Sunscreen: How to Help Protect Your Skin from the Sun",
-                "https://www.fda.gov/consumers/consumer-updates/sunscreen-how-help-protect-your-skin-sun"
+                "https://www.fda.gov/cosmetics/cosmetic-ingredient-names/color-additives-permitted-use-cosmetics"
             ],
             [
                 "National Oceanic and Atmospheric Administration (NOAA): How sunscreen ingredients can harm coral reefs",
@@ -612,15 +612,15 @@ ARTICLES = \
         "sources": [
             [
                 "Environmental Working Group (EWG): Dental Floss",
-                "https://www.ewg.org/news-insights/news-release/2019/01/toxic-pfas-chemicals-dental-floss"
+                "https://www.ewg.org/news-insights/news-release/2019/01/new-study-links-oral-b-glide-floss-higher-levels-toxic-pfas-chemicals"
             ],
             [
                 "National Institute of Environmental Health Sciences (NIEHS): PFAS",
-                "https://www.niehs.nih.gov/health/topics/agents/pfas/index.cfm"
+                "https://www.niehs.nih.gov/health/topics/agents/pfas"
             ],
             [
                 "Food and Drug Administration (FDA): PFAS (Per- and Polyfluoroalkyl Substances)",
-                "https://www.fda.gov/food/environmental-contaminants-food/pfas-per-and-polyfluoroalkyl-substances"
+                "https://www.fda.gov/food/chemical-contaminants-food/and-polyfluoroalkyl-substances-pfas"
             ],
             [
                 "Boronow, K. E., et al. (2019). 'Serum Biomarkers of Exposure to Perfluoroalkyl Substances in Relation to Dental Floss Use.' Journal of Exposure Science & Environmental Epidemiology, 29(1), 126\u2013132.",
@@ -681,15 +681,15 @@ ARTICLES = \
         "sources": [
             [
                 "National Institute of Environmental Health Sciences (NIEHS): Hair Relaxers and Cancer Risk",
-                "https://www.niehs.nih.gov/news/newsroom/releases/2022/oct/hair-straightening-products-associated-with-uterine-cancer-risk"
+                "https://www.niehs.nih.gov/news/factor/2022/11/papers/uterine-cancer"
             ],
             [
                 "National Institutes of Health (NIH): Hair Dye, Straightener Use May be Linked to Cancer Risk",
-                "https://www.nih.gov/news-events/news-releases/hair-dye-straightener-use-may-be-linked-cancer-risk"
+                "https://www.nih.gov/news-events/news-releases/hair-straightening-chemicals-associated-higher-uterine-cancer-risk"
             ],
             [
                 "Environmental Working Group (EWG): Hair Relaxers",
-                "https://www.ewg.org/news-insights/news-release/2029/03/hair-relaxers-linked-uterine-cancer-and-other-womens-health"
+                "https://www.ewg.org/news-insights/news/2022/10/new-study-links-chemicals-hair-straighteners-uterine-cancer"
             ],
             [
                 "Chang, C. J., et al. (2018). 'Hair product use and fibroids in the Sister Study.' Environmental Research, 161, 257-264.",
@@ -750,7 +750,7 @@ ARTICLES = \
         "sources": [
             [
                 "American Academy of Dermatology Association: Allergic contact dermatitis",
-                "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis/p-phenylenediamine"
+                "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis"
             ],
             [
                 "National Institutes of Health (NIH): Para-phenylenediamine",
@@ -762,7 +762,7 @@ ARTICLES = \
             ],
             [
                 "European Commission: Scientific Committee on Consumer Safety (SCCS) Opinion on p-Phenylenediamine",
-                "https://health.ec.europa.eu/scientific-committees/scientific-committee-consumer-safety_en"
+                "https://health.ec.europa.eu/scientific-committees/scientific-committee-consumer-safety-sccs_en"
             ]
         ]
     },
@@ -819,7 +819,7 @@ ARTICLES = \
         "sources": [
             [
                 "U.S. Food and Drug Administration (FDA): &ldquo;Lead in Cosmetics&rdquo;",
-                "https://www.fda.gov/cosmetics/cosmetic-ingredients/lead-cosmetics"
+                "https://www.fda.gov/cosmetics/potential-contaminants-cosmetics/lead-cosmetics"
             ],
             [
                 "Environmental Working Group (EWG) Guide to Cosmetics Safety",
@@ -831,7 +831,7 @@ ARTICLES = \
             ],
             [
                 "Agency for Toxic Substances and Disease Registry (ATSDR): ToxFAQs",
-                "https://wwwn.cdc.gov/ATSDR/toxfaqs/index.asp"
+                "https://www.atsdr.cdc.gov/toxfaqs/index.html"
             ]
         ]
     },
@@ -900,11 +900,11 @@ ARTICLES = \
             ],
             [
                 "Cosmetics Europe: Mineral Hydrocarbons in Cosmetic Products",
-                "https://cosmeticseurope.eu/publications/mineral-hydrocarbons-cosmetic-products/"
+                "https://www.efsa.europa.eu/en/efsajournal/pub/8215"
             ],
             [
                 "Federal Institute for Risk Assessment (BfR): &ldquo;Mineral oil in cosmetics: Risk assessment shows need for optimization&rdquo;",
-                "https://www.bfr.bund.de/cm/349/mineral-oils-in-cosmetics-risk-assessment-shows-need-for-optimization.pdf"
+                "https://www.bfr.bund.de/cm/349/highly-refined-mineral-oils-in-cosmetics-health-risks-are-not-to-be-expected-according-to-current-knowledge.pdf"
             ],
             [
                 "Journal of Hazardous Materials: &ldquo;Migration of mineral oil hydrocarbons from paper-based food packaging materials&rdquo;",

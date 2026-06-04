@@ -50,7 +50,7 @@ ARTICLES = [
             ],
             [
                 "ATSDR Toxicological Profiles",
-                "https://www.atsdr.cdc.gov/toxprofiledocs/index.html",
+                "https://www.atsdr.cdc.gov/toxprofiles/tp2.pdf",
             ],
             [
                 "WHO: Chemical safety and exposure pathways",
@@ -107,7 +107,7 @@ ARTICLES = [
             ],
             [
                 "ATSDR Toxicological Profiles",
-                "https://www.atsdr.cdc.gov/toxprofiledocs/index.html",
+                "https://www.atsdr.cdc.gov/toxprofiles/tp56.pdf",
             ],
             [
                 "WHO: Chemical safety and exposure pathways",
@@ -164,7 +164,7 @@ ARTICLES = [
             ],
             [
                 "ATSDR Toxicological Profiles",
-                "https://www.atsdr.cdc.gov/toxprofiledocs/index.html",
+                "https://www.atsdr.cdc.gov/toxprofiles/tp185.pdf",
             ],
             [
                 "WHO: Chemical safety and exposure pathways",
@@ -221,7 +221,7 @@ ARTICLES = [
             ],
             [
                 "ATSDR Toxicological Profiles",
-                "https://www.atsdr.cdc.gov/toxprofiledocs/index.html",
+                "https://www.atsdr.cdc.gov/toxprofiles/tp71.pdf",
             ],
             [
                 "WHO: Chemical safety and exposure pathways",
@@ -278,7 +278,7 @@ ARTICLES = [
             ],
             [
                 "ATSDR Toxicological Profiles",
-                "https://www.atsdr.cdc.gov/toxprofiledocs/index.html",
+                "https://www.atsdr.cdc.gov/toxprofiles/tp114.pdf",
             ],
             [
                 "WHO: Chemical safety and exposure pathways",
@@ -335,7 +335,7 @@ ARTICLES = [
             ],
             [
                 "ATSDR Toxicological Profiles",
-                "https://www.atsdr.cdc.gov/toxprofiledocs/index.html",
+                "https://www.atsdr.cdc.gov/toxprofiles/tp214.pdf",
             ],
             [
                 "WHO: Chemical safety and exposure pathways",
@@ -392,7 +392,7 @@ ARTICLES = [
             ],
             [
                 "ATSDR Toxicological Profiles",
-                "https://www.atsdr.cdc.gov/toxprofiledocs/index.html",
+                "https://www.epa.gov/pollinator-protection/schedule-review-neonicotinoid-pesticides",
             ],
             [
                 "WHO: Chemical safety and exposure pathways",
@@ -449,7 +449,7 @@ ARTICLES = [
             ],
             [
                 "ATSDR Toxicological Profiles",
-                "https://www.atsdr.cdc.gov/toxprofiledocs/index.html",
+                "https://www.atsdr.cdc.gov/toxprofiles/tp13.pdf",
             ],
             [
                 "WHO: Chemical safety and exposure pathways",
@@ -506,7 +506,7 @@ ARTICLES = [
             ],
             [
                 "ATSDR Toxicological Profiles",
-                "https://www.atsdr.cdc.gov/toxprofiledocs/index.html",
+                "https://www.atsdr.cdc.gov/toxprofiles/tp69.pdf",
             ],
             [
                 "WHO: Chemical safety and exposure pathways",
@@ -559,11 +559,11 @@ ARTICLES = [
         "sources": [
             [
                 "US EPA: Assessing and managing chemical risk in consumer environments",
-                "https://www.epa.gov/",
+                "https://www.epa.gov/assessing-and-managing-chemicals-under-tsca/risk-management-and-polyfluoroalkyl-substances-pfas",
             ],
             [
                 "ATSDR Toxicological Profiles",
-                "https://www.atsdr.cdc.gov/toxprofiledocs/index.html",
+                "https://www.atsdr.cdc.gov/toxprofiles/tp200.pdf",
             ],
             [
                 "WHO: Chemical safety and exposure pathways",
