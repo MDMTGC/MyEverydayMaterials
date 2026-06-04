@@ -31,7 +31,7 @@ if AUTHORS_DATA_FILE.exists():
         _main_author = _authors.get("main", {})
         AUTHOR_NAME = _main_author.get("name", "Melecio")
         AUTHOR_EMAIL = _main_author.get("email", "myeverydaymaterials@gmail.com")
-        AUTHOR_PHOTO = _main_author.get("photo", "/images/Melecio.png")
+        AUTHOR_PHOTO = _main_author.get("photo", "/images/Author1.png")
         AUTHOR_SOCIAL_URL = _main_author.get("social_url", "")
         AUTHOR_URL = _main_author.get("url", f"{SITE_URL}/about")
         AUTHOR_BIO_SHORT = _main_author.get("bio_short", "")
@@ -39,14 +39,14 @@ if AUTHORS_DATA_FILE.exists():
         print(f"WARN: Failed to load authors.json ({exc}), using defaults.")
         AUTHOR_NAME = "Melecio"
         AUTHOR_EMAIL = "myeverydaymaterials@gmail.com"
-        AUTHOR_PHOTO = "/images/Melecio.png"
+        AUTHOR_PHOTO = "/images/Author1.png"
         AUTHOR_SOCIAL_URL = ""
         AUTHOR_URL = f"{SITE_URL}/about"
         AUTHOR_BIO_SHORT = ""
 else:
     AUTHOR_NAME = "Melecio"
     AUTHOR_EMAIL = "myeverydaymaterials@gmail.com"
-    AUTHOR_PHOTO = "/images/Melecio.png"
+    AUTHOR_PHOTO = "/images/Author1.png"
     AUTHOR_SOCIAL_URL = ""
     AUTHOR_URL = f"{SITE_URL}/about"
     AUTHOR_BIO_SHORT = ""
