@@ -76,6 +76,20 @@ def git_creation_date(slug):
 
 # Inline script to prevent Flash of Default Theme — runs before CSS is parsed
 THEME_INIT_SCRIPT = '<script>!function(){var t=localStorage.getItem("mem-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}()</script>'
+SW_REGISTRATION_SCRIPT = '<script>if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")})}</script>'
+SEARCH_HTML_BLOCK = """  <div class="search-backdrop" id="search-backdrop" hidden></div>
+  <div class="search-dropdown" id="search-dropdown" hidden>
+    <div class="search-dropdown-header">
+      <span class="search-dropdown-title">Search Results</span>
+      <span class="search-dropdown-count" id="search-results-count">0 matches</span>
+    </div>
+    <div class="search-results-list" id="search-results-list">
+      <div class="search-results-placeholder">Type to search materials by name, category, or safety verdict...</div>
+    </div>
+    <div class="search-dropdown-footer">
+      <kbd>ESC</kbd> to close &middot; <kbd>&uarr;&darr;</kbd> to navigate &middot; <kbd>Enter</kbd> to select
+    </div>
+  </div>"""
 MATERIALS_DATA_FILE = Path("materials_data.json")
 
 EDITORS_NOTE = (
@@ -156,6 +170,13 @@ def build_site_header():
       <a href="/about" class="site-nav-link">About</a>
       <a href="/about#contact" class="site-nav-link">Contact</a>
     </nav>
+    <div class="header-search">
+      <div class="search-input-wrapper">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input class="header-search-input" id="header-search-input" type="search" placeholder="Search guides..." aria-label="Search materials" autocomplete="off" spellcheck="false" />
+        <button class="header-search-clear" id="header-search-clear" type="button" aria-label="Clear input" hidden>&times;</button>
+      </div>
+    </div>
     <div class="header-right"></div>
     <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">{_HAMBURGER_ICON}</button>
   </header>"""
@@ -379,8 +400,38 @@ def build_toc(sections):
     return f"""    <div class=\"toc\">\n      <div class=\"toc-label\">In This Article</div>\n      <ol>\n{items}\n        <li><a href=\"#alternatives\">Better Alternatives</a></li>\n        <li><a href=\"#sources\">Sources</a></li>\n      </ol>\n    </div>"""
 
 
-def build_alternatives(alternatives):
+def build_alternatives(alternatives, premium_alternatives=None):
     cards = []
+    
+    # Process premium alternatives first
+    if premium_alternatives:
+        for alt in premium_alternatives:
+            href = alt.get("url", "")
+            if alt.get("asin"):
+                href = f"https://www.amazon.com/dp/{alt['asin']}?tag={AFFILIATE_TAG}"
+            
+            if href:
+                if "amazon.com" in href:
+                    href = re.sub(r'tag=[^&]+', f'tag={AFFILIATE_TAG}', href)
+                    if "tag=" not in href:
+                        sep = "&" if "?" in href else "?"
+                        href = f"{href}{sep}tag={AFFILIATE_TAG}"
+                btn_text = alt.get("cta_text", "Shop Partner Store")
+                link = f'\n        <a href="{href}" class="btn btn--premium" rel="sponsored nofollow noopener noreferrer" target="_blank">{html.escape(btn_text)}</a>'
+            else:
+                link = ""
+                
+            sponsor_label = alt.get("sponsor_label", "Vetted Sponsor")
+            badge_html = f"""        <div class="alt-premium-badge">
+          <svg class="badge-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span>{html.escape(sponsor_label)}</span>
+        </div>"""
+        
+            cards.append(
+                f"""      <div class=\"alt-card alt-card--premium\">\n{badge_html}\n        <div class=\"alt-type\">{html.escape(alt.get('type','Premium Alternative'))}</div>\n        <div class=\"alt-name\">{html.escape(alt.get('name','Alternative'))}</div>\n        <p class=\"alt-desc\">{html.escape(alt.get('description',''))}</p>\n        <div class=\"alt-pros-cons\">\n          <div class=\"alt-pro\">{html.escape(alt.get('pros',''))}</div>\n          <div class=\"alt-con\">{html.escape(alt.get('cons',''))}</div>\n        </div>{link}\n      </div>"""
+            )
+
+    # Process regular alternatives
     for alt in alternatives:
         link = ""
         href = alt.get("url", "")
@@ -549,6 +600,7 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
 <body>
   <a href="#main-content" class="skip-link">Skip to content</a>
 {build_site_header()}
+{SEARCH_HTML_BLOCK}
   <main id="main-content">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
@@ -570,7 +622,7 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
 {build_toc(article['sections'])}
 {sections_html}
     <h2 id="alternatives">Better Alternatives</h2>
-    {build_alternatives(article['alternatives'])}
+    {build_alternatives(article.get('alternatives', []), article.get('premium_alternatives', []))}
     <div class="sources">
       <h2 id="sources">Sources</h2>
       <ol>
@@ -582,6 +634,7 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
   </main>
   <footer class="site-footer"><nav><a href="/">Home</a><a href="/about">About</a><a href="/methodology">Methodology</a><a href="/privacy">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
   <script src="/js/main.js" defer></script>
+  {SW_REGISTRATION_SCRIPT}
 </body>
 </html>
 """
@@ -665,6 +718,7 @@ def generate_category_index(category_slug, generated_articles, target_count):
   </script>
 </head><body>
 {build_site_header()}
+{SEARCH_HTML_BLOCK}
   <main>
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
@@ -682,6 +736,7 @@ def generate_category_index(category_slug, generated_articles, target_count):
   </main>
   <footer class="site-footer"><nav><a href="/">Home</a><a href="/about">About</a><a href="/methodology">Methodology</a><a href="/privacy">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
   <script src="/js/main.js" defer></script>
+  {SW_REGISTRATION_SCRIPT}
 </body></html>
 """
 
@@ -813,6 +868,7 @@ def generate_homepage(catalog_by_category, generated_counts, all_generated=None)
 </head><body>
   <a href="#main-content" class="skip-link">Skip to content</a>
 {build_site_header()}
+{SEARCH_HTML_BLOCK}
   <div class="hero">
     <div class="site-mark">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-label="{SITE_NAME} logo" role="img"><path d="M12 2L2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
@@ -831,6 +887,7 @@ def generate_homepage(catalog_by_category, generated_counts, all_generated=None)
   </main>
   <footer class="site-footer"><nav><a href="/about">About</a><a href="/methodology">Methodology</a><a href="/privacy">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
   <script src="/js/main.js" defer></script>
+  {SW_REGISTRATION_SCRIPT}
 </body></html>
 """
     Path("public/index.html").write_text(html_out, encoding="utf-8")
@@ -853,11 +910,13 @@ def generate_homepage(catalog_by_category, generated_counts, all_generated=None)
 <body>
   <a href="#main-content" class="skip-link">Skip to content</a>
 {build_site_header()}
+{SEARCH_HTML_BLOCK}
   <main id="main-content" class="prose">
 {{body}}
   </main>
   <footer class="site-footer"><nav><a href="/">Home</a><a href="/about">About</a><a href="/methodology">Methodology</a><a href="/privacy">Privacy Policy</a></nav><p class="copyright">&copy; {date.today().year} {SITE_NAME}</p></footer>
   <script src="/js/main.js" defer></script>
+  {SW_REGISTRATION_SCRIPT}
 </body>
 </html>"""
 
@@ -1083,6 +1142,8 @@ def main():
     js_dir.mkdir(exist_ok=True)
     if Path("js/main.js").exists():
         shutil.copy("js/main.js", js_dir / "main.js")
+    if Path("sw.js").exists():
+        shutil.copy("sw.js", public_dir / "sw.js")
 
     overall = grouped_material_rows()
     all_generated = defaultdict(list)
@@ -1175,6 +1236,26 @@ def main():
 
     if args.all:
         generate_homepage(overall, counts, all_generated_articles)
+        
+        # Build search index JSON
+        search_index = []
+        for cat_slug, articles_list in all_generated_articles.items():
+            for art in articles_list:
+                search_index.append({
+                    "slug": art["slug"],
+                    "title": html.unescape(art["title"]),
+                    "category": cat_slug,
+                    "category_name": CATEGORIES[cat_slug]["name"].replace("&amp;", "&"),
+                    "verdict": art.get("verdict_level", "verdict-neutral"),
+                    "verdict_summary": art.get("verdict_summary", ""),
+                    "description": art.get("meta_description", ""),
+                    "url": f"/{cat_slug}/{art['slug']}"
+                })
+        
+        index_target = public_dir / "search_index.json"
+        index_target.write_text(json.dumps(search_index, indent=2, ensure_ascii=False), encoding="utf-8")
+        print(f"  Generated search index: public/search_index.json ({len(search_index)} entries)")
+
         # Gather URLs for sitemap
         sitemap_urls = [SITE_URL + "/"]
         sitemap_urls.append(f"{SITE_URL}/about")

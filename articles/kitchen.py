@@ -28,6 +28,18 @@ ARTICLES = \
                 "content": "<p>You don&rsquo;t need to panic, but you should reduce exposure where practical:</p>\n<p><strong>Stop using damaged non-stick pans.</strong> Scratched or flaking PTFE coatings release far more particles. If your non-stick pan is peeling, replace it immediately.</p>\n<p><strong>Avoid microwave popcorn bags.</strong> The grease-proof lining is a significant PFAS source. Use a stovetop popper or silicone microwave bowl instead.</p>\n<p><strong>Reduce fast-food packaging contact.</strong> Transfer food to a plate rather than eating directly from wrappers.</p>\n<p><strong>Filter your water.</strong> Activated carbon and reverse osmosis filters reduce PFAS in drinking water significantly.</p>"
             }
         ],
+        "premium_alternatives": [
+            {
+                "name": "Caraway Non-Toxic Ceramic Cookware Set",
+                "type": "Non-Toxic Ceramic",
+                "description": "A complete set of beautifully designed ceramic-coated cookware. Free of PTFE, PFOA, PFAS, lead, cadmium, and other toxic materials. Independently tested and certified.",
+                "pros": "100% PFAS-free, stunning aesthetics, easy clean-up",
+                "cons": "Requires gentle hand washing, coating lifespan is 2-3 years",
+                "url": "https://www.amazon.com/s?k=Caraway+Non-Toxic+Ceramic+Cookware+Set&tag=myeverydaymat-20",
+                "sponsor_label": "Vetted Partner: Caraway Cookware",
+                "cta_text": "Shop Caraway Cookware"
+            }
+        ],
         "alternatives": [
             {
                 "name": "Lodge 12-Inch Cast Iron Skillet",

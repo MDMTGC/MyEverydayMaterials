@@ -255,6 +255,227 @@
     });
   }
 
+  // ─── Global Site Search ──────────────────────────────────────────────────
+
+  function initGlobalSearch() {
+    var searchInput = document.getElementById('header-search-input');
+    var clearBtn = document.getElementById('header-search-clear');
+    var backdrop = document.getElementById('search-backdrop');
+    var dropdown = document.getElementById('search-dropdown');
+    var resultsList = document.getElementById('search-results-list');
+    var resultsCount = document.getElementById('search-results-count');
+
+    if (!searchInput || !dropdown || !resultsList) return;
+
+    var searchIndex = null;
+    var isLoading = false;
+    var selectedIndex = -1;
+
+    // Load search index JSON dynamically
+    function loadSearchIndex() {
+      if (searchIndex || isLoading) return;
+      isLoading = true;
+      
+      // Update count/placeholder while loading
+      resultsList.innerHTML = '<div class="search-results-placeholder">Loading search index...</div>';
+
+      fetch('/search_index.json')
+        .then(function (response) {
+          if (!response.ok) throw new Error('Search index failed to load');
+          return response.json();
+        })
+        .then(function (data) {
+          searchIndex = data;
+          isLoading = false;
+          resultsList.innerHTML = '<div class="search-results-placeholder">Type to search materials by name, category, or safety verdict...</div>';
+          // If search input already has text, trigger immediate search
+          if (searchInput.value.trim()) {
+            performSearch(searchInput.value);
+          }
+        })
+        .catch(function (error) {
+          console.error(error);
+          resultsList.innerHTML = '<div class="search-results-placeholder error">Failed to load search index. Please try again.</div>';
+          isLoading = false;
+        });
+    }
+
+    function showSearch() {
+      backdrop.classList.add('is-visible');
+      dropdown.classList.add('is-visible');
+      backdrop.removeAttribute('hidden');
+      dropdown.removeAttribute('hidden');
+    }
+
+    function hideSearch() {
+      backdrop.classList.remove('is-visible');
+      dropdown.classList.remove('is-visible');
+      backdrop.setAttribute('hidden', '');
+      dropdown.setAttribute('hidden', '');
+      selectedIndex = -1;
+    }
+
+    function performSearch(query) {
+      if (!searchIndex) return;
+
+      var q = query.toLowerCase().trim();
+      if (!q) {
+        resultsList.innerHTML = '<div class="search-results-placeholder">Type to search materials by name, category, or safety verdict...</div>';
+        resultsCount.textContent = '0 matches';
+        clearBtn.hidden = true;
+        return;
+      }
+
+      clearBtn.hidden = false;
+
+      // Filter and rank results
+      var matches = [];
+      for (var i = 0; i < searchIndex.length; i++) {
+        var item = searchIndex[i];
+        var titleLower = item.title.toLowerCase();
+        var descLower = item.description.toLowerCase();
+        var verdictLower = item.verdict.replace('verdict-', '').toLowerCase();
+        var catNameLower = item.category_name.toLowerCase();
+
+        var score = 0;
+        
+        // Exact matches and starting matches get higher scores
+        if (titleLower === q) {
+          score += 100;
+        } else if (titleLower.indexOf(q) === 0) {
+          score += 50;
+        } else if (titleLower.indexOf(q) !== -1) {
+          score += 25;
+        }
+
+        if (descLower.indexOf(q) !== -1) {
+          score += 5;
+        }
+        
+        if (verdictLower === q) {
+          score += 15;
+        }
+
+        if (catNameLower.indexOf(q) !== -1) {
+          score += 10;
+        }
+
+        if (score > 0) {
+          item._score = score;
+          matches.push(item);
+        }
+      }
+
+      // Sort by score (descending) then title (ascending)
+      matches.sort(function (a, b) {
+        if (b._score !== a._score) {
+          return b._score - a._score;
+        }
+        return a.title.localeCompare(b.title);
+      });
+
+      // Render search result items
+      if (matches.length === 0) {
+        resultsList.innerHTML = '<div class="search-results-empty">No matching materials found. Try searching for "safe", "BPA", or a category.</div>';
+        resultsCount.textContent = '0 matches';
+        return;
+      }
+
+      resultsCount.textContent = matches.length + (matches.length === 1 ? ' match' : ' matches');
+
+      var html = '';
+      for (var j = 0; j < matches.length; j++) {
+        var match = matches[j];
+        var badgeCls = match.verdict.replace('verdict-', '');
+        var badgeTxt = badgeCls.toUpperCase();
+
+        html += '<a href="' + match.url + '" class="search-result-item" data-index="' + j + '">' +
+          '  <div class="search-result-meta">' +
+          '    <span class="search-result-category">' + match.category_name + '</span>' +
+          '    <span class="status-badge status-badge--' + badgeCls + '">' + badgeTxt + '</span>' +
+          '  </div>' +
+          '  <div class="search-result-title">' + match.title + '</div>' +
+          '  <div class="search-result-desc">' + match.description + '</div>' +
+          '</a>';
+      }
+      resultsList.innerHTML = html;
+      selectedIndex = -1;
+    }
+
+    // Lazy load index on focus
+    searchInput.addEventListener('focus', function () {
+      loadSearchIndex();
+      showSearch();
+    });
+
+    searchInput.addEventListener('input', function () {
+      performSearch(this.value);
+    });
+
+    clearBtn.addEventListener('click', function () {
+      searchInput.value = '';
+      performSearch('');
+      searchInput.focus();
+    });
+
+    backdrop.addEventListener('click', function () {
+      hideSearch();
+    });
+
+    // Handle Keyboard Navigation inside search dropdown
+    document.addEventListener('keydown', function (e) {
+      // Allow user to press '/' to focus search input if not inside input/textarea
+      if (
+        e.key === '/' &&
+        document.activeElement !== searchInput &&
+        document.activeElement.tagName !== 'INPUT' &&
+        document.activeElement.tagName !== 'TEXTAREA'
+      ) {
+        e.preventDefault();
+        searchInput.focus();
+        return;
+      }
+
+      if (!dropdown.classList.contains('is-visible')) return;
+
+      var items = resultsList.querySelectorAll('.search-result-item');
+
+      if (e.key === 'Escape') {
+        hideSearch();
+        searchInput.blur();
+        e.preventDefault();
+      } else if (e.key === 'ArrowDown') {
+        if (items.length > 0) {
+          if (selectedIndex >= 0) {
+            items[selectedIndex].classList.remove('is-selected');
+          }
+          selectedIndex = (selectedIndex + 1) % items.length;
+          items[selectedIndex].classList.add('is-selected');
+          items[selectedIndex].scrollIntoView({ block: 'nearest' });
+        }
+        e.preventDefault();
+      } else if (e.key === 'ArrowUp') {
+        if (items.length > 0) {
+          if (selectedIndex >= 0) {
+            items[selectedIndex].classList.remove('is-selected');
+          }
+          selectedIndex = selectedIndex - 1;
+          if (selectedIndex < 0) {
+            selectedIndex = items.length - 1;
+          }
+          items[selectedIndex].classList.add('is-selected');
+          items[selectedIndex].scrollIntoView({ block: 'nearest' });
+        }
+        e.preventDefault();
+      } else if (e.key === 'Enter') {
+        if (selectedIndex >= 0 && items[selectedIndex]) {
+          window.location.href = items[selectedIndex].getAttribute('href');
+          e.preventDefault();
+        }
+      }
+    });
+  }
+
   // ─── Boot ─────────────────────────────────────────────────────────────────
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -264,5 +485,6 @@
     initDropdown();
     initBackToTop();
     initSearchFilter();
+    initGlobalSearch();
   });
 })();
