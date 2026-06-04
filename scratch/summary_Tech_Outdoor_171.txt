@@ -1,0 +1,27 @@
+Created At: 2026-06-01T17:39:47Z
+Completed At: 2026-06-01T17:39:52Z
+The search for "USGS rare earth elements statistics and information" returned the following summary:
+The U.S. Geological Survey (USGS) provides comprehensive statistics, geological information, and market analysis for rare earth elements (REEs)[1][2].
+
+### **Overview of Rare Earth Elements**
+Rare earth elements consist of 17 elements: the 15 lanthanides (atomic numbers 57–71), plus scandium (atomic number 21) and yttrium (atomic number 39)[1][3]. Despite their name, they are relatively abundant in the Earth's crust, but minable concentrations are less common than for many other mineral commodities[4][5][3].
+
+### **Key Resources for USGS Data**
+*   **Mineral Commodity Summaries (MCS):** The USGS publishes an annual *Mineral Commodity Summary* report that provides the most up-to-date statistics on domestic production, imports, exports, consumption, and global market trends[4][6].
+    *   [Access the latest Rare Earths report via USGS](https://www.usgs.gov) (search for "Mineral Commodity Summaries Rare Earths").
+*   **Historical Statistics (Data Series 140):** The USGS maintains long-term historical data, including production, trade, and consumption figures dating back as far as 1900 for various commodities[2].
+*   **Earth Mapping Resources Initiative (Earth MRI):** This USGS program focuses on acquiring data to better understand domestic sources of critical minerals, including rare earths[1].
+
+### **Recent Market Insights (based on 2026/2025 Reports)**
+*   **Domestic Production:** The United States mines and processes rare earths domestically, with primary production (bastnaesite) in Mountain Pass, CA, and monazite production in the southeastern U.S[4][7].
+*   **End Uses:** Leading domestic end uses include catalysts, batteries, permanent magnets, ceramics/glass, and metallurgical applications[4][5][8]. Globally, permanent magnets are a primary application[4].
+*   **Supply Chain:** The U.S. has historically maintained a high net import reliance f
+<truncated 652 bytes>
+direct/AUZIYQF11LvAIKviR7uSEbQ2PJLJkYE532-7TXieqi4ddPjvNlGBgoHJV3EIS5yBSkmIW4NLXmz9IkOEUl2FeJsqMO4Rq-asBN_mumIVRBVtO5w6XxLPyDZRPiRI9ZtrN46MIHkB3g7RoH-FuOfFPaF1cgVtV7Jqm5htwGmO4bit4XZk3aS2ttPypk1wx04xCPmsQyYWeVna_CpUAhf6IG_3QpEc4tXe)
+[2] [usgs.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGWx5zUCvAXlvYBXKIXUEokOBlW-7yvhF4YqbaQxnpC8bdjXXNAAh9BTGpRxQFiMcXmUDBOW-bPmZw4n0rwlzEW6qr3GUHx7akfgd9-UsnBdAWX2zya4zPM32bhfYjdOBV9MgeYILvs_xuocXKYJSYHwincWUioOBJ2xIA4uS2ziEpRKamdKHYpWI2ze-E=)
+[3] [usgs.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFF6n1e9s9ahMnfuO45sQk05N1tvGJe7LX-UiOxdbPv2LPjAcYfZsc4j8CXVkY6aYBgmTCotNE3537LcnlehQdPacsm6cY8qtI4vqnPhUD8v69_UgYr2rPqBQBHjQKuB7E86cr_eDO_N90xGPIl8UOI)
+[4] [usgs.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAlHONU22QzLpBp9L5oSkDtUVuLcqQVYBp1LRdv_eNhqYcD-IW8EaMoScIGDqPjdnlRH5GsMkPlm_uV_sKhZjKIl7ViJrDmAybqXKZBZ6E4kewM3d48CTdHC5yrwrGbVsNysMsacpEfRV2KSSoK2vnVYOCE75QZeMp8Vx7)
+[5] [usgs.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEmQuQGkpIBs7H2EuXYIQSIcy8XrUJVpTCd8-Ji0p-etzlBJhb_V-1K86k8tLE6H9kBSUiLfeyVG_E9WOUY4A1ybOQnmsQGAWD4PECU38_cycWAFtkituXtn_H6K-FZsPUNRWcEPeVp7nE-br1HJmlaH01hKYzLlJKHH3QJ)
+[6] [data.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLTNPb0PNR7pdjHPOpw5qzonTxlL5ogwWB9VFYR3JZtJ6jhn2FzRPAS_6iD74cTinR82WEaruZ4NJYnnncR87x-LCR3bjOeTMAKluo54VNwRu4MnV3PwsNoj_njnaDuS-JHH796cVfEv5EJlpWrJrYaxaMLuZuAtYNTt_PIHgmWDvLkGDh6q3z7EsqTbXS04Kd8wmKIw==)
+[7] [usgs.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFyO_Yd7ur62agLMwiRWybg6UljARaEHtqAqzZ0KdYz3CtBrSiJu3ZJAMlopQIKrDEg1-NGPCKgbeSe_oXwxEG9qcJL4GtY7FWGgIaA5ZmYDYh1MYiWWyhzlmkQTSPG71HQv8ITJdjvwz7HW0Rc1RbzTLssNEOECbNH6koP017JuAor)
+[8] [usgs.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3TIBE_kjmh2UHI2iE80JUdDIniizKniJZYC3kOIR95hNpWzmSOQjpgtmwJPGogT386Fs_PXSkxY1LDcrw3UHHsnb0FZgOhRzymS_CfhggXxM0UXsO7TimC60ZADWuYhlmVZ9XNsF3EQlBFwXl6qGnlM7NF8ABr-Gau7Gb)

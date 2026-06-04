@@ -1,0 +1,26 @@
+Created At: 2026-06-01T17:35:56Z
+Completed At: 2026-06-01T17:36:00Z
+The search for ""mission-areas/natural-resources/mineral-resources/science/rare-earth-elements" site:usgs.gov" returned the following summary:
+The U.S. Geological Survey (USGS) provides extensive scientific information regarding rare earth elements (REEs) as part of its mission to assess mineral resources[1][2]. While the specific URL path you provided may have been updated or restructured, you can find the USGS's authoritative data on rare earth elements through their main website.
+
+### Accessing USGS Rare Earth Elements Information
+To locate the most current information, you can visit the **[USGS Mineral Resources Program website](https://www.usgs.gov/mission-areas/mineral-resources)** and use their search function for "rare earth elements."
+
+The USGS typically provides the following types of resources on this topic:
+*   **Mineral Commodity Summaries:** Annual reports that provide data on production, consumption, and supply chains for rare earths.
+*   **Scientific Research & Assessments:** Studies on the geology, occurrence, and potential for rare earth deposits within the United States.
+*   **Critical Minerals Information:** Since rare earth elements are classified as critical minerals due to their importance to the U.S. economy and national security, they are frequently featured in USGS critical mineral assessments[1][2].
+
+### What are Rare Earth Elements?
+Rare earth elements are a group of 17 chemical elements—the 15 lanthanides plus scandium and yttrium—that are essential for many modern technologies[3][1][4]. Despite the name "rare," they are relatively abundant in the Earth's crust, but they are rarely found in concentrations high enough to make mining economically viable[3][1][5]. 
+
+They are highly valued for their unique:
+*   **Magnetic Properties:** Critical for permanent magnets used in electric vehicles (EVs), wind turbines, and defense systems[1][5][2].
+*   **Luminescent & Catalytic Properties:** Used in electronics, medical technology, and pollution-control devices like catalytic converters[3][1][5][4].
+
+Sources:
+[1] [rareelementresources.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDYBUVJxRwcq6s8hBLUZsMqeia2sH7C16zKmMD5KkH8sWxIcegUwTiSpGVFT24KyXLlU9xCGxKlL01sy31po10poozfHEIprLQH9slbl_PlK6a6TssWvyXiu3G4vqKXM2nofD7fF-DqY3bFDeqpI1mTy4s2g==)
+[2] [bipartisanpolicy.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHl2wC9CAe0Smj7J3NNE-0X89toZ4U2QWytFSsPoDkqklW2PW5mj0LNAU3ROsojDb9yOXGLIXNh50DUzj8fcW9Qc2pjDrYX_EZIy7kdl9lLyEmm730WD7P0ljvarrXJ2Rrpu_D2wg9g6udhWhlFH5cQD_IbTKIFWsRx-zR8YDci)
+[3] [wikipedia.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcKaVkcYBcLg3_WAOJB0Es3saCcV-e6WVi4NQUNfQg0Ba78e7bL8iPagq8R6ofHZzBFC205YeTIlne79asXt0EwxAbMsRi-y_WGz0S7HsBfUH9FpFYBj75r4icuCd6cSyvztGBVyqXjSGjnQ==)
+[4] [sciencehistory.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1831Vk3c6cg0Ro76lz30uTVv0Yuvu3lFiTueTKOIta-zR5_7eKJPsvNM0AD1Wt-aIvAb62GIAfA3EdjL9yOA2SAtOn1oAwx5j2HfWkTlJlAkoOCn1_ZwrqT61yL-mJ6Rn1n2k5igg-WJwCA0_B47wfqaxyVg4DJlQrZf7oScPZLJjVN8zWGOdTg==)
+[5] [lynasrareearths.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbOsTGwashgzKsmFO6elx7Qnzcl-mqo_M_Ays5q6lf-GzfS9ztM2Vqk5XmR3Iot1tfLLCTYdCxB1oU68KSkm4yDOWTXTU1reCxnidSqVSzUakqOytyZadcgF5ZdhN7ObVWPoVNmJ3P2GPbKje-H0kyXA9yr5g=)

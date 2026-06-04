@@ -1,0 +1,38 @@
+Created At: 2026-06-01T17:42:09Z
+Completed At: 2026-06-01T17:42:09Z
+File Path: `file:///C:/Users/MDMTGC/.gemini/antigravity/brain/7e96b97a-cc07-41c4-91f7-a1f9fdb6f7fa/.system_generated/worktrees/subagent-Kitchen-and-Nursery-Reference-Researcher-ReferenceResearcher-4d6dd001/sources-needing-review.md`
+Total Lines: 162
+Total Bytes: 18258
+Showing lines 101 to 162
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+101: | pex-piping | 2 | https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Dead Link (HTTP 404) |
+102: | pfas-dental-floss | 1 | https://www.ewg.org/news-insights/news-release/2019/01/toxic-pfas-chemicals-dental-floss | Dead Link (HTTP 404) |
+103: | pfas-dental-floss | 2 | https://www.niehs.nih.gov/health/topics/agents/pfas/index.cfm | Dead Link (HTTP 404) |
+104: | pfas-dental-floss | 3 | https://www.fda.gov/food/environmental-contaminants-food/pfas-per-and-polyfluoroalkyl-substances | Dead Link (HTTP 404) |
+105: | phosphates-detergent | 1 | https://www.epa.gov/ | Generic Homepage |
+106: | phosphates-detergent | 2 | https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Dead Link (HTTP 404) |
+107: | phthalates-cosmetics | 2 | https://www.cdc.gov/biomonitoring/Phthalates_FactSheet.html | Dead Link (HTTP 404) |
+108: | phthalates-cosmetics | 3 | https://www.niehs.nih.gov/health/topics/agents/phthalates/index.cfm | Dead Link (HTTP 404) |
+109: | phthalates-cosmetics | 4 | https://www.ewg.org/news-insights/news/whats-your-fragrance-phthalates-and-more | Dead Link (HTTP 404) |
+110: | phthalates-food-wrap | 3 | https://echa.europa.eu/ | Connection Error & Generic Homepage |
+111: | phthalates-mousepads | 1 | https://www.fda.gov/media/89360/download | Dead Link (HTTP 404) |
+112: | phthalates-mousepads | 2 | https://www.greenpeace.org/international/publication/10398/green-electronics-guide-2017/ | Dead Link (HTTP 404) 
+<truncated 3990 bytes>
+r.cdc.gov/toxprofiledocs/index.html | Dead Link (HTTP 404) |
+147: | talc-asbestos-risk | 1 | https://www.fda.gov/cosmetics/cosmetic-ingredients/lead-cosmetics | Dead Link (HTTP 404) |
+148: | talc-asbestos-risk | 4 | https://wwwn.cdc.gov/ATSDR/toxfaqs/index.asp | Dead Link (HTTP 404) |
+149: | talc-baby-powder | 1 | https://www.fda.gov/consumers/consumer-updates/talcum-powder-and-asbestos-frequently-asked-questions | Dead Link (HTTP 404) |
+150: | titanium-dioxide-toothpaste | 2 | https://www.fda.gov/consumers/consumer-updates/sunscreen-how-help-protect-your-skin-sun | Dead Link (HTTP 404) |
+151: | trichloroethylene-degreaser | 1 | https://www.epa.gov/ | Generic Homepage |
+152: | trichloroethylene-degreaser | 2 | https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Dead Link (HTTP 404) |
+153: | triclosan-antibacterial | 3 | https://www.ewg.org/the-toxic-twenty/triclosan | Dead Link (HTTP 404) |
+154: | unlined-copper-toxicity | 1 | https://www.who.int/publications/i/item/9789241546553 | Dead Link (HTTP 404) |
+155: | unlined-copper-toxicity | 3 | https://ods.od.nih.gov/factsheets/Copper-HealthProfessional/ | Connection Error |
+156: | vocs-paint-carpet | 1 | https://www.epa.gov/indoor-air-quality-iaq/guide-indoor-air-quality | Dead Link (HTTP 404) |
+157: | vocs-paint-carpet | 3 | https://www.atsdr.cdc.gov/sites/toxics_futures/vocs.html | Dead Link (HTTP 404) |
+158: | vocs-paint-carpet | 4 | https://silentspring.org/factsheets/carpets | Dead Link (HTTP 404) |
+159: | water-softener-sodium | 1 | https://www.epa.gov/ | Generic Homepage |
+160: | water-softener-sodium | 2 | https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Dead Link (HTTP 404) |
+161: | wool-dryer-balls | 1 | https://www.epa.gov/ | Generic Homepage |
+162: | wool-dryer-balls | 2 | https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Dead Link (HTTP 404) |
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

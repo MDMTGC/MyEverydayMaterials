@@ -1,0 +1,52 @@
+Created At: 2026-06-01T17:42:27Z
+Completed At: 2026-06-01T17:42:27Z
+File Path: `file:///C:/Users/MDMTGC/.gemini/antigravity/brain/7e96b97a-cc07-41c4-91f7-a1f9fdb6f7fa/.system_generated/worktrees/subagent-Kitchen-and-Nursery-Reference-Researcher-ReferenceResearcher-4d6dd001/articles/nursery.py`
+Total Lines: 733
+Total Bytes: 91058
+Showing lines 280 to 350
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+280:                 "American Academy of Pediatrics (AAP) - Crib Safety & Sleep Recommendations",
+281:                 "https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/A-Parents-Guide-to-Safe-Sleep.aspx"
+282:             ]
+283:         ]
+284:     },
+285:     {
+286:         "slug": "melamine-baby-plates",
+287:         "title": "Melamine Baby Plates: Understanding the Risks of Formaldehyde Release and Safer Alternatives",
+288:         "meta_description": "A science-backed guide to melamine baby plates, explaining how heat and scratches can release formaldehyde and melamine, and offering safer alternatives for your child's meals.",
+289:         "verdict_level": "verdict-caution",
+290:         "verdict_rating": "Caution Advised &mdash; Leaches chemicals when heated or damaged",
+291:         "verdict_summary": "Melamine dishes, commonly used for children due to their durability, are made from melamine-formaldehyde resin. While generally deemed safe for cold foods by regulatory bodies like the FDA, heat, acidity, and surface degradation (scratches, cracks) can accelerate the migration of both melamine and formaldehyde into food. Formaldehyde is classified as a known human carcinogen, and melamine can pose kidney risks at high exposure levels. Prudent avoidance of microwaving and immediate replacement of damaged plates are crucial to minimize potential chemical exposure.",
+292:         "sections": [
+<truncated 6207 bytes>
+e offers a powerful suction base and comes with a matching bamboo spoon.",
+322:                 "pros": "Eco-friendly, biodegradable bamboo; strong suction; beautiful natural design",
+323:                 "cons": "Hand wash recommended for bamboo; not microwave-safe",
+324:                 "url": "https://www.amazon.com/s?k=Avanchy+Bamboo+Suction+Plate+%2B+Spoon&tag=myeverydaymat-20"
+325:             },
+326:             {
+327:                 "name": "Eco Lunchbox Stainless Steel Divided Plate",
+328:                 "type": "Stainless Steel",
+329:                 "description": "Durable and non-toxic, this 3-compartment stainless steel plate is perfect for toddlers and kids, offering a safe and plastic-free mealtime solution.",
+330:                 "pros": "Extremely durable, non-leaching, dishwasher-safe, chemical-free",
+331:                 "cons": "No suction, can get hot if heated directly",
+332:                 "url": "https://www.amazon.com/s?k=Eco+Lunchbox+Stainless+Steel+Divided+Plate&tag=myeverydaymat-20"
+333:             }
+334:         ],
+335:         "sources": [
+336:             [
+337:                 "U.S. Food & Drug Administration (FDA) - Melamine Safety",
+338:                 "https://www.fda.gov/food/chemicals/melamine-safety"
+339:             ],
+340:             [
+341:                 "European Food Safety Authority (EFSA) - Scientific Opinion on Melamine",
+342:                 "https://www.efsa.europa.eu/en/efsajournal/pub/1041"
+343:             ],
+344:             [
+345:                 "International Agency for Research on Cancer (IARC) - Formaldehyde Monograph",
+346:                 "https://publications.iarc.fr/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans/Formaldehyde-2006"
+347:             ]
+348:         ]
+349:     },
+350:     {
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

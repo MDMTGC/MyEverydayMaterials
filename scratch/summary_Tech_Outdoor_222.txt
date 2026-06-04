@@ -1,0 +1,30 @@
+Created At: 2026-06-01T17:41:55Z
+Completed At: 2026-06-01T17:41:55Z
+The following changes were made by the replace_file_content tool to: C:\Users\MDMTGC\.gemini\antigravity\brain\be3fdaf6-a958-477a-9e0c-2cc4ee1e31ec\scratch\verify_links.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -20,8 +20,8 @@
+     "https://www.atsdr.cdc.gov/ToxProfiles/tp200.pdf",
+     
+     # Tech
+-    "https://www.usgs.gov/centers/national-minerals-information-center/rare-earth-elements-statistics-and-information",
+-    "https://www.niehs.nih.gov/health/topics/agents/bpa",
++    "https://www.usgs.gov/centers/national-minerals-information-center/rare-earths-statistics-and-information",
++    "https://www.niehs.nih.gov/health/topics/agents/sya-bpa",
+     "https://echa.europa.eu/registration-dossier/-/registered-dossier/15399",
+     "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3222079/",
+     "https://www.epa.gov/recycle/electronics-donation-and-recycling",
+@@ -28,8 +28,8 @@
+     "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/CFRSearch.cfm?fr=177.1210",
+     "https://www.greenpeace.org/usa/reports/greener-electronics-2017/",
+-    "https://www.astm.org/d5538-23.html",
+-    "https://www.osha.gov/lithium-ion-batteries",
+-    "https://www.nfpa.org/education-and-research/resources/lithium-ion-batteries"
++    "https://www.astm.org/d5538-13r23.html",
++    "https://www.osha.gov/sites/default/files/publications/shib011819.pdf",
++    "https://www.nfpa.org/education-and-research/home-fire-safety/lithium-ion-batteries"
+ ]
+ 
+ print("Starting link verification...")
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

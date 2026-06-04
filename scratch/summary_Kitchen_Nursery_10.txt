@@ -1,0 +1,35 @@
+Created At: 2026-06-01T17:33:14Z
+Completed At: 2026-06-01T17:33:17Z
+The search for "IARC Monographs Volume 131 cobalt antimony compounds and weapons-grade tungsten alloy" returned the following summary:
+IARC Monographs Volume 131, published in 2023, provides comprehensive evaluations of the carcinogenicity of nine agents, including various cobalt compounds, antimony compounds, and weapons-grade tungsten alloy[1][2].
+
+### Summary of Classifications
+The IARC Working Group classified the agents as follows[3][1]:
+
+| Agent | IARC Classification |
+| :--- | :--- |
+| **Cobalt metal** (without tungsten carbide) | **Group 2A** (Probably carcinogenic) |
+| **Soluble cobalt(II) salts** | **Group 2A** (Probably carcinogenic) |
+| **Trivalent antimony** | **Group 2A** (Probably carcinogenic) |
+| **Cobalt(II) oxide** | **Group 2B** (Possibly carcinogenic) |
+| **Weapons-grade tungsten alloy** (with nickel and cobalt) | **Group 2B** (Possibly carcinogenic) |
+| **Cobalt(II,III) oxide** | **Group 3** (Not classifiable) |
+| **Cobalt(II) sulfide** | **Group 3** (Not classifiable) |
+| **Other cobalt(II) compounds** | **Group 3** (Not classifiable) |
+| **Pentavalent antimony** | **Group 3** (Not classifiable) |
+
+---
+
+### Key Findings
+*   **Weapons-Grade Tungsten Alloy:** This was evaluated for the first time[3][4]. It typically consists of 91–93% tungsten, 3–5% nickel, and 2–4% cobalt[3]. It is used in armor-penetrating munitions, and exposure can occur through metal aerosols during firing/impact or from retained fragments following injury[3][5]. The Group 2B classification was based on sufficient evidence in experimental animals[3][1].
+*   **Antimony Compounds:** This volume marked the first evaluation of pentavalent antimony[3][4]. While trivalent antimony was classified as Group 2A (based on limited evidence in humans, sufficient evidence in animals, and strong mechanistic evidence), pentavalent antimony was found to be not classifiable (Group 3) due to inadequate evidence in both humans and experimental animals[3][5].
+*   **Cobalt:** Cobalt metal and soluble cobalt(II) salts were categorized as Group 2A based on strong mechanistic evidence in human primary cells and sufficient evidence in animal studies[3][4].
+
+The full monograph, including detailed data on exposures and mechanistic studies, is available through the official IARC website[3][1].
+
+Sources:
+[1] [who.int](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUzE2GlHvYKA0iq8ml9OPScSg95Cksq2yScxk73O_FPgPiVNkMAvBCltchddSCrLEXZUrjdURyHgoDMWVG-kGyMVQfmtZ8pjtOSkSz8ET9BKZIjqwagQdbVxZP9-B3SuogZ21pv61YnawyHX8ygSkrXAd6SELu6jna2udOvZoCJi3qbvPCIzu0YOaoh_j3kQLrA2lDxR0UX5jCDIogXyhFBaQpsD2t269QICvtmL9_zbvMC4pvi078xKAa76_ay5wuMjNQLYJkKm4ikg_JGCqe2WfkRN4WaDfQgb68Bzf6a9eYcpulMqlI7MGCpb-OiWG4SbE7nIC215MivqQ=)
+[2] [certifico.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGrQEBu0PTqJTHRvwIH9X7k_Gjw3R6Z84WVC5nFI849gU-ieStk_-9lMHxWFLg2-zAtTe_HIk6Hx7CHTo0nhnutPuDZ0o-hpMmhXgQj_KO1h46fHpet59Xrh23QrTrDh_bOtF1Xegj5ehJheyDn70vTedxv9pZWErXNce3hGqy340ovunz5QertGt-JX2I=)
+[3] [who.int](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkE2FCegtYdz7R3dmVCKAPXy9Efsw8Ewn6TfsDyAoRIcLk-jP8crzRotn7c_APHTdbWVJhKzdwYDd6Lm-jDsXz9UdE_QaV0OcBqrgkLEunBK-YqNjuhj6IsASe7RGEKWkIQR3HsyblOxKZSgQGcMnq5VnTs_DFWofi1n55paPn-FWQvfug82akYFhljABcKApbU6Cgs2uRaQ3Q54SmAGU6St-jnIBCv2vE9x_TqFVXWJuXU5IEnQ==)
+[4] [chemycal.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFsq_uh0mmZ4tInBwoaQNgihW8lK4_J1gVSW7JYLJfhGG-Rih01gc_XUjtPI70uy2o4D25wkBHR3spr8bnsBroqwWSV8NepH5fWuFTTsYnw7yet26PV8rfY-EOo6jFDqspxUVyMnrE673MZbimeQK7wEXhvNDumC0VUZo1a-71OjQvVw5NLgcJOamwvSy2pNZj4Yzepj3mfbbuik6SMR79ExsBZXA06KATilyMM9POVGVcWCSQVf0unzLiKXX77yyLu90zlPqlHLQj6bW5ftphQFg==)
+[5] [who.int](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVAQM1zCWgiPgwRNL9RMuFRn16bcBL2vQlDyV51qFHI0XO2Z3JFYJYoau2AF4tyjImDf07IC50Rny_uGgI-BxC5UHLFFgmPN3zpSmzOVduzw0nIEnJpJUIndd9BAw7qbpolS3KJruO5rklDPke2yD5WqEq3mX3EbioF2Xkltw=)

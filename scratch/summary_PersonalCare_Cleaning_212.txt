@@ -1,0 +1,21 @@
+Created At: 2026-06-01T17:39:36Z
+Completed At: 2026-06-01T17:39:39Z
+The search for ""highly-refined-mineral-oils-in-cosmetics-health-risks-are-not-to-be-expected-according-to-current-knowledge.pdf" site:bfr.bund.de" returned the following summary:
+The document **"Highly refined mineral oils in cosmetics: Health risks are not to be expected according to current knowledge"** (Updated BfR Opinion No. 008/2018, February 27, 2018) is a formal risk assessment published by the **German Federal Institute for Risk Assessment (BfR)**[1][2].
+
+### Summary of BfR Findings
+The BfR evaluated the safety of mineral oil saturated hydrocarbons (MOSH) and mineral oil aromatic hydrocarbons (MOAH) in cosmetic products[1]. Their key conclusions include:
+
+*   **Overall Safety:** Based on currently available scientific knowledge, the BfR concludes that **no health risks are to be expected** for consumers using cosmetic products containing highly refined mineral oils[1][3].
+*   **Dermal Absorption:** Mineral oils used in cosmetics are highly refined and meet pharmaceutical purity requirements[1][3]. Because MOSH are poorly absorbed by the skin, dermal application does not result in systemic exposure that would pose a health risk[1][3].
+*   **Oral Exposure (Lip Care):** While oral intake of mineral oils can occur through lip care products, the BfR notes that if manufacturers follow the recommendations of *Cosmetics Europe*—specifically by using only mineral oil fractions for which an Acceptable Daily Intake (ADI) has been derived—the dose ingested contributes to less than 10% of the ADI, and no health effects are to be expected[1][3][4].
+*   **Refinement and Purity:** The institute emphasizes that according to EU cosmetics regulations, mineral oils are only permitted if their full refining history is known and they are proven not to be carcinogenic (or have been tested using appropriate methods, such as IP346)[1][3]. Highly refined oils have reduced MOAH levels, preventing the inclusion of substances of concern[1][5].
+
+The BfR's assessment is consistent with the long-term, widespread use of these ingredients in cosmetics without reports of adverse health effects[1][5].
+
+Sources:
+[1] [bund.de](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERIV5srg2aSCx1y_KtMD5sKW1BabLIDKmch9VjgMFNJQFRI7J35noXT7AhAf6urn1my7P3X3iyZamaRlVn2zft6NC_kDdDVqd1kAVOjhpLHto38UkQrocgV8RngNyWpdH9GyX0NTGHvc_t4-o5MS-sbTu0XzWpqik6G97oLlEOLkR8_xcLdfHQ-V8drgYMYEjO3PU7mlY3c3bY6qs9QBtn2YDX3I7OelOKzVQmoPLvaVCfhHCO83Gm7mGePFOOjskg4W1NklnaC4w=)
+[2] [tandfonline.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVhf1G26xJKxDb0N3-ebf1X3qCFwWS-aAcHIQhgiaFAGnvEAGDyFNAgyRR-dBbztNs9xDCFuNPQ5uUOo8_wkPno3kGfPOGNM4SDTBGdVBXUj7JVKwIjBzTcYD5tm04x43cpUWVyF_V4MLFNGOsB8y3NUfRvMUMeSwmzmGf)
+[3] [eurekalert.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOjuMCDTmeySF2sGSDiEwYdCDsmx5rbFeqWXnCNoSFJrDjo2nP397ye3sVMGeQRKgJuAe-7R_sN2tu69n6laghbY3Dn1b0_kVC001Vwc-DJwKpdh1rx67owI54iA00aRbQW3eU7hv8cZ0=)
+[4] [obelis.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-tPRyS52lXSieJDqfNYAYrzf4C1AH9B0cqi-W0vU7IvS1xWKqSROvl1GJwo_ybfH1hakGV0uNNN33il1TMx9gsmzzeNIJ1nOgY8dRJh4vnAt5wGijjLyja53jDnHW3eFxZT8cNdmMPY7pZ1HnvruKC_4OrcFoWZ9m7QfBWaX8E5d7apfOdzqK_AnUZw4EWPaqUQqrlBjM7RbvXTcBnUTUE33fErg-d8YZaluY75auRO2MKW8UZXBvAAJuqHjaIZoQCHKU2E9ZjnAn)
+[5] [lorealdermatologicalbeauty.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAZdPIz3835D046pT6cDcCEh7rlw3fKHC2qjtdNvCripeV6wDsehXp6k84asYFHx7eVs1r6eWR7SIlBIzD3dP3XqirFlIXQX4UxjShAjpJUsvval1uDzM9_11W8Y--sYlUfIQG4GI3F6s08KWm1lUWw1rnE7C2xX7qDTFQ6YYRZG3OD0NTC3TrmXhGMSMu-CgeeHsntEE8HCzuwaSDqm4DRWkp4GmvXD2MBujGo_R4cJHLWCDwP-ZkvHetHtI0KEGv0upMHcra1DBE0sq7tz0wEtuHoSY7SbjADLYZApOfln2krA-1-_QSLPnTO_rYV0WMntoS4gS8VMGQSL73uV0=)

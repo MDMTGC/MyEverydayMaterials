@@ -1,0 +1,20 @@
+Created At: 2026-06-01T17:35:51Z
+Completed At: 2026-06-01T17:35:55Z
+The search for "USGS rare earth elements science page" returned the following summary:
+The U.S. Geological Survey (USGS) provides extensive scientific information regarding rare earth elements (REEs) through its official website and research programs[1][2].
+
+### Key USGS Resources on Rare Earth Elements
+*   **General Overview:** The USGS defines rare earth elements as a group of 15 elements ranging from atomic number 57 (lanthanum) to 71 (lutetium), often including yttrium (atomic number 39) due to its similar chemical properties[1][3]. While these elements are not actually "rare" in terms of crustal abundance, concentrated, economically viable deposits are limited[1].
+*   **Applications and Importance:** USGS documentation highlights the critical role of REEs in high-technology, defense, energy, and industrial applications[1][2]. They are essential for magnets (e.g., in wind turbines and electric vehicle motors), batteries, catalysts, and various defense systems[2][3][4].
+*   **Mineralogy and Geology:** Information is available regarding the diverse mineralogy of REEs (e.g., carbonatites, ion-adsorption clays, and monazite-bearing deposits) and the geological processes that control their mineralization[1][2][5].
+*   **Critical Minerals Research:** The USGS investigates domestic sources of critical minerals through initiatives like the **Earth Mapping Resources Initiative (EarthMRI)**[2]. This includes efforts to inventory, research, and assess domestic mineral potential to reduce reliance on foreign supply chains[2][3].
+*   **Scientific Reports:** The USGS publishes various Scientific Investigations Reports and data products, such as the **USMIN Mineral Deposit Database**, which provides authoritative information on significant mines and mineral deposits in the United States[2][3].
+
+You can explore these topics further by visiting the [USGS website](https://www.usgs.gov) and searching for "Rare Earth Elements" or "Critical Minerals" to access their latest data, interactive maps, and scientific publications[1][2].
+
+Sources:
+[1] [usgs.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwkCqQhdm3Ge6Q6eJomzPP5csEzuGwnEyAJpT_SFbot8XxlHZwwz_HCK5U3s9DBrJYNBU_EqdRxT9gZHSe9IzaQJnkl19xsS52EZVqnqirVOvAh8kMOLe8bc13kKzuoT845jBsVup3KnAnbkDag4AL)
+[2] [usgs.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHArF2f4uDpzH7qRWSzEOWxIyVvwSOaeeEAr32XsG6tLLHOT7fIFjG8qvW8XANixifW85lRCKoznef9E9-zIeLYFk2Nz2vDuiUCkAtabdpcTtWG27dBB-TUK5u3PdV19SvujAieFYBIewY1xsQyaa_ZU5U3y5Y6BESqlvPBc-beJCp2MqA500BL8yVIKNZRkZZZ1ri-GudlfBRcAOpYNAn25w==)
+[3] [usgs.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGtHeUmcq3HQyBtWiD3XqL2Fax5pCzDZ7f4cCQuA0VzbvS6xbnn4BzY3DyREJ8B91GttvZcWwcbvFIyUCIez46BRbEEidCWSYTzq-2fnnO_b_JTpeBwXuTuQe5jGHXZtw==)
+[4] [usgs.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKIEIV53TCqDiB0brma92_QEKRrq038myF8kbiIJDNA6nZ1oBi34tGN8kdQqcFiTzgJA-VvAZqYmGIEG4nD_qSIzKcaySZ-ybWtlFkBBsLxcO5Pq31vyr9EgE1KYiXiQF0M_k-TsYVkNqeWY_JdsYbiLO9LXvgYC8J6kR2hVuh_VXgcoVNjpyTxv8faI9Q3qucGGsGEQ==)
+[5] [usgs.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFIvlaqtbYt8BV9pyKg--lbW0uDGZTHaZ27dPgOmqI4K729QhIu2Tx4SQ5es4A7ZcSbp24BcN1b17srTIZvFqwV2yyN4ZS1Aqk2Rpng7hmaVOnKsLPVC2imd8dAZlgrGB0JyQJP76RyC0rUNkPHU4mNZmiciosjoqla6owiuhRBq46ObkHEm93Z7Ha7Dj6ShulDFYJgC7EPzywJMQ==)

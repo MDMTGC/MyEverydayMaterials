@@ -1,0 +1,29 @@
+Created At: 2026-06-01T17:37:06Z
+Completed At: 2026-06-01T17:37:12Z
+The search for "formaldehyde in your home site:epa.gov" returned the following summary:
+Formaldehyde is a colorless, pungent-smelling gas that is common in indoor environments[1][2][3]. Because it is a volatile organic compound (VOC), it can easily be released into the air from various household products and materials through a process known as "off-gassing"[1][4][5][6].
+
+### **Common Sources of Formaldehyde in the Home**
+Formaldehyde is widely used in manufacturing and is found in many everyday items[1][7][3]. Significant sources include:
+*   **Pressed-Wood Products:** These are often the most significant indoor sources[2][7]. They include particleboard (used in cabinetry, furniture, and sub-flooring), hardwood plywood paneling, and medium-density fiberboard (MDF)[2].
+*   **Combustion Sources:** Burning materials such as tobacco, wood, natural gas, kerosene, or gasoline produces formaldehyde[4][8][9]. This includes use of gas stoves, un-vented kerosene heaters, and fireplaces[2][7].
+*   **Household & Personal Care Products:** It can be found in paints, coatings, glues, adhesives, permanent-press fabrics (draperies and clothing), cosmetics, and some cleaning products[8][2][10][9].
+
+### **Health Effects**
+Exposure to formaldehyde can cause various health issues, with the severity often depending on the concentration and duration of exposure[1][5].
+*   **Common Symptoms:** At elevated levels (typically above 0.1 ppm), it can cause watery eyes, burning sensations in the eyes, nose, and throat, nausea, and difficulty breathing[2][3]. 
+*   **Respiratory Issues:** It may trigger asthma attacks or worsen respiratory conditions[8][2][9].
+*   **Long-Term Risks:** Formaldehyde is classified as a carcinogen[11][10][9]. Long-term exposure is linked to certain types of cancer, such as nasopharyngeal cancer[8][10][9].
+
+### **How to Reduce Exposure**
+The EPA and other health organizations recommend several steps to help lower formaldehyde levels in your home:
+*
+<truncated 2673 bytes>
+ect/AUZIYQFLoScT8h7nYbNiQMZgrn9Aiq966fJt8TWJPLdtUdmDZuG51zs7xvqtb2ib5L-v8-UcEqWlfRLxbfI9wgATK_CHsIuh2EVavFPbqgCEXooXdLEbtOI-hVNNMKtMzgma58FpKiZU7lm_RYPTwoW8PY_TPnMsMw4ZEqdd2v8UMVs6qW3ti1BWdxpFn6_qu_13LWnU)
+[7] [regulations.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_0LUFymW4-zec-cOsVHv891-TktUJAWjECb2QFSP-X5BzmnSXRbcAsDd4znCQ2YBRRBZ3B2DJc_xNUaOJEDF3w5PpASzQd-dkW8uaAsWMM0ed4z3hMVBaF5bQU4QLUmfaOTBae6IBEQfi1ajAW5XSUnyW-9z9hBBN7EdSfGflj59H)
+[8] [lung.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmIw_KR5690mXXpppvjo_u7icaGkFCnuu0O1fTSu-mkLvSKDvoaJnc4jNKevWL3i_EYo_KsbpvHNbDu5R0jLJ32MQTqLE_mD7XeyWIGpqqJ2hLqi1LUI_E8_iOuR1LILCei2Bm3IMCuLgxQfYiWM48kV8XDonUPijOPo4wYrcudVya8-90jg==)
+[9] [wllw.eco](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEXJKXkVHr4xwm84RAnVae7tLhqgSIuyqFgSmiEOi5bKqqXOvKfYHY_MgFsb9QfZC-tctg3y2Z-tRSp0_42E4WP9cRH8RrSXlQ0f5pMXnLCVr3KLddrXH_GdfJ7FrnYiuxvq7sdfUxL9V86v5sSuobxd8aaoWhTmO0QVmI17smOVvTtx3cGebM=)
+[10] [nih.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEliM4QrsniQ7sjqi7n1QmXA3heqHduSVn-XEgJxRph0yxTXqQZjy9FnvJNuz8opzHgTdh-GTqEMopNkDP_lpAE3gNX1vT-eC8G-LDRQka_JHKjN-xWcbcPsudA5LafmeGbT5lJS6mb)
+[11] [tsi.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkZBDXH_QQ7bfifsPha6Ckrg0dKjZfqwpbwJV14RamMOYc7_JRW8Sb3_SH04DE84PrPVDaL2cxDCnpRFEX979NshF1KjE4vDdQTqmzUk6tjaovreY_XdaAK9dkRUcAPECAhkTRpg-k_Mo85nnN1k4VYpQ74fYQGAyiER8OdENiIVgrzKMkpdumJxJrL84h-3JZm_xELgJuwa1KjQ==)
+[12] [cdc.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfAahG4JwruVZWJQHhJApz8LWi48qO89gpWYRIQc1g0DzZREJcdXDBPNS_sCyBYKK2wM9_Hho-9JP6a3MWsfKvZgtJX1nu5pykg3QRrC4_4PtkDzKXERyjxDG3BdPujlBpeRgFx8diIXY6o8a08k0g_XVjLxHtKeZ-dsIHSXUnvg==)
+[13] [cdc.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFW_K1enimc1p_6oxyuA8xm2LpsunRczlhhFxD-c0TDKif_iEwmzNrhvvCtyuO0z0fnxUz6moevZXhKaLGbLZoh3h28m-0O7AGNz-BmZqoxrAUfNMhd6F0aRBL0wM04aE9cC-fv8JFq5rIZxN1RFKCxmILwOi3jFi1Js_zRZLWS-Q==)

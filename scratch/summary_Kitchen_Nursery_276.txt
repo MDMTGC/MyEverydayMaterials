@@ -1,0 +1,39 @@
+Created At: 2026-06-01T17:42:08Z
+Completed At: 2026-06-01T17:42:08Z
+File Path: `file:///C:/Users/MDMTGC/.gemini/antigravity/brain/7e96b97a-cc07-41c4-91f7-a1f9fdb6f7fa/.system_generated/worktrees/subagent-Kitchen-and-Nursery-Reference-Researcher-ReferenceResearcher-4d6dd001/sources-needing-review.md`
+Total Lines: 162
+Total Bytes: 18258
+Showing lines 41 to 100
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+41: | cca-treated-wood | 2 | https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Dead Link (HTTP 404) |
+42: | chemical-flea-collars | 1 | https://www.epa.gov/pets/flea-and-tick-products-pets | Dead Link (HTTP 404) |
+43: | chemical-flea-collars | 3 | https://www.petpoisonhelpline.com/poison/permethrin/ | Dead Link (HTTP 404) |
+44: | chlorine-bleach-safety | 1 | https://www.cdc.gov/niosh/topics/bleach.html | Dead Link (HTTP 404) |
+45: | chlorine-bleach-safety | 2 | https://www.lung.org/clean-air/at-home/indoor-air-pollutants/cleaning-supplies | Dead Link (HTTP 404) |
+46: | citronella-candles-soot | 2 | https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Dead Link (HTTP 404) |
+47: | copper-piping-solder | 1 | https://www.epa.gov/ | Generic Homepage |
+48: | copper-piping-solder | 2 | https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Dead Link (HTTP 404) |
+49: | deet-bug-sprays | 2 | https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Dead Link (HTTP 404) |
+50: | dryer-sheet-quats | 1 | https://www.epa.gov/ | Generic Homepage |
+51: | dryer-sheet-quats | 2 | https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Dead Link (HTTP 404) |
+52: | enzymatic-stain-removers | 1 | https://www.epa.gov/ | Generic Homepage |
+53: | enzymatic-stain-removers | 2 | https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Dead Link (HTTP 404) |
+54: | epoxy-garage-coatings | 2 | https://www.atsdr.cdc.gov/toxprofiledocs/index.ht
+<truncated 3900 bytes>
+linked-uterine-cancer-and-other-womens-health | Dead Link (HTTP 404) |
+86: | microbeads-exfoliants | 2 | https://cosmeticseurope.eu/publications/mineral-hydrocarbons-cosmetic-products/ | Dead Link (HTTP 404) |
+87: | microbeads-exfoliants | 3 | https://www.bfr.bund.de/cm/349/mineral-oils-in-cosmetics-risk-assessment-shows-need-for-optimization.pdf | Connection Error |
+88: | microplastics-synthetic-laundry | 1 | https://www.epa.gov/trash-free-waters/microplastics-research | Dead Link (HTTP 404) |
+89: | nail-polish-toxic-trio | 2 | https://www.aad.org/public/diseases/eczema/types/contact-dermatitis/signs-symptoms | Dead Link (HTTP 404) |
+90: | nail-polish-toxic-trio | 3 | https://www.ewg.org/the-toxic-twenty/formaldehyde-releasers | Dead Link (HTTP 404) |
+91: | nail-polish-toxic-trio | 4 | https://www.fda.gov/cosmetics/cosmetic-ingredients/formaldehyde-cosmetics-what-you-should-know | Dead Link (HTTP 404) |
+92: | neonicotinoid-pesticides | 2 | https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Dead Link (HTTP 404) |
+93: | oxygen-bleach | 1 | https://www.epa.gov/ | Generic Homepage |
+94: | oxygen-bleach | 2 | https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Dead Link (HTTP 404) |
+95: | parabens-preservatives | 2 | https://www.ewg.org/the-toxic-twenty/parabens | Dead Link (HTTP 404) |
+96: | perchloroethylene-dry-cleaning | 2 | https://ww2.arb.ca.gov/our-work/programs/perchloroethylene-dry-cleaning | Dead Link (HTTP 404) |
+97: | perchloroethylene-dry-cleaning | 3 | https://monographs.iarc.who.int/agents-classified-by-the-iarc-monographs/ | Dead Link (HTTP 404) |
+98: | pesticide-residue-home | 1 | https://www.epa.gov/ | Generic Homepage |
+99: | pesticide-residue-home | 2 | https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Dead Link (HTTP 404) |
+100: | pex-piping | 1 | https://www.epa.gov/ | Generic Homepage |
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

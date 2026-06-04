@@ -1,0 +1,23 @@
+Created At: 2026-06-01T17:39:17Z
+Completed At: 2026-06-01T17:39:21Z
+The search for ""Recommendation" AND "14" AND "Mineral" "Cosmetics Europe" filetype:pdf" returned the following summary:
+**Cosmetics Europe Recommendation N°14** refers to the industry guidance titled **"Mineral hydrocarbons in cosmetic lip care products"**[1][2][3].
+
+### Key Points of Recommendation N°14:
+*   **Purpose:** The recommendation was developed to address safety concerns regarding the potential oral exposure to mineral hydrocarbons (mineral oils and waxes) used in lip care products (such as lipsticks, lip gloss, and lip balms)[1][4].
+*   **Core Advice:** Cosmetics Europe recommends that manufacturers use **only those mineral hydrocarbon fractions for which an Acceptable Daily Intake (ADI) has been identified**[1][4][5]. 
+*   **Safety Standard:** By restricting the ingredients to food-grade mineral oils and waxes—specifically those evaluated and approved for use in the food sector by authorities like the European Food Safety Authority (EFSA) or the Joint FAO/WHO Expert Committee on Food Additives (JECFA)—the industry aims to ensure that any oral intake from these products is of no toxicological concern[4][3][6].
+*   **Scope:** This recommendation applies to mineral oil hydrocarbons and microcrystalline waxes used as raw materials in lip care products[1]. It does not apply to synthetic hydrocarbons that are not complex mixtures of various molecules[1].
+*   **Context:** The recommendation emphasizes compliance with purity specifications (such as those for polycyclic aromatic hydrocarbons) and existing EU cosmetic regulations to ensure consumer safety[1][7][6].
+
+The most recent version of this recommendation cited in regulatory and safety discussions is typically dated **September 17, 2018** (which updated a previous version from 2013)[1][2][3].
+
+Sources:
+[1] [ikw.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCLLtjr0YOcYq7mXMGi6Ohqqw5wNuZsnp7eCMa51b6ObUhEb5snjPMCzeECF3dhs6BCs22IkW7HhGg7G38ji1eMFVuI-LKJ8td
+<truncated 148 bytes>
+ldermatologicalbeauty.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwDhJuYzCFXzr_fQSvbacNCB8nk3gI8BzJ2xxNmlYRwAItHAvmbPX5zr-ejUfH6bsjKm26NLMZAuiHSAQ_w8xvB_kwdEOuOLuzlS8HYlDySZFcrOXvwec2QzkfpNV27Fml6-LXipXqIF5Uqr-2zYQt16Wai64EJggMHeLIBu74Vep4W2fdw1y9gma4o4srzoaw2hVidUlm8v2XPONemsyFxvq5WiLkZxerL0xQe2NVoAkTDP0eNbPIHps_lf_GTEHukNRaagUkl3Eh1RRJZnAPWI2z8RHS5WA6zbWYT_Shw3fXIrBdpsUjoLHni2xsRQOXGRdtYlUc3di5Ym-A)
+[3] [dntb.gov.ua](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHx3Pbq9S1EOs2riz2EMQHgKQN8QgaopBzRNBdlh1bKrtuR-BgF72vt8O0rNDTyud_QCg02z3Ee5OuADYYllpcrSUaBpCjKmZSAMxEsdBPktvvK7gRWI_JSd5ZJGSNX7PUmSGyS8g0=)
+[4] [bund.de](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAA5NUYExMSxj-7-LItoW-drL8iZOprncNUCEawi3Yd_APIyPUzEWxvODH8MHyYtt_-Xero4JCJN84fFPh226KZ9SvLVzfKRXS1vyTGDNtoWIxdPqLWUh3IITfLwavNldSYjz7PYKz-_W3e74yUqAwdvGUTV5kl6oiB2DwC-voLrsxX_z8t_2hR_tFC0UXUB42EpbuFTujWyhPmEfDCjs0OcpZggINAbFJM_Nb94icZO7yiqS0WtT8ghKopGHS3dZ2GiBUMVxvelxn)
+[5] [obelis.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKxjg5OeQae_ytB0Soo4hBPOw7tvXbB3HJFmFfJb-myttNlzqlRxmGs0VkhmD7wOoOkjEfCHpowwseU0fBprlttDjc0DqEV4xhE3nABLnE7Ic04E_42SNqS6Fqh57CV1_3AcD_xvSlcI2WF-0pcI3izVEEqgKke_LJEqBJ8K_6LQ5YueCdBcyHQ1PXtIJDzp9bBX5tt8ZWVE9o2zUcVxNrt0BSlXF8Zj0yBpQypoex7JgC37OwyphVbUVHtC8UPLROy0umCIShIFRyqw==)
+[6] [lorealdermatologicalbeauty.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFlSMtrwEHoKjIwzzyCb9Zf3XQFZsc73yOm8-WejuEtih0vCurQfKCVLRF6TfZtlGpZMhRzcN8Ef8V4IWofRShoZ4BJbB49RJoW0S869WOH6Hpur3UEawRA9R4cXufmDC18jiLsf7RVYMUOln4RTIEoVR-6SbjyuxT-dbYcnFZf4DhUMCbIsNli0CxwqYr60BkuQ-pfz0q8GZugKRqVGbzg1_wpQ0w4AguyDcuYoEcSGjonWDqFky7xH2greVxi555_twWma-ekwOKJhDvTwNjZNT9zcCJXmlytEsIsU-xPLYFjWsBJOOYhCPhdI0K06SxGGJepVs7rwpnhhYRUyxma)
+[7] [nih.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEp0uTxU66773ZWJAKETLFrHwvyMC4dUDQ2KiNktupPllpG1ETf3or_Btkly3hEojt3yZUGq38xLrh8LXx_wWq_sbSUmjWRceE3rL3_6hYPd5OwXstuUsgaWRlOFGQj8_kpl83o)

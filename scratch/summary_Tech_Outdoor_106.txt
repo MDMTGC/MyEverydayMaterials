@@ -1,0 +1,24 @@
+Created At: 2026-06-01T17:36:36Z
+Completed At: 2026-06-01T17:36:42Z
+The search for "site:echa.europa.eu "aromatic-brominated-flame-retardants"" returned the following summary:
+The European Chemicals Agency (ECHA) has conducted significant work regarding **Aromatic Brominated Flame Retardants (ABFRs)**, culminating in an investigation report published in December 2024[1][2][3].
+
+Key information regarding ECHA's activities on this topic includes:
+
+*   **Investigation Report (December 2024):** ECHA submitted an investigation report to the European Commission that highlighted significant environmental risks associated with ABFRs[1][2][4]. The report concluded that non-polymeric additive ABFRs pose a particularly high burden on the environment[1][5][6].
+*   **Key Findings:**
+    *   **Hazards:** Several ABFRs were identified as persistent, bioaccumulative, and toxic (PBT) or very persistent and very bioaccumulative (vPvB)[1][2][7].
+    *   **Non-Polymeric Additives:** These substances are of greatest concern because they are not covalently bound to the polymer matrix, making them more prone to leaching into the environment[1][7][5].
+    *   **Regulatory Status:** ECHA noted that many of these substances are not registered under REACH, raising concerns about compliance and the composition of imported articles[3][5].
+*   **Regulatory Mandate:** Following the investigation, the European Commission gave ECHA a mandate to:
+    1.  **Prepare a restriction dossier** on non-polymeric additive ABFRs under the REACH Regulation[2][4].
+    2.  **Conduct an investigation report** on organophosphorus flame retardants (OPFRs) and other flame retardants to avoid "regrettable substitution" (where hazardous substances are replaced by equally problematic alternatives)[2][4][6].
+*   **Context:** This work is part of the broader EU Chemicals Strategy for Sustainability[7]. ECHA had previously published a "Regulatory Strategy for Flame Retardants" in 2023, which identified ABFRs as a group requiring further investigation and potential regu
+<truncated 752 bytes>
+hvw4HCPPtWGqvQEQ5hZWRz0YtgLyhOzUckWtpNsIRnNt3itQDi6FFcnNiyIsNCUtEdswAorvRta4lnP64K0q4yM9Hj41aPM7_sMRJ5a1Pg2dOVyD2JSefdKDt-rZKUyZMtu8sRImK_1IOQPdiZOovHjNgcnp72IyGwwKYCSLMcQtxdkBYG5n7KM9CvytVkZ8-cI4I8r3uDwumJsAZ9pnJlMw2snIffopHOpacUCrn1st-pTIp4Y1IVG0DpTh7WuzScvNHaIXL_xr32fURspw==)
+[3] [pinfa.eu](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGf27BHKBlV16Y7ZM7DrsE05Fag_t7UwH7MFGLp_adrNjugC6CFFgwWX_6VvzLam2Qh2mTZdv2SOdknxjp84Sqn5tcjrrTdywHXlqz3lgkq3LXQqsR9KgK6ylSDBYIU7F1I3fdz7R6OPG_rrpynu3s4wLve6K6cIapRji02gwj219LUKFHXFxrhNwy96gr)
+[4] [normachem.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEEl9uxIUHS43PNBs8_2pOxDVgwh0BEf-FG1HU4Zr_zEupOGfnNdJc_olggKKG-7jiU7ooCsBHL3DR_kQjMW63EiWX3RIllcXsFNrBu30uZRq0next3e6KKnANrhiFJjN1KLhwwNIHPHlyLE4T9hU01Qwd-bCTUXztqgQ2YB24QwSx7D49LUezKvTs6LERt15qrEnOKomP6XPjeaE4DjJZcCfev-cm_IMOKbd2QwSvmt5AtPkXVpjqzfdAl19OvU_S2tXi24euWtE5EK2YnffrnwaSFDt766Fq5PUaY9w3mzaFjp7uW)
+[5] [parcopedia.eu](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEmG6ENC6RWFn69AeGTWGZp4Ik8sjyd4Nvea7Qsxm5v5upLDWVemz-ed0DQ7CWc8-qWT17I0IdlDHrrK8i1ZN-z1pNfBwRSouVMQKd_q_odBLEZdb15qUc3FoCvsLOF_dhubHISK8zvZ-HetIWXwytwxghR8Y2jyCdUwRxY6trSJPnQj0XrMMItDWYXcQ==)
+[6] [youtube.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsdLNibnVf7pC-9PcniW22-LumLQEQBBGop1_cZDRhX4u4TiwnqQucaxPMnvCtrFIY_TesCACrkazHrfHK0cgstSA1oRisa6dHJ6KVUS4D_VAAFWILTjvXXFzgkiU8iKraAB1FmQ==)
+[7] [useforesight.io](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFL8zEa5ghQosEb_Z-CQZQ0JjFaiIA8fcgbgiCUbAiOvxe5H-xId-DIUqMVjQhusO_O6CwVqOnK_BEOn6p1IhCMRFtOnIdF1Kh6c0P4YQGaZhR9IwbAhHR2ZYuAy_EsCyZRPOhxXzZuZdUwmdU4VVy76vGGaZMWCSozpargIXAgtB8q9WgEB8HW_0GpENoJV2Rba4DtoQCqh7Wu-dJuB5M3ykM0b6hgytCbNB8BnrtWxbCc)
+[8] [europa.eu](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFlIV0hcETbw7vGnItmcCsOmyanI5WBYJ1fB12mMwXIc9viV_1NIVTUn4ZbZqgawANxvTBZ30nC5ljqsP82GA-vhAuqITiwx5bpVQ1xRzLNPo1nGGINsHRC_6jnV0XuubEDW2ckHSWQDfLUBAHzMNcP8RRGDnXcJIYbfvWnqCmN)

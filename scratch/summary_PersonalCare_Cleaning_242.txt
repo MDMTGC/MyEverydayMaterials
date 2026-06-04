@@ -1,0 +1,22 @@
+Created At: 2026-06-01T17:41:00Z
+Completed At: 2026-06-01T17:41:07Z
+The search for "site:ewg.org "pfas-chemicals-dental-floss-peoples-blood" OR "dental-floss"" returned the following summary:
+The presence of PFAS (per- and polyfluoroalkyl substances) in dental floss has been a subject of scientific and consumer concern due to the chemicals' persistence in the environment and the body, as well as their association with various health risks[1][2][3][4].
+
+### Research on PFAS in Dental Floss
+*   **Studies and Associations:** A landmark 2019 study published in the *Journal of Exposure Science & Environmental Epidemiology* was the first to associate the use of certain dental flosses (specifically Oral-B Glide) with higher levels of specific PFAS chemicals in the blood[5][3][4][6]. Researchers observed that women who reported using this floss had higher serum concentrations of certain PFAS compared to non-users[3][4][7].
+*   **Presence in Products:** Subsequent testing by various organizations, including Mamavation and EHN, has identified PFAS markers (such as organic fluorine) in a subset of dental floss products[1][8][6]. These chemicals were traditionally used to create the "glide" or "satin" texture that makes the floss slippery and easier to use[2][5][9].
+*   **Evolution of Findings:** While some studies have linked floss use to elevated levels of certain PFAS in the blood, recent research using broader data sets (such as NHANES) has shown mixed results, indicating that while PFOA levels may be slightly elevated in floss users, the overall body burden of various PFAS chemicals may not be universally higher compared to non-users[10].
+
+### Industry and Expert Perspectives
+*   **Manufacturer Responses:** Following public and scientific scrutiny, some companies have moved to reformulate their products[5]. For example, Oral-B has reported that its updated Glide floss uses micro-textured fibers and no longer contains PFAS[5].
+*   **Dental Guidance:** Despite concerns regarding PFAS, the American Dental Association (ADA)
+<truncated 2042 bytes>
+gle.com/grounding-api-redirect/AUZIYQESlFTJ9w1zo-lydEs7zwhOsH94ZlEwDrX_UjglOnXQyifkLL3e8mZ1mF6_o4OeXufPu4TVSX4GQP7_4wIBTd-8Oq0tg2gSHplyRqdOJlYgjIfFVn_J2jmYc9oB_LA53BkVfMnAese2k-kNkqSGrRDHA2ubP-NYiDXElBh8SUI2XTYdFFw9O66e2a-9jI6en4G9)
+[6] [mamavation.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGf4BsQo98XTl-UvsuoQ3UvtiVf3qAGlN5NnDM9nBgKeOlexD2a2dtds3Krh2cKoTt5wY4wL-LEilnVANMS3ddHQianoOJKCfv4douvLh5baRC_wR5B-AZn4kMhrNjH5scdGE2-RVBmidpouNL6c_4YwYY2VnzDreZSf5lSgpCn5Xs=)
+[7] [harvard.edu](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6s37bdxP_UZkEhG40tcBVUP0UYm5kbfkzKpXGcChabNGoZcVjOsOOh9XYVF2Rc0gxvQQrQUP7CP0UmW4JPsLAkxHLAws9HrbdFCaZdcYACMtBVG3urv5F9mmqLoj1ylMUgxSOkdE3aygxwNmqVg34K7YjpBYbtmU=)
+[8] [ehn.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGoVExqrf2q2_c2haCOQS2PGgF2aZJyPPE0_5Rqs740Xy-LR2rmbxErVZKkDD78vdncdUt1CwG3XAH1NlzTECmNXAfAlwOzPLYDJkRlrzOro_cUhjUb0w1qg==)
+[9] [sacramentoperiodontics.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6GowqG4JeHUYoHV2muGEcezqLsb_Idgw8qH2lxHUOp3W41DkqJU5zs-t37Lobj7uO-d8SOPyy9Z6ubKLvSirJrRM2TNxSDMNjUredeAMfN9JQx8g5HsPNTRJnL3Mq2DOXEls8ql7S7bF6xVpegm1Cy9sr7rQo5y_SiTJc9A14pSzr4iRo2ZksI68iyl1374CofyuT59vBEQ==)
+[10] [nih.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLSuacR4AY5TFzTPPe7PMAMXQCUIlfamkEPdiNnzmU9At25-W-45Tg64oqJe3BP92aCYgilLeYFqdrGAFpRFKAMTGo04D-tCp_InfzqEMDpYf75riMgllRpI3Mlpz-IV85tQ0pTy2jwOnUXEOf)
+[11] [cleanwaterfund.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFh4obwdlRMgYsxk0ntCCgVCSU3WyRsex2MrUM2MLNLKjenHf7alCqx5KOUVv7EqR5R1Rv3svAQVmqx9kv-JmG_d4k9ShwJuN-wzTjHlchqDG8y1LLlgWM6wcRQWcYmdsEmZU-uPYUyLJmR_foPHBNofZc50_MZ2m4t5kXrkXpzxy7T6QzF)
+[12] [cleanwaterfund.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjfaeP3wCgONt-XSuBVlYzRzBgP4eVqjNeVe6Tg0pxJOtMVUNz7JlplVav7zK8eI8voByhT_p_oLWgiCOQ0p6szurf808gYf9N3Yn_Lmr5tgQlDHfGk_yiPLsUVQwXD3cU4dg3vhBOg59FmT-bJqoJdEvGapKi_cemdzRlLb--MoEQ79rH)

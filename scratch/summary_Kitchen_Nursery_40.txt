@@ -1,0 +1,36 @@
+Created At: 2026-06-01T17:34:31Z
+Completed At: 2026-06-01T17:34:34Z
+The search for "site:aad.org contact dermatitis children OR child" returned the following summary:
+Contact dermatitis in children is a skin reaction that occurs when a child's skin comes into contact with a substance that causes either irritation or an allergic reaction[1][2][3].
+
+### Types of Contact Dermatitis
+*   **Irritant Contact Dermatitis:** This is the most common form[2][3]. It happens when a substance directly damages the skin's outer layer[1][2]. Common irritants for children include soaps, detergents, saliva, urine (often causing diaper rash), baby lotions, perfumes, and certain foods[3].
+*   **Allergic Contact Dermatitis:** This occurs when the immune system has an allergic reaction to a specific substance (allergen)[2][3]. Common allergens include certain metals (like nickel, often found in jewelry, belt buckles, and zippers), fragrances, and plants like poison ivy, poison oak, and sumac[4][3].
+
+### Symptoms
+Symptoms can vary by child but often include[1][3]:
+*   Redness and swelling[1][3]
+*   Itching (which can be intense)[1][3]
+*   Blistering, oozing, or crusting[1][5][3]
+*   Dry, cracked, or peeling skin[1][3]
+*   Pain or tenderness[1]
+
+In children, common areas affected include the face, neck, hands, legs, and the diaper area[5].
+
+### Management and Treatment
+*   **Identify and Avoid:** The most important step is to identify the irritant or allergen and prevent further contact[1][4].
+*   **Cleanse the Skin:** Wash the affected area with mild soap and water as soon as possible after suspected exposure[1][3].
+*   **Soothe the Skin:** Applying cool, wet compresses can help reduce inflammation and itching[1][3].
+*   **Medications:** Over-the-counter or prescription corticosteroid creams may be used to reduce inflammation[1][3]. Oral antihistamines may help relieve itching[1][3].
+
+### When to See a Doctor
+If the reaction is severe, does not improve with basic care, or if you are unsure of the cause, it is important to consult a pediatrician or a dermatologist[4][3]. A doctor can help confirm the diagnosis, sometimes using patch testing, and provide a tailored treatment plan[4].
+
+***Disclaimer:** This information is for educational purposes and should not replace professional medical advice. Always seek the advice of your child's pediatrician or a qualified healthcare provider with any questions regarding a medical condition.*
+
+Sources:
+[1] [stanfordchildrens.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF1_tOr_rNxxMqBtGqOYfbYaPkJsFkKOVWs4j3ZecQv8oEnP4LbwUAj59qcg78EDjesc9Rly1ngyzfor2qn_k4SWj2rvl9KMmSW76jnQypl1JRfz3YyBNnJlDFAxFnOVyHvUzBwzg162J57xewcfFaeaErOtqxwj0dGvIZlixxQEUJiQm98D-DvYyJcPMq1AmMmEy6hLlMmw4o=)
+[2] [rochester.edu](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGrYXtR78zAXensIYQktryKrRK3ZOHWqBTMe_gQ7KIhorx0NzbuJ4koJtKtIkykLg0w4L4UhHgF73YcKHvg5Ra3E8BZFhKhAX-Io8M4eI9GUl-6ydXEK5jWcp_Bk22feA4YZHrPFc0P13vNelgHVKYhbKrSSshy6dnSDEHrxB0b5hktABswxplhMFsogsnRdkM=)
+[3] [chop.edu](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvM59c-7hEhPgsWPesmu9MZOL7KbD2ymyvzD9o_XbrHQs2-YYmwMuCW9GooAaT4ET7sax65H5P7u9c218K58BdV4nuiWkb3Mp_KtiLQm3OB9IfDs28UnsvAnypOmeYx2b_etn2tsBJB06DIa2zPDNR43rRRav7LjFsLFoVlk4i)
+[4] [nih.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGQhgFU5ObNFBYWUbFhl1Vwvv_ZB5kzlot3xOoDPLYja1CPmGmQZ03249vjAjh9QJWXNv7ozOk9RbMhV2iX5F03pYzBM0aeQO3QmF4xLB6SUFswwqt6vpKSYLzB73mYYnQ-R4zS2oWk5UpeRNU=)
+[5] [skinsight.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrORmmpUJhFrt2aqK_VwxcjPii9-WkhpjuUZTbL1ZYf90Itlm2RS377L-lQ9uOL5OV0c2W6X2e93p5ScBou02iDZZf5nazlYSMT0OWhRJTB3lLlNDQ_1xWRXBEEMmp1xxvUzSJicvZrmpd34z9XXt5VtNanf27xvkmag==)

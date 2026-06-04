@@ -1,0 +1,64 @@
+Created At: 2026-06-01T17:39:46Z
+Completed At: 2026-06-01T17:39:46Z
+File Path: `file:///C:/Users/MDMTGC/.gemini/antigravity/brain/7e96b97a-cc07-41c4-91f7-a1f9fdb6f7fa/.system_generated/worktrees/subagent-Tech-and-Outdoor-Reference-Researcher-ReferenceResearcher-57991481/articles/outdoor.py`
+Total Lines: 588
+Total Bytes: 38777
+Showing lines 345 to 403
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+345:     },
+346:     {
+347:         "slug": "neonicotinoid-pesticides",
+348:         "title": "Neonicotinoids",
+349:         "meta_description": "Science-backed overview of Neonicotinoids. Learn key risks, practical exposure-reduction steps, and better alternatives.",
+350:         "verdict_level": "verdict-avoid",
+351:         "verdict_rating": "Avoid",
+352:         "verdict_summary": "Systemic insecticides highly toxic to bees and persistent in soil and runoff.",
+353:         "sections": [
+354:             {
+355:                 "id": "what-it-is",
+356:                 "heading": "What This Material Is and Where Exposure Happens",
+357:                 "content": "<p>Neonicotinoids appears in everyday home contexts where exposure can happen through touch, dust, off-gassing, food/water contact, or repeated low-dose use.</p><p>Our classification is based on current peer-reviewed and regulatory evidence for realistic household conditions, not extreme edge cases.</p>",
+358:             },
+359:             {
+360:                 "id": "risk-profile",
+361:                 "heading": "Risk Profile and Scientific Context",
+362:                 "content": "<p><strong>Current verdict:</strong> Systemic insecticides highly toxic to bees and persistent in soil and runoff.</p><p>The evidence trend supports minimizing or replacing this material where practical, especially for high-frequency household use.</p><p>When studies co
+<truncated 835 bytes>
+arth</p>",
+368:             },
+369:         ],
+370:         "alternatives": [
+371:             {
+372:                 "type": "Primary Alternative",
+373:                 "name": "Neem Oil or Diatomaceous Earth",
+374:                 "description": "Lower-exposure replacement aligned to our catalog guidance.",
+375:                 "pros": "Immediate practical exposure reduction",
+376:                 "cons": "Performance/cost tradeoffs vary by brand and use case",
+377:                 "url": "https://www.amazon.com/s?k=Neem+Oil+or+Diatomaceous+Earth&tag=myeverydaymat-20",
+378:             },
+379:             {
+380:                 "type": "Comparison Set",
+381:                 "name": "Neonicotinoids safety-tested options",
+382:                 "description": "Browse vetted product candidates and compare materials, certifications, and user outcomes.",
+383:                 "pros": "Helps identify lower-risk products quickly",
+384:                 "cons": "Requires label and specs review before purchase",
+385:                 "url": "https://www.amazon.com/s?k=Neonicotinoids+non+toxic+alternative&tag=myeverydaymat-20",
+386:             },
+387:         ],
+388:         "sources": [
+389:             [
+390:                 "US EPA: Assessing and managing chemical risk in consumer environments",
+391:                 "https://www.epa.gov/pesticides/epa-releases-neonicotinoid-assessments-public-comment",
+392:             ],
+393:             [
+394:                 "ATSDR Toxicological Profiles",
+395:                 "https://www.atsdr.cdc.gov/toxprofiledocs/index.html",
+396:             ],
+397:             [
+398:                 "WHO: Chemical safety and exposure pathways",
+399:                 "https://www.who.int/health-topics/chemical-safety",
+400:             ],
+401:         ],
+402:     },
+403:     {
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

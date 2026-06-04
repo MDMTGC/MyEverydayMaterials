@@ -1,0 +1,22 @@
+Created At: 2026-06-01T17:35:55Z
+Completed At: 2026-06-01T17:35:59Z
+The search for ""cosmeticseurope.eu" "mineral hydrocarbons" recommendation OR publication OR file OR pdf" returned the following summary:
+Cosmetics Europe has published a specific recommendation regarding the use of mineral hydrocarbons in cosmetic products, particularly those intended for lip care[1][2][3].
+
+### **Cosmetics Europe Recommendation N°14**
+*   **Title:** Mineral hydrocarbons in cosmetic lip care products[1][3]
+*   **Date:** September 17, 2018 (updated from March 2013)[1]
+*   **Key Recommendation:** Cosmetics Europe recommends that only mineral hydrocarbon fractions for which an Acceptable Daily Intake (ADI) has been established should be used in cosmetic lip care products[1][4]. This is to ensure safety regarding potential oral exposure[1][4].
+*   **Scope:** This applies to all mineral oil hydrocarbons (including mineral oils and microcrystalline waxes) used as raw materials in lip care products (e.g., lipsticks, lip gloss, lip balm)[1]. It does not apply to synthetic hydrocarbons that are not complex mixtures[1].
+*   **Safety Basis:** The recommendation references EFSA’s establishment of an ADI of 12 mg/kg bw/day for high and medium viscosity white mineral oils[1][4]. It emphasizes compliance with purity specifications for polycyclic aromatic hydrocarbons (PAH) as reflected in various pharmacopeia and EU Cosmetic Regulation (EC) No 1223/2009[1][4].
+
+### **Accessing the Document**
+You can typically find this recommendation and other guidelines on the official Cosmetics Europe website under their publications or guidelines section[5][4]. A direct link to the PDF version cited in academic literature is often provided as:
+*   [Recommendation_14_Mineral_Hydro_Carbons.pdf](https://www.cosmeticseurope.eu/files/3715/3907/8160/Recommendation_14_Mineral_Hydro_Carbons.pdf) (Note: Availability may vary based on website updates)[3].
+
+Sources:
+[1] [ikw.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4MG3R45lunnrZGKlMurBKpE1MUAQElcFVcLYIBqtX1RJYn3EklsfrpnYhA91p7qp0nNugnM0w1C6bkikeAsSUrPLochDnEttgrFF1AJe1HaY3LAMpPNAc-IJhpTwRVrMWjbQykisudQIZ22RyIBAeA8JUQRCPz2ocDcIcBmCuczCk8P1EuBU6aA4RE_Y0XyP3z_bO2W_ryBxyivHmE2cnok_2i6S1Fy6ZmpgHfQ==)
+[2] [tandfonline.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF78o2_mxScAg2_frHcbjxGf7yHAMn9oNGwoDF8B7Y5_oGAQvIvD23iUR7fUaSWroh1yAWPFsceG10eRYDCXJol8RJnTDSO1VB1HnY022QC1zKVGxHSEAZz5YCuI46RbV2jo25WVWHcd4vSJJAo2uv9Y_w8cFxYIBQZGIKfKA==)
+[3] [ocl-journal.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEMSC0UJRV6-5pzvXxeiLx2olCUOf8lyKN4GFvyusnQzsNamRueFMB4YerEpRqbtupg_eYXjZdBfwIRcK0bAhhayMOag9Bf5YK941q1hHSwtC97wENrz_xtJp8KIPw3hB4mz-urqI7yHd9vA6jbvTQTRFh4TTJnlgsn8qnuG47cmi9XpDYvakxT)
+[4] [bund.de](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfvHs4114qJUnm0kg8ZVAgX3asm9gqjmmG1jSGB-O5LF_HWNvPQMBOtzCjP1ZAgnHQ2yObLDY8Ajb06-XXpcPqAPDBQrrSc42Pa0ohjvIJFDSIkDmFci4XhR9qVDDrCFowqa2IRBmgTIG6Zm0B_HaKHRzrtbhK5mPAVYDGE1FG04PZ51-_pSZ_5pDKmeYy0O-vg8f7s364dSeq5_mkr07tjALGI3ygOt-ujxmjzTeHnaRJW1qx4B2oM9sw4nIzznXctCo9C6AJKQr7)
+[5] [eublomsten.dk](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFIi7KbTAPDf61KqqDiRM7G0pQFguO66kjZNsa3P_dDy2EqAX5URI88yp4-Tlo5kyewuBuIJhi-5l_qWmwfk7eibrQtgntF8txAkyR4ya4yln2aq3VKdKXtVhXkDVFAyKlQ7_tM0cFd3jPdzfdJjbxOvQDNNTzg6gg=)

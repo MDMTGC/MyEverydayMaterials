@@ -1,0 +1,73 @@
+Created At: 2026-06-01T17:33:12Z
+Completed At: 2026-06-01T17:33:12Z
+File Path: `file:///C:/Users/MDMTGC/.gemini/antigravity/brain/7e96b97a-cc07-41c4-91f7-a1f9fdb6f7fa/.system_generated/worktrees/subagent-Tech-and-Outdoor-Reference-Researcher-ReferenceResearcher-57991481/articles/outdoor.py`
+Total Lines: 588
+Total Bytes: 38777
+Showing lines 1 to 588
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: """Upgraded outdoor article data."""
+2: 
+3: ARTICLES = [
+4:     {
+5:         "slug": "cca-treated-wood",
+6:         "title": "CCA-Treated Wood",
+7:         "meta_description": "Science-backed overview of CCA-Treated Wood. Learn key risks, practical exposure-reduction steps, and better alternatives.",
+8:         "verdict_level": "verdict-avoid",
+9:         "verdict_rating": "Avoid",
+10:         "verdict_summary": "Older decking lumber treated with chromated copper arsenate; leaches arsenic.",
+11:         "sections": [
+12:             {
+13:                 "id": "what-it-is",
+14:                 "heading": "What This Material Is and Where Exposure Happens",
+15:                 "content": "<p>CCA-Treated Wood appears in everyday home contexts where exposure can happen through touch, dust, off-gassing, food/water contact, or repeated low-dose use.</p><p>Our classification is based on current peer-reviewed and regulatory evidence for realistic household conditions, not extreme edge cases.</p>",
+16:             },
+17:             {
+18:                 "id": "risk-profile",
+19:                 "heading": "Risk Profile and Scientific Context",
+20:                 "content": "<p><strong>Current verdict:</strong> Older decking lumber treated with chromated copper arsenate; leaches arsenic.</p><p>The evidence trend supports minimizing or replacing this material where practical, especially for high-frequency household use
+<truncated 38189 bytes>
+               "description": "Lower-exposure replacement aligned to our catalog guidance.",
+546:                 "pros": "Immediate practical exposure reduction",
+547:                 "cons": "Performance/cost tradeoffs vary by brand and use case",
+548:                 "url": "https://www.amazon.com/s?k=Native+Groundcovers&tag=myeverydaymat-20",
+549:             },
+550:             {
+551:                 "type": "Comparison Set",
+552:                 "name": "Synthetic Turf safety-tested options",
+553:                 "description": "Browse vetted product candidates and compare materials, certifications, and user outcomes.",
+554:                 "pros": "Helps identify lower-risk products quickly",
+555:                 "cons": "Requires label and specs review before purchase",
+556:                 "url": "https://www.amazon.com/s?k=Synthetic+Turf+non+toxic+alternative&tag=myeverydaymat-20",
+557:             },
+558:         ],
+559:         "sources": [
+560:             [
+561:                 "US EPA: Assessing and managing chemical risk in consumer environments",
+562:                 "https://www.epa.gov/",
+563:             ],
+564:             [
+565:                 "ATSDR Toxicological Profiles",
+566:                 "https://www.atsdr.cdc.gov/toxprofiledocs/index.html",
+567:             ],
+568:             [
+569:                 "WHO: Chemical safety and exposure pathways",
+570:                 "https://www.who.int/health-topics/chemical-safety",
+571:             ],
+572:         ],
+573:     },
+574: ]
+575: 
+576: RELATED_MAP = {
+577:     "cca-treated-wood": [],
+578:     "citronella-candles-soot": [],
+579:     "deet-bug-sprays": [],
+580:     "epoxy-garage-coatings": [],
+581:     "gas-mower-exhaust": [],
+582:     "glyphosate-weed-killer": [],
+583:     "neonicotinoid-pesticides": [],
+584:     "pvc-garden-hoses": [],
+585:     "rubber-mulch": [],
+586:     "synthetic-turf-pfas": [],
+587: }
+588: 
+The above content shows the entire, complete file contents of the requested file.

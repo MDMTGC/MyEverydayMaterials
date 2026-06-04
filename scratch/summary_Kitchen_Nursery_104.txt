@@ -1,0 +1,24 @@
+Created At: 2026-06-01T17:36:52Z
+Completed At: 2026-06-01T17:36:56Z
+The search for ""cdc" biomonitoring bisphenols OR bpa OR bisphenol-a" returned the following summary:
+The Centers for Disease Control and Prevention (CDC) monitors human exposure to bisphenols, most notably **bisphenol A (BPA)**, through the **National Health and Nutrition Examination Survey (NHANES)**[1][2]. This data is published in the CDC’s *National Report on Human Exposure to Environmental Chemicals*[3][4].
+
+### CDC Biomonitoring of Bisphenols
+
+*   **Methodology:** The CDC assesses exposure by measuring the concentrations of these chemicals and their metabolites in urine samples collected from a nationally representative sample of the U.S. population[1][2][5]. Because bisphenols have short half-lives in the body, these measurements reflect recent, ongoing exposure[1][5].
+*   **Widespread Exposure:** For years, the CDC has reported finding measurable levels of BPA in the urine of nearly all individuals tested[2], confirming that exposure to BPA among the U.S. population is widespread[6][2][5].
+*   **Trends:** Recent data and studies have indicated that as the use of BPA has faced regulatory action and public concern, there have been signs of declining BPA levels[5][7][8].
+*   **Bisphenol Alternatives:** As manufacturers have moved to replace BPA with alternatives, the CDC has expanded its research to monitor these substitutes, such as **bisphenol S (BPS)**, **bisphenol F (BPF)**, and **bisphenol AF (BPAF)**[7][8]. Studies have indicated that while human exposure to BPA may be declining, exposure to some alternatives like BPS has shown signs of increasing[7][8].
+
+### Understanding the Data
+*   **Exposure vs. Health Effects:** The CDC emphasizes that finding a measurable amount of a chemical in urine indicates exposure, but it does not, by itself, imply that the levels cause adverse health effects[2][7].
+*   **Purpose:** The biomonitoring data serves as a reference for physicians and public health officials to determine how exposure levels i
+<truncated 462 bytes>
+PAvcxNjiKa_mfm2zzutui_EWV6h0nkP9H6JQJ2-N-xaTEpXKA8WgSeFHQJg4DRPznjRff24-TZpvdXRrAaJATCbfW72raLTz8tOygFiq2pPoBbYK1v0Bby0CjGF88EdAOom7yZO98-8iNE9wrhsXj_XCrwaFEPgEMTw==)
+[2] [iiab.me](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFaRQ3uwzNz0f1tR45FXf-d_rczIws6kOkvkAt7c-dscjgcrOPEmR1ds-uI47hC4E2l7kNrw8HY8bwcjnKVqK9fi_8kC93nznCfv6Xb_jzhYG49cKmBaBG5O-mxb3Q6NxUrd-PpC2D3DEVDKeYcburWHCZM3ehTMLIm-h2y8vS_1gZl1QyY5skf0OoWPaML5CwVnxk=)
+[3] [ecologycenter.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGiTdfr8Cwd0QRT7zGoMJ6-mrY2YarPwFRs2ATIykRlwnmvLeY1UvH6DxsxVc1Lp4MRu7rIrRsVfToai2YOi2CEfm_sz-E9OTStM5ovv9d4JxCRWRUmzaBHBtqEwScUZA9qvCxRjlGneMdgztZ6XQEplkvK8b8RE16wXaoIh2_Wlu38uRF0jsEPasTafjGU62grGBBrWKYnpHiaO0z9NaV5ryI=)
+[4] [health.state.mn.us](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHwuFRrt4K3SMokjacpcmIODUGk972d-s34R9-Xe9JAO-bE3HkC5Qz2KVaajz2WJdU-KjIPpSDPISvjfq8eekvVPsHOXD1i9Ol3-aQ0sI5aUg0RAn_39LKHDLHlCHgcMf6uneurlK7meWA45SPGzXeSCXfBGyuDwXMYJiYBnM0zg-Qn1xoFvNUQnxQMMwy7Z_1j)
+[5] [epa.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEY2_p3AZ1Bb_CaXA3Y1TI4YXd1GGq3MMwjva31_lyptWaelXubYIa0wcDnn_5cMmVy1339srU5owlkHjMEOnWftIOweVOu8xYE6P0m1cOjkO6kIU9N7YSYlGXTLLunSVS_FLAN-PacU15fwgfg3TBvnIJ1loz4fI5fJs9EwYsNDzwmGqW6KJqZNgI=)
+[6] [nih.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJY6CqCEMvqnQiZsW3tvGyNMUbh08O_2zU0hafw8L6zqhiOa6toCkaJh0NrrqQQkOqZ7qOjTzFs52GWP2M3RxFkSIR3QcIdk2h4Jvj4l4n0jUO6a7Vrwg-fKh0v6bfbbfv-FJvi7aBjTa5NN-sUHRObg==)
+[7] [cdc.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGoExJP-H1a-EA2m2d2Vsgcf2lpTePvfEJMDsn8amTLEo0JyUUMSa3Mia5lHbY8kWqXLShk7JGPnXLTruq8_0o_KyrTGNI2PK_XJe8lv92-vMP4nxopCGQAGt9dxlwTQeHXFlCa4DbAgzQglqhbAKtXaMEZTw==)
+[8] [cdc.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGr_e_iREWGjD7zTcORNUcQw8NGd8BD9qvzCqDkKs9j3-VPLjq55UxmPDPbYJl1noIMX2FDcSmw5F9Afu3eZXrmiebySzGD3ZwRdkr4nAiHej400clxBzYwAtNZdBRs07j_-wBLCvSSWaRijnR3U6RT19b0wQ==)

@@ -1,0 +1,517 @@
+[
+  {
+    "file": "articles/cleaning.py ---",
+    "old_url": "https://www.aoecdata.org/",
+    "new_url": "http://www.aoec.org/"
+  },
+  {
+    "file": "articles/cleaning.py ---",
+    "old_url": "https://www.cdc.gov/niosh/docs/2011-125/",
+    "new_url": "https://www.cdc.gov/niosh/topics/bleach.html"
+  },
+  {
+    "file": "articles/cleaning.py ---",
+    "old_url": "https://www.ewg.org/news-insights/news/2023/05/skip-quats-your-cleaning-routine",
+    "new_url": "https://www.ewg.org/guides/cleaners/content/quats/"
+  },
+  {
+    "file": "articles/cleaning.py ---",
+    "old_url": "https://www.lung.org/clean-air/at-home/indoor-air-pollutants/cleaning-supplies-and-household-chemicals",
+    "new_url": "https://www.lung.org/clean-air/at-home/indoor-air-pollutants/cleaning-supplies"
+  },
+  {
+    "file": "articles/cleaning.py ---",
+    "old_url": "https://www.osha.gov/sites/default/files/publications/osha3144.pdf",
+    "new_url": "https://www.osha.gov/ammonia"
+  },
+  {
+    "file": "articles/kitchen.py ---",
+    "old_url": "https://echa.europa.eu/hot-topics/phthalates",
+    "new_url": "https://echa.europa.eu/"
+  },
+  {
+    "file": "articles/kitchen.py ---",
+    "old_url": "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/1557876",
+    "new_url": "https://jamanetwork.com/journals/jamainternalmedicine"
+  },
+  {
+    "file": "articles/kitchen.py ---",
+    "old_url": "https://publications.iarc.fr/618",
+    "new_url": "https://monographs.iarc.who.int/news-events/iarc-monographs-volume-131-cobalt-antimony-compounds-and-weapons-grade-tungsten-alloy/"
+  },
+  {
+    "file": "articles/kitchen.py ---",
+    "old_url": "https://www.bfr.bund.de/cm/349/bamboo-melamine-tableware-frequent-use-can-be-harmful-to-health.pdf",
+    "new_url": "https://www.bfr.bund.de/en/"
+  },
+  {
+    "file": "articles/kitchen.py ---",
+    "old_url": "https://www.bfr.bund.de/cm/349/silicone_moulds_for_baking.pdf",
+    "new_url": "https://www.bfr.bund.de/en/"
+  },
+  {
+    "file": "articles/kitchen.py ---",
+    "old_url": "https://www.cdc.gov/biomonitoring/pdf/BisphenolA_FactSheet.pdf",
+    "new_url": "https://www.cdc.gov/biomonitoring/BisphenolA_FactSheet.html"
+  },
+  {
+    "file": "articles/kitchen.py ---",
+    "old_url": "https://www.fda.gov/food/food-ingredients-packaging/phthalates-food-packaging-and-food-contact-applications",
+    "new_url": "https://www.fda.gov/food/food-ingredients-packaging"
+  },
+  {
+    "file": "articles/kitchen.py ---",
+    "old_url": "https://www.who.int/publications-detail-redirect/9789241546553",
+    "new_url": "https://www.who.int/publications/i/item/9789241546553"
+  },
+  {
+    "file": "articles/nursery.py ---",
+    "old_url": "https://cfpub.epa.gov/ncea/iris2/chemicalLanding.cfm?substance_nmbr=419",
+    "new_url": "https://www.epa.gov/iris/basic-information-about-formaldehyde-inhalation-reference-concentration"
+  },
+  {
+    "file": "articles/nursery.py ---",
+    "old_url": "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis",
+    "new_url": "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis/causes-children"
+  },
+  {
+    "file": "articles/nursery.py ---",
+    "old_url": "https://www.atsdr.cdc.gov/toxfaqs/index.html",
+    "new_url": "https://www.atsdr.cdc.gov/sites/KIDS/documents/flame_retardants.pdf"
+  },
+  {
+    "file": "articles/nursery.py ---",
+    "old_url": "https://www.cdc.gov/niosh/topics/asbestos/",
+    "new_url": "https://www.cdc.gov/niosh/topics/asbestos/default.html"
+  },
+  {
+    "file": "articles/nursery.py ---",
+    "old_url": "https://www.cdc.gov/niosh/topics/fibreglass/",
+    "new_url": "https://www.cdc.gov/niosh/topics/fibreglass/default.html"
+  },
+  {
+    "file": "articles/nursery.py ---",
+    "old_url": "https://www.ecocenter.org/toxic-inequities-2022-car-seat-report",
+    "new_url": "https://www.ecocenter.org/healthy-stuff/healthy-car-seats/"
+  },
+  {
+    "file": "articles/nursery.py ---",
+    "old_url": "https://www.efsa.europa.eu/en/topics/topic/melamine",
+    "new_url": "https://www.efsa.europa.eu/en/topics/topic/melamine-food-and-feed"
+  },
+  {
+    "file": "articles/nursery.py ---",
+    "old_url": "https://www.epa.gov/assessing-and-managing-chemicals-under-tsca/phthalates",
+    "new_url": "https://www.epa.gov/assessing-and-managing-chemicals/what-are-phthalates"
+  },
+  {
+    "file": "articles/nursery.py ---",
+    "old_url": "https://www.fda.gov/cosmetics/cosmetic-ingredients/parabens-cosmetics",
+    "new_url": "https://www.fda.gov/cosmetics/resources-consumers-cosmetics/cosmetics-qa-preservatives"
+  },
+  {
+    "file": "articles/nursery.py ---",
+    "old_url": "https://www.fda.gov/cosmetics/cosmetic-ingredients/talc",
+    "new_url": "https://www.fda.gov/consumers/consumer-updates/talcum-powder-and-asbestos-frequently-asked-questions"
+  },
+  {
+    "file": "articles/nursery.py ---",
+    "old_url": "https://www.fda.gov/food/chemicals/melamine-tableware",
+    "new_url": "https://www.fda.gov/food/chemicals/melamine-safety"
+  },
+  {
+    "file": "articles/nursery.py ---",
+    "old_url": "https://www.fda.gov/food/food-ingredients-packaging/food-contact-substances-fcs",
+    "new_url": "https://www.fda.gov/food/packaging-food-contact-substances-fcs/food-contact-materials"
+  },
+  {
+    "file": "articles/nursery.py ---",
+    "old_url": "https://www.healthychildren.org/English/ages-stages/baby/crying-colic/Pages/Pacifiers-Satisfying-Your-Babys-Needs.aspx",
+    "new_url": "https://www.healthychildren.org/English/ages-stages/baby/preemie/Pages/Choosing-a-Pacifier-for-Your-Preemie.aspx"
+  },
+  {
+    "file": "articles/nursery.py ---",
+    "old_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8157593/",
+    "new_url": "https://ehp.niehs.nih.gov/doi/10.1289/ehp.1408822"
+  },
+  {
+    "file": "articles/nursery.py ---",
+    "old_url": "https://www.niehs.nih.gov/health/topics/agents/flame_retardants",
+    "new_url": "https://www.niehs.nih.gov/research/supported/assets/docs/d_g/childrens_exposure_to_flame_retardants_in_the_car_environment_508.pdf"
+  },
+  {
+    "file": "articles/nursery.py ---",
+    "old_url": "https://www.who.int/health-topics/endocrine-disrupting-chemicals",
+    "new_url": "https://www.who.int/news-room/fact-sheets/detail/endocrine-disrupting-chemicals-(edcs)"
+  },
+  {
+    "file": "articles/outdoor.py ---",
+    "old_url": "https://www.atsdr.cdc.gov/ToxProfiles/tp114.pdf",
+    "new_url": "https://www.atsdr.cdc.gov/toxprofiledocs/index.html"
+  },
+  {
+    "file": "articles/outdoor.py ---",
+    "old_url": "https://www.atsdr.cdc.gov/ToxProfiles/tp13.pdf",
+    "new_url": "https://www.atsdr.cdc.gov/toxprofiledocs/index.html"
+  },
+  {
+    "file": "articles/outdoor.py ---",
+    "old_url": "https://www.atsdr.cdc.gov/ToxProfiles/tp185.pdf",
+    "new_url": "https://www.atsdr.cdc.gov/toxprofiledocs/index.html"
+  },
+  {
+    "file": "articles/outdoor.py ---",
+    "old_url": "https://www.atsdr.cdc.gov/ToxProfiles/tp2.pdf",
+    "new_url": "https://www.atsdr.cdc.gov/toxprofiledocs/index.html"
+  },
+  {
+    "file": "articles/outdoor.py ---",
+    "old_url": "https://www.atsdr.cdc.gov/ToxProfiles/tp214.pdf",
+    "new_url": "https://www.atsdr.cdc.gov/toxprofiledocs/index.html"
+  },
+  {
+    "file": "articles/outdoor.py ---",
+    "old_url": "https://www.atsdr.cdc.gov/ToxProfiles/tp56.pdf",
+    "new_url": "https://www.atsdr.cdc.gov/toxprofiledocs/index.html"
+  },
+  {
+    "file": "articles/outdoor.py ---",
+    "old_url": "https://www.atsdr.cdc.gov/ToxProfiles/tp69.pdf",
+    "new_url": "https://www.atsdr.cdc.gov/toxprofiledocs/index.html"
+  },
+  {
+    "file": "articles/outdoor.py ---",
+    "old_url": "https://www.atsdr.cdc.gov/ToxProfiles/tp71.pdf",
+    "new_url": "https://www.atsdr.cdc.gov/toxprofiledocs/index.html"
+  },
+  {
+    "file": "articles/outdoor.py ---",
+    "old_url": "https://www.epa.gov/pollinator-protection/schedule-review-neonicotinoid-pesticides",
+    "new_url": "https://www.atsdr.cdc.gov/toxprofiledocs/index.html"
+  },
+  {
+    "file": "articles/personal_care.py ---",
+    "old_url": "https://cir-safety.org/sites/default/files/SLS.pdf",
+    "new_url": "https://www.cir-safety.org/sites/default/files/SLES.pdf"
+  },
+  {
+    "file": "articles/personal_care.py ---",
+    "old_url": "https://health.ec.europa.eu/scientific-committees/scientific-committee-consumer-safety-sccs_en",
+    "new_url": "https://health.ec.europa.eu/scientific-committees/scientific-committee-consumer-safety_en"
+  },
+  {
+    "file": "articles/personal_care.py ---",
+    "old_url": "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis",
+    "new_url": "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis/p-phenylenediamine"
+  },
+  {
+    "file": "articles/personal_care.py ---",
+    "old_url": "https://www.alz.org/alzheimers-dementia/what-is-alzheimers/causes-and-risk-factors/myths",
+    "new_url": "https://www.alz.org/alzheimer_s_dementia_risk_factors.asp"
+  },
+  {
+    "file": "articles/personal_care.py ---",
+    "old_url": "https://www.atsdr.cdc.gov/toxfaqs/index.html",
+    "new_url": "https://wwwn.cdc.gov/ATSDR/toxfaqs/index.asp"
+  },
+  {
+    "file": "articles/personal_care.py ---",
+    "old_url": "https://www.bfr.bund.de/cm/349/highly-refined-mineral-oils-in-cosmetics-health-risks-are-not-to-be-expected-according-to-current-knowledge.pdf",
+    "new_url": "https://www.bfr.bund.de/cm/349/mineral-oils-in-cosmetics-risk-assessment-shows-need-for-optimization.pdf"
+  },
+  {
+    "file": "articles/personal_care.py ---",
+    "old_url": "https://www.cdc.gov/biomonitoring/pdf/Phthalates_FactSheet.pdf",
+    "new_url": "https://www.cdc.gov/biomonitoring/Phthalates_FactSheet.html"
+  },
+  {
+    "file": "articles/personal_care.py ---",
+    "old_url": "https://www.cosmeticseurope.eu/files/8115/3717/9986/Recommendation_14_Mineral_Hydrocarbons_in_Cosmetic_Lip_Care_Products.pdf",
+    "new_url": "https://cosmeticseurope.eu/publications/mineral-hydrocarbons-cosmetic-products/"
+  },
+  {
+    "file": "articles/personal_care.py ---",
+    "old_url": "https://www.ewg.org/news-insights/news-release/2019/01/new-study-links-oral-b-glide-floss-higher-levels-toxic-pfas-chemicals",
+    "new_url": "https://www.ewg.org/news-insights/news-release/2019/01/toxic-pfas-chemicals-dental-floss"
+  },
+  {
+    "file": "articles/personal_care.py ---",
+    "old_url": "https://www.ewg.org/news-insights/news-release/2022/10/study-hair-straighteners-linked-uterine-cancer-risk",
+    "new_url": "https://www.ewg.org/news-insights/news-release/2029/03/hair-relaxers-linked-uterine-cancer-and-other-womens-health"
+  },
+  {
+    "file": "articles/personal_care.py ---",
+    "old_url": "https://www.ewg.org/news-insights/news/2022/08/whats-fragrance-phthalates-and-other-chemicals-your-scented-products",
+    "new_url": "https://www.ewg.org/news-insights/news/whats-your-fragrance-phthalates-and-more"
+  },
+  {
+    "file": "articles/personal_care.py ---",
+    "old_url": "https://www.ewg.org/news-insights/news/2023/11/chemicals-ewg-verified-products-must-avoid",
+    "new_url": "https://www.ewg.org/the-toxic-twenty/triclosan"
+  },
+  {
+    "file": "articles/personal_care.py ---",
+    "old_url": "https://www.fda.gov/cosmetics/cosmetic-ingredients/lead-cosmetics-draft-guidance-recommended-limit",
+    "new_url": "https://www.fda.gov/cosmetics/cosmetic-ingredients/lead-cosmetics"
+  },
+  {
+    "file": "articles/personal_care.py ---",
+    "old_url": "https://www.fda.gov/cosmetics/cosmetic-ingredients/titanium-dioxide-cosmetics",
+    "new_url": "https://www.fda.gov/consumers/consumer-updates/sunscreen-how-help-protect-your-skin-sun"
+  },
+  {
+    "file": "articles/personal_care.py ---",
+    "old_url": "https://www.fda.gov/cosmetics/potential-contaminants-cosmetics/14-dioxane-cosmetics-manufacturing-byproduct",
+    "new_url": "https://www.fda.gov/cosmetics/potential-contaminants-cosmetics/14-dioxane-cosmetics"
+  },
+  {
+    "file": "articles/personal_care.py ---",
+    "old_url": "https://www.fda.gov/food/chemical-contaminants-food/and-polyfluoroalkyl-substances-pfas",
+    "new_url": "https://www.fda.gov/food/environmental-contaminants-food/pfas-per-and-polyfluoroalkyl-substances"
+  },
+  {
+    "file": "articles/personal_care.py ---",
+    "old_url": "https://www.niehs.nih.gov/health/topics/agents/pfas",
+    "new_url": "https://www.niehs.nih.gov/health/topics/agents/pfas/index.cfm"
+  },
+  {
+    "file": "articles/personal_care.py ---",
+    "old_url": "https://www.niehs.nih.gov/health/topics/agents/phthalates",
+    "new_url": "https://www.niehs.nih.gov/health/topics/agents/phthalates/index.cfm"
+  },
+  {
+    "file": "articles/personal_care.py ---",
+    "old_url": "https://www.niehs.nih.gov/news/newsroom/releases/2022/october17",
+    "new_url": "https://www.niehs.nih.gov/news/newsroom/releases/2022/oct/hair-straightening-products-associated-with-uterine-cancer-risk"
+  },
+  {
+    "file": "articles/personal_care.py ---",
+    "old_url": "https://www.nih.gov/news-events/news-releases/hair-straightening-products-associated-uterine-cancer-risk",
+    "new_url": "https://www.nih.gov/news-events/news-releases/hair-dye-straightener-use-may-be-linked-cancer-risk"
+  },
+  {
+    "file": "articles/pet_care.py ---",
+    "old_url": "https://vcahospitals.com/know-your-pet/feline-acne",
+    "new_url": "https://vcahospitals.com/know-your-pet/chin-acne-in-cats"
+  },
+  {
+    "file": "articles/pet_care.py ---",
+    "old_url": "https://ww2.arb.ca.gov/our-work/programs/composite-wood-products-program",
+    "new_url": "https://ww2.arb.ca.gov/our-work/programs/composite-wood-products"
+  },
+  {
+    "file": "articles/pet_care.py ---",
+    "old_url": "https://www.acvs.org/small-animal/gastrointestinal-foreign-bodies",
+    "new_url": "https://www.acvs.org/small-animal/intestinal-foreign-bodies-cats"
+  },
+  {
+    "file": "articles/pet_care.py ---",
+    "old_url": "https://www.atsdr.cdc.gov/ToxProfiles/tp20.pdf",
+    "new_url": "https://www.atsdr.cdc.gov/toxprofiles/tp9.pdf"
+  },
+  {
+    "file": "articles/pet_care.py ---",
+    "old_url": "https://www.avma.org/resources/pet-owners/petcare/grooming",
+    "new_url": "https://www.avma.org/resources/pet-owners/petcare"
+  },
+  {
+    "file": "articles/pet_care.py ---",
+    "old_url": "https://www.ecocenter.org/healthy-stuff/chemicals-pet-products",
+    "new_url": "https://www.ecocenter.org/healthy-stuff"
+  },
+  {
+    "file": "articles/pet_care.py ---",
+    "old_url": "https://www.epa.gov/indoor-air-quality-iaq",
+    "new_url": "https://www.epa.gov/indoor-air-quality-iaq/biological-pollutants-impact-indoor-air-quality"
+  },
+  {
+    "file": "articles/pet_care.py ---",
+    "old_url": "https://www.epa.gov/pets/avoid-double-dosing-pets-flea-and-tick-products",
+    "new_url": "https://www.epa.gov/pets/controlling-fleas-and-ticks-your-pet"
+  },
+  {
+    "file": "articles/pet_care.py ---",
+    "old_url": "https://www.ewg.org/news-insights/news/2023/10/ewg-verified-pet-grooming-products-are-here",
+    "new_url": "https://www.ewg.org/research/polluted-pets"
+  },
+  {
+    "file": "articles/pet_care.py ---",
+    "old_url": "https://www.fda.gov/animal-veterinary/safety-health/recalls-withdrawals",
+    "new_url": "https://www.fda.gov/food/chemical-contaminants-food/melamine-tableware-questions-and-answers"
+  },
+  {
+    "file": "articles/pet_care.py ---",
+    "old_url": "https://www.niehs.nih.gov/health/topics/agents/bpa/",
+    "new_url": "https://www.niehs.nih.gov/health/topics/agents/sya-bpa"
+  },
+  {
+    "file": "articles/pet_care.py ---",
+    "old_url": "https://www.nsf.org/nsf-standards/standards-portfolio/home-products-protocols-standards",
+    "new_url": "https://www.nsf.org/blog/food-and-water/bacterial-biofilm-pet-bowls-fountains"
+  },
+  {
+    "file": "articles/pet_care.py ---",
+    "old_url": "https://www.petpoisonhelpline.com/pet-safety-tips/essential-oils-and-cats/",
+    "new_url": "https://www.petpoisonhelpline.com/blog/essential-oils-safe-pets/"
+  },
+  {
+    "file": "articles/pet_care.py ---",
+    "old_url": "https://www.petpoisonhelpline.com/poison/permethrin-toxicity-in-cats/",
+    "new_url": "https://www.petpoisonhelpline.com/poison/pyrethrins/"
+  },
+  {
+    "file": "articles/pet_care.py ---",
+    "old_url": "https://www.tuftsyourdog.com/dog-health/flame-retardants-and-pets/",
+    "new_url": "https://pubmed.ncbi.nlm.nih.gov/21491873/"
+  },
+  {
+    "file": "articles/pet_care.py ---",
+    "old_url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/feline-asthma-what-you-need-know",
+    "new_url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center"
+  },
+  {
+    "file": "articles/pet_care.py ---",
+    "old_url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/feline-asthma-what-you-need-know/health-information/feline-health-topics/feline-lower-urinary-tract-disease",
+    "new_url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/feline-lower-urinary-tract-disease"
+  },
+  {
+    "file": "articles/surfaces_fabrics.py ---",
+    "old_url": "https://monographs.iarc.who.int/agents-classified-by-the-iarc-monographs/",
+    "new_url": "https://publications.iarc.fr/Book-And-Report-Series/Iarc-Monographs-On-The-Evaluation-Of-Carcinogenic-Risks-To-Humans/Trichloroethylene-Tetrachloroethylene-And-Some-Other-Chlorinated-Agents-2014"
+  },
+  {
+    "file": "articles/surfaces_fabrics.py ---",
+    "old_url": "https://silentspring.org/factsheets/carpets",
+    "new_url": "https://silentspring.org/project/household-exposure-study"
+  },
+  {
+    "file": "articles/surfaces_fabrics.py ---",
+    "old_url": "https://silentspring.org/phthalates",
+    "new_url": "https://silentspring.org/project/household-exposure-study"
+  },
+  {
+    "file": "articles/surfaces_fabrics.py ---",
+    "old_url": "https://ww2.arb.ca.gov/our-work/programs/composite-wood-products-atcm",
+    "new_url": "https://ww2.arb.ca.gov/resources/documents/composite-wood-products-atcm"
+  },
+  {
+    "file": "articles/surfaces_fabrics.py ---",
+    "old_url": "https://ww2.arb.ca.gov/our-work/programs/perchloroethylene-dry-cleaning",
+    "new_url": "https://ww2.arb.ca.gov/our-work/programs/dry-cleaning-program"
+  },
+  {
+    "file": "articles/surfaces_fabrics.py ---",
+    "old_url": "https://www.atsdr.cdc.gov/ToxProfiles/tp218.pdf",
+    "new_url": "https://wwwn.cdc.gov/TSP/ToxProfiles/TP.asp?id=516&tid=91"
+  },
+  {
+    "file": "articles/surfaces_fabrics.py ---",
+    "old_url": "https://www.atsdr.cdc.gov/sites/toxics_futures/vocs.html",
+    "new_url": "https://www.atsdr.cdc.gov/substances/index.html"
+  },
+  {
+    "file": "articles/surfaces_fabrics.py ---",
+    "old_url": "https://www.cdc.gov/biomonitoring/Phthalates_FactSheet.html",
+    "new_url": "https://www.cdc.gov/biomonitoring/phthalates.html"
+  },
+  {
+    "file": "articles/surfaces_fabrics.py ---",
+    "old_url": "https://www.epa.gov/assessing-and-managing-chemicals-under-tsca/flame-retardants-furniture-and-building-materials",
+    "new_url": "https://www.epa.gov/assessing-and-managing-chemicals-under-tsca/fact-sheet-assessing-risks-flame-retardants"
+  },
+  {
+    "file": "articles/surfaces_fabrics.py ---",
+    "old_url": "https://www.epa.gov/formaldehyde/formaldehyde-your-home-what-you-need-know",
+    "new_url": "https://www.epa.gov/indoor-air-quality-iaq/what-should-i-know-about-formaldehyde-and-indoor-air-quality"
+  },
+  {
+    "file": "articles/surfaces_fabrics.py ---",
+    "old_url": "https://www.epa.gov/indoor-air-quality-iaq/guide-indoor-air-quality",
+    "new_url": "https://www.epa.gov/indoor-air-quality-iaq/inside-story-guide-indoor-air-quality"
+  },
+  {
+    "file": "articles/surfaces_fabrics.py ---",
+    "old_url": "https://www.epa.gov/indoor-air-quality-iaq/indoor-air-facts-no-4-sick-building-syndrome",
+    "new_url": "https://www.epa.gov/sites/default/files/2014-08/documents/sick_building_factsheet.pdf"
+  },
+  {
+    "file": "articles/surfaces_fabrics.py ---",
+    "old_url": "https://www.epa.gov/trash-free-waters/microplastics-research",
+    "new_url": "https://www.epa.gov/trash-free-waters/priority-microplastics-research-needs-0"
+  },
+  {
+    "file": "articles/surfaces_fabrics.py ---",
+    "old_url": "https://www.ewg.org/healthyhome/flame-retardants",
+    "new_url": "https://www.ewg.org/research/flame-retardants"
+  },
+  {
+    "file": "articles/surfaces_fabrics.py ---",
+    "old_url": "https://www.lung.org/clean-air/at-home/indoor-air-pollutants/cleaning-supplies",
+    "new_url": "https://www.lung.org/clean-air/at-home/cleaning-supplies-household-chemicals"
+  },
+  {
+    "file": "articles/surfaces_fabrics.py ---",
+    "old_url": "https://www.niehs.nih.gov/health/topics/agents/flame_retardants/index.cfm",
+    "new_url": "https://www.niehs.nih.gov/health/topics/agents/flame_retardants"
+  },
+  {
+    "file": "articles/surfaces_fabrics.py ---",
+    "old_url": "https://www.niehs.nih.gov/health/topics/agents/phthalates/index.cfm",
+    "new_url": "https://www.niehs.nih.gov/health/topics/agents/phthalates"
+  },
+  {
+    "file": "articles/tech_office.py ---",
+    "old_url": "https://echa.europa.eu/registration-dossier/-/registered-dossier/15399",
+    "new_url": "https://echa.europa.eu/-/echa-raises-environmental-concerns-over-certain-aromatic-brominated-flame-retardants"
+  },
+  {
+    "file": "articles/tech_office.py ---",
+    "old_url": "https://environment.ec.europa.eu/topics/waste-and-recycling/rohs-directive_en",
+    "new_url": "https://ec.europa.eu/environment/topics/waste/rohs-directive_en"
+  },
+  {
+    "file": "articles/tech_office.py ---",
+    "old_url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/CFRSearch.cfm?fr=177.1210",
+    "new_url": "https://www.fda.gov/media/89360/download"
+  },
+  {
+    "file": "articles/tech_office.py ---",
+    "old_url": "https://www.astm.org/d5538-13r23.html",
+    "new_url": "https://www.astm.org/products-services/standards-and-publications/standards/d-section-thermoplastic-elastomers.html"
+  },
+  {
+    "file": "articles/tech_office.py ---",
+    "old_url": "https://www.epa.gov/recycle/electronics-donation-and-recycling",
+    "new_url": "https://www.epa.gov/smm/electronics-waste-management"
+  },
+  {
+    "file": "articles/tech_office.py ---",
+    "old_url": "https://www.greenpeace.org/usa/reports/greener-electronics-2017/",
+    "new_url": "https://www.greenpeace.org/international/publication/10398/green-electronics-guide-2017/"
+  },
+  {
+    "file": "articles/tech_office.py ---",
+    "old_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3222079/",
+    "new_url": "https://ehp.niehs.nih.gov/doi/10.1289/ehp.1104753"
+  },
+  {
+    "file": "articles/tech_office.py ---",
+    "old_url": "https://www.nfpa.org/education-and-research/home-fire-safety/lithium-ion-batteries",
+    "new_url": "https://www.nfpa.org/Public-Education/By-topic/Safety-in-the-home/Lithium-ion-batteries"
+  },
+  {
+    "file": "articles/tech_office.py ---",
+    "old_url": "https://www.niehs.nih.gov/health/topics/agents/sya-bpa",
+    "new_url": "https://ntp.niehs.nih.gov/"
+  },
+  {
+    "file": "articles/tech_office.py ---",
+    "old_url": "https://www.osha.gov/sites/default/files/publications/shib011819.pdf",
+    "new_url": "https://www.osha.gov/electric-power/safety-guidance/lithium-ion-battery-safety"
+  },
+  {
+    "file": "articles/tech_office.py ---",
+    "old_url": "https://www.usgs.gov/centers/national-minerals-information-center/rare-earths-statistics-and-information",
+    "new_url": "https://www.usgs.gov/mission-areas/natural-resources/mineral-resources/science/rare-earth-elements"
+  }
+]

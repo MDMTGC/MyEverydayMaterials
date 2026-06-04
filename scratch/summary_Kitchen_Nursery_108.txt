@@ -1,0 +1,21 @@
+Created At: 2026-06-01T17:37:00Z
+Completed At: 2026-06-01T17:37:03Z
+The search for ""cdc.gov/biomonitoring/bisphenols.html" OR "cdc.gov/biomonitoring/BisphenolA_FactSheet.html" OR "cdc.gov/biomonitoring/bisphenol-a.html"" returned the following summary:
+The URLs you provided refer to historical pages regarding **Bisphenol A (BPA)** from the Centers for Disease Control and Prevention (CDC) website[1][2][3].
+
+### Summary of Information Regarding BPA
+*   **What is BPA?** Bisphenol A (BPA) is an industrial chemical used since the 1950s primarily to manufacture polycarbonate plastics (used in items like water bottles, compact discs, and safety equipment) and epoxy resins (used to coat the inside of metal food cans, bottle tops, and water supply lines)[4][1][5][2].
+*   **Human Exposure:** Exposure is widespread[5]. The CDC has historically used biomonitoring data (measuring BPA in urine) from the National Health and Nutrition Examination Survey (NHANES) to estimate population exposure levels[1][5].
+*   **Health Concerns:** While BPA has been shown to affect the reproductive systems of laboratory animals, the human health effects from low environmental exposures remain a subject of ongoing research and discussion[1][6].
+*   **Regulation and Safety:** Perspectives on the safety of BPA vary among agencies. For instance, the U.S. Food and Drug Administration (FDA) has historically stated that BPA is safe at the low levels found in some foods, though it continues to monitor research[4][7][2].
+
+*Note: CDC website content is frequently updated or reorganized. If you are looking for the most current information, it is recommended to search the [CDC website](https://www.cdc.gov) directly for "Bisphenol A" or "BPA" to find their latest fact sheets and guidance.*
+
+Sources:
+[1] [iiab.me](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7Wr7r4-XphsDQLplucRxgvOSIPdvvxHTpYgpsVYeqd2KHxEJi_m0m4vk5GGY__k9Zt00eZYzOc_T1dZptMEzpVRoXb4cPmU0YcPOPKGiKGdBHxCi9miATe9b9MFxxv4UzyH_KZWl8XJoQ5sqBY6ZR6XVL6cZ33dy49i2UQyO_AYBiM1x7NDjwWtrsYUfRJZ5eiw==)
+[2] [fmi.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEe8yncnGSb0jE975efEP58IhfsL78Htb9iDa6M-79fjcrSdCPkcGDklLLbQjb_ilv5UipaATdNS8pOcPU6PZqESC63KI8ENfiLA73EFxhmWDY_uP280LRKU-JKU2yIRf5o69-KTh6Lb2s18hY8349ZbBhzTjRmyLpfIyc9396b-dRYoeeMrA0FhX9kGA==)
+[3] [westburymethodistdayschool.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUrif-9Cd_-I_CaxV_1TkKq6qK_qJe4e12PhoM6Jf47OgbhcvAQ35tmbT5bj0JKtkq7kHAyrNMVc92F-Xbzqljub22dOy2Gkk7cH4jle6fvaoCTNjRPdYJEyWOdTOZ8D2XxRaxH2dHJRcP3H54OEi2QsGozc8=)
+[4] [mayoclinic.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHfW5Chyo_jwE0tDrrHvevl8ugsR-G8PjbtYmlHNz-wBMNd0SC91WCrKFS377w1lzIL1864wqFcNeFHhb_xh6FGV9mZJYDdrJQifHxDhadzmcxjDHF-zyBfbEqhEqL4CV0zVEfkWw9nnl0RasyKnubWeUocQUCTZ2NAfCzbzqiHcdV2i2RTGdDydy-0JpKuHJYTT632hVGg1yh8unpEwb0rhnO)
+[5] [nih.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtThtEGS0UK2dHXiMK7bEZgBC1taQj5Lyb9sVObXBxlFh7UiEC9d442kVyhJRITXDs2z5AwdCRH9GZySX8u9oP_32vMi-4HCcRjpgqR5EAonT4oS5uo_ax9voX8TMBuhcoQ13q8cml04BhMPLP0xqk)
+[6] [promoldplastics.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEVsMNIxCxjAPNgOO6tT_NxBL4Y7Rdn86vGGCL5KFqW7nOS6rS43OER2n4WcOwTY-iwf3GBxkuuDXSI_FFrVJDDGwJRsiabqhmwZxv2eJ_6a9_kZsb9ruQUxoq4fPPYcglLNLcq8ff9iJ9ihdimIMApqIaq9Q==)
+[7] [fda.gov](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHTgctkxNdQtgVKHIwovrgmCWxQe5id5vL4vi4TvOMulIdOY_v_6nvRups56H_oDS3R9X2jx_-_0aCpIFv7MzMPXFBjsF6PU3bTW60THqOnAHnwHQNwOIOpcmZTJEPppJ1RwTaDLUkNs6Fjj82bao_IocKONADcfsWvgXBgcEe14ZQpwiHRTjdRiYQcKXzDYt97-KUqrktf-zQe8o2CMS47WKaIeXpl9OI=)

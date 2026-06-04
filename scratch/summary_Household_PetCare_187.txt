@@ -1,0 +1,43 @@
+Created At: 2026-06-01T17:34:24Z
+Completed At: 2026-06-01T17:34:24Z
+File Path: `file:///C:/Users/MDMTGC/.gemini/antigravity/brain/7e96b97a-cc07-41c4-91f7-a1f9fdb6f7fa/.system_generated/worktrees/subagent-Household-and-Pet-Care-Reference-Researcher-ReferenceResearcher-aef9df8c/sources-needing-review.md`
+Total Lines: 162
+Total Bytes: 18258
+Showing lines 1 to 162
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: # Sources Needing Review
+2: 
+3: This file lists all references/sources flagged as needing review because they point to a generic homepage (e.g. `epa.gov/` rather than a specific paper) or returned an HTTP 404/410 / connection failure.
+4: 
+5: | Article Slug | Source # | Current URL | Reason Flagged |
+6: | --- | --- | --- | --- |
+7: | abs-plastic-filaments | 2 | https://www.usgs.gov/mission-areas/natural-resources/mineral-resources/science/rare-earth-elements | Dead Link (HTTP 404) |
+8: | aerosol-propellants | 1 | https://www.epa.gov/indoor-air-quality-iaq/indoor-air-facts-no-4-sick-building-syndrome | Dead Link (HTTP 404) |
+9: | aerosol-propellants | 3 | https://www.lung.org/clean-air/at-home/indoor-air-pollutants/cleaning-supplies | Dead Link (HTTP 404) |
+10: | air-duster-propellants | 1 | https://ntp.niehs.nih.gov/ | Generic Homepage |
+11: | air-freshener-phthalates | 1 | https://www.epa.gov/ | Generic Homepage |
+12: | air-freshener-phthalates | 2 | https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Dead Link (HTTP 404) |
+13: | aluminum-deodorant-safety | 3 | https://www.alz.org/alzheimer_s_dementia_risk_factors.asp | Dead Link (HTTP 404) |
+14: | ammonia-screen-cleaners | 1 | https://www.epa.gov/ | Generic Homepage |
+15: | ammonia-screen-cleaners | 2 | https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Dead Link (HTTP 404) |
+16: | ammonia-window-cleaner | 1 | https://www.osha.gov/ammonia | Dead 
+<truncated 15552 bytes>
+-pfas | 1 | https://www.epa.gov/ | Generic Homepage |
+146: | synthetic-turf-pfas | 2 | https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Dead Link (HTTP 404) |
+147: | talc-asbestos-risk | 1 | https://www.fda.gov/cosmetics/cosmetic-ingredients/lead-cosmetics | Dead Link (HTTP 404) |
+148: | talc-asbestos-risk | 4 | https://wwwn.cdc.gov/ATSDR/toxfaqs/index.asp | Dead Link (HTTP 404) |
+149: | talc-baby-powder | 1 | https://www.fda.gov/consumers/consumer-updates/talcum-powder-and-asbestos-frequently-asked-questions | Dead Link (HTTP 404) |
+150: | titanium-dioxide-toothpaste | 2 | https://www.fda.gov/consumers/consumer-updates/sunscreen-how-help-protect-your-skin-sun | Dead Link (HTTP 404) |
+151: | trichloroethylene-degreaser | 1 | https://www.epa.gov/ | Generic Homepage |
+152: | trichloroethylene-degreaser | 2 | https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Dead Link (HTTP 404) |
+153: | triclosan-antibacterial | 3 | https://www.ewg.org/the-toxic-twenty/triclosan | Dead Link (HTTP 404) |
+154: | unlined-copper-toxicity | 1 | https://www.who.int/publications/i/item/9789241546553 | Dead Link (HTTP 404) |
+155: | unlined-copper-toxicity | 3 | https://ods.od.nih.gov/factsheets/Copper-HealthProfessional/ | Connection Error |
+156: | vocs-paint-carpet | 1 | https://www.epa.gov/indoor-air-quality-iaq/guide-indoor-air-quality | Dead Link (HTTP 404) |
+157: | vocs-paint-carpet | 3 | https://www.atsdr.cdc.gov/sites/toxics_futures/vocs.html | Dead Link (HTTP 404) |
+158: | vocs-paint-carpet | 4 | https://silentspring.org/factsheets/carpets | Dead Link (HTTP 404) |
+159: | water-softener-sodium | 1 | https://www.epa.gov/ | Generic Homepage |
+160: | water-softener-sodium | 2 | https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Dead Link (HTTP 404) |
+161: | wool-dryer-balls | 1 | https://www.epa.gov/ | Generic Homepage |
+162: | wool-dryer-balls | 2 | https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Dead Link (HTTP 404) |
+The above content shows the entire, complete file contents of the requested file.

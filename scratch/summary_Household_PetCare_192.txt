@@ -1,0 +1,36 @@
+Created At: 2026-06-01T17:34:27Z
+Completed At: 2026-06-01T17:34:42Z
+
+				The command completed successfully.
+				Output:
+				Total target slugs from household & pet-care: 23
+Total flagged sources in household & pet-care: 42
+1. Slug: aerosol-propellants (household) | Source: 1 | URL: https://www.epa.gov/indoor-air-quality-iaq/indoor-air-facts-no-4-sick-building-syndrome | Reason: Dead Link (HTTP 404)
+2. Slug: aerosol-propellants (household) | Source: 3 | URL: https://www.lung.org/clean-air/at-home/indoor-air-pollutants/cleaning-supplies | Reason: Dead Link (HTTP 404)
+3. Slug: air-freshener-phthalates (household) | Source: 1 | URL: https://www.epa.gov/ | Reason: Generic Homepage
+4. Slug: air-freshener-phthalates (household) | Source: 2 | URL: https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Reason: Dead Link (HTTP 404)
+5. Slug: asbestos-legacy-materials (household) | Source: 1 | URL: https://www.epa.gov/ | Reason: Generic Homepage
+6. Slug: asbestos-legacy-materials (household) | Source: 2 | URL: https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Reason: Dead Link (HTTP 404)
+7. Slug: azo-dyes-clothing (household) | Source: 1 | URL: https://www.epa.gov/ | Reason: Generic Homepage
+8. Slug: azo-dyes-clothing (household) | Source: 2 | URL: https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Reason: Dead Link (HTTP 404)
+9. Slug: chemical-flea-collars (pet-care) | Source: 1 | URL: https://www.epa.gov/pets/flea-and-tick-products-pets | Reason: Dead Link (HTTP 404)
+10. Slug: chemical-flea-collars (pet-care) | Source: 3 | URL: https://www.petpoisonhelpline.com/poison/permethrin/ | Reason: Dead Link (HTTP 404)
+11. Slug: essential-oil-diffusers (pet-care) | Source: 1 | URL: https://www.petpoisonhelpline.com/poison/essential-oils/ | Reason: Dead Link (HTTP 404)
+12. Slug: fiberglass-mattress-safety (household) | Source: 1 | URL: https://www.epa.gov/ | Reason: Generic Homepage
+13. Slug: fiberglass-mattress-safety (household) | Source: 2 | URL: https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Reason: D
+<truncated 2622 bytes>
+much/ | Reason: Dead Link (HTTP 404)
+30. Slug: pvc-vinyl-flooring (household) | Source: 2 | URL: https://www.cdc.gov/biomonitoring/Phthalates_FactSheet.html | Reason: Dead Link (HTTP 404)
+31. Slug: pvc-vinyl-flooring (household) | Source: 3 | URL: https://www.niehs.nih.gov/health/topics/agents/phthalates/index.cfm | Reason: Dead Link (HTTP 404)
+32. Slug: pvc-vinyl-flooring (household) | Source: 4 | URL: https://silentspring.org/phthalates | Reason: Dead Link (HTTP 404)
+33. Slug: pvc-vinyl-pet-toys (pet-care) | Source: 1 | URL: https://www.ecocenter.org/our-work/healthy-stuff/healthy-stuff-blog/chemicals-in-pet-products | Reason: Dead Link (HTTP 404)
+34. Slug: pvc-vinyl-pet-toys (pet-care) | Source: 2 | URL: https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Reason: Dead Link (HTTP 404)
+35. Slug: radon-gas-basement (household) | Source: 1 | URL: https://www.epa.gov/ | Reason: Generic Homepage
+36. Slug: radon-gas-basement (household) | Source: 2 | URL: https://www.atsdr.cdc.gov/toxprofiledocs/index.html | Reason: Dead Link (HTTP 404)
+37. Slug: silica-clay-litter (pet-care) | Source: 3 | URL: https://www.acvs.org/small-animal/intestinal-foreign-bodies-cats | Reason: Dead Link (HTTP 404)
+38. Slug: synthetic-carpet-cat-trees (pet-care) | Source: 2 | URL: https://www.epa.gov/indoor-air-quality-iaq/indoor-air-quality-pet-health | Reason: Dead Link (HTTP 404)
+39. Slug: synthetic-carpet-cat-trees (pet-care) | Source: 3 | URL: https://ww2.arb.ca.gov/our-work/programs/air-quality-standards/formaldehyde-emission-standards-composite-wood-products | Reason: Dead Link (HTTP 404)
+40. Slug: vocs-paint-carpet (household) | Source: 1 | URL: https://www.epa.gov/indoor-air-quality-iaq/guide-indoor-air-quality | Reason: Dead Link (HTTP 404)
+41. Slug: vocs-paint-carpet (household) | Source: 3 | URL: https://www.atsdr.cdc.gov/sites/toxics_futures/vocs.html | Reason: Dead Link (HTTP 404)
+42. Slug: vocs-paint-carpet (household) | Source: 4 | URL: https://silentspring.org/factsheets/carpets | Reason: Dead Link (HTTP 404)
+
