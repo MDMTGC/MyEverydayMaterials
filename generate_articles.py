@@ -1019,7 +1019,7 @@ def generate_homepage(catalog_by_category, generated_counts, all_generated=None)
 
     <p><em>Maintained by {AUTHOR_NAME}. <a href="about">About &rarr;</a></em></p>"""
 
-    privacy_body = """    <h1>Privacy Policy</h1>
+    privacy_body = f"""    <h1>Privacy Policy</h1>
     <p><em>Last updated: May 2026</em></p>
 
     <p>Everyday Materials (&ldquo;we,&rdquo; &ldquo;us&rdquo;) respects your privacy. This policy explains what data we collect and how we use it.</p>
@@ -1046,7 +1046,7 @@ def generate_homepage(catalog_by_category, generated_counts, all_generated=None)
 
     <h2>Contact</h2>
 
-    <p>Questions about this policy? Email us at <strong>hello@myeverydaymaterials.com</strong>.</p>"""
+    <p>Questions about this policy? Email us at <strong>{AUTHOR_EMAIL}</strong>.</p>"""
 
     _pages = {
         "about.html": (
