@@ -564,9 +564,6 @@ def generate_article(article, all_articles, category_slug, related_map, slug_to_
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="{plain_title}" />
   <meta name="twitter:description" content="{plain_desc}" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <meta property="og:image" content="{SITE_URL}/images/hero.jpg" />
   {THEME_INIT_SCRIPT}
@@ -707,9 +704,6 @@ def generate_category_index(category_slug, generated_articles, target_count):
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="{cat_title}" />
   <meta name="twitter:description" content="{cat['description']}" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" />
   {THEME_INIT_SCRIPT}
   <link rel="stylesheet" href="/css/style.css?v={CSS_VERSION}" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -856,9 +850,6 @@ def generate_homepage(catalog_by_category, generated_counts, all_generated=None)
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="{home_title}" />
   <meta name="twitter:description" content="{home_desc}" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" />
   {THEME_INIT_SCRIPT}
   <link rel="stylesheet" href="/css/style.css?v={CSS_VERSION}" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -900,9 +891,6 @@ def generate_homepage(catalog_by_category, generated_counts, all_generated=None)
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   {{title_meta}}
   <link rel="canonical" href="{SITE_URL}/{{pagename}}" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   {THEME_INIT_SCRIPT}
   <link rel="stylesheet" href="/css/style.css?v={CSS_VERSION}" />
@@ -1036,9 +1024,9 @@ def generate_homepage(catalog_by_category, generated_counts, all_generated=None)
 
     <p>We receive a small commission if you purchase through our links. We do not receive any data about you personally from Amazon.</p>
 
-    <h2>Google Fonts</h2>
+    <h2>Fonts</h2>
 
-    <p>We load the Inter typeface from Google Fonts. When you visit our site, your browser makes a request to Google&rsquo;s servers to download the font files. Google&rsquo;s <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">privacy policy</a> applies to this request.</p>
+    <p>Our typefaces (Inter and Playfair Display) are hosted on our own servers, not loaded from a third party. Your browser never makes a request to Google or any other font provider when you visit this site.</p>
 
     <h2>Children&rsquo;s Privacy</h2>
 
@@ -1137,6 +1125,8 @@ def main():
         shutil.copy("404.html", public_dir / "404.html")
     if Path("images").exists():
         shutil.copytree("images", public_dir / "images", dirs_exist_ok=True)
+    if Path("fonts").exists():
+        shutil.copytree("fonts", public_dir / "fonts", dirs_exist_ok=True)
 
     js_dir = public_dir / "js"
     js_dir.mkdir(exist_ok=True)
