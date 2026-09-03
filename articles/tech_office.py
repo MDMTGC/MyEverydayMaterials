@@ -288,8 +288,8 @@ ARTICLES = \
     },
     {
         "slug": "ozone-laser-printers",
-        "title": "Laser Printer Emissions: Protecting Your Lungs from Toner Dust & VOCs",
-        "meta_description": "Learn about the ultra-fine particles (UFPs) and VOCs released by laser printers during the fusion process. Discover the respiratory risks, heavy metal exposure, and practical ventilation strategies for a healthier workspace.",
+        "title": "Laser Printer Emissions: Are They Bad for Your Lungs?",
+        "meta_description": "Laser printers release ultra-fine particles and VOCs that can reach deep into your lungs. Here's what the research shows and how to ventilate safely.",
         "verdict_level": "verdict-caution",
         "verdict_rating": "Caution &mdash; Emits UFPs and VOCs, impacts air quality",
         "verdict_summary": "Laser printers operate by a fusion process that uses heat and pressure to bond plastic-based toner powder to paper, a process known to release a complex mixture of ultra-fine particles (UFPs) and volatile organic compounds (VOCs) into the air. These UFPs, measuring less than 0.1 micrometers, are particularly concerning because their minuscule size allows them to bypass the upper respiratory system and deposit deep within the alveoli of the lungs, potentially leading to inflammation and oxidative stress. Studies, including those cited in the <i>International Journal of Hygiene and Environmental Health</i>, indicate that heavy printer use in small, unventilated offices can elevate indoor particulate levels to those comparable with high-traffic outdoor environments. Furthermore, toner powder often contains trace amounts of heavy metals, such as iron and copper, used as 'charge control agents,' which can contribute to localized oxidative stress if inhaled. Thus, careful printer placement and adequate ventilation are essential for maintaining healthy indoor air quality.",
