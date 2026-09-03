@@ -4,7 +4,6 @@ ARTICLES = \
 [
     {
         "slug": "pfas-forever-chemicals",
-        "featured": True,
         "personal_note": "Pan coatings were my entry point into household chemical research. Once I started pulling on that thread — what exactly is on a non-stick pan, where does it go when the pan is scratched or overheated — PFAS kept coming up. The \"forever chemical\" label stopped sounding like environmentalist hyperbole and started sounding chemically accurate.",
         "title": "PFAS in Your Kitchen: What &ldquo;Forever Chemicals&rdquo; Really Mean for Your Health",
         "meta_description": "Science-backed guide to PFAS forever chemicals in cookware and food packaging. Learn the real risks and discover safer alternatives.",
@@ -472,8 +471,8 @@ ARTICLES = \
     },
     {
         "slug": "silicone-bakeware-heat",
-        "title": "Silicone Bakeware: Safe at What Temperature?",
-        "meta_description": "Is silicone bakeware safe at high heat? How to identify quality food-grade silicone and when to use alternatives instead.",
+        "title": "Silicone Bakeware: How Hot Is Too Hot?",
+        "meta_description": "Food-grade silicone bakeware is stable up to about 425°F — above that, quality matters more than the material. Learn the twist test that spots cheap fillers.",
         "verdict_level": "verdict-safe",
         "verdict_rating": "Generally Safe &mdash; Quality matters more than material",
         "verdict_summary": "Food-grade, platinum-cured silicone is stable and inert up to about 425\u00b0F (220\u00b0C). Above this, some studies detect trace volatile compounds, though at levels below regulatory concern. The real issue is cheap, low-quality silicone that may contain fillers. Use the twist test: if white shows through when you twist it, it contains fillers and should be avoided.",
@@ -699,6 +698,7 @@ ARTICLES = \
     },
     {
         "slug": "teflon-ptfe-offgassing",
+        "featured": True,
         "personal_note": "This is the article that started everything. I noticed my non-stick pan was scratched and wanted to know whether that actually mattered. It does — and the answer sent me down a research path that eventually became this site. The short version: normal cooking temperatures are fine, but a scratched or overheated pan is a different story.",
         "title": "Teflon Off-Gassing: What Happens When Non-Stick Pans Overheat",
         "meta_description": "The science on PTFE (Teflon) off-gassing at high temperatures. When non-stick is safe, when it's dangerous, and what to use instead.",

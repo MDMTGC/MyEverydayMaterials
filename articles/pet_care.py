@@ -69,8 +69,8 @@ ARTICLES = \
     },
     {
         "slug": "melamine-pet-bowls",
-        "title": "Melamine Pet Bowls: Why Scratches Mean Serious Health Risks",
-        "meta_description": "Learn why scratched melamine pet bowls can leach toxic compounds like melamine and formaldehyde into food, leading to kidney issues and feline acne. Discover safe alternatives like stainless steel.",
+        "title": "Are Melamine Pet Bowls Safe? Why Scratches Are the Real Risk",
+        "meta_description": "Scratched melamine pet bowls can leach melamine and formaldehyde into food, linked to kidney damage and feline acne. Here's how to spot a bowl that needs replacing.",
         "verdict_level": "verdict-avoid",
         "verdict_rating": "Avoid \u2014 Leaches toxins when scratched, linked to kidney damage",
         "verdict_summary": "Melamine-formaldehyde resin, commonly found in many affordable pet bowls, can degrade with use, especially when scratched by pet teeth or dishwashers. These scratches create porous surfaces that leach melamine and formaldehyde into wet food or water, particularly at warmer temperatures. Melamine is a known kidney toxin, implicated in severe pet health crises, while formaldehyde is a carcinogen. Furthermore, these scratched surfaces become breeding grounds for bacteria, contributing to painful feline chin acne. Prioritizing non-porous, food-grade alternatives is crucial for pet safety.",
