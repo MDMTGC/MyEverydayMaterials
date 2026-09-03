@@ -9,6 +9,22 @@
 
   var THEME_KEY = 'mem-theme';
 
+  // ─── HTML Escaping ─────────────────────────────────────────────────────────
+  // search_index.json is generated at build time from our own trusted content,
+  // not user input, so this isn't exploitable today -- but escaping before any
+  // string gets joined into innerHTML is cheap, permanent insurance against a
+  // future data source (a scraped field, a user-submitted correction) landing
+  // in this same rendering path unsanitized.
+
+  function escapeHtml(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
   // ─── Theme System ──────────────────────────────────────────────────────────
 
   function getPreferredTheme() {
@@ -389,13 +405,13 @@
         var badgeCls = match.verdict.replace('verdict-', '');
         var badgeTxt = badgeCls.toUpperCase();
 
-        html += '<a href="' + match.url + '" class="search-result-item" data-index="' + j + '">' +
+        html += '<a href="' + escapeHtml(match.url) + '" class="search-result-item" data-index="' + j + '">' +
           '  <div class="search-result-meta">' +
-          '    <span class="search-result-category">' + match.category_name + '</span>' +
+          '    <span class="search-result-category">' + escapeHtml(match.category_name) + '</span>' +
           '    <span class="status-badge status-badge--' + badgeCls + '">' + badgeTxt + '</span>' +
           '  </div>' +
-          '  <div class="search-result-title">' + match.title + '</div>' +
-          '  <div class="search-result-desc">' + match.description + '</div>' +
+          '  <div class="search-result-title">' + escapeHtml(match.title) + '</div>' +
+          '  <div class="search-result-desc">' + escapeHtml(match.description) + '</div>' +
           '</a>';
       }
       resultsList.innerHTML = html;
