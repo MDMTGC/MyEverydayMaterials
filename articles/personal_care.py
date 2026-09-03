@@ -414,9 +414,9 @@ ARTICLES = \
         ]
     },
     {
-        "slug": "titanium-dioxide-toothpaste",
+        "slug": "chemical-sunscreens-oxybenzone",
         "title": "Chemical Sunscreens: Understanding Oxybenzone & Octinoxate Risks",
-        "meta_description": "Delve into the science behind chemical sunscreen filters like Oxybenzone and Octinoxate, their mechanism of action, and the emerging concerns regarding endocrine disruption, environmental impact on coral reefs, and skin absorption.",
+        "meta_description": "Chemical sunscreen filters like Oxybenzone and Octinoxate are linked to endocrine disruption, coral reef damage, and significant skin absorption.",
         "verdict_level": "verdict-caution",
         "verdict_rating": "Use with Caution &mdash; Potential endocrine disruptors and environmental toxins",
         "verdict_summary": "Oxybenzone (benzophenone-3) and Octinoxate (octyl methoxycinnamate) are common chemical UV filters that absorb and convert UV radiation into heat. They are readily absorbed into the bloodstream, detected in urine, blood, and breast milk, and classified as potential endocrine disruptors due to their ability to mimic hormones. Furthermore, both chemicals are known to contribute to coral bleaching and damage marine ecosystems, leading to bans in several regions. Opt for mineral sunscreens to mitigate these environmental and potential health concerns.",
@@ -767,9 +767,9 @@ ARTICLES = \
         ]
     },
     {
-        "slug": "talc-asbestos-risk",
+        "slug": "heavy-metals-cosmetics",
         "title": "Heavy Metals in Makeup: Uncovering Hidden Contaminants and Choosing a Safer Routine",
-        "meta_description": "Explore the risks of lead, cadmium, and other heavy metal contaminants in cosmetics, their health impacts, and expert tips for selecting safer, purer beauty products.",
+        "meta_description": "Explore the risks of lead, cadmium, and other heavy metal contaminants in cosmetics, and tips for selecting safer, purer beauty products.",
         "verdict_level": "verdict-caution",
         "verdict_rating": "Exercise Caution &mdash; Watch for undisclosed contaminants",
         "verdict_summary": "Heavy metals such as lead, cadmium, arsenic, and mercury are not intentionally added to cosmetics but can be present as unintended impurities in raw materials like mineral pigments (e.g., iron oxides, titanium dioxide) or talc. While levels are often low, repeated application, especially to lips or eyes, can lead to chronic exposure and systemic accumulation. These metals are linked to a range of serious health issues, including neurotoxicity (lead), kidney damage (cadmium, mercury), and potential carcinogenicity (arsenic, cadmium). Consumers should be aware that regulatory oversight varies, and independent testing is crucial for identifying cleaner products.",
@@ -836,9 +836,9 @@ ARTICLES = \
         ]
     },
     {
-        "slug": "microbeads-exfoliants",
+        "slug": "moah-petroleum-jelly",
         "title": "MOAH in Petroleum Jelly: Why Your Lip Balm Might Need a Closer Look",
-        "meta_description": "Discover the science behind MOAH (Mineral Oil Aromatic Hydrocarbons) in petroleum-based lip balms, their potential health risks upon ingestion, and effective, petroleum-free alternatives.",
+        "meta_description": "Discover the science behind MOAH (Mineral Oil Aromatic Hydrocarbons) in petroleum-based lip balms and effective, petroleum-free alternatives.",
         "verdict_level": "verdict-caution",
         "verdict_rating": "Use with Caution &mdash; Especially for products applied to lips",
         "verdict_summary": "Petroleum jelly (petrolatum) is a common occlusive agent, but products made from insufficiently refined petroleum can contain Mineral Oil Aromatic Hydrocarbons (MOAH). MOAH are a group of compounds, some of which are suspected carcinogens and endocrine disruptors. When used in lip balms, the risk of oral ingestion increases, leading to potential accumulation in human tissues, including the liver and lymph nodes. While highly refined, pharmaceutical-grade petrolatum should be free of MOAH, contamination levels can vary, prompting stricter regulations in regions like the EU compared to the US.",
@@ -909,6 +909,183 @@ ARTICLES = \
             [
                 "Journal of Hazardous Materials: &ldquo;Migration of mineral oil hydrocarbons from paper-based food packaging materials&rdquo;",
                 "https://www.sciencedirect.com/science/article/pii/S030438941001099X"
+            ]
+        ]
+    },
+    {
+        "slug": "titanium-dioxide-toothpaste",
+        "title": "Titanium Dioxide in Toothpaste: Should You Worry About the Whitening Pigment?",
+        "meta_description": "Titanium dioxide (E171) whitens toothpaste but was banned as a food additive in the EU over unresolved genotoxicity concerns.",
+        "published": "2026-09-03",
+        "reviewed": "2026-09-03",
+        "verdict_level": "verdict-caution",
+        "verdict_rating": "Caution &mdash; Genotoxicity in nanoparticle form can't be ruled out",
+        "verdict_summary": "Titanium dioxide (TiO2, listed as E171) is a whitening and opacifying pigment used in many toothpastes, especially whitening formulas. In 2021, the European Food Safety Authority concluded it could no longer be considered safe as a food additive because genotoxicity (DNA damage) from the nanoparticle fraction couldn't be ruled out, and the EU banned E171 in food in 2022. Toothpaste isn't swallowed the way food is, which lowers the practical exposure &mdash; but children reliably swallow some toothpaste, and the same nanoparticle concern applies. TiO2-free toothpastes are widely available and perform identically.",
+        "sections": [
+            {
+                "id": "what-is-titanium-dioxide",
+                "heading": "What Is Titanium Dioxide Doing in Your Toothpaste?",
+                "content": "<p>Titanium dioxide is a naturally occurring mineral, mined and refined into an extremely fine white pigment. It's one of the most effective whitening and opacifying agents known &mdash; a tiny amount makes a liquid or paste bright, opaque white. That's exactly why it shows up in whitening toothpastes, sunscreens, paints, and food coatings (it's the reason powdered donuts and some candy coatings look so uniformly white).</p><p>In toothpaste, TiO2 has no cleaning or therapeutic function &mdash; it's purely cosmetic, there to make the paste look bright white and to give whitening formulas their opaque appearance. A meaningful share of the particles in commercial-grade TiO2 fall in the nanoparticle range (under 100 nanometers), small enough to raise questions that don't apply to larger mineral particles.</p>"
+            },
+            {
+                "id": "health-risks",
+                "heading": "What the Research Shows",
+                "content": "<ul class=\"key-facts\">\n  <li><span class=\"fact-label\">EU food ban</span> In May 2021, EFSA's expert panel concluded titanium dioxide (E171) could no longer be considered safe as a food additive, specifically because genotoxicity couldn't be excluded for the nanoparticle fraction. The EU formally banned E171 in food starting in 2022.</li>\n  <li><span class=\"fact-label\">US status</span> The FDA has not banned titanium dioxide and maintains its status as a permitted color additive, though it has faced a citizen petition (2023) asking it to reconsider, citing the same EFSA findings.</li>\n  <li><span class=\"fact-label\">Toothpaste vs. food</span> Toothpaste is meant to be spit out, not swallowed, which meaningfully lowers systemic exposure compared to a food additive eaten daily. But young children swallow a portion of the toothpaste they use, and the genotoxicity concern is specifically about the nanoparticle fraction reaching cells &mdash; not about the total dose in a single use.</li>\n  <li><span class=\"fact-label\">No cleaning function</span> Unlike fluoride or abrasive silica, titanium dioxide contributes nothing to cleaning or cavity prevention. Its only role is cosmetic whiteness.</li>\n</ul>\n<div class=\"callout callout-warning\">\n  <strong>Regulatory divide:</strong> The EU has banned E171 in food on precautionary grounds; the US has not. Toothpaste sits in a regulatory gap between the two &mdash; a cosmetic/personal care product, not strictly food, but one that ends up partially ingested, especially by children.\n</div>"
+            },
+            {
+                "id": "what-to-do",
+                "heading": "What to Do About It",
+                "content": "<p><strong>Check the ingredient list.</strong> Titanium dioxide is listed by name or as \"CI 77891\" on ingredient panels &mdash; it's not hidden under a vague term.</p><p><strong>Whitening formulas are the main source.</strong> If TiO2-free matters to you, standard (non-whitening) toothpastes are far less likely to contain it, since whiteness isn't the point.</p><p><strong>Supervise young children's brushing.</strong> Using a pea-sized amount and teaching kids to spit rather than swallow reduces exposure to everything in toothpaste, not just TiO2 &mdash; including fluoride, which has its own dosing guidance for children.</p><p><strong>TiO2-free doesn't mean less effective.</strong> Fluoride and mild abrasives do the actual work of cleaning and cavity protection; titanium dioxide is not part of that mechanism, so removing it changes nothing about how well a toothpaste cleans.</p>"
+            }
+        ],
+        "alternatives": [
+            {
+                "name": "Hello Naturally Whitening Fluoride Toothpaste",
+                "type": "TiO2-Free Whitening Toothpaste",
+                "description": "A whitening formula that relies on gentle silica abrasives rather than titanium dioxide for its appearance and whitening action.",
+                "pros": "Fluoride for cavity protection, no titanium dioxide, no artificial dyes",
+                "cons": "Whitening effect is gradual rather than immediate",
+                "url": "https://www.amazon.com/s?k=Hello+Naturally+Whitening+Fluoride+Toothpaste+TiO2+Free&tag=myeverydaymat-20"
+            },
+            {
+                "name": "Tom's of Maine Fluoride Toothpaste",
+                "type": "Standard Fluoride Toothpaste",
+                "description": "A long-standing standard-formula toothpaste without titanium dioxide, whitening dyes, or artificial sweeteners.",
+                "pros": "Simple ingredient list, widely available, fluoride included",
+                "cons": "No whitening claim for those specifically wanting one",
+                "url": "https://www.amazon.com/s?k=Tom%27s+of+Maine+Fluoride+Toothpaste&tag=myeverydaymat-20"
+            }
+        ],
+        "sources": [
+            [
+                "EFSA &mdash; Safety assessment of titanium dioxide (E171) as a food additive (2021)",
+                "https://www.efsa.europa.eu/en/news/titanium-dioxide-e171-no-longer-considered-safe-when-used-food-additive"
+            ],
+            [
+                "European Commission &mdash; Regulation banning E171 in food",
+                "https://food.ec.europa.eu/food-safety/food-improvement-agents/additives/eu-register-food-additives_en"
+            ],
+            [
+                "FDA &mdash; Titanium Dioxide color additive status",
+                "https://www.fda.gov/industry/color-additive-inventories/summary-color-additives-use-united-states-foods-drugs-cosmetics-and-medical-devices"
+            ]
+        ]
+    },
+    {
+        "slug": "talc-asbestos-risk",
+        "title": "Talc in Cosmetics: The Asbestos Contamination Risk, Explained",
+        "meta_description": "Cosmetic-grade talc is sometimes mined near asbestos deposits. Here is what purity testing catches, what it can miss, and how to buy with confidence.",
+        "published": "2026-09-03",
+        "reviewed": "2026-09-03",
+        "verdict_level": "verdict-caution",
+        "verdict_rating": "Caution &mdash; Purity depends on sourcing and testing rigor",
+        "verdict_summary": "Talc, the softest known mineral, forms in geological deposits that can sit close to asbestos-bearing rock. When a talc deposit isn't carefully screened, trace asbestos fibers can end up in the finished mineral and, from there, in eyeshadow, blush, or body powder. Industry purity standards and FDA testing generally catch contaminated batches, but testing methodology has been a genuine point of dispute in litigation, and enforcement is inconsistent across brands and countries. This is a different, milder framing than talc in infant products (see our baby powder guide) &mdash; adult cosmetic use is occasional and topical rather than daily and inhaled by developing lungs, but the sourcing risk is the same underlying issue.",
+        "sections": [
+            {
+                "id": "geology-of-the-risk",
+                "heading": "Why Talc and Asbestos Share an Address",
+                "content": "<p>Talc (magnesium silicate) and asbestos minerals often form under similar geological conditions and can occur in the same or adjacent rock formations. That doesn't mean all talc is contaminated &mdash; most commercial talc deposits, when properly surveyed and mined, contain no detectable asbestos. But it does mean sourcing and testing matter: a mine that isn't carefully vetted can yield talc ore with trace asbestos fibers mixed in.</p><p>This geological overlap is the entire basis of the concern. It's not that talc itself is inherently hazardous &mdash; pure talc is considered safe for cosmetic use &mdash; it's that \"talc\" as a raw material can carry an asbestos passenger if the supply chain doesn't screen for it.</p>"
+            },
+            {
+                "id": "testing-and-litigation",
+                "heading": "What Testing Catches &mdash; and What It's Missed",
+                "content": "<ul class=\"key-facts\">\n  <li><span class=\"fact-label\">FDA testing</span> In 2019 and 2020, FDA sampling of cosmetic talc products found asbestos in some tested products and not in others &mdash; results were inconsistent across brands, not a blanket finding either way.</li>\n  <li><span class=\"fact-label\">Testing method dispute</span> The standard industry test (polarized light microscopy, PLM) has been criticized as less sensitive than transmission electron microscopy (TEM) for detecting very fine asbestos fibers, a central issue in years of product liability litigation.</li>\n  <li><span class=\"fact-label\">Litigation history</span> Talc-based baby powder litigation (primarily against Johnson &amp; Johnson) led the company to discontinue talc baby powder in North America in 2020 and globally in 2023, switching to cornstarch-based formulas.</li>\n  <li><span class=\"fact-label\">Inhalation is the exposure route that matters</span> The health concern (mesothelioma, lung disease) is tied to inhaling asbestos fibers, which makes loose powders (that aerosolize) more relevant than pressed powders like eyeshadow or blush, which shed far less airborne dust.</li>\n</ul>\n<div class=\"callout callout-warning\">\n  <strong>Inconsistent, not universal:</strong> This isn't a case where every talc product on shelves is contaminated. It's a case where sourcing and testing rigor varies by manufacturer, and there's no simple visual way to tell which is which.\n</div>"
+            },
+            {
+                "id": "what-to-do",
+                "heading": "How to Reduce the Uncertainty",
+                "content": "<p><strong>Favor talc-free formulas where the function allows it.</strong> Mica, rice starch, and cornstarch-based powders replicate the silky texture of talc in most face and body powders without the sourcing question.</p><p><strong>Prioritize loose powders' sourcing over pressed products.</strong> Since inhalation is the actual risk mechanism, a loose setting powder or body powder is a more relevant place to seek talc-free alternatives than a pressed eyeshadow, which sheds comparatively little airborne dust.</p><p><strong>Look for brands that publish third-party testing.</strong> Some cosmetics manufacturers now publish batch-level asbestos testing results (often TEM-based) as a trust signal &mdash; that transparency is a reasonable proxy for a more rigorously screened supply chain.</p><p><strong>For infants specifically, avoid talc entirely.</strong> See our dedicated guide on talc baby powder &mdash; the calculus is meaningfully different for developing infant lungs and daily use.</p>"
+            }
+        ],
+        "alternatives": [
+            {
+                "name": "RMS Beauty Living Luminizer",
+                "type": "Talc-Free Cosmetic Powder",
+                "description": "A cream-based luminizer/highlighter that avoids loose talc powder entirely while serving a similar cosmetic function.",
+                "pros": "No talc, no aerosolized powder, widely available",
+                "cons": "Different application technique than pressed or loose powder",
+                "url": "https://www.amazon.com/s?k=RMS+Beauty+Living+Luminizer+Talc+Free&tag=myeverydaymat-20"
+            },
+            {
+                "name": "Honest Beauty Talc-Free Setting Powder",
+                "type": "Talc-Free Setting Powder",
+                "description": "A loose setting powder formulated with rice starch instead of talc, avoiding the sourcing question for a product that's typically applied loosely and can aerosolize.",
+                "pros": "Talc-free, similar silky texture, budget-friendly",
+                "cons": "Setting performance can vary by skin type",
+                "url": "https://www.amazon.com/s?k=Honest+Beauty+Talc+Free+Setting+Powder&tag=myeverydaymat-20"
+            }
+        ],
+        "sources": [
+            [
+                "FDA &mdash; Testing cosmetics for asbestos (2019-2020 results)",
+                "https://www.fda.gov/cosmetics/potential-contaminants-cosmetics/talc"
+            ],
+            [
+                "FDA &mdash; Talc Q&A",
+                "https://www.fda.gov/cosmetics/cosmetic-ingredients/talc"
+            ],
+            [
+                "Reuters &mdash; Johnson & Johnson talc litigation and product discontinuation",
+                "https://www.reuters.com/legal/litigation/"
+            ]
+        ]
+    },
+    {
+        "slug": "microbeads-exfoliants",
+        "title": "Microbeads in Exfoliants: Why They're Banned and What Replaced Them",
+        "meta_description": "Plastic microbeads in face washes and scrubs were banned in the US in 2015 for polluting waterways. Learn what replaced them.",
+        "published": "2026-09-03",
+        "reviewed": "2026-09-03",
+        "verdict_level": "verdict-avoid",
+        "verdict_rating": "Avoid &mdash; Banned in the US, still present in some imported products",
+        "verdict_summary": "Microbeads are tiny spheres of solid plastic (usually polyethylene) once common in rinse-off exfoliating scrubs and face washes for their gentle, uniform abrasive texture. They're small enough to pass straight through water treatment plants, entering rivers, lakes, and oceans, where they're mistaken for food by fish and other wildlife and persist for decades. The US banned microbeads in rinse-off cosmetics under the Microbead-Free Waters Act of 2015, with the UK, Canada, and other countries following with similar bans. Most current US products already use natural alternatives &mdash; the main remaining risk is older stock or products imported from countries without a ban.",
+        "sections": [
+            {
+                "id": "what-are-microbeads",
+                "heading": "What Microbeads Are and Why They Were Used",
+                "content": "<p>Microbeads are manufactured plastic particles, typically under 5 millimeters and often much smaller, made from polyethylene or polypropylene. Cosmetic chemists liked them because they're perfectly uniform in size and shape &mdash; unlike natural exfoliants (ground shells, seeds, or sugar), which vary in sharpness and can feel harsh or scratchy, microbeads give a consistently gentle scrub.</p><p>That same property &mdash; small, uniform, solid, and inert &mdash; is exactly what makes them a durable environmental pollutant once they go down the drain.</p>"
+            },
+            {
+                "id": "why-they-were-banned",
+                "heading": "The Environmental Case That Led to a Ban",
+                "content": "<ul class=\"key-facts\">\n  <li><span class=\"fact-label\">They bypass water treatment</span> Municipal wastewater treatment isn't designed to filter particles this small; a significant share of microbeads that go down the drain pass straight through and into waterways.</li>\n  <li><span class=\"fact-label\">Wildlife ingestion</span> Fish, shellfish, and other aquatic organisms mistake microbeads for food or plankton. Studies documented microbeads accumulating in the digestive tracts of fish sampled from the Great Lakes and other waterways, a key piece of evidence cited in the push for a US ban.</li>\n  <li><span class=\"fact-label\">Legal response</span> The Microbead-Free Waters Act of 2015 banned the manufacture of rinse-off cosmetics containing plastic microbeads starting in 2017, with a sales phase-out completing by mid-2018. The UK banned microbeads in rinse-off products in 2018; Canada, New Zealand, and several other countries have similar bans.</li>\n  <li><span class=\"fact-label\">Persistence</span> Unlike organic exfoliants, plastic microbeads don't biodegrade on any meaningful timescale &mdash; once in the environment, they persist essentially indefinitely, breaking down only into smaller microplastic fragments.</li>\n</ul>\n<div class=\"callout callout-info\">\n  <strong>Largely a legacy issue in the US:</strong> Because of the 2015 ban, current mainstream US cosmetic products are very unlikely to contain plastic microbeads. The remaining risk is old stock, small imported brands, or products purchased from countries without an equivalent ban.\n</div>"
+            },
+            {
+                "id": "what-to-do",
+                "heading": "How to Check What's in Your Scrub",
+                "content": "<p><strong>Check the ingredient list for polyethylene or polypropylene</strong> as a listed ingredient in a rinse-off scrub &mdash; that's the giveaway for plastic microbeads rather than a natural exfoliant.</p><p><strong>Natural alternatives are now standard.</strong> Ground walnut shells, apricot kernel powder, jojoba wax beads (biodegradable), sugar, and salt have all replaced plastic microbeads in reformulated products since the ban.</p><p><strong>Be more cautious with imported or very old products.</strong> A scrub purchased years ago, or imported from a country without a microbead ban, is more likely to still contain them than anything currently sold by a major US brand.</p>"
+            }
+        ],
+        "alternatives": [
+            {
+                "name": "St. Ives Fresh Skin Apricot Scrub",
+                "type": "Natural Exfoliant",
+                "description": "A long-standing exfoliating scrub reformulated to use crushed walnut shell powder instead of plastic microbeads.",
+                "pros": "Widely available, plastic-free exfoliant, affordable",
+                "cons": "Walnut shell particles can feel more textured than plastic beads did",
+                "url": "https://www.amazon.com/s?k=St+Ives+Fresh+Skin+Apricot+Scrub&tag=myeverydaymat-20"
+            },
+            {
+                "name": "Burt's Bees Peach & Willowbark Deep Pore Scrub",
+                "type": "Natural Exfoliant",
+                "description": "A rinse-off facial scrub using natural exfoliating particles rather than plastic microbeads.",
+                "pros": "Plastic-free, gentle on skin, natural ingredient list",
+                "cons": "Exfoliating strength is milder than some synthetic-bead scrubs were",
+                "url": "https://www.amazon.com/s?k=Burt%27s+Bees+Peach+Willowbark+Deep+Pore+Scrub&tag=myeverydaymat-20"
+            }
+        ],
+        "sources": [
+            [
+                "US Microbead-Free Waters Act of 2015 (full text)",
+                "https://www.congress.gov/bill/114th-congress/house-bill/1321"
+            ],
+            [
+                "EPA &mdash; Microplastics and microbeads",
+                "https://www.epa.gov/trash-free-waters/microplastics"
+            ],
+            [
+                "NOAA &mdash; Microplastics in the marine environment",
+                "https://oceanservice.noaa.gov/facts/microplastics.html"
             ]
         ]
     }

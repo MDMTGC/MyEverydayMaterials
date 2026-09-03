@@ -798,6 +798,69 @@
     "verdict": "Blades and backing often contain PFAS to improve extrusion and weather resistance.",
     "status": "AVOID",
     "alternative": "Native Groundcovers"
+  },
+  {
+    "slug": "chemical-sunscreens-oxybenzone",
+    "material_name": "Oxybenzone & Octinoxate",
+    "category": "personal-care",
+    "verdict": "Chemical UV filters linked to endocrine disruption, skin absorption, and coral reef damage.",
+    "status": "CAUTION",
+    "alternative": "Mineral Sunscreen (Zinc Oxide)"
+  },
+  {
+    "slug": "heavy-metals-cosmetics",
+    "material_name": "Heavy Metals in Cosmetics",
+    "category": "personal-care",
+    "verdict": "Lead, cadmium, and other heavy metals can appear as unintended impurities in cosmetic pigments and talc.",
+    "status": "CAUTION",
+    "alternative": "Third-Party Tested Clean Cosmetics"
+  },
+  {
+    "slug": "moah-petroleum-jelly",
+    "material_name": "MOAH in Petroleum Jelly",
+    "category": "personal-care",
+    "verdict": "Mineral oil aromatic hydrocarbons in petroleum-based lip balms may pose ingestion risks with repeated use.",
+    "status": "CAUTION",
+    "alternative": "Plant-Based Lip Balm"
+  },
+  {
+    "slug": "neodymium-magnets-hardware",
+    "material_name": "Neodymium Magnets",
+    "category": "tech",
+    "verdict": "Extremely powerful rare-earth magnets in gadgets and accessories pose severe ingestion and pinch-injury risks, especially for children.",
+    "status": "CAUTION",
+    "alternative": "Magnet-Free Hardware"
+  },
+  {
+    "slug": "thermal-paper-bpa-bps",
+    "material_name": "Thermal Paper Receipts",
+    "category": "tech",
+    "verdict": "Receipt and label paper coated with BPA or BPS that absorbs through skin on contact.",
+    "status": "AVOID",
+    "alternative": "Digital/Emailed Receipts"
+  },
+  {
+    "slug": "tpe-soft-touch-coatings",
+    "material_name": "TPE Soft-Touch Coatings",
+    "category": "tech",
+    "verdict": "Rubberized soft-touch coatings on peripherals that can degrade into a sticky residue over time.",
+    "status": "CAUTION",
+    "alternative": "Hard-Shell Peripherals"
+  },
+  {
+    "slug": "blue-light-circadian-rhythm",
+    "material_name": "Blue Light (LED Screens)",
+    "category": "tech",
+    "verdict": "High-energy visible light from screens can suppress melatonin production and disrupt sleep.",
+    "status": "CAUTION",
+    "alternative": "Blue Light Filtering Glasses/Screens"
+  },
+  {
+    "slug": "pfas-data-cables",
+    "material_name": "PFAS in Data Cables",
+    "category": "tech",
+    "verdict": "Fluoropolymer (FEP) insulation used in high-speed data cables raises forever-chemical environmental concerns.",
+    "status": "CAUTION",
+    "alternative": "Low Smoke Zero Halogen (LSZH) Cables"
   }
-
 ]
