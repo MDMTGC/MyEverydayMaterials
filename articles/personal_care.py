@@ -71,7 +71,7 @@ ARTICLES = \
     {
         "slug": "phthalates-cosmetics",
         "title": "Phthalates in &ldquo;Fragrance&rdquo;: Unmasking Hidden Endocrine Disruptors in Everyday Products",
-        "meta_description": "Learn about phthalates, their pervasive presence in products due to the 'fragrance' loophole, and their link to endocrine disruption and reproductive health issues.",
+        "meta_description": "Learn about phthalates, their pervasive presence in products due to the 'fragrance' loophole, and their link to endocrine disruption.",
         "verdict_level": "verdict-avoid",
         "verdict_rating": "Avoid &mdash; Potent endocrine disruptors with widespread health concerns",
         "verdict_summary": "Phthalates are a group of chemicals used to make plastics more flexible and as solvents or fixatives in many consumer products. They are notorious for being hidden within the generic 'fragrance' ingredient on labels, making avoidance challenging. Phthalates are potent endocrine disruptors, meaning they interfere with the body's hormonal system. Exposure is linked to reproductive and developmental issues, respiratory problems like asthma, and even certain cancers, prompting calls for stricter regulation and transparency.",
@@ -347,7 +347,7 @@ ARTICLES = \
     {
         "slug": "aluminum-deodorant-safety",
         "title": "Aluminum Salts in Antiperspirants: Blocking Sweat and Raising Health Questions",
-        "meta_description": "Explore the science behind aluminum salts in antiperspirants, their mechanism for sweat reduction, and the ongoing debate about their potential health impacts, including links to breast cancer and Alzheimer's disease.",
+        "meta_description": "Explore the science behind aluminum salts in antiperspirants and the ongoing debate over links to breast cancer and Alzheimer's disease.",
         "verdict_level": "verdict-caution",
         "verdict_rating": "Use with Caution &mdash; Debated links to serious diseases",
         "verdict_summary": "Aluminum salts work by forming a temporary plug in sweat ducts, reducing wetness. While highly effective, concerns persist regarding potential absorption through the skin. Although major health organizations generally consider them safe, some studies have investigated debated links to breast cancer and Alzheimer's disease, suggesting a need for continued research and a cautious approach, especially for frequent users or those with compromised skin.",
@@ -485,7 +485,7 @@ ARTICLES = \
     {
         "slug": "fragrance-parfum-chemicals",
         "title": "Synthetic Musks in Your Products: Are Fragrances Hiding More Than Scent?",
-        "meta_description": "Uncover the truth about synthetic musks like Galaxolide and Tonalide, common fragrance ingredients. Learn about their widespread presence, potential for bioaccumulation, and emerging concerns as endocrine disruptors and environmental pollutants.",
+        "meta_description": "Uncover the truth about synthetic musks like Galaxolide and Tonalide, common fragrance ingredients linked to bioaccumulation and endocrine disruption.",
         "verdict_level": "verdict-caution",
         "verdict_rating": "Use with Caution &mdash; Persistent, bioaccumulative, and potential endocrine disruptors",
         "verdict_summary": "Galaxolide and Tonalide are highly prevalent synthetic musks used in a vast array of fragranced personal care and cleaning products. These chemicals are lipophilic, meaning they accumulate in fatty tissues, and have been widely detected in human blood, breast milk, and aquatic environments. Research indicates their potential as endocrine disruptors, interfering with hormone signaling. Their persistence in both the environment and human body raises concerns about long-term exposure and calls for a cautious approach to fragranced products.",
@@ -554,7 +554,7 @@ ARTICLES = \
     {
         "slug": "pfas-dental-floss",
         "title": "PFAS in Dental Floss: Unraveling the &ldquo;Forever Chemical&rdquo; Risk",
-        "meta_description": "Discover how PFAS 'forever chemicals' are used in some gliding dental flosses and the serious health risks associated with these persistent compounds, including cancer and immune disruption. Learn how to choose safer, PFAS-free alternatives.",
+        "meta_description": "Discover how PFAS 'forever chemicals' are used in some gliding dental flosses, the health risks involved, and how to choose safer, PFAS-free alternatives.",
         "verdict_level": "verdict-avoid",
         "verdict_rating": "Avoid &mdash; Persistent chemicals linked to severe health issues",
         "verdict_summary": "PFAS (per- and polyfluoroalkyl substances) are a class of 'forever chemicals' known for their persistence in the environment and human body, and their links to severe health problems including cancer, thyroid disease, immune suppression, and reproductive issues. Certain types of dental floss, particularly those marketed for 'gliding' smoothly, can be treated with PTFE (a type of PFAS) to enhance slipperiness. This direct oral exposure offers a route for PFAS ingestion, contributing to overall body burden. Given the significant and well-documented risks, opting for PFAS-free dental floss is a crucial step towards reducing exposure.",
@@ -631,7 +631,7 @@ ARTICLES = \
     {
         "slug": "methylene-glycol-hair",
         "title": "Hair Relaxers & Straighteners: Unpacking the Endocrine Disruptor Link",
-        "meta_description": "Examine the chemical composition of hair relaxers and straighteners, focusing on endocrine-disrupting chemicals like phthalates and formaldehyde. Learn about their serious health risks, including increased incidence of uterine fibroids, breast cancer, and ovarian cancer, particularly for women of color.",
+        "meta_description": "Hair relaxers and straighteners contain endocrine-disrupting chemicals like phthalates and formaldehyde, linked to uterine fibroids and cancer risk.",
         "verdict_level": "verdict-avoid",
         "verdict_rating": "Avoid &mdash; Strong links to uterine fibroids and increased cancer risk",
         "verdict_summary": "Chemical hair relaxers and straighteners contain a cocktail of endocrine-disrupting chemicals (EDCs) such as phthalates, parabens, and formaldehyde-releasing agents. These EDCs can mimic or interfere with natural hormones, leading to significant adverse health outcomes. Accumulating scientific evidence, particularly from large-scale studies, has linked frequent and long-term use of these products to an increased risk of uterine fibroids, breast cancer, and ovarian cancer, with a disproportionate impact on women of color. Given these serious and often irreversible health implications, minimizing exposure is strongly advised.",
@@ -700,7 +700,7 @@ ARTICLES = \
     {
         "slug": "ppd-hair-dye",
         "title": "Coal Tar Dyes (PPD) in Hair Color: Unmasking Allergic Reactions and Exploring Safer Choices",
-        "meta_description": "A science-backed guide to para-phenylenediamine (PPD) in hair dyes, its role in severe allergic contact dermatitis, and how to choose safer alternatives for vibrant hair color.",
+        "meta_description": "A science-backed guide to PPD in hair dyes, its role in severe allergic contact dermatitis, and how to choose safer alternatives.",
         "verdict_level": "verdict-caution",
         "verdict_rating": "Use with Caution &mdash; Potential for severe allergic reactions",
         "verdict_summary": "Para-phenylenediamine (PPD), a common coal tar dye in permanent hair colors, is a potent sensitizer. When applied, PPD penetrates the skin and undergoes oxidation, forming reactive intermediates that bind to skin proteins. This process can trigger an immune response, leading to allergic contact dermatitis characterized by severe itching, redness, swelling, and blistering, which can sometimes be life-threatening. Repeated exposure after sensitization can cause progressively worse reactions, necessitating careful patch testing and consideration of PPD-free alternatives.",

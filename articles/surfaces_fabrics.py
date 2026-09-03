@@ -5,7 +5,7 @@ ARTICLES = \
     {
         "slug": "flame-retardants-foam",
         "title": "Flame Retardants in Sofas: Understanding the Hidden Risks and Safer Choices",
-        "meta_description": "Dive deep into the science behind flame retardants in polyurethane foam furniture. Learn about potential health risks and discover healthier, low-toxin sofa alternatives for your home.",
+        "meta_description": "Dive into the science behind flame retardants in polyurethane foam furniture, the health risks, and low-toxin sofa alternatives.",
         "verdict_level": "verdict-caution",
         "verdict_rating": "Exercise Caution &mdash; Chemicals can migrate and accumulate",
         "verdict_summary": "Many polyurethane foam sofas contain organophosphate flame retardants (OFRs) or older brominated flame retardants (BFRs) that are not chemically bonded, allowing them to migrate into household dust and air. Exposure occurs through inhalation and ingestion of this contaminated dust. These chemicals are linked to endocrine disruption, neurodevelopmental issues in children, and potential cancer risks, impacting thyroid function and reproductive health. Due to their pervasive nature and continuous off-gassing, understanding these risks is crucial for mitigating household exposure.",
@@ -70,7 +70,7 @@ ARTICLES = \
     {
         "slug": "pvc-vinyl-flooring",
         "title": "Phthalates in Vinyl Flooring: Unpacking the Risks of PVC and Safer Floor Choices",
-        "meta_description": "Explore the science of phthalate plasticizers in vinyl (PVC) flooring, their migration into your home, and the associated health risks. Discover safer, phthalate-free flooring alternatives.",
+        "meta_description": "Explore the science of phthalate plasticizers in vinyl (PVC) flooring, their migration into your home, and safer phthalate-free alternatives.",
         "verdict_level": "verdict-caution",
         "verdict_rating": "Exercise Caution &mdash; Chemicals can off-gas and accumulate in dust",
         "verdict_summary": "Vinyl (PVC) flooring often contains phthalate plasticizers like DEHP and DnBP, which are not chemically bound to the plastic and can leach into the indoor environment. These chemicals migrate into household dust and air, leading to human exposure through inhalation and ingestion. Phthalates are known endocrine disruptors, meaning they interfere with hormone systems, and are linked to reproductive issues, developmental problems, and respiratory conditions like asthma and allergies. Older vinyl flooring or products from unregulated markets may contain higher levels of these problematic phthalates, posing a continuous source of indoor pollution.",
@@ -139,7 +139,7 @@ ARTICLES = \
     {
         "slug": "vocs-paint-carpet",
         "title": "VOCs and SVOCs in Synthetic Carpeting: Clearing the Air for a Healthier Home",
-        "meta_description": "Examine the VOCs and SVOCs released from synthetic carpets, their impact on indoor air quality, and associated health risks. Discover natural, low-emission carpeting and flooring alternatives.",
+        "meta_description": "Examine the VOCs and SVOCs released from synthetic carpets, their impact on indoor air quality, and low-emission flooring alternatives.",
         "verdict_level": "verdict-caution",
         "verdict_rating": "Exercise Caution &mdash; Off-gassing and dust accumulation are concerns",
         "verdict_summary": "Synthetic carpets, particularly when new, are known to emit Volatile Organic Compounds (VOCs) such as 4-PCH, styrene, and toluene, originating from the fibers, backing materials, and adhesives. These VOCs contribute to 'new carpet smell' and can cause acute symptoms like respiratory irritation, headaches, and dizziness. Additionally, carpets can harbor Semi-Volatile Organic Compounds (SVOCs), including phthalates and flame retardants, which accumulate in household dust and lead to long-term exposure. This continuous off-gassing and dust accumulation can exacerbate allergies and asthma, making synthetic carpets a significant indoor air quality concern.",
@@ -273,7 +273,7 @@ ARTICLES = \
     {
         "slug": "formaldehyde-mdf-furniture",
         "title": "Particle Board Furniture: Unmasking Formaldehyde and Choosing Healthier Options",
-        "meta_description": "Examine the pervasive issue of formaldehyde emissions from particle board furniture. Discover the health risks and practical ways to furnish your home with safer, low-VOC alternatives.",
+        "meta_description": "Examine formaldehyde emissions from particle board furniture, the health risks, and practical ways to furnish your home with low-VOC alternatives.",
         "verdict_level": "verdict-avoid",
         "verdict_rating": "Avoid Where Possible &mdash; Often a significant source of formaldehyde",
         "verdict_summary": "Particle board furniture, widely used for its affordability, is a major contributor to indoor formaldehyde emissions due to the urea-formaldehyde (UF) resins used as binders. Formaldehyde, classified as a human carcinogen by the IARC, off-gasses from these resins, leading to respiratory problems, eye and skin irritation, and potentially more severe long-term health effects. The emission process can be exacerbated by heat and humidity, making furniture a continuous source of exposure for years. Choosing furniture made with solid wood, metal, or certified low-emission engineered wood is crucial for minimizing this pervasive chemical risk.",
@@ -346,7 +346,7 @@ ARTICLES = \
     {
         "slug": "microplastics-synthetic-laundry",
         "title": "Synthetic Bedding: Unpacking Microfiber Release and Chemical Exposures for Restful Sleep",
-        "meta_description": "Examine the risks of microfibers and chemical additives in synthetic bedding. Learn about their environmental impact, potential health effects, and discover natural, safer sleep alternatives.",
+        "meta_description": "Examine the risks of microfibers and chemical additives in synthetic bedding, their environmental impact, and safer natural sleep alternatives.",
         "verdict_level": "verdict-caution",
         "verdict_rating": "Caution &mdash; Sheds microplastics and may contain harmful chemical treatments",
         "verdict_summary": "Synthetic bedding, typically made from polyester or nylon, sheds microfibers that contribute to environmental pollution and can be inhaled. Beyond microplastics, these materials are often treated with a cocktail of chemicals, including flame retardants, dyes, and sometimes PFAS for stain or water resistance. Flame retardants are linked to endocrine disruption and developmental neurotoxicity, while PFAS are 'forever chemicals' with numerous adverse health effects. These exposures occur through skin contact, inhalation, and ingestion of dust, posing long-term health concerns.",
@@ -423,7 +423,7 @@ ARTICLES = \
     {
         "slug": "aerosol-propellants",
         "title": "Aerosol Sprays: Why Butane and Propane Propellants Pose Indoor Air Risks",
-        "meta_description": "Discover how aerosol propellants like butane and propane disperse harmful ultra-fine particles and VOCs, impacting indoor air quality and lung health. Choose safer non-aerosol options.",
+        "meta_description": "Discover how aerosol propellants like butane and propane disperse ultra-fine particles and VOCs that impact indoor air and lung health.",
         "verdict_level": "verdict-caution",
         "verdict_rating": "Caution \u2014 Aerosol sprays disperse ultra-fine particles and VOCs deep into the lungs; prioritize non-aerosol delivery systems.",
         "verdict_summary": "Aerosol sprays, commonly found in air fresheners and cleaners, utilize liquefied petroleum gases like butane and propane as propellants to dispense products. This mechanism, however, releases a fine mist of \"respirable\" particles that can bypass the body's natural defenses and penetrate deep into the lungs, potentially causing irritation and inflammation. Additionally, these aerosols significantly elevate indoor concentrations of Volatile Organic Compounds (VOCs), contributing to poor air quality and potential immediate symptoms like headaches and dizziness.",
@@ -488,7 +488,7 @@ ARTICLES = \
     {
         "slug": "perchloroethylene-dry-cleaning",
         "title": "Perchloroethylene (PERC): The Hidden Neurotoxin in Your Dry-Cleaned Clothes",
-        "meta_description": "Discover the risks of Perchloroethylene (PERC), a common dry cleaning solvent classified as a probable carcinogen and neurotoxin, and learn about safer dry cleaning methods.",
+        "meta_description": "Discover the risks of Perchloroethylene (PERC), a common dry cleaning solvent classified as a probable carcinogen and neurotoxin.",
         "verdict_level": "verdict-caution",
         "verdict_rating": "CAUTION \u2014 A known neurotoxin and 'probable' carcinogen that off-gasses from freshly dry-cleaned clothes.",
         "verdict_summary": "Perchloroethylene (PERC) is the dominant solvent used in approximately 80% of conventional dry cleaning establishments. While effective for cleaning, PERC is a recognized neurotoxin, causing acute symptoms like dizziness, headaches, and impaired coordination upon inhalation. The U.S. Environmental Protection Agency (EPA) has classified PERC as a \"probable human carcinogen,\" linking it to various cancers, including bladder and kidney cancer. Crucially, PERC can off-gas from freshly cleaned garments for days, meaning exposure continues even after items are brought home, posing a risk to indoor air quality.",

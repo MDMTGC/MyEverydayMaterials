@@ -5,7 +5,7 @@ ARTICLES = \
     {
         "slug": "bfrs-electronics",
         "title": "Flame Retardants in Your Tech: Unpacking the Hidden Chemicals in Electronic Casings",
-        "meta_description": "Discover the risks of organohalogen flame retardants (OFRs) like TBBPA in electronic enclosures. Learn how these chemicals migrate into your home and what steps you can take for a safer office environment.",
+        "meta_description": "Discover the risks of organohalogen flame retardants like TBBPA in electronic enclosures, and how they migrate into your home.",
         "verdict_level": "verdict-caution",
         "verdict_rating": "Caution &mdash; Chemicals can migrate into dust",
         "verdict_summary": "Organohalogen Flame Retardants (OFRs), such as TBBPA, are commonly integrated into plastic electronic enclosures to meet fire safety standards. However, these chemicals are not chemically bound and can 'leach' into household dust over time, particularly as devices heat up during use. Exposure through inhalation or ingestion of this chemical-laden dust has been linked to endocrine and thyroid disruption, as TBBPA is structurally similar to thyroxine and can interfere with crucial hormone signaling. The pervasive presence of OFRs in everyday electronics contributes significantly to the indoor chemical burden, necessitating mindful practices to minimize exposure.",
@@ -358,7 +358,7 @@ ARTICLES = \
     {
         "slug": "heavy-metals-keyboards",
         "title": "Lead Solder in Legacy Electronics: Understanding Hidden Risks and Safe Handling",
-        "meta_description": "Uncover the hazards of lead solder in older and specialized electronics, including dermal transfer and fume toxicity. Learn crucial safety practices and proper e-waste disposal.",
+        "meta_description": "Uncover the hazards of lead solder in older and specialized electronics, including dermal transfer risks, and proper e-waste disposal.",
         "verdict_level": "verdict-caution",
         "verdict_rating": "Handle with Care &mdash; Legacy electronics contain lead, posing health and environmental risks",
         "verdict_summary": "Lead solder, once ubiquitous in electronics, remains a significant concern in legacy hardware and 'vintage' devices. Exposure pathways primarily include dermal transfer of lead dust from internal components, which can lead to accidental ingestion, and inhalation of lead particulate during soldering, a potent neurotoxin. Lead accumulation can impact neurological development, kidney function, and reproductive health. Proper handwashing after handling, using adequate ventilation during repairs, and ensuring responsible e-waste disposal are critical to mitigate these risks and prevent environmental contamination.",
@@ -577,7 +577,7 @@ ARTICLES = \
     {
         "slug": "lithium-ion-battery-gases",
         "title": "Lithium-Ion Battery Safety: Identifying Swelling and Preventing Chemical Leaks",
-        "meta_description": "Learn about the critical hazards of damaged or bulging lithium-ion batteries, including the release of hydrofluoric acid gas and flammable organic solvents. Discover immediate safety actions.",
+        "meta_description": "Learn about the hazards of damaged or bulging lithium-ion batteries, including hydrofluoric acid gas release, and the immediate safety actions to take.",
         "verdict_level": "verdict-caution",
         "verdict_rating": "Urgent Caution &mdash; Damaged batteries pose severe chemical burn, respiratory, and fire risks",
         "verdict_summary": "Damaged or 'swollen' lithium-ion batteries present serious chemical and fire hazards due to their high energy density. The most dangerous chemical release is <strong>hydrofluoric acid (HF) gas</strong>, which is intensely irritating to eyes and lungs and can cause severe, delayed chemical burns upon skin contact. Additionally, the battery electrolyte contains flammable and toxic organic solvents (like ethylene carbonate) that can leak, posing direct skin irritation and a significant fire risk. Any sign of bulging, overheating, or leakage in a lithium-ion battery necessitates immediate, safe power-down and professional recycling to prevent severe injury or property damage.",

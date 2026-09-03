@@ -268,7 +268,7 @@ ARTICLES = \
     {
         "slug": "caustic-soda-drain-cleaner",
         "title": "Sodium Hydroxide (Lye) in Oven Cleaners: Understanding the Corrosive Danger",
-        "meta_description": "Explore the extreme caustic nature of Sodium Hydroxide (Lye) in oven cleaners, its severe risks to skin, eyes, and lungs, and discover safer, effective alternatives for a clean oven.",
+        "meta_description": "Explore the extreme caustic nature of Sodium Hydroxide (Lye) in oven cleaners, its severe risks to skin, eyes, and lungs, and safer alternatives.",
         "verdict_level": "verdict-caution",
         "verdict_rating": "CAUTION \u2014 Extremely caustic; can cause permanent lung damage and skin burns if inhaled or touched.",
         "verdict_summary": "Sodium hydroxide, commonly known as lye or caustic soda, is a highly alkaline and extremely corrosive chemical widely used in powerful oven cleaners. Its efficacy comes from its ability to chemically break down fats and organic matter, but this corrosive power poses significant dangers. Direct contact can cause severe, permanent chemical burns to skin and eyes, potentially leading to blindness. Inhaling its mist or fumes can result in severe respiratory irritation, pulmonary edema, and irreversible lung damage, necessitating extreme caution and protective measures during use.",
@@ -333,7 +333,7 @@ ARTICLES = \
     {
         "slug": "sodium-bicarbonate",
         "title": "Baking Soda (Sodium Bicarbonate): The Non-Toxic Cleaning Essential for Every Home",
-        "meta_description": "Uncover the versatility of baking soda (sodium bicarbonate), the gold standard for non-toxic cleaning, renowned for its deodorizing, mild abrasive, and stain-lifting properties.",
+        "meta_description": "Uncover the versatility of baking soda (sodium bicarbonate), the gold standard for non-toxic cleaning — deodorizing, mildly abrasive, and stain-lifting.",
         "verdict_level": "verdict-safe",
         "verdict_rating": "Safe \u2014 The quintessential non-toxic household cleaner",
         "verdict_summary": "Sodium bicarbonate, universally known as baking soda, stands as a pillar of non-toxic and environmentally friendly cleaning. This mild alkali is exceptional at neutralizing odors, not merely masking them, by reacting with both acidic and basic odor molecules. Its fine crystalline structure provides a gentle abrasive action, perfect for scrubbing surfaces without causing damage or scratches. Beyond its deodorizing and abrasive qualities, baking soda is adept at lifting stains, making it an indispensable tool for a multitude of household tasks. Being food-grade and biodegradable, it poses no risk to human health or the environment, solidifying its status as a gold standard in safe cleaning.",
